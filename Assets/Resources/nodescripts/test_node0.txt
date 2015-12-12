@@ -1,0 +1,23 @@
+{
+	"id":1,
+	"title":"test title",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["test_item"],
+	"event":[
+		{"type":"showcharacter","character":"char_test_1","xpos":"-247","xscale":"1"},
+		{"type":"dialogue","character":"char_test_1","text":"test 1 2 3"},
+		{"type":"transitioncharacter","character":"char_test_1","to":"char_test_2"},
+		{"type":"dialogue","character":"char_test_2","text":"test 4 5 6"},
+		{"type":"movecharacter","character":"char_test_2","xto":"274"},
+		{"type":"additem","item":"test_item"},
+		{"type":"removeitem","item":"test_item"},
+		{"type":"hidecharacter","character":"char_test_2"}
+	],
+	"links":[
+		2, 3, 4
+	],
+	"killlinks":[
+		5, 6
+	]
+}
