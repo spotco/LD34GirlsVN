@@ -1,6 +1,6 @@
 {
-	"id":1,
-	"title":"test title",
+	"id":0,
+	"title":"MYtest title",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":["test_item"],

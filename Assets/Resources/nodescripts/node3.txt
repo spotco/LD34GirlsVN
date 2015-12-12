@@ -1,0 +1,16 @@
+{
+	"id":3,
+	"title":"To the bathroom",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"char_test_1","xpos":"-247","xscale":"1"},
+		{"type":"dialogue","character":"char_test_1","text":"test node 1"}
+	],
+	"links":[
+		1,6
+	],
+	"killlinks":[
+	]
+}
