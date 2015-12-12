@@ -10,7 +10,5 @@
 	],
 	"links":[
 		1
-	],
-	"killlinks":[
 	]
 }

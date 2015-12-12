@@ -10,7 +10,6 @@ public class NodeScript {
 	public List<string> _requirement_items = new List<string>();
 	public List<NodeScriptEvent> _events = new List<NodeScriptEvent>();
 	public List<int> _links = new List<int>();
-	public List<int> _kill_links = new List<int>();
 	
 	public NodeScript i_initialize(TextAsset text) {
 		JSONObject root = JSONObject.Parse(text.text);
@@ -76,7 +75,11 @@ public class NodeScript {
 			if (itr_neu != null) {
 				_events.Add(itr_neu);
 			}
-			
+		}
+		
+		JSONArray links_json = root.GetArray("links");
+		for (int i = 0; i < links_json.Length; i++) {
+			_links.Add((int)links_json[i].Number);
 		}
 		
 		return this;
