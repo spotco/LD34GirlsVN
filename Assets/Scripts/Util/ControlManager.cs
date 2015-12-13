@@ -28,10 +28,10 @@ public class ControlManager {
 			return Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.Keypad5);
 		}
 		case Control.ButtonB: {
-			return Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.X);
+			return Input.GetKey(KeyCode.X);
 		}
 		case Control.ButtonA: {
-			return Input.GetKey(KeyCode.Z);
+			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space);
 		}
 		}
 		return false;

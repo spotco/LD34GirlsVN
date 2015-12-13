@@ -337,6 +337,55 @@ public class SPUtil {
 		return Mathf.Sqrt(Mathf.Pow(a.x-b.x,2)+Mathf.Pow(a.y-b.y,2)+Mathf.Pow(a.z-b.z,2));
 	}
 	
+	public static GameObject proto_clone(GameObject proto) {
+		GameObject rtv = ((GameObject)UnityEngine.Object.Instantiate(proto));
+		rtv.transform.SetParent(proto.transform.parent);
+		rtv.transform.localScale = proto.transform.localScale;
+		rtv.transform.localPosition = proto.transform.localPosition;
+		rtv.transform.localRotation = proto.transform.localRotation;
+		rtv.SetActive(true);
+		return rtv;
+	}
+	
+	public static bool is_touch() {
+		#if UNITY_EDITOR
+		if (Input.GetMouseButton(0)) {
+			return true;
+		}
+		#elif UNITY_IOS
+		Touch[] touches = Input.touches;
+		for (int i = 0; i < touches.Length; i++) {
+			if (touches[i].fingerId == 0 && touches[i].phase != TouchPhase.Ended) {
+				return true;
+			}
+		}
+		#endif
+		return false;
+	}
+	
+	public static bool is_touch_and_position(out Vector2 pos) {
+		bool rtv = false;
+		Vector2 pixel_screen_pos = new Vector2();
+		if (SPUtil.is_touch()) {
+			#if UNITY_EDITOR
+			rtv = true;
+			pixel_screen_pos = 
+				new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+			#elif UNITY_IOS
+			rtv = true;
+			Touch[] touches = Input.touches;
+			for (int i = 0; i < touches.Length; i++) {
+				if (touches[i].fingerId == 0) {
+					pixel_screen_pos = touches[0].position;
+				}
+			}
+			
+			#endif
+		}
+		pos = pixel_screen_pos;
+		return rtv;
+	}
+	
 }
 
 public struct DrptVal {
