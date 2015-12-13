@@ -19,9 +19,9 @@
 		{"type":"dialogue","character":"Kurumi","text":"Nooo that would be boring! This is so cool... and it would be awesome if..."},
 		{"type":"dialogue","character":"Kurumi","..if we could keep hanging out. Together, you know?"},
 		{"type":"dialogue","character":"Mana","text":"You mean... you want to be... friends? With me?"},
-		{"type":"dialogue","character":"Kurumi","Yeah, friends! Can I call you Mana chan?"},
+		{"type":"dialogue","character":"Kurumi","text":"Yeah, friends! Can I call you Mana chan?"},
 		{"type":"dialogue","character":"Mana","text":"Friends...?"},
-		{"type":"dialogue","character":"Kurumi","Mana chan, are you crying?"},
+		{"type":"dialogue","character":"Kurumi","text": "Mana chan, are you crying?"},
 		{"type":"dialogue","character":"Mana","text":"No, not crying. I’m the Mana Magi Knight Manaka. I don’t cry."}
 	],
 	"links":[
