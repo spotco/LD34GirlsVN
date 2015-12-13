@@ -8,14 +8,14 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character:"Kurumi","text":"Ichijou san?!"},
-		{"type":"dialogue","character:"Mana","text":"Yeah, it’s me. Now. I know you saw me in action there."},
-		{"type":"dialogue","character:"Kurumi","text":"Yeah… So it wasn’t just cosplay?"},
-		{"type":"dialogue","character:"Mana","text":"No, not just cosplay, that’s for sure. I’m actually one of the Mahou Kishi, Magical Knights"},
-		{"type":"dialogue","character:"Mana","text":"and I’m responsible of protecting this city from evil as Mana Magi Knight Manaka."},
-		{"type":"dialogue","character:"Kurumi","text":" So… you’re the hero that has been rescuing people from this district during the Monster Attacks?"},
-		{"type":"dialogue","character:"Mana","text":"You saw the monsters. This city is not like the world you know, and I don’t want you to get involved."},
-		{"type":"dialogue","character:"Mana","text":"*STOMACH GROWLS*"},
+		{"type":"dialogue","character":"Kurumi","text":"Ichijou san?!"},
+		{"type":"dialogue","character":"Mana","text":"Yeah, it’s me. Now. I know you saw me in action there."},
+		{"type":"dialogue","character":"Kurumi","text":"Yeah… So it wasn’t just cosplay?"},
+		{"type":"dialogue","character":"Mana","text":"No, not just cosplay, that’s for sure. I’m actually one of the Mahou Kishi, Magical Knights"},
+		{"type":"dialogue","character":"Mana","text":"and I’m responsible of protecting this city from evil as Mana Magi Knight Manaka."},
+		{"type":"dialogue","character":"Kurumi","text":" So… you’re the hero that has been rescuing people from this district during the Monster Attacks?"},
+		{"type":"dialogue","character":"Mana","text":"You saw the monsters. This city is not like the world you know, and I don’t want you to get involved."},
+		{"type":"dialogue","character":"Mana","text":"*STOMACH GROWLS*"}
 	],
 	"links":[
 		25

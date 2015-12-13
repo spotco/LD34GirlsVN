@@ -9,14 +9,14 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character:"Senpai","text":"You and Mana san have been hanging out a lot, haven’t you? I’m glad she’s finally made a friend."},
-		{"type":"dialogue","character:"Senpai","text":"No offense, but she is a bit of a troublemaker at times."},
-		{"type":"dialogue","character:"Senpai","text":"So I just hope that you're safe."},
+		{"type":"dialogue","character":"Senpai","text":"You and Mana san have been hanging out a lot, haven’t you? I’m glad she’s finally made a friend."},
+		{"type":"dialogue","character":"Senpai","text":"No offense, but she is a bit of a troublemaker at times."},
+		{"type":"dialogue","character":"Senpai","text":"So I just hope that you're safe."},
 		
 		{"type":"dialogue","text":"Was that… Kashiwagi Senpai?...."},
 
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character:"Mana","text":" Kuru! Was that just Raichi Senpai talking to you? What did he say?"}
+		{"type":"dialogue","character":"Mana","text":" Kuru! Was that just Raichi Senpai talking to you? What did he say?"}
 	],
 	"links":[
 		28, 29
