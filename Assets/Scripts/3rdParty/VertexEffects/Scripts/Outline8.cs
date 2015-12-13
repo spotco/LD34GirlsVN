@@ -25,4 +25,12 @@ public class Outline8 : ModifiedShadow
             }
         }
     }
+    
+    public void set_effect_color(Color c) {
+    	if (this.effectColor != c) {
+    		this.effectColor = c;
+    	}
+    }
+    
+    
 }
