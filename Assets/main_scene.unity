@@ -195,6 +195,7 @@ MonoBehaviour:
   _event_modal: {fileID: 1504159016}
   _grid_nav_modal: {fileID: 538942465}
   _background: {fileID: 2064571811}
+  _popups: {fileID: 1033882422}
 --- !u!1001 &205002848
 Prefab:
   m_ObjectHideFlags: 0
@@ -456,6 +457,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1033882422 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11438024, guid: 1e31393b066754b54ab61a08ace6ad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2101379159}
+  m_Script: {fileID: 11500000, guid: 1e1d74163264f4f25beae58d04d2549f, type: 3}
 --- !u!1 &1066419298
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,8 +818,8 @@ Prefab:
       value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 120970, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Name
+      value: PopupManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
