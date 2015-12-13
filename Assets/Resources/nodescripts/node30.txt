@@ -9,11 +9,9 @@
 		{"type":"showcharacter","character":"Mana","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Simone","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue", "text":"Whoa, is that another hero?"},
-		{"type":"dialogue","character:"Mana","text":"I can’t believe it!"},
-		{"type":"dialogue","character:"??","text":"I’m magical knight Simone Saber Knight Sweetheart and this city is under MY protection now!"},
-		{"type":"dialogue","character:"Simone","text":"Hohoho, is that your camera crew? Pathetic."}
-		 
-		
+		{"type":"dialogue","character":"Mana","text":"I can’t believe it!"},
+		{"type":"dialogue","character":"??","text":"I’m magical knight Simone Saber Knight Sweetheart and this city is under MY protection now!"},
+		{"type":"dialogue","character":"Simone","text":"Hohoho, is that your idea of a camera crew? Pathetic."}
 	],
 	"links":[
 		30, 35
