@@ -10,17 +10,36 @@ public class GridNode : MonoBehaviour {
 	}
 
 	[SerializeField] private TextAsset _node_script_text;
+	[SerializeField] private Image _image;
 	[SerializeField] private Text _title_ui_text;
+	private Outline _title_ui_outline;
 	[SerializeField] private Image _line_proto;
 	public NodeScript _node_script = new NodeScript();
 	
 	private Dictionary<int,GridNode.Line> _id_to_line = new Dictionary<int, GridNode.Line>();
 	
+	private Sprite img_current;
+	private Color color_current = new Color(191/255.0f,67/255.0f,0/255.0f,1);
+	private Sprite img_unvisited;
+	private Color color_unvisited = new Color(159/255.0f,69/255.0f,255/255.0f,1);
+	private Sprite img_visited;
+	private Color color_visited  = new Color(113/255.0f,113/255.0f,113/255.0f,1);
+	
+	private bool _visited;
+	
 	public void i_initialize() {
 		_node_script.i_initialize(_node_script_text);
 		
+		_title_ui_outline = _title_ui_text.GetComponent<Outline>();
+		
+		img_current = Resources.Load<Sprite>("img/grid/node_current");
+		img_unvisited = Resources.Load<Sprite>("img/grid/node_visited");
+		img_visited = Resources.Load<Sprite>("img/grid/node_unvisited");
+		
 		this.gameObject.name = SPUtil.sprintf("Node (%d)",_node_script._id);
 		_title_ui_text.text = _node_script._title;
+		
+		_visited = false;
 	}
 	
 	public void post_initialize(GridNavModal grid_nav) {
@@ -88,6 +107,39 @@ public class GridNode : MonoBehaviour {
 				}
 			}
 		}
+		
+		if (grid_nav._current_node == this && !_visited) {
+			_visited = true;
+		}
+		
+		float tar_scale = 1;
+		if (grid_nav._current_node == this) {
+			_image.sprite = img_current;
+			tar_scale = 1;
+			_title_ui_outline.effectColor = color_current;
+			
+		} else if (tar_selected == this) {
+			if (_visited) {
+				_image.sprite = img_visited;
+				_title_ui_outline.effectColor = color_visited;
+			} else {
+				_image.sprite = img_unvisited;
+				_title_ui_outline.effectColor = color_unvisited;
+			}
+			tar_scale = 1.2f;
+		
+		} else {
+			if (_visited) {
+				_image.sprite = img_visited;
+				_title_ui_outline.effectColor = color_visited;
+			} else {
+				_image.sprite = img_unvisited;
+				_title_ui_outline.effectColor = color_unvisited;
+			}
+			tar_scale = 0.85f;
+			
+		}
+		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
 	}
 	
 	
