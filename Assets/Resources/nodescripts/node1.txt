@@ -10,7 +10,10 @@
 		{"type":"dialogue","character":"Kurumi","text":"Hello everyone! My name is Kurumi Motoyama, and I’m so excited to experience city life! I hope cool things happen to me!","xpos":200,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Thank you Motoyama san, please take a seat there"},
 		{"type":"dialogue","character":"Kurumi","text":"Who’s that? She’s really pretty but seems kind of aloof."},
-		{"type":"dialogue","character":"Kurumi","text":"“...However, just as the Takeda army was about to deliver a knock out blow against the Oda - Tokugawa alliance,Takeda Shingen suddenly died of mysterious causes."}
+		{"type":"dialogue","character":"Kurumi","text":"“...However, just as the Takeda army was about to deliver a knock out blow against the Oda - Tokugawa alliance,Takeda Shingen suddenly died of mysterious causes."},
+		{"type":"dialogue","character":"Kurumi","text":"“What? But class is still going on…"},
+		{"type":"dialogue","character":"Kurumi","text":"“Don’t be alarmed, Miss Motoyama, this sort of thing is common with her."}
+
 	],
 	"links":[
 		2,3,9
