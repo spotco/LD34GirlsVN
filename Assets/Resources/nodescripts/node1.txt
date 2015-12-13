@@ -5,6 +5,9 @@
 	"music":"",
 	"requirementitem":[],
 	"event":[
+		{"type":"changebackground","background":"bg_blank"},
+		{"type":"dialogue","text":"TEMP:INTRO","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"TEMP:FIRST DAY OF SCHOOL I INTRODUCE MYSELF","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-100,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hello everyone! My name is Kurumi Motoyama, and I’m so excited to experience city life! I hope cool things happen to me!","xpos":250,"ypos":-100},

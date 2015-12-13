@@ -27,12 +27,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				itr_gridnode.i_initialize();
 				if (!_id_to_gridnode.ContainsKey(itr_gridnode._node_script._id)) {
 					_id_to_gridnode[itr_gridnode._node_script._id] = itr_gridnode;
-				} else {
-					//SPUtil.logf("Duplicate gridnode id(%d) on gameobject(%s)",itr_gridnode._node_script._id,itr.name);
 				}
-				
-			} else {
-				//SPUtil.logf("GridMapAnchor Child(%s) no GridNode component",itr.name);
 			}
 		}
 		
@@ -89,6 +84,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		
 		this.set_focus_node(selection_list[_selected_node_cursor_index]);
+		game._background.load_background(selection_list[_selected_node_cursor_index]._node_script._background);
 		
 		_grid_map_anchor.transform.localPosition = new Vector3(
 			SPUtil.drpt(_grid_map_anchor.transform.localPosition.x,_target_grid_map_anchor_position.x,1/10.0f),
@@ -99,6 +95,13 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			_current_node.transform.localPosition.y + 60 + Mathf.Sin(_selector_anim_t) * 10.0f
 		);
 		_selector_anim_t += 0.15f;
+		
+		if (this._current_node != null && !this._current_node._visited) {
+			this._current_node._visited = true;
+			game.start_event_modal(this._current_node._node_script);
+			return;
+		}
+		
 	}
 	
 	private static int cond_select_with_filter(GridNode current, List<GridNode> list, System.Func<GridNode,GridNode,float> filter) {

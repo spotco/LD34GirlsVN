@@ -47,6 +47,11 @@ public class NodeScript {
 					_xscale = (float) itr.GetNumber("xscale")
 				};
 				
+			} else if (type == "changebackground") {
+				itr_neu = new NodeScriptEvent_ChangeBackground() {
+					_background = itr.GetString("background")
+				};
+				
 			} else if (type == "dialogue") {
 				itr_neu = new NodeScriptEvent_Dialogue() {
 					_character = itr.ContainsKey("character") ? itr.GetString("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,

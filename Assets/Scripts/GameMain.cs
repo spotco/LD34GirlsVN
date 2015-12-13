@@ -13,17 +13,20 @@ public class GameMain : MonoBehaviour {
 
 	[SerializeField] private EventModal _event_modal;
 	[SerializeField] private GridNavModal _grid_nav_modal;
-	[SerializeField] private Image _background_image;
+	[SerializeField] public BackgroundManager _background;
 	
 	public ControlManager _controls;
 	public Modal _active_modal;
+	
+	
+	
 	private List<Modal> _all_modals;
 	
 	/*
 	TODO:
-	"narrator" dialogue window
-	
 	dialogue window styles
+	
+	background transitions
 	
 	inventory ui
 	additem
@@ -35,7 +38,7 @@ public class GameMain : MonoBehaviour {
 	affinity system + ui
 	add affinity
 	
-	background transitions
+	
 	
 	(final grid design)
 	(final art)
@@ -62,6 +65,8 @@ public class GameMain : MonoBehaviour {
 		for (int i = 0; i < _all_modals.Count; i++) {
 			_all_modals[i].anim_update(this);
 		}
+		
+		_background.i_update();
 	}
 	
 	public void start_event_modal(NodeScript script) {

@@ -25,7 +25,7 @@ public class GridNode : MonoBehaviour {
 	private Sprite img_visited;
 	private Color color_visited  = new Color(113/255.0f,113/255.0f,113/255.0f,1);
 	
-	private bool _visited;
+	public bool _visited;
 	
 	public void i_initialize() {
 		_node_script.i_initialize(_node_script_text);
@@ -111,11 +111,6 @@ public class GridNode : MonoBehaviour {
 					this.set_line_state(itr_id, LineState.ActiveNotSelected);
 				}
 			}
-		}
-		
-		if (grid_nav._current_node == this && !_visited) {
-			_visited = true;
-			game.start_event_modal(_node_script);
 		}
 		
 		float tar_scale = 1;

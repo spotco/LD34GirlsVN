@@ -1,7 +1,7 @@
 {
 	"id":2,
 	"title":"To the cafeteria!",
-	"background":"bg_school_hallway",
+	"background":"bg_school_roof",
 	"music":"",
 	"requirementitem":[],
 	"event":[
