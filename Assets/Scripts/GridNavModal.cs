@@ -7,6 +7,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] public Transform _line_root;
 	[SerializeField] private Transform _selector;
 	[SerializeField] private CanvasGroup _canvas_group;
+	[SerializeField] private InventoryOverlay _inventory_overlay;
 	
 	private float _selector_anim_t;
 	[System.NonSerialized] public Dictionary<int,GridNode> _id_to_gridnode = new Dictionary<int, GridNode>();
@@ -19,6 +20,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	public void i_initialize(GameMain game) {
 		this.gameObject.SetActive(true);
 		_canvas_group.alpha = 0;
+		
+		_inventory_overlay.i_initialize();
 		
 		for (int i = 0; i < _grid_map_anchor.childCount; i++) {
 			GameObject itr = _grid_map_anchor.GetChild(i).gameObject;
@@ -47,6 +50,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	public void i_update(GameMain game) {
+		_inventory_overlay.i_update(game,this);
+	
 		List<GridNode> selection_list = this.get_selection_list();
 		if (game._controls.get_control_just_released(ControlManager.Control.MoveUp)) {
 			int tar = GridNavModal.cond_select_with_filter(selection_list[_selected_node_cursor_index],selection_list,(GridNode cur, GridNode target) => {
