@@ -7,12 +7,11 @@
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I sometimes get so confused, I can’t even find my own house! I’m new, after all! Ha ha ha!"},
-		{"type":"dialogue","character":"Mana","text":"… I go this way now. You’ll be okay?"}
+		{"type":"dialogue","character":"Mana","text":"… I go this way now. You’ll be okay?"},
 		{"type":"dialogue","character":"Kurumi","text":"Yeah, laters!"},
-		{"type":"dialogue","text":"She asked me if I’ll be okay. Maybe she's also nice?"}
-
+		{"type":"dialogue","text":"She asked me if I’ll be okay. Maybe she's also nice?"},
 		{"type":"dialogue","character":"Senpai","text":"Hello ladies! On your way home?"},
-		{"type":"dialogue","character":"Mana","text":"Raichi senpai?!""}
+		{"type":"dialogue","character":"Mana","text":"Raichi senpai?!"},
 		{"type":"dialogue","character":"Raichi","text":"That’s almost your house, right, Mana san? Kurumi chan, want me to give you a tour of the city?"}
 	],
 	"links":[
