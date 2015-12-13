@@ -1,0 +1,17 @@
+{
+	"id":29,
+	"title":"Tell her Whatever",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character:"Kurumi","text":"It was nothing, I can't remember because I was half asleep."},
+		{"type":"dialogue","character:"Mana","text":" Yeah right!! What did he actually say?"}
+	],
+	"links":[
+		30, 35
+	]
+}
