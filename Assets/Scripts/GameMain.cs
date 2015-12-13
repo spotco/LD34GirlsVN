@@ -17,16 +17,13 @@ public class GameMain : MonoBehaviour {
 	
 	public ControlManager _controls;
 	public Modal _active_modal;
+	public Inventory _inventory;
 	
 	private List<Modal> _all_modals;
 	
 	/*
 	TODO:
-	dialogue window styles
-	
-	inventory ui
-	additem
-	removeitem
+	popup system
 	locked nodes system
 	
 	hidecharacter action
@@ -45,6 +42,8 @@ public class GameMain : MonoBehaviour {
 		Application.targetFrameRate = 30;
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal };
 		_controls = ControlManager.cons();
+		_inventory = new Inventory();
+		
 		for (int i = 0; i < _all_modals.Count; i++) {
 			_all_modals[i].i_initialize(this);
 		}
@@ -71,5 +70,4 @@ public class GameMain : MonoBehaviour {
 	public void finish_event_modal() {
 		_active_modal = _grid_nav_modal;
 	}
-	
 }

@@ -6,7 +6,8 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"At the bathroom, I find a phone. The keychain looks familiar."}
+		{"type":"dialogue","character":"Kurumi","text":"At the bathroom, I find a phone. The keychain looks familiar."},
+		{"type":"additem","item":"phone"}
 	],
 	"links":[
 		1

@@ -8,7 +8,8 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"  Thank you, Kashiwagi senpai!"},
-		{"type":"dialogue","character":"Senpai","text":"Leave it to me!"}
+		{"type":"dialogue","character":"Senpai","text":"Leave it to me!"},
+		{"type":"removeitem","item":"phone"}
 	],
 	"links":[
 		2

@@ -12,6 +12,7 @@ public class GridNode : MonoBehaviour {
 	[SerializeField] private TextAsset _node_script_text;
 	[SerializeField] private Image _image;
 	[SerializeField] private Text _title_ui_text;
+	private float _anim_theta;
 	private Outline _title_ui_outline;
 	[SerializeField] private Image _line_proto;
 	public NodeScript _node_script = new NodeScript();
@@ -126,16 +127,23 @@ public class GridNode : MonoBehaviour {
 			_image.sprite = img_current;
 			tar_scale = 1;
 			SPUtil.set_outline_effect_color(_title_ui_outline,color_current);
+			_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
 			
 		} else if (tar_selected == this) {
 			if (_visited) {
 				_image.sprite = img_visited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
+				_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
+				
 			} else {
 				_image.sprite = img_unvisited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
+				_anim_theta += 0.05f;
+				_title_ui_text.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin(_anim_theta)*7.5f);
+				
 			}
-			tar_scale = 1.2f;
+			tar_scale = 1.35f;
+			
 		
 		} else {
 			if (_visited) {
@@ -146,6 +154,7 @@ public class GridNode : MonoBehaviour {
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
 			tar_scale = 0.85f;
+			_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
 			
 		}
 		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
