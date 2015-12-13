@@ -18,15 +18,11 @@ public class GameMain : MonoBehaviour {
 	public ControlManager _controls;
 	public Modal _active_modal;
 	
-	
-	
 	private List<Modal> _all_modals;
 	
 	/*
 	TODO:
 	dialogue window styles
-	
-	background transitions
 	
 	inventory ui
 	additem
@@ -37,8 +33,6 @@ public class GameMain : MonoBehaviour {
 	
 	affinity system + ui
 	add affinity
-	
-	
 	
 	(final grid design)
 	(final art)

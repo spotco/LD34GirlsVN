@@ -27,8 +27,16 @@ public class GridNode : MonoBehaviour {
 	
 	public bool _visited;
 	
+	private static Font __cached_font;
+	
 	public void i_initialize() {
 		_node_script.i_initialize(_node_script_text);
+		
+		if (__cached_font == null) {
+			__cached_font = Resources.Load<Font>("osaka.unicode");
+		}
+		_title_ui_text.font = __cached_font;
+		
 		
 		_title_ui_outline = _title_ui_text.GetComponent<Outline>();
 		

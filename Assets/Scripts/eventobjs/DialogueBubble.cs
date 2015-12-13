@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class DialogueBubble : MonoBehaviour {
 
@@ -10,6 +10,9 @@ public class DialogueBubble : MonoBehaviour {
 	[SerializeField] private Image _primary_background;
 	[SerializeField] private Image _name_background;
 	[SerializeField] private Image _cursor;
+	
+	[SerializeField] private Outline _primary_text_outline;
+	[SerializeField] private Outline _name_text_outline;
 	
 	public enum Mode {
 		FadeIn,
@@ -33,6 +36,7 @@ public class DialogueBubble : MonoBehaviour {
 			_name_text.text = dialogue._character;
 		}
 		
+		this.apply_style(dialogue);
 		
 		_primary_text.load(dialogue._text);
 		_current_mode = Mode.FadeIn;
@@ -85,6 +89,52 @@ public class DialogueBubble : MonoBehaviour {
 				_current_mode = Mode.DoRemove;
 			}	
 		}
+	}
+	
+	private static Dictionary<string,Sprite> __name_to_bgsprite = new Dictionary<string, Sprite>();
+	private Sprite cond_get_bgsprite(string name) {
+		name = "img/ui/dialogue_bubble_"+name;
+		
+		
+		if (__name_to_bgsprite.ContainsKey(name)) return __name_to_bgsprite[name];
+		Sprite bg_sprite = Resources.Load<Sprite>(name);
+		if (bg_sprite != null) {
+			__name_to_bgsprite[name] = bg_sprite;
+		} else {
+			Debug.LogError("not found:"+name);
+		}
+		return bg_sprite;
+	}
+	
+	public void apply_style(NodeScriptEvent_Dialogue script_event) {
+		Color outline_color;
+		if (script_event._character == "Kurumi") {
+			_primary_background.sprite = this.cond_get_bgsprite("kurumi");
+			_name_background.sprite = this.cond_get_bgsprite("kurumi");
+			outline_color = new Color(95/255.0f,115/255.0f,88/255.0f,1);
+		
+		} else if (script_event._character == "Mana") {
+			_primary_background.sprite = this.cond_get_bgsprite("mana");
+			_name_background.sprite = this.cond_get_bgsprite("mana");
+			outline_color = new Color(108/255.0f,99/255.0f,132/255.0f,1);
+		
+		} else if (script_event._character == "Raichi") {
+			_primary_background.sprite = this.cond_get_bgsprite("raichi");
+			_name_background.sprite = this.cond_get_bgsprite("raichi");
+			outline_color = new Color(85/255.0f,99/255.0f,125/255.0f,1);
+		
+		} else if (script_event._character == "Simone") {
+			_primary_background.sprite = this.cond_get_bgsprite("simone");
+			_name_background.sprite = this.cond_get_bgsprite("simone");
+			outline_color = new Color(127/255.0f,121/255.0f,85/255.0f,1);
+		
+		} else {
+			_primary_background.sprite = this.cond_get_bgsprite("generic");
+			_name_background.sprite = this.cond_get_bgsprite("generic");
+			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
+		}
+		_name_text_outline.effectColor = outline_color;
+		_primary_text_outline.effectColor = outline_color;
 	}
 	
 	
