@@ -23,9 +23,7 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	inventory ui
-	additem
-	removeitem
+	popup system
 	locked nodes system
 	
 	hidecharacter action

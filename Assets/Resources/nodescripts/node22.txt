@@ -1,0 +1,15 @@
+{
+	"id":22,
+	"title":"Scream For Help",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":" Kyaaaaaa!!!! Call the Police! It’s an Intruder!!!"},
+		{"type":"dialogue","text":"Hopeless… I know, my parents aren’t even home…〣( ºΔº )〣"}
+	],
+	"links":[
+		24
+	]
+}

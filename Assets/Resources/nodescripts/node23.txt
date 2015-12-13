@@ -1,0 +1,17 @@
+{
+	"id":23,
+	"title":"Grab Pillow and Fight",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		
+		{"type":"dialogue","text":"I grab the nearest thing to me, my pillow, and throw it without thinking anything."},
+		{"type":"dialogue","character":"???","text":"Argh… take this!"},
+		{"type":"dialogue","character":"Kurumi","text":"Kyaa! What are you doing! Don’t throw my pillow at me!"}
+	],
+	"links":[
+		24
+	]
+}
