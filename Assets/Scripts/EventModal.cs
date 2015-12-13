@@ -39,7 +39,9 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	private List<string> __to_remove_str = new List<string>();
-	public void i_update(GameMain game) {	
+	public void i_update(GameMain game) {
+		if (game._popups.has_active_popup()) return;
+	
 		if (_current_script != null && _script_index <  _current_script._events.Count) {
 			int last_index = _script_index;
 			do {

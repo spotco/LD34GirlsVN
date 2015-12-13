@@ -34,7 +34,7 @@ public class Popup : MonoBehaviour {
 		} else if (_current_mode == Mode.Hold) {
 		
 		} else if (_current_mode == Mode.FadeOut) {
-			this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,0,1/10.0f));
+			this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,1.2f,1/10.0f));
 			_canvas_group.alpha = Mathf.Min(_canvas_group.alpha - 0.05f * SPUtil.dt_scale_get(),1);
 			if (_canvas_group.alpha <= 0) {
 				_current_mode = Mode.DoRemove;

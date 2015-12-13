@@ -44,6 +44,7 @@ public class GameMain : MonoBehaviour {
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal };
 		_controls = ControlManager.cons();
 		_inventory = new Inventory();
+		_popups.i_initialize(this);
 		
 		for (int i = 0; i < _all_modals.Count; i++) {
 			_all_modals[i].i_initialize(this);
@@ -55,6 +56,7 @@ public class GameMain : MonoBehaviour {
 	public void Update () {
 		_controls.i_update();
 		_active_modal.i_update(this);
+		_popups.i_update(this);
 		
 		for (int i = 0; i < _all_modals.Count; i++) {
 			_all_modals[i].anim_update(this);

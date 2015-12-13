@@ -195,32 +195,7 @@ MonoBehaviour:
   _event_modal: {fileID: 1504159016}
   _grid_nav_modal: {fileID: 538942465}
   _background: {fileID: 2064571811}
---- !u!1 &188453201 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 103816, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-  m_PrefabInternal: {fileID: 2101379159}
---- !u!225 &188453202
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188453201}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
---- !u!114 &188453203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188453201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3348f51c68c00412bb09deccb31c3e6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _popups: {fileID: 1033882422}
 --- !u!1001 &205002848
 Prefab:
   m_ObjectHideFlags: 0
@@ -482,21 +457,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1033882421 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 120970, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-  m_PrefabInternal: {fileID: 2101379159}
---- !u!114 &1033882422
+--- !u!114 &1033882422 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1033882421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 11438024, guid: 1e31393b066754b54ab61a08ace6ad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2101379159}
   m_Script: {fileID: 11500000, guid: 1e1d74163264f4f25beae58d04d2549f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1066419298
 GameObject:
   m_ObjectHideFlags: 0
