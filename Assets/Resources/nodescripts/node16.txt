@@ -1,5 +1,5 @@
 {
-	"id":16
+	"id":16,
 	"title":"Invite Mana",
 	"background":"bg_school_hallway",
 	"music":"",
@@ -14,9 +14,9 @@
 
 
 		{"type":"dialogue","text":"This city is what I’ve seen in the news and dramas, but to be in it real life… it’s totally different!!!!!!! ＼(>▽<)／ Am I...perhaps cool city girl!?!??!"},
-		{"type":"dialogue","text":"As I enjoy the cityscape, suddenly, there are giant monsters!"}
+		{"type":"dialogue","text":"As I enjoy the cityscape, suddenly, there are giant monsters!"},
 		{"type":"dialogue","character":"Senpai","text":"Kurumi chan! Get out! It's dangerous!"},
-		{"type":"dialogue","text":"And there was a super hero in front of me, armored, so cool..."}
+		{"type":"dialogue","text":"And there was a super hero in front of me, armored, so cool..."},
 		{"type":"dialogue","character":"??","text":"RUN! Motoyama san!"},
 		{"type":"dialogue","character":"Kurumi","text":"How did she know my name… KYA!!!!"},
 		{"type":"dialogue","text":"A giant monster is right in front of me. The hero picks me up -- things are going by so fast."},
