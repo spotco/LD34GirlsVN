@@ -23,7 +23,7 @@ public class GameMain : MonoBehaviour {
 	TODO:
 	movecharacter action
 	
-	no dialogue 
+	"narrator" dialogue window
 	
 	dialogue window styles
 	
@@ -41,10 +41,13 @@ public class GameMain : MonoBehaviour {
 	
 	(final grid design)
 	(final art)
+	(sound effects)
+	(music)
 	(menu transitions)
 	*/
 	
 	public void Start () {
+		Application.targetFrameRate = 30;
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal };
 		_controls = ControlManager.cons();
 		for (int i = 0; i < _all_modals.Count; i++) {

@@ -46,6 +46,11 @@ public class GridNode : MonoBehaviour {
 		for (int i = 0; i < _node_script._links.Count; i++) {
 			int itr_id = _node_script._links[i];
 			
+			if (!grid_nav._id_to_gridnode.ContainsKey(itr_id)) {
+				Debug.LogError(SPUtil.sprintf("ERROR! Canvas->GameMain->BackgroundImage->GridNav->GridMapAnchor does not contain node of id(%d)",itr_id));
+				continue;
+			}
+			
 			GridNode other_node = grid_nav._id_to_gridnode[itr_id];
 			Vector3 lpos_delta = SPUtil.vec_sub(other_node.transform.localPosition,this.transform.localPosition);
 			
@@ -117,25 +122,25 @@ public class GridNode : MonoBehaviour {
 		if (grid_nav._current_node == this) {
 			_image.sprite = img_current;
 			tar_scale = 1;
-			_title_ui_outline.effectColor = color_current;
+			SPUtil.set_outline_effect_color(_title_ui_outline,color_current);
 			
 		} else if (tar_selected == this) {
 			if (_visited) {
 				_image.sprite = img_visited;
-				_title_ui_outline.effectColor = color_visited;
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
 			} else {
 				_image.sprite = img_unvisited;
-				_title_ui_outline.effectColor = color_unvisited;
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
 			tar_scale = 1.2f;
 		
 		} else {
 			if (_visited) {
 				_image.sprite = img_visited;
-				_title_ui_outline.effectColor = color_visited;
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
 			} else {
 				_image.sprite = img_unvisited;
-				_title_ui_outline.effectColor = color_unvisited;
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
 			tar_scale = 0.85f;
 			

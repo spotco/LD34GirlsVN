@@ -105,6 +105,11 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		_dialogue_bubbles.Add(neu_bubble);
 		return neu_bubble;
 	}
+	public EventCharacter cond_get_character_of_name(string name) {
+		EventCharacter rtv = null;
+		_name_to_character.TryGetValue(name,out rtv);
+		return rtv;
+	}
 	
 	
 	
