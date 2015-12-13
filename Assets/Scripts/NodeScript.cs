@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+public abstract class NodeScriptEvent {
+	public virtual void i_initialize(GameMain game, EventModal modal) {}
+	public virtual void i_update(GameMain game, EventModal modal) {}
+}
+
 public class NodeScript {
 	
 	public int _id;
@@ -84,39 +89,4 @@ public class NodeScript {
 		
 		return this;
 	}
-}
-
-public abstract class NodeScriptEvent {}
-
-public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
-	public string _character;
-	public float _xpos;
-	public float _xscale;
-}
-
-public class NodeScriptEvent_Dialogue : NodeScriptEvent {
-	public string _character;
-	public string _text;
-}
-
-public class NodeScriptEvent_TransitionCharacter : NodeScriptEvent {
-	public string _character;
-	public string _to;
-}
-
-public class NodeScriptEvent_MoveCharacter : NodeScriptEvent {
-	public string _character;
-	public float _xto;
-}
-
-public class NodeScriptEvent_AddItem : NodeScriptEvent {
-	public string _item;
-}
-
-public class NodeScriptEvent_RemoveItem : NodeScriptEvent {
-	public string _item;
-}
-
-public class NodeScriptEvent_HideCharacter : NodeScriptEvent {
-	public string _character;
 }
