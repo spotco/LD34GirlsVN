@@ -36,6 +36,7 @@ public class NodeScript {
 			if (type == "showcharacter") {
 				itr_neu = new NodeScriptEvent_ShowCharacter() {
 					_character = itr.GetString("character"),
+					_image = itr.GetString("image"),
 					_xpos = (float) itr.GetNumber("xpos"),
 					_xscale = (float) itr.GetNumber("xscale")
 				};

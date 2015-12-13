@@ -34,7 +34,10 @@ public class ScrollText : MonoBehaviour {
 	}
 	
 	public bool finished() { return _buf.Length == _words.Length; }
-	public void finish() { _buf = _words; }
+	public void finish() { 
+		_buf = _words;
+		_text.set_string(_buf);
+	}
 	public void clear() {
 		_buf = "";
 		_words = "";

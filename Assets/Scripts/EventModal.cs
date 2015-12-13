@@ -12,6 +12,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	
 	public void i_initialize(GameMain game) {
 		this.gameObject.SetActive(true);
+		_proto_dialogue_bubble.gameObject.SetActive(false);
 		_proto_character.gameObject.SetActive(false);
 		_canvas_group.alpha = 0;
 	}
