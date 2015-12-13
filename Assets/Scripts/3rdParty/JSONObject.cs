@@ -746,7 +746,8 @@ public class JSONObject : IEnumerable<KeyValuePair<string, JSONValue>> {
 	}
 	
 	private static JSONObject Fail(string expected, int position) {
-		IOut.LogError("Invalid json string, expecting " + expected + " at " + position);
+		throw new System.Exception(SPUtil.sprintf("FAIL(%s) at (%d)",expected,position));
+		//IOut.LogError("Invalid json string, expecting " + expected + " at " + position);
 		return null;
 	}
 	

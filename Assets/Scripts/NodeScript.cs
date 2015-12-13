@@ -8,16 +8,22 @@ public abstract class NodeScriptEvent {
 
 public class NodeScript {
 	
-	public int _id;
-	public string _title;
-	public string _background;
-	public string _music;
+	public int _id = 0;
+	public string _title = "";
+	public string _background = "";
+	public string _music = "";
 	public List<string> _requirement_items = new List<string>();
 	public List<NodeScriptEvent> _events = new List<NodeScriptEvent>();
 	public List<int> _links = new List<int>();
 	
 	public NodeScript i_initialize(TextAsset text) {
-		JSONObject root = JSONObject.Parse(text.text);
+		JSONObject root;
+		try {
+			root = JSONObject.Parse(text.text);
+		} catch (System.Exception e) {
+			Debug.LogError(SPUtil.sprintf("JSON FILE(%s) INVALID",text.name));
+			return this;
+		}
 		_id = (int) root.GetNumber("id");
 		_title = root.GetString("title");
 		_background = root.GetString("background");
