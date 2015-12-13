@@ -7,10 +7,12 @@
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Mana","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."}
+		{"type":"dialogue","character":"Kurumi","text":"I wonder where the cafeteria is… *trips* Aah!
+I’m so clumsy. >_<"},
+		{"type":"dialogue","character":"Mana","text":"You okay, Miss Motoyama?"},
+		{"type":"dialogue","character":"Kurumi","text":"Yes! Wait… how did you know my name?"},
+		{"type":"dialogue","character":"Kurumi","text":"Oh! Well of course, I’m the student council president, it’s my duty to make sure everyone’s doing well at this school. My name is Raichi Ichijou.Classmate of Ichijou Mana san, am I right?
+"}
 
 	],
 	"links":[
