@@ -6,13 +6,11 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Mana","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."}
+		{"type":"dialogue","character":"Kurumi", "text":"I head over to the roof to eat lunch."},
+		{"type":"dialogue","character":"Mana","text":"Wow wow what? Jets? Smoke? ＼(º □ º l|l)/"},
+		{"type":"dialogue","character":"Kurumi","text":"I’ve heard of the monster attacks in the city, but I guess that’s what’s happening???"}
 	],
 	"links":[
-		2
+		6
 	]
 }

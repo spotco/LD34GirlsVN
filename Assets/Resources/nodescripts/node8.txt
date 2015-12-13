@@ -1,16 +1,13 @@
 {
 	"id":8,
-	"title":"Go to senior classroom",
+	"title":"Don't give Phone",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Mana","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."}
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":" I’ll hold on to it. Thanks though."}
 	],
 	"links":[
 		2

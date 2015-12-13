@@ -1,18 +1,17 @@
 {
 	"id":6,
-	"title":"Check phone",
+	"title":"Talk to Raichi",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Mana","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."}
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Senpai","text":"What’s new? You look troubled."},
+		{"type":"dialogue","character":"Kurumi","text":" I picked up a phone in the bathroom. What should I do?"},
+		{"type":"dialogue","character":"Senpai","text":" I can take that and make sure it gets to the correct person."}
 	],
 	"links":[
-		3
+		7, 8 
 	]
 }

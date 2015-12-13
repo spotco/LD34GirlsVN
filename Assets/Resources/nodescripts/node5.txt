@@ -1,14 +1,14 @@
 {
-	"id":3,
-	"title":"To the bathroom",
+	"id":5,
+	"title":"Check phone",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"At the bathroom, I find a phone. The keychain looks familiar."}
+		{"type":"dialogue","character":"Kurumi","text":"Wow wow, are these photos of Ichijou san in cosplay? They’re really cute! (´｡• ω •｡`) <3"}
 	],
 	"links":[
-		1
+		3
 	]
 }

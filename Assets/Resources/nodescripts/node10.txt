@@ -1,6 +1,6 @@
 {
-	"id":9,
-	"title":"Leave School",
+	"id":10,
+	"title":"Talk with Troublemaker",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
