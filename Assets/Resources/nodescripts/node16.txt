@@ -1,0 +1,34 @@
+{
+	"id":16
+	"title":"Invite Mana",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Ichijou san, wanna come with? It’ll be fun!"},
+		{"type":"dialogue","character":"Mana","text":"...Fun? Well..."},
+		{"type":"dialogue","character":"Kurumi","text":" Please! I’ll be nervous with just Senpai!"},
+		{"type":"dialogue","character":"Senpai","text":"Haha, don’t worry, Kurumi chan, nothing bad will happen!"},
+		{"type":"dialogue","character":"Mana","text":"... hmph. Fine. I’ll go."},
+
+
+		{"type":"dialogue","text":"This city is what I’ve seen in the news and dramas, but to be in it real life… it’s totally different!!!!!!! ＼(>▽<)／ Am I...perhaps cool city girl!?!??!"},
+		{"type":"dialogue","text":"As I enjoy the cityscape, suddenly, there are giant monsters!"}
+		{"type":"dialogue","character":"Senpai","text":"Kurumi chan! Get out! It's dangerous!"},
+		{"type":"dialogue","text":"And there was a super hero in front of me, armored, so cool..."}
+		{"type":"dialogue","character":"??","text":"RUN! Motoyama san!"},
+		{"type":"dialogue","character":"Kurumi","text":"How did she know my name… KYA!!!!"},
+		{"type":"dialogue","text":"A giant monster is right in front of me. The hero picks me up -- things are going by so fast."},
+		{"type":"dialogue","text":"And I knew… it was her. The mysterious girl who sat next to me. She is her."},
+
+		{"type":"dialogue","character":"Senpai","text":"Are you okay?"},
+		{"type":"dialogue","character":"Kurumi","text":"..What? Did I pass out? Where’s the -- hero --"},
+		{"type":"dialogue","character":"Senpai","text":"Let’s go home. I hope you’re feeling all right. Monster attacks are very dangerous."},
+		{"type":"dialogue","character":"Kurumi","text":" She saved me…"},
+		{"type":"dialogue","character":"Senpai","text":" It’s their job, to be possessing such powers, to protect innocent bystanders like you."}
+	],
+	"links":[
+		17
+	]
+}

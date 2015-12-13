@@ -1,0 +1,15 @@
+{
+	"id":11,
+	"title":"Give Phone to Mana",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"By the way... I found this phone in the girl's restroom."},
+		{"type":"dialogue","character":"Mana","text":"Thank goodness. I was looking for it all day! I hope you didn't see anything...}
+	],
+	"links":[
+		12
+	]
+}

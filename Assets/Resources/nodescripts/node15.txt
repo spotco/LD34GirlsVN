@@ -1,0 +1,15 @@
+{
+	"id":15,
+	"title":"Go to the City",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"That would be awesome!!! Maybe cool things will happen again! Also… if you could stop calling me Kurumi chan…(｡・//ε//・｡)"},
+		{"type":"dialogue","text":"Ichijou san looks a little sad. Maybe she wants to go with?"}
+	],
+	"links":[
+		16
+	]
+}
