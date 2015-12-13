@@ -26,7 +26,14 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public void i_initialize(NodeScriptEvent_Dialogue dialogue) {
 		_script = dialogue;
-		_name_text.text = dialogue._character;
+		
+		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
+			_name_background.gameObject.SetActive(false);
+		} else {
+			_name_text.text = dialogue._character;
+		}
+		
+		
 		_primary_text.load(dialogue._text);
 		_current_mode = Mode.FadeIn;
 		

@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class NodeScriptEvent_Dialogue : NodeScriptEvent {
+
+	public static string CHARACTER_NARRATOR = "CHARACTER_NARRATOR";
+
 	public string _character;
 	public string _text;
 	public float _xpos, _ypos;

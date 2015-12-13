@@ -15,7 +15,12 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 				neu_char.transform.localPosition.y
 			);
 			neu_char._image.SetNativeSize();
-			neu_char.transform.localScale = SPUtil.valv(_xscale * 0.75f);
+			neu_char.transform.localScale = SPUtil.valv(0.75f);
+			neu_char._image.transform.localScale = new Vector3(
+				_xscale,
+				neu_char._image.transform.localScale.y,
+				neu_char._image.transform.localScale.z
+			);
 		}
 		modal.advance_script();
 	}

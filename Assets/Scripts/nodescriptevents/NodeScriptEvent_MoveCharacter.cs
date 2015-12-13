@@ -8,6 +8,7 @@ public class NodeScriptEvent_MoveCharacter : NodeScriptEvent {
 	private bool _first_update;
 	private float _anim_t;
 	private float _frame_dt;
+	private float _xstart;
 	
 	public override void i_initialize(GameMain game, EventModal modal) {
 		_first_update = false;
@@ -22,9 +23,22 @@ public class NodeScriptEvent_MoveCharacter : NodeScriptEvent {
 		if (!_first_update) {
 			_first_update = true;
 			_anim_t = 0;
-			float dist = Mathf.Abs(_xto - tar._image.transform.localPosition.x);
-			
+			float dist = Mathf.Abs(_xto - tar.transform.localPosition.x);
+			_frame_dt = 1.0f / (dist / 10.0f);
+			_xstart = tar.transform.localPosition.x;
 		}
+		
+		_anim_t = Mathf.Min(_anim_t + _frame_dt*SPUtil.dt_scale_get(),1);
+		
+		tar.transform.localPosition = new Vector2(
+			SPUtil.lerp(_xstart,_xto,SPUtil.bezier_val_for_t(new Vector2(0,0),new Vector2(0.5f,0),new Vector2(0.5f,1),new Vector2(1,1),_anim_t).y), 
+			tar.transform.localPosition.y
+		);
+		
+		if (_anim_t >= 1) {
+			modal.advance_script();
+		}
+		
 	
 	}
 	

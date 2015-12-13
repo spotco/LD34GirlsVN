@@ -43,7 +43,7 @@ public class NodeScript {
 				
 			} else if (type == "dialogue") {
 				itr_neu = new NodeScriptEvent_Dialogue() {
-					_character = itr.GetString("character"),
+					_character = itr.ContainsKey("character") ? itr.GetString("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,
 					_text = itr.GetString("text"),
 					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber("xpos")) : 0,
 					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber("ypos")) : -130

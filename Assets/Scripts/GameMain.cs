@@ -21,8 +21,6 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	movecharacter action
-	
 	"narrator" dialogue window
 	
 	dialogue window styles
