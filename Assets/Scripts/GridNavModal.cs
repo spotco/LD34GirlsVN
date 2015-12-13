@@ -32,7 +32,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				}
 				
 			} else {
-				SPUtil.logf("GridMapAnchor Child(%s) no GridNode component",itr.name);
+				//SPUtil.logf("GridMapAnchor Child(%s) no GridNode component",itr.name);
 			}
 		}
 		

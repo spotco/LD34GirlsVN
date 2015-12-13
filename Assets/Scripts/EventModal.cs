@@ -39,14 +39,28 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	private List<string> __to_remove_str = new List<string>();
-	public void i_update(GameMain game) {
-	
+	public void i_update(GameMain game) {	
+		if (_current_script != null && _script_index <  _current_script._events.Count) {
+			int last_index = _script_index;
+			do {
+				last_index = _script_index;
+				_current_script._events[_script_index].i_update(game,this);
+			} while (last_index != _script_index && _script_index <  _current_script._events.Count);
+						
+		} else {
+			foreach (string name in _name_to_character.Keys) {
+				EventCharacter itr_char = _name_to_character[name];
+				itr_char._current_mode = EventCharacter.Mode.DoRemove;
+			}
+			game.finish_event_modal();
+		}
+		
 		__to_remove_str.Clear();
 		foreach (string name in _name_to_character.Keys) {
 			EventCharacter itr_char = _name_to_character[name];
 			itr_char.i_update(game,this);
 			if (itr_char._current_mode == EventCharacter.Mode.DoRemove) {
-				GameObject.Destroy(itr_char._image.gameObject);
+				GameObject.Destroy(itr_char.gameObject);
 				__to_remove_str.Add(name);
 			}
 		}
@@ -66,17 +80,6 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 					_name_to_character[itr._script._character].notify_talking();
 				}
 			}
-		}
-	
-		if (_current_script != null && _script_index <  _current_script._events.Count) {
-			int last_index = _script_index;
-			do {
-				last_index = _script_index;
-				_current_script._events[_script_index].i_update(game,this);
-			} while (last_index != _script_index && _script_index <  _current_script._events.Count);
-						
-		} else {
-			game.finish_event_modal();
 		}
 	}
 	
