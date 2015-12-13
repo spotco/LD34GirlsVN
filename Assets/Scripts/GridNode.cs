@@ -12,7 +12,7 @@ public class GridNode : MonoBehaviour {
 	[SerializeField] private TextAsset _node_script_text;
 	[SerializeField] private Image _image;
 	[SerializeField] private Text _title_ui_text;
-	private Outline8 _title_ui_outline;
+	private Outline _title_ui_outline;
 	[SerializeField] private Image _line_proto;
 	public NodeScript _node_script = new NodeScript();
 	
@@ -30,7 +30,7 @@ public class GridNode : MonoBehaviour {
 	public void i_initialize() {
 		_node_script.i_initialize(_node_script_text);
 		
-		_title_ui_outline = _title_ui_text.GetComponent<Outline8>();
+		_title_ui_outline = _title_ui_text.GetComponent<Outline>();
 		
 		img_current = Resources.Load<Sprite>("img/grid/node_current");
 		img_unvisited = Resources.Load<Sprite>("img/grid/node_visited");
@@ -117,25 +117,25 @@ public class GridNode : MonoBehaviour {
 		if (grid_nav._current_node == this) {
 			_image.sprite = img_current;
 			tar_scale = 1;
-			_title_ui_outline.set_effect_color(color_current);
+			SPUtil.set_outline_effect_color(_title_ui_outline,color_current);
 			
 		} else if (tar_selected == this) {
 			if (_visited) {
 				_image.sprite = img_visited;
-				_title_ui_outline.set_effect_color(color_visited);
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
 			} else {
 				_image.sprite = img_unvisited;
-				_title_ui_outline.set_effect_color(color_unvisited);
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
 			tar_scale = 1.2f;
 		
 		} else {
 			if (_visited) {
 				_image.sprite = img_visited;
-				_title_ui_outline.set_effect_color(color_visited);
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
 			} else {
 				_image.sprite = img_unvisited;
-				_title_ui_outline.set_effect_color(color_unvisited);
+				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
 			tar_scale = 0.85f;
 			
