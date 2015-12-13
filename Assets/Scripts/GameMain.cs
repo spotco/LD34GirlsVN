@@ -14,6 +14,7 @@ public class GameMain : MonoBehaviour {
 	[SerializeField] private EventModal _event_modal;
 	[SerializeField] private GridNavModal _grid_nav_modal;
 	[SerializeField] public BackgroundManager _background;
+	[SerializeField] public PopupManager _popups;
 	
 	public ControlManager _controls;
 	public Modal _active_modal;
