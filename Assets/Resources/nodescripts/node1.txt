@@ -7,7 +7,7 @@
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
+		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.","xpos":200,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
 		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."},
 		{"type":"dialogue","character":"Kurumi","text":"Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1.Talk test 1."}

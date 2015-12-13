@@ -21,21 +21,27 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	movecharacter
+	movecharacter action
+	
+	no dialogue 
+	
+	dialogue window styles
 	
 	inventory ui
 	additem
 	removeitem
 	locked nodes system
 	
-	hidecharacter
+	hidecharacter action
 	
 	affinity system + ui
 	add affinity
 	
 	background transitions
 	
+	(final grid design)
 	(final art)
+	(menu transitions)
 	*/
 	
 	public void Start () {
