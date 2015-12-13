@@ -46,6 +46,11 @@ public class GridNode : MonoBehaviour {
 		for (int i = 0; i < _node_script._links.Count; i++) {
 			int itr_id = _node_script._links[i];
 			
+			if (!grid_nav._id_to_gridnode.ContainsKey(itr_id)) {
+				Debug.LogError(SPUtil.sprintf("ERROR! Canvas->GameMain->BackgroundImage->GridNav->GridMapAnchor does not contain node of id(%d)",itr_id));
+				continue;
+			}
+			
 			GridNode other_node = grid_nav._id_to_gridnode[itr_id];
 			Vector3 lpos_delta = SPUtil.vec_sub(other_node.transform.localPosition,this.transform.localPosition);
 			
