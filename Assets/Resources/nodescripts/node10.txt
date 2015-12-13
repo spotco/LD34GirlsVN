@@ -5,14 +5,14 @@
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"The city is nice. Super different from where I grew up."},
-		{"type":"dialogue","character":"Kurumi","text":"I miss the nature a little bit, but this is where all the action is!"},{"type":"dialogue","character":"Kurumi","text":"Can’t wait until action starts!!!!! ( ´ ▽ ` )b"},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Whoa, it’s the delinquent in my class! Σ(°△°|||)"},
-		{"type":"dialogue","character":"Kurumi","text":"Gotta talk to her!  ( ´ ▽ ` )b"}
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":" Hey! Ichijou san!!!"},
+		{"type":"dialogue","character":"Mana","text":"What!? Who are… how did you know my name?"},
+		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi senpai told me! I'm your neighbor, Motoyama Kurumi!},
+		{"type":"dialogue","character":"Mana","text":"What? Raichi senpai…?"},
+		{"type":"dialogue","character":"Kurumi","text":"Was it just me, or is she blushing? (´• ω •`) ♡ She has a cute side!"}
 	],
 	"links":[
-		10
+		11
 	]
 }

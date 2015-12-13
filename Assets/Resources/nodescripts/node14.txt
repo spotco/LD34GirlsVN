@@ -1,0 +1,16 @@
+{
+	"id":14,
+	"title":"Pass and Go Home",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"It’s only my first day, and I’m pretty tired… I should go home and rest."},
+		{"type":"dialogue","character":"Raichi","text":"Sure, take care. Let me know if you need anything."}
+
+	],
+	"links":[
+		14, 15
+	]
+}

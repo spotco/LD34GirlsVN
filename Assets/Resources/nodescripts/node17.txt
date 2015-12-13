@@ -1,0 +1,13 @@
+{
+	"id":17
+	"title":"Go Home",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue","text":"What a crazy day. But at least I’m home now. (-_-)"},
+	],
+	"links":[
+		18, 19, 21
+	]
+}
