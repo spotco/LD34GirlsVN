@@ -1,0 +1,16 @@
+{
+	"id":20,
+	"title":"Go to Sleep",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"What a day. Time to finally rest. (x . x) ~~zzZ"}
+		{"type":"dialogue","text":"*BANG* *CRASH"}
+		{"type":"dialogue","text":"WHAAA!!!??〣( ºΔº )〣"}
+	],
+	"links":[
+		22, 23
+	]
+}

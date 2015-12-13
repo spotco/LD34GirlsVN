@@ -10,6 +10,6 @@
 		{"type":"dialogue","character":"Kurumi","text":" I’ll hold on to it. Thanks though."}
 	],
 	"links":[
-		2
+		9
 	]
 }

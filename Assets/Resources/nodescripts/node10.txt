@@ -8,7 +8,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":" Hey! Ichijou san!!!"},
 		{"type":"dialogue","character":"Mana","text":"What!? Who are… how did you know my name?"},
-		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi senpai told me! I'm your neighbor, Motoyama Kurumi!"},
+		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi senpai told me! I sit next to you, I'm Motoyama Kurumi!"},
 		{"type":"dialogue","character":"Mana","text":"What? Raichi senpai…?"},
 		{"type":"dialogue","character":"Kurumi","text":"Was it just me, or is she blushing? (´• ω •`) ♡ She has a cute side!"}
 	],
