@@ -19,6 +19,25 @@ public class GameMain : MonoBehaviour {
 	public Modal _active_modal;
 	private List<Modal> _all_modals;
 	
+	/*
+	TODO:
+	movecharacter
+	
+	inventory ui
+	additem
+	removeitem
+	locked nodes system
+	
+	hidecharacter
+	
+	affinity system + ui
+	add affinity
+	
+	background transitions
+	
+	(final art)
+	*/
+	
 	public void Start () {
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal };
 		_controls = ControlManager.cons();
