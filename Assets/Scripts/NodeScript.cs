@@ -44,7 +44,9 @@ public class NodeScript {
 			} else if (type == "dialogue") {
 				itr_neu = new NodeScriptEvent_Dialogue() {
 					_character = itr.GetString("character"),
-					_text = itr.GetString("text") 
+					_text = itr.GetString("text"),
+					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber("xpos")) : 0,
+					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber("ypos")) : -130
 				};
 			
 			} else if (type == "transitioncharacter") {

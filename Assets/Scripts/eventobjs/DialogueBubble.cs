@@ -22,7 +22,10 @@ public class DialogueBubble : MonoBehaviour {
 	public Mode _current_mode;
 	private float _anim_t;
 	
+	public NodeScriptEvent_Dialogue _script;
+	
 	public void i_initialize(NodeScriptEvent_Dialogue dialogue) {
+		_script = dialogue;
 		_name_text.text = dialogue._character;
 		_primary_text.load(dialogue._text);
 		_current_mode = Mode.FadeIn;
@@ -30,6 +33,7 @@ public class DialogueBubble : MonoBehaviour {
 		_anim_t = 0;
 		_canvas_group.alpha = 0;
 		this.transform.localScale = SPUtil.valv(1.2f);
+		this.transform.localPosition = new Vector2(dialogue._xpos,dialogue._ypos);
 		
 	}
 	

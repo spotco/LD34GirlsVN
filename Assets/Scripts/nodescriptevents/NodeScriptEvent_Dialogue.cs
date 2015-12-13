@@ -4,6 +4,7 @@ using System.Collections;
 public class NodeScriptEvent_Dialogue : NodeScriptEvent {
 	public string _character;
 	public string _text;
+	public float _xpos, _ypos;
 	
 	private bool _added_bubble;
 	private DialogueBubble _tar_bubble;

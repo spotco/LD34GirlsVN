@@ -61,6 +61,10 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			if (itr._current_mode == DialogueBubble.Mode.DoRemove) {
 				GameObject.Destroy(itr.gameObject);
 				_dialogue_bubbles.RemoveAt(i);
+			} else if (itr._current_mode == DialogueBubble.Mode.TextIn) {
+				if (_name_to_character.ContainsKey(itr._script._character)) {
+					_name_to_character[itr._script._character].notify_talking();
+				}
 			}
 		}
 	

@@ -17,7 +17,7 @@ public class ScrollText : MonoBehaviour {
 		_words = words;
 	}
 	
-	int _chars_per_tick = 3;
+	int _chars_per_tick = 5;
 	public void i_update() {
 		if (_text == null) return;
 		_ct++;
