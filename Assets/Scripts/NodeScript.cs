@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+public abstract class NodeScriptEvent {
+	public virtual void i_initialize(GameMain game, EventModal modal) {}
+	public virtual void i_update(GameMain game, EventModal modal) {}
+}
+
 public class NodeScript {
 	
 	public int _id;
@@ -31,6 +36,7 @@ public class NodeScript {
 			if (type == "showcharacter") {
 				itr_neu = new NodeScriptEvent_ShowCharacter() {
 					_character = itr.GetString("character"),
+					_image = itr.GetString("image"),
 					_xpos = (float) itr.GetNumber("xpos"),
 					_xscale = (float) itr.GetNumber("xscale")
 				};
@@ -38,7 +44,9 @@ public class NodeScript {
 			} else if (type == "dialogue") {
 				itr_neu = new NodeScriptEvent_Dialogue() {
 					_character = itr.GetString("character"),
-					_text = itr.GetString("text") 
+					_text = itr.GetString("text"),
+					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber("xpos")) : 0,
+					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber("ypos")) : -130
 				};
 			
 			} else if (type == "transitioncharacter") {
@@ -84,39 +92,4 @@ public class NodeScript {
 		
 		return this;
 	}
-}
-
-public abstract class NodeScriptEvent {}
-
-public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
-	public string _character;
-	public float _xpos;
-	public float _xscale;
-}
-
-public class NodeScriptEvent_Dialogue : NodeScriptEvent {
-	public string _character;
-	public string _text;
-}
-
-public class NodeScriptEvent_TransitionCharacter : NodeScriptEvent {
-	public string _character;
-	public string _to;
-}
-
-public class NodeScriptEvent_MoveCharacter : NodeScriptEvent {
-	public string _character;
-	public float _xto;
-}
-
-public class NodeScriptEvent_AddItem : NodeScriptEvent {
-	public string _item;
-}
-
-public class NodeScriptEvent_RemoveItem : NodeScriptEvent {
-	public string _item;
-}
-
-public class NodeScriptEvent_HideCharacter : NodeScriptEvent {
-	public string _character;
 }

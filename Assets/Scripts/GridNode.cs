@@ -94,7 +94,7 @@ public class GridNode : MonoBehaviour {
 		); 
 	}
 	
-	public void i_update(GridNavModal grid_nav) {
+	public void i_update(GameMain game, GridNavModal grid_nav) {
 		GridNode tar_selected = grid_nav.get_selection_list()[grid_nav._selected_node_cursor_index];
 		foreach (int itr_id in _id_to_line.Keys) {
 			if (grid_nav._current_node != this) {
@@ -110,6 +110,7 @@ public class GridNode : MonoBehaviour {
 		
 		if (grid_nav._current_node == this && !_visited) {
 			_visited = true;
+			game.start_event_modal(_node_script);
 		}
 		
 		float tar_scale = 1;

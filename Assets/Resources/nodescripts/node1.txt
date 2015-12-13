@@ -5,6 +5,7 @@
 	"music":"",
 	"requirementitem":[],
 	"event":[
+
 		{"type":"showcharacter","character":"teacher","xpos":"-247","xscale":"1"},
 		{"type":"dialogue","character":"teacher","text":"Attention, class, we have a transfer student!"}
 	], "event":[
