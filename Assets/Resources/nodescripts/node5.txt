@@ -6,7 +6,8 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Wow wow, are these photos of Ichijou san in cosplay? They’re really cute! (´｡• ω •｡`) <3"}
+		{"type":"dialogue","character":"Kurumi","text":"Wow wow, are these photos of Ichijou san in cosplay? They’re really cute! (´｡• ω •｡`) ♡"},
+		{"type":"addaffinity"}
 	],
 	"links":[
 		3
