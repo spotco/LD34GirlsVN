@@ -1,35 +1,49 @@
 {
 	"id":16,
-	"title":"Invite Mana",
-	"background":"bg_school_hallway",
+	"title":"Going Home",
+	"background":"bg_road",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Ichijou san, wanna come with? It’ll be fun!"},
-		{"type":"addaffinity"},
-		{"type":"dialogue","character":"Mana","text":"...Fun? Well..."},
-		{"type":"dialogue","character":"Kurumi","text":" Please! I’ll be nervous with just Senpai!"},
-		{"type":"dialogue","character":"Senpai","text":"Haha, don’t worry, Kurumi chan, nothing bad will happen!"},
-		{"type":"dialogue","character":"Mana","text":"... hmph. Fine. I’ll go."},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I run and I run, away from all of that crazy stuff.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"changebackground","background":"bg_road"},
+		{"type":"dialogue","character":"Kurumi","text":"*Huff*...*Pant*...Where...am I?"},
+		{"type":"dialogue","text":"Unfortunately, now I'm lost.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However in the crowd I see a familiar face. It's Raichi!","xpos":0,"ypos":0},
 
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi-chan! I see you made it out. I'm glad you're safe."},
+		{"type":"dialogue","character":"Kurumi","text":"Umm...so can you PLEASE explain to me what's going on?"},
 
-		{"type":"dialogue","text":"This city is what I’ve seen in the news and dramas, but to be in it real life… it’s totally different!!!!!!! ＼(>▽<)／ Am I...perhaps cool city girl!?!??!"},
-		{"type":"dialogue","text":"As I enjoy the cityscape, suddenly, there are giant monsters!"},
-		{"type":"dialogue","character":"Senpai","text":"Kurumi chan! Get out! It's dangerous!"},
-		{"type":"dialogue","text":"And there was a super hero in front of me, armored, so cool..."},
-		{"type":"dialogue","character":"??","text":"RUN! Motoyama san!"},
-		{"type":"dialogue","character":"Kurumi","text":"How did she know my name… KYA!!!!"},
-		{"type":"dialogue","text":"A giant monster is right in front of me. The hero picks me up -- things are going by so fast."},
-		{"type":"dialogue","text":"And I knew… it was her. The mysterious girl who sat next to me. She is her."},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"As he helps me find my way back home, he explains.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Senpai","text":"Are you okay?"},
-		{"type":"dialogue","character":"Kurumi","text":"..What? Did I pass out? Where’s the -- hero --"},
-		{"type":"dialogue","character":"Senpai","text":"Let’s go home. I hope you’re feeling all right. Monster attacks are very dangerous."},
-		{"type":"dialogue","character":"Kurumi","text":" She saved me…"},
-		{"type":"dialogue","character":"Senpai","text":" It’s their job, to be possessing such powers, to protect innocent bystanders like you."}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"changebackground","background":"bg_road"},
+
+		{"type":"dialogue","character":"Kurumi","text":"I see...so monsters have been attacking the city for months now?"},
+		{"type":"dialogue","character":"Raichi","text":"Exactly. And there's a hero in this city that always shows up and defeats them."},
+
+		{"type":"dialogue","character":"Kurumi","text":"Is this kind of thing normal in the city?"},
+		{"type":"dialogue","character":"Raichi","text":"It's already happened in a few cities throughout Japan..."},
+
+		{"type":"dialogue","text":"He stops. We're in front of my house.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"...I'd like to find this hero. It'd be so very...interesting."},
+		{"type":"dialogue","character":"Kurumi","text":"Umm...Kashiwagi-San? This is my house. Thank you for helping me find my way."},
+		{"type":"dialogue","text":"He looks deep in though. However, he snaps out of it and responds.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Ah, yes. I knew that. Anyway, have a good night Mrs. Motoyama."},
+		{"type":"dialogue","character":"Raichi","text":"And please do your best to be at school tomorrow."},
+
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"He leaves and I head inside.","xpos":0,"ypos":0}
 	],
 	"links":[
-		17
 	]
 }

@@ -1,0 +1,37 @@
+{
+	"id":115,
+	"title":"Help the Hero!",
+	"background":"bg_city",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue","text":"Without even thinking about it, I run to where the hero fell to help her.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Are you okay?"},
+		{"type":"dialogue","text":"Now that I thought about it, this probably wasn't the smartest thing I'd ever done.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I mean, what could I do?","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":170,"xscale":1},
+		{"type":"dialogue","character":"Pink Hair","text":"Mmmph...That really hurt!"},
+		{"type":"dialogue","text":"She gets up, rubbing her shoulder.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That last attack knocked her from the sky and she's still alright? Just who was this?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She then notices me, and grins.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That grin looks familiar.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Oh hey, it's you! Alright, you wanna see something cool?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_city_monster"},
+		{"type":"dialogue","text":"She turns and faces the monster.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Now you got me REALLY angry. I've been saving my special attack."},
+		{"type":"dialogue","text":"She leaps into the air, directly at it.","xpos":0,"ypos":0},
+		{"type":"movecharacter","character":"Pink Hair","xto":-1000},
+		{"type":"dialogue","character":"Pink Hair","text":"Pretty Pink Magical Sword...BUSTER!!!"},
+		{"type":"dialogue","text":"A blinding pink light fills the sky.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"It was at this point I decided to run.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As fast as I could before I got killed by some giant monster...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...pink lasers or any of this other crazy stuff.","xpos":0,"ypos":0},
+		{"type":"addaffinity"}
+	],
+	"links":[
+		16
+	]
+}

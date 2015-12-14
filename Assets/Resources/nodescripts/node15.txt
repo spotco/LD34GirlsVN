@@ -1,6 +1,6 @@
 {
 	"id":15,
-	"title":"An Unexpected Hero",
+	"title":"A Hero Arrives",
 	"background":"bg_city",
 	"music":"",
 	"requirementitem":[],
@@ -38,11 +38,12 @@
 		{"type":"changebackground","background":"bg_city_monster"},
 
 		{"type":"dialogue","text":"Above in the skies I see streaks of light shooting across the skies, the hero's still fighting.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Suddenly, with a swipe of its claw, the monster knocks the hero to the ground not far from where I am.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Suddenly, with a swipe of its claw, the monster knocks the hero to the ground close to me.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Ohmygosh...is she alright? What should I do?"}
 	],
 	"links":[
+		115,116
 	]
 }
