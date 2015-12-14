@@ -27,7 +27,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			GameObject itr = _grid_map_anchor.GetChild(i).gameObject;
 			if (itr.GetComponent<GridNode>() != null) {
 				GridNode itr_gridnode = itr.GetComponent<GridNode>();
-				itr_gridnode.i_initialize();
+				itr_gridnode.i_initialize(game,this);
 				if (!_id_to_gridnode.ContainsKey(itr_gridnode._node_script._id)) {
 					_id_to_gridnode[itr_gridnode._node_script._id] = itr_gridnode;
 				}
@@ -50,6 +50,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	public void i_update(GameMain game) {
+		if (game._popups.has_active_popup()) return;
 		_inventory_overlay.i_update(game,this);
 	
 		List<GridNode> selection_list = this.get_selection_list();
@@ -81,7 +82,30 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			_selected_node_cursor_index = (_selected_node_cursor_index + 1) % selection_list.Count;
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
-			this.set_current_node(selection_list[_selected_node_cursor_index]);
+			GridNode selected_node = selection_list[_selected_node_cursor_index];
+			if (selected_node._is_locked) {
+				bool can_unlock = true;
+				for (int i = 0; i < selected_node._node_script._requirement_items.Count; i++) {
+					string itr = selected_node._node_script._requirement_items[i];
+					if (!game._inventory._items.Contains(itr)) {
+						can_unlock = false;
+					}
+				}
+				if (can_unlock) {
+					for (int i = 0; i < selected_node._node_script._requirement_items.Count; i++) {
+						string itr = selected_node._node_script._requirement_items[i];
+						game._inventory.remove_item(itr);
+					}
+					selected_node._is_locked = false;
+					this.set_current_node(selected_node);
+					
+				} else {
+					game._popups.add_popup("Locked!");
+				}
+				
+			} else {
+				this.set_current_node(selected_node);
+			}
 		}
 		
 		foreach (int id in _id_to_gridnode.Keys) {
@@ -106,7 +130,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			game.start_event_modal(this._current_node._node_script);
 			return;
 		}
-		
 	}
 	
 	private static int cond_select_with_filter(GridNode current, List<GridNode> list, System.Func<GridNode,GridNode,float> filter) {

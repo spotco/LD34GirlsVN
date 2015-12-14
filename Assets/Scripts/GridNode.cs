@@ -17,6 +17,10 @@ public class GridNode : MonoBehaviour {
 	[SerializeField] private Image _line_proto;
 	public NodeScript _node_script = new NodeScript();
 	
+	[SerializeField] private Image _lock_icon;
+	[SerializeField] private Image _lock_item_icon;
+	public bool _is_locked;
+	
 	private Dictionary<int,GridNode.Line> _id_to_line = new Dictionary<int, GridNode.Line>();
 	
 	private Sprite img_current;
@@ -30,7 +34,7 @@ public class GridNode : MonoBehaviour {
 	
 	private static Font __cached_font;
 	
-	public void i_initialize() {
+	public void i_initialize(GameMain game, GridNavModal grid_nav) {
 		_node_script.i_initialize(_node_script_text);
 		
 		if (__cached_font == null) {
@@ -47,6 +51,13 @@ public class GridNode : MonoBehaviour {
 		
 		this.gameObject.name = SPUtil.sprintf("Node (%d)",_node_script._id);
 		_title_ui_text.text = _node_script._title;
+		
+		_lock_icon.gameObject.SetActive(false);
+		_lock_item_icon.gameObject.SetActive(false);
+		_is_locked = _node_script._requirement_items.Count > 0;
+		if (_is_locked) {
+			_lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
+		}
 		
 		_visited = false;
 	}
@@ -158,6 +169,16 @@ public class GridNode : MonoBehaviour {
 			
 		}
 		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
+		
+		if (_is_locked) {
+			_lock_icon.gameObject.SetActive(true);
+			_lock_item_icon.gameObject.SetActive(true);
+			_title_ui_text.gameObject.SetActive(false);
+		} else {
+			_lock_icon.gameObject.SetActive(false);
+			_lock_item_icon.gameObject.SetActive(false);
+			_title_ui_text.gameObject.SetActive(true);
+		}
 	}
 	
 	

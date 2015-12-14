@@ -24,11 +24,8 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	popup system
 	locked nodes system
-	
 	hidecharacter action
-	
 	affinity system + ui
 	add affinity
 	
