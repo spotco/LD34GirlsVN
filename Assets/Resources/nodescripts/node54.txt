@@ -1,0 +1,29 @@
+{
+	"id":54,
+	"title":"Fireworks",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","text":"When the bright light was gone, so was Kashiwagi senpai."},
+		
+		{"type":"dialogue","character":"Mana","text":"..I feel… different."},
+		{"type":"dialogue","character":"Kurumi","text":"I feel it too."},
+		{"type":"dialogue","character":"Mana","text":"Raichi senpai? Where is he?"},
+		{"type":"dialogue","character":"Kurumi","text":"You beat the monster! The Senpai Monster!"},
+		{"type":"dialogue","character":"Mana","text":"We beat him.Together."},
+		{"type":"dialogue","character":"Kurumi","text":"Mana chan…"},
+		{"type":"dialogue","character":"Mana","text":" But… I’m no longer magical. I feel.. normal. Like before my parents died."},
+		{"type":"dialogue","character":"Kurumi","text":"Mana chan, it’s okay. Look, there’s fireworks. If you cry that much, you can’t see them."},
+		{"type":"dialogue","character":"Mana","text":"Yeah... Fireworks..."},
+
+		{"type":"dialogue","text":"We never saw Kashiwagi senpai again. Don't worry, Mana chan is over him."},
+		{"type":"dialogue","text":"She's no longer a hero, but she has me to help get used to the normal life. ☆⌒(ゝ。∂)"}
+
+
+	],
+	"links":[]
+}

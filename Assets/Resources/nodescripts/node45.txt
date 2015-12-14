@@ -1,0 +1,22 @@
+{
+	"id":45,
+	"title":"Lie",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["fan video"],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Kurumi","text":" Huh? What? What are you talking about?"},
+		{"type":"dialogue","character":"Senpai","text":"The hero. In this video. Treat this seriously."},
+		{"type":"dialogue","character":"Kurumi","text":"I… I don’t know. I mean I think it’s cool..."},
+		{"type":"dialogue","character":"Kurumi","text":"Like.. that.. that there’s someone out there protecting all of us."},
+		{"type":"dialogue","character":"Kurumi","text":" She -- whoever that is, must be really awesome! Of course, I don’t know…"},
+
+		{"type":"dialogue","text":"I am extremely bad at lying. 。゜゜(´Ｏ｀)°゜。"},
+
+		{"type":"dialogue","character":"Senpai","text":" That’s enough. Thanks for your time."}
+	],
+	"links":[46]
+}

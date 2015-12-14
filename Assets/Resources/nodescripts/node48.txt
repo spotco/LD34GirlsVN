@@ -1,0 +1,21 @@
+{
+	"id":48,
+	"title":"Express Skepticism",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["fan video"],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"I guess it’s just.. he’s been asking questions about you lately.. "},
+		{"type":"dialogue","character":"Kurumi","text":"And I’m worried that he might be, I don’t know, evil or something. "},
+		{"type":"dialogue","character":"Mana", "text":"Oh come on. It’s probably for this he wanted to know!"},
+		{"type":"dialogue","character":"Mana","text":"He’s been wanting to ask me out and wanted to make sure that I’m as cool as I seem!"},
+		{"type":"dialogue","character":"Kurumi","text":" Yeah, okay. Just want to make sure you're safe."},
+		{"type":"dialogue","character":"Kurumi","text":"Just call me up if you need anything."},
+		{"type":"dialogue","character":"Mana","text":"Yeah, let’s pick out yukatas together! You're coming too!"},
+		{"type":"addaffinity"}
+	],
+	"links":[48, 49]
+}

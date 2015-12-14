@@ -1,0 +1,15 @@
+{
+	"id":41,
+	"title":"Get down to HW",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","text":"I learned that Mana chan doesn’t really like studying."},
+		{"type":"dialogue","text":"So glad to be able to help her with her studies and her apartment! ☆⌒(ゝ。∂)"}
+	],
+	"links":[42]
+}

@@ -1,0 +1,21 @@
+{
+	"id":43,
+	"title":"Tell him the truth",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["fan video"],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Kurumi","text":"Yeah, of course i know. I stand next to her every day and do the bestest to support her."},
+		{"type":"dialogue","character":"Senpai","text":"So, it is her. Ichijou Mana."},
+		{"type":"dialogue","character":"Kurumi","text":"She’s so cool, Senpai, you should know."},
+		{"type":"dialogue","character":"Kurumi","text":"She can be self-absorbed about her job sometimes but she’s protecting all of us."},
+		{"type":"dialogue","character":"Kurumi","text":"It’s amazing. Don’t you think she’s really cool?"},
+		{"type":"dialogue","character":"Senpai","text":"Yes. Very cool."},
+
+		{"type":"dialogue","text":"The way he agreed with me feels very wrong. He walks away, leaving me uneasy."}
+	],
+	"links":[46]
+}

@@ -1,0 +1,37 @@
+{
+	"id":53,
+	"title":"Hang around",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"Okay, I'm gonna go now. Maybe we can catch the fireworks later together!"},
+		{"type":"dialogue","character":"Kurumi","text":"Okay, later..."},
+
+		{"type":"dialogue","text":"I wander around. The lanterns are so bright, the people so noisy."},
+		{"type":"dialogue","text":"Every day has been so exciting since I came to this city. I’ve been danger many times."},
+		{"type":"dialogue","text":"Sometimes I thought I would die. But Mana chan would always save me."},
+		{"type":"dialogue","text":"And now the guy who she liked asked her on a date. He’s perfect. Smart, responsible, and strong."},
+		{"type":"dialogue","text":"I'm nothing compared to him. I'm nothing, period. Would she even need me anymore?"},
+
+		{"type":"dialogue","character":"??","text":"KYAAAAAAAAAAAAAAA!!!!"},
+
+		{"type":"dialogue","text":"Where is it coming from? Am I hearing things? Why are there so many people? Why are the lanterns so bright?"},
+		{"type":"dialogue","text":"I run, dragging my clumsy legs under the yukata, following the painful voice."},
+		{"type":"dialogue","text":"I know who it is. Under the blur of my consciousness, I can feel my friend in pain."},
+
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","text":"It's Mana chan, and Senpai?"},
+		{"type":"dialogue","character":"Mana","text":"No! Kuru, you can't come near!"},
+		{"type":"dialogue","text":"What? What can she do? She’s powerless. I have no powers to steal from her."},
+		{"type":"dialogue","text":"In fact, I can kill her right now, with my mind."},
+		{"type":"dialogue","text":"I feel weak. I've been always weak, but all of me is being sapped."},
+		{"type":"dialogue","character":"Mana","text":"I will not allow this to happen! Super.. Mana...Magi Knight.. Manaka Transform!"},
+		{"type":"dialogue","text":"A bright light. Warmth. My friend."}
+	],
+	"links":[55]
+}
