@@ -63,7 +63,7 @@
 		{"type":"changebackground","background":"bg_school_classroom"},
 
 		{"type":"dialogue","character":"Teacher","text":"...The Takeda army was about to deliver the final blow against the Oda.","xpos":-31,"ypos":94},
-		{"type":"dialogue","character":"Teacher","text":"Mrs. Motoyama, can you please read from here?","xpos":-31,"ypos":94},
+		{"type":"dialogue","character":"Teacher","text":"Ms. Motoyama, can you please read from here?","xpos":-31,"ypos":94},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-370,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"...","xpos":-17,"ypos":-100},
