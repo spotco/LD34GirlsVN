@@ -12,12 +12,26 @@
 		
 		{"type":"dialogue","text":"She's turns around, completely startled.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"What!? Who are...how did you know my name?"},
+		{"type":"dialogue","character":"Mana","text":"What!? Who are...how did you know my name?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi-senpai told me! I sit next to you, I'm Kurumi Motoyama! I just transfered here!"},
-		{"type":"dialogue","character":"Mana","text":"Kurumi? I think I remember you...and you said Kashiwagi...Raichi..."},
+		{"type":"dialogue","character":"Mana","text":"Kurumi? I think I remember you...and you said Kashiwagi...Raichi...","xpos":22,"ypos":53},
 
 		{"type":"dialogue","text":"Is it me, or is she blushing?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She has a cute side!           (´• ω •`) ♡","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"She has a cute side!           (´• ω •`) ♡","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Can't let that distract me though. Gotta get serious.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"So...why do you keep skipping class? You know all the teachers are concerned."},
+		{"type":"dialogue","character":"Mana","text":"Skipping class? Now that's none of your--","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"Nobody is going to skip class around me. I AM gonna turn her around!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Now listen, as your desk-neighbor I'm duty bound to be concerned for you as a friend..."},
+		{"type":"dialogue","character":"Mana","text":"Wait, what?! I didn't ask to be--","xpos":22,"ypos":53},
+		
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"We ended up chatting all afternoon.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She showed me all her favorite places around town, it was great.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And so we both skipped school. Oops.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_city"}
 	],
 	"links":[
 		
