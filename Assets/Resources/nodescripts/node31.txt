@@ -1,0 +1,16 @@
+{
+	"id":31,
+	"title":"Talk with camera crew",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue", "text":"The camera crew is composed of 8 maniac looking fans."},
+		{"type":"showcharacter","character":"Crew","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Simone","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Crew","text":"We love you, Simone sama!!!! So kawaii!"}
+	],
+	"links":[
+		32
+	]
+}
