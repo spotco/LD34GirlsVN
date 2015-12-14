@@ -1,23 +1,26 @@
 {
 	"id":24,
-	"title":"Turn on Light",
-	"background":"bg_school_hallway",
+	"title":"What ARE you doing here?",
+	"background":"bg_apartment",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"Ichijou san?!"},
-		{"type":"dialogue","character":"Mana","text":"Yeah, it’s me. Now. I know you saw me in action there."},
-		{"type":"dialogue","character":"Kurumi","text":"Yeah… So it wasn’t just cosplay?"},
-		{"type":"dialogue","character":"Mana","text":"No, not just cosplay, that’s for sure. I’m actually one of the Mahou Kishi, Magical Knights"},
-		{"type":"dialogue","character":"Mana","text":"and I’m responsible of protecting this city from evil as Mana Magi Knight Manaka."},
-		{"type":"dialogue","character":"Kurumi","text":" So… you’re the hero that has been rescuing people from this district during the Monster Attacks?"},
-		{"type":"dialogue","character":"Mana","text":"You saw the monsters. This city is not like the world you know, and I don’t want you to get involved."},
-		{"type":"dialogue","character":"Mana","text":"*STOMACH GROWLS*"}
+		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked, you know."},
+		{"type":"dialogue","character":"Mana","text":"I just wanted to make sure this was the place."},
+
+		{"type":"dialogue","text":"Well this is a little awkward."},
+
+		{"type":"dialogue","character":"Mana","text":"Okay listen. You said you wanted to be friends, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"Well, yeah. We DO sit next to each other now."},
+		{"type":"dialogue","character":"Mana","text":"And what if I said I had a REALLY CRAZY secret that I gotta tell?"},
+		{"type":"dialogue","character":"Kurumi","text":"I..."},
+		{"type":"dialogue","text":"I don't think I'm in any position to refuse here..."}
 	],
 	"links":[
-		25
+		25, 125
 	]
 }

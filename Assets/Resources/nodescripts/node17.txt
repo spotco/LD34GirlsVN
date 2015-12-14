@@ -1,13 +1,23 @@
 {
 	"id":17,
-	"title":"Go Home",
-	"background":"bg_school_hallway",
+	"title":"Home Sweet Home",
+	"background":"bg_apartment",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"What a crazy day. But at least I’m home now. (-_-)"}
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"What a crazy day. But I'm finally home."},
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"I find a note from my parents saying they'll be home late."},
+		{"type":"dialogue","character":"Kurumi","text":"I hope they weren't caught up in the monster attack as well..."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I turn on the TV to the news."},
+		{"type":"dialogue","text":"Monster attack, fifth one this year. Everyone seems pretty nonchalant about it."},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Doesn't seem like too big of a deal..."}
 	],
 	"links":[
-		18, 19, 21
+		19, 20
 	]
 }

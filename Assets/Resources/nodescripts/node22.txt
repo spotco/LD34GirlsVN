@@ -1,13 +1,18 @@
 {
 	"id":22,
-	"title":"Scream For Help",
-	"background":"bg_school_hallway",
+	"title":"Scream for Help",
+	"background":"bg_apartment_night",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":" Kyaaaaaa!!!! Call the Police! It’s an Intruder!!!"},
-		{"type":"dialogue","text":"Hopeless… I know, my parents aren’t even home…〣( ºΔº )〣"}
+		{"type":"dialogue","text":"An intruder? They must be here to steal our stuff...or worse!"},
+		{"type":"dialogue","text":"As I'm about scream, the intruder notices, turns around and bumps into the light."},
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"It's Mana, from my class!"},
+		{"type":"dialogue","character":"Kurumi","text":"Mana?! What are you doing here?"},
+		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place."}
 	],
 	"links":[
 		24

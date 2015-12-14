@@ -21,6 +21,5 @@
 		{"type":"dialogue","text":"It’s been a crazy few weeks, not getting a whole lot of sleep."}
 	],
 	"links":[
-		27
 	]
 }

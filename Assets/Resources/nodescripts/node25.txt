@@ -1,30 +1,33 @@
 {
 	"id":25,
-	"title":"Offer her Curry",
-	"background":"bg_school_hallway",
+	"title":"Late Night Snack",
+	"background":"bg_apartment",
 	"music":"",
-	"requirementitem":["curry"],
+	"requirementitem":["leftovers"],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"Haha, today’s been a long day for you too, huh."},
-		{"type":"dialogue","character":"Kurumi","text":"I have some leftover curry if you want."},
-		{"type":"dialogue","character":"Mana","text":"That would be much appreciated."},
-		{"type":"dialogue","character":"Mana","text":"And it's very important that this is a secret."},
-		{"type":"dialogue","character":"Kurumi","text":"I’m sorta bad at keeping secrets."},
-		{"type":"dialogue","character":"Mana","text":"This is very important. For your safety, mine, and the city's."},
-		{"type":"dialogue","character":"Kurumi","text":"Okay, I'll do my best! It'll be our big secret."},
-		{"type":"dialogue","character":"Mana","text":"Um.. yeah, and you should keep away from me. After all, I'll only get you in danger."},
-		{"type":"dialogue","character":"Kurumi","text":"Nooo that would be boring! This is so cool... and it would be awesome if..."},
-		{"type":"dialogue","character":"Kurumi","..if we could keep hanging out. Together, you know?"},
-		{"type":"dialogue","character":"Mana","text":"You mean... you want to be... friends? With me?"},
-		{"type":"dialogue","character":"Kurumi","text":"Yeah, friends! Can I call you Mana chan?"},
-		{"type":"dialogue","character":"Mana","text":"Friends...?"},
-		{"type":"dialogue","character":"Kurumi","text": "Mana chan, are you crying?"},
-		{"type":"dialogue","character":"Mana","text":"No, not crying. I’m the Mana Magi Knight Manaka. I don’t cry."}
+		{"type":"dialogue","character":"Mana","text":"Alright, random question but...would you happen to have any snacks or anything?"},
+		{"type":"dialogue","character":"Mana","text":"I haven't eaten since...well, that pastry we got together. I'm starving!"},
+
+		{"type":"dialogue","text":"That was unexpected."},
+		{"type":"dialogue","character":"Kurumi","text":"Well, I do have some leftovers in the fridge. I'll heat them up."},
+		{"type":"dialogue","character":"Mana","text":"Oh, spot on! Hook me up."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"I grab the leftovers and pop them in the microwave."},
+		{"type":"removeitem","item":"leftovers"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Now listen, this secret? It's going to Blow. Your. Mind."},
+		{"type":"dialogue","character":"Mana","text":"By the way, is this a little weird or anything, sneaking into your house and all?"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"A little bit."}
 	],
 	"links":[
-		26
+		24
 	]
 }

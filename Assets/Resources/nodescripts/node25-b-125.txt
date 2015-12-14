@@ -1,0 +1,78 @@
+{
+	"id":125,
+	"title":"The Secret",
+	"background":"bg_apartment",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"Okay. So. The secret. Ready for this?"},
+		{"type":"dialogue","character":"Kurumi","text":"Ready as I'll ever be."},
+		{"type":"dialogue","character":"Mana","text":"So you've seen those monsters attacking the city. Crazy, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"Well actually I--"},
+		{"type":"dialogue","character":"Mana","text":"I saw you there, I know it. And you saw that heroine in pink, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"Sure."},
+		{"type":"dialogue","character":"Mana","text":"So you'd say she's pretty cool, right? Fighting monsters and being pretty and stuff?"},
+		{"type":"dialogue","character":"Kurumi","text":"Well...if you put it that way."},
+		{"type":"dialogue","character":"Mana","text":"Alright, now let me blow your mind."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Mana steps back, does a twirl and a pink light fills the room."},
+		{"type":"changebackground","background":"bg_apartment"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":170,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Tah-Dah! I bet you never even guessed."},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"So you're her...That was you."},
+		{"type":"dialogue","character":"Mana","text":"Yep! Now listen, I'm Mana Magi-Knight Manaka! Don't wanna get into too many details but..."},
+		{"type":"dialogue","character":"Mana","text":"I've been entrusted with this power to protect the city. It's super cool!"},
+		{"type":"dialogue","character":"Kurumi","text":"Wow...that's..."},
+		{"type":"dialogue","character":"Mana","text":"Now, one last thing..."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"A brief pink light fills the room and Mana transforms back to regular form."},
+		{"type":"changebackground","background":"bg_apartment"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"You gotta keep it a secret, okay?"},
+		{"type":"dialogue","character":"Mana","text":"They told me there's all sorts of bad-guys in the world who wanna cause me harm."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"She grabs my hands."},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-250,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":250,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"So can I trust you?"},
+		{"type":"dialogue","character":"Kurumi","text":"I..."},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"So really just who was this girl? And what's the deal with all this crazy stuff?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But honestly, how could I say no to something like that?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"...I'll keep your secret."},
+
+		{"type":"dialogue","text":"She looks really happy."},
+
+		{"type":"dialogue","character":"Mana","text":"Ohmygosh. I just had to get that off my chest."},
+		{"type":"dialogue","character":"Mana","text":"You're the first one I've told, you know that?"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+
+		{"type":"dialogue","character":"Kurumi","text":"I'm...flattered."},
+		{"type":"dialogue","character":"Mana","text":"Now, you haven't seen anything yet. Let me show you something REALLY cool..."},
+
+		{"type":"dialogue","text":"I don't think I got any sleep that night.","xpos":0,"ypos":0}
+	],
+	"links":[
+		26
+	]
+}

@@ -1,16 +1,31 @@
 {
 	"id":20,
 	"title":"Go to Sleep",
-	"background":"bg_school_hallway",
+	"background":"bg_apartment_night",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"What a day. Time to finally rest. (x . x) ~~zzZ"},
-		{"type":"dialogue","text":"*BANG* *CRASH"},
-		{"type":"dialogue","text":"WHAAA!!!??〣( ºΔº )〣"}
+		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Yaaaaaaaaawwwn..."},
+		{"type":"dialogue","character":"Kurumi","text":"I sure hope not."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+
+		{"type":"dialogue","text":"I fall asleep as soon as I hit the bed."},
+		{"type":"dialogue","text":"..."},
+		{"type":"dialogue","text":"*BANG!* *CRASH!*"},
+		{"type":"changebackground","background":"bg_apartment_night"},
+		{"type":"dialogue","text":"I'm suddenly awoken by a noise from downstairs."},
+
+		
+
+		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--"},
+		{"type":"dialogue","text":"I hear a voice downstairs. The lights are still all off, who could it be?"},
+
+		{"type":"dialogue","text":"I sneak downstairs in the dark and see someone move around. What should I do?"}
 	],
 	"links":[
-		22, 23
+		22,23
 	]
 }

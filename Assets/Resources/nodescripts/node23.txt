@@ -1,15 +1,34 @@
 {
 	"id":23,
-	"title":"Grab Pillow and Fight",
-	"background":"bg_school_hallway",
+	"title":"Grab Something And Throw It!",
+	"background":"bg_apartment_night",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		
-		{"type":"dialogue","text":"I grab the nearest thing to me, my pillow, and throw it without thinking anything."},
-		{"type":"dialogue","character":"???","text":"Argh… take this!"},
-		{"type":"dialogue","character":"Kurumi","text":"Kyaa! What are you doing! Don’t throw my pillow at me!"},
+		{"type":"dialogue","text":"I'm not scared...Not in the slightest!"},
+		{"type":"dialogue","text":"I grab the closest thing to me, which happens to be a pillow, and throw it."},
+		{"type":"dialogue","character":"Voice","text":"Ooof! Hey, don't hit me!"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Bullseye, right in the face!"},
+
+		{"type":"dialogue","text":"The intruder grabs this pillow and throws it right back."},
+		{"type":"dialogue","character":"Voice","text":"Take that!"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+
+		{"type":"dialogue","text":"We start throwing things at each other. It's dark, so I'm throwing whatever I can grab."},
+		{"type":"dialogue","text":"I suddenly bump into the light and it turns on."},
+
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"It's Mana, from my class!"},
+		{"type":"dialogue","character":"Kurumi","text":"Mana?! What are you doing here?"},
+		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place."},
+
+		{"type":"dialogue","text":"The room's a complete mess."},
 		{"type":"addaffinity"}
 	],
 	"links":[
