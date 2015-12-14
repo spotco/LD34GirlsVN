@@ -80,6 +80,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"The rest of the class went by uneventfully. The girl with the pink hair never did come back.","xpos":-36,"ypos":-25},
 		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"playSFX", "sfx":"school_bell"},
 		{"type":"dialogue","text":"*Ding Dong!*","xpos":-36,"ypos":-25},
 		{"type":"dialogue","text":"The bell's chimes meant class was over.","xpos":-36,"ypos":-25},
 		{"type":"dialogue","text":"Lunchtime, or so it seemed. Students started filing out.","xpos":-36,"ypos":-25},

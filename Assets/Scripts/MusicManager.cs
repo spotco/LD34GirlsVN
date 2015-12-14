@@ -6,6 +6,7 @@ public class MusicManager : MonoBehaviour {
 
 	private AudioClip _sound;
 	[SerializeField] private AudioSource _bg;
+	[SerializeField] private AudioSource _sfx;
 
 	private string _currently_loaded_music = "";
 	private string _target_loaded_music = "";
@@ -32,6 +33,10 @@ public class MusicManager : MonoBehaviour {
 			_cached_background_audio[name] = audio_clip;
 		}
 		return audio_clip;
+	}
+
+	public void play_sfx(string name) {
+		_sfx.PlayOneShot (cond_load_sound_of_name (name), 0.9f);
 	}
 
 	public void load_music(string name) {
