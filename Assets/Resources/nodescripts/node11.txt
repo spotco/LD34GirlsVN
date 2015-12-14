@@ -1,16 +1,41 @@
 {
 	"id":11,
-	"title":"Give Phone to Mana",
-	"background":"bg_school_hallway",
+	"title":"The Pastry Shop",
+	"background":"bg_city",
 	"music":"",
-	"requirementitem":[],
+	"requirementitem":["phone"],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"By the way... I found this phone in the girl's restroom."},
-		{"type":"dialogue","character":"Mana","text":"Thank goodness. I was looking for it all day! I hope you didn't see anything..."},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","text":"As we passed by a local pastry shop, Mana stopped dead in her tracks.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Kurumi. Been here before? You've GOT to try one of these. They're totally the best ever!"},
+		{"type":"dialogue","character":"Kurumi","text":"Hmm...maybe we shouldn't eat to many sweets..."},
+		{"type":"dialogue","character":"Mana","text":"No way. You'll love this. I'll pay, hold on."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"She wasn't kidding though. These were some seriously beautiful pastries.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"changebackground","background":"bg_city"},
+		{"type":"dialogue","character":"Mana","text":"Alright, photo time! Now don't take a bite yet, I've gotta post this to my---"},
+		{"type":"dialogue","character":"Mana","text":"Oh wait...I lost my phone."},
+
+		{"type":"dialogue","text":"She looks seriously bummed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I suddenly remember the phone I found in the bathroom back at school, and fish it out of my bag.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"This wouldn't happen to be yours, would it? Found it back at school."},
+		{"type":"removeitem","item":"phone"},
+		{"type":"dialogue","character":"Mana","text":"O.M.G!!! You are totally a lifesaver!"},
+
+		{"type":"dialogue","text":"She snaps a couple of pictures, then scarfs down the pastry in one bite.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Mana","text":"Mmmmph...I hope...Munch Munch...you didn't see anything...*gulp* too embarassing on it!"},
+		{"type":"dialogue","text":"What could she possibly be talking about?","xpos":0,"ypos":0},
 		{"type":"addaffinity"}
 	],
 	"links":[
-		12
+		10
 	]
 }

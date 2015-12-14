@@ -8,7 +8,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
 
 		{"type":"removeitem","item":"Her Name"},
-		{"type":"dialogue","character":"Kurumi","text":" Heyyyy!! Mana-san!!!"},
+		{"type":"dialogue","character":"Kurumi","text":"Heyyyy!! Mana-san!!!"},
 		
 		{"type":"dialogue","text":"She's turns around, completely startled.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
@@ -24,16 +24,16 @@
 		{"type":"dialogue","text":"Nobody is going to skip class around me. I AM gonna turn her around!","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Now listen, as your desk-neighbor I'm duty bound to be concerned for you as a friend..."},
 		{"type":"dialogue","character":"Mana","text":"Wait, what?! I didn't ask to be--","xpos":22,"ypos":53},
-		
+
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"We ended up chatting all afternoon.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She showed me all her favorite places around town, it was great.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She showed me her favorite tea shops around town, it was great.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And so we both skipped school. Oops.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_city"}
 	],
 	"links":[
-		
+		11,12
 	]
 }

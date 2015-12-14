@@ -9,6 +9,7 @@ public class GameMain : MonoBehaviour {
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
+	public static bool IGNORE_ITEM_REQ = true;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);

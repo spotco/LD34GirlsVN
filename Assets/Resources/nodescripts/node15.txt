@@ -1,15 +1,48 @@
 {
 	"id":15,
-	"title":"Go to the City",
-	"background":"bg_school_hallway",
+	"title":"An Unexpected Hero",
+	"background":"bg_city",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"That would be awesome!!! Maybe cool things will happen again! Also… if you could stop calling me Kurumi chan…(｡・//ε//・｡)"},
-		{"type":"dialogue","text":"Ichijou san looks a little sad. Maybe she wants to go with?"}
+		{"type":"dialogue","text":"I was following Raichi down the street, when suddenly sirens start sounding!","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"An attack?! Not again! Kurumi, we should run."},
+		{"type":"dialogue","character":"Kurumi","text":"Wait, attack? What do you mean by attack---"},
+
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"The ground started shaking as I could hear a noise in the distance.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_monster"},
+
+		{"type":"dialogue","text":"A giant monster, attacking the city?!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Then, suddenly, I was blinded by a streak of pink light in the skies.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},	
+		{"type":"dialogue","character":"Kurumi","text":"Is that...a superhero?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":170,"xscale":1},
+		{"type":"dialogue","text":"A beautiful hero, clad in an over-the-top outfit of purple, started fighting!","xpos":0,"ypos":0},
+		{"type":"movecharacter","character":"Pink Hair","xto":-422},
+		{"type":"dialogue","character":"Kurumi","text":"Wowww...so cool!"},
+		{"type":"dialogue","character":"Raichi","text":"Motoyama-san, it's dangerous to be here! Run!","xpos":204,"ypos":55},
+
+		{"type":"hidecharacter","character":"Pink Hair"},
+		{"type":"changebackground","background":"bg_city"},
+		{"type":"dialogue","text":"I follow his advice and start running.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, in the crowd of fleeing people, I lose sight of Raichi.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_monster"},
+
+		{"type":"dialogue","text":"Above in the skies I see streaks of light shooting across the skies, the hero's still fighting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Suddenly, with a swipe of its claw, the monster knocks the hero to the ground not far from where I am.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Ohmygosh...is she alright? What should I do?"}
 	],
 	"links":[
-		16
 	]
 }

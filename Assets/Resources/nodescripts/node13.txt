@@ -1,20 +1,31 @@
 {
 	"id":13,
-	"title":"Walk Home with Her",
+	"title":"Accept your fate",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I sometimes get so confused, I can’t even find my own house! I’m new, after all! Ha ha ha!"},
-		{"type":"dialogue","character":"Mana","text":"… I go this way now. You’ll be okay?"},
-		{"type":"dialogue","character":"Kurumi","text":"Yeah, laters!"},
-		{"type":"dialogue","text":"She asked me if I’ll be okay. Maybe she's also nice?"},
-		{"type":"dialogue","character":"Senpai","text":"Hello ladies! On your way home?"},
-		{"type":"dialogue","character":"Mana","text":"Raichi senpai?!"},
-		{"type":"dialogue","character":"Raichi","text":"That’s almost your house, right, Mana san? Kurumi chan, want me to give you a tour of the city?"}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-394,"xscale":-1},
+
+		{"type":"dialogue","character":"Kurumi","text":"I'm sorry, Kashiwagi-Senpai. It won't happen again.","xpos":82},
+		{"type":"dialogue","text":"I really did mess up. Skipping school on my first day? What was I thinking?","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"It's fine, but I hope this doesn't become a regular thing.","xpos":82,"ypos":0},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"Mana looks a little dissapointed as she leaves.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Then again, I should probably be dissapointed in myself.","xpos":82,"ypos":0},
+		
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+
+		{"type":"dialogue","text":"I follow him out. The school library's closed, so we go to the local library a few blocks away.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_hallway"}
 	],
 	"links":[
-		14, 15
+		15
 	]
 }

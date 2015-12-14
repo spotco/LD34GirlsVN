@@ -83,7 +83,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 			GridNode selected_node = selection_list[_selected_node_cursor_index];
-			if (selected_node._node_script._affinity_requirement) {
+			
+			if (GameMain.IGNORE_ITEM_REQ) {
+				this.set_current_node(selected_node);
+				
+			} else if (selected_node._node_script._affinity_requirement) {
 				if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
 					this.set_current_node(selected_node);
 				} else {

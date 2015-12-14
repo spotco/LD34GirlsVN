@@ -1,16 +1,43 @@
 {
 	"id":14,
-	"title":"Pass and Go Home",
+	"title":"Drag Mana Along Too!",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"It’s only my first day, and I’m pretty tired… I should go home and rest."},
-		{"type":"dialogue","character":"Raichi","text":"Sure, take care. Let me know if you need anything."}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-394,"xscale":-1},
+
+		{"type":"dialogue","character":"Kurumi","text":"You know, Mana-chan here also missed class today...","xpos":82},
+		{"type":"dialogue","character":"Kurumi","text":"...I'm sure she'll need some tutoring too!","xpos":82},
+		{"type":"dialogue","text":"I slyly nudge her in the elbow. A win for both of us here.","xpos":82,"ypos":0},
+		{"type":"addaffinity"},
+
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
+		{"type":"dialogue","text":"Raichi sighs, but carries on.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Ichijou-san? Well, if you're willing to turn a new leaf I'd be happy to...","xpos":82,"ypos":0},
+
+		{"type":"dialogue","text":"Mana looks completely surprised.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
+		{"type":"movecharacter","character":"Mana","xto":-1000},
+		{"type":"dialogue","character":"Mana","text":"GOTTAGOSOMEWHERESEEYA....!","xpos":82,"ypos":53},
+		{"type":"dialogue","text":"She runs out.","xpos":82,"ypos":0},
+
+		{"type":"dialogue","character":"Raichi","text":"I see. Well, I hope this doesn't become a regular thing.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I'm a little dissapointed.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Then again, I should probably be dissapointed in myself for skipping class.","xpos":82,"ypos":0},
+
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		
+
+		{"type":"dialogue","text":"I follow him out. The school library's closed, so we go to the local library a few blocks away.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway"}
 
 	],
 	"links":[
-		14, 15
+		15
 	]
 }
