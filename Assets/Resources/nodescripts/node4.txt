@@ -1,16 +1,18 @@
 {
 	"id":4,
-	"title":"To the roof",
-	"background":"bg_school_hallway",
+	"title":"To the Roof",
+	"background":"bg_school_roof",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi", "text":"I head over to the roof to eat lunch."},
-		{"type":"dialogue","character":"Mana","text":"Wow wow what? Jets? Smoke? ＼(º □ º l|l)/"},
-		{"type":"dialogue","character":"Kurumi","text":"I’ve heard of the monster attacks in the city, but I guess that’s what’s happening???"}
+		{"type":"dialogue","text":"Through my random wandering I find myself on the roof.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Wow wow such a great view! I can see the whole city from here!"},
+		{"type":"dialogue","text":"In the distance I could see smoke rising. A group of helicopters fly overhead towards it.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"What's going on over there?"},
+		{"type":"dialogue","text":"I'd heard about attacks in the city. Didn't think too much of it though.","xpos":0,"ypos":0}
 	],
 	"links":[
-		6
+		2
 	]
 }

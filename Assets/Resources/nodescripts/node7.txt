@@ -1,17 +1,20 @@
 {
 	"id":7,
 	"title":"Give phone to Senpai",
-	"background":"bg_school_hallway",
+	"background":"bg_school_classroom",
 	"music":"",
 	"requirementitem":["phone"],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"  Thank you, Kashiwagi senpai!"},
-		{"type":"dialogue","character":"Senpai","text":"Leave it to me!"},
-		{"type":"removeitem","item":"phone"}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom...what should I do with it?."},
+		{"type":"dialogue","character":"Raichi","text":"That phone...it's Ichijou's. But why would she...","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"He furrows his brow a bit, then grabs the phone.","xpos":0,"ypos":0},
+		{"type":"removeitem","item":"phone"},
+		{"type":"dialogue","character":"Raichi","text":"I'll get this back to her.","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"I should have been able to trust him but...I could have probably just given it myself.","xpos":0,"ypos":0}
 	],
 	"links":[
-		2
+		6
 	]
 }

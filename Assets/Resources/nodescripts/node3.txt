@@ -1,15 +1,18 @@
 {
 	"id":3,
-	"title":"To the bathroom",
+	"title":"To the Bathroom",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"At the bathroom, I find a phone. The keychain looks familiar."},
+		{"type":"dialogue","text":"I go to the bathroom, half expecting to find that pink hair girl hiding somewhere.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"No pink-hair girls here...but what's this?"},
+		{"type":"dialogue","text":"Someone left their phone by the window. It looks familiar.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Better take it and turn it in."},
 		{"type":"additem","item":"phone"}
 	],
 	"links":[
-		1
+		1,5
 	]
 }

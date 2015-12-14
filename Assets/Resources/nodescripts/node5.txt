@@ -5,8 +5,12 @@
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Wow wow, are these photos of Ichijou san in cosplay? They’re really cute! (´｡• ω •｡`) ♡"},
+		{"type":"dialogue","text":"I check to phone to see if I can figure out who it belongs to.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Is this...the pink-haired girl...in cosplay?"},
+		{"type":"dialogue","character":"Kurumi","text":"Wow wow so cuuuuuuute! (´｡• ω •｡`) ♡"},
+		{"type":"dialogue","text":"This was the pink-haired girl's phone, and her wallpaper was her AMAZING Sailor Moon cosplay.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I could totally see her being totally into this stuff. Hmm, maybe I should try it too...","xpos":0,"ypos":0},
 		{"type":"addaffinity"}
 	],
 	"links":[

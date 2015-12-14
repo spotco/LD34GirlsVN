@@ -6,6 +6,8 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"I should have been able to trust him but...I could have probably just given it myself.","xpos":0,"ypos":0}
+		
 		{"type":"dialogue", "text":"The city is nice. Super different from where I grew up."},
 		{"type":"dialogue","text":"I miss the nature a little bit, but this is where all the action is!"},{"type":"dialogue","character":"Kurumi","text":"Can’t wait until action starts!!!!! ( ´ ▽ ` )b"},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},

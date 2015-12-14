@@ -40,6 +40,7 @@ public class MusicManager : MonoBehaviour {
 	}
 
 	public void load_music(string name) {
+		if (GameMain.MUTE) return;
 		_target_loaded_music = name;
 		if (_currently_loaded_music != _target_loaded_music) {
 			if (_currently_loaded_music == "") {

@@ -1,17 +1,27 @@
 {
 	"id":6,
-	"title":"Talk to Senpai",
-	"background":"bg_school_hallway",
+	"title":"To the Senior Classroom",
+	"background":"bg_school_classroom",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Senpai","text":"What’s new? You look troubled."},
-		{"type":"dialogue","character":"Kurumi","text":" I picked up a phone in the bathroom. What should I do?"},
-		{"type":"dialogue","character":"Senpai","text":" I can take that and make sure it gets to the correct person."}
+		{"type":"dialogue","text":"I find myself in a senior classroom. I can tell since everyone looks so much older than me.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"In the front I see Raichi-san. Looks like he just got back.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Raichi","text":"Ah, Kurumi-chan. What brings you here, did you get lost?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Kurumi","text":"Well I..."},
+
+		{"type":"dialogue","character":"Raichi","text":"I see, then you must be here to asks about joining a club, right?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"So I did a bit of research and saw that you were in a tea ceremony club back at your old school...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"...and I'll have you know that we've got one of the most prestigious ones here at our school...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"...They've won multiple awards and have been to the district finals...","xpos":22,"ypos":53},
+
+		{"type":"dialogue","character":"Kurumi","text":"...UMMM I actually didn't come for that!"},
+		{"type":"dialogue","character":"Raichi","text":"Oh? I'm sorry. I've got a couple of other suggestions if you're interested.","xpos":22,"ypos":53}
 	],
 	"links":[
-		7, 8 
+		2,7
 	]
 }

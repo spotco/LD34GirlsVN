@@ -1,13 +1,13 @@
 {
 	"id":2,
-	"title":"To the cafeteria!",
+	"title":"To the Cafeteria",
 	"background":"bg_school_hallway",
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Being lunchtime and all, I decided to go to the cafeteria. Only one problem...","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":0,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I am SOOO totally lost right now! Should have asked someon..."},
+		{"type":"dialogue","character":"Kurumi","text":"I am SOOO totally lost right now! Should have asked someon---"},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","character":"Kurumi","text":"WWWWAAAAAAAAHHHH!!!!!"},
 		{"type":"dialogue","text":"Being the clumsy klutz I am, completely missed those stairs.","xpos":0,"ypos":0},
@@ -34,10 +34,11 @@
 		{"type":"movecharacter","character":"Raichi","xto":700},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Kurumi...chan?"},
-		{"type":"dialogue","text":"First-name basis already? People really are different in the city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I also realize I forgot to ask where the cafeteria was...","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"First-name basis already? People really are different in the city. (｡・//ε//・｡)","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I also realize I forgot to ask where the cafeteria was...","xpos":0,"ypos":0},
+		{"type":"additem","item":"Her Name"}
 	],
 	"links":[
-		1,4
+		1,4,6
 	]
 }
