@@ -16,10 +16,10 @@
 		{"type":"dialogue","text":"And now the guy who she liked asked her on a date. He’s perfect. Smart, responsible, and strong."},
 		{"type":"dialogue","text":"I'm nothing compared to him. I'm nothing, period. Would she even need me anymore?"},
 
-		{"type":"dialogue","character":"??","text":KYAAAAAAAAAAAAAAA!!!!"},
+		{"type":"dialogue","character":"??","text":"KYAAAAAAAAAAAAAAA!!!!"},
 
-		{"type":"dialogue","text":"Where is it coming from? Am I hearing things? Why are there so many people? Why are the lanterns so bright?},
-		{"type":"dialogue","text":"I run, dragging my clumsy legs under the yukata, following the painful voice.},
+		{"type":"dialogue","text":"Where is it coming from? Am I hearing things? Why are there so many people? Why are the lanterns so bright?"},
+		{"type":"dialogue","text":"I run, dragging my clumsy legs under the yukata, following the painful voice."},
 		{"type":"dialogue","text":"I know who it is. Under the blur of my consciousness, I can feel my friend in pain."},
 
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},

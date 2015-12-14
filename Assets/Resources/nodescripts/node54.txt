@@ -18,7 +18,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Mana chan…"},
 		{"type":"dialogue","character":"Mana","text":" But… I’m no longer magical. I feel.. normal. Like before my parents died."},
 		{"type":"dialogue","character":"Kurumi","text":"Mana chan, it’s okay. Look, there’s fireworks. If you cry that much, you can’t see them."},
-		{"type":"dialogue","character":"Mana","text":"Yeah... Fireworks..."}
+		{"type":"dialogue","character":"Mana","text":"Yeah... Fireworks..."},
 
 		{"type":"dialogue","text":"We never saw Kashiwagi senpai again. Don't worry, Mana chan is over him."},
 		{"type":"dialogue","text":"She's no longer a hero, but she has me to help get used to the normal life. ☆⌒(ゝ。∂)"}
