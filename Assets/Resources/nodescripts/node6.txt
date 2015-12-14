@@ -1,6 +1,6 @@
 {
 	"id":6,
-	"title":"Talk to Raichi",
+	"title":"Talk to Senpai",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
