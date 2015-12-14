@@ -3,7 +3,7 @@
 	"title":"Go to class",
 	"background":"bg_school_hallway",
 	"music":"",
-	"requirementitem":[],
+	"requirementitem":["fan video"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},

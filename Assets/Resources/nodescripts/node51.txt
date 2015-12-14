@@ -1,0 +1,19 @@
+{
+	"id":51,
+	"title":"The Festival",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"I'm so glad I picked out that Yukata for you, it looks great."}
+		{"type":"dialogue","character":"Kurumi","text":"Mana chan.. thanks"}
+
+		{"type":"dialogue","text":"I’ve been to many summer festivals in my life, but none so lively before."},
+		{"type":"dialogue","text":"So many people, so many stands… In my new city-girl yukata, I should feel excited."},
+		{"type":"dialogue","text":"Why do I feel so uneasy?"},
+	],
+	"links":[52, 53]
+}

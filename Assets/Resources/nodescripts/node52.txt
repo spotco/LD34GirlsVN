@@ -1,0 +1,48 @@
+{
+	"id":52,
+	"title":"Follow Mana chan",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"Okay, I’m supposed to meet him at that hill over there."},
+		{"type":"dialogue","character":"Mana","text":"If you really really want, you can follow me. Only because you’re my best friend."},
+
+		{"type":"dialogue","text":"I feel relieved like never before."},
+
+		{"type":"dialogue","character":"Kurumi","text":"Okay, heh, I feel a little creepy, but just to make sure you’re safe, okay?"},
+
+		{"type":"dialogue","character":"Mana","text":"Yeah, you got it. I tend to let my guard down around that guy, to be honest."},
+
+		{"type":"dialogue","text":"Kashiwagi senpai arrives. He seems to be talking to her, I can't hear-- "},
+
+		{"type":"dialogue","character":"Mana","text":"Senpai - I..."},
+
+		{"type":"dialogue","character":"Senpai","text":"Mana san, you’ve been such a troublemaker all this time."},
+
+		{"type":"dialogue", "text":"Right in front of my eyes, Senpai turns into a monster. I freeze up."},
+
+		{"type":"dialogue","character":"Senpai","text":"Let’s see how good you are. The other magical knights were quite a disappointment.."},
+		{"type":"dialogue","character":"Senpai","text":"And now that I have their powers, you’re really no match for me."},
+
+		{"type":"dialogue","character":"Mana","text":"Let me… at least… transform…"},
+		{"type":"dialogue","character":"Senpai","text":"I didn’t say I’ll play fair. This is just the rules of the game."},
+		{"type":"dialogue","character":"Senpai","text":"The weak are meat; the strong do eat. Itadakimasu."},
+
+		{"type":"dialogue", "text":"Dragging my clumsy legs, while Senpai is focused on Mana chan, I walk up."},
+		{"type":"dialogue", "text":"I hold her hand tightly."},
+
+		{"type":"dialogue","character":"Kurumi","text":"Mana chan! Now transform!"},
+
+		{"type":"dialogue","character":"Mana","text":" Super Mana... Magi Knight... Manaka… Transform…!!!"},
+
+		{"type":"dialogue", "text":"A bright light flashes.I hear Senpai grumble."},
+		{"type":"dialogue", "text":"and the light is so bright, I can’t see anything."},
+		{"type":"dialogue", "text":"I just hold on to Mana chan’s hand. I can’t let my friend go. She’s my best friend."}
+
+	],
+	"links":[53]
+}
