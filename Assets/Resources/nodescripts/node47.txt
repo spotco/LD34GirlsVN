@@ -1,0 +1,29 @@
+{
+	"id":47,
+	"title":"Talk to Mana chan",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["fan video"],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"Hi... Mana chan..."},
+		{"type":"dialogue","character":"Mana", "text":"Kuru!? What are you doing here?"},
+		{"type":"dialogue","character":"Kurumi","text":"Was that… Kashiwagi senpai?"},
+		{"type":"dialogue","character":"Mana","text":"...Yeah. I didn’t even know he had my number, but he texted me to meet up."},
+		{"type":"dialogue","character":"Kurumi","text":" ...and?"},
+
+		{"type":"dialogue","text":"I have a very bad feeling about this."},
+
+		{"type":"dialogue","character":"Mana","text":"He asked me out. To the Summer Festival."},
+		{"type":"dialogue","character":"Kurumi","text":"He what?!"},
+		{"type":"dialogue","character":"Mana","text":"HE ASKED ME OUT TO THE SUMMER FESTIVAL. AND I SAID YES!!!"},
+		{"type":"dialogue","character":"Kurumi","text":"Well… do you want to go?"},
+		{"type":"dialogue","character":"Mana","text":"Yeah! I wonder if he likes me. Is this a date?"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Mana","text":"Why do you look so sad? Don’t tell me you like him too!"},
+		{"type":"dialogue","character":"Kurumi","text":"Nope, nothing like that. Just.."}
+	],
+	"links":[48, 49]
+}

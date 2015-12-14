@@ -1,0 +1,27 @@
+{
+	"id":43,
+	"title":"Talk to Senpai",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":["fan video"],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Senpai","text":"So I know you and Mana san are very close."},
+		{"type":"dialogue","character":"Senpai","text":"With that, I would really appreciate it if you could answer this question truthfully"},
+
+
+		{"type":"dialogue","text":"Wow. I’ve never seen Kashiwagi senpai look so serious…"},
+
+		{"type":"dialogue","character":"Senpai","text":"As you know, the city of Tokyo has been attacked by many monsters."},
+		{"type":"dialogue","character":"Senpai","text":"And there’s been a… hero… people call it. With special powers. Take a look at this."},
+
+		{"type":"dialogue","text":"It's a fan video made by former Simone fans of Mana chan's heroic activity."},
+
+		{"type":"dialogue","character":"Senpai","text":"So here's my question. Do you know who this is?"},
+
+		{"type":"dialogue","text":"It's Mana chan and my secret. Why is he asking me? Should I tell him?"},
+	],
+	"links":[44, 45]
+}

@@ -1,0 +1,14 @@
+{
+	"id":42,
+	"title":"Go to class",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Senpai","text":"Kurumi chan, can I borrow you for a second?"}
+	],
+	"links":[43]
+}
