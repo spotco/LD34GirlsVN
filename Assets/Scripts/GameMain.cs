@@ -29,7 +29,6 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	hidecharacter action
 	transitioncharacter action
 	
 	(final grid design)

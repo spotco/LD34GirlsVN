@@ -52,7 +52,6 @@ public class EventCharacter : MonoBehaviour {
 				_current_mode = Mode.DoRemove;
 			}
 		}
-	
 	}
 	
 }

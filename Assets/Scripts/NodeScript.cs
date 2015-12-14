@@ -65,7 +65,8 @@ public class NodeScript {
 			} else if (type == "transitioncharacter") {
 				itr_neu = new NodeScriptEvent_TransitionCharacter() {
 					_character = itr.GetString("character"),
-					_to = itr.GetString("to")
+					_image = itr.GetString("image"),
+					_xscale = (float) itr.GetNumber("xscale")
 				};
 			
 			} else if (type == "movecharacter") {
@@ -85,7 +86,7 @@ public class NodeScript {
 				};
 			
 			} else if (type == "hidecharacter") {
-				itr_neu = new NodeScriptEvent_MoveCharacter() {
+				itr_neu = new NodeScriptEvent_HideCharacter() {
 					_character = itr.GetString("character")
 				};
 				
