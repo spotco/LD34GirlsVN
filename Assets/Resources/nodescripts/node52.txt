@@ -44,5 +44,5 @@
 		{"type":"dialogue", "text":"I just hold on to Mana chan’s hand. I can’t let my friend go. She’s my best friend."}
 
 	],
-	"links":[53]
+	"links":[54]
 }
