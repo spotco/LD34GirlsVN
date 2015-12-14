@@ -5,7 +5,7 @@
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I watch TV. The reality hasn’t really set into me yet."}
+		{"type":"dialogue","text":"I watch TV. The reality hasn’t really set into me yet."},
 		{"type":"dialogue","text":"I get kinda slow when things happen all at once. (￣～￣;)"}
 	],
 	"links":[

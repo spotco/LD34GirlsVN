@@ -1,0 +1,19 @@
+{
+	"id":30,
+	"title":"Go to Shibuya",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue", "text":"Another monster rampage in Shibuya district. This one looks tough…"},
+		{"type":"showcharacter","character":"Mana","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Simone","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"dialogue", "text":"Whoa, is that another hero?"},
+		{"type":"dialogue","character":"Mana","text":"I can’t believe it!"},
+		{"type":"dialogue","character":"??","text":"I’m magical knight Simone Saber Knight Sweetheart and this city is under MY protection now!"},
+		{"type":"dialogue","character":"Simone","text":"Hohoho, is that your idea of a camera crew? Pathetic."}
+	],
+	"links":[
+		30, 35
+	]
+}

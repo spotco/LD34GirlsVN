@@ -9,7 +9,7 @@
 		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hey, Kashiwagi Senpai, thank you for walking me home."},
 		{"type":"dialogue","character":"Kurumi","text":"You must get really busy helping out all us underclassmen."},
-		{"type":"dialogue","character":"Senpai","text":"It's nothing, Kurumi chan. Just be careful and stay safe."}
+		{"type":"dialogue","character":"Senpai","text":"It's nothing, Kurumi chan. Just be careful and stay safe."},
 		{"type":"dialogue","character":"Kurumi","text":"Motoyama! Just please call me Motoyama!"}
 	],
 	"links":[

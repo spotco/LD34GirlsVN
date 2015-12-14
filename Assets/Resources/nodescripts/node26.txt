@@ -9,16 +9,16 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character:"Mana","text":" Kuru! Let's go! There's been an alert of a Meka Tomato Kaijuu in front of the Tokyu building!"},
-		{"type":"dialogue","character:"Kurumi","text":" Okay. I have your water bottle for when you get dehydrated! *Trips*"},
-		{"type":"dialogue","character:"Mana","text":"Come on Kuru!!"},
+		{"type":"dialogue","character":"Mana","text":" Kuru! Let's go! There's been an alert of a Meka Tomato Kaijuu in front of the Tokyu building!"},
+		{"type":"dialogue","character":"Kurumi","text":" Okay. I have your water bottle for when you get dehydrated! *Trips*"},
+		{"type":"dialogue","character":"Mana","text":"Come on Kuru!!"},
 
 		{"type":"dialogue","text":"I've been sort of an assistant to her superhero work. Super assistant! (⌐■_■)"},
 
-		{"type":"dialogue","character:"Kurumi","text":"Are you really sure this is a good idea?"},
-		{"type":"dialogue","character:"Mana","text":" Of course! Gotta show you how cool I am! Now check this, Magical Pretty Sword...BUSTER!!"},
+		{"type":"dialogue","character":"Kurumi","text":"Are you really sure this is a good idea?"},
+		{"type":"dialogue","character":"Mana","text":" Of course! Gotta show you how cool I am! Now check this, Magical Pretty Sword...BUSTER!!"},
 
-		{"type":"dialogue","text":"It’s been a crazy few weeks, not getting a whole lot of sleep."},
+		{"type":"dialogue","text":"It’s been a crazy few weeks, not getting a whole lot of sleep."}
 	],
 	"links":[
 		27
