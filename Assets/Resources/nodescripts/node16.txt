@@ -7,6 +7,7 @@
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Raichi","image":"char_test_2","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Ichijou san, wanna come with? It’ll be fun!"},
+		{"type":"addaffinity"},
 		{"type":"dialogue","character":"Mana","text":"...Fun? Well..."},
 		{"type":"dialogue","character":"Kurumi","text":" Please! I’ll be nervous with just Senpai!"},
 		{"type":"dialogue","character":"Senpai","text":"Haha, don’t worry, Kurumi chan, nothing bad will happen!"},

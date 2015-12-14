@@ -1,18 +1,15 @@
 {
-	"id":28,
-	"title":"Joke that he Confessed",
+	"id":37,
+	"title":"Complain about the mess",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
-
-		{"type":"dialogue","character":"Kurumi","text":"nothin’, He just confessed to me."},
-		{"type":"dialogue","character":"Mana","text":" Yeah right!! What did he actually say?"},
-		{"type":"addaffinity"}
+		
+		{"type":"dialogue","character":"Kurumi","text":"It's really messy…"},
+		{"type":"dialogue","character":"Mana","text":"Being a magical knight is hard work. I don’t have time to do chores."}
 	],
-	"links":[
-		29
-	]
+	"links":[]
 }

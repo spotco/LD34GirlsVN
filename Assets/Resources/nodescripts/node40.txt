@@ -1,0 +1,20 @@
+{
+	"id":40,
+	"title":"Organize her Books",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","text":"I find an old photo of Mana chan and her family."},
+		{"type":"dialogue","character":"Kurumi","text":"Is this a picture of you when you were a kid? You look so cute!"},
+		{"type":"dialogue","character":"Kurumi","text":"Where are your parents now?"},	
+		{"type":"dialogue","character":"Mana","text":"They died when I was 12. Monster attack. I’ve been on my own since."},
+		{"type":"dialogue","character":"Kurumi","text":"Oh… sorry… Mana chan… please let me know if I can do anything to help!"},	
+		{"type":"dialogue","character":"Mana","text":"Thanks Kuru, you’ve really changed my life, already."},
+		{"type":"addaffinity"},
+	],
+	"links":[]
+}

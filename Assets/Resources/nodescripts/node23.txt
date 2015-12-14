@@ -9,7 +9,8 @@
 		
 		{"type":"dialogue","text":"I grab the nearest thing to me, my pillow, and throw it without thinking anything."},
 		{"type":"dialogue","character":"???","text":"Argh… take this!"},
-		{"type":"dialogue","character":"Kurumi","text":"Kyaa! What are you doing! Don’t throw my pillow at me!"}
+		{"type":"dialogue","character":"Kurumi","text":"Kyaa! What are you doing! Don’t throw my pillow at me!"},
+		{"type":"addaffinity"}
 	],
 	"links":[
 		24

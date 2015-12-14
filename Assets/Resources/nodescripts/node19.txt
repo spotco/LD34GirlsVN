@@ -7,6 +7,7 @@
 	"event":[
 		{"type":"dialogue","text":"Both of my parents work late, so I usually cook dinner for myself."},
 		{"type":"dialogue","text":"Curry is easy and tasty, so I end up making it a lot of the time."}
+		{"type":"additem","item":"curry"}
 	],
 	"links":[
 		20
