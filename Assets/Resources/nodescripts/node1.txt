@@ -2,7 +2,7 @@
 	"id":1,
 	"title":"A New Beginning",
 	"background":"bg_school_classroom",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_blank"},

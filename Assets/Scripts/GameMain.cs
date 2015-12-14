@@ -18,6 +18,7 @@ public class GameMain : MonoBehaviour {
 	[SerializeField] private EventModal _event_modal;
 	[SerializeField] private GridNavModal _grid_nav_modal;
 	[SerializeField] public BackgroundManager _background;
+	[SerializeField] public MusicManager _music;
 	[SerializeField] public PopupManager _popups;
 	
 	public ControlManager _controls;
@@ -66,6 +67,7 @@ public class GameMain : MonoBehaviour {
 		}
 		
 		_background.i_update();
+		_music.i_update ();
 	}
 	
 	public void start_event_modal(NodeScript script) {

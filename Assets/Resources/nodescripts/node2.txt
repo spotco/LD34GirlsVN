@@ -2,7 +2,8 @@
 	"id":2,
 	"title":"To the cafeteria!",
 	"background":"bg_school_hallway",
-	"music":"",
+	"background":"bg_school_roof",
+	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Being lunchtime and all, I decided to go to the cafeteria. Only one problem...","xpos":0,"ypos":0},
