@@ -93,6 +93,12 @@ public class NodeScript {
 			} else if (type == "addaffinity") {
 				itr_neu = new NodeScriptEvent_AddAffinity();
 				
+			} else if (type == "rename") {
+				itr_neu = new NodeScriptEvent_Rename() {
+					_name_start = itr.GetString("namestart"),
+					_name_end = itr.GetString("nameend")
+				};
+				
 			} else {
 				SPUtil.logf("unknown type %s",type);
 			}

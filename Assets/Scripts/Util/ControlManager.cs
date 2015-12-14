@@ -11,6 +11,7 @@ public class ControlManager {
 		MoveDown,
 		ButtonA,
 		ButtonB,
+		DebugSkip,
 		None
 	}
 	private static bool control_is_pressed(Control test) {
@@ -26,6 +27,9 @@ public class ControlManager {
 		}
 		case Control.MoveDown: {
 			return Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.Keypad5);
+		}
+		case Control.DebugSkip: {
+			return Input.GetKey(KeyCode.P);
 		}
 		case Control.ButtonB: {
 			return Input.GetKey(KeyCode.X);

@@ -16,10 +16,12 @@ public class EventCharacter : MonoBehaviour {
 	public float _talking_ct;
 	public float _anim_ct;
 	
+	private static float IMG_LOCAL_POS_Y = -140;
+	
 	public void i_initialize() {
 		_current_mode = Mode.FadeIn;
 		_image.color = new Color(1,1,1,0);
-		_image.transform.localPosition = new Vector2();
+		_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y);
 	}
 	
 	public void notify_talking() {
@@ -31,9 +33,9 @@ public class EventCharacter : MonoBehaviour {
 		if (_talking_ct > 0) {
 			_talking_ct -= SPUtil.dt_scale_get();
 			_anim_ct += 0.35f;
-			_image.transform.localPosition = new Vector2(0,Mathf.Sin(_anim_ct)*5);
+			_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y+Mathf.Sin(_anim_ct)*5);
 		} else {
-			_image.transform.localPosition = new Vector2(0,0);
+			_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y);
 		}
 		
 	

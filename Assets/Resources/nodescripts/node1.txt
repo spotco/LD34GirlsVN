@@ -19,7 +19,7 @@
 		{"type":"changebackground","background":"bg_school_classroom"},
 
 		{"type":"dialogue","character":"Teacher","text":"Alright, Motoyama-San, can you say your name and a little about yourself?","xpos":250,"ypos":100},
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-100,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-100,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Ummm.....","xpos":250,"ypos":-100},
 		{"type":"dialogue","character":"Kurumi","text":"Hello everyone! My name is Kurumi Motoyama...","xpos":250,"ypos":-100},
 
@@ -34,8 +34,8 @@
 
 		{"type":"dialogue","text":"As I take my seat I can't help but notice the girl sitting in front of me.","xpos":-31,"ypos":25},
 		
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":126,"ypos":-142},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Pink Hair","text":"...","xpos":126,"ypos":-142},
 
 		{"type":"dialogue","text":"She's tall, skinny and beautiful. And I can't not look at her dyed pink hair.","xpos":-36,"ypos":-25},
 		{"type":"dialogue","text":"Is this what they do in the city?","xpos":-36,"ypos":-25},
@@ -46,13 +46,13 @@
 		{"type":"dialogue","character":"Teacher","text":"...But since Ms. Motoyama transfered today, I think we'll put that on hold...","xpos":-31,"ypos":94},
 
 		{"type":"dialogue","text":"Her phone starts buzzing, and her eyes light up.","xpos":-36,"ypos":-25},
-		{"type":"dialogue","character":"Mana","text":"An...alert?","xpos":126,"ypos":-142},
+		{"type":"dialogue","character":"Pink Hair","text":"An...alert?","xpos":126,"ypos":-142},
 
 		{"type":"dialogue","text":"She gets up, pushes in her chair and grabs her bag.","xpos":-36,"ypos":-25},
-		{"type":"movecharacter","character":"Mana","xto":0},
-		{"type":"dialogue","character":"Mana","text":"'Excuse me, teacher. I've gotta go to the bathroom.","xpos":126,"ypos":-142},
+		{"type":"movecharacter","character":"Pink Hair","xto":0},
+		{"type":"dialogue","character":"Pink Hair","text":"'Excuse me, teacher. I've gotta go to the bathroom.","xpos":126,"ypos":-142},
 		{"type":"dialogue","text":"Without even waiting for a response she runs out of the room.","xpos":-36,"ypos":-25},
-		{"type":"movecharacter","character":"Mana","xto":1000},
+		{"type":"movecharacter","character":"Pink Hair","xto":1000},
 
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
@@ -65,7 +65,7 @@
 		{"type":"dialogue","character":"Teacher","text":"...The Takeda army was about to deliver the final blow against the Oda.","xpos":-31,"ypos":94},
 		{"type":"dialogue","character":"Teacher","text":"Ms. Motoyama, can you please read from here?","xpos":-31,"ypos":94},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-370,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-370,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"...","xpos":-17,"ypos":-100},
 
 		{"type":"dialogue","character":"Teacher","text":"Ms. Motoyama.","xpos":-31,"ypos":94},
@@ -83,7 +83,7 @@
 		{"type":"dialogue","text":"*Ding Dong!*","xpos":-36,"ypos":-25},
 		{"type":"dialogue","text":"The bell's chimes meant class was over.","xpos":-36,"ypos":-25},
 		{"type":"dialogue","text":"Lunchtime, or so it seemed. Students started filing out.","xpos":-36,"ypos":-25},
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-370,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-370,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?","xpos":-17,"ypos":-100}
 	],
 	"links":[

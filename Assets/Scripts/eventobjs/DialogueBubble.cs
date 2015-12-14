@@ -113,12 +113,12 @@ public class DialogueBubble : MonoBehaviour {
 			_name_background.sprite = this.cond_get_bgsprite("kurumi");
 			outline_color = new Color(95/255.0f,115/255.0f,88/255.0f,1);
 		
-		} else if (script_event._character == "Mana") {
+		} else if (script_event._character == "Mana" || script_event._character == "Pink Hair") {
 			_primary_background.sprite = this.cond_get_bgsprite("mana");
 			_name_background.sprite = this.cond_get_bgsprite("mana");
 			outline_color = new Color(108/255.0f,99/255.0f,132/255.0f,1);
 		
-		} else if (script_event._character == "Raichi") {
+		} else if (script_event._character == "Raichi" || script_event._character == "Older Student") {
 			_primary_background.sprite = this.cond_get_bgsprite("raichi");
 			_name_background.sprite = this.cond_get_bgsprite("raichi");
 			outline_color = new Color(85/255.0f,99/255.0f,125/255.0f,1);

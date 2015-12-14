@@ -7,6 +7,7 @@ public class GameMain : MonoBehaviour {
 	
 	public static int AFFINITY_REQUIREMENT = 1;
 	public static bool NO_EVENTS = false;
+	public static bool DEBUG_CONTROLS = true;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -29,6 +30,9 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
+	
+	do not show unaccessible nodes
+	
 	(final grid design)
 	(final art)
 	(sound effects)

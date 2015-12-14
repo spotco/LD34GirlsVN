@@ -1,20 +1,41 @@
 {
 	"id":2,
 	"title":"To the cafeteria!",
-	"background":"bg_school_roof",
+	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I wonder where the cafeteria is… *trips* Aah! I’m so clumsy. >_<"},	{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Senpai","text":"You okay, Miss Motoyama?"},
-		{"type":"dialogue","character":"Kurumi","text":"Yes! Wait… how did you know my name?"},
-		{"type":"dialogue","character":"Senpai","text":"Oh! Well of course, I’m the student council president, it’s my duty."},
-		{"type":"dialogue","character":"Senpai","text":"My name is Raichi Kashiwagi. Classmate of Ichijou Mana san, am I right?"},
-		{"type":"dialogue","character":"Kurumi","text":"Ichijou san..?"},
-		{"type":"dialogue","character":"Senpai","text":"She’s a bit of a troublemaker, teachers have asking me for advice on how to deal with her."},
-		{"type":"dialogue","character":"Senpai","text":"Well, not to let it bother you. Have a pleasant lunch, Kurumi chan."},
-		{"type":"dialogue","character":"Kurumi","text":"Wow wow.. That was the first time an older male student called me by my first name. (｡・//ε//・｡)"}
+		{"type":"dialogue","text":"Being lunchtime and all, I decided to go to the cafeteria. Only one problem...","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":0,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I am SOOO totally lost right now! Should have asked someon..."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","character":"Kurumi","text":"WWWWAAAAAAAAHHHH!!!!!"},
+		{"type":"dialogue","text":"Being the clumsy klutz I am, completely missed those stairs.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Older Student","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Older Student","text":"Oh my, are you alright? Let me help you up.","ypos":45},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Older Student","text":"Ah, it's... Kurumi Motoyama, right?","xpos":23,"ypos":45},
+
+		{"type":"dialogue","character":"Kurumi","text":"Yes! Wait… how did you know my name?","ypos":-130},
+		{"type":"dialogue","character":"Older Student","text":"Oh! I'm the student council president, it's my duty to know everyone.","xpos":23,"ypos":45},
+
+		{"type":"rename","namestart":"Older Student","nameend":"Raichi"},
+		{"type":"dialogue","character":"Raichi","text":"And where are my manners? I'm Raichi Kashiwagi. You're...a first year, am I correct?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Kurumi","text":"You weren't kidding, you do know everything! Or everyone...that is.","ypos":-130},
+		{"type":"dialogue","character":"Raichi","text":"And forgive me if I'm wrong, but same class as Ichijou-san?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Kurumi","text":"Ichijou-san...?","ypos":-130},
+		{"type":"dialogue","character":"Raichi","text":"Pink hair, impossible to miss. Unless she's skipping school that is.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Her name's Manami Ichijou, but prefers to be called 'Mana'.","xpos":23,"ypos":45},
+		{"type":"dialogue","text":"Mana...sounds like something from a RPG videogame or something.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"She's a bit of a troublemaker, if you couldn't tell.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Teachers have been asking me for advice on how to deal with her.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Well, don't let it bother you, Kurumi-chan. I'll see you around.","xpos":23,"ypos":45},
+		{"type":"movecharacter","character":"Raichi","xto":700},
+		
+		{"type":"dialogue","character":"Kurumi","text":"Kurumi...chan?"},
+		{"type":"dialogue","text":"First-name basis already? People really are different in the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I also realize I forgot to ask where the cafeteria was...","xpos":0,"ypos":0}
 	],
 	"links":[
 		1,4

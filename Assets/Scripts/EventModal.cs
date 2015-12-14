@@ -50,11 +50,11 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			} while (last_index != _script_index && _script_index <  _current_script._events.Count);
 						
 		} else {
-			foreach (string name in _name_to_character.Keys) {
-				EventCharacter itr_char = _name_to_character[name];
-				itr_char._current_mode = EventCharacter.Mode.DoRemove;
-			}
-			game.finish_event_modal();
+			this.end_script_playback_and_close_modal(game);
+		}
+		
+		if (GameMain.DEBUG_CONTROLS && game._controls.get_control_just_released(ControlManager.Control.DebugSkip)) {
+			this.end_script_playback_and_close_modal(game);
 		}
 		
 		__to_remove_str.Clear();
@@ -85,6 +85,18 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
+	private void end_script_playback_and_close_modal(GameMain game) {
+		foreach (string name in _name_to_character.Keys) {
+			EventCharacter itr_char = _name_to_character[name];
+			itr_char._current_mode = EventCharacter.Mode.DoRemove;
+		}
+		for (int i = _dialogue_bubbles.Count-1; i >= 0; i--) {
+			DialogueBubble itr = _dialogue_bubbles[i];
+			itr._current_mode = DialogueBubble.Mode.DoRemove;	
+		}
+		game.finish_event_modal();
+	}
+	
 	public void advance_script() {
 		_script_index++;
 	}
@@ -112,7 +124,12 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		_name_to_character.TryGetValue(name,out rtv);
 		return rtv;
 	}
-	
+	public void rename(string name_start, string name_end) {
+		if (_name_to_character.ContainsKey(name_start)) {
+			_name_to_character[name_end] = _name_to_character[name_start];
+			_name_to_character.Remove(name_start);
+		}
+	}
 	
 	
 }
