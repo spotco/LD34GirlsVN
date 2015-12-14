@@ -29,13 +29,11 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO:
-	transitioncharacter action
-	
 	(final grid design)
 	(final art)
 	(sound effects)
 	(music)
-	(menu transitions)
+	(start menu, end menu)
 	*/
 	
 	public void Start () {
