@@ -83,7 +83,15 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 			GridNode selected_node = selection_list[_selected_node_cursor_index];
-			if (selected_node._is_locked) {
+			if (selected_node._node_script._affinity_requirement) {
+				if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
+					this.set_current_node(selected_node);
+				} else {
+					game._popups.add_popup("Friendship not at that level.");
+				}
+				
+				
+			} else if (selected_node._is_locked) {
 				bool can_unlock = true;
 				for (int i = 0; i < selected_node._node_script._requirement_items.Count; i++) {
 					string itr = selected_node._node_script._requirement_items[i];
@@ -125,7 +133,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		);
 		_selector_anim_t += 0.15f;
 		
-		if (this._current_node != null && !this._current_node._visited) {
+		if ((this._current_node != null && !this._current_node._visited) && !GameMain.NO_EVENTS) {
 			this._current_node._visited = true;
 			game.start_event_modal(this._current_node._node_script);
 			return;

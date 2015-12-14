@@ -42,7 +42,6 @@ public class GridNode : MonoBehaviour {
 		}
 		_title_ui_text.font = __cached_font;
 		
-		
 		_title_ui_outline = _title_ui_text.GetComponent<Outline>();
 		
 		img_current = Resources.Load<Sprite>("img/grid/node_current");
@@ -54,9 +53,16 @@ public class GridNode : MonoBehaviour {
 		
 		_lock_icon.gameObject.SetActive(false);
 		_lock_item_icon.gameObject.SetActive(false);
-		_is_locked = _node_script._requirement_items.Count > 0;
-		if (_is_locked) {
-			_lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
+		if (_node_script._affinity_requirement) {
+			_is_locked = false;
+			_lock_icon.sprite = Resources.Load<Sprite>("img/ui/affinity_heart");
+			_lock_icon.SetNativeSize();
+			
+		} else {
+			_is_locked = _node_script._requirement_items.Count > 0;
+			if (_is_locked) {
+				_lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
+			}
 		}
 		
 		_visited = false;
@@ -170,7 +176,12 @@ public class GridNode : MonoBehaviour {
 		}
 		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
 		
-		if (_is_locked) {
+		if (_node_script._affinity_requirement) {
+			_lock_icon.gameObject.SetActive(true);
+			_lock_item_icon.gameObject.SetActive(false);
+			_title_ui_text.gameObject.SetActive(false);
+		
+		} else if (_is_locked) {
 			_lock_icon.gameObject.SetActive(true);
 			_lock_item_icon.gameObject.SetActive(true);
 			_title_ui_text.gameObject.SetActive(false);

@@ -196,6 +196,7 @@ MonoBehaviour:
   _grid_nav_modal: {fileID: 538942465}
   _background: {fileID: 2064571811}
   _popups: {fileID: 1033882422}
+  _affinity: 0
 --- !u!1001 &205002848
 Prefab:
   m_ObjectHideFlags: 0
@@ -892,10 +893,6 @@ Prefab:
     - target: {fileID: 120970, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
       propertyPath: m_Name
       value: PopupManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 103816, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}

@@ -6,6 +6,7 @@ public class Popup : MonoBehaviour {
 
 	[SerializeField] private Text _text;
 	[SerializeField] private CanvasGroup _canvas_group;
+	[SerializeField] private Image _heart_icon;
 
 	public enum Mode {
 		FadeIn,
@@ -21,6 +22,13 @@ public class Popup : MonoBehaviour {
 		
 		this.transform.localScale = SPUtil.valv(1.2f);
 		_canvas_group.alpha = 0;
+		
+		_heart_icon.gameObject.SetActive(false);
+	}
+	
+	private float _anim_theta;
+	public void show_heart() {
+		_heart_icon.gameObject.SetActive(true);
 	}
 	
 	public void i_update() {
@@ -39,6 +47,11 @@ public class Popup : MonoBehaviour {
 			if (_canvas_group.alpha <= 0) {
 				_current_mode = Mode.DoRemove;
 			}
+		}
+		
+		if (_heart_icon.gameObject.activeSelf) {
+			_anim_theta += 0.05f;
+			_heart_icon.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin(_anim_theta)*7.5f);
 		}
 	}
 }

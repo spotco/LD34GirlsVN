@@ -15,6 +15,7 @@ public class NodeScript {
 	public List<string> _requirement_items = new List<string>();
 	public List<NodeScriptEvent> _events = new List<NodeScriptEvent>();
 	public List<int> _links = new List<int>();
+	public bool _affinity_requirement;
 	
 	public NodeScript i_initialize(TextAsset text) {
 		JSONObject root;
@@ -28,6 +29,7 @@ public class NodeScript {
 		_title = root.GetString("title");
 		_background = root.GetString("background");
 		_music = root.GetString("music");
+		_affinity_requirement = root.ContainsKey("affinityrequirement");
 		
 		JSONArray requirement_item_json = root.GetArray("requirementitem");
 		for (int i = 0; i < requirement_item_json.Length; i++) {
@@ -86,6 +88,9 @@ public class NodeScript {
 				itr_neu = new NodeScriptEvent_MoveCharacter() {
 					_character = itr.GetString("character")
 				};
+				
+			} else if (type == "addaffinity") {
+				itr_neu = new NodeScriptEvent_AddAffinity();
 				
 			} else {
 				SPUtil.logf("unknown type %s",type);

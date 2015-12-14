@@ -26,9 +26,12 @@ public class PopupManager : MonoBehaviour {
 		}
 	}
 	
-	public void add_popup(string text) {
+	public void add_popup(string text, bool show_heart = false) {
 		Popup neu = SPUtil.proto_clone(_popup_proto.gameObject).GetComponent<Popup>();
 		neu.i_initialize(text);
+		if (show_heart) {
+			neu.show_heart();
+		}
 		_active_popups.Add(neu);
 	}
 	

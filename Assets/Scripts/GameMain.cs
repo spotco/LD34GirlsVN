@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using System;
 
 public class GameMain : MonoBehaviour {
-
+	
+	public static int AFFINITY_REQUIREMENT = 1;
+	public static bool NO_EVENTS = false;
+	
 	public interface Modal {
 		void i_initialize(GameMain game);
 		void i_update(GameMain game);
@@ -22,12 +25,12 @@ public class GameMain : MonoBehaviour {
 	
 	private List<Modal> _all_modals;
 	
+	public int _affinity;
+	
 	/*
 	TODO:
-	locked nodes system
 	hidecharacter action
-	affinity system + ui
-	add affinity
+	transitioncharacter action
 	
 	(final grid design)
 	(final art)
@@ -42,6 +45,8 @@ public class GameMain : MonoBehaviour {
 		_controls = ControlManager.cons();
 		_inventory = new Inventory();
 		_popups.i_initialize(this);
+		
+		_affinity = 0;
 		
 		for (int i = 0; i < _all_modals.Count; i++) {
 			_all_modals[i].i_initialize(this);
