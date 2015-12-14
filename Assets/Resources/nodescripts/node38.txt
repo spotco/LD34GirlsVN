@@ -1,0 +1,20 @@
+{
+	"id":38,
+	"title":"Suggest Cleanup",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Kurumi","text":"I’ll help, so let’s clean! Cleaning is fun."},
+		{"type":"dialogue","character":"Mana","text":"Cleaning is NOT fun."},
+		{"type":"dialogue","character":"Kurumi","text":"It’s really calming. You can’t expect to get good rest when your apartment is this messy!"},
+		{"type":"dialogue","character":"Kurumi","text":"It’s important for a hero to maintain a happy home life!"},
+		{"type":"dialogue","character":"Mana","text":" Happy Home Life… huh."}
+	],
+	"links":[
+		39, 40, 41
+	]
+}

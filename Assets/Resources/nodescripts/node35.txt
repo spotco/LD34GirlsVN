@@ -1,0 +1,19 @@
+{
+	"id":35,
+	"title":"Do Homework",
+	"background":"bg_school_hallway",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		
+		{"type":"dialogue","character":"Kurumi","text":"Mana chan, we have lots of homework."},
+		{"type":"dialogue","character":"Mana","text":"Oh who cares! We have people we need to save!"},
+		{"type":"dialogue","character":"Kurumi","text":"But we just saved them from that monster… and you haven’t gotten alerts."},
+		{"type":"dialogue","character":"Mana","text":"Haha, right. Just let me copy off yours, k? My place is close, let’s go there."}
+	],
+	"links":[
+		36
+	]
+}
