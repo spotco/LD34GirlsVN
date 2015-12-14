@@ -86,6 +86,13 @@ public class GridNode : MonoBehaviour {
 			neu_line.transform.localEulerAngles = new Vector3(0,0,SPUtil.dir_ang_deg(lpos_delta.x,lpos_delta.y));
 			neu_line.transform.parent = grid_nav._line_root;
 			
+			neu_line.color = new Color(
+				neu_line.color.r,
+				neu_line.color.g,
+				neu_line.color.b,
+				0
+			);
+			
 			_id_to_line[itr_id] = new GridNode.Line() {
 				_image = neu_line,
 				_rect_transform = neu_line.GetComponent<RectTransform>()
