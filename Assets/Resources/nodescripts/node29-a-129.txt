@@ -1,0 +1,25 @@
+{
+	"id":129,
+	"title":"A Lunchtime Adventure",
+	"background":"bg_city",
+	"music":"",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue", "text":"So we went to our usual hangout spot - a tea cafe a few blocks away from school."},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue", "text":"So I had my usual, an Earl-Grey which was absolutely to DIE for."},
+		{"type":"dialogue", "text":"And Mana-Chan had what looked like one of every pastry on the menu."},
+		{"type":"dialogue", "text":"I mean, how DOES she keep that figure eating so much?"},
+
+		{"type":"dialogue","character":"Mana","text":"Alright Kuru...Check this out!"},
+		{"type":"dialogue", "text":"She shows me her phone."},
+		{"type":"dialogue","character":"Kurumi","text":"Monster sighted...Asakusa district?"},
+		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. Still wanna check it out?"}
+	],
+	"links":[
+		30,35
+	]
+}

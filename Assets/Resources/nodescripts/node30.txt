@@ -1,19 +1,37 @@
 {
 	"id":30,
-	"title":"Go to Shibuya",
-	"background":"bg_school_hallway",
+	"title":"The Monster at Asakusa",
+	"background":"bg_city_monster",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue", "text":"Another monster rampage in Shibuya district. This one looks tough…"},
-		{"type":"showcharacter","character":"Mana","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Simone","image":"char_test_2","xpos":300,"xscale":1},
-		{"type":"dialogue", "text":"Whoa, is that another hero?"},
-		{"type":"dialogue","character":"Mana","text":"I can’t believe it!"},
-		{"type":"dialogue","character":"??","text":"I’m magical knight Simone Saber Knight Sweetheart and this city is under MY protection now!"},
-		{"type":"dialogue","character":"Simone","text":"Hohoho, is that your idea of a camera crew? Pathetic."}
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue", "text":"Since we didn't have anything better to do, decided to investigate the monster at Asakusa."},
+
+		{"type":"changebackground","background":"bg_city_monster"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"Well...there it is! The pictures didn't do it justice!"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Wait, what's going on up there?"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"dialogue", "text":"A beam of pink was dancing in and out, engaged in combat with the monster."},
+		{"type":"dialogue", "text":"Normally that would have been Mana-chan and I'd be cheering her on. But she was right beside me."},
+		{"type":"dialogue", "text":"With a final, swift blow, this new hero defeated the monster."},
+
+		{"type":"changebackground","background":"bg_city"},
+		{"type":"dialogue", "text":"A frenzied crowd of people awaited her landing."},
+		
+		{"type":"dialogue","character":"Fans","text":"We love you, Simone!!!"},
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"Dohohoho~! With Simone Saber Knight Sweetheart protecting this city, no monster stands a chance!"},
+		{"type":"dialogue","character":"Fans","text":"Simone, Daisuke!!!"}
 	],
 	"links":[
-		31, 32, 35
+		129,32,33,34
 	]
 }

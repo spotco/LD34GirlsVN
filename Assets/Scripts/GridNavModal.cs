@@ -38,7 +38,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			_id_to_gridnode[id].post_initialize(this);
 		}
 		
-		this.set_current_node(_id_to_gridnode[1]);
+		this.set_current_node(_id_to_gridnode[GameMain.NODE_START_INDEX]);
 	}
 	
 	public void anim_update(GameMain game) {

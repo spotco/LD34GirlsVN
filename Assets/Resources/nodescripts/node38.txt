@@ -1,12 +1,12 @@
 {
 	"id":38,
-	"title":"Suggest Cleanup",
+	"title":"Cleaning Up",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Kurumi","text":"I’ll help, so let’s clean! Cleaning is fun."},
 		{"type":"dialogue","character":"Mana","text":"Cleaning is NOT fun."},
@@ -15,6 +15,6 @@
 		{"type":"dialogue","character":"Mana","text":" Happy Home Life… huh."}
 	],
 	"links":[
-		39, 40, 41
+		35,40,41
 	]
 }

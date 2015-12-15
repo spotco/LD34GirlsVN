@@ -1,12 +1,12 @@
 {
 	"id":34,
 	"title":"Use Sceptre of Transformation",
-	"background":"bg_school_hallway",
+	"background":"bg_city_monster",
 	"music":"",
 	"requirementitem":["sceptre"],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Oh yeah, Mana chan, I found this in your room. Isn’t this important?"},
 		{"type":"dialogue","character":"Mana","text":"Sceptre of Transformation. Thanks Kurumi!... Super Mana Magi Knight Manaka Transform!!"},
@@ -14,10 +14,10 @@
 		{"type":"dialogue","character":"Mana","text":"Let's go Kuru! Let's destroy those other monsters!"},
 		{"type":"dialogue","character":"Camera Crew","text":"Follow her!"},
 		{"type":"dialogue","character":"Simone","text":"Wait, where are you going!? Ignoring Simone sama!? Unbelievable!!"},
-		{"type":"additem","item":"fan video"}
+		{"type":"additem","item":"fan video"},
 		{"type":"dialogue", "text":"Success??? (☆▽☆)"}
 	],
 	"links":[
-		33, 34
+		30
 	]
 }

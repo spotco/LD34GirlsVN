@@ -13,7 +13,7 @@
 		{"type":"dialogue","character":"Raichi","text":"Ah, Kurumi-chan. What brings you here, did you get lost?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"Well I..."},
 
-		{"type":"dialogue","character":"Raichi","text":"I see, then you must be here to asks about joining a club, right?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I see, then you must be here to ask about joining a club, right?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"So I did a bit of research and saw that you were in a tea ceremony club back at your old school...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"...and I'll have you know that we've got one of the most prestigious ones here at our school...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"...They've won multiple awards and have been to the district finals...","xpos":22,"ypos":53},

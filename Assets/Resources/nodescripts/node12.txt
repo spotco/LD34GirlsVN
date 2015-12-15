@@ -38,7 +38,7 @@
 		{"type":"dialogue","character":"Raichi","text":"...I see.","xpos":82,"ypos":0},
 		{"type":"dialogue","text":"He looks a little dissapointed, but continues on.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Anyway, the teachers wanted me to explain what you missed, being your first day.","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I was thinking could go to the library so I could give you your homework...","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I was thinking we should go to the library so I could give you your homework...","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"...and answer any questions you may have. Now, if you would.","xpos":82,"ypos":0},
 		{"type":"dialogue","text":"Ignoring Mana, he motions to leave.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi-san..."}
