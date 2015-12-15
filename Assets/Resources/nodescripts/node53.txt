@@ -1,11 +1,12 @@
 {
 	"id":53,
-	"title":"Hang around",
+	"title":"Bad End",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Mana","text":"Okay, I'm gonna go now. Maybe we can catch the fireworks later together!"},
 		{"type":"dialogue","character":"Kurumi","text":"Okay, later..."},
@@ -31,7 +32,11 @@
 		{"type":"dialogue","text":"In fact, I can kill her right now, with my mind."},
 		{"type":"dialogue","text":"I feel weak. I've been always weak, but all of me is being sapped."},
 		{"type":"dialogue","character":"Mana","text":"I will not allow this to happen! Super.. Mana...Magi Knight.. Manaka Transform!"},
-		{"type":"dialogue","text":"A bright light. Warmth. My friend."}
+		{"type":"dialogue","text":"A bright light. Warmth. My friend."},
+
+		{"type":"dialogue","text":"I wake up to a barren field."},
+		{"type":"dialogue","text":" No fireworks. No people. No festival. No monster. No Mana."},
+		{"type":"dialogue","text":" Just a phone with a cracked screen"}
 	],
-	"links":[55]
+	"links":[]
 }

@@ -20,6 +20,6 @@
 		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. Still wanna check it out?"}
 	],
 	"links":[
-		30,35
+		30,35,43
 	]
 }

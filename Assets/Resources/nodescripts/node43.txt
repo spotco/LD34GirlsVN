@@ -1,13 +1,14 @@
 {
 	"id":43,
-	"title":"Talk to Senpai",
+	"title":"A Certain Video",
 	"background":"bg_school_hallway",
 	"music":"",
-	"requirementitem":[],
+	"requirementitem":["fan video"],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
-		
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+
+		{"type":"dialogue","character":"Senpai","text":"Kurumi chan, can I borrow you for a second?"},
 		{"type":"dialogue","character":"Senpai","text":"So I know you and Mana san are very close."},
 		{"type":"dialogue","character":"Senpai","text":"With that, I would really appreciate it if you could answer this question truthfully"},
 

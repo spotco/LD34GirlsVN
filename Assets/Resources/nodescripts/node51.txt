@@ -1,19 +1,16 @@
 {
 	"id":51,
-	"title":"The Festival",
+	"title":"A False Friend",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","character":"Mana","text":"I'm so glad I picked out that Yukata for you, it looks great."}
-		{"type":"dialogue","character":"Kurumi","text":"Mana chan.. thanks"}
-
-		{"type":"dialogue","text":"I’ve been to many summer festivals in my life, but none so lively before."},
-		{"type":"dialogue","text":"So many people, so many stands… In my new city-girl yukata, I should feel excited."},
-		{"type":"dialogue","text":"Why do I feel so uneasy?"},
+		{"type":"dialogue","character":"Kurumi","text":"Just that I think it’s great!"},
+		{"type":"dialogue","character":"Kurumi","text":" I think he’s definitely a cool senpai, and you two make a great match!"},
+		{"type":"dialogue","character":"Mana","text":"Oh stop! I bet he doesn't even think it's a date!"}
 	],
-	"links":[52, 53]
+	"links":[52]
 }

@@ -1,12 +1,12 @@
 {
 	"id":45,
-	"title":"Lie",
+	"title":"A White Lie",
 	"background":"bg_school_hallway",
 	"music":"",
-	"requirementitem":["fan video"],
+	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Kurumi","text":" Huh? What? What are you talking about?"},
 		{"type":"dialogue","character":"Senpai","text":"The hero. In this video. Treat this seriously."},
@@ -18,5 +18,5 @@
 
 		{"type":"dialogue","character":"Senpai","text":" That’s enough. Thanks for your time."}
 	],
-	"links":[46]
+	"links":[47]
 }

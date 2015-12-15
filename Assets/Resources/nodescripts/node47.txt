@@ -1,12 +1,12 @@
 {
 	"id":47,
-	"title":"Talk to Mana chan",
+	"title":"A Critical Choice",
 	"background":"bg_school_hallway",
 	"music":"",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_test_2","xpos":200,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"Hi... Mana chan..."},
 		{"type":"dialogue","character":"Mana", "text":"Kuru!? What are you doing here?"},
@@ -25,5 +25,5 @@
 		{"type":"dialogue","character":"Mana","text":"Why do you look so sad? Don’t tell me you like him too!"},
 		{"type":"dialogue","character":"Kurumi","text":"Nope, nothing like that. Just.."}
 	],
-	"links":[48, 49]
+	"links":[48,51]
 }

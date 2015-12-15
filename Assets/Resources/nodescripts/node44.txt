@@ -1,12 +1,12 @@
 {
-	"id":43,
-	"title":"Tell him the truth",
+	"id":44,
+	"title":"The Truth",
 	"background":"bg_school_hallway",
 	"music":"",
-	"requirementitem":["fan video"],
+	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Senpai","image":"char_test_2","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Yeah, of course i know. I stand next to her every day and do the bestest to support her."},
 		{"type":"dialogue","character":"Senpai","text":"So, it is her. Ichijou Mana."},
@@ -17,5 +17,5 @@
 
 		{"type":"dialogue","text":"The way he agreed with me feels very wrong. He walks away, leaving me uneasy."}
 	],
-	"links":[46]
+	"links":[47]
 }
