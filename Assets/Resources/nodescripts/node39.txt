@@ -2,7 +2,7 @@
 	"id":39,
 	"title":"Do her Laundry",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_test_1","xpos":-300,"xscale":1},

@@ -2,7 +2,7 @@
 	"id":6,
 	"title":"To the Senior Classroom",
 	"background":"bg_school_classroom",
-	"music":"",
+	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I find myself in a senior classroom. I can tell since everyone looks so much older than me.","xpos":0,"ypos":0},

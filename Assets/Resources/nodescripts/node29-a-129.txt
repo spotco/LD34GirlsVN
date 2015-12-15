@@ -2,7 +2,7 @@
 	"id":129,
 	"title":"A Lunchtime Adventure",
 	"background":"bg_city",
-	"music":"",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue", "text":"So we went to our usual hangout spot - a tea cafe a few blocks away from school."},

@@ -12,6 +12,7 @@ public class InventoryOverlayElement : MonoBehaviour {
 
 	public void i_initialize(string item_name, GameMain game) {
 		_item_name = item_name;
+		_image.sprite = game._inventory.icon_for_item(_item_name);
 		_anim_theta = 0;
 		_anim_theta_2 = 0;
 		_back.transform.localScale = SPUtil.valv(1.5f);

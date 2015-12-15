@@ -2,7 +2,7 @@
 	"id":116,
 	"title":"Get out of there!",
 	"background":"bg_city",
-	"music":"",
+	"music":"epic",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"It was at this point I decided to run.","xpos":0,"ypos":0},

@@ -2,7 +2,7 @@
 	"id":125,
 	"title":"The Secret",
 	"background":"bg_apartment",
-	"music":"",
+	"music":"decisions",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},

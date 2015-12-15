@@ -2,7 +2,7 @@
 	"id":29,
 	"title":"Ignore",
 	"background":"bg_school_classroom",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},

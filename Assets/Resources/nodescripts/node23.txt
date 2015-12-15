@@ -2,7 +2,7 @@
 	"id":23,
 	"title":"Grab Something And Throw It!",
 	"background":"bg_apartment_night",
-	"music":"",
+	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I'm not scared...Not in the slightest!"},

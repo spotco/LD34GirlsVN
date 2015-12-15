@@ -320,7 +320,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139137131}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
@@ -1310,18 +1310,6 @@ Prefab:
     - target: {fileID: 22411344, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
       propertyPath: m_Pivot.y
       value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 166120, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 170400, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 119058, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
@@ -2426,6 +2414,10 @@ Prefab:
     - target: {fileID: 22457962, guid: 0250d7cf54bc946bd9af6cc705ac456f, type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 56.7999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485086, guid: 0250d7cf54bc946bd9af6cc705ac456f, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0250d7cf54bc946bd9af6cc705ac456f, type: 2}

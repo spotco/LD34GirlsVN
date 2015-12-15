@@ -2,7 +2,7 @@
 	"id":5,
 	"title":"Check phone",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I check to phone to see if I can figure out who it belongs to.","xpos":0,"ypos":0},

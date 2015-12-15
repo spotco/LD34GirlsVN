@@ -2,7 +2,7 @@
 	"id":9,
 	"title":"Leave School",
 	"background":"bg_road",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I had plenty of time, so I went out to explore a little.","xpos":0,"ypos":0},

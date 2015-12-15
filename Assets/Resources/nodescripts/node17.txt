@@ -2,7 +2,7 @@
 	"id":17,
 	"title":"Home Sweet Home",
 	"background":"bg_apartment",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},

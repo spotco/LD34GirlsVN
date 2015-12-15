@@ -2,7 +2,7 @@
 	"id":10,
 	"title":"Talk with Troublemaker",
 	"background":"bg_city",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},

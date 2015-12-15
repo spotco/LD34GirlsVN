@@ -2,7 +2,7 @@
 	"id":15,
 	"title":"A Hero Arrives",
 	"background":"bg_city",
-	"music":"",
+	"music":"epic",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I was following Raichi down the street, when suddenly sirens start sounding!","xpos":0,"ypos":0},

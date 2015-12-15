@@ -1,12 +1,34 @@
 {
 	"id":32,
-	"title":"Talk to Simone",
-	"background":"bg_city",
-	"music":"",
+	"title":"Simone Saber Knight",
+	"background":"bg_city_late",
+	"music":"epic",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
-		{"type":"dialogue","character":"Simone","text":"Manaka-san, is it? You’re totally out of a job now! Watch a real pro at work, dohohoho!"}
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Mana","text":"Simone, was it?"},
+		{"type":"dialogue","character":"Simone","text":"What is it? If you want Simone-sama's autograph, get in line!"},
+		{"type":"dialogue","character":"Mana","text":"So there are other Magical Girl-Knights? I always thought I was the only one!"},
+		{"type":"dialogue","character":"Simone","text":"Ugly girl? A Magical Girl-Knight like Simone-sama? Dohoho~!!"},
+		{"type":"dialogue","character":"Simone","text":"I don't believe it! Where's ugly girl's fancy dress, or elegant weapon?"},
+
+		{"type":"dialogue","character":"Fans","text":"Simone-sama so kawaii!!"},
+
+		{"type":"dialogue","character":"Simone","text":"And where is ugly girl's fanbase? Is that it, another ugly girl??"},
+
+		{"type":"dialogue", "text":"Simone points at me."},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"Fanbase? Ugly?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Simone","text":"This town belong to Simone-sama now! Ugly girl go home!"},
+
+		{"type":"dialogue","character":"Fans","text":"Simone-sama! Simone-sama! Simone-sama!"}
 	],
 	"links":[
 		30

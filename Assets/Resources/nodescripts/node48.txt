@@ -2,7 +2,7 @@
 	"id":48,
 	"title":"Friends Forever",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"affinityrequirement":true,
 	"event":[

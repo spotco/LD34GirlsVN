@@ -2,7 +2,7 @@
 	"id":25,
 	"title":"Late Night Snack",
 	"background":"bg_apartment",
-	"music":"",
+	"music":"happy_end",
 	"requirementitem":["leftovers"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},

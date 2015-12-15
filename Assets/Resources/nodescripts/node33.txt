@@ -1,15 +1,18 @@
 {
 	"id":33,
-	"title":"Look at Defeated Monster",
-	"background":"bg_city",
-	"music":"",
+	"title":"Defeated Monster",
+	"background":"bg_city_late",
+	"music":"epic",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"dialogue", "text":"Woahhhhh her saber so fancy she was so quick to destroy that rampaging monster! Simone sama so cool!! (☆▽☆)"},
-		{"type":"dialogue","character":"Mana","text":"Ugh, Kuru, we’re going."}
+		{"type":"dialogue","character":"Kurumi","text":"Take a look at this, Mana-chan! Defeated in one shot! I'm impressed."},
+		{"type":"dialogue","character":"Mana","text":"C'mon Kuru, you know I could totally do that too!"},
+		{"type":"dialogue","character":"Kurumi","text":"I know but...what if you two could team up or something?"},
+		{"type":"dialogue","character":"Mana","text":"Team up...with her? I think I'll pass."},
+		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person."}
 	],
 	"links":[
 		30

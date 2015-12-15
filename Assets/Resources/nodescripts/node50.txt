@@ -2,7 +2,7 @@
 	"id":50,
 	"title":"Good End",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},

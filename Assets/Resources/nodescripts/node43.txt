@@ -2,7 +2,7 @@
 	"id":43,
 	"title":"A Certain Video",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"worry",
 	"requirementitem":["fan video"],
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},

@@ -2,7 +2,7 @@
 	"id":13,
 	"title":"Accept your fate",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		

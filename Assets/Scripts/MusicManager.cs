@@ -11,7 +11,7 @@ public class MusicManager : MonoBehaviour {
 	private string _currently_loaded_music = "";
 	private string _target_loaded_music = "";
 
-	private float fade_seconds = 2.0f;
+	private float fade_seconds = 1.0f;
 
 	private enum Mode {
 		FadeOut,
@@ -47,6 +47,7 @@ public class MusicManager : MonoBehaviour {
 				_currently_loaded_music = _target_loaded_music;
 				_bg.volume = 0f;
 				_bg.clip = cond_load_sound_of_name (_target_loaded_music);
+				_bg.loop = true;
 				_bg.Play ();
 				_current_mode = Mode.FadeIn;
 			} else {

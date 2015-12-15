@@ -2,20 +2,46 @@
 	"id":34,
 	"title":"Use Sceptre of Transformation",
 	"background":"bg_city_monster",
-	"music":"",
+	"music":"epic",
 	"requirementitem":["sceptre"],
 	"event":[
+		{"type":"dialogue", "text":"Off in the distance, dozens more monsters approach."},
+
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"Dohohoho~! More monsters? Not a problem for Simone-sama!"},
+		{"type":"hidecharacter","character":"Simone"},
+		{"type":"dialogue", "text":"Like a bolt of lightning, she flies towards them."},
+		{"type":"changebackground","background":"bg_city_monster_fight"},
+
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
-		{"type":"dialogue","character":"Kurumi","text":"Oh yeah, Mana chan, I found this in your room. Isn’t this important?"},
-		{"type":"dialogue","character":"Mana","text":"Sceptre of Transformation. Thanks Kurumi!... Super Mana Magi Knight Manaka Transform!!"},
-		{"type":"dialogue","character":"Camera Crew","text":"Wow, Sugoi!"},
-		{"type":"dialogue","character":"Mana","text":"Let's go Kuru! Let's destroy those other monsters!"},
-		{"type":"dialogue","character":"Camera Crew","text":"Follow her!"},
-		{"type":"dialogue","character":"Simone","text":"Wait, where are you going!? Ignoring Simone sama!? Unbelievable!!"},
-		{"type":"additem","item":"fan video"},
-		{"type":"dialogue", "text":"Success??? (☆▽☆)"}
+		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, you just want to show off that you're the best, right?"},
+		{"type":"dialogue","character":"Mana","text":"I'd be lying if I said I didn't want to punch 'Simone-Sama' right in the face."},
+		{"type":"dialogue","character":"Kurumi","text":"Well, check out what I've got."},
+		{"type":"removeitem","item":"sceptre"},
+		{"type":"dialogue","character":"Mana","text":"This is...a Sceptre of Transformation? Alright, I'll see what I can do!"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"dialogue","character":"Mana","text":"Super Pretty Magical Mana Magi Knight Manaka...Transform!!!"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":174,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Let's go!"},
+		{"type":"dialogue","character":"Fans","text":"Uwaaaaaa!!! Sugoi!!! Follow her!"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"dialogue", "text":"As Mana-chan flies off in the other direction, the entranced fanbase follows her."},
+
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"Wait, where are you going!? Ignoring Simone-sama!? Unbelievable!"},
+		{"type":"hidecharacter","character":"Simone"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue", "text":"A few days later I find videos of Mana-chan all over the internet. She's become a real viral hit!"},
+		{"type":"additem","item":"fan video"}
 	],
 	"links":[
 		30

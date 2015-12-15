@@ -2,7 +2,7 @@
 	"id":20,
 	"title":"Go to Sleep",
 	"background":"bg_apartment_night",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?"},

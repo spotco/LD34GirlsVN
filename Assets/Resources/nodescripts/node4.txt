@@ -2,7 +2,7 @@
 	"id":4,
 	"title":"To the Roof",
 	"background":"bg_school_roof",
-	"music":"",
+	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Through my random wandering I find myself on the roof.","xpos":0,"ypos":0},

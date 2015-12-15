@@ -8,9 +8,9 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 5;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = false;
+	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = false;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 35;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -33,15 +33,18 @@ public class GameMain : MonoBehaviour {
 	public int _affinity;
 	
 	/*
-	noucome the anime
 	TODO:
 	do not show unaccessible nodes
 	consistent raichi senpai
 	
-	(final grid design)
+	TODO
+	35,37,38,40,41
+	
+	43,44,45,47
+	48,49,50
+	51,52,53
+	
 	(final art)
-	(sound effects)
-	(music)
 	(start menu, end menu)
 	*/
 	

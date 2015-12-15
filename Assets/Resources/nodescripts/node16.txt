@@ -2,7 +2,7 @@
 	"id":16,
 	"title":"Going Home",
 	"background":"bg_road",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},

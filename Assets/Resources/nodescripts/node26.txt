@@ -2,7 +2,7 @@
 	"id":26,
 	"title":"My Best (Magical) Friend!",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},

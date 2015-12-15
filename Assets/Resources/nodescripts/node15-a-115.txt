@@ -2,7 +2,7 @@
 	"id":115,
 	"title":"Help the Hero!",
 	"background":"bg_city",
-	"music":"",
+	"music":"epic",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Without even thinking about it, I run to where the hero fell to help her.","xpos":0,"ypos":0},

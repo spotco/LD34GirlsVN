@@ -2,7 +2,7 @@
 	"id":3,
 	"title":"To the Bathroom",
 	"background":"bg_school_hallway",
-	"music":"",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I go to the bathroom, half expecting to find that pink hair girl hiding somewhere.","xpos":0,"ypos":0},

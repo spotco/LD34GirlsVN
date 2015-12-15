@@ -2,7 +2,7 @@
 	"id":7,
 	"title":"Give phone to Senpai",
 	"background":"bg_school_classroom",
-	"music":"",
+	"music":"happy_end",
 	"requirementitem":["phone"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},

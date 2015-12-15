@@ -2,7 +2,7 @@
 	"id":19,
 	"title":"Eat Dinner",
 	"background":"bg_apartment",
-	"music":"",
+	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"My mom already made dinner for me and left it in the fridge."},
