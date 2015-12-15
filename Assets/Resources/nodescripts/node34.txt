@@ -1,6 +1,6 @@
 {
 	"id":34,
-	"title":"Use Sceptre of Transformation",
+	"title":"Power Up!",
 	"background":"bg_city_monster",
 	"music":"epic",
 	"requirementitem":["sceptre"],
