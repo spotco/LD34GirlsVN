@@ -38,7 +38,6 @@ public class GameMain : MonoBehaviour {
 	consistent raichi senpai
 	
 	TODO
-	50
 	51,52,53
 	
 	(final art)

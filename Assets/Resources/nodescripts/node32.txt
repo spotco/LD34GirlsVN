@@ -10,8 +10,8 @@
 
 		{"type":"dialogue","character":"Mana","text":"Simone, was it?"},
 		{"type":"dialogue","character":"Simone","text":"What is it? If you want Simone-sama's autograph, get in line!"},
-		{"type":"dialogue","character":"Mana","text":"So there are other Magical Girl-Knights? I always thought I was the only one!"},
-		{"type":"dialogue","character":"Simone","text":"Ugly girl? A Magical Girl-Knight like Simone-sama? Dohoho~!!"},
+		{"type":"dialogue","character":"Mana","text":"So there are other Magi-Knights? I always thought I was the only one!"},
+		{"type":"dialogue","character":"Simone","text":"Ugly girl? A Magi-Knight like Simone-sama? Dohoho~!!"},
 		{"type":"dialogue","character":"Simone","text":"I don't believe it! Where's ugly girl's fancy dress, or elegant weapon?"},
 
 		{"type":"dialogue","character":"Fans","text":"Simone-sama so kawaii!!"},

@@ -102,8 +102,14 @@ public class NodeScript {
 				
 			} else if (type == "playSFX") {
 				itr_neu = new NodeScriptEvent_PlaySFX () {
-					_sfx= itr.GetString ("sfx")	
+					_sfx= itr.GetString("sfx")	
 				};
+				
+			} else if (type == "playBGM") {
+				itr_neu = new NodeScriptEvent_PlayBGM() {
+					_bgm = itr.GetString("bgm")
+				};
+				
 			} else {
 				SPUtil.logf("unknown type %s",type);
 			} 

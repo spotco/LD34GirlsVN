@@ -40,9 +40,12 @@
 		{"type":"dialogue","text":"Tears still flowing, she turns around."},
 		{"type":"dialogue","character":"Mana","text":"...you can STAY home!"},
 		{"type":"dialogue","text":"She leaves."},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":-1},
+
 		{"type":"dialogue","character":"Kurumi","text":"Mana-chan I didn't mean to..."},
 
-		{"type":"dialogue","text":"I told her everything that happened and thought I did the right thing but..."},
+		{"type":"dialogue","text":"I told her everything and thought I did the right thing, but..."},
 		{"type":"dialogue","character":"Kurumi","text":"I'm...sorry..."}
 	],
 	"links":[49]
