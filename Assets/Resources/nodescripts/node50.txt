@@ -1,12 +1,12 @@
 {
 	"id":50,
-	"title":"Good End",
-	"background":"bg_school_hallway",
-	"music":"happy_day",
+	"title":"Friends Forever (Good End)",
+	"background":"bg_festival",
+	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_festival","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Mana","text":"Okay, I’m supposed to meet him at that hill over there."},
 		{"type":"dialogue","character":"Mana","text":"If you really really want, you can follow me. Only because you’re my best friend."},
