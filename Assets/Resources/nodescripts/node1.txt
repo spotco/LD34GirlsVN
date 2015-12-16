@@ -5,7 +5,7 @@
 	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"changebackground","background":"bg_blank"},
+		{"type":"changebackground","background":"bg_black"},
 
 		{"type":"dialogue","text":"It's been a crazy, hectic experience.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A new city with a new home and new life. I haven't even had time to write back to my old friends!","xpos":0,"ypos":0},

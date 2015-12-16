@@ -39,7 +39,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"So not gonna lie, it's been a crazy past few weeks."},
 		{"type":"dialogue","text":"Crazy in a I-didn't-even-know-crazy- before-this kind of way."},
-		{"type":"dialogue","text":"But I've gotta say, it's been horrible on my sleep schedule."},
+		{"type":"dialogue","text":"AND it's been absolutely killer on my sleep schedule."},
 		{"type":"dialogue","text":"I do most of my napping in class nowadays..."},
 
 		{"type":"changebackground","background":"bg_school_classroom"},

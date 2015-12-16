@@ -1,21 +1,49 @@
 {
 	"id":48,
-	"title":"Friends Forever",
-	"background":"bg_school_hallway",
-	"music":"happy_day",
+	"title":"A Tough Choice.",
+	"background":"bg_city_late",
+	"music":"decisions",
 	"requirementitem":[],
 	"affinityrequirement":true,
 	"event":[
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":300,"xscale":-1},
 
-		{"type":"dialogue","character":"Kurumi","text":"I guess it’s just.. he’s been asking questions about you lately.. "},
-		{"type":"dialogue","character":"Kurumi","text":"And I’m worried that he might be, I don’t know, evil or something. "},
-		{"type":"dialogue","character":"Mana", "text":"Oh come on. It’s probably for this he wanted to know!"},
-		{"type":"dialogue","character":"Mana","text":"He’s been wanting to ask me out and wanted to make sure that I’m as cool as I seem!"},
-		{"type":"dialogue","character":"Kurumi","text":" Yeah, okay. Just want to make sure you're safe."},
-		{"type":"dialogue","character":"Kurumi","text":"Just call me up if you need anything."},
-		{"type":"dialogue","character":"Mana","text":"Yeah, let’s pick out yukatas together! You're coming too!"},
+		{"type":"dialogue","text":"I had to tell her. It's my duty as a friend, after all."},
+
+		{"type":"dialogue","character":"Kurumi","text":"Raichi-san...I wouldn't trust him."},
+		{"type":"dialogue","character":"Mana","text":"Wait...what?"},
+
+		{"type":"dialogue","character":"Kurumi","text":"There's...something wrong here. I can feel it."},
+		{"type":"dialogue","character":"Mana","text":"Just... what are you trying to say?"},
+
+		{"type":"dialogue","character":"Kurumi","text":"You know, my first day here he was telling me all these bad things about you."},
+		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"A-about...how you were a delinquent and a menace and a bad influence and..."},
+		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"...and that I shouldn't be around you so much and stuff..."},
+		{"type":"dialogue","character":"Kurumi","text":"...and he also saw that video online, and then started asking all these weird questio--"},
+
+		{"type":"dialogue","character":"Mana","text":"Hmmph. I think I get it."},
+		{"type":"dialogue","character":"Kurumi","text":"...you do?"},
+		{"type":"dialogue","character":"Mana","text":"I know what you're thinking."},
+		{"type":"dialogue","character":"Kurumi","text":"Do you?"},
+
+		{"type":"dialogue","character":"Mana","text":"Yeah. It's a little something like..."},
+		{"type":"dialogue","character":"Mana","text":"Poor little me. My cool best friend is about to go on a date with her longtime crush..."},
+		{"type":"dialogue","character":"Mana","text":"...and I'm SOOOO jealous, I'm just gonna make up all these LIES and stuff..."},
+		{"type":"dialogue","character":"Kurumi","text":"W-w-wait...Mana-chan...it's the tru--"},
+		{"type":"dialogue","character":"Mana","text":"...that...that..."},
+		{"type":"dialogue","text":"Tears start coming from her eyes. She gets up."},
+		{"type":"dialogue","character":"Mana","text":"Listen. I was gonna ask you to come too b-but..."},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"Tears still flowing, she turns around."},
+		{"type":"dialogue","character":"Mana","text":"...you can STAY home!"},
+		{"type":"dialogue","text":"She leaves."},
+		{"type":"dialogue","character":"Kurumi","text":"Mana-chan I didn't mean to..."},
+
+		{"type":"dialogue","text":"I told her everything that happened and thought I did the right thing but..."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm...sorry..."}
 	],
 	"links":[49]
 }

@@ -9,8 +9,8 @@ public class GameMain : MonoBehaviour {
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
-	public static bool IGNORE_ITEM_REQ = false;
-	public static int NODE_START_INDEX = 1;
+	public static bool IGNORE_ITEM_REQ = true;
+	public static int NODE_START_INDEX = 47;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -38,8 +38,6 @@ public class GameMain : MonoBehaviour {
 	consistent raichi senpai
 	
 	TODO
-	35,37,38,40,41
-	
 	43,44,45,47
 	48,49,50
 	51,52,53

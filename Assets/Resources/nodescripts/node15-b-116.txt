@@ -1,7 +1,7 @@
 {
 	"id":116,
-	"title":"Get out of there!",
-	"background":"bg_city",
+	"title":"Get Outta There!",
+	"background":"bg_city_monster",
 	"music":"epic",
 	"requirementitem":[],
 	"event":[

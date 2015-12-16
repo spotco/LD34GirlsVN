@@ -21,7 +21,7 @@
 		{"type":"dialogue","text":"Mana looks completely surprised.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
 		{"type":"movecharacter","character":"Mana","xto":-1000},
-		{"type":"dialogue","character":"Mana","text":"GOTTAGOSOMEWHERESEEYA....!","xpos":82,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"GOTTA-GO-SOME-WHERE-SEEYA...!","xpos":82,"ypos":53},
 		{"type":"dialogue","text":"She runs out.","xpos":82,"ypos":0},
 
 		{"type":"dialogue","character":"Raichi","text":"I see. Well, I hope this doesn't become a regular thing.","xpos":82,"ypos":0},

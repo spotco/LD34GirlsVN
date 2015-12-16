@@ -1,12 +1,14 @@
 {
 	"id":49,
-	"title":"Before the Festival (Good)",
-	"background":"bg_school_hallway",
-	"music":"happy_day",
+	"title":"Before the Festival-1",
+	"background":"bg_school_classroom",
+	"music":"worry",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+
+		{"type":"dialogue","text":""},
 
 		{"type":"dialogue","text":"Mana has been looking really excited lately."},
 		{"type":"dialogue","text":"She’s also been really active in the monster hunting."},
