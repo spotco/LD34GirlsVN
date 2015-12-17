@@ -5,11 +5,11 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I was following Raichi down the street, when suddenly sirens start sounding!","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"I was following Raichi back from the library, when suddenly sirens start sounding!","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"An attack?! Not again! Kurumi, we should run."},
-		{"type":"dialogue","character":"Kurumi","text":"Wait, attack? What do you mean by attack---"},
+		{"type":"dialogue","character":"Kurumi","text":"Wait, attack? What kind of attack?"},
 
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -38,9 +38,9 @@
 
 		{"type":"dialogue","text":"Above in the skies I see streaks of light shooting across.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The hero's fighting to protect us. She's so cool and strong!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But suddenly, the monster knocks her from behind! She falls to the ground not far from where I stand.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But suddenly, the monster knocks her from behind! She falls to the ground not far from me.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Ohmygosh...is she alright? What should I do?"}
 	],
 	"links":[

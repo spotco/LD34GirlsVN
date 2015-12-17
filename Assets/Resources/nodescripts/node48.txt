@@ -1,13 +1,13 @@
 {
 	"id":48,
-	"title":"A Tough Decision.",
+	"title":"A Tough Choice.",
 	"background":"bg_city_late",
 	"music":"decisions",
 	"requirementitem":[],
 	"affinityrequirement":true,
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
 
 		{"type":"dialogue","text":"I had to tell her. It's my duty as a friend, after all."},
 
@@ -15,37 +15,43 @@
 		{"type":"dialogue","character":"Mana","text":"Wait...what?"},
 
 		{"type":"dialogue","character":"Kurumi","text":"There's...something wrong here. I can feel it."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"Just... what are you trying to say?"},
 
 		{"type":"dialogue","character":"Kurumi","text":"You know, my first day here he was telling me all these bad things about you."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"..."},
 		{"type":"dialogue","character":"Kurumi","text":"A-about...how you were a delinquent and a menace and a bad influence and..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"..."},
 		{"type":"dialogue","character":"Kurumi","text":"...and that I shouldn't be around you so much and stuff..."},
 		{"type":"dialogue","character":"Kurumi","text":"...and he also saw that video online, and then started asking all these weird questio--"},
 
 		{"type":"dialogue","character":"Mana","text":"Hmmph. I think I get it."},
 		{"type":"dialogue","character":"Kurumi","text":"...you do?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"I know what you're thinking."},
 		{"type":"dialogue","character":"Kurumi","text":"Do you?"},
 
 		{"type":"dialogue","character":"Mana","text":"Yeah. It's a little something like..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
 		{"type":"dialogue","character":"Mana","text":"Poor little me. My cool best friend is about to go on a date with her longtime crush..."},
-		{"type":"dialogue","character":"Mana","text":"...and I'm SOOOO jealous, I'm just gonna make up all these LIES and stuff..."},
+		{"type":"dialogue","character":"Mana","text":"...and I'm SO jealous, I'm just gonna make up all these LIES and stuff..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"W-w-wait...Mana-chan...it's the tru--"},
 		{"type":"dialogue","character":"Mana","text":"...that...that..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","text":"Tears start coming from her eyes. She gets up."},
 		{"type":"dialogue","character":"Mana","text":"Listen. I was gonna ask you to come too b-but..."},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"Tears still flowing, she turns around."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
 		{"type":"dialogue","character":"Mana","text":"...you can STAY home!"},
 		{"type":"dialogue","text":"She leaves."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
+		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, I didn't mean to..."},
 
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":-1},
-
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan I didn't mean to..."},
-
-		{"type":"dialogue","text":"I told her everything and thought I did the right thing, but..."},
+		{"type":"dialogue","text":"I told her everything that happened and thought I did the right thing but..."},
 		{"type":"dialogue","character":"Kurumi","text":"I'm...sorry..."}
 	],
 	"links":[49]

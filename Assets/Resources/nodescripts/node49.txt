@@ -10,8 +10,8 @@
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","text":"Ever since then, she's been ignoring me."},
 		{"type":"dialogue","character":"Mana","text":"..."},
@@ -47,11 +47,11 @@
 		{"type":"dialogue","text":"As I walk, I feel someone's presence behind me."},
 
 		{"type":"dialogue","character":"Raichi","text":"Ms. Motoyama. A minute, if you would please."},
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 
 		{"type":"dialogue","text":"It's Raichi. He must have seen me on the roof."},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Listen... I don't have anything to say to you."},
 		{"type":"dialogue","text":"I'm getting a little mad. I don't even want to think about it right now."},
 		{"type":"dialogue","character":"Raichi","text":"I, however, do. Now if you weren't aware, the summer festival is tomorrow."},
@@ -62,6 +62,7 @@
 		{"type":"dialogue","character":"Raichi","text":"...you would do well to listen to my advice this time."},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"dialogue","text":"He turns around and walks away."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
 		{"type":"dialogue","character":"Kurumi","text":"I-I...!!!"},
 		{"type":"dialogue","text":"Now I'm REALLY mad."},
 		{"type":"dialogue","text":"He's up to something. That right there was crystal-clear no-doubt-about-it proof."},

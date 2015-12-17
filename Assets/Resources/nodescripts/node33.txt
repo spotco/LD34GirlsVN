@@ -5,14 +5,18 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_angry","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"Take a look at this, Mana-chan! Defeated in one shot! I'm impressed."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"C'mon Kuru, you know I could totally do that too!"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I know but...what if you two could team up or something?"},
 		{"type":"dialogue","character":"Mana","text":"Team up...with her? I think I'll pass."},
-		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person."}
+		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person."},
+		{"type":"dialogue", "text":"I guess she had a point - Simone was hardly heroic anyway."}
+
 	],
 	"links":[
 		30

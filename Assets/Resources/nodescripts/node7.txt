@@ -8,8 +8,11 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom...what should I do with it?."},
-		{"type":"dialogue","character":"Raichi","text":"That phone...it's Ichijou's. But why would she...","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"He furrows his brow a bit, then grabs the phone.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"That phone...it's Ichijou's.","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","text":"He furrows his brow a bit when the screen lights up and reveals Mana's cosplay outfit background.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"...","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"Raichi grabs the phone.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"phone"},
 		{"type":"dialogue","character":"Raichi","text":"I'll get this back to her.","xpos":22,"ypos":53},
 		{"type":"dialogue","text":"I should have been able to trust him but...I could have probably just given it myself.","xpos":0,"ypos":0}

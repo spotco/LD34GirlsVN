@@ -5,12 +5,16 @@
 	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
+		{"type":"dialogue","text":"Now's the time to let off some steam."},
+
 		{"type":"dialogue","character":"Kurumi","text":"You bet he was serious. He just came right up to me..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
 		{"type":"dialogue","character":"Kurumi","text":"...and confessed! Can you believe it? Asked me out to the summer festival and everything."},
 		{"type":"dialogue","text":"I did my best to hold my grin. Mana sure didn't try very had to hold her blushing."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"Pffft....Whaaaa? An underclassman like you? I-DON'T-THINK-SO~!"},
 		{"type":"addaffinity"}
 	],

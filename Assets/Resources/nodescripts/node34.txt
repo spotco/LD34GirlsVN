@@ -1,26 +1,30 @@
-{
+﻿{
 	"id":34,
 	"title":"Power Up!",
-	"background":"bg_city_monster",
+	"background":"bg_city",
 	"music":"epic",
 	"requirementitem":["sceptre"],
 	"event":[
 		{"type":"dialogue", "text":"Off in the distance, dozens more monsters approach."},
 
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
+		{"type":"changebackground","background":"bg_city_monster_2"},
 		{"type":"dialogue","character":"Simone","text":"Dohohoho~! More monsters? Not a problem for Simone-sama!"},
 		{"type":"hidecharacter","character":"Simone"},
 		{"type":"dialogue", "text":"Like a bolt of lightning, she flies towards them."},
-		{"type":"changebackground","background":"bg_city_monster_fight"},
 
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_angry","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue", "text":"Suddenly, a rather petty thought pops into my head. I can't resist. 	(°ㅂ°╬)"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, you just want to show off that you're the best, right?"},
 		{"type":"dialogue","character":"Mana","text":"I'd be lying if I said I didn't want to punch 'Simone-Sama' right in the face."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Well, check out what I've got."},
 		{"type":"removeitem","item":"sceptre"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"This is...a Sceptre of Transformation? Alright, I'll see what I can do!"},
 
 		{"type":"hidecharacter","character":"Kurumi"},

@@ -13,7 +13,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Mana","text":"Well...there it is! The pictures didn't do it justice!"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wait, what's going on up there?"},
 
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -36,8 +36,8 @@
 
 		{"type":"hidecharacter","character":"Simone"},
 
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Something about her really gets on my nerves..."},
 		{"type":"dialogue","character":"Kurumi","text":"Tell me about it."}
 	],

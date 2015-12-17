@@ -5,17 +5,19 @@
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_happy","xpos":300,"xscale":1},
 
 		{"type":"dialogue","text":"We head back to school since I DID leave my bag there...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"So Kashiwagi-senpai told you about me, did he? What else did he say?"},
 		{"type":"dialogue","text":"Kashiwagi...senpai? I had a feeling there was something more going on here.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"You mean Raichi Kashiwagi, the class pres? Interesting guy..."},
 
-		{"type":"dialogue","character":"Mana","text":"Now that I think of it, I DO catch him looking at me from time to time..."},
+		{"type":"dialogue","character":"Mana","text":"Isn't he cool? He's basically a prodigy..."},
+		{"type":"dialogue","character":"Mana","text":"Volunteers for city emergency relief, student body pres, perfect test scores..."},
 		{"type":"dialogue","character":"Kurumi","text":"Really? Now he did seem like one of those nosy types--"},
 
-		{"type":"dialogue","character":"Mana","text":"Eheheh...and he IS pretty cute too! To think he knew my name and all, as an underclassman..."},
+		{"type":"dialogue","character":"Mana","text":"Eheheh...and he's pretty cute too! To think he knew my name and all, as an underclassman..."},
 		{"type":"dialogue","text":"Alright, there was DEFINITELY something going on here.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Didn't think you'd be into that kind of guy, Being...and all..."},
 		{"type":"dialogue","text":"I remember what Raichi told me about her. Troublemaker. Delinquent.","xpos":0,"ypos":0},
@@ -29,18 +31,19 @@
 		{"type":"dialogue","text":"In front of our classroom was Raichi. He had my bag, and looked looked like he had been waiting.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":373,"xscale":1},
 
 		{"type":"dialogue","character":"Raichi","text":"Ms. Motoyama...where have you been? The teachers have been looking all over...","xpos":82,"ypos":0},
 		{"type":"movecharacter","character":"Kurumi","xto":-217},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-394,"xscale":-1},
 		{"type":"dialogue","text":"He pauses as he sees Mana behind me.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"...I see.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"He looks a little dissapointed, but continues on.","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Anyway, the teachers wanted me to explain what you missed, being your first day.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"He looks a little disappointed, but continues on.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Anyway, the teachers asked me to explain what you missed, being your first day.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"I was thinking we should go to the library so I could give you your homework...","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"...and answer any questions you may have. Now, if you would.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"...and answer any questions you may have. Are you ready to go?","xpos":82,"ypos":0},
 		{"type":"dialogue","text":"Ignoring Mana, he motions to leave.","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi-san..."}
 	],
 	"links":[

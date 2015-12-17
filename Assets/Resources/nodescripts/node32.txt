@@ -10,8 +10,9 @@
 
 		{"type":"dialogue","character":"Mana","text":"Simone, was it?"},
 		{"type":"dialogue","character":"Simone","text":"What is it? If you want Simone-sama's autograph, get in line!"},
-		{"type":"dialogue","character":"Mana","text":"So there are other Magi-Knights? I always thought I was the only one!"},
-		{"type":"dialogue","character":"Simone","text":"Ugly girl? A Magi-Knight like Simone-sama? Dohoho~!!"},
+		{"type":"dialogue","character":"Mana","text":"So there are other Magi-Knights around? I always thought I was the only one in this city!"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Simone","text":"Ugly girl? A Magical Girl-Knight like Simone-sama? Dohoho~!!"},
 		{"type":"dialogue","character":"Simone","text":"I don't believe it! Where's ugly girl's fancy dress, or elegant weapon?"},
 
 		{"type":"dialogue","character":"Fans","text":"Simone-sama so kawaii!!"},
@@ -21,12 +22,12 @@
 		{"type":"dialogue", "text":"Simone points at me."},
 
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"Fanbase? Ugly?"},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_angry","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Simone","text":"This town belong to Simone-sama now! Ugly girl go home!"},
+		{"type":"dialogue","character":"Simone","text":"This town belongs to Simone-sama now! Ugly girl go home!"},
 
 		{"type":"dialogue","character":"Fans","text":"Simone-sama! Simone-sama! Simone-sama!"}
 	],

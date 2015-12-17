@@ -8,7 +8,10 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","text":"As we passed by a local pastry shop, Mana stopped dead in her tracks.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","text":"Her eyes sparkle and she turns to me, excited.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Kurumi. Been here before? You've GOT to try one of these. They're totally the best ever!"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Hmm...maybe we shouldn't eat to many sweets..."},
 		{"type":"dialogue","character":"Mana","text":"No way. You'll love this. I'll pay, hold on."},
 
@@ -17,9 +20,10 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"She wasn't kidding though. These were some seriously beautiful pastries.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_happy","xpos":300,"xscale":1},
 		{"type":"changebackground","background":"bg_city"},
 		{"type":"dialogue","character":"Mana","text":"Alright, photo time! Now don't take a bite yet, I've gotta post this to my---"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"Oh wait...I lost my phone."},
 
 		{"type":"dialogue","text":"She looks seriously bummed.","xpos":0,"ypos":0},
@@ -27,6 +31,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"This wouldn't happen to be yours, would it? Found it back at school."},
 		{"type":"removeitem","item":"phone"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"O.M.G!!! You are totally a lifesaver!"},
 
 		{"type":"dialogue","text":"She snaps a couple of pictures, then scarfs down the pastry in one bite.","xpos":0,"ypos":0},

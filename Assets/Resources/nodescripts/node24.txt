@@ -5,18 +5,27 @@
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked, you know."},
 		{"type":"dialogue","character":"Mana","text":"I just wanted to make sure this was the place."},
 
 		{"type":"dialogue","text":"Well this is a little awkward."},
+		{"type":"dialogue","text":"Once she settles from the adrenaline, her manner changes."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","text":"She bites her lip and takes a deep breath."},
 
 		{"type":"dialogue","character":"Mana","text":"Okay listen. You said you wanted to be friends, right?"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Kurumi","text":"Well, yeah. We DO sit next to each other now."},
-		{"type":"dialogue","character":"Mana","text":"And what if I said I had a REALLY CRAZY secret that I gotta tell?"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Well, yeah! Of course."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","text":"She fidgets, but then there's that smirk again."},
+
+		{"type":"dialogue","character":"Mana","text":"I think you know something! And...!"},
+		{"type":"dialogue","character":"Mana","text":"Do you want to see something amazing?"},
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 		{"type":"dialogue","text":"I don't think I'm in any position to refuse here..."}
 	],

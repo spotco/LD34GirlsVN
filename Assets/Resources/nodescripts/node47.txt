@@ -19,6 +19,7 @@
 		{"type":"dialogue","text":"Raichi leans in close and whispers something in her ear."},
 		{"type":"movecharacter","character":"Mana","xto":-320},
 		{"type":"dialogue","text":"Hearing whatever he just said, she looks completely taken aback."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","text":"Raichi stands up, says a few last words...and leaves."},
 
 		{"type":"hidecharacter","character":"Raichi"},
@@ -26,8 +27,9 @@
 		{"type":"dialogue","text":"..."},
 		{"type":"dialogue","text":"I go inside and sit down beside her."},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"Was that...Raichi that I just saw you talking with? What was that all about?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","text":"..."},
 		{"type":"dialogue","text":"This was suspicious. I was going to warn her."},
 		{"type":"dialogue","text":"But I could have never expected what came next."},
@@ -38,6 +40,7 @@
 		{"type":"dialogue","text":"Helping..?"},
 
 		{"type":"dialogue","character":"Mana","text":"After that time you tried to help me do homework I..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"...I realized I needed to get my studies back in order. So I asked him to tutor me."},
 
 		{"type":"dialogue","character":"Kurumi","text":"That's good--"},
@@ -54,10 +57,12 @@
 		{"type":"dialogue","text":"The questions...the warnings...him knowing...and now this?"},
 		{"type":"dialogue","text":"This was extremely suspicious. I was going to tell her not to--"},
 
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"I'm soooooo happy right now! I mean like, summer festival with an older classmate and all!"},
 		{"type":"dialogue","character":"Mana","text":"Like, what should I wear? I don't even have a yukata or anything! You gotta help me pick one out!"},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Don't--"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"Don't what?"},
 
 		{"type":"dialogue","text":"I knew something was suspicious. But she was so happy right now... could I bring myself to tell her?"}

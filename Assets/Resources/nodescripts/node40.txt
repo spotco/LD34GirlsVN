@@ -12,10 +12,12 @@
 		{"type":"dialogue","character":"Kurumi","text":"Is this...a picture of you when you were a kid? You look so cute!"},
 		{"type":"dialogue","text":"She was just about the cutest four or five year old you've ever seen."},
 		{"type":"dialogue","text":"I pass the photo over to Mana-chan."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"This is...I haven't seen this in a long time."},
 		{"type":"dialogue","text":"I take another look. Behind her in the photo is a man and a woman. Parents, I assume."},
-
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"They died not long after this was taken."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
 		{"type":"dialogue","character":"Kurumi","text":"I-I'm...sorry..."},
 
 		{"type":"dialogue","character":"Mana","text":"...don't be. I think I turned out all right, didn't I?"},

@@ -7,7 +7,7 @@
 	"event":[
 		{"type":"dialogue","text":"It was at this point I decided to run.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As fast as I could before I got killed by some giant monster...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...pink lasers or any of this other crazy stuff.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...pink lasers or any of this other stuff.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I ran as fast and as far as I could.","xpos":0,"ypos":0}
 	],

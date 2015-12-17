@@ -1,4 +1,4 @@
-{
+﻿{
 	"id":4,
 	"title":"To the Roof",
 	"background":"bg_school_roof",
@@ -6,11 +6,15 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Through my random wandering I find myself on the roof.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wow wow such a great view! I can see the whole city from here!"},
 		{"type":"dialogue","text":"In the distance I could see smoke rising. A group of helicopters fly overhead towards it.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"What's going on over there?"},
-		{"type":"dialogue","text":"I'd heard about attacks in the city. Didn't think too much of it though.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I'd heard about attacks in the city before I moved.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Some kind of special forces are said to take care of it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...so people don't seem to worry.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Hopefully it's nothing serious! 	(￣～￣;)","xpos":0,"ypos":0}
 	],
 	"links":[
 		2

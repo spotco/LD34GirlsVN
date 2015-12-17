@@ -6,8 +6,9 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Yaaaaaaaaawwwn..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"I sure hope not."},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},

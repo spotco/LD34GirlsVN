@@ -14,12 +14,21 @@
 		{"type":"dialogue","character":"Kurumi","text":"Well I..."},
 
 		{"type":"dialogue","character":"Raichi","text":"I see, then you must be here to ask about joining a club, right?","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"His eyes light up.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"So I did a bit of research and saw that you were in a tea ceremony club back at your old school...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"...and I'll have you know that we've got one of the most prestigious ones here at our school...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"...They've won multiple awards and have been to the district finals...","xpos":22,"ypos":53},
-
+		
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"...UMMM I actually didn't come for that!"},
-		{"type":"dialogue","character":"Raichi","text":"Oh? I'm sorry. I've got a couple of other suggestions if you're interested.","xpos":22,"ypos":53}
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Oh? I'm sorry. Do you need anything else while you're here?","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"I'm just getting a feel for stuff right now, sorry!"},
+		{"type":"dialogue","character":"Raichi","text":"Well, just ask me if you need anything at all, Kurumi-chan.","xpos":22,"ypos":53}
+
+
 	],
 	"links":[
 		2,7

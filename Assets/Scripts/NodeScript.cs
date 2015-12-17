@@ -67,7 +67,7 @@ public class NodeScript {
 				itr_neu = new NodeScriptEvent_TransitionCharacter () {
 					_character = itr.GetString ("character"),
 					_image = itr.GetString ("image"),
-					_xscale = (float)itr.GetNumber ("xscale")
+					_xscale =  itr.ContainsKey("xscale") ? (float)itr.GetNumber ("xscale") : 1
 				};
 			
 			} else if (type == "movecharacter") {

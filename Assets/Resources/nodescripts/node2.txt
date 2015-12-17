@@ -6,7 +6,7 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Being lunchtime and all, I decided to go to the cafeteria. Only one problem...","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":0,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":0,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I am SOOO totally lost right now! Should have asked someon---"},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","character":"Kurumi","text":"WWWWAAAAAAAAHHHH!!!!!"},
@@ -15,14 +15,18 @@
 		{"type":"showcharacter","character":"Older Student","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Older Student","text":"Oh my, are you alright? Let me help you up.","ypos":45},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Older Student","text":"Ah, it's... Kurumi Motoyama, right?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Older Student","text":"Ah! It's... Kurumi Motoyama, right?","xpos":23,"ypos":45},
 
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Yes! Wait… how did you know my name?","ypos":-130},
-		{"type":"dialogue","character":"Older Student","text":"Oh! I'm the student council president, it's my duty to know everyone.","xpos":23,"ypos":45},
-
+		{"type":"transitioncharacter","character":"Older Student","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Older Student","text":"Oh! I'm the student council president. It's my duty to know everyone.","xpos":23,"ypos":45},
+		 
 		{"type":"rename","namestart":"Older Student","nameend":"Raichi"},
 		{"type":"dialogue","character":"Raichi","text":"And where are my manners? I'm Raichi Kashiwagi. You're...a first year, am I correct?","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"You weren't kidding, you do know everything! Or everyone...that is.","ypos":-130},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"And forgive me if I'm wrong, but same class as Ichijou-san?","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Kurumi","text":"Ichijou-san...?","ypos":-130},
 		{"type":"dialogue","character":"Raichi","text":"Pink hair, impossible to miss. Unless she's skipping school that is.","xpos":23,"ypos":45},
@@ -30,6 +34,7 @@
 		{"type":"dialogue","text":"Mana...sounds like something from a RPG videogame or something.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"She's a bit of a troublemaker, if you couldn't tell.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Teachers have been asking me for advice on how to deal with her.","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Well, don't let it bother you, Kurumi-chan. I'll see you around.","xpos":23,"ypos":45},
 		{"type":"movecharacter","character":"Raichi","xto":700},
 		

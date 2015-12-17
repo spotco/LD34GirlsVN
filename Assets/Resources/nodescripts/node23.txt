@@ -9,7 +9,7 @@
 		{"type":"dialogue","text":"I grab the closest thing to me, which happens to be a pillow, and throw it."},
 		{"type":"dialogue","character":"Voice","text":"Ooof! Hey, don't hit me!"},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_angry","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Bullseye, right in the face!"},
 
 		{"type":"dialogue","text":"The intruder grabs this pillow and throws it right back."},
@@ -22,10 +22,12 @@
 		{"type":"dialogue","text":"I suddenly bump into the light and it turns on."},
 
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"It's Mana, from my class!"},
+		{"type":"dialogue","text":"She looks worn out, but she's still got that energetic sparkle in her eyes."},
 		{"type":"dialogue","character":"Kurumi","text":"Mana?! What are you doing here?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place."},
 
 		{"type":"dialogue","text":"The room's a complete mess."},

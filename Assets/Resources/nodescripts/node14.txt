@@ -1,32 +1,36 @@
-{
+ {
 	"id":14,
 	"title":"Drag Mana Along Too!",
 	"background":"bg_school_hallway",
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-394,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":373,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 
 		{"type":"dialogue","character":"Kurumi","text":"You know, Mana-chan here also missed class today...","xpos":82},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"...I'm sure she'll need some tutoring too!","xpos":82},
 		{"type":"dialogue","text":"I slyly nudge her in the elbow. A win for both of us here.","xpos":82,"ypos":0},
 		{"type":"addaffinity"},
 
 		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
-		{"type":"dialogue","text":"Raichi sighs, but carries on.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Raichi sighs and adjusts his glasses.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Ichijou-san? Well, if you're willing to turn a new leaf I'd be happy to...","xpos":82,"ypos":0},
 
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","text":"Mana looks completely surprised.","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"I...Umm...I...","xpos":82,"ypos":53},
 		{"type":"movecharacter","character":"Mana","xto":-1000},
-		{"type":"dialogue","character":"Mana","text":"GOTTA-GO-SOME-WHERE-SEEYA...!","xpos":82,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"GOTTA-GO-SOMEWHERE-SEEYA...!","xpos":82,"ypos":53},
 		{"type":"dialogue","text":"She runs out.","xpos":82,"ypos":0},
 
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Raichi","text":"I see. Well, I hope this doesn't become a regular thing.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"I'm a little dissapointed.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"Then again, I should probably be dissapointed in myself for skipping class.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I'm a little disappointed.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Then again, I should probably be disappointed in myself for skipping class.","xpos":82,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -34,6 +38,30 @@
 		
 
 		{"type":"dialogue","text":"I follow him out. The school library's closed, so we go to the local library a few blocks away.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_road"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":373,"xscale":1},
+
+		{"type":"dialogue","text":"At first it's quiet when we walk. Raichi looks troubled.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Did you come here knowing about the attacks?","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","text":"Things get serious quick. I don't know how to answer, so I just nod.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Some people move here for thrills, you know.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"These are real monsters we're dealing with.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Real monsters?","xpos":82},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_sad"},
+		{"type":"dialogue","text":"He frowns and collects his thoughts.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"The city's dangerous, Kurumi-chan.","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"I trust that you and Ichijou-san aren't skipping to find danger.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Um, nope!! We skipped and grabbed pastries -- I mean... Oops...","xpos":82},
+		{"type":"dialogue","text":"I put my foot in my mouth. At least it seemed to lighten the mood.","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Well, here we are.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I had a feeling it would be a long study session.","xpos":82,"ypos":0},
+
+
 		{"type":"changebackground","background":"bg_school_hallway"}
 
 	],

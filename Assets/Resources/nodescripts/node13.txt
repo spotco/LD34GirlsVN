@@ -5,18 +5,22 @@
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-217,"xscale":1},		
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-394,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":373,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 
 		{"type":"dialogue","character":"Kurumi","text":"I'm sorry, Kashiwagi-Senpai. It won't happen again.","xpos":82},
 		{"type":"dialogue","text":"I really did mess up. Skipping school on my first day? What was I thinking?","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"It's fine, but I hope this doesn't become a regular thing.","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"Mana looks a little dissapointed as she leaves.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"Then again, I should probably be dissapointed in myself.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Mana looks a little disappointed as she leaves.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Then again, I should probably be disappointed in myself.","xpos":82,"ypos":0},
 		
+		{"type":"dialogue","character":"Raichi","text":"I'm sorry, Kurumi-chan. I want you to succeed here...","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Students... Most students who attend this school go onto do great things.","xpos":82,"ypos":0},
+
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
