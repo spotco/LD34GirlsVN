@@ -1,28 +1,104 @@
 {
 	"id":52,
-	"title":"Before the Festival (Bad)",
-	"background":"bg_school_hallway",
-	"music":"decisions",
+	"title":"Before the Festival - 2",
+	"background":"bg_school_classroom",
+	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"The days leading up to the festival pass by uneventfully."},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+
+		{"type":"dialogue","text":"If there's one good thing that's come out of this..."},
+		{"type":"dialogue","text":"...it's that Mana-chan's been coming to school consistently nowadays."},
+		{"type":"dialogue","text":"...as if to impress Raichi-san or something."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Class ends and she comes straight up to me."},
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Kuru! Let's go shopping! There's a Yukata out there with my name on it!"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"We walk to the city. She's in a good mood."},
+		{"type":"changebackground","background":"bg_city"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Mana","text":"Kuru! You know what we should do after this? Ice cream!"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"We haven't even bought it yet! And you sure you know where you're going?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"We find it eventually. One of those boutique shops that still sell traditional wear."},
+		{"type":"changebackground","background":"bg_city"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Mana","text":"Hmm hmm hmm~! Kuru, what do you think of this?"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Blue and white? Doesn't go with your hair. Besides, that's two sizes too big!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"We eventually find just the perfect thing."},
+
+		{"type":"changebackground","background":"bg_city_late"},
+		{"type":"dialogue","text":"It takes us several hours, but we eventually finish by late afternoon."},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"Mana has been looking really excited lately."},
-		{"type":"dialogue","text":"She’s also been really active in the monster hunting."},
-		{"type":"dialogue","text":"Meanwhile, I haven’t seen Kashiwaga senpai in a while..."},
+		{"type":"dialogue","character":"Mana","text":"Hey, Kuru?"},
+		{"type":"dialogue","character":"Kurumi","text":"What's up, Mana-chan?"},
+		{"type":"dialogue","character":"Mana","text":"I've gotta go. I promised Kashiwagi-senpai I'd study with him today at the library."},
+		{"type":"dialogue","character":"Kurumi","text":"Oh, studying...eh? And what comes after studying?"},
+		{"type":"dialogue","text":"She blushes bright red."},
+		{"type":"dialogue","character":"Mana","text":"W-w-we're not even...You've got the wrong idea here!"},
+		{"type":"dialogue","character":"Mana","text":"But okay, I'm trying to be serious again."},
+		{"type":"dialogue","text":"She looks right at me."},
+		{"type":"dialogue","character":"Mana","text":"You're my best friend, so I can tell you this but..."},
+		{"type":"dialogue","character":"Mana","text":"I'm... a little scared. Tomorrow and all, it's gonna be..."},
+		{"type":"dialogue","character":"Mana","text":"Our first date. Us, alone...together. You see?"},
 
-		{"type":"dialogue","character":"Kurumi","text":"I was looking online about Simone, the other Magical Knight."},
-		{"type":"dialogue","character":"Kurumi","text":"Since last month, I can’t find any activity on her. Even her hardcore fans are wondering where she is."},
-		{"type":"dialogue","character":"Mana","text":"Well, I guess I just scared her away!"},
+		{"type":"dialogue","character":"Kurumi","text":"Aren't you alone when you study with him?"},
+		{"type":"dialogue","character":"Mana","text":"N-n-no! We're at the library! I don't think he'd try anything there..."},
+		{"type":"dialogue","character":"Mana","text":"It's just... I'm just a little nervous. A bad feeling or something."},
 
-		{"type":"dialogue","character":"Mana","text":"I'm so glad I picked out that Yukata for you, it looks great."},
-		{"type":"dialogue","character":"Kurumi","text":"Mana chan.. thanks"},
+		{"type":"dialogue","text":"What if... No, have to support her. This is what she wants."},
+		{"type":"dialogue","character":"Kurumi","text":"Alright. How about this."},
+		{"type":"dialogue","character":"Kurumi","text":"I'll go with you... up until you and Kashiwagi-senpai want a little alone time."},
+		{"type":"dialogue","character":"Kurumi","text":"That make you feel better?"},
+		{"type":"dialogue","character":"Mana","text":"...Thanks, Kuru. You're the bestest friend ever. Seeya tomorrow!"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"She runs off."},
+		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"I’ve been to many summer festivals in my life, but none so lively before."},
-		{"type":"dialogue","text":"So many people, so many stands… In my new city-girl yukata, I should feel excited."},
-		{"type":"dialogue","text":"Why do I feel so uneasy?"}
 
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"playBGM","bgm":"decisions"},
+		{"type":"dialogue","text":"It's the night before the festival."},
+		{"type":"dialogue","text":"I promised her I'd go. I still think Raichi might be up to something but..."},
+		{"type":"dialogue","text":"...if I'm there, I don't think anyone would dare try anything!"},
+
+		{"type":"changebackground","background":"bg_apartment_night"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"So I've still got it...my yukata from back home."},
+
+		{"type":"dialogue","text":"I had to dig through all my old suitcases to find it."},
+		{"type":"dialogue","character":"Kurumi","text":"Hmm... does it still fit? Looks a bit tight."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I'm going to the summer festival. And if I'm going, I'm going in style!"},
+		{"type":"dialogue","text":"Mana-chan... we're still best friends, after all."},
+		{"type":"dialogue","text":"And if my suspicions are true... she'll need someone to back her up!"}
 	],
 	"links":[53]
 }

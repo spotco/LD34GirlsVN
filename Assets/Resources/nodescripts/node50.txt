@@ -112,7 +112,7 @@
 		{"type":"dialogue","character":"Mana","text":"I've got a plan."},
 		{"type":"dialogue","text":"She moves her face a little closer to mine."},
 		{"type":"dialogue","character":"Mana","text":"Now this is going to sound a little odd but... we can win."},
-		{"type":"dialogue","character":"Mana","text":"We can win, but I need you. Now you gotta know..."},
+		{"type":"dialogue","character":"Mana","text":"We can win, but I need you. Now, you gotta know..."},
 		{"type":"dialogue","character":"Mana","text":"...that this is gonna be dangerous, and we both might die but are you--"},
 		{"type":"dialogue","character":"Kurumi","text":"I'll do it!"},
 		{"type":"dialogue","text":"I say it without a second thought."},
@@ -150,7 +150,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Mana-chan... what happened?"},
 		{"type":"dialogue","character":"Mana","text":"I... I used your life force and the last of my powers..."},
 		{"type":"dialogue","text":"Crying even harder, she care barely talk."},
-		{"type":"dialogue","character":"Mana","text":"I-I-Its g-gone...I-*sniff*...Lost..It..."},
+		{"type":"dialogue","character":"Mana","text":"I-I-Its g-gone... I-*sniff*... Lost.. It..."},
 		{"type":"dialogue","character":"Kurumi","text":"What's gone?"},
 		{"type":"dialogue","character":"Mana","text":"My...Powers! I lost them!"},
 
@@ -181,7 +181,7 @@
 		{"type":"dialogue","text":"But, we had reason to be happy. We had each other."},
 		{"type":"dialogue","character":"Mana","text":"By the way, what did you think of that kiss?"},
 		{"type":"dialogue","character":"Mana","text":"That was totally my first time with another girl."},
-		{"type":"dialogue","character":"Kurumi","text":"Wha~~~~?!"},
+		{"type":"dialogue","character":"Kurumi","text":"Wha~~~?!"},
 		{"type":"dialogue","text":"The End."}
 
 	],

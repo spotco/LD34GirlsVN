@@ -1,6 +1,6 @@
 {
 	"id":48,
-	"title":"A Tough Choice.",
+	"title":"A Tough Decision.",
 	"background":"bg_city_late",
 	"music":"decisions",
 	"requirementitem":[],

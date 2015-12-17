@@ -17,7 +17,7 @@
 		{"type":"dialogue","character":"Mana","text":"Alright Kuru...Check this out!"},
 		{"type":"dialogue", "text":"She shows me her phone."},
 		{"type":"dialogue","character":"Kurumi","text":"Monster sighted...Asakusa district?"},
-		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. Still wanna check it out?"}
+		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. This might be interesting!"}
 	],
 	"links":[
 		30,35,43

@@ -5,7 +5,7 @@ using System;
 
 public class GameMain : MonoBehaviour {
 	
-	public static int AFFINITY_REQUIREMENT = 5;
+	public static int AFFINITY_REQUIREMENT = 6;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
@@ -38,9 +38,7 @@ public class GameMain : MonoBehaviour {
 	consistent raichi senpai
 	
 	TODO
-	51,52,53
-	
-	(final art)
+	sfx
 	(start menu, end menu)
 	*/
 	
