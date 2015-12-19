@@ -11,7 +11,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue", "text":"So I had my usual, an Earl-Grey...","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"And Mana-Chan had what looked like one of every pastry on the menu.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"And Mana-chan had what looked like one of every pastry on the menu.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"I mean, how DOES she keep that figure eating so much?","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"Hey Kuru, take a look at this!","xpos":0,"ypos":77},

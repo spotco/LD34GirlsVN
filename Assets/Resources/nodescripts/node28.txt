@@ -15,7 +15,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"...and confessed! Can you believe it? Asked me out to the summer festival and everything."},
 		{"type":"dialogue","text":"I did my best to hold my grin. Mana sure didn't try very had to hold her blushing.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Pffft....Whaaaa? An underclassman like you? I-DON'T-THINK-SO~!"},
+		{"type":"dialogue","character":"Mana","text":"Pffft....Whaaaa? An underclassman like you? I-DON'T-THINK-SO~!","xpos":0,"ypos":77},
 		{"type":"addaffinity","xpos":0,"ypos":77}
 	],
 	"links":[
