@@ -7,12 +7,12 @@
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		
-		{"type":"dialogue","character":"Mana","text":"Let me grab those books."},
+		{"type":"dialogue","character":"Mana","text":"Let me grab those books.","xpos":0,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue", "text":"..."},
+		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"I could have sworn I just put them here two weeks ago...or was it over there?"},
-		{"type":"dialogue","character":"Mana","text":"Hold on, give me a second!"}
+		{"type":"dialogue","character":"Mana","text":"I could have sworn I just put them here two weeks ago...or was it over there?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Hold on, give me a second!","xpos":0,"ypos":77}
 	],
 	"links":[
 		35

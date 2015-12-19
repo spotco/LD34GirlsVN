@@ -1,71 +1,71 @@
 {
 	"id":47,
-	"title":"A Critical Choice",
+	"title":"A Critical Decision",
 	"background":"bg_city_late",
 	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I go to the tea shop, our favorite hangout spot."},
-		{"type":"dialogue","text":"Since Mana-chan said she was busy tonight, I walk over by myself."},
-		{"type":"dialogue","text":"As I get close, I see two familiar faces inside."},
+		{"type":"dialogue","text":"I go to the tea shop, our favorite hangout spot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Since Mana-chan said she was busy tonight, I walk over by myself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I get close, I see two familiar faces inside.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's Mana-chan... and... Raichi? Sitting at the same table?!"},
+		{"type":"dialogue","text":"It's Mana-chan... and... Raichi? Sitting at the same table?!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"She's blushing heavily."},
+		{"type":"dialogue","text":"She's blushing heavily.","xpos":0,"ypos":0},
 		{"type":"movecharacter","character":"Raichi","xto":100},
-		{"type":"dialogue","text":"Raichi leans in close and whispers something in her ear."},
+		{"type":"dialogue","text":"Raichi leans in close and whispers something in her ear.","xpos":0,"ypos":0},
 		{"type":"movecharacter","character":"Mana","xto":-320},
-		{"type":"dialogue","text":"Hearing whatever he just said, she looks completely taken aback."},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","text":"Raichi stands up, says a few last words...and leaves."},
+		{"type":"dialogue","text":"Hearing whatever he just said, she looks completely taken aback.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
+		{"type":"dialogue","text":"Raichi stands up, says a few last words...and leaves.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
 
-		{"type":"dialogue","text":"..."},
-		{"type":"dialogue","text":"I go inside and sit down beside her."},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I go inside and sit down beside her.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"Was that...Raichi that I just saw you talking with? What was that all about?"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","text":"..."},
-		{"type":"dialogue","text":"This was suspicious. I was going to warn her."},
-		{"type":"dialogue","text":"But I could have never expected what came next."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof","xscale":-1},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This was suspicious. I was going to warn her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I could have never expected what came next.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Listen, Kuru. I've got a lot to explain."},
-		{"type":"dialogue","character":"Mana","text":"Kashiwagi-senpai...You know, he's been helping me out recently."},
+		{"type":"dialogue","character":"Mana","text":"Listen, Kuru. I've got a lot to explain.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Kashiwagi-senpai...You know, he's been helping me out recently.","xpos":0,"ypos":77},
 		
-		{"type":"dialogue","text":"Helping..?"},
+		{"type":"dialogue","text":"Helping..?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"After that time you tried to help me do homework I..."},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"...I realized I needed to get my studies back in order. So I asked him to tutor me."},
+		{"type":"dialogue","character":"Mana","text":"After that time you tried to help me do homework I...","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
+		{"type":"dialogue","character":"Mana","text":"...I realized I needed to get my studies back in order. So I asked him to tutor me.","xpos":0,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"That's good--"},
 
-		{"type":"dialogue","character":"Mana","text":"--I was going to return his books to him today when he just..."},
-		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue","character":"Mana","text":"--I was going to return his books to him today when he just...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"...just?"},
-		{"type":"dialogue","character":"Mana","text":"He just asked me to go to the Summer Festival with him."},
+		{"type":"dialogue","character":"Mana","text":"He just asked me to go to the Summer Festival with him.","xpos":0,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Mana","text":"..."},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"Now listen, Mana-chan, you know..."},
-		{"type":"dialogue","text":"The questions...the warnings...him knowing...and now this?"},
-		{"type":"dialogue","text":"This was extremely suspicious. I was going to tell her not to--"},
+		{"type":"dialogue","text":"The questions...the warnings...him knowing...and now this?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This was extremely suspicious. I was going to tell her not to--","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"I'm soooooo happy right now! I mean like, summer festival with an older classmate and all!"},
-		{"type":"dialogue","character":"Mana","text":"Like, what should I wear? I don't even have a yukata or anything! You gotta help me pick one out!"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy","xscale":-1},
+		{"type":"dialogue","character":"Mana","text":"I'm soooooo happy right now! I mean like, summer festival with an older classmate and all!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Like, what should I wear? I don't even have a yukata or anything! You gotta help me pick one out!","xpos":0,"ypos":77},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Don't--"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"Don't what?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
+		{"type":"dialogue","character":"Mana","text":"Don't what?","xpos":0,"ypos":77},
 
-		{"type":"dialogue","text":"I knew something was suspicious. But she was so happy right now... could I bring myself to tell her?"}
+		{"type":"dialogue","text":"I knew something was suspicious. But she was so happy right now... could I bring myself to tell her?","xpos":0,"ypos":0}
 	],
 	"links":[48,51]
 }

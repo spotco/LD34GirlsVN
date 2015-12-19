@@ -10,12 +10,12 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"Take a look at this, Mana-chan! Defeated in one shot! I'm impressed."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"C'mon Kuru, you know I could totally do that too!"},
+		{"type":"dialogue","character":"Mana","text":"C'mon Kuru, you know I could totally do that too!","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I know but...what if you two could team up or something?"},
-		{"type":"dialogue","character":"Mana","text":"Team up...with her? I think I'll pass."},
-		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person."},
-		{"type":"dialogue", "text":"I guess she had a point - Simone was hardly heroic anyway."}
+		{"type":"dialogue","character":"Mana","text":"Team up...with her? I think I'll pass.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person.","xpos":0,"ypos":77},
+		{"type":"dialogue", "text":"I guess she had a point - Simone was hardly heroic anyway.","xpos":0,"ypos":0}
 
 	],
 	"links":[

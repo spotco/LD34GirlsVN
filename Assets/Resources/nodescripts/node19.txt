@@ -5,9 +5,9 @@
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"My mom already made dinner for me and left it in the fridge."},
-		{"type":"dialogue","text":"It's my favorite, curry with rice."},
-		{"type":"dialogue","text":"I'm not too hungry so there's plenty leftover."},
+		{"type":"dialogue","text":"My mom already made dinner for me and left it in the fridge.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's my favorite, curry with rice.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm not too hungry so there's plenty leftover.","xpos":0,"ypos":0},
 		{"type":"additem","item":"leftovers"}
 	],
 	"links":[

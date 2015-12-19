@@ -6,13 +6,13 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"We decided to investigate the monster at Asakusa."},
+		{"type":"dialogue", "text":"We decided to investigate the monster at Asakusa.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_monster"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Mana","text":"Well...there it is! The pictures didn't do it justice!"},
+		{"type":"dialogue","character":"Mana","text":"Well...there it is! The pictures didn't do it justice!","xpos":0,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wait, what's going on up there?"},
 
@@ -21,24 +21,24 @@
 
 		{"type":"changebackground","background":"bg_city_monster_fight"},
 
-		{"type":"dialogue", "text":"A beam of pink was dancing in and out, engaged in combat with the monster."},
-		{"type":"dialogue", "text":"Normally that would have been Mana-chan and I'd be cheering her on. But she was right beside me."},
-		{"type":"dialogue", "text":"With a final, swift blow, this new hero defeated the monster."},
+		{"type":"dialogue", "text":"A beam of pink was dancing in and out, engaged in combat with the monster.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Normally that would have been Mana-chan and I'd be cheering her on. But she was right beside me.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"With a final, swift blow, this new hero defeated the monster.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
-		{"type":"dialogue", "text":"A crowd of people awaited her landing."},
+		{"type":"dialogue", "text":"A crowd of people awaited her landing.","xpos":0,"ypos":0},
 		
-		{"type":"dialogue","character":"Fans","text":"We love you, Simone-sama!"},
+		{"type":"dialogue","character":"Fans","text":"We love you, Simone-sama!","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
 		{"type":"dialogue","character":"Simone","text":"Dohohoho~!"},
 		{"type":"dialogue","character":"Simone","text":"With Simone-sama Saber Knight Sweetheart protecting this city, no monster stands a chance!"},
-		{"type":"dialogue","character":"Fans","text":"Simone-sama, Daisuke!"},
+		{"type":"dialogue","character":"Fans","text":"Simone-sama, Daisuke!","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Simone"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Something about her really gets on my nerves..."},
+		{"type":"dialogue","character":"Mana","text":"Something about her really gets on my nerves...","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Tell me about it."}
 	],
 	"links":[

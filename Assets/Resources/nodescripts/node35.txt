@@ -10,27 +10,27 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		
 		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, you know we've got a test tomorrow, right? We should probably study!"},
-		{"type":"dialogue","character":"Mana","text":"Study...? Well, I guess it couldn't hurt. But only if you let me copy your homework again!"},
+		{"type":"dialogue","character":"Mana","text":"Study...? Well, I guess it couldn't hurt. But only if you let me copy your homework again!","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"But then you'll never learn anything!"},
-		{"type":"dialogue","character":"Mana","text":"Alright, alright. Let me pick up my books, they're back at my place. It's real close."},
+		{"type":"dialogue","character":"Mana","text":"Alright, alright. Let me pick up my books, they're back at my place. It's real close.","xpos":0,"ypos":77},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"Thinking about it, this was my first time ever going to Mana-chan's home. What is it like, I wonder?"},
-		{"type":"dialogue","character":"Mana","text":"Alright, it's up here."},
-		{"type":"dialogue","character":"Mana","text":"It's been a while since I've been back, sleeping over at your place so much."},
-		{"type":"dialogue","character":"Mana","text":"Now, where's that key?"},
-		{"type":"dialogue", "text":"*Click*"},
+		{"type":"dialogue", "text":"Thinking about it, this was my first time ever going to Mana-chan's home. What is it like, I wonder?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Alright, it's up here.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"It's been a while since I've been back, sleeping over at your place so much.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Now, where's that key?","xpos":0,"ypos":77},
+		{"type":"dialogue", "text":"*Click*","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"Uwaaaaaaa!! It's so messy!"},
-		{"type":"dialogue", "text":"It was like one of those Hikikomori rooms I've seen on the internet..."},
-		{"type":"dialogue", "text":"There was trash and dirty laundry EVERYWHERE!"}
+		{"type":"dialogue", "text":"It was like one of those Hikikomori rooms I've seen on the internet...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There was trash and dirty laundry EVERYWHERE!","xpos":0,"ypos":0}
 	],
 	"links":[
 		129,37,38

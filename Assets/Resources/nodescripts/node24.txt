@@ -9,25 +9,25 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked, you know."},
-		{"type":"dialogue","character":"Mana","text":"I just wanted to make sure this was the place."},
+		{"type":"dialogue","character":"Mana","text":"I just wanted to make sure this was the place.","xpos":0,"ypos":77},
 
-		{"type":"dialogue","text":"Well this is a little awkward."},
-		{"type":"dialogue","text":"Once she settles from the adrenaline, her manner changes."},
+		{"type":"dialogue","text":"Well this is a little awkward.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Once she settles from the adrenaline, her manner changes.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
-		{"type":"dialogue","text":"She bites her lip and takes a deep breath."},
+		{"type":"dialogue","text":"She bites her lip and takes a deep breath.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Okay listen. You said you wanted to be friends, right?"},
+		{"type":"dialogue","character":"Mana","text":"Okay listen. You said you wanted to be friends, right?","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Well, yeah! Of course."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","text":"She fidgets, but then there's that smirk again."},
+		{"type":"dialogue","text":"She fidgets, but then there's that smirk again.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"I think you know something! And...!"},
-		{"type":"dialogue","character":"Mana","text":"Do you want to see something amazing?"},
+		{"type":"dialogue","character":"Mana","text":"But what if I said...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...I had a completely CRAZY secret to tell you?","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
-		{"type":"dialogue","text":"I don't think I'm in any position to refuse here..."}
+		{"type":"dialogue","text":"I don't think I'm in any position to refuse here...","xpos":0,"ypos":0}
 	],
 	"links":[
 		25, 125

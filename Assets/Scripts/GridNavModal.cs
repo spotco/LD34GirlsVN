@@ -49,6 +49,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
+	private int _first_update = 0;
+	
 	public void i_update(GameMain game) {
 		if (game._popups.has_active_popup()) return;
 		_inventory_overlay.i_update(game,this);

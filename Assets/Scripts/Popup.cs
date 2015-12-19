@@ -24,6 +24,7 @@ public class Popup : MonoBehaviour {
 		_canvas_group.alpha = 0;
 		
 		_heart_icon.gameObject.SetActive(false);
+		this.gameObject.SetActive(true);
 	}
 	
 	private float _anim_theta;

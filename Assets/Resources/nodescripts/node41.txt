@@ -10,7 +10,7 @@
 		
 		{"type":"dialogue","character":"Kurumi","text":"O-KAY! Now that we've cleaned up a bit, let's get on that studying!"},
 		{"type":"dialogue","character":"Kurumi","text":"Soo...Know where your books are now?"},
-		{"type":"dialogue","character":"Mana","text":"Books? Like the real thick ones? Think I threw them out with everything else just now."},
+		{"type":"dialogue","character":"Mana","text":"Books? Like the real thick ones? Think I threw them out with everything else just now.","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 	],

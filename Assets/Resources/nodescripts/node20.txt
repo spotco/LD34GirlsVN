@@ -5,26 +5,26 @@
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?"},
+		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Yaaaaaaaaawwwn..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"I sure hope not."},
+		{"type":"dialogue","character":"Kurumi","text":"I sure hope not.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 
-		{"type":"dialogue","text":"I fall asleep as soon as I hit the bed."},
-		{"type":"dialogue","text":"..."},
-		{"type":"dialogue","text":"*BANG!* *CRASH!*"},
+		{"type":"dialogue","text":"I fall asleep as soon as I hit the bed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"*BANG!* *CRASH!*","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment_night"},
-		{"type":"dialogue","text":"I'm suddenly awoken by a noise from downstairs."},
+		{"type":"dialogue","text":"I'm suddenly awoken by a noise from downstairs.","xpos":0,"ypos":0},
 
 		
 
-		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--"},
-		{"type":"dialogue","text":"I hear a voice downstairs. The lights are still all off, who could it be?"},
+		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--","xpos":-262,"ypos":102},
+		{"type":"dialogue","text":"I hear a voice downstairs. The lights are still all off, who could it be?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I sneak downstairs in the dark and see someone move around. What should I do?"}
+		{"type":"dialogue","text":"I sneak downstairs in the dark and see someone move around. What should I do?","xpos":0,"ypos":0}
 	],
 	"links":[
 		22,23

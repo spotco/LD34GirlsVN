@@ -5,21 +5,21 @@
 	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue", "text":"So we went to our usual hangout spot - a tea cafe a few blocks away from school."},
+		{"type":"dialogue", "text":"So we went to our usual hangout spot - a tea cafe a few blocks away from school.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue", "text":"So I had my usual, an Earl-Grey which was absolutely to DIE for."},
-		{"type":"dialogue", "text":"And Mana-Chan had what looked like one of every pastry on the menu."},
-		{"type":"dialogue", "text":"I mean, how DOES she keep that figure eating so much?"},
+		{"type":"dialogue", "text":"So I had my usual, an Earl-Grey...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"And Mana-Chan had what looked like one of every pastry on the menu.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I mean, how DOES she keep that figure eating so much?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Alright Kuru...Check this out!"},
-		{"type":"dialogue", "text":"She shows me her phone."},
+		{"type":"dialogue","character":"Mana","text":"Hey Kuru, take a look at this!","xpos":0,"ypos":77},
+		{"type":"dialogue", "text":"She shows me her phone.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Monster sighted...Asakusa district?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. Still wanna check it out?"}
+		{"type":"dialogue","character":"Mana","text":"Yep, it looks pretty tough. Wanna check it out?","xpos":0,"ypos":77}
 	],
 	"links":[
 		30,35,43

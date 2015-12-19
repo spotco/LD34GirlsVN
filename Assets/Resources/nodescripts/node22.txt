@@ -5,16 +5,16 @@
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"An intruder? They must be here to steal our stuff...or worse!"},
-		{"type":"dialogue","text":"As I'm about scream, the intruder notices, turns around and bumps into the light."},
+		{"type":"dialogue","text":"An intruder? They must be here to steal our stuff...or worse!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I'm about scream, the intruder notices, turns around and bumps into the light.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"It's Mana, from my class!"},
-		{"type":"dialogue","text":"She looks worn out, but she's still got that energetic sparkle in her eyes."},
+		{"type":"dialogue","text":"It's Mana, from my class!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She looks worn out, but she's still got that energetic sparkle in her eyes.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Mana?! What are you doing here?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place."}
+		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place.","xpos":0,"ypos":77}
 	],
 	"links":[
 		24

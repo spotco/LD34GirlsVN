@@ -9,11 +9,11 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Kurumi","text":"It...it wasn't anything serious."},
-		{"type":"dialogue","text":"Academic performance? Bad influence? That sure was a lie."},
+		{"type":"dialogue","text":"Academic performance? Bad influence? That sure was a lie.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"If you say so..."},
-		{"type":"dialogue","text":"I spared Mana my feelings about Raichi... But it doesn't sit well with me."},
-		{"type":"dialogue","text":"She looks a little suspicious. If that was a lie, it sure wasn't a believeable one."}
+		{"type":"dialogue","character":"Mana","text":"If you say so...","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"I spared Mana my feelings about Raichi... But it doesn't sit well with me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She looks a little suspicious. If that was a lie, it sure wasn't a believeable one.","xpos":0,"ypos":0}
 
 
 	],

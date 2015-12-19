@@ -48,7 +48,7 @@
 		{"type":"dialogue","character":"Teacher","text":"...But since Ms. Motoyama transfered today, I think we'll put that on hold...","xpos":-31,"ypos":94},
 
 		{"type":"dialogue","text":"Her phone starts buzzing, and her eyes light up.","xpos":-36,"ypos":-25},
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal"},
+		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal","xscale":-1},
 		{"type":"dialogue","character":"Pink Hair","text":"An...alert?","xpos":126,"ypos":-142},
 
 		{"type":"dialogue","text":"She gets up, pushes in her chair and grabs her bag.","xpos":-36,"ypos":-25},

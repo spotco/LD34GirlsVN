@@ -8,31 +8,31 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"Suddenly, an immense gurgle roars out in the room."},
+		{"type":"dialogue","text":"Suddenly, an immense gurgle roars out in the room.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Have you eaten anything since that pastry?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Uhhh, no..."},
+		{"type":"dialogue","character":"Mana","text":"Uh...well, now that I think about it... I'm starving!","xpos":0,"ypos":77},
 
-		{"type":"dialogue","text":"I can't help but laugh. The moment instantly lifts the mood."},
+		{"type":"dialogue","text":"I can't help but laugh. The moment instantly lifts the mood.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Well, I do have some leftovers in the fridge. I'll heat them up!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"Oh, spot on! Hook me up."},
+		{"type":"dialogue","character":"Mana","text":"Oh, spot on! Hook me up.","xpos":0,"ypos":77},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"I grab the leftovers and pop them in the microwave."},
+		{"type":"dialogue","text":"I grab the leftovers and pop them in the microwave.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"leftovers"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"By the way, is this a little weird or anything, sneaking into your house and all?"},
+		{"type":"dialogue","character":"Mana","text":"By the way, is this a little weird or anything, sneaking into your house and all?","xpos":0,"ypos":77},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A little bit."},
-		{"type":"dialogue","text":"She honestly didn't seem to know. I hand her my leftovers."},
+		{"type":"dialogue","text":"She honestly didn't seem to know. I hand her my leftovers.","xpos":0,"ypos":0},
 
 
 	],

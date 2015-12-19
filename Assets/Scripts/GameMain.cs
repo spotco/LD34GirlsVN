@@ -18,9 +18,10 @@ public class GameMain : MonoBehaviour {
 		void anim_update(GameMain game);
 	}
 
-	[SerializeField] private EventModal _event_modal;
-	[SerializeField] private GridNavModal _grid_nav_modal;
+	[SerializeField] public EventModal _event_modal;
+	[SerializeField] public GridNavModal _grid_nav_modal;
 	[SerializeField] public BackgroundManager _background;
+	[SerializeField] public TitleModal _title;
 	[SerializeField] public MusicManager _music;
 	[SerializeField] public PopupManager _popups;
 	
@@ -32,19 +33,9 @@ public class GameMain : MonoBehaviour {
 	
 	public int _affinity;
 	
-	/*
-	TODO:
-	do not show unaccessible nodes
-	consistent raichi senpai
-	
-	TODO
-	sfx
-	(start menu, end menu)
-	*/
-	
 	public void Start () {
 		Application.targetFrameRate = 30;
-		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal };
+		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal, _title };
 		_controls = ControlManager.cons();
 		_inventory = new Inventory();
 		_popups.i_initialize(this);
@@ -55,7 +46,8 @@ public class GameMain : MonoBehaviour {
 			_all_modals[i].i_initialize(this);
 		}
 		
-		_active_modal = _grid_nav_modal;
+		_active_modal = _title;
+		_title._current_mode = TitleModal.Mode.FadeIn;
 	}
 	
 	public void Update () {

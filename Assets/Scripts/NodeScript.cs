@@ -110,6 +110,9 @@ public class NodeScript {
 					_bgm = itr.GetString("bgm")
 				};
 				
+			} else if (type == "titleend") {
+				itr_neu = new NodeScriptEvent_TitleEnd();
+				
 			} else {
 				SPUtil.logf("unknown type %s",type);
 			} 
@@ -127,3 +130,18 @@ public class NodeScript {
 		return this;
 	}
 }
+
+public class NodeScriptEvent_TitleEnd : NodeScriptEvent {
+	
+	private bool _triggered = false;
+	
+	public override void i_update(GameMain game, EventModal modal) {
+		if (!_triggered) {
+			_triggered = true;
+			game._title.set_text("The End.");
+			game._title._current_mode = TitleModal.Mode.FadeIn;
+			game._title.set_end_screen();
+		}		
+	}
+}
+

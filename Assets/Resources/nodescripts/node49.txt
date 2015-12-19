@@ -6,87 +6,87 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"The days leading up to the festival pass by uneventfully."},
+		{"type":"dialogue","text":"The days leading up to the festival pass by uneventfully.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"Ever since then, she's been ignoring me."},
+		{"type":"dialogue","text":"Ever since then, she's been ignoring me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"..."},
 
-		{"type":"dialogue","text":"If there's one good thing though, it's that she's been coming to school consistently."},
-		{"type":"dialogue","text":"...as if to impress Raichi-san or something."},
+		{"type":"dialogue","text":"If there's one good thing though, it's that she's been coming to school consistently.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...as if to impress Raichi-san or something.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Lunchtime comes and she leaves quickly and without a word."},
-		{"type":"dialogue","text":"I grab something light from the cafeteria and head to the roof."},
-		{"type":"dialogue","text":"Lunchtime is definitely a lot less exciting without Mana-chan."},
+		{"type":"dialogue","text":"Lunchtime comes and she leaves quickly and without a word.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I grab something light from the cafeteria and head to the roof.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Lunchtime is definitely a lot less exciting without Mana-chan.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_roof"},
-		{"type":"dialogue","text":"As I open the door I see two other people on the far side."},
+		{"type":"dialogue","text":"As I open the door I see two other people on the far side.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's Mana-chan and Raichi-san, together! And they're sitting...awfully close."},
-		{"type":"dialogue","text":"I...don't know what to say."},
-		{"type":"dialogue","text":"I feel happy for her but..."},
+		{"type":"dialogue","text":"It's Mana-chan and Raichi-san, together! And they're sitting...awfully close.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I...don't know what to say.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel happy for her but...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I close the door and head back down the stairs. I'll eat somewhere else."},
+		{"type":"dialogue","text":"I close the door and head back down the stairs. I'll eat somewhere else.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"I should feel happy for her. I AM happy for her. But... something still feels wrong."},
-		{"type":"dialogue","text":"As I walk, I feel someone's presence behind me."},
+		{"type":"dialogue","text":"I should feel happy for her. I AM happy for her. But... something still feels wrong.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I walk, I feel someone's presence behind me.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Ms. Motoyama. A minute, if you would please."},
+		{"type":"dialogue","character":"Raichi","text":"Ms. Motoyama. A minute, if you would please.","xpos":0,"ypos":77},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's Raichi. He must have seen me on the roof."},
+		{"type":"dialogue","text":"It's Raichi. He must have seen me on the roof.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Listen... I don't have anything to say to you."},
-		{"type":"dialogue","text":"I'm getting a little mad. I don't even want to think about it right now."},
-		{"type":"dialogue","character":"Raichi","text":"I, however, do. Now if you weren't aware, the summer festival is tomorrow."},
-		{"type":"dialogue","text":"I knew that."},
-		{"type":"dialogue","character":"Raichi","text":"Now, I suggest that you stay home."},
+		{"type":"dialogue","text":"I'm getting a little mad. I don't even want to think about it right now.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I, however, do. Now if you weren't aware, the summer festival is tomorrow.","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"I knew that.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Now, I suggest that you stay home.","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"...what makes you say that?"},
-		{"type":"dialogue","character":"Raichi","text":"It'd be... in your best interest. And while you haven't done so before..."},
+		{"type":"dialogue","character":"Raichi","text":"It'd be... in your best interest. And while you haven't done so before...","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"...you would do well to listen to my advice this time."},
 		{"type":"hidecharacter","character":"Raichi"},
-		{"type":"dialogue","text":"He turns around and walks away."},
+		{"type":"dialogue","text":"He turns around and walks away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
 		{"type":"dialogue","character":"Kurumi","text":"I-I...!!!"},
-		{"type":"dialogue","text":"Now I'm REALLY mad."},
-		{"type":"dialogue","text":"He's up to something. That right there was crystal-clear no-doubt-about-it proof."},
+		{"type":"dialogue","text":"Now I'm REALLY mad.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He's up to something. That right there was crystal-clear no-doubt-about-it proof.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Mana-chan..."},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"playBGM","bgm":"decisions"},
-		{"type":"dialogue","text":"It's the night before the festival."},
-		{"type":"dialogue","text":"I've decided to go. Whatever this guy's planning to do to Mana-chan..."},
-		{"type":"dialogue","text":"...I'm going to put a stop to it."},
+		{"type":"dialogue","text":"It's the night before the festival.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've decided to go. Whatever this guy's planning to do to Mana-chan...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...I'm going to put a stop to it.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment_night"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So I've still got it...my yukata from back home."},
 
-		{"type":"dialogue","text":"I had to dig through all my old suitcases to find it."},
+		{"type":"dialogue","text":"I had to dig through all my old suitcases to find it.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Hmm... does it still fit? Looks a bit tight."},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I'm going to the summer festival. And if I'm going, I'm going in style!"},
-		{"type":"dialogue","text":"Mana-chan... we're still best friends, after all."},
-		{"type":"dialogue","text":"And if my suspicions are true... she'll need someone to back her up!"}
+		{"type":"dialogue","text":"I'm going to the summer festival. And if I'm going, I'm going in style!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana-chan... we're still best friends, after all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And if my suspicions are true... she'll need someone to back her up!","xpos":0,"ypos":0}
 	],
 	"links":[50]
 }

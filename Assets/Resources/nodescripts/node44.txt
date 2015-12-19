@@ -8,21 +8,21 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"I respond immediately without thinking."},
+		{"type":"dialogue","text":"I respond immediately without thinking.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Yeah! That's Mana-chan showing Simone who's who after I gave her the Sceptre of Transformation!"},
-		{"type":"dialogue","text":"..."},
-		{"type":"dialogue","character":"Raichi","text":"Manami...Ichijou... I should have seen this before."},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Manami...Ichijou... I should have seen this before.","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"I felt like I've just made a huge mistake."},
-		{"type":"dialogue","text":"I remember that this whole superhero deal was meant to be our secret. Did I just give it away?"},
+		{"type":"dialogue","text":"I felt like I've just made a huge mistake.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I remember that this whole superhero deal was meant to be our secret. Did I just give it away?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"He puts his phone away. He has an odd expression on his face."},
-		{"type":"dialogue","character":"Raichi","text":"Thank you for...confirming my suspicions."},
-		{"type":"dialogue","text":"Raichi stands up and seems to steel himself."},
-		{"type":"dialogue","text":"He leaves without another word."},
+		{"type":"dialogue","text":"He puts his phone away. He has an odd expression on his face.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Thank you for...confirming my suspicions.","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"Raichi stands up and seems to steel himself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He leaves without another word.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
 
-		{"type":"dialogue","text":"What was going on? And what is he going to do?"},
+		{"type":"dialogue","text":"What was going on? And what is he going to do?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"What have I just..."}
 	],
 	"links":[47]
