@@ -88,12 +88,15 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 			if (GameMain.IGNORE_ITEM_REQ) {
 				this.set_current_node(selected_node);
+				game._music.play_sfx("map_yes");
 				
 			} else if (selected_node._node_script._affinity_requirement) {
 				if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
 					this.set_current_node(selected_node);
+					game._music.play_sfx("map_yes");
 				} else {
 					game._popups.add_popup("Friendship not at that level.");
+					game._music.play_sfx("map_no");
 				}
 				
 				
@@ -112,12 +115,21 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 					}
 					selected_node._is_locked = false;
 					this.set_current_node(selected_node);
+					game._music.play_sfx("map_yes");
 					
 				} else {
+					game._music.play_sfx("map_no");
 					game._popups.add_popup("Locked!");
 				}
 				
 			} else {
+				if (_current_node != selected_node) {
+					if (selected_node._visited) {
+						game._music.play_sfx("dialogue_button_press");
+					} else {
+						game._music.play_sfx("map_yes");
+					}
+				}
 				this.set_current_node(selected_node);
 			}
 		}

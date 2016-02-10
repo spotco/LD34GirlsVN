@@ -6,7 +6,7 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I was following Raichi back from the library, when suddenly sirens start sounding!","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},		
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"An attack?! Not again! Kurumi, we should run."},
 		{"type":"dialogue","character":"Kurumi","text":"Wait, attack? What kind of attack?"},
@@ -15,7 +15,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"The ground started shaking as I could hear a noise in the distance.","xpos":0,"ypos":0},
-
+		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"changebackground","background":"bg_city_monster"},
 
 		{"type":"dialogue","text":"A giant monster, attacking the city?!","xpos":0,"ypos":0},

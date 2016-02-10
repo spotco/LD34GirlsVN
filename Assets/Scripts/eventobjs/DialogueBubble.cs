@@ -27,8 +27,11 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public NodeScriptEvent_Dialogue _script;
 	
+	public FlashEvery _dialogue_scroll_sound_flash;
+	
 	public void i_initialize(NodeScriptEvent_Dialogue dialogue) {
 		_script = dialogue;
+		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_name_background.gameObject.SetActive(false);
@@ -62,9 +65,16 @@ public class DialogueBubble : MonoBehaviour {
 		
 		} else if (_current_mode == Mode.TextIn) {
 			_primary_text.i_update();
+			
+			_dialogue_scroll_sound_flash.i_update();
+			if (_dialogue_scroll_sound_flash.do_flash()) {
+				this.text_scroll_tick_sound(game);
+			}
+			
 			_cursor.gameObject.SetActive(false);
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 				_primary_text.finish();
+				game._music.play_sfx("dialogue_button_press");
 			}
 			if (_primary_text.finished()) {
 				_current_mode = Mode.Finished;
@@ -77,6 +87,7 @@ public class DialogueBubble : MonoBehaviour {
 				_anim_t = 0;
 			}
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
+				game._music.play_sfx("dialogue_button_press");
 				_current_mode = Mode.FadeOut;
 				_anim_t = 0;
 			}
@@ -109,32 +120,54 @@ public class DialogueBubble : MonoBehaviour {
 	public void apply_style(NodeScriptEvent_Dialogue script_event) {
 		Color outline_color;
 		if (script_event._character == "Kurumi") {
+			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;
 			_primary_background.sprite = this.cond_get_bgsprite("kurumi");
 			_name_background.sprite = this.cond_get_bgsprite("kurumi");
 			outline_color = new Color(95/255.0f,115/255.0f,88/255.0f,1);
 		
 		} else if (script_event._character == "Mana" || script_event._character == "Pink Hair" || script_event._character == "Hero") {
+			_text_scroll_sound = TEXT_SCROLL_SFX_MANA;
 			_primary_background.sprite = this.cond_get_bgsprite("mana");
 			_name_background.sprite = this.cond_get_bgsprite("mana");
 			outline_color = new Color(108/255.0f,99/255.0f,132/255.0f,1);
 		
 		} else if (script_event._character == "Raichi" || script_event._character == "Older Student") {
+			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
 			_primary_background.sprite = this.cond_get_bgsprite("raichi");
 			_name_background.sprite = this.cond_get_bgsprite("raichi");
 			outline_color = new Color(85/255.0f,99/255.0f,125/255.0f,1);
 		
 		} else if (script_event._character == "Simone") {
+			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
 			_primary_background.sprite = this.cond_get_bgsprite("simone");
 			_name_background.sprite = this.cond_get_bgsprite("simone");
 			outline_color = new Color(127/255.0f,121/255.0f,85/255.0f,1);
 		
 		} else {
+			
+			if (script_event._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
+				_text_scroll_sound = TEXT_SCROLL_SFX_NARRATOR;
+			} else {
+				_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
+			}
+		
 			_primary_background.sprite = this.cond_get_bgsprite("generic");
 			_name_background.sprite = this.cond_get_bgsprite("generic");
 			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
 		}
 		_name_text_outline.effectColor = outline_color;
 		_primary_text_outline.effectColor = outline_color;
+	}
+	
+	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";
+	private static string TEXT_SCROLL_SFX_KURUMI = "text_scroll_4";
+	private static string TEXT_SCROLL_SFX_RAICHI = "text_scroll_1";
+	private static string TEXT_SCROLL_SFX_MANA = "text_scroll_6";
+	
+	private string _text_scroll_sound = DialogueBubble.TEXT_SCROLL_SFX_NARRATOR;
+	
+	private void text_scroll_tick_sound(GameMain game) {
+		game._music.play_sfx(_text_scroll_sound);
 	}
 	
 	

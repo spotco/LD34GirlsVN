@@ -80,8 +80,8 @@ public class MusicManager : MonoBehaviour {
 
 	private void fadeIn() {
 		float volumeNow = _bg.volume;
-		if (volumeNow < 8.0f) {
-			_bg.volume += Time.deltaTime/fade_seconds;
+		if (volumeNow < 0.5f) {
+			_bg.volume = Mathf.Max(0.5f,_bg.volume + Time.deltaTime/fade_seconds);
 		} 
 		else {
 			_current_mode = Mode.Playing;

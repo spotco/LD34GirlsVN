@@ -26,6 +26,7 @@ public class TitleModal : MonoBehaviour, GameMain.Modal {
 	public void i_update(GameMain game) {
 		if (_current_mode == Mode.Hold && !_end_screen) {
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
+				game._music.play_sfx("map_yes");
 				game._active_modal = game._grid_nav_modal;
 				_current_mode = Mode.FadeOut;
 			}

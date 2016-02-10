@@ -7,5 +7,6 @@ public class NodeScriptEvent_AddAffinity : NodeScriptEvent {
 		modal.advance_script();
 		game._affinity++;
 		game._popups.add_popup("Your friendship has grown!",true);
+		game._music.play_sfx("item_get");
 	}
 }
