@@ -33,6 +33,15 @@ public class GameMain : MonoBehaviour {
 	
 	public int _affinity;
 	
+	/*
+	TODO--
+	phone sfx
+	SPText performance
+	Mouse click implementation
+	save/load implementation
+	script edits
+	*/
+	
 	public void Start () {
 		Application.targetFrameRate = 30;
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal, _title };

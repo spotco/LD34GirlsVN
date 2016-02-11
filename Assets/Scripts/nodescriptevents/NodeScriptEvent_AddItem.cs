@@ -9,6 +9,7 @@ public class NodeScriptEvent_AddItem : NodeScriptEvent {
 		modal.advance_script();
 		game._popups.add_popup(SPUtil.sprintf("Got <color=\"#FF00FF\">%s</color>.",_item));
 		game._music.play_sfx("item_get");
+		game._music.fade_bgm_for_time(1.0f);
 	}
 	
 }

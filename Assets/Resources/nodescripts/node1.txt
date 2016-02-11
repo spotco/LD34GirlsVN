@@ -35,7 +35,7 @@
 		{"type":"movecharacter","character":"Kurumi","xto":-375},
 
 		{"type":"dialogue","text":"As I take my seat I can't help but notice the girl sitting in front of me.","xpos":-31,"ypos":25},
-		
+
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Pink Hair","text":"...","xpos":126,"ypos":-142},
 

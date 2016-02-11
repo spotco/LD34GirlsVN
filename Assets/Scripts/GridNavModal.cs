@@ -115,9 +115,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 					}
 					selected_node._is_locked = false;
 					this.set_current_node(selected_node);
+					game._music.fade_bgm_for_time(0.75f);
 					game._music.play_sfx("map_yes");
 					
 				} else {
+					game._music.fade_bgm_for_time(0.75f);
 					game._music.play_sfx("map_no");
 					game._popups.add_popup("Locked!");
 				}
@@ -127,6 +129,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 					if (selected_node._visited) {
 						game._music.play_sfx("dialogue_button_press");
 					} else {
+						game._music.fade_bgm_for_time(0.75f);
 						game._music.play_sfx("map_yes");
 					}
 				}

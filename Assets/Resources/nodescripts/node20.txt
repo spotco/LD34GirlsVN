@@ -15,11 +15,12 @@
 
 		{"type":"dialogue","text":"I fall asleep as soon as I hit the bed.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"playSFX", "sfx":"thump"},
 		{"type":"dialogue","text":"*BANG!* *CRASH!*","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment_night"},
 		{"type":"dialogue","text":"I'm suddenly awoken by a noise from downstairs.","xpos":0,"ypos":0},
 
-		
+
 
 		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--","xpos":-262,"ypos":102},
 		{"type":"dialogue","text":"I hear a voice downstairs. The lights are still all off, who could it be?","xpos":0,"ypos":0},

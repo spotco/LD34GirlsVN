@@ -23,7 +23,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","character":"Kurumi","text":"Is that...a superhero?"},
 		{"type":"changebackground","background":"bg_city_monster"},
-
+		{"type":"playSFX", "sfx":"transform"},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":170,"xscale":1},
 		{"type":"dialogue","text":"It was a beautiful hero, clad in an over-the-top outfit of purple and blue.","xpos":0,"ypos":0},
 		{"type":"movecharacter","character":"Pink Hair","xto":-422},
