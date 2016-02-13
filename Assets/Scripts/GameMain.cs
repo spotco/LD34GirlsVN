@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System;
 
 public class GameMain : MonoBehaviour {
+
+	public static GameMain _context;
+	public ObjectPool _objpool;
+	public TextureResource _tex_resc;
+	public FileCache _file_cache;
+	public VNSPTextManager _sptext;
 	
 	public static int AFFINITY_REQUIREMENT = 6;
 	public static bool NO_EVENTS = false;
@@ -43,6 +49,14 @@ public class GameMain : MonoBehaviour {
 	*/
 	
 	public void Start () {
+		_context = this;
+		_objpool = ObjectPool.cons();
+		_tex_resc = TextureResource.cons();
+		_file_cache = FileCache.cons();
+		_sptext = VNSPTextManager.cons();
+		
+		if (_event_modal == null) return;
+	
 		Application.targetFrameRate = 30;
 		_all_modals = new List<Modal>() { _event_modal, _grid_nav_modal, _title };
 		_controls = ControlManager.cons();
@@ -60,6 +74,7 @@ public class GameMain : MonoBehaviour {
 	}
 	
 	public void Update () {
+		if (_event_modal == null) return;
 		_controls.i_update();
 		_active_modal.i_update(this);
 		_popups.i_update(this);
