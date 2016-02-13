@@ -19,7 +19,7 @@ public class NodeScriptEvent_Dialogue : NodeScriptEvent {
 	public override void i_update(GameMain game, EventModal modal) {
 		if (!_added_bubble) {
 			_added_bubble = true;
-			_tar_bubble = modal.add_dialogue(this);
+			_tar_bubble = modal.add_dialogue(game,this);
 		} else {
 			if (_tar_bubble == null) {
 				modal.advance_script();

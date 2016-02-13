@@ -292,7 +292,15 @@ public class SPText : SPNode, SPAlphaGroupElement {
 				nextFontPositionY + yoffset - rect.size.y*0.5f
 			);
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
-			nextFontPositionX += fontDef.xadvance;
+			
+			float adv = 2;
+			if (c == 'l') {
+				adv = 4.5f;
+			} else if (c == 'w') {
+				adv = 3;
+			}
+			
+			nextFontPositionX += fontDef.xadvance + adv;
 			
 			if (longestLine < nextFontPositionX) longestLine = nextFontPositionX;
 		}

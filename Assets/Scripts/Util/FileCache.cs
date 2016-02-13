@@ -74,7 +74,6 @@ public class FileCache {
 	public FntFile get_fntfile(string key) {
 		if (!_key_to_fntfile.ContainsKey(key)) {
 			_key_to_fntfile[key] = FntFile.cons_from_string(this.load_text_file_from_path(key,".fnt"));
-			Debug.LogWarning("fntfile from streaming:"+key);
 		}
 		return _key_to_fntfile[key];
 	}

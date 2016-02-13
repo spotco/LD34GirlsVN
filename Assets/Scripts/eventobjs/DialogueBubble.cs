@@ -10,6 +10,7 @@ public class DialogueBubble : MonoBehaviour {
 	[SerializeField] private Image _primary_background;
 	[SerializeField] private Image _name_background;
 	[SerializeField] private Image _cursor;
+	[SerializeField] private RawImage _rendered_text;
 	
 	[SerializeField] private Outline _primary_text_outline;
 	[SerializeField] private Outline _name_text_outline;
@@ -29,9 +30,12 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public FlashEvery _dialogue_scroll_sound_flash;
 	
-	public void i_initialize(NodeScriptEvent_Dialogue dialogue) {
+	public void i_initialize(GameMain game, NodeScriptEvent_Dialogue dialogue) {
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
+		
+		_primary_text.gameObject.SetActive(false);
+		_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_name_background.gameObject.SetActive(false);

@@ -14,7 +14,7 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 6;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = false;
+	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = false;
 	public static int NODE_START_INDEX = 1;
 	

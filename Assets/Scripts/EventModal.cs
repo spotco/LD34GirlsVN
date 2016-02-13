@@ -114,9 +114,9 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		_name_to_character[name] = neu_char;
 		return neu_char;
 	}
-	public DialogueBubble add_dialogue(NodeScriptEvent_Dialogue script_event) {
+	public DialogueBubble add_dialogue(GameMain game, NodeScriptEvent_Dialogue script_event) {
 		DialogueBubble neu_bubble = SPUtil.proto_clone(_proto_dialogue_bubble.gameObject).GetComponent<DialogueBubble>();
-		neu_bubble.i_initialize(script_event);
+		neu_bubble.i_initialize(game, script_event);
 		_dialogue_bubbles.Add(neu_bubble);
 		return neu_bubble;
 	}
