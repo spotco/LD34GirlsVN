@@ -13,6 +13,9 @@ public class ControlManager {
 		ButtonB,
 		Debug1,
 		Debug2,
+		
+		TouchClick,
+		
 		None
 	}
 	private static bool control_is_pressed(Control test) {
@@ -39,7 +42,10 @@ public class ControlManager {
 			return Input.GetKey(KeyCode.X);
 		}
 		case Control.ButtonA: {
-			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space);
+			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space) || SPUtil.is_touch();
+		}
+		case Control.TouchClick: {
+			return SPUtil.is_touch();
 		}
 		}
 		return false;
@@ -117,7 +123,17 @@ public class ControlManager {
 		
 		_is_move_x = frame_is_move_x;
 		_is_move_y = frame_is_move_y;
+		
+		Vector2 frame_touch_pos;
+		if (SPUtil.is_touch_and_position(out frame_touch_pos)) {
+			_touch_pos = frame_touch_pos;
+		} else if (SPUtil.has_mouse_and_position(out frame_touch_pos)) {
+			_touch_pos = frame_touch_pos;
+		}
 	}
+	
+	private Vector2 _touch_pos;
+	public Vector2 get_touch_pos() { return _touch_pos; }
 	
 	public bool get_control_just_pressed(Control test) {
 		return _control_just_pressed[test];

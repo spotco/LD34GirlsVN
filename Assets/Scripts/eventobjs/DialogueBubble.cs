@@ -41,6 +41,7 @@ public class DialogueBubble : SPBaseBehavior {
 	}
 	
 	public void cleanup(GameMain game) {
+		_current_mode = Mode.FadeIn;
 		game._objpool.spbasebehavior_repool<DialogueBubble>(this);
 	}
 	
@@ -95,6 +96,8 @@ public class DialogueBubble : SPBaseBehavior {
 				this.text_scroll_tick_sound(game);
 			}
 			
+			this.transform.localScale = SPUtil.valv(1);
+			
 			_cursor.gameObject.SetActive(false);
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 				_primary_text.finish();
@@ -110,6 +113,7 @@ public class DialogueBubble : SPBaseBehavior {
 				_cursor.gameObject.SetActive(!_cursor.gameObject.activeSelf);
 				_anim_t = 0;
 			}
+			this.transform.localScale = SPUtil.valv(1);
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 				game._music.play_sfx("dialogue_button_press");
 				_current_mode = Mode.FadeOut;
@@ -119,6 +123,7 @@ public class DialogueBubble : SPBaseBehavior {
 		} else if (_current_mode == Mode.FadeOut) {
 			_cursor.gameObject.SetActive(false);
 			_anim_t += SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get();
+			this.transform.localScale = SPUtil.valv(1);
 			_canvas_group.alpha = SPUtil.y_for_point_of_2pt_line(new Vector2(0,1.0f),new Vector2(1,0),_anim_t);
 			if (_anim_t >= 1) {
 				_current_mode = Mode.DoRemove;

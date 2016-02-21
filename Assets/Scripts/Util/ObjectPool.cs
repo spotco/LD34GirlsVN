@@ -15,6 +15,7 @@ public class ObjectPool : SPBaseBehavior {
 	
 	public static ObjectPool cons() {
 		GameObject neu_obj = new GameObject("ObjectPool");
+		neu_obj.AddComponent<Canvas>();
 		__inst = neu_obj.AddComponent<ObjectPool>().i_cons();	
 		return __inst;
 	}

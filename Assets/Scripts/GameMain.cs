@@ -11,10 +11,10 @@ public class GameMain : MonoBehaviour {
 	public FileCache _file_cache;
 	public VNSPTextManager _sptext;
 	
-	public static int AFFINITY_REQUIREMENT = 6;
+	public static int AFFINITY_REQUIREMENT = 7;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = true;
+	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = false;
 	public static int NODE_START_INDEX = 1;
 	
@@ -41,9 +41,11 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO--
-	Mouse click implementation
 	save/load implementation
 	script edits
+	script node positioning test
+	ending fadein
+	preload all assets
 	*/
 	
 	public void Start () {
@@ -67,15 +69,13 @@ public class GameMain : MonoBehaviour {
 			_all_modals[i].i_initialize(this);
 		}
 		
-		/*
 		_active_modal = _title;
 		_title._current_mode = TitleModal.Mode.FadeIn;
-		*/
-		_active_modal = _event_modal;
 	}
 	
 	public void Update () {
 		if (_event_modal == null) return;
+		
 		_controls.i_update();
 		_active_modal.i_update(this);
 		_popups.i_update(this);
@@ -97,4 +97,5 @@ public class GameMain : MonoBehaviour {
 	public void finish_event_modal() {
 		_active_modal = _grid_nav_modal;
 	}
+	
 }

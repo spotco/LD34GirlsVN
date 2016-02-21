@@ -13,9 +13,10 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[System.NonSerialized] public Dictionary<int,GridNode> _id_to_gridnode = new Dictionary<int, GridNode>();
 	
 	[System.NonSerialized] public GridNode _current_node;
-	[System.NonSerialized] public int _selected_node_cursor_index;
+	[System.NonSerialized] public GridNode _selected_node;
 	
 	private Vector3 _target_grid_map_anchor_position;
+	private float _touch_trigger_delay = 0;
 			
 	public void i_initialize(GameMain game) {
 		this.gameObject.SetActive(true);
@@ -35,7 +36,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		
 		foreach (int id in _id_to_gridnode.Keys) {
-			_id_to_gridnode[id].post_initialize(this);
+			_id_to_gridnode[id].set_unidirectional_reverse_links(this);
+		}
+		
+		foreach (int id in _id_to_gridnode.Keys) {
+			_id_to_gridnode[id].create_link_sprites(this);
 		}
 		
 		this.set_current_node(_id_to_gridnode[GameMain.NODE_START_INDEX]);
@@ -49,137 +54,196 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
-	private int _first_update = 0;
-	
 	public void i_update(GameMain game) {
 		if (game._popups.has_active_popup()) return;
 		_inventory_overlay.i_update(game,this);
 	
-		List<GridNode> selection_list = this.get_selection_list();
-		if (game._controls.get_control_just_released(ControlManager.Control.MoveUp)) {
-			int tar = GridNavModal.cond_select_with_filter(selection_list[_selected_node_cursor_index],selection_list,(GridNode cur, GridNode target) => {
+		List<GridNode> selection_list = this.get_selection_list(_selected_node);
+		if (_touch_trigger_delay > 0) {
+		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveUp)) {
+			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.y > cur.transform.localPosition.y) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(0,1)) : -1;
 			});
-			_selected_node_cursor_index = tar >= 0 ? tar : _selected_node_cursor_index;
+			_selected_node = tar;
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveDown)) {
-			int tar = GridNavModal.cond_select_with_filter(selection_list[_selected_node_cursor_index],selection_list,(GridNode cur, GridNode target) => {
+			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.y < cur.transform.localPosition.y) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(0,-1)) : -1;
 			});
-			_selected_node_cursor_index = tar >= 0 ? tar : _selected_node_cursor_index;
+			_selected_node = tar;
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveLeft)) {
-			int tar = GridNavModal.cond_select_with_filter(selection_list[_selected_node_cursor_index],selection_list,(GridNode cur, GridNode target) => {
+			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.x < cur.transform.localPosition.x) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(-1,0)) : -1;
 			});
-			_selected_node_cursor_index = tar >= 0 ? tar : _selected_node_cursor_index;
+			_selected_node = tar;
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveRight)) {
-			int tar = GridNavModal.cond_select_with_filter(selection_list[_selected_node_cursor_index],selection_list,(GridNode cur, GridNode target) => {
+			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.x > cur.transform.localPosition.x) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(1,0)) : -1;
 			});
-			_selected_node_cursor_index = tar >= 0 ? tar : _selected_node_cursor_index;
+			_selected_node = tar;
 			
-		} else if (game._controls.get_control_just_released(ControlManager.Control.ButtonB)) {
-			_selected_node_cursor_index = (_selected_node_cursor_index + 1) % selection_list.Count;
+		} else if (game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
+			GridNode touched_node = null;
+			for (int i = 0; i < selection_list.Count; i++) {
+				if (SPUtil.rect_transform_contains_screen_point(selection_list[i].cached_recttransform_get(),game._controls.get_touch_pos())) {
+					touched_node = selection_list[i];
+					break;
+				}
+			}
+			if (touched_node != null && _selected_node != touched_node) {
+				_selected_node = touched_node;
+				this.selected_node_do_sfx(game);
+				_touch_trigger_delay = 25;
+			
+			} else if (!_selected_node._visited && SPUtil.rect_transform_contains_screen_point(_selected_node.cached_recttransform_get(),game._controls.get_touch_pos())) {
+				this.selected_node_do_sfx(game);
+				_touch_trigger_delay = 25;
+			} 
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
-			GridNode selected_node = selection_list[_selected_node_cursor_index];
-			
-			if (GameMain.IGNORE_ITEM_REQ) {
-				this.set_current_node(selected_node);
-				game._music.play_sfx("map_yes");
-				
-			} else if (selected_node._node_script._affinity_requirement) {
-				if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
-					this.set_current_node(selected_node);
-					game._music.play_sfx("map_yes");
-				} else {
-					game._popups.add_popup("Friendship not at that level.");
-					game._music.play_sfx("map_no");
-				}
-				
-				
-			} else if (selected_node._is_locked) {
-				bool can_unlock = true;
-				for (int i = 0; i < selected_node._node_script._requirement_items.Count; i++) {
-					string itr = selected_node._node_script._requirement_items[i];
-					if (!game._inventory._items.Contains(itr)) {
-						can_unlock = false;
-					}
-				}
-				if (can_unlock) {
-					for (int i = 0; i < selected_node._node_script._requirement_items.Count; i++) {
-						string itr = selected_node._node_script._requirement_items[i];
-						game._inventory.remove_item(itr);
-					}
-					selected_node._is_locked = false;
-					this.set_current_node(selected_node);
-					game._music.fade_bgm_for_time(0.75f);
-					game._music.play_sfx("map_yes");
-					
-				} else {
-					game._music.fade_bgm_for_time(0.75f);
-					game._music.play_sfx("map_no");
-					game._popups.add_popup("Locked!");
-				}
-				
-			} else {
-				if (_current_node != selected_node) {
-					if (selected_node._visited) {
-						game._music.play_sfx("dialogue_button_press");
-					} else {
-						game._music.fade_bgm_for_time(0.75f);
-						game._music.play_sfx("map_yes");
-					}
-				}
-				this.set_current_node(selected_node);
-			}
+			this.selected_node_do_sfx(game);
+			this.selected_node_do_action(game);
 		}
 		
 		foreach (int id in _id_to_gridnode.Keys) {
 			_id_to_gridnode[id].i_update(game,this);
 		}
 		
-		this.set_focus_node(selection_list[_selected_node_cursor_index]);
-		game._background.load_background(selection_list[_selected_node_cursor_index]._node_script._background);
+		this.set_focus_node(_selected_node);
+		game._background.load_background(_selected_node._node_script._background);
 		
 		_grid_map_anchor.transform.localPosition = new Vector3(
 			SPUtil.drpt(_grid_map_anchor.transform.localPosition.x,_target_grid_map_anchor_position.x,1/10.0f),
 			SPUtil.drpt(_grid_map_anchor.transform.localPosition.y,_target_grid_map_anchor_position.y,1/10.0f)
 		);
 		_selector.localPosition = new Vector3(
-			_current_node.transform.localPosition.x,
-			_current_node.transform.localPosition.y + 60 + Mathf.Sin(_selector_anim_t) * 10.0f
+			_selected_node.transform.localPosition.x,
+			_selected_node.transform.localPosition.y + 80 + Mathf.Sin(_selector_anim_t) * 10.0f
 		);
 		_selector_anim_t += 0.15f;
 		
-		if ((this._current_node != null && !this._current_node._visited) && !GameMain.NO_EVENTS) {
-			this._current_node._visited = true;
-			game.start_event_modal(this._current_node._node_script);
-			return;
+		if (_touch_trigger_delay > 0) {
+			_touch_trigger_delay -= SPUtil.dt_scale_get();
+			if (SPUtil.vec_dist(_grid_map_anchor.transform.localPosition,_target_grid_map_anchor_position) < 5) {
+				_touch_trigger_delay = 0;
+			}
+			if (!(_touch_trigger_delay > 0)) {
+				this.selected_node_do_action(game);
+			}
+		}
+		if (!(_touch_trigger_delay > 0)) {	
+			if ((this._current_node != null && !this._current_node._visited) && !GameMain.NO_EVENTS) {
+				this._current_node._visited = true;
+				game.start_event_modal(this._current_node._node_script);
+				return;
+			}
 		}
 	}
 	
-	private static int cond_select_with_filter(GridNode current, List<GridNode> list, System.Func<GridNode,GridNode,float> filter) {
+	private void selected_node_do_sfx(GameMain game) {
+		if (GameMain.IGNORE_ITEM_REQ) {
+			if (!_selected_node._visited) {
+				if (_selected_node.play_map_yes_sfx()) {
+					game._music.fade_bgm_for_time(0.75f);
+					game._music.play_sfx("map_yes");
+				}
+			} else {
+				game._music.play_sfx("dialogue_button_press");
+			}
+			
+		} else if (_selected_node._node_script._affinity_requirement) {			
+		} else if (_selected_node._is_locked) {			
+		} else {
+			if (_selected_node._visited) {
+				game._music.play_sfx("dialogue_button_press");
+			} else {
+				game._music.fade_bgm_for_time(0.75f);
+				if (_selected_node.play_map_yes_sfx()) {
+					game._music.play_sfx("map_yes");
+				}
+			}
+		}
+	}
+	
+	private void selected_node_do_action(GameMain game) {
+		if (GameMain.IGNORE_ITEM_REQ) {
+			this.set_current_node(_selected_node);
+			
+		} else if (_selected_node._node_script._affinity_requirement) {
+			game._music.fade_bgm_for_time(0.75f);
+			if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
+				this.set_current_node(_selected_node);
+				game._music.play_sfx("map_yes");
+			} else {
+				game._popups.add_popup("Friendship not at that level.");
+				game._music.play_sfx("map_no");
+			}
+			
+		} else if (_selected_node._is_locked) {
+			game._music.fade_bgm_for_time(0.75f);
+			if (this.selected_node_can_unlock(game)) {
+				for (int i = 0; i < _selected_node._node_script._requirement_items.Count; i++) {
+					string itr = _selected_node._node_script._requirement_items[i];
+					game._inventory.remove_item(itr);
+				}
+				_selected_node._is_locked = false;
+				this.set_current_node(_selected_node);
+				if (_selected_node.play_map_yes_sfx()) {
+					game._music.play_sfx("map_yes");
+				}
+				
+			} else {
+				game._popups.add_popup("Locked!");
+				game._music.play_sfx("map_no");
+			}
+			
+		} else {
+			this.set_current_node(_selected_node);
+		}
+	}
+	
+	private bool selected_node_can_unlock(GameMain game) {
+		bool can_unlock = true;
+		for (int i = 0; i < _selected_node._node_script._requirement_items.Count; i++) {
+			string itr = _selected_node._node_script._requirement_items[i];
+			if (!game._inventory._items.Contains(itr)) {
+				can_unlock = false;
+			}
+		}
+		return can_unlock;
+	}
+	
+	private static GridNode cond_select_with_filter(GridNode current, List<GridNode> list, System.Func<GridNode,GridNode,float> filter) {
 		float min_dist = float.MaxValue;
-		int rtv = -1;
+		GridNode rtv = current;
 		for (int i = 0; i < list.Count; i++) {
 			float val = filter(current,list[i]);
 			if (val > 0 && val < min_dist) {
 				min_dist = val;
-				rtv = i;
+				rtv = list[i];
 			}
 		}
 		return rtv;
 	}
 	
-	private List<GridNode> __cached_selection_list = new List<GridNode>();
-	public List<GridNode> get_selection_list() {
+	public List<GridNode> __cached_selection_list = new List<GridNode>();
+	public List<GridNode> get_selection_list(GridNode target) {
 		__cached_selection_list.Clear();
-		__cached_selection_list.Add(_current_node);
-		for (int i = 0; i < _current_node._node_script._links.Count; i++) {
-			__cached_selection_list.Add(_id_to_gridnode[_current_node._node_script._links[i]]);
+		for (int i = 0; i < target._node_script._links.Count; i++) {
+			GridNode itr_gridnode = _id_to_gridnode[target._node_script._links[i]];
+			if (target._visited || itr_gridnode._visited) {
+				__cached_selection_list.Add(itr_gridnode);
+			}
+		}
+		if (!target._visited) {
+			for (int i = 0; i < target._unidirectional_reverse_links.Count; i++) {
+				GridNode itr_gridnode = _id_to_gridnode[target._unidirectional_reverse_links[i]];
+				if (itr_gridnode._visited) {
+					__cached_selection_list.Add(itr_gridnode);
+				}
+			}
 		}
 		return __cached_selection_list;
 	}
@@ -193,7 +257,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	
 	private void set_current_node(GridNode tar_node) {
 		_current_node = tar_node;
-		_selected_node_cursor_index = 0;
+		_selected_node = tar_node;
 	}
 	
 }

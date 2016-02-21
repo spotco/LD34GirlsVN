@@ -359,11 +359,11 @@ public class SPUtil {
 	}
 	
 	public static bool is_touch() {
-		#if UNITY_EDITOR
+		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_WEBGL
 		if (Input.GetMouseButton(0)) {
 			return true;
 		}
-		#elif UNITY_IOS
+		#elif UNITY_IOS || UNITY_ANDROID
 		Touch[] touches = Input.touches;
 		for (int i = 0; i < touches.Length; i++) {
 			if (touches[i].fingerId == 0 && touches[i].phase != TouchPhase.Ended) {
@@ -378,11 +378,11 @@ public class SPUtil {
 		bool rtv = false;
 		Vector2 pixel_screen_pos = new Vector2();
 		if (SPUtil.is_touch()) {
-			#if UNITY_EDITOR
+			#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_WEBGL
 			rtv = true;
 			pixel_screen_pos = 
 				new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-			#elif UNITY_IOS
+			#elif UNITY_IOS || UNITY_ANDROID
 			rtv = true;
 			Touch[] touches = Input.touches;
 			for (int i = 0; i < touches.Length; i++) {
@@ -395,6 +395,22 @@ public class SPUtil {
 		}
 		pos = pixel_screen_pos;
 		return rtv;
+	}
+	
+	public static bool has_mouse_and_position(out Vector2 pos) {
+		bool rtv = false;
+		pos = Vector2.zero;
+		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_WEBGL
+		rtv = true;
+		pos = 
+			new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+		#endif
+		return rtv;
+	}
+	
+	public static bool rect_transform_contains_screen_point(RectTransform rect, Vector2 s_pos) {
+		Vector2 local_touch_pos = rect.InverseTransformPoint(s_pos);
+		return (rect.rect.Contains(local_touch_pos));
 	}
 	
 }

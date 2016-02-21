@@ -29,6 +29,12 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	private NodeScript _current_script;
 	
 	public void load_script(GameMain game, NodeScript script) {
+		for (int i = _dialogue_bubbles.Count-1; i >= 0; i--) {
+			DialogueBubble itr = _dialogue_bubbles[i];
+			itr.cleanup(game);	
+		}
+		_dialogue_bubbles.Clear();
+		
 		_script_index = 0;
 		_current_script = script;
 		for (int i = 0; i < _current_script._events.Count; i++) {

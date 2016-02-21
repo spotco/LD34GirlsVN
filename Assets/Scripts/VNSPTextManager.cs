@@ -70,11 +70,11 @@ public class VNSPTextManager : MonoBehaviour {
 		_sptext.add_style("b", SPText.SPTextStyle.cons(
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a), 
 			new Vector4(fill_color.r, fill_color.g, fill_color.b, fill_color.a), 
-			new Vector4(0,0,0,0), 2.5f, 0.5f));
+			new Vector4(0,0,0,0), 3.5f, 0.75f));
 		_sptext.add_style("b2", SPText.SPTextStyle.cons(
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
 			new Vector4(0.9f, 0.9f, 0.9f, 1),
-			new Vector4(0,0,0,0), 2.5f, 0.5f));
+			new Vector4(0,0,0,0), 3.5f, 0.75f));
 	}
 	
 	public void clear() {

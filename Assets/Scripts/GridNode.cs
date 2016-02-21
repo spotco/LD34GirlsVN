@@ -68,9 +68,23 @@ public class GridNode : MonoBehaviour {
 		_visited = false;
 	}
 	
-	public void post_initialize(GridNavModal grid_nav) {
+	public List<int> _unidirectional_reverse_links = new List<int>();
+	public void set_unidirectional_reverse_links(GridNavModal grid_nav) {
 		for (int i = 0; i < _node_script._links.Count; i++) {
 			int itr_id = _node_script._links[i];
+			GridNode linked_node = grid_nav._id_to_gridnode[itr_id];
+			if (!linked_node._node_script._links.Contains(_node_script._id)) {
+				linked_node._unidirectional_reverse_links.Add(_node_script._id);
+			}
+		}
+	}
+	
+	public void create_link_sprites(GridNavModal grid_nav) {
+		List<int> all_links = new List<int>();
+		all_links.AddRange(_node_script._links);
+		all_links.AddRange(_unidirectional_reverse_links);
+		for (int i = 0; i < all_links.Count; i++) {
+			int itr_id = all_links[i];
 			
 			if (!grid_nav._id_to_gridnode.ContainsKey(itr_id)) {
 				Debug.LogError(SPUtil.sprintf("ERROR! Canvas->GameMain->BackgroundImage->GridNav->GridMapAnchor does not contain node of id(%d)",itr_id));
@@ -133,27 +147,33 @@ public class GridNode : MonoBehaviour {
 	}
 	
 	public void i_update(GameMain game, GridNavModal grid_nav) {
-		GridNode tar_selected = grid_nav.get_selection_list()[grid_nav._selected_node_cursor_index];
 		foreach (int itr_id in _id_to_line.Keys) {
-			if (grid_nav._current_node != this) {
+			if (grid_nav._selected_node != this) {
 				this.set_line_state(itr_id, LineState.NotSelected);
 			} else {
-				if (tar_selected._node_script._id == itr_id) {
-					this.set_line_state(itr_id, LineState.ActiveSelected);
+				if (grid_nav._selected_node._visited) {
+					if (_unidirectional_reverse_links.Contains(itr_id)) {
+						this.set_line_state(itr_id, LineState.NotSelected);
+					} else {
+						if (SPUtil.rect_transform_contains_screen_point(grid_nav._id_to_gridnode[itr_id].cached_recttransform_get(),game._controls.get_touch_pos())) {
+							this.set_line_state(itr_id, LineState.ActiveSelected);
+						} else {
+							this.set_line_state(itr_id, LineState.ActiveNotSelected);
+						}
+					}
 				} else {
-					this.set_line_state(itr_id, LineState.ActiveNotSelected);
+					if (grid_nav._id_to_gridnode[itr_id]._visited) {
+						this.set_line_state(itr_id, LineState.ActiveSelected);
+					} else {
+						this.set_line_state(itr_id, LineState.NotSelected);
+					}
 				}
 			}
 		}
 		
+		
 		float tar_scale = 1;
-		if (grid_nav._current_node == this) {
-			_image.sprite = img_current;
-			tar_scale = 1;
-			SPUtil.set_outline_effect_color(_title_ui_outline,color_current);
-			_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
-			
-		} else if (tar_selected == this) {
+		if (grid_nav._selected_node == this) {
 			if (_visited) {
 				_image.sprite = img_visited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
@@ -166,7 +186,12 @@ public class GridNode : MonoBehaviour {
 				_title_ui_text.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin(_anim_theta)*7.5f);
 				
 			}
-			tar_scale = 1.35f;
+			if (_visited) {
+				tar_scale = 1.0f;
+			} else {
+				tar_scale = 1.35f;
+			}
+			
 			
 		
 		} else {
@@ -177,26 +202,50 @@ public class GridNode : MonoBehaviour {
 				_image.sprite = img_unvisited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}
-			tar_scale = 0.85f;
+			
+			if (grid_nav.__cached_selection_list.Contains(this) && SPUtil.rect_transform_contains_screen_point(this.cached_recttransform_get(),game._controls.get_touch_pos())) {
+				tar_scale = 1.1f;
+			} else {
+				tar_scale = 0.85f;
+			}
+			
 			_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
 			
 		}
 		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
 		
-		if (_node_script._affinity_requirement) {
-			_lock_icon.gameObject.SetActive(true);
-			_lock_item_icon.gameObject.SetActive(false);
-			_title_ui_text.gameObject.SetActive(false);
-		
-		} else if (_is_locked) {
-			_lock_icon.gameObject.SetActive(true);
-			_lock_item_icon.gameObject.SetActive(true);
-			_title_ui_text.gameObject.SetActive(false);
+		if (!_visited) {
+			if (_node_script._affinity_requirement) {
+				_lock_icon.gameObject.SetActive(true);
+				_lock_item_icon.gameObject.SetActive(false);
+				_title_ui_text.gameObject.SetActive(false);
+			
+			} else if (_is_locked) {
+				_lock_icon.gameObject.SetActive(true);
+				_lock_item_icon.gameObject.SetActive(true);
+				_title_ui_text.gameObject.SetActive(false);
+			} else {
+				_lock_icon.gameObject.SetActive(false);
+				_lock_item_icon.gameObject.SetActive(false);
+				_title_ui_text.gameObject.SetActive(true);
+			}
 		} else {
 			_lock_icon.gameObject.SetActive(false);
 			_lock_item_icon.gameObject.SetActive(false);
 			_title_ui_text.gameObject.SetActive(true);
 		}
+	}
+	
+	private RectTransform __rect_transform;
+	public RectTransform cached_recttransform_get() {
+		if (__rect_transform == null) {
+			__rect_transform = this.GetComponent<RectTransform>();
+		}
+		return __rect_transform;
+	}
+	
+	public bool play_map_yes_sfx() {
+		return _node_script._id != 10;
 	}
 	
 	
