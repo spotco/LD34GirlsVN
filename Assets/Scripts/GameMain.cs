@@ -69,8 +69,11 @@ public class GameMain : MonoBehaviour {
 			_all_modals[i].i_initialize(this);
 		}
 		
+		/*
 		_active_modal = _title;
 		_title._current_mode = TitleModal.Mode.FadeIn;
+		*/
+		_active_modal = _event_modal;
 	}
 	
 	public void Update () {
@@ -85,6 +88,7 @@ public class GameMain : MonoBehaviour {
 		
 		_background.i_update();
 		_music.i_update ();
+		_sptext.i_update(this);
 	}
 	
 	public void start_event_modal(NodeScript script) {

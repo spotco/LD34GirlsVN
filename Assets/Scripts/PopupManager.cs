@@ -8,6 +8,7 @@ public class PopupManager : MonoBehaviour {
 	private List<Popup> _active_popups = new List<Popup>();
 	
 	public void i_initialize(GameMain game) {
+		this.gameObject.SetActive(true);
 		_popup_proto.gameObject.SetActive(false);
 	}
 	

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class DialogueBubble : MonoBehaviour {
 
-	[SerializeField] private ScrollText _primary_text;
 	[SerializeField] private Text _name_text;
 	[SerializeField] private CanvasGroup _canvas_group;
 	[SerializeField] private Image _primary_background;
@@ -12,7 +11,7 @@ public class DialogueBubble : MonoBehaviour {
 	[SerializeField] private Image _cursor;
 	[SerializeField] private RawImage _rendered_text;
 	
-	[SerializeField] private Outline _primary_text_outline;
+	private ScrollText _primary_text = new ScrollText();
 	[SerializeField] private Outline _name_text_outline;
 	
 	public enum Mode {
@@ -34,7 +33,7 @@ public class DialogueBubble : MonoBehaviour {
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
-		_primary_text.gameObject.SetActive(false);
+		
 		_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
@@ -43,8 +42,10 @@ public class DialogueBubble : MonoBehaviour {
 			_name_text.text = dialogue._character;
 		}
 		
-		this.apply_style(dialogue);
+		this.apply_style(game._sptext, dialogue);
 		
+		_primary_text.reset();
+		_primary_text._text = game._sptext;
 		_primary_text.load(dialogue._text);
 		_current_mode = Mode.FadeIn;
 		
@@ -121,7 +122,7 @@ public class DialogueBubble : MonoBehaviour {
 		return bg_sprite;
 	}
 	
-	public void apply_style(NodeScriptEvent_Dialogue script_event) {
+	public void apply_style(VNSPTextManager text_renderer, NodeScriptEvent_Dialogue script_event) {
 		Color outline_color;
 		if (script_event._character == "Kurumi") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;
@@ -160,7 +161,8 @@ public class DialogueBubble : MonoBehaviour {
 			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
 		}
 		_name_text_outline.effectColor = outline_color;
-		_primary_text_outline.effectColor = outline_color;
+		text_renderer.set_text_outline_color(outline_color);
+		//text_renderer.set_bold_outline_color(new Color(1,0,0,1));
 	}
 	
 	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";

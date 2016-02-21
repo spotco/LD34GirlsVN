@@ -19,16 +19,16 @@ public class VNSPTextManager : MonoBehaviour {
 	
 	
 	private VNSPTextManager i_cons() {
-	
 		this.gameObject.transform.position = new Vector3(10000,0,0);
 	
-		_sptext = SPText.cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(new Vector4(95/255.0f,115/255.0f,88/255.0f,1), new Vector4(1,1,1,1), new Vector4(0,0,0,0),0,0));
+		_sptext = SPText.cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
 		_sptext.gameObject.transform.parent = this.transform;
-		_sptext.set_scale(0.025f);
+		_sptext.set_scale(0.0225f);
 		_sptext.set_u_pos(-11.79f,4.16f);
 		_sptext.set_u_z(1);
 		_sptext.set_text_anchor(0,1);
-		_sptext.set_markup_text(this.input_str_insert_linebreaks("A new city with a new home and new life. I haven't even had time to write back to my old friends!"));
+		
+		this.set_text_outline_color(new Vector4(95/255.0f,115/255.0f,88/255.0f,1));
 		
 		_render_tex = new RenderTexture(378*4,148*4,32);
 		_render_tex.filterMode = FilterMode.Trilinear;
@@ -56,22 +56,42 @@ public class VNSPTextManager : MonoBehaviour {
 		return this;
 	}
 	
-	private string input_str_insert_linebreaks(string input) {
+	public void set_string(string text, string full_string) {
+		_sptext.set_markup_text(this.input_str_insert_linebreaks(text, full_string));
+	}
+	
+	public void set_text_outline_color(Color color) {
+		_sptext.set_default_style(SPText.SPTextStyle.cons(
+			new Vector4(color.r, color.g, color.b, color.a), 
+			new Vector4(1,1,1,1), 
+			new Vector4(0,0,0,0), 0, 0));
+	}
+	public void set_bold_outline_color(Color color) {
+		_sptext.add_style("b", SPText.SPTextStyle.cons(
+			new Vector4(color.r, color.g, color.b, color.a), 
+			new Vector4(1,1,1,1), 
+			new Vector4(0,0,0,0), 5, 0.25f));
+	}
+
+	
+	private string input_str_insert_linebreaks(string input, string full_string) {
 		StringBuilder rtv = new StringBuilder("");
 		string[] tokens = input.Split(' ');
+		string[] full_tokens = full_string.Split(' ');
 		float cur_line_length = 0;
 		for (int i = 0; i < tokens.Length; i++) {
 			string itr_token = tokens[i];
-			float itr_token_length = this.str_token_length(itr_token);
-			if (cur_line_length + itr_token_length > 800) {
+			string itr_full_token = full_tokens[i];
+			float itr_full_token_length = this.str_token_length(itr_full_token);
+			if (cur_line_length + itr_full_token_length > 800) {
 				rtv.Append("\n");
 				rtv.Append(itr_token);
 				rtv.Append(" ");
-				cur_line_length = itr_token_length;
+				cur_line_length = itr_full_token_length;
 			} else {
 				rtv.Append(itr_token);
 				rtv.Append(" ");
-				cur_line_length += itr_token_length;
+				cur_line_length += itr_full_token_length;
 			}
 		}
 		return rtv.ToString();
@@ -89,6 +109,8 @@ public class VNSPTextManager : MonoBehaviour {
 		return rtv;
 	}
 	
-	public void i_update(GameMain game) {}
+	public void i_update(GameMain game) {
+		_sptext.i_update();
+	}
 
 }

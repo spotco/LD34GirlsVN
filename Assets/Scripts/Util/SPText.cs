@@ -136,7 +136,6 @@ public class SPText : SPNode, SPAlphaGroupElement {
 	private Dictionary<string,SPTextStyle> _name_to_styles;
 	
 	private float _time;
-	private float _animate_text_in_ct;
 	
 	private SPText i_cons_text(string texkey, string fntkey, SPTextStyle default_style) {
 		this.set_u_pos(0,0);
@@ -155,7 +154,6 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		_cached_string = "";
 		_name_to_styles = new Dictionary<string, SPTextStyle>();
 		_time = 0;
-		_animate_text_in_ct = 0;
 		_alpha_mult = 1;
 		this.set_opacity(1);
 		
@@ -168,20 +166,19 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		_name_to_styles[name] = style;
 	}
 	
+	public void set_default_style(SPTextStyle style) {
+		_default_style = style;
+	}
+	
 	public void i_update() {
 		float itr_anim_time = _time;
 		for (int i = 0; i < _characters.Count; i++) {
 			SPTextCharacter itr = _characters[i];
-			float animate_in_t = Mathf.Clamp(_animate_text_in_ct-i,0,1);
-			if (animate_in_t < 1) {
-				itr.i_update_animate_text_in(animate_in_t);
-			} else {
-				itr.i_update(itr_anim_time);
-				itr_anim_time += itr.get_time_incr();
-			}
+
+			itr.i_update(itr_anim_time);
+			itr_anim_time += itr.get_time_incr();
 		}
 		_time += SPUtil.dt_scale_get() * 0.05f;
-		_animate_text_in_ct += SPUtil.dt_scale_get() * 0.33f;
 	}
 	
 	private void markup_string_out_display_string_and_map(string markup_string, out string display_string, out Dictionary<int,SPTextStyle> style_map) {
@@ -230,6 +227,7 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		_characters.Clear();
 	}
 	
+	private string _prev_display_str = "";
 	public SPText set_markup_text(string markup_string) {
 		if (_cached_string == markup_string) return this;
 		_cached_string = markup_string;
@@ -260,8 +258,13 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		
 		FntFile.CharInfo fontDef = null;
 		
+		//bool match_prev_display_str = false;
+		
 		for (int i = 0; i < display_string.Length; i++) {
 			char c = display_string[i];
+			
+			//if (_prev_display_str.Length > i &&
+			
 			if (c == '\n') {
 				nextFontPositionX = 0;
 				nextFontPositionY -= _bmfont_cfg.common.lineHeight;
@@ -293,12 +296,7 @@ public class SPText : SPNode, SPAlphaGroupElement {
 			);
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
 			
-			float adv = 2;
-			if (c == 'l') {
-				adv = 4.5f;
-			} else if (c == 'w') {
-				adv = 3;
-			}
+			float adv = SPText.adv_for_char(c);
 			
 			nextFontPositionX += fontDef.xadvance + adv;
 			
@@ -314,7 +312,19 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		tmpSize.y = totalHeight;
 		_rendered_size = tmpSize;
 		this.update_pivot_text_anchor();
+		_prev_display_str = display_string;
 		return this;
+	}
+	
+	private static float adv_for_char(char c) {
+		switch (c) {
+			case 'l': return 4.5f;
+			case 'w': return 3;
+			case 'f': return 3;
+			case ' ': return 3;
+			case 'c': return 3;
+			default: return 2.5f;
+		}
 	}
 	
 	private float _opacity;
