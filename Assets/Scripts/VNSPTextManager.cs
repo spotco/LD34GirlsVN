@@ -66,11 +66,15 @@ public class VNSPTextManager : MonoBehaviour {
 			new Vector4(1,1,1,1), 
 			new Vector4(0,0,0,0), 0, 0));
 	}
-	public void set_bold_outline_color(Color color) {
+	public void set_bold_color(Color outline_color, Color fill_color) {
 		_sptext.add_style("b", SPText.SPTextStyle.cons(
-			new Vector4(color.r, color.g, color.b, color.a), 
-			new Vector4(1,1,1,1), 
-			new Vector4(0,0,0,0), 5, 0.25f));
+			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a), 
+			new Vector4(fill_color.r, fill_color.g, fill_color.b, fill_color.a), 
+			new Vector4(0,0,0,0), 2.5f, 0.5f));
+		_sptext.add_style("b2", SPText.SPTextStyle.cons(
+			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(0.9f, 0.9f, 0.9f, 1),
+			new Vector4(0,0,0,0), 2.5f, 0.5f));
 	}
 	
 	public void clear() {
@@ -82,6 +86,7 @@ public class VNSPTextManager : MonoBehaviour {
 		string[] tokens = input.Split(' ');
 		string[] full_tokens = full_string.Split(' ');
 		float cur_line_length = 0;
+		
 		for (int i = 0; i < tokens.Length; i++) {
 			string itr_token = tokens[i];
 			string itr_full_token = full_tokens[i];
@@ -104,10 +109,19 @@ public class VNSPTextManager : MonoBehaviour {
 	private float str_token_length(string token) {
 		FntFile fntfile = _sptext.fnt_file();
 		float rtv = 0;
+		bool tag_mode = false;
 		for (int i = 0; i < token.Length; i++) {
 			char itr = token[i];
-			if (fntfile.contains_char(itr)) {
-				rtv += fntfile.charinfo_for_char(itr).xadvance;
+			
+			if (itr == '[') {
+				tag_mode = true;
+			} else if (itr == ']') {
+				tag_mode = false;
+			} else if (itr == '@') {
+			} else if (!tag_mode) {
+				if (fntfile.contains_char(itr)) {
+					rtv += fntfile.charinfo_for_char(itr).xadvance;
+				}
 			}
 		}
 		return rtv;

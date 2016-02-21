@@ -21,7 +21,7 @@ public class NodeScriptEvent_Dialogue : NodeScriptEvent {
 			_added_bubble = true;
 			_tar_bubble = modal.add_dialogue(game,this);
 		} else {
-			if (_tar_bubble == null) {
+			if (!_tar_bubble.is_active()) {
 				modal.advance_script();
 			}
 		}

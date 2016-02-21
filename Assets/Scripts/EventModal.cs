@@ -76,7 +76,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			DialogueBubble itr = _dialogue_bubbles[i];
 			itr.i_update(game,this);
 			if (itr._current_mode == DialogueBubble.Mode.DoRemove) {
-				GameObject.Destroy(itr.gameObject);
+				itr.cleanup(game);
 				_dialogue_bubbles.RemoveAt(i);
 			} else if (itr._current_mode == DialogueBubble.Mode.TextIn) {
 				if (_name_to_character.ContainsKey(itr._script._character)) {
@@ -93,8 +93,9 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		}
 		for (int i = _dialogue_bubbles.Count-1; i >= 0; i--) {
 			DialogueBubble itr = _dialogue_bubbles[i];
-			itr._current_mode = DialogueBubble.Mode.DoRemove;	
+			itr.cleanup(game);	
 		}
+		_dialogue_bubbles.Clear();
 		game.finish_event_modal();
 	}
 	
@@ -115,8 +116,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		return neu_char;
 	}
 	public DialogueBubble add_dialogue(GameMain game, NodeScriptEvent_Dialogue script_event) {
-		DialogueBubble neu_bubble = SPUtil.proto_clone(_proto_dialogue_bubble.gameObject).GetComponent<DialogueBubble>();
-		neu_bubble.i_initialize(game, script_event);
+		DialogueBubble neu_bubble = DialogueBubble.cons(game, script_event, _proto_dialogue_bubble);
 		_dialogue_bubbles.Add(neu_bubble);
 		return neu_bubble;
 	}

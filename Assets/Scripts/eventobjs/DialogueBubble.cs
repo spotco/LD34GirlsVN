@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class DialogueBubble : MonoBehaviour {
+public class DialogueBubble : SPBaseBehavior {
 
 	[SerializeField] private Text _name_text;
 	[SerializeField] private CanvasGroup _canvas_group;
@@ -29,7 +29,23 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public FlashEvery _dialogue_scroll_sound_flash;
 	
-	public void i_initialize(GameMain game, NodeScriptEvent_Dialogue dialogue) {
+	public static DialogueBubble cons(GameMain game, NodeScriptEvent_Dialogue dialogue, DialogueBubble proto) {
+		DialogueBubble rtv = game._objpool.spbasebehavior_depool<DialogueBubble>(false);
+		if (rtv == null) {
+			rtv = SPUtil.proto_clone(proto.gameObject).GetComponent<DialogueBubble>();
+			rtv.depool();
+		}
+		SPUtil.proto_copy_transform(rtv.gameObject,proto.gameObject);
+		rtv.i_cons(game,dialogue);
+		return rtv;
+	}
+	
+	public void cleanup(GameMain game) {
+		game._objpool.spbasebehavior_repool<DialogueBubble>(this);
+	}
+	
+	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
+		this.gameObject.SetActive(true);
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
@@ -39,6 +55,7 @@ public class DialogueBubble : MonoBehaviour {
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_name_background.gameObject.SetActive(false);
 		} else {
+			_name_background.gameObject.SetActive(true);
 			_name_text.text = dialogue._character;
 		}
 		
@@ -58,11 +75,13 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public void i_update(GameMain game, EventModal modal) {
 		if (_current_mode == Mode.FadeIn) {
-			_anim_t += 0.05f * SPUtil.dt_scale_get();
+			_anim_t += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
 			_cursor.gameObject.SetActive(false);
 			
 			_canvas_group.alpha = _anim_t;
-			this.transform.localScale = SPUtil.valv(SPUtil.y_for_point_of_2pt_line(new Vector2(0,1.2f),new Vector2(1,1),_anim_t));
+			this.transform.localScale = SPUtil.valv(SPUtil.y_for_point_of_2pt_line(new Vector2(0,1.2f),new Vector2(1,1),
+				SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0.2f,-0.2f), new Vector2(0.8f,1.2f), new Vector2(1,1), _anim_t).y
+			));
 			
 			if (_anim_t >= 1) {
 				_current_mode = Mode.TextIn;
@@ -99,7 +118,7 @@ public class DialogueBubble : MonoBehaviour {
 		
 		} else if (_current_mode == Mode.FadeOut) {
 			_cursor.gameObject.SetActive(false);
-			_anim_t += 0.05f * SPUtil.dt_scale_get();
+			_anim_t += SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get();
 			_canvas_group.alpha = SPUtil.y_for_point_of_2pt_line(new Vector2(0,1.0f),new Vector2(1,0),_anim_t);
 			if (_anim_t >= 1) {
 				_current_mode = Mode.DoRemove;
@@ -124,7 +143,7 @@ public class DialogueBubble : MonoBehaviour {
 	
 	public void apply_style(VNSPTextManager text_renderer, NodeScriptEvent_Dialogue script_event) {
 		Color outline_color;
-		if (script_event._character == "Kurumi") {
+		if (script_event._character == "Kurumi" || script_event._character == "Me") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;
 			_primary_background.sprite = this.cond_get_bgsprite("kurumi");
 			_name_background.sprite = this.cond_get_bgsprite("kurumi");
@@ -162,7 +181,7 @@ public class DialogueBubble : MonoBehaviour {
 		}
 		_name_text_outline.effectColor = outline_color;
 		text_renderer.set_text_outline_color(outline_color);
-		//text_renderer.set_bold_outline_color(new Color(1,0,0,1));
+		text_renderer.set_bold_color(outline_color, new Color(1,1,0,1));
 	}
 	
 	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";

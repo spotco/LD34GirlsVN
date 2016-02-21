@@ -40,7 +40,7 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		public void i_update(float time) {
 			if (_animate_in_t < 1) {
 				this.i_update_animate_text_in(_animate_in_t);
-				_animate_in_t = Mathf.Clamp(_animate_in_t + SPUtil.sec_to_tick(0.1f), 0, 1);
+				_animate_in_t = Mathf.Clamp(_animate_in_t + SPUtil.sec_to_tick(0.1f) * SPUtil.dt_scale_get(), 0, 1);
 				
 			} else {
 				this.set_opacity(1);

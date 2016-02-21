@@ -41,8 +41,6 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO--
-	phone sfx
-	SPText performance
 	Mouse click implementation
 	save/load implementation
 	script edits

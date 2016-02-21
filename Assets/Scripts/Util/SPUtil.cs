@@ -346,12 +346,16 @@ public class SPUtil {
 	
 	public static GameObject proto_clone(GameObject proto) {
 		GameObject rtv = ((GameObject)UnityEngine.Object.Instantiate(proto));
+		SPUtil.proto_copy_transform(rtv,proto);
+		rtv.SetActive(true);
+		return rtv;
+	}
+	
+	public static void proto_copy_transform(GameObject rtv, GameObject proto) {
 		rtv.transform.SetParent(proto.transform.parent);
 		rtv.transform.localScale = proto.transform.localScale;
 		rtv.transform.localPosition = proto.transform.localPosition;
 		rtv.transform.localRotation = proto.transform.localRotation;
-		rtv.SetActive(true);
-		return rtv;
 	}
 	
 	public static bool is_touch() {

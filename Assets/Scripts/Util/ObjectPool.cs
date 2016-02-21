@@ -25,16 +25,20 @@ public class ObjectPool : SPBaseBehavior {
 		return this;
 	}
 
-	public T spbasebehavior_depool<T>() where T : SPBaseBehavior {
+	public T spbasebehavior_depool<T>(bool create = true) where T : SPBaseBehavior {
 		string key = typeof(T).ToString();
 		List<SPBaseBehavior> tar_list = _spbasebehavior_typekey_to_objlist.list(key);
 		if (tar_list.Count == 0) {
-			GameObject neu_obj = new GameObject(key);
-			neu_obj.AddComponent<T>();
-			neu_obj.SetActive(true);
-			neu_obj.GetComponent<T>().depool();
-			return neu_obj.GetComponent<T>();
-
+			if (create) {
+				GameObject neu_obj = new GameObject(key);
+				neu_obj.AddComponent<T>();
+				neu_obj.SetActive(true);
+				neu_obj.GetComponent<T>().depool();
+				return neu_obj.GetComponent<T>();
+			} else {
+				return null;
+			}
+			
 		} else {
 			T rtv = (T)tar_list[0];
 			tar_list.RemoveRange(0,1);

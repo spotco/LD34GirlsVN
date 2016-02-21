@@ -9,6 +9,8 @@ public class NodeScriptEvent_PlaySFX : NodeScriptEvent {
 			game._music.fade_bgm_for_time(4.0f);
 		} else if (_sfx == "transform") {
 			game._music.fade_bgm_for_time(2.0f);
+		} else if (_sfx == "phone_buzz") {
+			game._music.fade_bgm_for_time(1.5f);
 		}
 		game._music.play_sfx(_sfx);
 		modal.advance_script();
