@@ -14,6 +14,8 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		private SPText.SPTextStyle _style;
 		private Vector2 _start_pos;
 		
+		private float _animate_in_t;
+		
 		public void add_to_parent(SPNode parent) { parent.add_child(_img); }
 		public void depool() {
 			_img = SPSprite.cons_sprite_texkey_texrect(RTex.BLANK,new Rect(0,0,0,0));
@@ -32,23 +34,32 @@ public class SPText : SPNode, SPAlphaGroupElement {
 			_alpha_mult = 1;
 			_start_pos = Vector2.zero;
 			this.set_style(style);
+			_animate_in_t = 0;
 			return this;
 		}
 		public void i_update(float time) {
-			this.set_opacity(1);
-			_img.set_scale(1);
-			_img.set_u_pos(
-				_start_pos.x,
-				_start_pos.y + _style._amplitude * Mathf.Sin(time)
-			);
+			if (_animate_in_t < 1) {
+				this.i_update_animate_text_in(_animate_in_t);
+				_animate_in_t = Mathf.Clamp(_animate_in_t + SPUtil.sec_to_tick(0.1f), 0, 1);
+				
+			} else {
+				this.set_opacity(1);
+				_img.set_scale(1);
+				_img.set_u_pos(
+					_start_pos.x,
+					_start_pos.y + _style._amplitude * Mathf.Sin(time)
+				);
+			}
 		}
-		public void i_update_animate_text_in(float anim_t) {
-			this.set_opacity(anim_t);
+		private void i_update_animate_text_in(float anim_t) {
+			this.set_opacity(SPUtil.y_for_point_of_2pt_line(new Vector2(0,0), new Vector2(1,1), 
+				SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0,1), new Vector2(0,1), new Vector2(1,1), anim_t).y));
 			_img.set_u_pos(
 				_start_pos.x,
-				_start_pos.y + 10 * anim_t
+				_start_pos.y + SPUtil.bezier_val_for_t(new Vector2(0,25), new Vector2(0.8f,50), new Vector2(0.8f,-50), new Vector2(1,0), 
+					SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0,1), new Vector2(0,1), new Vector2(1,1), anim_t).y).y
 			);
-			_img.set_scale(anim_t);
+			_img.set_scale(SPUtil.y_for_point_of_2pt_line(new Vector2(0,0.5f),new Vector2(1,1.0f),anim_t));
 		}
 		
 		private MaterialPropertyBlock _material_block;
@@ -220,18 +231,24 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		style_map = rtv_style_map;
 	}
 	
-	private void cleanup_existing_characters() {
-		for (int i = 0; i < _characters.Count; i++) {
+	private void cleanup_existing_characters(int index_start = 0) {
+		int check_count = _characters.Count - index_start;
+		if (check_count <= 0) return;
+		for (int i = index_start; i < _characters.Count; i++) {
 			_characters[i].cleanup();
 		}
-		_characters.Clear();
+		_characters.RemoveRange(index_start, check_count);
+	}
+	
+	public void clear() {
+		this.cleanup_existing_characters(0);
+		_prev_display_str = "";
 	}
 	
 	private string _prev_display_str = "";
 	public SPText set_markup_text(string markup_string) {
 		if (_cached_string == markup_string) return this;
 		_cached_string = markup_string;
-		this.cleanup_existing_characters();
 		
 		string display_string;
 		Dictionary<int,SPTextStyle> style_map;
@@ -258,12 +275,11 @@ public class SPText : SPNode, SPAlphaGroupElement {
 		
 		FntFile.CharInfo fontDef = null;
 		
-		//bool match_prev_display_str = false;
+		bool match_prev_display_str = true;
 		
+		int i_character = 0;
 		for (int i = 0; i < display_string.Length; i++) {
 			char c = display_string[i];
-			
-			//if (_prev_display_str.Length > i &&
 			
 			if (c == '\n') {
 				nextFontPositionX = 0;
@@ -275,32 +291,43 @@ public class SPText : SPNode, SPAlphaGroupElement {
 				continue;
 			}
 			
+			if (!(match_prev_display_str && _prev_display_str.Length > i && c == _prev_display_str[i])) {
+				if (match_prev_display_str) {
+					this.cleanup_existing_characters(i);
+				}
+				match_prev_display_str = false;
+			}
+			
 			fontDef = _bmfont_cfg.charinfo_for_char(c);
 			
 			Rect rect = new Rect(fontDef.x,fontDef.y,fontDef.width,fontDef.height);
-			
-			SPTextStyle itr_style = style_map[i];
-			SPTextCharacter neu_char = SPTextCharacter.cons_texkey_rect(_texkey, rect, itr_style);
-			neu_char.set_char_name(c);
-			neu_char.set_manual_sort_z_order(_zord);
-			neu_char._img.set_layer(_layer);
-			neu_char.set_opacity(_opacity);
-			neu_char.add_to_parent(_pivot_node);
-			neu_char.set_alpha_mult(_alpha_mult);
-			_characters.Add(neu_char);
 			
 			float yoffset = _bmfont_cfg.common.lineHeight - fontDef.yoffset;
 			Vector2 fontPos = new Vector2(
 				nextFontPositionX + fontDef.xoffset + fontDef.width*0.5f,
 				nextFontPositionY + yoffset - rect.size.y*0.5f
 			);
+			
+			SPTextStyle itr_style = style_map[i];
+			SPTextCharacter neu_char;
+			if (!match_prev_display_str) {
+				neu_char = SPTextCharacter.cons_texkey_rect(_texkey, rect, itr_style);
+				neu_char.set_char_name(c);
+				neu_char.set_manual_sort_z_order(_zord);
+				neu_char._img.set_layer(_layer);
+				neu_char.set_opacity(_opacity);
+				neu_char.add_to_parent(_pivot_node);
+				neu_char.set_alpha_mult(_alpha_mult);
+				_characters.Add(neu_char);
+			} else {
+				neu_char = _characters[i_character];
+			}
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
 			
 			float adv = SPText.adv_for_char(c);
-			
 			nextFontPositionX += fontDef.xadvance + adv;
-			
 			if (longestLine < nextFontPositionX) longestLine = nextFontPositionX;
+			i_character++;
 		}
 		
 		Vector2 tmpSize = Vector2.zero;

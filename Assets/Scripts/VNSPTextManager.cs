@@ -72,7 +72,10 @@ public class VNSPTextManager : MonoBehaviour {
 			new Vector4(1,1,1,1), 
 			new Vector4(0,0,0,0), 5, 0.25f));
 	}
-
+	
+	public void clear() {
+		_sptext.clear();
+	}
 	
 	private string input_str_insert_linebreaks(string input, string full_string) {
 		StringBuilder rtv = new StringBuilder("");
@@ -86,11 +89,12 @@ public class VNSPTextManager : MonoBehaviour {
 			if (cur_line_length + itr_full_token_length > 800) {
 				rtv.Append("\n");
 				rtv.Append(itr_token);
-				rtv.Append(" ");
 				cur_line_length = itr_full_token_length;
 			} else {
+				if (i != 0) {
+					rtv.Append(" ");
+				}
 				rtv.Append(itr_token);
-				rtv.Append(" ");
 				cur_line_length += itr_full_token_length;
 			}
 		}

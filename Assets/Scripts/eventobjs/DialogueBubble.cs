@@ -33,7 +33,7 @@ public class DialogueBubble : MonoBehaviour {
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
-		
+		game._sptext.clear();
 		_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
