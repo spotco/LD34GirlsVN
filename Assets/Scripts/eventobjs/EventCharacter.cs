@@ -22,6 +22,7 @@ public class EventCharacter : MonoBehaviour {
 		_current_mode = Mode.FadeIn;
 		_image.color = new Color(1,1,1,0);
 		_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y);
+		_anim_ct = Mathf.PI;
 	}
 	
 	public void notify_talking() {
@@ -31,13 +32,13 @@ public class EventCharacter : MonoBehaviour {
 	public void i_update(GameMain game, EventModal modal) {
 	
 		if (_talking_ct > 0) {
-			_talking_ct -= SPUtil.dt_scale_get();
-			_anim_ct += 0.35f;
-			_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y+Mathf.Sin(_anim_ct)*5);
+			_talking_ct -= 1;
+			_anim_ct = (_anim_ct + 0.175f * SPUtil.dt_scale_get()) % (Mathf.PI);
+			
 		} else {
-			_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y);
+			_anim_ct = Mathf.Clamp(_anim_ct + 0.175f * SPUtil.dt_scale_get(),0,Mathf.PI);
 		}
-		
+		_image.transform.localPosition = new Vector2(0,IMG_LOCAL_POS_Y+Mathf.Sin(_anim_ct)*5);
 	
 		if (_current_mode == Mode.FadeIn) {
 			_image.color = new Color(1,1,1,_image.color.a+0.1f*SPUtil.dt_scale_get());

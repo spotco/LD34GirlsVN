@@ -24,6 +24,9 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	public Mode _current_mode;
 	private float _anim_t;
+	private float _name_bounce_t;
+	
+	public Vector3 _name_initial_pos;
 	
 	public NodeScriptEvent_Dialogue _script;
 	
@@ -34,6 +37,7 @@ public class DialogueBubble : SPBaseBehavior {
 		if (rtv == null) {
 			rtv = SPUtil.proto_clone(proto.gameObject).GetComponent<DialogueBubble>();
 			rtv.depool();
+			rtv._name_initial_pos = rtv._name_background.transform.localPosition;
 		}
 		SPUtil.proto_copy_transform(rtv.gameObject,proto.gameObject);
 		rtv.i_cons(game,dialogue);
@@ -71,12 +75,18 @@ public class DialogueBubble : SPBaseBehavior {
 		_canvas_group.alpha = 0;
 		this.transform.localScale = SPUtil.valv(1.2f);
 		this.transform.localPosition = new Vector2(dialogue._xpos,dialogue._ypos);
+		_cursor.gameObject.SetActive(false);
+		_cursor.color = new Color(1,1,1,1);
+		_cursor.transform.localScale = SPUtil.valv(1);
 		
+		_name_bounce_t = 0;
+		_name_background.transform.localPosition = _name_initial_pos;
 	}
 	
 	public void i_update(GameMain game, EventModal modal) {
+		
 		if (_current_mode == Mode.FadeIn) {
-			_anim_t += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
+			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get(),0,1);
 			_cursor.gameObject.SetActive(false);
 			
 			_canvas_group.alpha = _anim_t;
@@ -103,17 +113,31 @@ public class DialogueBubble : SPBaseBehavior {
 				_primary_text.finish();
 				game._music.play_sfx("dialogue_button_press");
 			}
+			
+			_name_bounce_t = (_name_bounce_t + 0.15f * SPUtil.dt_scale_get()) % Mathf.PI;
+			_name_background.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 4)));
+			
 			if (_primary_text.finished()) {
 				_current_mode = Mode.Finished;
+				_anim_t = 51;
 			}
 		
 		} else if (_current_mode == Mode.Finished) {
+			if (_name_bounce_t < Mathf.PI) {
+				_name_bounce_t = Mathf.Clamp(_name_bounce_t + 0.15f * SPUtil.dt_scale_get(),0,Mathf.PI);
+				_name_background.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 6)));
+			}
+			
 			_anim_t += SPUtil.dt_scale_get();
-			if (_anim_t > 20) {
-				_cursor.gameObject.SetActive(!_cursor.gameObject.activeSelf);
+			if (_anim_t > 50) {
+				_cursor.gameObject.SetActive(true);
+				_cursor.color = new Color(1,1,1,0);
 				_anim_t = 0;
+			} else {
+				_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/25.0f));
 			}
 			this.transform.localScale = SPUtil.valv(1);
+			
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
 				game._music.play_sfx("dialogue_button_press");
 				_current_mode = Mode.FadeOut;
@@ -121,14 +145,17 @@ public class DialogueBubble : SPBaseBehavior {
 			}
 		
 		} else if (_current_mode == Mode.FadeOut) {
-			_cursor.gameObject.SetActive(false);
-			_anim_t += SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get();
+			_cursor.transform.localScale = SPUtil.valv(SPUtil.drpt(_cursor.transform.localScale.x,0,1/10.0f));
+			_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/25.0f));
+			
+			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get(),0,1);
 			this.transform.localScale = SPUtil.valv(1);
 			_canvas_group.alpha = SPUtil.y_for_point_of_2pt_line(new Vector2(0,1.0f),new Vector2(1,0),_anim_t);
 			if (_anim_t >= 1) {
 				_current_mode = Mode.DoRemove;
 			}	
 		}
+		
 	}
 	
 	private static Dictionary<string,Sprite> __name_to_bgsprite = new Dictionary<string, Sprite>();
@@ -146,7 +173,7 @@ public class DialogueBubble : SPBaseBehavior {
 		return bg_sprite;
 	}
 	
-	public void apply_style(VNSPTextManager text_renderer, NodeScriptEvent_Dialogue script_event) {
+	public void apply_style(SPTextRenderManager text_renderer, NodeScriptEvent_Dialogue script_event) {
 		Color outline_color;
 		if (script_event._character == "Kurumi" || script_event._character == "Me") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;

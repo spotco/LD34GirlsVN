@@ -9,7 +9,7 @@ public class GameMain : MonoBehaviour {
 	public ObjectPool _objpool;
 	public TextureResource _tex_resc;
 	public FileCache _file_cache;
-	public VNSPTextManager _sptext;
+	public SPTextRenderManager _sptext;
 	
 	public static int AFFINITY_REQUIREMENT = 7;
 	public static bool NO_EVENTS = false;
@@ -42,8 +42,9 @@ public class GameMain : MonoBehaviour {
 	/*
 	TODO--
 	save/load implementation
+	game shake trigger
 	script edits
-	script node positioning test
+	script node positioning always on screen for mobile
 	ending fadein
 	preload all assets
 	*/
@@ -53,7 +54,7 @@ public class GameMain : MonoBehaviour {
 		_objpool = ObjectPool.cons();
 		_tex_resc = TextureResource.cons();
 		_file_cache = FileCache.cons();
-		_sptext = VNSPTextManager.cons();
+		_sptext = SPTextRenderManager.cons();
 		
 		if (_event_modal == null) return;
 	

@@ -3,13 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Text;
 
-public class VNSPTextManager : MonoBehaviour {
+public class SPTextRenderManager : MonoBehaviour {
 	
 	private const bool DEBUG_CANVAS = false;
 	
-	public static VNSPTextManager cons() {
+	public static SPTextRenderManager cons() {
 		GameObject camera_obj = new GameObject("VNSPTextManager");
-		return camera_obj.AddComponent<VNSPTextManager>().i_cons();
+		return camera_obj.AddComponent<SPTextRenderManager>().i_cons();
 	}
 	
 	private SPText _sptext;
@@ -18,7 +18,7 @@ public class VNSPTextManager : MonoBehaviour {
 	private Camera _render_camera;
 	
 	
-	private VNSPTextManager i_cons() {
+	private SPTextRenderManager i_cons() {
 		this.gameObject.transform.position = new Vector3(10000,0,0);
 	
 		_sptext = SPText.cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
@@ -70,11 +70,11 @@ public class VNSPTextManager : MonoBehaviour {
 		_sptext.add_style("b", SPText.SPTextStyle.cons(
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a), 
 			new Vector4(fill_color.r, fill_color.g, fill_color.b, fill_color.a), 
-			new Vector4(0,0,0,0), 3.5f, 0.75f));
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
 		_sptext.add_style("b2", SPText.SPTextStyle.cons(
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
 			new Vector4(0.9f, 0.9f, 0.9f, 1),
-			new Vector4(0,0,0,0), 3.5f, 0.75f));
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
 	}
 	
 	public void clear() {

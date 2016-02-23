@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Text;
 
 //https://github.com/spotco/pinballhero/blob/master/src/ScrollText.as
 public class ScrollText {
 
-	public VNSPTextManager _text;
+	public SPTextRenderManager _text;
 	
 	string _words = "";
 	StringBuilder _buf = new StringBuilder(100);
