@@ -73,7 +73,11 @@ public class SPTextRenderManager : MonoBehaviour {
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
 		_sptext.add_style("b2", SPText.SPTextStyle.cons(
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
-			new Vector4(0.9f, 0.9f, 0.9f, 1),
+			new Vector4(0.93f, 0.93f, 0.93f, 1),
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
+		_sptext.add_style("b3", SPText.SPTextStyle.cons(
+			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(1,1,1,1),
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
 	}
 	
@@ -90,8 +94,27 @@ public class SPTextRenderManager : MonoBehaviour {
 		for (int i = 0; i < tokens.Length; i++) {
 			string itr_token = tokens[i];
 			string itr_full_token = full_tokens[i];
+			
 			float itr_full_token_length = this.str_token_length(itr_full_token);
-			if (cur_line_length + itr_full_token_length > 800) {
+			int LINE_LENGTH = 850;
+			
+			if (itr_full_token.Contains("%")) {
+				string[] split_lines = itr_token.Split('%');
+				string[] split_full_lines = itr_full_token.Split('%');
+				if (cur_line_length + this.str_token_length(split_full_lines[0]) > LINE_LENGTH) {
+					rtv.Append("\n");
+				} else {
+					rtv.Append(" ");
+				}
+				for (int j = 0; j < split_lines.Length; j++) {
+					if (j != 0) {
+						rtv.Append("\n");
+					}
+					rtv.Append(split_lines[j]);
+					cur_line_length = this.str_token_length(split_lines[j]);
+				}
+				
+			} else if (cur_line_length + itr_full_token_length > LINE_LENGTH) {
 				rtv.Append("\n");
 				rtv.Append(itr_token);
 				cur_line_length = itr_full_token_length;

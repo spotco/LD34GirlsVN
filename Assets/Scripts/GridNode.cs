@@ -35,7 +35,7 @@ public class GridNode : MonoBehaviour {
 	private static Font __cached_font;
 	
 	public void i_initialize(GameMain game, GridNavModal grid_nav) {
-		_node_script.i_initialize(_node_script_text);
+		_node_script.i_initialize(game,_node_script_text);
 		
 		if (__cached_font == null) {
 			__cached_font = Resources.Load<Font>("osaka.unicode");

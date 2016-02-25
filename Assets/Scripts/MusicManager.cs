@@ -30,7 +30,7 @@ public class MusicManager : MonoBehaviour {
 	}
 
 	private Dictionary<string,AudioClip> _cached_background_audio = new Dictionary<string, AudioClip>();
-	private AudioClip cond_load_sound_of_name(string name) {
+	public AudioClip cond_load_sound_of_name(string name) {
 		if (_cached_background_audio.ContainsKey(name)) return _cached_background_audio[name];
 		AudioClip audio_clip = Resources.Load<AudioClip>("sound/"+name);
 		if (audio_clip != null) {

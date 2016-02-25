@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
-	public static bool IGNORE_ITEM_REQ = false;
+	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
 	
 	public interface Modal {
@@ -34,19 +34,28 @@ public class GameMain : MonoBehaviour {
 	public ControlManager _controls;
 	public Modal _active_modal;
 	public Inventory _inventory;
+	public GameCameraController _camera_controller;
 	
 	private List<Modal> _all_modals;
 	
 	public int _affinity;
 	
 	/*
+	
+Is this what's popular around these parts?
+Respond to teacher mana
+cool city life -> want to meet you all
+kurumi sleeping after transition
+The rest of class -> not centered dialogue bubble?
+
+mana respond the hell?
+	
 	TODO--
-	save/load implementation
-	game shake trigger
 	script edits
+	save/load implementation
+	end to title UIs
+	credits
 	script node positioning always on screen for mobile
-	ending fadein
-	preload all assets
 	*/
 	
 	public void Start () {
@@ -55,6 +64,7 @@ public class GameMain : MonoBehaviour {
 		_tex_resc = TextureResource.cons();
 		_file_cache = FileCache.cons();
 		_sptext = SPTextRenderManager.cons();
+		_camera_controller = GameCameraController.cons();
 		
 		if (_event_modal == null) return;
 	
@@ -88,6 +98,8 @@ public class GameMain : MonoBehaviour {
 		_background.i_update();
 		_music.i_update ();
 		_sptext.i_update(this);
+		
+		_camera_controller.i_update(this);
 	}
 	
 	public void start_event_modal(NodeScript script) {

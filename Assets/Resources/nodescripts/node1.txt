@@ -9,20 +9,20 @@
 
 		{"type":"dialogue","text":"It's been a crazy, hectic experience.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A new city with a new home and new life. I haven't even had time to write back to my old friends!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b]Tokyo@, the big city! This is what I've always dreamed about.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Tokyo@, the big city!%This is what I've always dreamed about.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_road"},
 
 		{"type":"dialogue","text":"It was my first day at this new school.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As someone who had never even left my countryside town, I was a little nervous to say the least.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As someone who had never even left my countryside town, I was a little nervous%to say the least.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 
-		{"type":"dialogue","character":"Teacher","text":"Alright, Motoyama-San, can you say your name and a little about yourself?","xpos":250,"ypos":100},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-100,"xscale":1},
+		{"type":"dialogue","character":"Teacher","text":"Alright, Motoyama-san, can you say your name and a little about yourself?","xpos":250,"ypos":100},
+		{"type":"showcharacter","character":"Me","image":"char_kurumi_normal","xpos":-100,"xscale":1},
 		{"type":"dialogue","character":"Me","text":"Ummm.....","xpos":250,"ypos":-100},
-		{"type":"dialogue","character":"Kurumi","text":"Hello everyone! My name is [b]Kurumi Motoyama...@","xpos":250,"ypos":-100},
-
+		{"type":"dialogue","character":"Me","text":"Hello everyone! My name is [b]Kurumi Motoyama...@","xpos":250,"ypos":-100},
+		{"type":"rename","namestart":"Me","nameend":"Kurumi"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"...and I'm so excited to experience a super cool city life!","xpos":250,"ypos":-100},
 

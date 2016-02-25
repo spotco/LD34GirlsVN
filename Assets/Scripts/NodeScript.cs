@@ -18,7 +18,7 @@ public class NodeScript {
 	public List<int> _links = new List<int>();
 	public bool _affinity_requirement;
 	
-	public NodeScript i_initialize(TextAsset text) {
+	public NodeScript i_initialize(GameMain game, TextAsset text) {
 		JSONObject root;
 		try {
 			root = JSONObject.Parse(text.text);
@@ -29,6 +29,7 @@ public class NodeScript {
 		_id = (int) root.GetNumber("id");
 		_title = root.GetString("title");
 		_background = root.GetString("background");
+		game._background.cond_load_sprite_of_name(_background);
 		_music = root.GetString("music");
 		_affinity_requirement = root.ContainsKey("affinityrequirement");
 
@@ -101,17 +102,26 @@ public class NodeScript {
 				};
 				
 			} else if (type == "playSFX") {
+				string sfx_name = itr.GetString("sfx");
 				itr_neu = new NodeScriptEvent_PlaySFX () {
-					_sfx= itr.GetString("sfx")	
+					_sfx = sfx_name	
 				};
+				game._music.cond_load_sound_of_name(sfx_name);
 				
 			} else if (type == "playBGM") {
+				string bgm_name = itr.GetString("bgm");
 				itr_neu = new NodeScriptEvent_PlayBGM() {
-					_bgm = itr.GetString("bgm")
+					_bgm = bgm_name
 				};
+				game._music.cond_load_sound_of_name(bgm_name);
 				
 			} else if (type == "titleend") {
 				itr_neu = new NodeScriptEvent_TitleEnd();
+				
+			} else if (type == "camerashake") {
+				itr_neu = new NodeScriptEvent_CameraShake() {
+					_long = itr.GetString("length") == "long"
+				};
 				
 			} else {
 				SPUtil.logf("unknown type %s",type);

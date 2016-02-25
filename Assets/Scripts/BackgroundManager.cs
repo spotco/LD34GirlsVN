@@ -25,7 +25,7 @@ public class BackgroundManager : MonoBehaviour {
 	}
 	
 	private Dictionary<string,Sprite> _cached_background_images = new Dictionary<string, Sprite>();
-	private Sprite cond_load_sprite_of_name(string name) {
+	public Sprite cond_load_sprite_of_name(string name) {
 		if (_cached_background_images.ContainsKey(name)) return _cached_background_images[name];
 		Sprite bg_sprite = Resources.Load<Sprite>("img/bg/"+name);
 		if (bg_sprite != null) {
