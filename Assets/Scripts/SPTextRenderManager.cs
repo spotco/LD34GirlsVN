@@ -96,7 +96,7 @@ public class SPTextRenderManager : MonoBehaviour {
 			string itr_full_token = full_tokens[i];
 			
 			float itr_full_token_length = this.str_token_length(itr_full_token);
-			int LINE_LENGTH = 850;
+			int LINE_LENGTH = 825;
 			
 			if (itr_full_token.Contains("%")) {
 				string[] split_lines = itr_token.Split('%');

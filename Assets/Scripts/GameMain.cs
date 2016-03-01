@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 9;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -41,14 +41,9 @@ public class GameMain : MonoBehaviour {
 	public int _affinity;
 	
 	/*
-	
-Is this what's popular around these parts?
-Respond to teacher mana
-cool city life -> want to meet you all
-kurumi sleeping after transition
-The rest of class -> not centered dialogue bubble?
 
 mana respond the hell?
+raichi move in last year
 	
 	TODO--
 	script edits
@@ -56,6 +51,8 @@ mana respond the hell?
 	end to title UIs
 	credits
 	script node positioning always on screen for mobile
+	
+	sfx load all
 	*/
 	
 	public void Start () {

@@ -29,8 +29,8 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"You weren't kidding, you do know everything!%Or everyone... that is.","ypos":-130},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"And forgive me if I'm wrong, but the same class as%Ms. Kashiwagi?","xpos":23,"ypos":45},
-		{"type":"dialogue","character":"Kurumi","text":"Ms. Kashiwagi...?","ypos":-130},
+		{"type":"dialogue","character":"Raichi","text":"And if I remember correctly, you must be in the same class Ms. Ichijou. Am I right?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Kurumi","text":"Ichijou...?","ypos":-130},
 		{"type":"dialogue","character":"Raichi","text":"Pink hair, impossible to miss. Unless she's skipping school that is.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Her name's [b]Manami Ichijou@, but prefers to be called [b]'Mana'@.","xpos":23,"ypos":45},
 		{"type":"dialogue","text":"[b]Mana@... sounds like something out of a video game.","xpos":0,"ypos":0},
@@ -41,10 +41,10 @@
 		{"type":"movecharacter","character":"Raichi","xto":700},
 
 		{"type":"dialogue","character":"Kurumi","text":"Kurumi... [b3]chan@?"},
-		{"type":"dialogue","text":"The people here sure are interesting.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"After he walked away I realized something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The people here sure are something else.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"After he walked away I remembered something.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"I forgot to ask where the cafeteria was..."},
+		{"type":"dialogue","character":"Kurumi","text":"I should have asked where the cafeteria was..."},
 		{"type":"additem","item":"Her Name"}
 	],
 	"links":[

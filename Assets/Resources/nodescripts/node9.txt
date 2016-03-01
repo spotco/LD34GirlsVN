@@ -8,7 +8,7 @@
 		{"type":"dialogue","text":"I had plenty of time, so I went out to explore a little.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"changebackground","background":"bg_city"},
-		{"type":"dialogue","text":"Just a normal day in urban Japan! (´ω｀♡)","xpos":0,"ypos":0},  
+		{"type":"dialogue","text":"Just ","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"The city's so great, so many restaurants and shops and people everywhere!"},
@@ -17,7 +17,7 @@
 		{"type":"dialogue","text":"Across the street I saw a familiar face.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal","xpos":300,"xscale":-1},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","text":"The pink-haired girl! So that's where she went!       ( ´ ▽ ` )b","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The pink-haired girl! So that's where she went!","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"Maybe I should go talk to her...But what should I say?"}
 	],

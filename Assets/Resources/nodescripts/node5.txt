@@ -5,15 +5,38 @@
 	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I check to phone to see if I can figure out who it belongs to.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I debate whether to check the phone or not.","xpos":0,"ypos":0},
+
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Is this...the pink-haired girl...in cosplay?"},
+		{"type":"dialogue","character":"Kurumi","text":"Well, how else am I gonna figure out who it belongs to?"},
+
+		{"type":"playSFX", "sfx":"phone_unlock"},
+		{"type":"dialogue","text":"It unlocks without a password.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"On the home screen I see a news story.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Explosion off the coast of Tokyo Bay. Several ships already destroyed, military called to the scene.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"I wonder if there's anything else interesting on here."},
+
+		{"type":"dialogue","text":"As I flip to the photos, something catches my eye.","xpos":0,"ypos":0},
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
-		{"type":"dialogue","character":"Kurumi","text":"Wow wow so cuuuuuuute! (´｡• ω •｡`) ♡"},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","text":"This was the pink-haired girl's phone, and her wallpaper was her AMAZING Sailor Moon cosplay.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I could totally see her being totally into this stuff. Hmm, maybe I should try it too...","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Is that... the [b]pink-haired girl@?"},
+		{"type":"dialogue","text":"There's a bunch of photos, and they're all of her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She's dressed up in fancy costumes, doing all these elaborate and over-the-top poses.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"Hehe..."},
+		{"type":"dialogue","character":"Kurumi","text":"This must be what they call... [b3]cosplay@?"},
+
+		{"type":"dialogue","text":"I really had no idea someone like her would be into this kind of thing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I look over them, I can't help but think...","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"She sure must be an interesting person!"},
+
 		{"type":"addaffinity"}
+
 	],
 	"links":[
 		3

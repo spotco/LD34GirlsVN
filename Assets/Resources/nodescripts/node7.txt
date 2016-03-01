@@ -1,21 +1,40 @@
 {
 	"id":7,
-	"title":"Give phone to Senpai",
+	"title":"Give phone to Raichi",
 	"background":"bg_school_classroom",
-	"music":"happy_end",
+	"music":"daily",
 	"requirementitem":["phone"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom...what should I do with it?."},
-		{"type":"dialogue","character":"Raichi","text":"That phone...it's Ichijou's.","xpos":22,"ypos":53},
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"He furrows his brow a bit when the screen lights up and reveals Mana's cosplay outfit background.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"...","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"Raichi grabs the phone.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom. What should I do with it?"},
+		{"type":"dialogue","character":"Raichi","text":"A lost phone? I'll take it to the front office. I was just about to head there anyway.","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"I hand over the phone.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"phone"},
-		{"type":"dialogue","character":"Raichi","text":"I'll get this back to her.","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"I should have been able to trust him but...I could have probably just given it myself.","xpos":0,"ypos":0}
+
+		{"type":"playSFX", "sfx":"phone_unlock"},
+		{"type":"dialogue","text":"As soon as he takes it, he unlocks it and looks through it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Should have expected that. He definitely is one of those nosy types.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Raichi","text":"This is... [b3]Ms. Ichijou's@, is it not? That's funny.","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"What's funny?"},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
+		{"type":"dialogue","text":"His face turns serious.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I was just looking for her. Her homeroom teacher just told me everything.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Pretending to be sick... Another unexcused absence... Someone needs to talk to her.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"This really was serious. I couldn't think of anything to say.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
+		{"type":"dialogue","text":"He lightens up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Anyway. Thank you, [b3]Kurumi-chan@.","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"I'll make sure this phone reaches its owner.","xpos":22,"ypos":53},
+
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"dialogue","text":"He leaves the classroom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I couldn't help but feel a little uneasy.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"What exactly is going on here?"}
 	],
 	"links":[
 		6
