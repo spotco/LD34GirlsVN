@@ -53,7 +53,7 @@ public class ObjectPool : SPBaseBehavior {
 		string key = typeof(T).ToString();
 		obj.repool();
 		obj.gameObject.SetActive(false);
-		obj.gameObject.transform.parent = this.transform;
+		obj.gameObject.transform.SetParent(this.transform);
 		_spbasebehavior_typekey_to_objlist.list(key).Add(obj);
 	}
 

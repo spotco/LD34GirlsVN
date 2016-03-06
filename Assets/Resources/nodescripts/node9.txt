@@ -6,20 +6,20 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"I had plenty of time, so I went out to explore a little.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"changebackground","background":"bg_city"},
-		{"type":"dialogue","text":"Just ","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Just another normal day in the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, to me... this was a completely new and exciting experience!","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"The city's so great, so many restaurants and shops and people everywhere!"},
-		{"type":"dialogue","character":"Kurumi","text":"Super different from where I grew up. This is where the action's at!"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"This is so great! So many restaurants, shops and people everywhere..."},
+		{"type":"dialogue","character":"Kurumi","text":"It's [b3]soooo@ different from back home. This is where the action's at!"},
 
-		{"type":"dialogue","text":"Across the street I saw a familiar face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the crowd of people I saw a familiar face.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal","xpos":300,"xscale":-1},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","text":"The pink-haired girl! So that's where she went!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The [b]pink-haired girl@! So this is where she went!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"Maybe I should go talk to her...But what should I say?"}
+		{"type":"dialogue","character":"Kurumi","text":"Maybe I should go talk to her... But what should I say?"}
 	],
 	"links":[
 		1,10

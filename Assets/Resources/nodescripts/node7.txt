@@ -2,7 +2,7 @@
 	"id":7,
 	"title":"Give phone to Raichi",
 	"background":"bg_school_classroom",
-	"music":"daily",
+	"music":"happy_end",
 	"requirementitem":["phone"],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
@@ -13,8 +13,8 @@
 		{"type":"removeitem","item":"phone"},
 
 		{"type":"playSFX", "sfx":"phone_unlock"},
-		{"type":"dialogue","text":"As soon as he takes it, he unlocks it and looks through it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Should have expected that. He definitely is one of those nosy types.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As soon as he takes it, he flips it open and starts looking through it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"No hesitation at all...%He's definitely one of those nosy types.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Raichi","text":"This is... [b3]Ms. Ichijou's@, is it not? That's funny.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},

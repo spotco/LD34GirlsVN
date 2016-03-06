@@ -9,7 +9,7 @@
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Well, how else am I gonna figure out who it belongs to?"},
-
+		{"type":"dialogue","text":"I give in and flip it open.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"phone_unlock"},
 		{"type":"dialogue","text":"It unlocks without a password.","xpos":0,"ypos":0},
 

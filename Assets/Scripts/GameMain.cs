@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 9;
+	public static int NODE_START_INDEX = 10;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -42,9 +42,9 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 
-mana respond the hell?
 raichi move in last year
-	
+mana check kurumi okay
+		
 	TODO--
 	script edits
 	save/load implementation
@@ -77,8 +77,11 @@ raichi move in last year
 			_all_modals[i].i_initialize(this);
 		}
 		
+		/*
 		_active_modal = _title;
 		_title._current_mode = TitleModal.Mode.FadeIn;
+		*/
+		_active_modal = _grid_nav_modal;
 	}
 	
 	public void Update () {

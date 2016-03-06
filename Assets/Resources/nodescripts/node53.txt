@@ -128,7 +128,7 @@
 		{"type":"dialogue","text":"As I lay on the soft grass, lights flashed above me.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_moon_hill_end_bad"},
 
-		{"type":"dialogue","text":"Summer...fireworks. They normally fill me with happiness and joy but..."},
+		{"type":"dialogue","text":"Summer fireworks. They normally fill me with happiness and joy but..."},
 		{"type":"dialogue","text":"Mana-chan couldn't see them with me. She was gone."},
 		{"type":"dialogue","text":"I couldn't feel anything at all."},
 		{"type":"dialogue","text":"I just... reflect upon what happened."},
