@@ -67,8 +67,7 @@
 		{"type":"dialogue","character":"Raichi","text":"If you'd be willing to stick around, I can get you your homework and answer any questions you may have.","xpos":105,"ypos":50},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"Uh-oh. I think we've just been caught.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"However, Raichi doesn't look mad at all. It seems like he genuinely wants to help.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"But then I remember what Mana was telling me.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"He definitely doesn't look mad... However, I also remember what Mana had said about him.","xpos":82,"ypos":0},
 		{"type":"dialogue","text":"What should I do next?","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Raichi, I..."}
 	],

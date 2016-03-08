@@ -72,10 +72,10 @@
 
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"We ended up going somewhere that was definitely more than a few blocks away.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We ended up going somewhere halfway across the city.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Then after that we went and got tea, and after that did a bit of shopping.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Getting to see her favorite places around the city...%I loved it! However...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I did forget about going back to class. Oops...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Getting to see these places around the city...%I loved it! However...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I [b3]DID@ forget about going back to class. Oops...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city"}
 	],

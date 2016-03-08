@@ -38,7 +38,7 @@
 
 		{"type":"dialogue","text":"She snaps a couple of pictures, then scarfs down the pastry in one bite.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"[b2]*Mmmmph*@...I sure hope... [b2]*Munch Munch*@... you didn't look through it...[b2]*gulp*@ or anything...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"[b2]*Mmmmph*@...I sure hope... [b2]*Munch Munch*@... you didn't look through it...[b2]*gulp*@ or anything like that...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Mana","text":"'Cuz I've definitely got some embarassing stuff on there!","xpos":22,"ypos":53},
 		{"type":"dialogue","text":"What could she possibly be talking about?","xpos":0,"ypos":0},
 		{"type":"addaffinity"}

@@ -36,7 +36,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I stuck around as Raichi basically tutored me on everything I had missed.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"He was a surprisingly good teacher, and it was really helpful.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However, he had to leave a little early to run an errand. I thanked him as he left.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, he had to leave a little early to run an errand.%I thanked him as he left.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"As the sun was setting, I left school and walked back home.","xpos":0,"ypos":0}
 	],
