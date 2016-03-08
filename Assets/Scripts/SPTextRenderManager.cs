@@ -114,7 +114,7 @@ public class SPTextRenderManager : MonoBehaviour {
 					cur_line_length = this.str_token_length(split_lines[j]);
 				}
 				
-			} else if (cur_line_length + itr_full_token_length > LINE_LENGTH) {
+			} else if (cur_line_length + itr_full_token_length > LINE_LENGTH && i != 0) {
 				rtv.Append("\n");
 				rtv.Append(itr_token);
 				cur_line_length = itr_full_token_length;

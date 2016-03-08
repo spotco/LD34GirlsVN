@@ -1,33 +1,44 @@
 {
 	"id":13,
-	"title":"Accept your fate",
+	"title":"Act Sorry...",
 	"background":"bg_school_hallway",
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xpos":-217,"xscale":1},		
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-217,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":373,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 
-		{"type":"dialogue","character":"Kurumi","text":"I'm sorry, Kashiwagi-Senpai. It won't happen again.","xpos":82},
-		{"type":"dialogue","text":"I really did mess up. Skipping school on my first day? What was I thinking?","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"It's fine, but I hope this doesn't become a regular thing.","xpos":82,"ypos":0},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","character":"Kurumi","text":"I...","xpos":82},
+		{"type":"dialogue","text":"Skipping the first day of school? I'm usually better than this.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I put on my best guilty face and apologize.","xpos":82,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Kurumi","text":"I'm [b3]sooooo@ sorry, Raichi! I got a little carried away and forgot about the time!","xpos":82},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"It won't happen again,%I promise!","xpos":82},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","text":"He lightens up a little.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Well, I'll take your word for it. And besides...","xpos":105,"ypos":50},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"I definitely don't mind helping a friend out!","xpos":105,"ypos":50},
+
+		{"type":"dialogue","text":"Friends, huh?","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Well... He's definitely helped me out. And isn't that what friends do?","xpos":82,"ypos":0},
 
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"Mana looks a little disappointed as she leaves.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"Then again, I should probably be disappointed in myself.","xpos":82,"ypos":0},
-		
-		{"type":"dialogue","character":"Raichi","text":"I'm sorry, Kurumi-chan. I want you to succeed here...","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Students... Most students who attend this school go onto do great things.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I just then noticed that Mana was gone. She must have left while we were talking.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"They really can't stand each other. Some things can't be helped, I guess.","xpos":82,"ypos":0},
 
-		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Raichi"},
+
 		{"type":"changebackground","background":"bg_black"},
-
-		{"type":"dialogue","text":"I follow him out. The school library's closed, so we go to the local library a few blocks away.","xpos":0,"ypos":0},
-
-		{"type":"changebackground","background":"bg_school_hallway"}
+		{"type":"dialogue","text":"I stuck around as Raichi basically tutored me on everything I had missed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He was a surprisingly good teacher, and it was really helpful.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, he had to leave a little early to run an errand. I thanked him as he left.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"As the sun was setting, I left school and walked back home.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15
