@@ -56,5 +56,13 @@ public class EventCharacter : MonoBehaviour {
 			}
 		}
 	}
+	public void imm_show() {
+		_image.color = new Color(1,1,1,1);
+		_current_mode = Mode.Visible;
+	}
+	public void imm_hide() {
+		_image.color = new Color(1,1,1,0);
+		_current_mode = Mode.DoRemove;
+	}
 	
 }

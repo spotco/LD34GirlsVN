@@ -5,33 +5,47 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"Without even thinking about it, I run to her to help.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Are you okay?"},
-		{"type":"dialogue","text":"Now that I thought about it, this probably wasn't the smartest thing ever.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I mean, I'm not a doctor or anything.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":170,"xscale":1},
-		{"type":"dialogue","character":"Pink Hair","text":"Mmmph...That really hurt!"},
-		{"type":"dialogue","text":"She gets up, rubbing her shoulder.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","text":"Suddenly, I see a huge arm out of the corner of my eye.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's rushing right towards me!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"Kurumi-chan!!"},
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_city_monster"},
-		{"type":"dialogue","text":"She dodges in front of me, slashing the appendage in half!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"Now you got me REALLY angry. I've been saving my special attack!"},
-		{"type":"dialogue","text":"She leaps into the air, directly at it.","xpos":0,"ypos":0},
-		{"type":"movecharacter","character":"Pink Hair","xto":-1000},
-		{"type":"dialogue","character":"Pink Hair","text":"Pretty Pink Magical Sword...BUSTER!!!"},
-		{"type":"dialogue","text":"A blinding pink light fills the sky.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Without even a second thought...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...I ran to her side to check if she was okay.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Ohmygosh...@ Are you alright?!"},
+		{"type":"dialogue","text":"Now that I thought about it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This probably wasn't the smartest thing ever. What could I possibly do?","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Pink Hair","text":"Mmmph... That... kinda hurt...","xpos":25,"ypos":55},
+		{"type":"dialogue","text":"She's alive!","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1},
+		{"type":"dialogue","text":"She slowly gets back on her feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Cheap shot... trying to harm an innocent...","xpos":25,"ypos":55},
+
+		{"type":"hidecharacter","character":"Pink Hair","imm":true},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":210,"xscale":1,"imm":true},
+		{"type":"dialogue","text":"She pauses as she turns around, seeing my face.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Pink Hair","text":"Is that...","xpos":25,"ypos":55},
+
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue","text":"Interrupting the moment, the monster howls in anger.","xpos":0,"ypos":0},
+
+		{"type":"hidecharacter","character":"Pink Hair","imm":true},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1,"imm":true},
+		{"type":"dialogue","text":"The masked hero turns back around to face the monster.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Not had enough yet? Then have a taste of this...","xpos":25,"ypos":55},
+		{"type":"dialogue","text":"She turns her head at me and winks.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Pink Hair","text":"Special attack...","xpos":25,"ypos":55},
+		{"type":"movecharacter","character":"Pink Hair","xto":900},
+		{"type":"dialogue","character":"Pink Hair","text":"[b3]Pretty Pink Magical Sword...@ [b]BUSTER!!!@","xpos":25,"ypos":55},
+
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"It was at this point I decided to run.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As fast as I could before I got killed by some giant monster...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...pink lasers or any of this other stuff.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It was then that I realized...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The hero knew my name...!","xpos":0,"ypos":0},
-		{"type":"addaffinity"}
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"A bright glow emanates from her sword as she she jumps in the air and raises it above her head...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...And I take this as my opportunity to run. I get out of there as fast as I can!","xpos":0,"ypos":0},
+		{"type":"addaffinity"},
+		{"type":"changebackground","background":"bg_city_monster"},
+
 	],
 	"links":[
 		16

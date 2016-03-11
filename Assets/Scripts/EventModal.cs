@@ -92,6 +92,21 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
+	public void clear_removed_characters(GameMain game) {
+		__to_remove_str.Clear();
+		foreach (string name in _name_to_character.Keys) {
+			EventCharacter itr_char = _name_to_character[name];
+			if (itr_char._current_mode == EventCharacter.Mode.DoRemove) {
+				GameObject.Destroy(itr_char.gameObject);
+				__to_remove_str.Add(name);
+			}
+		}
+		for (int i = 0; i < __to_remove_str.Count; i++) {
+			_name_to_character.Remove(__to_remove_str[i]);
+		}
+		__to_remove_str.Clear();
+	}
+	
 	private void end_script_playback_and_close_modal(GameMain game) {
 		foreach (string name in _name_to_character.Keys) {
 			EventCharacter itr_char = _name_to_character[name];

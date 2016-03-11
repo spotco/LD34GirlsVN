@@ -48,7 +48,8 @@ public class NodeScript {
 					_character = itr.GetString ("character"),
 					_image = itr.GetString ("image"),
 					_xpos = (float)itr.GetNumber ("xpos"),
-					_xscale = (float)itr.GetNumber ("xscale")
+					_xscale = (float)itr.GetNumber ("xscale"),
+					_imm = itr.ContainsKey("imm")
 				};
 				
 			} else if (type == "changebackground") {
@@ -89,7 +90,8 @@ public class NodeScript {
 			
 			} else if (type == "hidecharacter") {
 				itr_neu = new NodeScriptEvent_HideCharacter () {
-					_character = itr.GetString ("character")
+					_character = itr.GetString ("character"),
+					_imm = itr.ContainsKey("imm")
 				};
 				
 			} else if (type == "addaffinity") {

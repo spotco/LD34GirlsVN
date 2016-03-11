@@ -71,8 +71,9 @@
 		{"type":"dialogue","text":"Ahead of me, I see the hero lying sprawled out on the ground.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"She must have saved me... She threw me out of the way and took the hit herself..."},
-		{"type":"dialogue","text":"I'm still alive. But the hero... she's just laying there, and I don't see her moving at all.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"She must have saved me by throwing me out of the way!"},
+		{"type":"dialogue","text":"I'm still alive. But the hero... she's just laying there.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She must have taken the full force of the hit saving me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Is she okay? What I should I do!?"}
 	],
 	"links":[

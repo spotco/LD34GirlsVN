@@ -5,9 +5,15 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"It was at this point I decided to run.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As fast as I could before I got killed by some giant monster...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...pink lasers or any of this other stuff.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I took this as my opportunity to run. I get out of there as fast as I can!","xpos":0,"ypos":0},
+
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue","text":"Behind me, I could see flashes of light and hear the monster's roar.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That must be the hero, she's still fighting! I'm glad she's alright, at least.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Still... I wish I could have thanked her. However...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I made the smart choice here. If I had stuck around, there's no telling what would have happened.","xpos":0,"ypos":0},
+
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I ran as fast and as far as I could.","xpos":0,"ypos":0}
 	],
