@@ -2,11 +2,11 @@
 	"id":17,
 	"title":"Home Sweet Home",
 	"background":"bg_apartment",
-	"music":"normal_day",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"What a crazy day. But I'm finally home.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's been a crazy day.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"I find a note from my parents saying they'll be home late.","xpos":0,"ypos":0},

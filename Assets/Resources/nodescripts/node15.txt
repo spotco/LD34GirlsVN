@@ -32,7 +32,7 @@
 		{"type":"dialogue","text":"...it destroys an entire building!","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Oh my god, HEEEEEEEELP!!!","ypos":-130},
+		{"type":"dialogue","character":"Kurumi","text":"Oh my god, [b3]HEEEEEEEELP!!!@","ypos":-130},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"I turn around and run as fast%as I can, barely avoiding the falling debris.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
