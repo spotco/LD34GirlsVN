@@ -79,6 +79,10 @@ public class SPTextRenderManager : MonoBehaviour {
 			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
 			new Vector4(1,1,1,1),
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
+		_sptext.add_style("b4", SPText.SPTextStyle.cons(
+			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(0.95f,0.95f,0.95f,1),
+			new Vector4(0,0,0,0), 1.0f, -0.5f));
 	}
 	
 	public void clear() {
@@ -87,6 +91,7 @@ public class SPTextRenderManager : MonoBehaviour {
 	
 	private string input_str_insert_linebreaks(string input, string full_string) {
 		StringBuilder rtv = new StringBuilder("");
+		input = input.Replace('#','"');
 		string[] tokens = input.Split(' ');
 		string[] full_tokens = full_string.Split(' ');
 		float cur_line_length = 0;

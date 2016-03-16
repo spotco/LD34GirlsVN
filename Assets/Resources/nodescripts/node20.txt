@@ -2,30 +2,34 @@
 	"id":20,
 	"title":"Go to Sleep",
 	"background":"bg_apartment_night",
-	"music":"normal_day",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"What a day. Is every day in the city going to be as crazy as this?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What a day. I hope every day here won't be as crazy as this.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Yaaaaaaaaawwwn..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b2]*Yaaaaaaaaawwwn...*@"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"I sure hope not.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I sure hope not. There's only so much excitement I can handle.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 
 		{"type":"dialogue","text":"I fall asleep as soon as I hit the bed.","xpos":0,"ypos":0},
+		{"type":"playBGM","bgm":"none"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"thump"},
-		{"type":"dialogue","text":"*BANG!* *CRASH!*","xpos":0,"ypos":0},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","text":"[b2]*BANG!*@ [b2]*CRASH!*@","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment_night"},
-		{"type":"dialogue","text":"I'm suddenly awoken by a noise from downstairs.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm suddenly awoken by noises coming from downstairs.","xpos":0,"ypos":0},
 
+		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--","xpos":277,"ypos":102},
+		{"type":"dialogue","text":"I hear a voice.%It can't be my parents...%They're still back home.%Who could it be...?","xpos":0,"ypos":0},
 
-
-		{"type":"dialogue","character":"Voice","text":"--Dammit, who puts things there?! Is this the place?--","xpos":-262,"ypos":102},
-		{"type":"dialogue","text":"I hear a voice downstairs. The lights are still all off, who could it be?","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I sneak downstairs in the dark and see someone move around. What should I do?","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"A chill suddenly runs down my spine.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An intruder?%A home invasion?!%I've heard stories about this happening...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...and none of them end well! What should I do?","xpos":0,"ypos":0}
 	],
 	"links":[
 		22,23

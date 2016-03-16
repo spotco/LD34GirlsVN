@@ -1,13 +1,17 @@
 {
 	"id":19,
-	"title":"Eat Dinner",
+	"title":"Make Dinner",
 	"background":"bg_apartment",
-	"music":"normal_day",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"My mom already made dinner for me and left it in the fridge.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's my favorite, curry with rice.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm not too hungry so there's plenty leftover.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I tried to get my mind off everything by doing a bit of cooking.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was a simple recipe. I chopped up carrots, onions and potatoes and threw them all in a pot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I then added cubes of beef, filled the pot with water and brought it to a boil.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Beef stew@. A simple, but tasty meal. Great with rice!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I ended up making too much, so I packed all the leftovers in the fridge.","xpos":0,"ypos":0},
 		{"type":"additem","item":"leftovers"}
 	],
 	"links":[

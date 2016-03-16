@@ -8,26 +8,62 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked, you know."},
-		{"type":"dialogue","character":"Mana","text":"I just wanted to make sure this was the place.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked,%you know..."},
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":0,"ypos":77},
 
-		{"type":"dialogue","text":"Well this is a little awkward.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Once she settles from the adrenaline, her manner changes.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
-		{"type":"dialogue","text":"She bites her lip and takes a deep breath.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I... just wanted to make sure you were okay.","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"She came here just to check up on me?","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I turned around for just a moment and you were gone. Thought you got squished or something!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I looked [b3]EVERYWHERE@ for you! Couldn't stay since the military was poking around though.","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"And you don't even [b3]WANNA@ know what I had to do to find your address...","xpos":0,"ypos":77},
 
-		{"type":"dialogue","character":"Mana","text":"Okay listen. You said you wanted to be friends, right?","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"Military? Squished?%...She was looking for me?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I'm sorry... what are you talking about...?"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"Hmm... you can't remember...?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Well, you did get smacked pretty hard back there...","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"Smacked pretty hard?%I suddenly remember during that attack...","xpos":0,"ypos":0},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_city_monster"},
+		{"type":"dialogue","text":"The giant monster's claw was coming right at me. And then at the very last moment...","xpos":0,"ypos":0},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","text":"Something hit me. It hurt.%I remembered that much.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"...That hero..."},
+		{"type":"dialogue","character":"Kurumi","text":"She saved me!"},
+		{"type":"dialogue","text":"But wait... how did she know all of this?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"That hero... So what you're trying to say here..."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","character":"Mana","text":"Yeah. About that hero...","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"She pauses for a moment, and changes the subject.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Listen... we're friends now, right?","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","text":"An odd question.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Well, yeah! Of course."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","text":"She fidgets, but then there's that smirk again.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She smiles.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"But what if I said...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"...I had a completely CRAZY secret to tell you?","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"I..."},
-		{"type":"dialogue","text":"I don't think I'm in any position to refuse here...","xpos":0,"ypos":0}
+		{"type":"dialogue","character":"Mana","text":"But then what if I said...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...I have a [b3]CRAZY@ secret that I've gotta to tell you?","xpos":0,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","text":"A crazy secret?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Well..."}
 	],
 	"links":[
 		25, 125

@@ -1,36 +1,61 @@
 {
 	"id":23,
-	"title":"Throw something!",
+	"title":"Confront the intruder!",
 	"background":"bg_apartment_night",
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I'm not scared...Not in the slightest!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I grab the closest thing to me, which happens to be a pillow, and throw it.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Voice","text":"Ooof! Hey, don't hit me!","xpos":0,"ypos":77},
-
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_angry","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Bullseye, right in the face!"},
+		{"type":"dialogue","character":"Kurumi","text":"(I'm not scared... Not in the slightest!)"},
+		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"The intruder grabs this pillow and throws it right back.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Voice","text":"Take that!","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"I decide to sneak downstairs to see who it is.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Tiptoeing my way down, I make it to the living room.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I notice someone there, though I can't see him too clearly.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_angry","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"(A thief! He's here to steal our stuff... or worse! I've gotta stop him!)"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"I grab the closest weapon-like object near me... an umbrella.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I then sneak up right behind the intruder...","xpos":0,"ypos":0},
+		{"type":"camerashake", "length":"short"},
+		{"type":"playSFX", "sfx":"thump"},
+		{"type":"dialogue","text":"[b2]*WHAM!*@","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I swing the umbrella right into his face!","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_angry","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Take that!"},
+		{"type":"dialogue","text":"He falls to the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I walk closer to get a better look...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_black"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"playSFX", "sfx":"thump"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH! ! !@"},
 
-		{"type":"dialogue","text":"We start throwing things at each other. It's dark, so I'm throwing whatever I can grab.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I suddenly bump into the light and it turns on.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel two arms wrap around my legs, dragging me to the ground.","xpos":0,"ypos":0},
 
+		{"type":"playSFX", "sfx":"phone_unlock"},
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"It's Mana, from my class!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She looks worn out, but she's still got that energetic sparkle in her eyes.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Mana?! What are you doing here?"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"Oh, great! So this IS the place.","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"In all this commotion,%I somehow bump the light switch.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"The room's a complete mess.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-80,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_shock","xpos":80,"xscale":1},
+
+		{"type":"dialogue","text":"I finally see this intruder's face right above mine...%It's [b]Mana!@","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]M-Mana?!@ What are you doing here?","xpos":-240,"ypos":-116},
+
+		{"type":"dialogue","text":"I'm on the ground, completely sprawled out.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Her legs were on top of mine, and her arms had mine pinned down. Our faces were just inches apart.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi?!@ So this [b3]WAS@ the place!","xpos":288,"ypos":-116},
+		{"type":"dialogue","text":"This was pretty embarassing position. I'm just glad there was nobody else here seeing this.","xpos":0,"ypos":0},
+
+		{"type":"movecharacter","character":"Mana","xto":300},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","text":"She gets up and rubs her head.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Mana","text":"You know... you really didn't need to hit me so hard. That hurt!","xpos":120,"ypos":-121},
+
 		{"type":"addaffinity"}
 	],
 	"links":[
