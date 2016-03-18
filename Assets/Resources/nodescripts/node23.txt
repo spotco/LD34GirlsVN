@@ -54,7 +54,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","text":"She gets up and rubs her head.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"You know... you really didn't need to hit me so hard. That hurt!","xpos":120,"ypos":-121},
+		{"type":"dialogue","character":"Mana","text":"You know... you really didn't need to hit me so hard.%That hurt!","xpos":120,"ypos":-121},
 
 		{"type":"addaffinity"}
 	],
