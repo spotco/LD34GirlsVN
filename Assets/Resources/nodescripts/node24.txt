@@ -8,7 +8,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked%[b3]you know...@"},
+		{"type":"dialogue","character":"Kurumi","text":"What are you doing here? You could have knocked%[b3]you know@..."},
 		{"type":"dialogue","character":"Mana","text":"I...","xpos":0,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
@@ -21,7 +21,7 @@
 		{"type":"dialogue","character":"Mana","text":"And you don't even [b3]WANNA@ know what I had to do to find this address...","xpos":0,"ypos":77},
 
 		{"type":"dialogue","text":"She was looking for me?%I really had no idea what was going on here.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaaaaaait...@ back up a sec. You're talking about [b3]what@ now?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaaaaaait@... back up a sec. You're talking about [b3]what@ now?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"Hmm... %You don't remember...?","xpos":0,"ypos":77},
@@ -50,7 +50,7 @@
 		{"type":"dialogue","character":"Mana","text":"Well...","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"About that [b]hero@...","xpos":0,"ypos":77},
 		{"type":"dialogue","text":"She pauses for a moment, and changes the subject.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Listen...@ %We're friends now, right?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Listen@... %We're friends now, right?","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","text":"That was an unexpected question.","xpos":0,"ypos":0},

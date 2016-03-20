@@ -187,7 +187,7 @@ public class DialogueBubble : SPBaseBehavior {
 			_name_background.sprite = this.cond_get_bgsprite("mana");
 			outline_color = new Color(108/255.0f,99/255.0f,132/255.0f,1);
 		
-		} else if (script_event._character == "Raichi" || script_event._character == "Older Student") {
+		} else if (script_event._character == "Raichi" || script_event._character == "Male Student") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
 			_primary_background.sprite = this.cond_get_bgsprite("raichi");
 			_name_background.sprite = this.cond_get_bgsprite("raichi");

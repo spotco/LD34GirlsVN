@@ -8,7 +8,7 @@
 		{"type":"dialogue","text":"Without even a second thought...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...I ran to her side to check if she was okay.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Ohmygosh...@ Are you alright?!"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Ohmygosh@... Are you alright?!"},
 		{"type":"dialogue","text":"Now that I thought about it...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"This probably wasn't the smartest thing ever. What could I possibly do?","xpos":0,"ypos":0},
 

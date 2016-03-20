@@ -33,7 +33,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","text":"After a moment, she looks like she remembers.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"I got it!","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Mana","text":"You're that new girl in class!%[b3]Kuromi-something-or-other...@","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"You're that new girl in class!%[b3]Kuromi-something-or-other@...","xpos":22,"ypos":53},
 
 		{"type":"dialogue","character":"Kurumi","text":"It's [b]Kurumi@.%Kurumi Motoyama."},
 		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@, huh? Nice to meet you. And I guess you already know my name.","xpos":22,"ypos":53},

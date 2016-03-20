@@ -89,8 +89,10 @@ public class SPTextRenderManager : MonoBehaviour {
 		_sptext.clear();
 	}
 	
+	private StringBuilder __input_str_insert_linebreaks = new StringBuilder("");
 	private string input_str_insert_linebreaks(string input, string full_string) {
-		StringBuilder rtv = new StringBuilder("");
+		StringBuilder rtv = __input_str_insert_linebreaks;
+		rtv.Remove(0,rtv.Length);
 		input = input.Replace('#','"');
 		string[] tokens = input.Split(' ');
 		string[] full_tokens = full_string.Split(' ');
