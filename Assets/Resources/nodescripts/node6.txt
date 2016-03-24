@@ -1,41 +1,55 @@
 {
 	"id":6,
-	"title":"To the Senior Classroom",
+	"title":"Back to Class",
 	"background":"bg_school_classroom",
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I find myself in a senior classroom.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Or at least that's what I think it is, everyone here looks so much older than me.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"I come back to an empty classroom. Everyone's still out for lunch.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I head inside, I notice a familiar figure in the back.","xpos":0,"ypos":0},
+
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"Up in the front, I see a familiar face. It's Raichi!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's Raichi. He's alone at his desk reading a book.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Ah, [b3]Kurumi-chan@. What brings you here, did you get lost?","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Kurumi","text":"Well I..."},
+		{"type":"dialogue","text":"He looks up as I walk in.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","character":"Raichi","text":"I see, then you must be here to ask about joining a club, right?","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"His eyes light up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Ah, Kurumi. What brings you back so early?","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"Well..."},
+		{"type":"dialogue","text":"I give him my best%#good student# answer.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"Just wanted to grab my textbook and do a bit of... review?"},
+
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"So, I did a bit of research and saw that you were in an art club back at your old school...","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"You'll be surprised to hear that we've got one of the most prestigious ones in our district...","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"...we've had many members win awards, and some have even gone on to present at shows...","xpos":22,"ypos":53},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"Ummmm..."},
-		{"type":"dialogue","character":"Raichi","text":"I'm sorry, did you have a question?","xpos":22,"ypos":53},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"I-I didn't actually come here to ask about that!"},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"I think I still need some time... to figure out how everything works around here."},
-
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"I see.","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"He looks a bit dissapointed.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I'm impressed! I see you take your classwork quite seriously.","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"Well, let me know if you need anything at all, [b3]Kurumi-chan@.","xpos":22,"ypos":53}
+		{"type":"dialogue","character":"Raichi","text":"That reminds me...%Have you thought about joining a club yet?","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"I'm sorry...?"},
+		{"type":"dialogue","text":"His eyes light up.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"An after-school club. It's a popular extracurricular activity here.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I've been going to this [b3]#Philosophy Club#@ club recently. I find it very fascinating!","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"The last meeting we discussed the finer points of Sigmund Freud's view of the human psyche...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Though personally, I believe in a more Nietzsche influenced view of the world...","xpos":22,"ypos":53},
+
+		{"type":"dialogue","text":"Philosophy? I think I'll pass. How should I refuse... politely?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Ummmm..."},
+		{"type":"dialogue","character":"Raichi","text":"I'm sorry, did you have something to say?","xpos":22,"ypos":53},
+
+		{"type":"dialogue","character":"Kurumi","text":"That club sounds really cool and all..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"...but I'm [b3]suuuper@ busy right now! I've gotta unpack everything back home. Maybe next time?"},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"I... see.","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","text":"He looks a little disappointed. Was that rude of me?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Well, let me know if you need anything, Kurumi.","xpos":22,"ypos":53}
 	],
 	"links":[
 		2,7

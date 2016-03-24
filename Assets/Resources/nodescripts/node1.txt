@@ -27,13 +27,14 @@
 		{"type":"dialogue","character":"Kurumi","text":"...and I'm [b3]suuuuuper@ excited to meet you all!","xpos":250,"ypos":-100},
 
 		{"type":"dialogue","text":"...","xpos":-291,"ypos":-155},
+		{"type":"dialogue","text":"Not exactly the enthusiastic response I was hoping for.","xpos":-291,"ypos":-155},
 		{"type":"dialogue","text":"Did I overdo it a little?","xpos":-291,"ypos":-155},
 
 		{"type":"dialogue","character":"Teacher","text":"Thank you, [b3]Ms. Motoyama@. Please take a seat over there.","xpos":250,"ypos":100},
 		{"type":"dialogue","text":"He points to a seat in the back by the window.","xpos":255,"ypos":131},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"movecharacter","character":"Kurumi","xto":-325},
-
+		{"type":"dialogue","text":"I make my way over.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As I take my seat I can't help but notice the girl sitting in front of me.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":330,"xscale":-1},
@@ -94,10 +95,11 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"Oh! I-I'm sorry! I was just...","xpos":-17,"ypos":-100},
 
-		{"type":"dialogue","character":"Teacher","text":"...[b3]Ms. Motoyama@. I know it's tough getting up to speed, so if you need help feel free to ask.","xpos":231,"ypos":107},
+		{"type":"dialogue","character":"Teacher","text":"[b3]Ms. Motoyama@. I know it's tough getting up to speed...","xpos":231,"ypos":107},
+		{"type":"dialogue","character":"Teacher","text":"...so if you need help, feel free to say so.","xpos":231,"ypos":107},
 
 		{"type":"dialogue","text":"Oh geez. This is pretty embarassing.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But as I look around, it didn't seem like anyone else was really judging.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... As I looked around, it didn't seem like anyone else was really judging.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"I couldn't help but notice the empty desk in front of me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"That's where the pink-haired girl sat. Her books and bags were there, but she still had not returned.","xpos":0,"ypos":0},
