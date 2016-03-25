@@ -14,9 +14,9 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 7;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = false;
-	public static bool IGNORE_ITEM_REQ = false;
-	public static int NODE_START_INDEX = 1;
+	public static bool MUTE = true;
+	public static bool IGNORE_ITEM_REQ = true;
+	public static int NODE_START_INDEX = 6;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -45,6 +45,7 @@ mana check kurumi okay
 		
 	TODO--
 	script edits
+	SPAnalytics
 	save/load implementation
 	end to title UIs
 	credits

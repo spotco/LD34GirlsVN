@@ -31,9 +31,9 @@
 		{"type":"dialogue","text":"His eyes light up.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"An after-school club. It's a popular extracurricular activity here.","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"I've been going to this [b3]#Philosophy Club#@ club recently. I find it very fascinating!","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"The last meeting we discussed the finer points of Sigmund Freud's view of the human psyche...","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"Though personally, I believe in a more Nietzsche influenced view of the world...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I've been going to this [b3]#Philosophy#@ club recently. I find it very fascinating!","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"The last meeting we discussed the finer points of [b3]Sigmund Freud's@ view of the human psyche...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Though personally, I believe in a more [b3]Nietzsche@ influenced view of the world...","xpos":22,"ypos":53},
 
 		{"type":"dialogue","text":"Philosophy? I think I'll pass. How should I refuse... politely?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Ummmm..."},
@@ -41,15 +41,16 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"That club sounds really cool and all..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"...but I'm [b3]suuuper@ busy right now! I've gotta unpack everything back home. Maybe next time?"},
+		{"type":"dialogue","character":"Kurumi","text":"...but I'm [b3]suuuper@ busy right now! I've gotta unpack and everything back home. Maybe next time?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"I... see.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I see. That's too bad.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"He looks a little disappointed. Was that rude of me?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He looks rather disappointed.%Was that too obvious?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"Well, let me know if you need anything, Kurumi.","xpos":22,"ypos":53}
+		{"type":"dialogue","character":"Raichi","text":"I completely understand. It's your first day after all, everything must be very overwhelming.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Let me know if you need anything in the meantime.","xpos":22,"ypos":53}
 	],
 	"links":[
 		2,7

@@ -22,18 +22,18 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"That's right.%But... how did you know my name?","ypos":-130},
 		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Male Student","text":"You introduced yourself in class earlier this morning. [b3]Suuuper@ excited to meet everyone, right?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Male Student","text":"You introduced yourself in class earlier this morning. #[b3]Suuuper@ excited to meet everyone#, right?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"Ehh...? Was that really so funny?!","ypos":-130},
 
 		{"type":"dialogue","character":"Male Student","text":"Well... your enthusiasm was definitely refreshing.","xpos":23,"ypos":45},
 		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Male Student","text":"To tell you the truth, I'm a recent transfer as well.%Glad to see someone else new.","xpos":23,"ypos":45},
-
-		{"type":"dialogue","text":"A classmate, huh? I should have remembered seeing his face earlier.%Maybe I'm just forgetful.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Male Student","text":"To tell you the truth, I'm a recent transfer as well.","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","text":"A classmate, huh? I should have remembered seeing his face earlier.%Maybe I'm just forgetful.","xpos":0,"ypos":0},
+
 		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Male Student","text":"Oh, and let me introduce myself. I'm [b]Raichi Kashiwagi@. Pleasure to meet you.","xpos":23,"ypos":45},
 		{"type":"rename","namestart":"Male Student","nameend":"Raichi"},
@@ -48,40 +48,42 @@
 		{"type":"dialogue","text":"I imagine that telling the truth and saying I slept through most of it probably wouldn't make the best impression.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"So I leave that part out.%Instead, I asked about something that had been bothering me...","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"It wasn't bad. Classmates seemed pretty friendly. But I'm wondering...","ypos":-130},
+		{"type":"dialogue","character":"Kurumi","text":"It wasn't bad. Everyone seemed pretty friendly. But...","ypos":-130},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"What happened to that girl I sat behind? She left in such a hurry and hasn't come back. Is she alright?","ypos":-130},
 
-
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"It seemed like he knew exactly who I was talking about, and he didn't look happy.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It seemed like he knew exactly who I was talking about.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"You must be talking about [b]Ichijou@. She never did come back, did she?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"[b]Ichijou@...?","ypos":-130},
-		{"type":"dialogue","character":"Raichi","text":"Tall, pink hair, hard to miss. Her name's [b]Manami Ichijou@, but she usually goes by [b]'Mana'@.","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Tall, pink hair, very hard to miss.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Her name's [b]Manami Ichijou@,%but she usually goes by just [b]'Mana'@.","xpos":23,"ypos":45},
 		{"type":"dialogue","text":"[b]Mana@... that's her name?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Her behaviour's a real problem. She's been doing this kind of thing ever since I've been here.","xpos":23,"ypos":45},
-		{"type":"dialogue","character":"Raichi","text":"Ignoring teachers and skipping class, I think it's disrespectful and disruptive to everyone.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I don't think I've ever met anyone quite like her before.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Skipping class and outright ignoring the teachers...%I think it's rather disrespectful.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Don't you agree?","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Kurumi","text":"Well...","ypos":-130},
-		{"type":"dialogue","character":"Raichi","text":"I don't even want to know what kind of trouble she's getting herself into right now.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Though, I'm rather curious what kind of trouble she's getting herself into.","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"I imagine it must be something exciting.","xpos":23,"ypos":45},
 
-		{"type":"dialogue","text":"Those were some harsh words. He must take this stuff pretty seriously.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Exciting? I wonder what that could possibly mean.","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","text":"He smiles after saying this. A sudden change of tone.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Well, she does come back... Try not to let her bother you, Kurumi.","xpos":23,"ypos":45},
-		{"type":"dialogue","character":"Raichi","text":"I'll see you back in class.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Well, she does come back...%I hope she doesn't bother you too much, Kurumi.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":23,"ypos":45},
 		{"type":"movecharacter","character":"Raichi","xto":700},
+		{"type":"dialogue","text":"He leaves.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"[b]Mana@, that pink-haired girl... a delinquent troublemaker? Sure wasn't anyone like that back home.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"The people here sure are something else."},
+		{"type":"dialogue","text":"[b]Mana@, that pink-haired girl... a delinquent troublemaker?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Sure wasn't anyone like that back home."},
 
-		{"type":"dialogue","text":"Long after he was out of sight, I suddenly realized something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Long after he was out of sight, I remembered something.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"I should have asked where the cafeteria was..."},
 		{"type":"additem","item":"Her Name"}

@@ -11,17 +11,21 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wow... the view's amazing! I can see the whole city from here!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"I should bring my lunch next time. Eating up here would be so cool!"},
+		{"type":"dialogue","character":"Kurumi","text":"I should bring my lunch next time."},
 
-		{"type":"dialogue","text":"As I sat down, I noticed smoke rising far off in the distance.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The sirens of ambulances pierced through the normal hum of the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I sat down, I noticed something interesting.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","text":"A plume of smoke was rising from the city.","xpos":0,"ypos":0},
+
 		{"type":"dialogue","character":"Kurumi","text":"What's going on over there?"},
 
-		{"type":"dialogue","text":"I hadn't been keeping up with the news, so I really had no idea.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It seemed odd. Was this an emergency?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And if so, why hadn't we heard anything about it?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"Sure hope it's nothing serious..."},
+		{"type":"dialogue","character":"Kurumi","text":"No alerts, no alarms... nothing like that."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Well, then I hope it's nothing serious!"}
 	],
 	"links":[
 		2
