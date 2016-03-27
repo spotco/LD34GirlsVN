@@ -62,7 +62,7 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Well...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","character":"Raichi","text":"I've been searching for something. Something very important to me.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I've been searching for something. Something very important.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I've got a good feeling that%I might find it here.","xpos":22,"ypos":53},
 
@@ -78,8 +78,8 @@
 		{"type":"dialogue","text":"I just hope the owner knows to check here for it.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"Raichi returns back to the classroom. However, there's still a half hour left for lunch.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-370,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?","xpos":-17,"ypos":-100}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?"}
 	],
 	"links":[
 		6

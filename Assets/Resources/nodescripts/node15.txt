@@ -5,7 +5,7 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"As I walked back home...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was walking back home, when all of a sudden...","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"siren"},
 		{"type":"camerashake", "length":"long"},
 		{"type":"dialogue","text":"Sirens suddenly started going off, and the ground started shaking!","xpos":0,"ypos":0},
@@ -49,7 +49,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"A... superhero?"},
 
-		{"type":"dialogue","text":"I could only watch, awestruck, as she gracefully dodges the monster's swinging claws.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I could only watch, awestruck, as she gracefully dodged the monster's swinging claws.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"With a mighty swing of her sword, she pierces it directly in the chest!","xpos":0,"ypos":0},

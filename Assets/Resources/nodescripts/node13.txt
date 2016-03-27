@@ -1,6 +1,6 @@
 {
 	"id":13,
-	"title":"Act Sorry...",
+	"title":"Act Sorry",
 	"background":"bg_school_hallway",
 	"music":"normal_day",
 	"requirementitem":[],
@@ -11,14 +11,14 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"I...","xpos":82},
 		{"type":"dialogue","text":"Skipping the first day of school? I'm usually better than this.","xpos":82,"ypos":0},
-		{"type":"dialogue","text":"I put on my best guilty face and apologize.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I put on my best #guilty# face and apologize.","xpos":82,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"I'm [b3]sooooo@ sorry, Raichi! I got a little carried away and forgot about the time!","xpos":82},
+		{"type":"dialogue","character":"Kurumi","text":"I'm [b3]sooooo@ sorry! I got a little carried away and forgot about the time!","xpos":82},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"It won't happen again,%I promise!","xpos":82},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","text":"He lightens up a little.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"He smiles. Did it work?","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Well, I'll take your word for it. And besides...","xpos":105,"ypos":50},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I definitely don't mind helping a friend out!","xpos":105,"ypos":50},
@@ -34,11 +34,9 @@
 		{"type":"hidecharacter","character":"Raichi"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I stuck around as Raichi basically tutored me on everything I had missed.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He was a surprisingly good teacher, and it was really helpful.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However, he had to leave a little early to run an errand.%I thanked him as he left.","xpos":0,"ypos":0},
-		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"As the sun was setting, I left school and walked back home.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I stuck around as Raichi got my bag and gave me today's homework.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A hundred pages of reading? Ugh.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Afterwards, we walk to the school entrance and go our separate directions.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15

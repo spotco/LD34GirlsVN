@@ -7,7 +7,7 @@
 	"event":[
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I keep running until the destruction is completely out of sight.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I kept running until the destruction was completely out of sight.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
 		{"type":"changebackground","background":"bg_road"},
 		{"type":"dialogue","character":"Kurumi","text":"[b2]*Huff*@... [b2]*Pant*@...%Where... am I?"},
@@ -19,7 +19,7 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":-1},
 		{"type":"dialogue","text":"It's Raichi.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"Raichi! I'm so relieved to see a familiar face here..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi!@ I'm so relieved to see a familiar face here..."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
 		{"type":"dialogue","text":"As he turns around, he sees me and a worried look crosses his face.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Oh my... What happened? Are you hurt?","xpos":33,"ypos":70},
@@ -30,7 +30,7 @@
 		{"type":"dialogue","text":"I take a moment to look at myself. I'm a mess!","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"My shirt is torn, and I've cuts all over my arms and legs.%I didn't even notice!","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"I'm... alright. I've just been through a lot."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm alright! I've just been through a lot."},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
@@ -45,14 +45,14 @@
 		{"type":"dialogue","character":"Kurumi","text":"Another...? You mean there's been others..."},
 		{"type":"dialogue","character":"Raichi","text":"Yeah, and they're getting more and more frequent.","xpos":33,"ypos":70},
 
-		{"type":"dialogue","text":"He didn't seem surprised. Instead, he started asking me questions.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He didn't seem surprised.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"I'm interested in this hero you mentioned. What do you remember?","xpos":33,"ypos":70},
 		{"type":"dialogue","text":"What did I remember about her? Well...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":0,"xscale":1},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":197,"xscale":1},
 
 		{"type":"dialogue","text":"She was wearing this fancy outfit.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"There was a mask covering her face so I didn't have a chance to get a closer look.","xpos":0,"ypos":0},
@@ -65,9 +65,9 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"...she's a real life superhero! She saved my life [b3]AND@ beat up that monster!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"Raichi doesn't look happy. Did I say something wrong?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He doesn't look happy. Did I say something wrong?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Kurumi... this isn't a game.","xpos":33,"ypos":70},
-		{"type":"dialogue","character":"Raichi","text":"These attacks are serious. Dozens have been killed, and many more injured.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"These attacks are serious. Many have been killed, and even more injured.","xpos":33,"ypos":70},
 
 		{"type":"dialogue","text":"I... had no idea.","xpos":0,"ypos":0},
 

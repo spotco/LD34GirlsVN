@@ -14,7 +14,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"This is so great! So many restaurants, shops and people everywhere..."},
 		{"type":"dialogue","character":"Kurumi","text":"It's [b3]soooo@ different from back home. This is where the action's at!"},
 
-		{"type":"dialogue","text":"In the crowd of people I saw a familiar face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Up ahead in the crowd, I saw a familiar face.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal","xpos":300,"xscale":-1},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","text":"The [b]pink-haired girl@! So this is where she went!","xpos":0,"ypos":0},

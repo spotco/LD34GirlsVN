@@ -37,7 +37,7 @@
 
 		{"type":"dialogue","character":"Pink Hair","text":"Special attack...","xpos":25,"ypos":55},
 		{"type":"movecharacter","character":"Pink Hair","xto":900},
-		{"type":"dialogue","character":"Pink Hair","text":"[b3]Pretty Pink Magical Sword...@ [b]BUSTER!!!@","xpos":25,"ypos":55},
+		{"type":"dialogue","character":"Pink Hair","text":"Pretty Pink Magical Sword... [b]BUSTER!!!@","xpos":25,"ypos":55},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"hidecharacter","character":"Kurumi"},

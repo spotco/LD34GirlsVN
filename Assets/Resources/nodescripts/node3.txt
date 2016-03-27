@@ -7,9 +7,9 @@
 	"event":[
 		{"type":"dialogue","text":"I go to the bathroom, half expecting to find that pink-haired girl hiding somewhere.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"No pink-haired girl here... but what's this?"},
+		{"type":"dialogue","character":"Kurumi","text":"No pink-haired girl here...%But what's this?"},
 		{"type":"dialogue","text":"I see a familiar looking phone laying by the window.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Someone must have left it here. Better take it and turn it in!"},
+		{"type":"dialogue","character":"Kurumi","text":"Someone must have left it. Better turn it in!"},
 		{"type":"additem","item":"phone"}
 	],
 	"links":[

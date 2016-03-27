@@ -1,6 +1,6 @@
  {
 	"id":14,
-	"title":"Drag Mana Along Too!",
+	"title":"Tell a Lie",
 	"background":"bg_school_hallway",
 	"music":"normal_day",
 	"requirementitem":[],
@@ -9,53 +9,68 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":373,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 
-		{"type":"dialogue","character":"Kurumi","text":"You know, Mana here also missed class today...","xpos":82},
+		{"type":"dialogue","character":"Kurumi","text":"You know...","xpos":82},
+		{"type":"dialogue","text":"I make up an excuse right on the spot.","xpos":82,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"...I'm sure she'll need some [b3]'help'@ too!","xpos":82},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"...I was helping Mana get to the hospital. She was sick, you know? Like...%[b3]REALLY@ sick!","xpos":82},
+
+		{"type":"dialogue","text":"She looks surprised, but I keep rolling with it.","xpos":82,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"This was really serious. We had to wait in line to see the doctor and everything!","xpos":82},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"But then the doctor just gave her these meds and now she's feeling better.%Isn't that right?","xpos":82},
 		{"type":"dialogue","text":"I wink and give her a slight nudge in the elbow.","xpos":82,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":82,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"Mana looks surprised while Raichi just sighs and adjusts his glasses.","xpos":82,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Ichijou@? Well... if you care to join us, I certainly don't mind.","xpos":105,"ypos":50},
+		{"type":"dialogue","text":"Raichi adjusts his glasses.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Well... if it was an emergency, I'm sure this can be excused.","xpos":105,"ypos":50},
 
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"I... Umm...","xpos":82,"ypos":53},
-		{"type":"dialogue","text":"She almost seems a little... embarassed?","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"So that's why we were gone this whole afternoon. We really appreciate your help!","xpos":82},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Isn't that right, Mana?","xpos":82},
+
+		{"type":"dialogue","character":"Mana","text":"...","xpos":82,"ypos":53},
+		{"type":"dialogue","text":"She almost seems a little... embarassed? I sure hope she doesn't break my cover.","xpos":82,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
 		{"type":"movecharacter","character":"Mana","xto":-800},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"[b3]I-GOTTA-GO-SOMEWHERE...@ [b3]SEEYA!!!@","xpos":-263,"ypos":-158},
-		{"type":"dialogue","text":"She runs out in a hurry.","xpos":82,"ypos":0},
-		{"type":"movecharacter","character":"Kurumi","xto":-340},
+		{"type":"dialogue","text":"She runs out as fast as she can.","xpos":82,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"What was that all about?","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Raichi","text":"...","xpos":90,"ypos":50},
-		{"type":"dialogue","character":"Kurumi","text":"...","xpos":0},
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Raichi finally breaks the awkward silence.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Raichi","text":"You know... I'm actually surprised that you two are friends.","xpos":90,"ypos":50},
-		{"type":"dialogue","character":"Kurumi","text":"What do you mean?","xpos":-35},
-		{"type":"dialogue","character":"Raichi","text":"I've tried talking to her before... but as you can guess, it didn't go so well.","xpos":90,"ypos":50},
-		{"type":"dialogue","character":"Kurumi","text":"I...","xpos":-35},
-		{"type":"dialogue","character":"Raichi","text":"Just keep an eye on her for me, okay? To make sure she doesn't get into any more... trouble.","xpos":90,"ypos":50},
-		{"type":"dialogue","character":"Kurumi","text":"...","xpos":-35},
-		{"type":"dialogue","text":"Trouble...? There was definitely something more going on here. However...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I didn't feel it was my place to ask. So I stayed silent.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... so much for my perfect excuse.","xpos":82,"ypos":0},
 
 		{"type":"addaffinity"},
 
+		{"type":"dialogue","character":"Raichi","text":"Leaving so early?%I still have her bag.","xpos":90,"ypos":50},
+		{"type":"dialogue","character":"Kurumi","text":"...","xpos":82},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Well, make sure you don't forget yours at least.","xpos":90,"ypos":50},
+		{"type":"dialogue","character":"Raichi","text":"I'll let our teacher know what happened.","xpos":90,"ypos":50},
+
+		{"type":"dialogue","character":"Kurumi","text":"...","xpos":82},
+		{"type":"dialogue","character":"Raichi","text":"By the way...","xpos":90,"ypos":50},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"I see you two have become acquainted. I'm glad!","xpos":90,"ypos":50},
+		{"type":"dialogue","character":"Kurumi","text":"...Why is that?","xpos":82},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Well... I've tried talking to her before.","xpos":90,"ypos":50},
+		{"type":"dialogue","character":"Raichi","text":"It didn't go so well, as you can imagine.","xpos":90,"ypos":50},
+		{"type":"dialogue","character":"Kurumi","text":"...","xpos":82},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"Just keep an eye out for her and let me know if you get into any trouble, alright?","xpos":90,"ypos":50},
+
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I stuck around as Raichi basically tutored me on everything I had missed.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He was a surprisingly good teacher, and it was really helpful.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However, he had to leave a little early to run an errand.%I thanked him as he left.","xpos":0,"ypos":0},
-		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"As the sun was setting, I left school and walked back home.","xpos":0,"ypos":0}
 
+		{"type":"dialogue","text":"Trouble? There was that word again.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What exactly does he mean by it? There was definitely something going on here.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I stuck around as Raichi got my bag and gave me today's homework.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A hundred pages of reading? Ugh.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Afterwards, we walk to the school entrance and go our separate directions.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15
