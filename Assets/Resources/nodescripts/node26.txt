@@ -10,7 +10,7 @@
 		{"type":"dialogue","text":"Ever since I've gotten to know Mana, every day has been a new adventure!","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Kurumi! Let's go! There's been an alert in the west Shinjuku district!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Kurumi! Let's go! There's been an alert in the west Shinjuku district!","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Alright, I brought a snack too just in case we get [b3]hungr--@"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -19,7 +19,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH!!!@"},
 		{"type":"dialogue","text":"But... %Some things never change.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"Kurumi...! Are you alright?!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Kurumi...! Are you alright?!","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Oww...@ "},
 		{"type":"hidecharacter","character":"Mana"},
 
@@ -34,24 +34,72 @@
 		{"type":"dialogue","character":"Kurumi","text":"Are you [b3]really@ sure videotaping all this is a good idea?"},
 		{"type":"hidecharacter","character":"Mana","imm":true},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":180,"xscale":1,"imm":true},
-		{"type":"dialogue","character":"Mana","text":"Of course! I wanna see how I look when doing this.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Of course! I wanna see how I look when doing this.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana","imm":true},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":470,"xscale":-1,"imm":true},
-		{"type":"dialogue","character":"Mana","text":"Now, make sure you get a good shot of me here...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Now, make sure you get a good shot of me here...","xpos":30,"ypos":77},
 		{"type":"movecharacter","character":"Mana","xto":850},
 		{"type":"dialogue","character":"Mana","text":"Magical Pretty Sword... [b]BUSTER!!!@","xpos":285,"ypos":106},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"So... it's been a pretty crazy past few weeks, to put it mildly.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"So, it's been a pretty crazy past few weeks... %To put it mildly.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Between sudden monster alerts at the worst possible time...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...To running up and down the whole city to track them...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...I've barely had the chance to catch any sleep!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And having to go halfway across the city to track them all down...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've barely had the chance to get any rest!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Zzz..."}
+		{"type":"dialogue","character":"Kurumi","text":"[b2]Zzz...@"},
+		{"type":"dialogue","text":"I hear someone stop in front of my desk.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Mmm... [b2]Zzz...@ Give me another 10 minutes..."},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi... It's lunchtime.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Ehhh....?!@"},
+
+		{"type":"dialogue","text":"I'm suddenly awake.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's Raichi. He doesn't look very happy.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"I... I just slept through class again, didn't I?"},
+
+		{"type":"dialogue","character":"Raichi","text":"You did.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"I'm surprised, though.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Why is that?"},
+		{"type":"dialogue","character":"Raichi","text":"You always seemed like the studious type. However...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"You've been missing a lot of school lately.","xpos":30,"ypos":77},
+
+		
+		{"type":"dialogue","text":"I guess I have been.%But why was he bringing this up?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"And when you have been here... You seem to not pay any attention at all.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"What's going on?","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Kurumi","text":"I..."},
+
+		{"type":"dialogue","character":"Raichi","text":"Actually, you don't need to tell me. I know it's [b3]Mana@.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
+		{"type":"dialogue","character":"Raichi","text":"She's getting you into trouble, isn't she?","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"Listen, Kurumi... %This is important.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"Whatever it is...%You can tell me. I want to help.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"Why was he so interested?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I think back on everything I've heard so far.%Should I trust him?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What should I say?","xpos":0,"ypos":0}
 	],
 	"links":[
 		28,29
