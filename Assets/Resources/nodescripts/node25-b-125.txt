@@ -12,8 +12,9 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"As ready as I'll ever be."},
 		{"type":"dialogue","character":"Mana","text":"Alright. So. You've seen those monsters attacking the city. Crazy stuff, right?","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"So then you also saw that hero in pink, saving everyone?","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Sure."},
+		{"type":"dialogue","character":"Mana","text":"So then you also saw that hero in pink, saving everyone?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"I... did."},
 		{"type":"dialogue","character":"Mana","text":"So you'd say... she's pretty cool, right?","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"Flying around, fighting monsters and protecting all the people, yeah...?","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Well... If you put it that way. That's pretty cool."},
@@ -29,9 +30,9 @@
 		{"type":"dialogue","character":"Mana","text":"[b]Mana Magi-Knight Manaka@... Transform!","xpos":0,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"That hero...%She seemed so familiar...%It was you!"},
-		{"type":"dialogue","text":"I couldn't help but gaze in wonder, awestruck.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I couldn't help but gaze in wonder.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Yep! I'm a Magi-Knight! Now, I don't want to get into too many details here, but...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Yep! I'm a [b]Magi-Knight@!%Now, I don't want to get into too many details here, but...","xpos":0,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I've been entrusted with this power to protect this city.","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 
@@ -42,7 +43,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"The pink light fills the room again and Mana transforms back into her regular self.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A pink light fills the room again and Mana is back to her regular self.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
