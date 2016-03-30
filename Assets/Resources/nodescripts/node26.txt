@@ -99,10 +99,10 @@
 		{"type":"dialogue","character":"Raichi","text":"So why don't you tell me what's going on?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"He seemed serious. But... What did he really know?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He seemed serious. But... What could he really know?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I thought about his advice.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"There's a whole lot that I don't know right now either.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What should I say next?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There's a whole lot that I didn't know either.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What should I do next?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I..."}
 	],
 	"links":[

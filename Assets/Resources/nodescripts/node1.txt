@@ -66,6 +66,7 @@
 		{"type":"dialogue","character":"Pink Hair","text":"Might swing by the nurse's office too. I'll be back!","xpos":140,"ypos":0},
 		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal","xscale":-1},
 		{"type":"movecharacter","character":"Pink Hair","xto":700},
+		{"type":"playSFX", "sfx":"door_slam"},
 		{"type":"dialogue","text":"She leaves in a hurry, slamming the door behind her.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Pink Hair"},

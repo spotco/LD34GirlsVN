@@ -1,22 +1,86 @@
 {
 	"id":28,
-	"title":"Joke",
+	"title":"Lie About It",
 	"background":"bg_school_classroom",
-	"music":"happy_day",
+	"music":"worry",
 	"requirementitem":[],
 	"event":[
+
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","text":"Something wasn't right.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I remember what Mana had told me. It was our secret, and nobody else could know.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I know there must be a good reason for all of this.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I... I don't know what you're talking about here."},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"...I don't understand?"},
+
+		{"type":"dialogue","character":"Raichi","text":"It's [b3]Mana@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She's not someone you want to be around.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Kurumi","text":"W-what do you mean...?"},
+		{"type":"dialogue","character":"Raichi","text":"Forget about her.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"You should have never%met her.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"I should have never met her?%I can't help but start to feel upset.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This was my friend he was talking about here. What gave him the right to say this?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
+		{"type":"dialogue","character":"Kurumi","text":"No... [b3]YOU@ listen. I don't think [b3]YOU@ understand."},
+		{"type":"dialogue","character":"Kurumi","text":"I don't know why you're being so nosy here. This is none of [b3]YOUR@ business."},
+
+		{"type":"dialogue","character":"Raichi","text":"I apologize if I was being too frank, but if you only understood...","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"I don't even want to hear it right now."},
+		{"type":"dialogue","character":"Raichi","text":"...","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"playBGM","bgm":"happy_day"},
+		{"type":"playSFX", "sfx":"door_slam"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"All of a sudden, the classroom door slams open and someone walks in.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
+		{"type":"dialogue","text":"It's [b3]Mana@!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Kurumi! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"She walks over.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"Raichi suddenly smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":30,"ypos":77},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"dialogue","text":"As he leaves, he exchanges a friendly greeting with Mana. They seem to be on good terms.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"Mana walks over to my desk.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"Now's the time to let off some steam.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Hey! So what were you two talking about?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Well..."},
+		{"type":"dialogue","text":"Everything that Raichi had said about her...%I was still a little upset.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I didn't want to ruin her good mood, so I kept quiet.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Wasn't anything too important."},
 
-		{"type":"dialogue","character":"Kurumi","text":"You bet he was serious. He just came right up to me..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
-		{"type":"dialogue","character":"Kurumi","text":"...and confessed! Can you believe it? Asked me out to the summer festival and everything."},
-		{"type":"dialogue","text":"I did my best to hold my grin. Mana sure didn't try very had to hold her blushing.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Pffft....Whaaaa? An underclassman like you? I-DON'T-THINK-SO~!","xpos":0,"ypos":77},
-		{"type":"addaffinity","xpos":0,"ypos":77}
+		{"type":"dialogue","character":"Mana","text":"Is that so? Well...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"He's actually a pretty nice guy once you get to know him and all.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"He even let me copy his homework this morning! Who would have guessed, right?","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"[b3]Raichi...@ It definitely felt suspicious. It seemed like he knew something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What did he mean when he said I should have never met Mana?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well, whatever it was... I'm not going to let him stop us from being friends.","xpos":0,"ypos":0},
+
+		{"type":"addaffinity"}
 	],
 	"links":[
 		129
