@@ -1,22 +1,50 @@
 {
 	"id":33,
-	"title":"Defeated Monster",
+	"title":"The Fanbase",
 	"background":"bg_city_late",
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_angry","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
+		{"type":"dialogue", "text":"I try asking someone in the crowd to see if I can figure out what's going on.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Excuse me... Umm... Mister..."},
 
-		{"type":"dialogue","character":"Kurumi","text":"Take a look at this, Mana-chan! Defeated in one shot! I'm impressed."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"C'mon Kuru, you know I could totally do that too!","xpos":0,"ypos":77},
+		{"type":"camerashake", "length":"long"},
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama! %Daisuke! %[b]Simone@-sama! %We love you!","xpos":0,"ypos":100},
+
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Umm@... Excuse me? Can you tell me what's going on?"},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama! %[b]Simone@-sama!","xpos":0,"ypos":100},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Give it up, Kurumi. You're not getting anything out of these guys.","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue", "text":"I glance around. Everyone in the crowd looks very similar.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"They're all cheering in unison with fervent devotion.%It's almost kind of creepy.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Is this what they call... %[b3]Otaku Culture@?","xpos":0,"ypos":0},
+
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"You know... I was thinking. You said she was strong, right?"},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Well... You're pretty strong too! What if you two could team up?"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"I'm sure you could fight monsters even better!"},
+
+		{"type":"dialogue","character":"Mana","text":"Team up... With her?%I think I'll pass.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I don't think I could handle this noise... Or her constant self-referencing in the third person.","xpos":30,"ypos":77},
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"I know but...what if you two could team up or something?"},
-		{"type":"dialogue","character":"Mana","text":"Team up...with her? I think I'll pass.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I don't think I could handle the photos. Or the constant self-referencing in third-person.","xpos":0,"ypos":77},
-		{"type":"dialogue", "text":"I guess she had a point - Simone was hardly heroic anyway.","xpos":0,"ypos":0}
-
+		{"type":"dialogue", "text":"Well... I guess she had a point.","xpos":0,"ypos":0}
 	],
 	"links":[
 		30

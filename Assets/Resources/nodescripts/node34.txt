@@ -5,46 +5,91 @@
 	"music":"epic",
 	"requirementitem":["sceptre"],
 	"event":[
-		{"type":"dialogue", "text":"Off in the distance, dozens more monsters approach.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
-		{"type":"changebackground","background":"bg_city_monster"},
-		{"type":"dialogue","character":"Simone","text":"Dohohoho~! More monsters? Not a problem for Simone-sama!"},
-		{"type":"hidecharacter","character":"Simone"},
-		{"type":"dialogue", "text":"Like a bolt of lightning, she flies towards them.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_angry","xpos":300,"xscale":1},
+		{"type":"dialogue", "text":"I suddenly remember the [b]wand@ that Mana gave me earlier.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		
-		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
-		{"type":"dialogue", "text":"Suddenly, a rather petty thought pops into my head. I can't resist. 	(°ㅂ°╬)","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, you just want to show off that you're the best, right?"},
-		{"type":"dialogue","character":"Mana","text":"I'd be lying if I said I didn't want to punch 'Simone-Sama' right in the face.","xpos":0,"ypos":77},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"Well, check out what I've got."},
+		{"type":"dialogue","character":"Kurumi","text":"Use in a time of desperate need... Isn't that what she said?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue", "text":"Would right now count?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Only one way to be sure.%I grab it out of my bag and show it to her.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"sceptre"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"Mana, you think I should use this?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"The wand!","xpos":30,"ypos":77},
+
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"This is...a Sceptre of Transformation? Alright, I'll see what I can do!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Well... If you think so...%Let's give it a shot!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I'll distract her. Follow my lead, okay?","xpos":30,"ypos":77},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue", "text":"She pushes through the crowd and walks up to Simone.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-170,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"[b]Simone@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Simone","text":"Oh~? [b3]Ugly@ girl again? Come to say goodbye?"},
+		{"type":"dialogue","character":"Mana","text":"You're the one who's going to be saying goodbye.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! Now!%Do it!","xpos":30,"ypos":77},
+
+		{"type":"movecharacter","character":"Mana","xto":200},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":350,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"W-wha...?!","xpos":71,"ypos":-130},
+		{"type":"dialogue", "text":"As I raise the wand over my head, it starts glowing. [b3]Something@ is happening.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Mana looks confident. Does she know what's going on?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"[b]Simone@... You're gonna regret messing with us.","xpos":-61,"ypos":-58},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
-
-		{"type":"dialogue","character":"Mana","text":"Super Pretty Magical Mana Magi Knight Manaka...Transform!!!","xpos":0,"ypos":77},
-
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":174,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Let's go!","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Fans","text":"Uwaaaaaa!!! Sugoi!!! Follow her!","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Mana"},
-
-		{"type":"dialogue", "text":"As Mana-chan flies off in the other direction, the entranced fanbase follows her.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
-		{"type":"dialogue","character":"Simone","text":"Wait, where are you going!? Ignoring Simone-sama!? Unbelievable!"},
 		{"type":"hidecharacter","character":"Simone"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"A few days later I find videos of Mana-chan all over the internet. She's become a real viral hit!","xpos":0,"ypos":0},
+		{"type":"playSFX", "sfx":"transform"},
+		{"type":"dialogue", "text":"A blinding light fills my vision.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"The wand grows unbearably hot and bright as she transforms.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"But this is not just her ordinary transformation. It's as if she's absorbing its power...","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_late"},
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-170,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":220,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"[b3]Mana Magi-Goddess Manaka...@ %[b]Ultimate Transform@!","xpos":30,"ypos":77},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"dialogue","character":"Fans","text":"Uwaa...!! %[b]Ultimate transform@?!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Simone","text":"[b]U-u-ultimate transform@...?"},
+
+		{"type":"dialogue", "text":"I didn't quite know what an ultimate transform was...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"But I could tell something was different.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"She seemed more beautiful, more elegant and so much more powerful...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"But at the same time... uncontrollable. Dangerous.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Simone","text":"H-h-how is this possible? [b3]Kashiwagi@-senpai said there was no way..."},
+		{"type":"dialogue", "text":"Mana raises her sword. She's about to attack.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"[b]Ultimate@... %[b]Goddess Sword@...","xpos":30,"ypos":77},
+		{"type":"hidecharacter","character":"Simone"},
+		{"type":"dialogue","character":"Simone","text":"W-w-waaaaaaaa~! Help~~!"},
+
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue","character":"Mana","text":"[b]BUSTER@!!!","xpos":30,"ypos":77},
+
+		{"type":"changebackground","background":"bg_black_dark"},
+		{"type":"playBGM","bgm":"none"},
+		{"type":"dialogue", "text":"A powerful shockwave shoves me back, knocking me unconscious.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
+
 		{"type":"additem","item":"fan video"}
 	],
 	"links":[

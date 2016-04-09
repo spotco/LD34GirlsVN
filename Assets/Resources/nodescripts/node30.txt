@@ -12,8 +12,8 @@
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Mana","text":"Monsters, huh?%A bunch of 'em, too.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Surprised I didn't get an alert about this.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Monsters, huh?%A bunch of 'em, too.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Surprised I didn't get an alert about this.","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wait... You see that?%What's going on up there?"},
 
@@ -74,14 +74,14 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Something about her really gets on my nerves..."},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Bet you could of totally handled those monsters too. What a showoff!"},
-		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I can sense it.%She's strong.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I can sense it.%She's strong.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Really@ strong.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I don't like this at all.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Really@ strong.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I don't like this at all.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."}
