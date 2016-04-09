@@ -6,8 +6,8 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"It's been a few weeks now.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But, ever since I've gotten to know [b3]Mana...@%Every day has been a crazy new adventure.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's been a couple weeks now...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And ever since I've gotten to know [b3]Mana...@%Every day has been some sort of crazy new adventure.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Kurumi! Let's go! There's been an alert in the west Shinjuku district!","xpos":30,"ypos":77},

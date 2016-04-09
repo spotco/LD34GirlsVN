@@ -6,40 +6,85 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"We decided to investigate the monster at Asakusa.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"We decide head to the Shinagawa district to check out what was going on. ","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_monster"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Mana","text":"Well...there it is! The pictures didn't do it justice!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Monsters, huh?%A bunch of 'em, too.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Surprised I didn't get an alert about this.","xpos":0,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Wait, what's going on up there?"},
+		{"type":"dialogue","character":"Kurumi","text":"Wait... You see that?%What's going on up there?"},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_city_monster_fight"},
 
-		{"type":"dialogue", "text":"A beam of pink was dancing in and out, engaged in combat with the monster.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Normally that would have been Mana-chan and I'd be cheering her on. But she was right beside me.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"With a final, swift blow, this new hero defeated the monster.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"A bright beam of pink light fills the sky.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"At the center...%I could see a floating figure.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Who... Is that?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue", "text":"It couldn't be Mana...%She was standing right beside me.","xpos":0,"ypos":0},
+
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue", "text":"The monsters didn't care.%Without warning, they suddenly attack!","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue", "text":"Without hesistation, this floating figure quickly draws her weapon...","xpos":0,"ypos":0},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue", "text":"And with a single decisive blow, dispatches the entire group!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
-		{"type":"dialogue", "text":"A crowd of people awaited her landing.","xpos":0,"ypos":0},
-		
-		{"type":"dialogue","character":"Fans","text":"We love you, Simone-sama!","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-134,"xscale":1},
-		{"type":"dialogue","character":"Simone","text":"Dohohoho~!"},
-		{"type":"dialogue","character":"Simone","text":"With Simone-sama Saber Knight Sweetheart protecting this city, no monster stands a chance!"},
-		{"type":"dialogue","character":"Fans","text":"Simone-sama, Daisuke!","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"With her work finished, she lands gently back on the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Seeing her up close, she looks completely unlike anything I've seen before.","xpos":0,"ypos":0},
 
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":388,"xscale":1},
+		{"type":"dialogue", "text":"She was wearing a very revealing pink dress adorned with purple ribbons and laces.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Her hair was coiffed up in these unwieldy drills, and in her hands she carried a large, deadly looking scythe.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"A superhero? I'd honestly be embarassed to be seen in public wearing something like that..."},
 		{"type":"hidecharacter","character":"Simone"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue", "text":"I just then noticed...%We weren't alone.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Dozens of people gathered around us, forming a crowd surrounding her.","xpos":0,"ypos":0},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"dialogue","character":"Crowd","text":"We love you, [b]Simone@-sama!","xpos":0,"ypos":100},
+
+		{"type":"dialogue", "text":"They were all cheering in unison. Were these... Fans?","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-170,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"[b3]Dohoho~!@ Piece of cake!"},
+		{"type":"dialogue","character":"Simone","text":"With [b]Simone Saber Knight Sweetheart@ protecting this city, no monster stands a chance!"},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"playSFX", "sfx":"crowd"},
+		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama, [b3]Daisuke@!","xpos":0,"ypos":100},
+		{"type":"hidecharacter","character":"Simone"},
+
+		{"type":"dialogue", "text":"We quickly duck out.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Something about her really gets on my nerves...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"Tell me about it."}
+		{"type":"dialogue","character":"Kurumi","text":"Something about her really gets on my nerves..."},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"Bet you could of totally handled those monsters too. What a showoff!"},
+		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I can sense it.%She's strong.","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
+		{"type":"dialogue","character":"Mana","text":"[b3]Really@ strong.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I don't like this at all.","xpos":0,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"..."}
 	],
 	"links":[
 		129,32,33,34

@@ -1,21 +1,77 @@
 {
 	"id":29,
-	"title":"Trust Him",
+	"title":"Ask Him About It",
 	"background":"bg_school_classroom",
-	"music":"happy_day",
+	"music":"worry",
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+
+		{"type":"dialogue","text":"I began to have doubts.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"I... I don't even know what's going on myself."},
+		{"type":"dialogue","character":"Kurumi","text":"It's all been so crazy... Nothing makes any sense."},
+		{"type":"dialogue","text":"Could I tell him what was going on?","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi. There's something you should know.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"It's about [b3]Mana@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She isn't...","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"playBGM","bgm":"happy_day"},
+		{"type":"playSFX", "sfx":"door_slam"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"All of a sudden, the classroom door slams open as someone barges in.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
+		{"type":"dialogue","text":"It's [b3]Mana@!","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Mana","text":"Kurumi! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"She walks over.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"Raichi suddenly smiles.%What's with this change in attitude?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Looks like I'll have to tell you another time.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":30,"ypos":77},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"dialogue","text":"As he leaves, he exchanges a friendly greeting with Mana. They seem to be on good terms.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-
-		{"type":"dialogue","character":"Kurumi","text":"It...it wasn't anything serious."},
-		{"type":"dialogue","text":"Academic performance? Bad influence? That sure was a lie.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana walks over to my desk.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Hey! So what were you two talking about?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Well..."},
+		{"type":"dialogue","text":"I couldn't help but wonder what he was going to tell me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana... she was my friend. Probably my best friend here at this school, but...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I realized that I didn't really know that much about her. We never did talk about that kind of stuff.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Where was she from?%Where did she live?%And where was her family?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Not to mention what the deal was with this whole [b3]superhero@ business...","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"If you say so...","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"I spared Mana my feelings about Raichi... But it doesn't sit well with me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She looks a little suspicious. If that was a lie, it sure wasn't a believeable one.","xpos":0,"ypos":0}
+		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told you a distant relative just died.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding!%Cheer up a bit.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I just got a bunch of alerts on my phone that we gotta check out...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"[b3]After@ we get lunch, of course!","xpos":30,"ypos":77},
 
+		{"type":"dialogue","text":"Well... No need to dwell on it.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Okay. I choose the place this time."},
 
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"[b3]Raichi...@ It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What was he going to say that he thought was so important?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well, whatever it was...%I wasn't going to let it bother me.","xpos":0,"ypos":0}
 	],
 	"links":[
 		129
