@@ -43,14 +43,14 @@
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hmm...? What's this?"},
-		{"type":"dialogue","text":"I hold up an garishly decorated dress that was at the bottom of the pile.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Is this... a costume?"},
+		{"type":"dialogue","text":"I pull out an frilly dress from the bottom of the pile.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Is this... %Some kind of costume?"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Oh! I haven't seen that old thing in forever!","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"That's... my old [b3]Magi-Knight@ outfit.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"That's... my old [b]Magi-Knight@ outfit.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"My sense of fashion was definitely not as good back then.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
@@ -63,12 +63,12 @@
 		{"type":"dialogue","text":"She digs into the pile.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Here it is.","xpos":30,"ypos":77},
-		{"type":"dialogue","text":"She's holding an ornately decorated wand with a crescent moon at the tip.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She's holding an ornately decorated wand with a crescent moon at the end.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"What is that?"},
 		{"type":"dialogue","character":"Mana","text":"A magical artifact.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"You're... Not a Magi-Knight. But you should still hold on to it.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You're not a [b]Magi-Knight@. But you should still hold on to it.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"Why is that?"},
 
@@ -87,7 +87,7 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"In a time of need, it'll protect me from danger by giving me strength?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This artifact... in a time of need, it'll protect me from danger by giving me strength?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I sure hope I won't be needing it anytime soon.","xpos":0,"ypos":0},
 
 		{"type":"additem","item":"wand"},

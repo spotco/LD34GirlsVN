@@ -7,12 +7,19 @@
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		
-		{"type":"dialogue","character":"Kurumi","text":"O-KAY! Now that we've cleaned up a bit, let's get on that studying!"},
-		{"type":"dialogue","character":"Kurumi","text":"Soo...Know where your books are now?"},
-		{"type":"dialogue","character":"Mana","text":"Books? Like the real thick ones? Think I threw them out with everything else just now.","xpos":0,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"[b3]OKAY@! %Now that we've cleaned up a bit..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"Why don't you grab your books and let's get to [b3]studying@!"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"Well... %About that...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I looked everywhere and I seriously couldn't find them.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"So must have left them back at school or something. [b3]Oops@!","xpos":30,"ypos":77},
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"..."}
 	],
 	"links":[
 		38
