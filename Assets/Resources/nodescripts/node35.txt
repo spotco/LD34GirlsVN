@@ -1,36 +1,67 @@
 {
 	"id":35,
-	"title":"A Heroic Home",
+	"title":"A Hero's Home",
 	"background":"bg_apartment",
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_city"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan, you know we've got a test tomorrow, right? We should probably study!"},
-		{"type":"dialogue","character":"Mana","text":"Study...? Well, I guess it couldn't hurt. But only if you let me copy your homework again!","xpos":0,"ypos":77},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"Mana... You know we've got a test tomorrow, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"We've gotta study!"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"A test? I don't remember anything in class about any test.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"Of course you don't! %You hardly pay any attention at all."},
+		{"type":"dialogue","character":"Mana","text":"Well... %That isn't necessarily...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"And besides, if you keep failing you'll get in trouble."},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"You wouldn't want that, would you?"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I guess you do have a point.%It couldn't hurt.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"But you've gotta let me copy your homework. Totally forgot all about it again!","xpos":30,"ypos":77},
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"But then you'll never learn anything!"},
-		{"type":"dialogue","character":"Mana","text":"Alright, alright. Let me pick up my books, they're back at my place. It's real close.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"You'll never learn anything if you keep doing that."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"Alright, alright! I'll study.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I left my books back at home, though.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Well... %Let's go!"},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"Thinking about it, this was my first time ever going to Mana-chan's home. What is it like, I wonder?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"Alright, it's up here.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"It's been a while since I've been back, sleeping over at your place so much.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Now, where's that key?","xpos":0,"ypos":77},
-		{"type":"dialogue", "text":"*Click*","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"We walked over.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"This was my first time ever going to Mana's home.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"What was it like, I wondered?","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black_dark"},
+		{"type":"dialogue","character":"Mana","text":"Okay, it's right around here.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I'm gonna warn you, it's nowhere near as clean as you keep your place.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Now... %Where's that key?","xpos":30,"ypos":77},
+		{"type":"playSFX", "sfx":"phone_unlock"},
+		{"type":"dialogue", "text":"[b2]*Click*@","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"Uwaaaaaaa!! It's so messy!"},
-		{"type":"dialogue", "text":"It was like one of those Hikikomori rooms I've seen on the internet...","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"There was trash and dirty laundry EVERYWHERE!","xpos":0,"ypos":0}
+		{"type":"dialogue", "text":"It was a small, single room apartment.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There was trash, dirty dishes and laundry scattered about everywhere.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I-it's so messy!"},
+		{"type":"dialogue","character":"Kurumi","text":"How can you live like this?"},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 	],
 	"links":[
 		129,37,38

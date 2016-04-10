@@ -7,35 +7,93 @@
 	"event":[
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		
-		{"type":"dialogue","character":"Kurumi","text":"Okay Mana-chan. It's intervention time. We NEED to fix this place up."},
-		{"type":"dialogue","character":"Mana","text":"Fix it up? I know the shower's broken but I wasn't going to--","xpos":0,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"Okay, Mana. It's intervention time. We [b3]NEED@ to fix this place up."},
+		{"type":"dialogue","character":"Mana","text":"Fix it up? Nothing's broken as far as I can remember...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"By fix up I mean CLEAN, Mana-chan! I can't have you living in this filth!"},
+		{"type":"dialogue","character":"Kurumi","text":"By fix up I mean [b3]CLEAN@, Mana! You really can't go on living like this!"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Filth? Well, some of this stuff has sentimental value to me I'll have you know.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Clean? I know it's a bit messy but everything's right where I want it...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"I'll help, so it'll be fun! Cleaning is FUN!"},
-		{"type":"dialogue","character":"Mana","text":"Cleaning is definitely NOT fun. And as a Magi Magical Knight I definitely DON'T have time to do it!","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"It's really calming. You can't expect to get good rest when your apartment is this messy!"},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
-		{"type":"dialogue","character":"Kurumi","text":"It's important for a Hero to maintain a Happy Home Life!"},
+		{"type":"dialogue","character":"Kurumi","text":"I'll help, so it'll be [b3]fun@! Cleaning can be lots of [b3]fun@, you know!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Happy...Home...Life? I swear you just make things up sometimes.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Cleaning is definitely [b3]NOT@ fun.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"It's actually really calming. It helps me focus."},
+		{"type":"dialogue","character":"Mana","text":"I don't have time for this.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"How do you think we're gonna study if you can't even find your books here?"},
+		{"type":"dialogue","character":"Mana","text":"Studying was all your idea, anyway...","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_shock"},
-		{"type":"dialogue","character":"Mana","text":"OKAY, OKAY! I'll help you clean up. Just don't look at me like that...","xpos":0,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"Okay, Okay! I'll help you clean up. Just don't look at me like that...","xpos":0,"ypos":77},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"It takes a good hour and half but we finally manage to get her apartment in a reasonable shape.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I find something that looks valuable under a pile of laundry.","xpos":0,"ypos":0},
-		{"type":"additem","item":"sceptre"}
+
+		{"type":"dialogue","text":"Mana gathers up all the garbage, while I wash the dirty dishes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Afterwards, we start folding up all the laundry scattered about.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_apartment"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Hmm...? What's this?"},
+		{"type":"dialogue","text":"I hold up an garishly decorated dress that was at the bottom of the pile.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Is this... a costume?"},
+
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Oh! I haven't seen that old thing in forever!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"That's... my old [b3]Magi-Knight@ outfit.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"My sense of fashion was definitely not as good back then.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"I've got some other ones around here if you wanna see them!","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"Well... Maybe later."},
+
+		{"type":"dialogue","character":"Mana","text":"That reminds me... There's something you should have.","xpos":30,"ypos":77},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"She digs into the pile.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Here it is.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"She's holding an ornately decorated wand with a crescent moon at the tip.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"What is that?"},
+		{"type":"dialogue","character":"Mana","text":"A magical artifact.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"You're... Not a Magi-Knight. But you should still hold on to it.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"Why is that?"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","character":"Mana","text":"There's a lot of danger out there.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Use it in a time of need. %It'll give you strength.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"And besides...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Isn't it pretty? I used to carry it around everywhere...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"But it doesn't really go well with my current outfit anymore. Don't you agree?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"...I guess."},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"In a time of need, it'll protect me from danger by giving me strength?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I sure hope I won't be needing it anytime soon.","xpos":0,"ypos":0},
+
+		{"type":"additem","item":"wand"},
+
+		{"type":"dialogue","text":"I stuff the wand in my bag as I finish folding the rest of the laundry.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It took some time, but her apartment is looking much cleaner now.","xpos":0,"ypos":0}
 	],
 	"links":[
 		35,40,41

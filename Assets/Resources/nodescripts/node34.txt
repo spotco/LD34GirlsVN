@@ -3,21 +3,21 @@
 	"title":"Power Up!",
 	"background":"bg_city_late",
 	"music":"epic",
-	"requirementitem":["sceptre"],
+	"requirementitem":["wand"],
 	"event":[
 		{"type":"dialogue", "text":"I suddenly remember the [b]wand@ that Mana gave me earlier.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Use in a time of desperate need... Isn't that what she said?"},
+		{"type":"dialogue","character":"Kurumi","text":"Use in a time of need... Isn't that what she said?"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue", "text":"Would right now count?","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"Only one way to be sure.%I grab it out of my bag and show it to her.","xpos":0,"ypos":0},
-		{"type":"removeitem","item":"sceptre"},
+		{"type":"removeitem","item":"wand"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"Mana, you think I should use this?"},
+		{"type":"dialogue","character":"Kurumi","text":"Mana, you think we should use this?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"The wand!","xpos":30,"ypos":77},
 
@@ -70,27 +70,76 @@
 		{"type":"dialogue", "text":"I didn't quite know what an ultimate transform was...","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"But I could tell something was different.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"She seemed more beautiful, more elegant and so much more powerful...","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"But at the same time... uncontrollable. Dangerous.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"But at the same time... uncontrollable.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Simone","text":"H-h-how is this possible? [b3]Kashiwagi@-senpai said there was no way..."},
 		{"type":"dialogue", "text":"Mana raises her sword. She's about to attack.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"[b]Ultimate@... %[b]Goddess Sword@...","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Simone"},
-		{"type":"dialogue","character":"Simone","text":"W-w-waaaaaaaa~! Help~~!"},
+		{"type":"dialogue","character":"Simone","text":"[b3]W-w-waaaaaaaa~! Help~~!@"},
 
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"camerashake", "length":"long"},
-		{"type":"dialogue","character":"Mana","text":"[b]BUSTER@!!!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b]MEGA BUSTER@!!!","xpos":30,"ypos":77},
 
 		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"playBGM","bgm":"none"},
+		{"type":"playSFX", "sfx":"destroy"},
+		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue", "text":"A powerful shockwave shoves me back, knocking me unconscious.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 
-		{"type":"additem","item":"fan video"}
+		{"type":"playBGM","bgm":"daily"},
+		{"type":"changebackground","background":"bg_city_late"},
+		{"type":"dialogue", "text":"I open my eyes.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Mana's kneeling beside me.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Kurumi! You're awake!","xpos":30,"ypos":70},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue", "text":"I slowly get up and rub my head. I'm feeling completely sore.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Mmmph@... %What happened...?"},
+		{"type":"dialogue","character":"Mana","text":"You missed it!%The best part!","xpos":30,"ypos":70},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[b3]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I don't think she's gonna try messing with us again any time soon.","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue", "text":"I look around. This entire city block is in ruins.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Buildings around us have all been reduced to rubble.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There's no sign of anyone around. What happened to Simone and all her fans?","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Kurumi","text":"W-what happened here?!"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
+		{"type":"dialogue","character":"Mana","text":"Uh...","xpos":30,"ypos":70},
+		{"type":"dialogue", "text":"She looks around.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"I guess I overdid it a little...%Didn't I?","xpos":30,"ypos":70},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue", "text":"#Overdid it a little#? %That would be one way to put it. ","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","character":"Mana","text":"The power of the [b]ultimate transform@...","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"I don't think I even knew my own strength back there.","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"[b3]Anyway@... Let's get out of here before the military shows up.","xpos":30,"ypos":70},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue", "text":"We leave without running into any trouble.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"dialogue", "text":"By the time I get home, it's everywhere on the news.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Another city block destroyed, and two mysterious figures fighting each other.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There's a recorded video of the fight being played almost non-stop.","xpos":0,"ypos":0},
+
+		{"type":"additem","item":"fight video"}
 	],
 	"links":[
 		30

@@ -5,14 +5,18 @@
 	"music":"normal_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		
-		{"type":"dialogue","character":"Mana","text":"Let me grab those books.","xpos":0,"ypos":77},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"I'll... Grab those books.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"I could have sworn I just put them here two weeks ago...or was it over there?","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Hold on, give me a second!","xpos":0,"ypos":77}
+		{"type":"dialogue", "text":"She digs through a pile of garbage in the corner.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Mana","text":"I could have sworn I put them here a few days ago...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Or did I leave them back at school...?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Hold on... They might be under my bed.","xpos":30,"ypos":77},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."}
 	],
 	"links":[
 		35
