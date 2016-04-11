@@ -1,59 +1,83 @@
 {
 	"id":43,
-	"title":"A Certain Video",
+	"title":"Trouble",
 	"background":"bg_school_hallway",
 	"music":"daily",
-	"requirementitem":["fan video"],
+	"requirementitem":["fight video"],
 	"event":[
-		
+		{"type":"changebackground","background":"bg_city"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"changebackground","background":"bg_city"},
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan...you know what we should do?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... You know what we should check out?"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Mmm...?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Mmm@...?","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"She looks up from her phone.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She's been on it a whole lot more recently too...Something new?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She's been on it a whole lot more recently...%Is she messaging someone?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"WE should totally join a club or something!"},
-		{"type":"dialogue","character":"Kurumi","text":"I heard there were a couple of interesting clubs going on after school today..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]WE@ should totally go check out some clubs!"},
+		{"type":"dialogue","character":"Kurumi","text":"Apparently there's gonna be some cool stuff going on after school..."},
 
-		{"type":"dialogue","character":"Mana","text":"Mmmhmm...","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"She's back on it, messaging away.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"[b3]Mmhmm@...","xpos":30,"ypos":77},
+		{"type":"playSFX", "sfx":"phone_buzz"},
+		{"type":"dialogue","text":"Her phone buzzes and she looks back down.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"...like Manga Club, Art Club, and they even have a Tea Ceremony Club..."},
+		{"type":"dialogue","character":"Kurumi","text":"I heard the school festival is coming up and they're having a planning meeting..."},
 		{"type":"dialogue","text":"She hasn't glanced away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"MANA! Are you even listening?"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]MANA@! Are you even listening?"},
 		{"type":"dialogue","text":"She looks up.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"...Listen, Kuru. I'm gonna be a little busy tonight, okay? We can do your club stuff tomorrow.","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"Busy? This was a first.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"...Listen, Kurumi. I'm gonna be a little busy this afternoon, okay?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"We can do your club stuff or whatever some other time.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"Busy? This was unexpected...","xpos":0,"ypos":0},
+
+		{"type":"playSFX", "sfx":"phone_buzz"},
+		{"type":"dialogue","text":"Her phone buzzes again.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Sorry...I...I gotta get ready! I gotta go! Sorry!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Sorry... I... %I actually gotta go get ready!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I gotta go! Sorry!","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"She was acting a little odd. Suspicious.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Why was she apologizing so much...?"},
+		{"type":"dialogue","text":"She leaves in a rush.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"Why was she in such a hurry? %...Odd."},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Since I had some free time I decided to head back to school to check these clubs out.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Since I had some free time, %I decided to head back to school.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"dialogue","text":"Manga club was suuuuper cool! I didn't know there were so many people here that read the same stuff!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm totally gonna come back next week, and I'll bring Mana-chan and everything!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stopped by the festival planning committee's meeting. It was actually super cool!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We had our own festivals back in the small town I came from...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But they were nothing compared to what they were gonna do here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm definitely gonna go. %I hope can Mana come too!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"As I'm leaving I see a familiar face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I leave, I see a familiar face outside.","xpos":0,"ypos":0},
+
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"I see you're staying late.","xpos":0,"ypos":77},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Kashiwagi-san."},
-		{"type":"dialogue","character":"Raichi","text":"There was something I've been meaning to ask you.","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"He pulls out his phone, and shows it to me.","xpos":0,"ypos":0},
-		{"type":"removeitem","item":"fan video"},
-		{"type":"dialogue","text":"It's the fan video of Mana-chan beating Simone!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"This look familiar to you at all?","xpos":0,"ypos":77}
+		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@. I've been looking for you.","xpos":30,"ypos":77},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@? Haven't seen you around recently."},
+
+		{"type":"dialogue","character":"Raichi","text":"There's something I need to know.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"He pulls out his phone, and shows me a video.","xpos":0,"ypos":0},
+		{"type":"removeitem","item":"fight video"},
+
+		{"type":"dialogue","text":"It's... the video of the fight between Mana and Simone that's been on the news!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I know you were there.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Raichi","text":"Tell me, was this an... %[b]Ultimate Transformation@?","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]U-ultimate@...?"},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"If that [b3]IS@ the case, this situation's gotten far worse than I thought.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"How was she able to do this, Kurumi? It shouldn't have been possible.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
 	],
 	"links":[44,45]
 }

@@ -1,50 +1,72 @@
 {
 	"id":45,
-	"title":"Deny",
+	"title":"Stop Him",
 	"background":"bg_school_hallway",
 	"music":"worry",
 	"requirementitem":[],
 	"event":[
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"I do my best to lie.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"I...I-I've never seen that in my life!"},
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Don't lie to me!","xpos":0,"ypos":77},
-		
-		{"type":"dialogue","text":"He fast-forwards the video.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"That's me! I'm in the crowd cheering Mana-chan on!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... %I couldn't say how I was so sure about it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I knew he was bad.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Somehow@... %He was going to hurt Mana.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know if I could stop him. But I was going to do whatever I can.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"This is you, is it not?","xpos":0,"ypos":77},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
-		{"type":"dialogue","character":"Kurumi","text":"I..."},
-		{"type":"dialogue","text":"What was he trying to get at?","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %I don't know what you are... %Or what you plan to do..."},
+		{"type":"dialogue","character":"Kurumi","text":"But I'm not going to let you do it."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you harm Mana."},
 
-		{"type":"dialogue","character":"Raichi","text":"This video was recorded two days ago at exactly 1:35 PM.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"At that time, both you and Ms. Ichijou were absent from class.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"You were in the city, weren't you?","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"..."},
-		{"type":"dialogue","character":"Raichi","text":"What do you think you're doing?","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"I..."},
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
-		{"type":"dialogue","character":"Raichi","text":"Tell me, Ms. Motoyama.","xpos":0,"ypos":77},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"We were just -- I mean...! No!"},
-
-		{"type":"dialogue","text":"I remember that this whole superhero deal was meant to be our secret.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
-		{"type":"dialogue","text":"But it was too late. I stifle tears welling in my eyes.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"Raichi seems tinged with frustration, but then...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He folds his phone and composes himself again.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He puts his phone away and turns around.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I see. I... Should have seen this before.","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"He leaves without another word.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"dialogue","text":"He sighs as he takes off and polishes his glasses.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I can understand why you try and defend her like this.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"What was going on? And what is he planning to do?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan...Please be careful."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","text":"Putting them back on, he smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... You think she's your friend, don't you?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"If only you knew the truth behind these so called #[b]Magi-Knights@#.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"The truth?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"I'll tell you this. %They're not heroes.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
+		{"type":"dialogue","character":"Raichi","text":"It's a twisted and delusional fantasy that they exist in.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Your presence here has caused hers to grow out of control.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
+		{"type":"dialogue","character":"Raichi","text":"I've warned you before, but this will be the last time.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Stay away from her. %If you don't...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I can't guarantee what will happen.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"I... didn't know what to say.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","text":"Raichi smiles. He's suddenly back to his usual self.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Raichi","text":"So I hope you listen this time, okay?","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Raichi","text":"I've got someone to meet. %I'll see you around.","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"dialogue","text":"He leaves.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"There was so much that I didn't know.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What he was saying... %Was it true?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What did he mean when he said that it was all a delusional fantasy?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know who I could trust anymore.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
+		{"type":"dialogue","character":"Kurumi","text":"What exactly is going on?"},
+		{"type":"dialogue","text":"Only one thing was certain to me, however.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Mana@... %She was my friend. I was going to help her however I could.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... %Please be alright..."},
+
 		{"type":"addaffinity"}
 	],
 	"links":[47]
