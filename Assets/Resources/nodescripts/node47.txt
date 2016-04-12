@@ -5,67 +5,106 @@
 	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I go to the tea shop, our favorite hangout spot.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Since Mana-chan said she was busy tonight, I walk over by myself.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I get close, I see two familiar faces inside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I went to the tea shop, our usual hangout spot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, since Mana was busy today...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was just going to be me by myself this time. %Or so I thought.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Is that..."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"From the outside, I saw two familiar faces.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's Mana-chan... and... Raichi? Sitting at the same table?!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was [b]Mana@ and [b]Raichi@... %[b3]AND@ at the same table?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"She's blushing heavily.","xpos":0,"ypos":0},
-		{"type":"movecharacter","character":"Raichi","xto":100},
-		{"type":"dialogue","text":"Raichi leans in close and whispers something in her ear.","xpos":0,"ypos":0},
-		{"type":"movecharacter","character":"Mana","xto":-320},
-		{"type":"dialogue","text":"Hearing whatever he just said, she looks completely taken aback.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"................................?"},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"..............................!","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"They were having quite a lively conversation, or so it seemed.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
+		{"type":"dialogue","text":"Raichi suddenly pauses and mentions something to her.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
-		{"type":"dialogue","text":"Raichi stands up, says a few last words...and leaves.","xpos":0,"ypos":0},
+		{"type":"camerashake", "length":"short"},
+		{"type":"movecharacter","character":"Mana","xto":-320},
+		{"type":"dialogue","text":"Her cheeks blushing bright pink, Mana looks completely taken aback.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What could he have possibly said?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
+		{"type":"dialogue","text":"He then smiles and laughs.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
+		{"type":"dialogue","text":"Mana does so too, though she's still blushing pretty hard.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"He then grabs his bag and stands up. It looks like he's about to leave.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I quickly duck back around the corner to make sure he doesn't see me.","xpos":0,"ypos":0},
 
+		{"type":"changebackground","background":"bg_city_late"},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"What could that have been about?"},
+
+		{"type":"dialogue","text":"I have to find out.","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"With the coast clear, I make my way inside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana's still at her table. I take a seat right across from her.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"Mana... [b3]Hey@! Sure didn't expect to see you here."},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I go inside and sit down beside her.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Kurumi","text":"Was that...Raichi that I just saw you talking with? What was that all about?"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof","xscale":-1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"...Was that [b3]Raichi@ I just saw leaving? What was he doing here?"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This was suspicious. I was going to warn her.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But I could have never expected what came next.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","text":"Suspicious. %I couldn't ignore what he had told me... %I had to warn her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]But@... %What came next took me by complete surprise.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Listen, Kuru. I've got a lot to explain.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Kashiwagi-senpai...You know, he's been helping me out recently.","xpos":0,"ypos":77},
-		
-		{"type":"dialogue","text":"Helping..?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi. I've got something I gotta tell you.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"You know all those bad things I told you about [b3]Raichi@ when we first met?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I take them all back. %He's actually a really nice guy.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","character":"Mana","text":"After that time you tried to help me do homework I...","xpos":0,"ypos":77},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"...I realized I needed to get my studies back in order. So I asked him to tutor me.","xpos":0,"ypos":77},
+		{"type":"dialogue","text":"A... really nice guy?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"That's good--"},
+		{"type":"dialogue","character":"Mana","text":"After I failed that test that we didn't study for...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"...I realized I needed to take everything more seriously. So I asked him to tutor me.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","character":"Mana","text":"--I was going to return his books to him today when he just...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"...just?"},
-		{"type":"dialogue","character":"Mana","text":"He just asked me to go to the Summer Festival with him.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Well, that's [b3]good--@"},
+
+		{"type":"dialogue","character":"Mana","text":"So we started meeting. Every afternoon. %And you know what? %I enjoyed it.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"There's something special about him.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I feel drawn to him. %Could it possibly be...?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
 
-		{"type":"dialogue","character":"Kurumi","text":"Now listen, Mana-chan, you know..."},
-		{"type":"dialogue","text":"The questions...the warnings...him knowing...and now this?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This was extremely suspicious. I was going to tell her not to--","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Well, he apparently felt the same way because he just asked me to the %[b]Summer Festival@.","xpos":30,"ypos":77},
 
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy","xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"I'm soooooo happy right now! I mean like, summer festival with an older classmate and all!","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Like, what should I wear? I don't even have a yukata or anything! You gotta help me pick one out!","xpos":0,"ypos":77},
-		
-		{"type":"dialogue","character":"Kurumi","text":"Don't--"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"Don't what?","xpos":0,"ypos":77},
+		{"type":"camerashake", "length":"short"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Wha...?!"},
 
-		{"type":"dialogue","text":"I knew something was suspicious. But she was so happy right now... could I bring myself to tell her?","xpos":0,"ypos":0}
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"I know, right? I was totally caught off guard too!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Like, what should I wear? %I don't even think I have a [b]yukata@! You gotta help me pick one out!","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"Everything that had happened... %The danger she was in...","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Don't--@"},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Don't... what?","xpos":0,"ypos":77},
+
+		{"type":"dialogue","text":"She had no idea. %This couldn't end well.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... %Could I bring myself to tell her?","xpos":0,"ypos":0}
 	],
 	"links":[48,51]
 }

@@ -42,7 +42,13 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO--
+	
 	script edits
+	
+	raichi not tryhard philosophy club (more silly)
+	raichi conv2 changes
+	raichi 1on1 talk changes 
+	
 	SPAnalytics
 	save/load implementation
 	end to title UIs
@@ -51,7 +57,7 @@ public class GameMain : MonoBehaviour {
 	
 	MANA child photo
 	
-	sfx load all
+	sfx load all at start
 	*/
 	
 	public void Start () {
