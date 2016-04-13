@@ -11,7 +11,7 @@ public class GameMain : MonoBehaviour {
 	public FileCache _file_cache;
 	public SPTextRenderManager _sptext;
 	
-	public static int AFFINITY_REQUIREMENT = 7;
+	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
@@ -43,13 +43,34 @@ public class GameMain : MonoBehaviour {
 	/*
 	TODO--
 	
-	script edits
+	==script edit==
 	
-	raichi not tryhard philosophy club (more silly)
-	raichi conv2 changes
-	raichi 1on1 talk changes 
+	bad route
+		focus on mana
+		since met kurumi more reflective
+		why like raichi
+		give up being a hero
+		summer festival
+		not satisfied? try good route
+	
+	good route:
+		on the roof raichi tells the truth (I guess I owe you an explanation)
+		the magi knights, delusional fantasy
+		mana's story
+			death, a deal with the devil
+			raichi: you could say I'm one of them
+		the monsters
+		using your power
+		still call her your friend?
+		summer festival
+	
+	raichi ch2 begin, ch3 begin mention mana dangerous, uncontrollable (less stop hanging out)
+	raichi conv2 changes - mana troublemaker and delinquent
+	raichi not tryhard philosophy club (more silly), maybe a sport
+	raichi 1on1 talk changes (lighten it up)
 	
 	SPAnalytics
+	title UIs
 	save/load implementation
 	end to title UIs
 	credits
