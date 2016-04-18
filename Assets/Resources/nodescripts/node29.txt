@@ -11,8 +11,8 @@
 		{"type":"dialogue","text":"I began to have doubts.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"I... I don't even know what's going on myself."},
-		{"type":"dialogue","character":"Kurumi","text":"It's all been so crazy... Nothing makes any sense."},
-		{"type":"dialogue","text":"Could I tell him what was going on?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Everything she's been dragging me into... %It's all been so crazy. %Nothing makes any sense."},
+		{"type":"dialogue","text":"Could I tell him what was going on? Would he really understand?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"Kurumi. There's something you should know.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"It's about [b3]Mana@.","xpos":30,"ypos":77},
@@ -54,7 +54,7 @@
 		{"type":"dialogue","text":"Not to mention what the deal was with this whole [b3]superhero@ business...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told you a distant relative just died.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told your favorite restaurant just closed.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding!%Cheer up a bit.","xpos":30,"ypos":77},
@@ -62,16 +62,17 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"[b3]After@ we get lunch, of course!","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"Well... No need to dwell on it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... %I'm sure I'll know sooner or later.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"Okay. I choose the place this time."},
+		{"type":"dialogue","character":"Kurumi","text":"Alright. Ramen again?"},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"[b3]Raichi...@ It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What was he going to say that he thought was so important?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Well, whatever it was...%I wasn't going to let it bother me.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Well, whatever it was...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm sure it wouldn't have changed anything.","xpos":0,"ypos":0},
 	],
 	"links":[
 		129

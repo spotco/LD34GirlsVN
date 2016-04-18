@@ -54,7 +54,7 @@
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","text":"It seemed like he knew exactly who I was talking about.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"You must be talking about [b]Ichijou@. She never did come back, did she?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"You must be talking about [b]Ms. Ichijou@. She never did come back, did she?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"[b]Ichijou@...?","ypos":-130},
@@ -63,17 +63,17 @@
 		{"type":"dialogue","character":"Raichi","text":"Her name's [b]Manami Ichijou@,%but she usually goes by just [b]'Mana'@.","xpos":23,"ypos":45},
 		{"type":"dialogue","text":"[b]Mana@... that's her name?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"I don't think I've ever met anyone quite like her before.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I don't think I've ever seen anyone quite like her before.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Skipping class and outright ignoring the teachers...%I think it's rather disrespectful.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Don't you agree?","xpos":23,"ypos":45},
-		{"type":"dialogue","character":"Kurumi","text":"Well...","ypos":-130},
-		{"type":"dialogue","character":"Raichi","text":"Though, I'm rather curious what kind of trouble she's getting herself into.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Kurumi","text":"...","ypos":-130},
+		{"type":"dialogue","character":"Raichi","text":"Though, you must be curious what kind of trouble she's getting into, aren't you?","xpos":23,"ypos":45},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"I imagine it must be something exciting.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I imagine she must be up to no good.","xpos":23,"ypos":45},
 
-		{"type":"dialogue","text":"Exciting? I wonder what that could possibly mean.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wonder what he could have possibly meant by that.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Well, she does come back...%I hope she doesn't bother you too much, Kurumi.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"Well, she does come back...%Don't let her bother you too much, Kurumi.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":23,"ypos":45},
 		{"type":"movecharacter","character":"Raichi","xto":700},
 		{"type":"dialogue","text":"He leaves.","xpos":0,"ypos":0},

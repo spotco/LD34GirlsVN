@@ -103,7 +103,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mmmph@... %What happened...?"},
 		{"type":"dialogue","character":"Mana","text":"You missed it!%The best part!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[b3]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[b]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I don't think she's gonna try messing with us again any time soon.","xpos":30,"ypos":70},
 		{"type":"dialogue","character":"Kurumi","text":"..."},

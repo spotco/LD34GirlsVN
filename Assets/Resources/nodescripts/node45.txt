@@ -8,15 +8,15 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"[b3]Raichi@... %I couldn't say how I was so sure about it...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But I knew he was bad.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Somehow@... %He was going to hurt Mana.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I didn't know if I could stop him. But I was going to do whatever I can.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... %I couldn't exactly say how I was so sure about it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I knew he was not good.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Somehow@... %I knew he was going to hurt Mana.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know if I could stop him. But I was going to do whatever I could.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %I don't know what you are... %Or what you plan to do..."},
-		{"type":"dialogue","character":"Kurumi","text":"But I'm not going to let you do it."},
-		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you harm Mana."},
+		{"type":"dialogue","character":"Kurumi","text":"But I'm not going to let you %do it."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you hurt Mana."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","text":"He sighs as he takes off and polishes his glasses.","xpos":0,"ypos":0},
@@ -33,7 +33,7 @@
 		{"type":"dialogue","character":"Raichi","text":"I'll tell you this. %They're not heroes.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
 		{"type":"dialogue","character":"Raichi","text":"It's a twisted and delusional fantasy that they exist in.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"Your presence here has caused hers to grow out of control.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Your presence here has caused her to grow out of control.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},

@@ -68,13 +68,13 @@
 		{"type":"dialogue","character":"Kurumi","text":"What is that?"},
 		{"type":"dialogue","character":"Mana","text":"A magical artifact.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"You're not a [b]Magi-Knight@. But you should still hold on to it.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You're not a [b]Magi-Knight@. But I think you should still hold on to it.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"Why is that?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"There's a lot of danger out there.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Use it in a time of need. %It'll give you strength.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Use it in a time of need. %It'll be a source of power.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
@@ -87,7 +87,7 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"This artifact... in a time of need, it'll protect me from danger by giving me strength?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This artifact... in a time of danger, it'll protect me by granting power?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I sure hope I won't be needing it anytime soon.","xpos":0,"ypos":0},
 
 		{"type":"additem","item":"wand"},

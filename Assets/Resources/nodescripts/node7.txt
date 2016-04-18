@@ -2,13 +2,13 @@
 	"id":7,
 	"title":"The Lost Phone",
 	"background":"bg_school_classroom",
-	"music":"happy_end",
+	"music":"daily",
 	"requirementitem":["phone"],
 	"event":[
 		{"type":"removeitem","item":"phone"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom. What should I do with it?"},
+		{"type":"dialogue","character":"Kurumi","text":"I found this phone in the bathroom. You happen to know what I should do with it?"},
 		{"type":"dialogue","text":"I hold it up for him to see.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
@@ -25,7 +25,7 @@
 		{"type":"dialogue","text":"I follow him out of the classroom.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"While walking down the hall we start chatting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As we head down the hallway, he asks me something.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
@@ -39,36 +39,39 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"And the school there was much smaller. Everyone around knew everyone else."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"Sounds like a wonderful place to be.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Sounds like a wonderful place.","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"Yep! I'll sure miss it. So how about you?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Me? Well...","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"He pauses for a second.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"A couple of different places. None of which for too long.","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"He pauses for a moment.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Many different places. Haven't stayed anywhere for too long.","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"So you've had to move... several times?"},
 
 		{"type":"dialogue","character":"Raichi","text":"You could say that.","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Kurumi","text":"That's so horrible! I'm sorry."},
+
+		{"type":"dialogue","character":"Kurumi","text":"That's horrible! I'm so sorry."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"Don't be. You get used to it.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Don't be. I'm used to it.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"And besides... I find this place very unique.","xpos":22,"ypos":53},
+
+		{"type":"dialogue","character":"Raichi","text":"We're all here for a reason, you know.","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"What do you mean?"},
 
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+
 		{"type":"dialogue","character":"Raichi","text":"Well...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","character":"Raichi","text":"I've been searching for something. Something very important.","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"I came here to look for someone.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"I've got a good feeling that%I might find it here.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Don't think I've found them yet, but I'm sure I'll see them soon enough.","xpos":22,"ypos":53},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"I wasn't exactly sure what he meant.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... I'm sure we all have our secrets. I didn't pry any deeper.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Looking for someone? Was this a relative or something like that?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... I'm sure we all have our personal matters. I didn't pry any deeper.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
@@ -77,7 +80,7 @@
 		{"type":"dialogue","text":"Would it have been better to just return it directly?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I just hope the owner knows to check here for it.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"Raichi returns back to the classroom. However, there's still a half hour left for lunch.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi returns back to the classroom. However, there's still quite a bit of time left for lunch.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?"}
 	],

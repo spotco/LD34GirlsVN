@@ -34,7 +34,7 @@
 
 		{"type":"dialogue","character":"Mana","text":"Something suspicious is going on here...","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"Or I might just be forgetting something.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Or I might have just forgotten about it.","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"Either way sounds like fun! Wanna go check it out?","xpos":0,"ypos":77},
 

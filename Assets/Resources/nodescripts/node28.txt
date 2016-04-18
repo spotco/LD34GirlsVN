@@ -11,19 +11,18 @@
 
 		{"type":"dialogue","text":"Something wasn't right.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I remember what Mana had told me. It was our secret, and nobody else could know.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I know there must be a good reason for all of this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I know there must be a good reason behind all of this.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I... I don't know what you're talking about here."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"Kurumi. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"...I don't understand?"},
 
-		{"type":"dialogue","character":"Raichi","text":"It's [b3]Mana@.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"She's not someone you want to be around.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... She's not someone you should be around.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"W-what do you mean...?"},
-		{"type":"dialogue","character":"Raichi","text":"You have to forget about her.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"You should have never met her. This is for your own good.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Her problems... %You shouldn't be getting involved. It's for your own good.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"You have to forget about her. %You both should have never met.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"I should have never met her?%I can't help but start to feel upset.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"This was my friend he was talking about here. What gave him the right to say this?","xpos":0,"ypos":0},
@@ -32,7 +31,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"No... [b3]YOU@ listen. I don't think [b3]YOU@ understand."},
 		{"type":"dialogue","character":"Kurumi","text":"I don't know why you're being so nosy here. This is none of [b3]YOUR@ business."},
 
-		{"type":"dialogue","character":"Raichi","text":"I apologize if I was being too frank, but if you only understood...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I apologize if I'm being rude, but if you only understood...","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"I don't even want to hear it right now."},
 		{"type":"dialogue","character":"Raichi","text":"...","xpos":30,"ypos":77},
@@ -55,7 +54,7 @@
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"Raichi suddenly smiles.%What's with this change in attitude?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi suddenly smiles. %What's with this change in attitude?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"We'll continue this another time. I'll see you around.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"dialogue","text":"As he leaves, he exchanges a friendly greeting with Mana. They seem to be on good terms.","xpos":0,"ypos":0},
@@ -78,7 +77,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told you a distant relative just died.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told your cat just died.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding!%Cheer up a bit.","xpos":30,"ypos":77},
@@ -86,7 +85,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"[b3]After@ we get lunch, of course!","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"Well... No need to dwell on it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... %No need to dwell on it.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Okay. I choose the place this time."},
 
@@ -94,7 +93,7 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"[b3]Raichi...@ It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What did he mean when he said I should have never met Mana?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Well, whatever it was...%I wasn't going to let it bother me.","xpos":0,"ypos":0},
 

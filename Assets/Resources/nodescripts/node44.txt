@@ -10,6 +10,7 @@
 
 		{"type":"dialogue","text":"What if he was right? %I didn't know what I was dealing with here.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"After seeing all of that destruction... I was afraid.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Was I in over my head here with everything that was going on?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I don't know what happened..."},
@@ -28,7 +29,7 @@
 
 		{"type":"dialogue","character":"Raichi","text":"I will say though...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"She sure did give Simone quite a surprise there with that trick.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She sure did give [b]Simone@ quite a surprise there with that trick.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"She won't even show her face in public anymore after getting humiliated like that!","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},

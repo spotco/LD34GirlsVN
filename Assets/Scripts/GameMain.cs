@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 47;
+	public static int NODE_START_INDEX = 51;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -63,11 +63,6 @@ public class GameMain : MonoBehaviour {
 		using your power
 		still call her your friend?
 		summer festival
-	
-	raichi ch2 begin, ch3 begin mention mana dangerous, uncontrollable (less stop hanging out)
-	raichi conv2 changes - mana troublemaker and delinquent
-	raichi not tryhard philosophy club (more silly), maybe a sport
-	raichi 1on1 talk changes (lighten it up)
 	
 	SPAnalytics
 	title UIs

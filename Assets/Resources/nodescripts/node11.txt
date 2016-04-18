@@ -8,7 +8,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"As we passed by a local pastry shop, Mana stopped dead in her tracks.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana stopped suddenly as we passed by a pastry shop.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","text":"Her eyes sparkle and she turns to me excitedly.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Kurumi. Been here before? You've [b3]GOT@ to try one of these. They're totally the best ever!","xpos":22,"ypos":53},

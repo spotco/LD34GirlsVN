@@ -9,7 +9,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
 		{"type":"removeitem","item":"Her Name"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy!@ [b]Mana!!@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
@@ -51,11 +51,11 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
 		{"type":"dialogue","character":"Mana","text":"[b3]Sooo@... %You from around here, or what?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"Well actually..."},
-		{"type":"dialogue","character":"Kurumi","text":"I've never been to the city before. Wanted to explore a bit."},
+		{"type":"dialogue","character":"Kurumi","text":"I've never been to this city before. Wanted to check it out."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Never been to this city before, huh...?","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"She looks like she's deep in thought.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"First time here, huh..?","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"She frowns, as if deep in thought.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"I've got it!","xpos":22,"ypos":53},
 
@@ -64,7 +64,7 @@
 		{"type":"movecharacter","character":"Kurumi","xto":-120},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"She then suddenly grabs my hands.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"There's this ramen place that just opened up a few blocks away.","xpos":290,"ypos":-93},
+		{"type":"dialogue","character":"Mana","text":"There's this ramen place that just opened up a few stops away that I just heard about.","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Mana","text":"You get lunch yet? 'Cuz if not, I think you'll love it. Let's go!","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Kurumi","text":"Wha...?","xpos":-267,"ypos":-148},
 
@@ -80,10 +80,11 @@
 
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"We ended up going somewhere halfway across the city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Then after that we went and got tea, and after that did a bit of shopping.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Getting to see these places around the city...%I loved it! However...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I [b3]DID@ forget about going back to class. Oops...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We ended up eating at some place halfway across the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But then after that, we got tea, did a bit of shopping...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...And I must have lost track of the time.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana showed me a bunch of her favorite spots throughout the city, and I loved it!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... I did end up skipping class as well.%Oops...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city"}
 	],

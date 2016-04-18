@@ -39,7 +39,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":470,"xscale":-1,"imm":true},
 		{"type":"dialogue","character":"Mana","text":"Now, make sure you get a good shot of me here...","xpos":30,"ypos":77},
 		{"type":"movecharacter","character":"Mana","xto":850},
-		{"type":"dialogue","character":"Mana","text":"Magical Pretty Sword... [b]BUSTER!!!@","xpos":285,"ypos":106},
+		{"type":"dialogue","character":"Mana","text":"Magical Pretty Sword... [b]BUSTER@!!!","xpos":285,"ypos":106},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -69,39 +69,37 @@
 		{"type":"dialogue","character":"Kurumi","text":"I... I just slept through class, didn't I?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"You did. And I'm surprised.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"You did. %I'm surprised.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Why is that?"},
 		{"type":"dialogue","character":"Raichi","text":"At first impression, you seemed like such a good student. However...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"You've missed a lot of class recently.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"What's going on? This is rather unexpected of you.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"You've been missing a lot of class recently.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"What's going on? This is rather unexpected from you.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"I guess it hasn't really been my highest priority lately.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"I... I can explain..."},
 
-		{"type":"dialogue","character":"Raichi","text":"I already know. It's [b3]Mana@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I think I already know. %It's [b3]Mana@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I see you two together all the time.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
-		{"type":"dialogue","character":"Raichi","text":"She's getting you into trouble, isn't she?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She's dragging you into her trouble, isn't she?","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"Listen, Kurumi... %This is important.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"This may not seem serious to you at all. You might even think this is some sort of game.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"While I'm happy you two have become friends, there are certain things you should not get involved with.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"This may not seem serious to you at all. It might even seem like a game.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
 		{"type":"dialogue","character":"Raichi","text":"But I can assure you...%It's not.","xpos":30,"ypos":77},
 
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"I want to help you, Kurumi. Before you get hurt.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"So why don't you tell me what's going on?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"So why don't you tell me exactly what's going on?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"He seemed serious. But... What could he really know?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I thought about his advice.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"There's a whole lot that I didn't know either.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I thought about his advice. There was a whole lot that I didn't know.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What should I do next?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I..."}
 	],

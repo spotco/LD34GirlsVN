@@ -15,8 +15,8 @@
 		{"type":"dialogue","text":"She's been on it a whole lot more recently...%Is she messaging someone?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]WE@ should totally go check out some clubs!"},
-		{"type":"dialogue","character":"Kurumi","text":"Apparently there's gonna be some cool stuff going on after school..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]WE@ should totally go check out some after-school clubs!"},
+		{"type":"dialogue","character":"Kurumi","text":"Apparently there's gonna be some cool stuff going on..."},
 
 		{"type":"dialogue","character":"Mana","text":"[b3]Mmhmm@...","xpos":30,"ypos":77},
 		{"type":"playSFX", "sfx":"phone_buzz"},
@@ -30,7 +30,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]MANA@! Are you even listening?"},
 		{"type":"dialogue","text":"She looks up.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...Listen, Kurumi. I'm gonna be a little busy this afternoon, okay?","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"We can do your club stuff or whatever some other time.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"We can do your club stuff %or whatever some other time.","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"Busy? This was unexpected...","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"phone_buzz"},
@@ -47,10 +47,10 @@
 		{"type":"dialogue","text":"Since I had some free time, %I decided to head back to school.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"dialogue","text":"I stopped by the festival planning committee's meeting. It was actually super cool!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stopped by the festival planning committee's meeting. It was actually super interesting!","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"We had our own festivals back in the small town I came from...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But they were nothing compared to what they were gonna do here.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm definitely gonna go. %I hope can Mana come too!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But they were nothing compared to what they were organizing here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm definitely planning to go. %I hope can Mana come too!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"As I leave, I see a familiar face outside.","xpos":0,"ypos":0},
