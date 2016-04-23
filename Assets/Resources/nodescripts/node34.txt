@@ -5,7 +5,7 @@
 	"music":"epic",
 	"requirementitem":["wand"],
 	"event":[
-		{"type":"dialogue", "text":"I suddenly remembered the [b]wand@ that Mana gave me earlier.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I suddenly remembered the [b]wand@ that Mana had given me earlier.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Use in a time of need... %Isn't that what this was for?"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -115,7 +115,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Kurumi! You're awake!","xpos":30,"ypos":70},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue", "text":"My entire body felt weak, but I managed to slowly get up.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I slowly managed to get up.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mmmph@... %What happened...?"},
 		{"type":"dialogue","character":"Mana","text":"You missed it!%The best part!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
@@ -130,7 +130,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"W-what happened here?! %What did you do?!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"Uh... I...","xpos":30,"ypos":70},
-		{"type":"dialogue", "text":"She glanced away .","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"She glanced away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"I guess I overdid it a little...%Didn't I?","xpos":30,"ypos":70},
 
@@ -148,12 +148,12 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"We left without running into any trouble.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"We left without running into any more trouble.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"dialogue", "text":"By the time I got home, it was everywhere on the news.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"An entire city block destroyed, two mysterious figures seen in the area.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"There was a recorded video of the fight that was being aired almost non-stop. I couldn't keep watching.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There was a recorded video of the fight that was being aired almost non-stop. %I couldn't keep watching.","xpos":0,"ypos":0},
 
 		{"type":"additem","item":"fight video"}
 	],

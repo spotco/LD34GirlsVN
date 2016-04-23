@@ -36,8 +36,7 @@
 		{"type":"playSFX", "sfx":"phone_buzz"},
 		{"type":"dialogue","text":"Her phone buzzes again.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Sorry... I... %I actually gotta go get ready!","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I gotta go! Sorry!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Ack! I... %I actually gotta go get ready!","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"She leaves in a rush.","xpos":0,"ypos":0},
 
