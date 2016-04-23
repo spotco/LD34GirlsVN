@@ -28,20 +28,20 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
 		{"type":"camerashake", "length":"short"},
 		{"type":"movecharacter","character":"Mana","xto":-320},
-		{"type":"dialogue","text":"Her cheeks blushing bright pink, Mana looks completely taken aback.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Her cheeks blushing bright red, Mana looks completely taken aback.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What could he have possibly said?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
 		{"type":"dialogue","text":"He then smiles and laughs.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
-		{"type":"dialogue","text":"Mana does so too, though she's still blushing pretty hard.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana does so too, though she still isn't completely settled.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"He then grabs his bag and stands up. It looks like he's about to leave.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi then grabs his bag and stands up. It looks like he's about to leave.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I quickly duck back around the corner to make sure he doesn't see me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I quickly duck back around the corner to make sure I'm not seen.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
 

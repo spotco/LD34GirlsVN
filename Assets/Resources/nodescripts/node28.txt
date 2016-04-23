@@ -80,7 +80,7 @@
 		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told your cat just died.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding!%Cheer up a bit.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding! %I don't think you even have a cat. Cheer up a bit!","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I just got a bunch of alerts on my phone that we gotta check out...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"[b3]After@ we get lunch, of course!","xpos":30,"ypos":77},

@@ -23,7 +23,7 @@
 		{"type":"dialogue","text":"Her phone buzzes and she looks back down.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"I heard the school festival is coming up and they're having a planning meeting..."},
+		{"type":"dialogue","character":"Kurumi","text":"I heard the summer festival is coming up and they're having a planning meeting..."},
 		{"type":"dialogue","text":"She hasn't glanced away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"camerashake", "length":"short"},

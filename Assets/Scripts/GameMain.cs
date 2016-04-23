@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 51;
+	public static int NODE_START_INDEX = 34;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -71,6 +71,7 @@ public class GameMain : MonoBehaviour {
 	credits
 	script node positioning always on screen for mobile
 	
+	confirm all desc past tense
 	MANA child photo
 	
 	sfx load all at start

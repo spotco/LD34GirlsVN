@@ -8,34 +8,34 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"What if he was right? %I didn't know what I was dealing with here.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"After seeing all of that destruction... I was afraid.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Was I in over my head here with everything that was going on?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What if he was right? %What if I really didn't know what I was dealing with here?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"After seeing Mana's uncontrollable power and the destruction it caused... %I had to say something.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I don't know what happened..."},
-		{"type":"dialogue","character":"Kurumi","text":"I used the wand she gave me..."},
-		{"type":"dialogue","character":"Kurumi","text":"The [b]Ultimate Transform@... And then destruction... %I was scared."},
+		{"type":"dialogue","character":"Kurumi","text":"I held the wand she gave me..."},
+		{"type":"dialogue","character":"Kurumi","text":"The [b]Ultimate Transform@... %Its destructive power... %I was scared."},
 
-		{"type":"dialogue","character":"Raichi","text":"A magical artifact?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"A... magical artifact?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"She must have used your life force to bind its power...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"Don't worry, Kurumi. I'll take care of everything here.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Don't worry, Kurumi. %I'll take care of everything.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 		{"type":"dialogue","text":"...Did I do the right thing here?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"I will say though...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I will say, however...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"She sure did give [b]Simone@ quite a surprise there with that trick.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"She won't even show her face in public anymore after getting humiliated like that!","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
+		{"type":"dialogue","character":"Raichi","text":"And regarding [b3]Mana@...","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"The conversation suddenly takes a serious turn.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"He suddenly becomes serious.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"I've warned you before, but this will be the last time.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"Stay away from her. %If you don't...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"I can't guarantee what will happen.","xpos":30,"ypos":77},
