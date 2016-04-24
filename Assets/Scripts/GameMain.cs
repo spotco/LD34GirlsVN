@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 51;
+	public static int NODE_START_INDEX = 53;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -63,6 +63,8 @@ public class GameMain : MonoBehaviour {
 		using your power
 		still call her your friend?
 		summer festival
+		
+	letter from parents
 	
 	SPAnalytics
 	title UIs
