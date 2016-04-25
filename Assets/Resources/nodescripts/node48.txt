@@ -12,7 +12,7 @@
 		{"type":"dialogue","text":"I had to tell her. %It was my duty as a friend, %after all.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %You shouldn't trust him."},
-		{"type":"dialogue","character":"Mana","text":"Wait... [b3]What@?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Wait... [b3]What@?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"He's... up to something. %I don't know what, exactly... %But..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},

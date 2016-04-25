@@ -6,53 +6,90 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"The days leading up to the festival pass by uneventfully.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The days leading up to the festival passed by relatively uneventfully.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"Ever since then, she's been ignoring me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since our argument, Mana's been completely ignoring me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"..."},
 
-		{"type":"dialogue","text":"If there's one good thing though, it's that she's been coming to school consistently.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...as if to impress Raichi-san or something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, I've noticed her coming to class more often. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I imagine it must have been to impress a certain someone.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Lunchtime comes and she leaves quickly and without a word.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I grab something light from the cafeteria and head to the roof.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Lunchtime is definitely a lot less exciting without Mana-chan.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Lunchtime came and she left without a word.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I grabbed something from the cafeteria and headed to the roof.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_roof"},
-		{"type":"dialogue","text":"As I open the door I see two other people on the far side.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I opened the door and saw two other people on the far side.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's Mana-chan and Raichi-san, together! And they're sitting...awfully close.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I...don't know what to say.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I feel happy for her but...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Mana and Raichi sitting together, like a perfect couple.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know how to feel. I should have been happy for her...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I close the door and head back down the stairs. I'll eat somewhere else.","xpos":0,"ypos":0},
+		{"type":"playSFX", "sfx":"door_slam"},
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","text":"But I closed the door and went back down the stairs.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'll go eat somewhere else today.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"I should feel happy for her. I AM happy for her. But... something still feels wrong.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I walk, I feel someone's presence behind me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I went down the hall, I heard someone walk behind me.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Ms. Motoyama. A minute, if you would please.","xpos":0,"ypos":77},
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
-
-		{"type":"dialogue","text":"It's Raichi. He must have seen me on the roof.","xpos":0,"ypos":0},
-
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"Kurumi. I thought I saw someone on the roof.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"It's Raichi. He must have noticed me earlier.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Listen... I don't have anything to say to you."},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"You're not looking very happy.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"At the very least I owe you an explanation, don't I?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Raichi","text":"Follow me. There is something I think you should know.","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Raichi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I followed him back up the stairs to the roof.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There was nobody else up here. Mana must have already left.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"Raichi walked up towards the fenced edge. Looking away to the city, he asked me a question.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"So what do you know about the [b]Magi-Knights@?","xpos":30,"ypos":77},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"dialogue","text":"I thought about it. What did I know?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I knew they had powers.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I knew they fought giant monsters.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I knew they all had fancy costumes and cool names.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... Who were they, and why did they exist?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I guess I really didn't know.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"I thought so.","xpos":30,"ypos":77},
+
+
+
+
+
+
+
 		{"type":"dialogue","text":"I'm getting a little mad. I don't even want to think about it right now.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"I, however, do. Now if you weren't aware, the summer festival is tomorrow.","xpos":0,"ypos":77},
 		{"type":"dialogue","text":"I knew that.","xpos":0,"ypos":0},

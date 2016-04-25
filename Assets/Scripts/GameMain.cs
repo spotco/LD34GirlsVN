@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 53;
+	public static int NODE_START_INDEX = 49;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -44,15 +44,6 @@ public class GameMain : MonoBehaviour {
 	TODO--
 	
 	==script edit==
-	
-	bad route
-		focus on mana
-		since met kurumi more reflective
-		why like raichi
-		give up being a hero
-		summer festival
-		not satisfied? try good route
-	
 	good route:
 		on the roof raichi tells the truth (I guess I owe you an explanation)
 		the magi knights, delusional fantasy
@@ -63,14 +54,13 @@ public class GameMain : MonoBehaviour {
 		using your power
 		still call her your friend?
 		summer festival
-		
-	letter from parents
 	
 	SPAnalytics
 	title UIs
 	save/load implementation
 	end to title UIs
 	credits
+		-simone boo-hoo tell you a secret
 	script node positioning always on screen for mobile
 	
 	confirm all desc past tense

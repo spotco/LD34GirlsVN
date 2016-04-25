@@ -24,7 +24,7 @@
 
 		{"type":"dialogue","text":"They were having quite a lively conversation, or so it seemed.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
-		{"type":"dialogue","text":"Raichi suddenly pauses and mentions something to her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi suddenly paused and mentioned something to her.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
 		{"type":"camerashake", "length":"short"},
 		{"type":"movecharacter","character":"Mana","xto":-320},
@@ -32,16 +32,16 @@
 		{"type":"dialogue","text":"What could he have possibly said?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
-		{"type":"dialogue","text":"He then smiles and laughs.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He then smiled and laughed.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":-1},
-		{"type":"dialogue","text":"Mana does so too, though she still isn't completely settled.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana does so too, though she still didn't seem completely settled.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"Raichi then grabs his bag and stands up. It looks like he's about to leave.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi then grabbed his bag and stood up. It looked like he was about to leave.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I quickly duck back around the corner to make sure I'm not seen.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I quickly ducked back around the corner to make sure that I wasn't seen.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
 
@@ -51,8 +51,8 @@
 
 		{"type":"dialogue","text":"I have to find out.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue","text":"With the coast clear, I make my way inside.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Mana's still at her table. I take a seat right across from her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With the coast clear, I made my way inside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana was still at her table. I took a seat right across from her.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
