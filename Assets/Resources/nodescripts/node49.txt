@@ -5,6 +5,7 @@
 	"music":"worry",
 	"requirementitem":[],
 	"event":[
+
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"The days leading up to the festival passed by relatively uneventfully.","xpos":0,"ypos":0},
 
@@ -17,7 +18,7 @@
 		{"type":"dialogue","character":"Mana","text":"..."},
 
 		{"type":"dialogue","text":"However, I've noticed her coming to class more often. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I imagine it must have been to impress a certain someone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm guessing it must have been to impress a certain someone.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
@@ -53,7 +54,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"You're not looking very happy.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"You're not looking very happy today.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"At the very least I owe you an explanation, don't I?","xpos":30,"ypos":77},
@@ -67,11 +68,11 @@
 		{"type":"dialogue","text":"There was nobody else up here. Mana must have already left.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_roof"},
-		{"type":"dialogue","text":"Raichi walked up towards the fenced edge. Looking away to the city, he asked me a question.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi walked up towards the fenced edge. Looking away to the city, he asked a question.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"So what do you know about the [b]Magi-Knights@?","xpos":30,"ypos":77},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"So, what do you know about the [b]Magi-Knights@?","xpos":-15,"ypos":77},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"dialogue","text":"I thought about it. What did I know?","xpos":0,"ypos":0},
@@ -81,49 +82,80 @@
 		{"type":"dialogue","text":"But... Who were they, and why did they exist?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I guess I really didn't know.","xpos":0,"ypos":0},
 
+		{"type":"dialogue","character":"Raichi","text":"I thought so.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"I thought so.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Mana doesn't even know herself, does she?","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"She is a bit irresponsible in that way. I could see that.","xpos":-15,"ypos":77},
+		{"type":"dialogue","text":"Mana was... irresponsible?","xpos":0,"ypos":0},
 
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"As for the power of the [b]Magi-Knights@... %I'll tell you this much.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"These powers are triggered in a select few people after experiencing traumatic events.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"They manifest in a variety of different ways for every individual.","xpos":-15,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"So, to you... %You might as well see it as #[b]Magic@#.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"...[b]Magic@?"},
+		{"type":"dialogue","text":"I didn't understand.","xpos":0,"ypos":0},
 
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"I imagine you must be wondering, too. Who am I to be telling you all this?","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Raichi","text":"You could see me as an detective of sorts.","xpos":-15,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"I came here to find a certain magic user.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@..."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"That's right. %She wasn't too hard to find.","xpos":-15,"ypos":77},
 
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"But after finding her... %I had to observe her.","xpos":-15,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"I had to see... %If she was a danger. To the city, or the people around her.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"A... Danger..?"},
+		{"type":"dialogue","text":"I felt as if I was beginning to understand.","xpos":0,"ypos":0},
 
+		{"type":"dialogue","character":"Raichi","text":"Since you're so familiar with the monster attacks throughout the city, you should know this.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I believe that [b]Mana@ was the ultimate cause behind all of them.","xpos":-15,"ypos":77},
 
+		{"type":"camerashake", "length":"short"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"W-what do you mean..?!"},
+		{"type":"dialogue","text":"I couldn't believe it.","xpos":0,"ypos":0},
 
+		{"type":"dialogue","character":"Raichi","text":"She believes that she's a hero, dedicating herself to fighting these monsters.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"But... the more she defeats, the more that appear. They're her own creation.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"It's all part of her childish fantasy.","xpos":-15,"ypos":77},
 
-		{"type":"dialogue","text":"I'm getting a little mad. I don't even want to think about it right now.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I, however, do. Now if you weren't aware, the summer festival is tomorrow.","xpos":0,"ypos":77},
-		{"type":"dialogue","text":"I knew that.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Now, I suggest that you stay home.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"...what makes you say that?"},
-		{"type":"dialogue","character":"Raichi","text":"It'd be... in your best interest. And while you haven't done so before...","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"...you would do well to listen to my advice this time."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"I didn't want to believe it.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"So now... %I hope you can understand why I've done what I have.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
+		{"type":"dialogue","character":"Raichi","text":"I'll be taking her away with me tomorrow.","xpos":-15,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"T-tomorrow..?!"},
+
+		{"type":"dialogue","character":"Raichi","text":"She's a dangerous criminal and I'll have to treat her as such.","xpos":-15,"ypos":77},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
+		{"type":"dialogue","character":"Raichi","text":"So... %Please don't interfere.","xpos":-15,"ypos":77},
 		{"type":"hidecharacter","character":"Raichi"},
-		{"type":"dialogue","text":"He turns around and walks away.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
-		{"type":"dialogue","character":"Kurumi","text":"I-I...!!!"},
-		{"type":"dialogue","text":"Now I'm REALLY mad.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He's up to something. That right there was crystal-clear no-doubt-about-it proof.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Mana-chan..."},
+		{"type":"dialogue","text":"With that, he left.","xpos":0,"ypos":0},
 
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"playBGM","bgm":"decisions"},
-		{"type":"dialogue","text":"It's the night before the festival.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've decided to go. Whatever this guy's planning to do to Mana-chan...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...I'm going to put a stop to it.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
 
-		{"type":"changebackground","background":"bg_apartment_night"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"So I've still got it...my yukata from back home."},
-
-		{"type":"dialogue","text":"I had to dig through all my old suitcases to find it.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Hmm... does it still fit? Looks a bit tight."},
-
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I'm going to the summer festival. And if I'm going, I'm going in style!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Mana-chan... we're still best friends, after all.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"And if my suspicions are true... she'll need someone to back her up!","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"It was a lot to take in.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything he had said... Was it possible?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Mana@... %She wasn't who I thought she was.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I then remembered the last thing he said.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Tomorrow. He was gonna take her away tomorrow."},
+		{"type":"dialogue","character":"Kurumi","text":"The day of the summer festival..."}
 	],
 	"links":[50]
 }
