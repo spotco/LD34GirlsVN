@@ -57,7 +57,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Around him... I feel as though I could live as a normal girl.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Around him... I feel as though I could live as a normal person.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"Was this... %What she really wanted?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"If this was how she wished to live... I should have been happy for her.","xpos":0,"ypos":0},

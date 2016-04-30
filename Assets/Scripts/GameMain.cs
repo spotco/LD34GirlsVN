@@ -55,6 +55,8 @@ public class GameMain : MonoBehaviour {
 		still call her your friend?
 		summer festival
 		
+	// note from mom, friends back home
+	
 	// By order of the council of [b]Magi-Knights@, you are placed under arrest. ---- fix
 	
 	SPAnalytics

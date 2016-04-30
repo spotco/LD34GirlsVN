@@ -28,7 +28,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
 		{"type":"camerashake", "length":"short"},
 		{"type":"movecharacter","character":"Mana","xto":-320},
-		{"type":"dialogue","text":"Her cheeks blushing bright red, Mana looks completely taken aback.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Her cheeks blushing bright red, Mana looked completely taken aback.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What could he have possibly said?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
@@ -49,7 +49,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Kurumi","text":"What could that have been about?"},
 
-		{"type":"dialogue","text":"I have to find out.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I had to find out.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"With the coast clear, I made my way inside.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Mana was still at her table. I took a seat right across from her.","xpos":0,"ypos":0},

@@ -17,7 +17,7 @@
 
 		{"type":"dialogue","text":"She reaches into her sash and pulls it out.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"phone_buzz"},
-		{"type":"dialogue","text":"It buzzes. She quickly flips it open and checks it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It buzzed. She quickly flipped it open and checked it.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"A message from Raichi. He...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof"},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
@@ -75,11 +75,11 @@
 		{"type":"changebackground","background":"bg_moonhill"},
 		{"type":"playBGM","bgm":"epic"},
 
-		{"type":"dialogue","text":"Exhausted and out of breath, I make it to the top.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Exhausted and out of breath, I made it to the top.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Ahead, I saw two figures standing across from each other in the moonlight.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_sad","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"On one side was Mana. She on one knee, looking like she was in pain.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"On one side was Mana. She was on one knee, looking like she was in pain.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...J-just who are you, exactly?","xpos":30,"ypos":77},
 
 		{"type":"showcharacter","character":"Figure","image":"char_raichi_demon","xscale":-1,"xpos":-300},
@@ -140,8 +140,8 @@
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 		{"type":"dialogue","character":"Kurumi","text":"I won't let you hurt [b]Mana@!"},
 
-		{"type":"dialogue","character":"Figure","text":"I hate to get normal humans involved, but...","xpos":0,"ypos":35},
-		{"type":"dialogue","character":"Figure","text":"You leave me no choice.","xpos":0,"ypos":35},
+		{"type":"dialogue","character":"Figure","text":"I regret to get normal humans involved...","xpos":0,"ypos":35},
+		{"type":"dialogue","character":"Figure","text":"But since you're here, I have no other choice.","xpos":0,"ypos":35},
 		{"type":"hidecharacter","character":"Figure"},
 		{"type":"dialogue","text":"He raised his sword, pointing it directly at me.","xpos":0,"ypos":0},
 
@@ -156,19 +156,19 @@
 		{"type":"playSFX", "sfx":"destroy"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"I was caught in its path. Everything around me went dark.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"My body would not move. I crumpled to the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My body would not move. %I fell to the ground.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Above me, I could hear Mana's pleading voice.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"I... I'll go with you. But...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Leave her out of it. She has nothing to do with this.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I... I'll go with you.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"But leave her out of it. She has nothing to do with any this.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"[b3]Mana@...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"playBGM","bgm":"none"},
-		{"type":"dialogue","text":"I heard one last thing as my consciousness left me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As my consciousness left me, I heard one last thing.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@... %If I had known...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Please forget about me... %I'm so sorry...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Please forget about me... %I'm so sorry.","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
@@ -177,7 +177,7 @@
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I was still alive.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Above me was the full moon of a night's sky.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Above me was the full moon of the night's sky.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_sad","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"I got up and immediately started looking around.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"...Mana?"},
@@ -189,12 +189,12 @@
 		{"type":"dialogue","text":"Was she gone forever?","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"Tears streamed from my eyes as I fell back to the ground.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Why... Did it have to end like this?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Why... %Did it have to end like this?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As I laid on the grass, lights flashed above me.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_moon_hill_end_bad"},
-
-		{"type":"dialogue","text":"Summer fireworks. They would normally fill me with joy and happiness, but..."},
-		{"type":"dialogue","text":"I could only think of Mana."},
+		{"type":"playSFX", "sfx":"fireworks"},
+		{"type":"dialogue","text":"Summer fireworks. They would normally have filled me with joy and happiness..."},
+		{"type":"dialogue","text":"But I could only think of Mana."},
 		{"type":"dialogue","text":"She wouldn't be able to see them with me. She was gone."},
 		{"type":"dialogue","text":"I couldn't feel anything at all."},
 		{"type":"dialogue","text":"I could only reflect upon what had just happened."},

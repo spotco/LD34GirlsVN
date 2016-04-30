@@ -1,0 +1,11 @@
+{
+	"id":54,
+	"title":"Remembering Friends",
+	"background":"bg_apartment",
+	"music":"decisions",
+	"requirementitem":[],
+	"event":[
+		{"type":"dialogue","text":"test","xpos":0,"ypos":0},
+	],
+	"links":[50]
+}

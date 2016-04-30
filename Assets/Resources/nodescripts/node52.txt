@@ -1,7 +1,7 @@
 
 {
 	"id":52,
-	"title":"Before the Festival - 1",
+	"title":"Before the Festival",
 	"background":"bg_school_classroom",
 	"music":"happy_day",
 	"requirementitem":[],
@@ -100,7 +100,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"What's going on..?"},
 		{"type":"dialogue","character":"Mana","text":"I can't say what it is, exactly. But I get this feeling... Something might happen tomorrow.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"What's do you mean?!"},
+		{"type":"dialogue","character":"Kurumi","text":"What do you mean?!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"I... want you to come with me. To the festival.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
@@ -109,7 +109,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"And if it come down to it... %I want you to make sure Raichi doesn't see me, okay?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"And if it comes down to it... %I want you to make sure Raichi doesn't see me, okay?","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"If he knew the truth... I don't know what he'd think.","xpos":30,"ypos":77},
 
