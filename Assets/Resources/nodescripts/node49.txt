@@ -13,7 +13,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"Ever since our argument, Mana's been completely ignoring me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since our argument, Mana has been completely ignoring me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"However, I've noticed her coming to class more often. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
@@ -32,7 +32,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It was Mana and Raichi sitting together, like a perfect couple.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Mana and Raichi sitting together... %Like a perfect couple or something.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I didn't know how to feel. %I should have been happy for her...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Mana"},
@@ -125,19 +125,19 @@
 		{"type":"dialogue","text":"I thought about everything that had happened.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Why are you telling me this..?"},
 		{"type":"dialogue","text":"I didn't want to believe it.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"She can't continue being here any longer. %She must be stopped.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She can't continue being here any longer.","xpos":-15,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"W-what do you plan to do..?!"},
 
-		{"type":"dialogue","character":"Raichi","text":"I had originally planned to use whatever means necessary, but would have never guessed...","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I had originally planned to use any means necessary for her capture, but I would have never guessed...","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
 		{"type":"dialogue","character":"Raichi","text":"...That she would come and present herself to me without a fight.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"I plan to take her away with me.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I plan to take her away.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"You..."},
 		{"type":"dialogue","character":"Raichi","text":"It will be tomorrow night. %There will be no chance of anyone else being harmed.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},

@@ -1,6 +1,6 @@
 {
 	"id":10,
-	"title":"Talk with Troublemaker",
+	"title":"Talk with a Troublemaker",
 	"background":"bg_city",
 	"music":"happy_day",
 	"requirementitem":["Her Name"],

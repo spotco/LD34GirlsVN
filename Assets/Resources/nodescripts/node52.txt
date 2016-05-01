@@ -139,12 +139,12 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So I've still got it... %My [b3]yukata@ from back home."},
 
-		{"type":"dialogue","text":"I had to search through all my suitcases to find it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I had to search through my entire closet to find it.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Hmm@... %Does it still fit? %Looks a bit tight."},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"The festival... %If I'm going, then I'm gonna be going in style.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The summer festival... %If I was going, then I was gonna be going in style.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"[b3]Mana@... %We were best friends, after all.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And if my suspicions were true... She would need someone to back her up!","xpos":0,"ypos":0}
 	],

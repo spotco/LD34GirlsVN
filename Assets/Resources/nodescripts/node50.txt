@@ -1,6 +1,6 @@
 {
 	"id":50,
-	"title":"Friends Forever (Good End)",
+	"title":"Friends Forever",
 	"background":"bg_festival",
 	"music":"decisions",
 	"requirementitem":[],
@@ -135,7 +135,7 @@
 
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_sad","xscale":1,"xpos":300},
-		
+
 		{"type":"dialogue","text":"As I come to, I see Mana looking down at me. My head's in her lap.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She's crying. There's no sign of Raichi anywhere.","xpos":0,"ypos":0},
 
@@ -162,7 +162,7 @@
 		{"type":"dialogue","character":"Mana","text":"And what about what Raichi said? Have I ever... Been a hero?","xpos":0,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_sad"},
 		{"type":"dialogue","character":"Mana","text":"You don't wanna be around a loser nobody with nothing... do you...?","xpos":0,"ypos":77},
-		
+
 		{"type":"dialogue","text":"I hug her tight.","xpos":0,"ypos":0},
 
 

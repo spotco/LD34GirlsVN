@@ -1,11 +1,111 @@
 {
 	"id":54,
-	"title":"Remembering Friends",
+	"title":"Remembering Promises",
 	"background":"bg_apartment",
 	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"test","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was back home. %I couldn't relax, however.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My mind was still restlessly going over everything that had happened today.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I walked in, I noticed an envelope that had been slipped under the door.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"What's this..?"},
+		{"type":"dialogue","text":"It was another letter from my parents.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I... Haven't heard from them in a while."},
+		{"type":"dialogue","text":"With everything that had happened in the past few weeks...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"They hadn't even been on my mind.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I wonder what they would say if I told them what was going on..."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I didn't feel particularly motivated to read the letter at the time.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With things the way they were...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wasn't particularly motivated to do anything at all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stuffed the letter in my bag and went inside.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I made myself a quick dinner and tried watching some television.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"None of it was very enjoyable, so I decided to go to sleep early.","xpos":0,"ypos":0},
+		{"type":"playBGM","bgm":"none"},
+		{"type":"changebackground","background":"bg_apartment_night"},
+		{"type":"dialogue","text":"As I laid in bed, I only felt more restless.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was the night before the summer festival.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana's last day here, and I wasn't even going to be able to say goodbye.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I looked to my side and saw the unread letter. %I had put it on my bedroom table.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Might as well take a look."},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"I grabbed the letter and opened it.","xpos":0,"ypos":0},
+
+		{"type":"playBGM","bgm":"normal_day"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#Dear Kurumi...#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#I hope you're doing alright.#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#The final deal has taken much longer than expected, but we should be done soon.#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#Your everyone at your old school has all been worried about you!#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#In fact, your friend Naoki even came over yesterday to ask if you were okay.#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#She said that you hadn't written her even once since moving, even though you had promised!#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#Kurumi, I know you're busy with your new school and new friends...#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#But you should remember to keep in touch with your old friends as well.#@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b4]#We'll see you soon!%     -Love, Mom#@"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I put the letter down.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"It's been that long already, hasn't it?"},
+		{"type":"dialogue","text":"Naoki... %Kaori... %Eri... %My old friends back home.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We promised that we'd still stay in touch, even after I moved so far away.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I had almost forgotten about that promise.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I really should write back. I'd better apologize!"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I had so much to tell them about.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"How life was like here in the big city...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"How different school was here...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Meeting this really weird girl called [b]Mana@...","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Might leave the superhero bit out. They'll probably think I'm making it all up!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"I wrote them all individual letters and put them inside my bag. I was planning to mail them out in the morning.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"As I finished, I couldn't help but think about my friend [b]Mana@.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"If what Raichi said was true... %She would be gone soon as well.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Wherever she was going to... %Was I going to be able to see her again?","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"With things the way they are between us right now..."},
+		{"type":"dialogue","character":"Kurumi","text":"She wouldn't even want to talk to me."},
+
+		{"type":"dialogue","text":"At that moment, it came to me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I knew what I had to do.","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"playBGM","bgm":"decisions"},
+		{"type":"dialogue","text":"It was the night before the summer festival, and I had decided...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That I was going to go. %No matter what.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know what was going to happen, what exactly [b]Raichi@ was planning...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...Or if [b]Mana@ would even talk to me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I knew I had to do it. %I had to see her one last time...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...If only to say goodbye.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_apartment_night"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"So I've still got it... %My [b3]yukata@ from back home."},
+
+		{"type":"dialogue","text":"I had to search through my entire closet to find it.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Hmm@... %I remembered it being a little bigger than this..."},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"The summer festival... %If I was going, then I was gonna be going in style.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Mana@... %We were friends, after all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And if she ran into any trouble, she would need someone to back her up!","xpos":0,"ypos":0}
 	],
 	"links":[50]
 }
