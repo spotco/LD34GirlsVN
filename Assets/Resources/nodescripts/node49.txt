@@ -13,10 +13,10 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":-1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"Ever since our argument, Mana has been completely ignoring me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since our argument, Mana had been completely ignoring me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"However, I've noticed her coming to class more often. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've noticed her coming to class more often, however. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'm guessing it must have been to impress a certain someone.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -27,7 +27,7 @@
 		{"type":"dialogue","text":"I got my lunch from the cafeteria and went to the roof.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_roof"},
-		{"type":"dialogue","text":"As I peeked through the door, I saw two other people on the far side.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I opened the door, I saw two other people on the far side.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":-300,"xscale":-1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
@@ -41,10 +41,10 @@
 		{"type":"playSFX", "sfx":"door_slam"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"But I closed the door and went back down the stairs.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I think I'll go eat somewhere else today.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'll go eat somewhere else today.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"As I went down the hall, I heard someone come up behind me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I went down the hall, I heard someone come up from behind.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"Kurumi. I thought I saw someone on the roof.","xpos":30,"ypos":77},
@@ -53,7 +53,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Raichi..?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"Mana told me what you said.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Mana mentioned that you had said something to her.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Raichi","text":"There's something I'd like you to know.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"What is it..?"},
@@ -102,7 +102,7 @@
 		{"type":"dialogue","character":"Raichi","text":"You could think of me... %As a [b3]protector@.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"A... [b3]protector@?"},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"From [b]Magi-Knights@.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Of [b]Magi-Knights@.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"It's my duty to make sure they don't become dangerous, and that their powers are not abused.","xpos":-15,"ypos":77},
 
 		{"type":"dialogue","text":"Was this his truth behind the [b]Magi-Knights@?","xpos":0,"ypos":0},
@@ -115,7 +115,7 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
 		{"type":"dialogue","character":"Raichi","text":"With her recent actions...","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"She's been judged as a threat. %To the people around her, and the entire city.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She's been judged as a threat to the entire city.","xpos":-15,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@..?! %She wouldn't ever intentionally..."},
@@ -125,23 +125,25 @@
 		{"type":"dialogue","text":"I thought about everything that had happened.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Why are you telling me this..?"},
 		{"type":"dialogue","text":"I didn't want to believe it.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"She can't continue being here any longer.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She can't continue living here any longer.","xpos":-15,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"W-what do you plan to do..?!"},
 
-		{"type":"dialogue","character":"Raichi","text":"I had originally planned to use any means necessary for her capture, but I would have never guessed...","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I was prepared to use whatever means necessary if she resisted.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"But even I would have never guessed...","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"...That she would come and present herself to me without a fight.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"...That she would come and show herself to me without a fight.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"I plan to take her away.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She'll be going away with me.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"You..."},
-		{"type":"dialogue","character":"Raichi","text":"It will be tomorrow night. %There will be no chance of anyone else being harmed.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"We'll be gone by tomorrow night.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I'll be taking the necessary precautions to make sure nobody else gets harmed.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"So that's why I'm telling you this. Now that you understand...","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Now that you understand the entire situation...","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
 		{"type":"dialogue","character":"Raichi","text":"Please don't interfere.","xpos":-15,"ypos":77},
 

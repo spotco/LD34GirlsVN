@@ -5,32 +5,53 @@
 	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I'm at the summer festival. The lights, the sounds, the people...it's absolutely exhilarating!","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_happy","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Hehe...I feel like a little girl again!"},
+		{"type":"dialogue","text":"I was at the summer festival. With the lights, the sounds and the people... It was absolutely overwhelming.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_shock","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I've got to stay focused... There's a job to do!"},
 
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled"},
-		{"type":"dialogue","text":"But I had to stay focused. I had a job to do.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I scanned the crowd for Mana-chan...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...and saw her, by the food stands.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Mana","image":"char_mana_festival","xpos":300,"xscale":-1},
-		{"type":"dialogue","text":"Wearing a light purple kimono that matched her hair, she was absolutely stunning.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_gasp)"},
-		{"type":"dialogue","character":"Kurumi","text":"Wow...I'd totally take a photo right now if I had my phone on me!"},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_puzzled"},
-		{"type":"dialogue","text":"I stayed hidden, however. I didn't want her to notice.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"She bought two Taiyakis, and then walked away from the crowd towards the hill.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"TWO Taiyakis? The other one must be to share..."},
-		{"type":"dialogue","text":"I followed her, doing my best to stay hidden.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_moonhill"},
+		{"type":"dialogue","text":"Slowly making my way through the crowd of festival-goers, I searched for Mana.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the distance I saw someone that I thought I recognized.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_aloof","xpos":250,"xscale":-1},
+		{"type":"dialogue","text":"It was her. With her pink dyed hair and her beautiful silk yukata that matched it, she was easy to spot.","xpos":0,"ypos":0},
 
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Where'd she get something like that?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"She stood before two food stands with a serious look on her face.","xpos":0,"ypos":0},
+		{"type":"movecharacter","character":"Mana","xto":300},
+		{"type":"dialogue","text":"Suddenly, with her mind made up, she went to the leftmost of the two stands...","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival","xscale":-1},
+		{"type":"dialogue","text":"...And bought two large fish-shaped pastries.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Two? They must be to share..."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"dialogue","text":"With both pastries in hand, she marched off through the crowd.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Doing my best not to be noticed, I quietly followed.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+
+		{"type":"dialogue","text":"She quickly navigated through the streets towards the nearby park.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I followed her as she made her way up a secluded hill.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_moonhill"},
 		{"type":"playBGM","bgm":"worry"},
-		{"type":"dialogue","text":"Mana stopped at the top of the hill.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"Arriving at the top, she suddenly stopped.","xpos":0,"ypos":0},
+
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Kashiwagi-senpai? Where are you?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Raichi@~! %I'm [b3]heeere@! %Got you something, too.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"No response.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Where is he? He said to meet here...","xpos":30,"ypos":77},
+
+
+
+
+
 		{"type":"dialogue","text":"She was still holding those Taiyakis, one in each hand.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Manami Ichijou... I'm afraid I have to end things here."},
 		{"type":"dialogue","text":"She seems confused. I look around for Raichi too. What's going on?","xpos":0,"ypos":0},
