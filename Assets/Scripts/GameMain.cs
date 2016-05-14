@@ -44,20 +44,8 @@ public class GameMain : MonoBehaviour {
 	TODO--
 	
 	==script edit==
-	good route:
-		on the roof raichi tells the truth (I guess I owe you an explanation)
-		the magi knights, delusional fantasy
-		mana's story
-			death, a deal with the devil
-			raichi: you could say I'm one of them
-		the monsters
-		using your power
-		still call her your friend?
-		summer festival
-		
-	// note from mom, friends back home
 	
-	// By order of the council of [b]Magi-Knights@, you are placed under arrest. ---- fix
+	change raichi after simone meeting
 	
 	SPAnalytics
 	title UIs
@@ -68,7 +56,6 @@ public class GameMain : MonoBehaviour {
 	script node positioning always on screen for mobile
 	
 	confirm all desc past tense
-	MANA child photo
 	
 	sfx load all at start
 	*/
