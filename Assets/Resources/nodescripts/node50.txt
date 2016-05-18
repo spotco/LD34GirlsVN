@@ -54,13 +54,13 @@
 		{"type":"dialogue","character":"Mana","text":"There you are! %I was looking all over for you.","xpos":30,"ypos":77},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":-300,"xscale":-1},
-		{"type":"dialogue","text":"It was Raichi. He had a serious look on his face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Raichi. What was he about to do?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"Mana... [b3]Manami Ichijou@."},
+		{"type":"dialogue","character":"Raichi","text":"[b3]Manami Ichijou@..."},
 		{"type":"dialogue","character":"Raichi","text":"I'm afraid it has to end here."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_shock","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Raichi... Is this a joke? %If so it's not funny.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Raichi@... Is this a joke? %If so it's not funny.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Raichi","text":"By order of the council of [b]Magi-Knights@, you are placed under arrest."},
 		{"type":"dialogue","character":"Raichi","text":"You'll be coming with me."},
@@ -76,14 +76,14 @@
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Raichi","text":"Regarding the recent attacks on the city..."},
-		{"type":"dialogue","character":"Raichi","text":"We know they're your own creations."},
+		{"type":"dialogue","character":"Raichi","text":"We have reason to believe that they're of your own creation."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_shock","xscale":1},
 		{"type":"dialogue","character":"Mana","text":"I don't know what...","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"The monsters... Were all because of Mana?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"It's all just part of this convenient superhero fantasy you wished for yourself, isn't it?"},
+		{"type":"dialogue","character":"Raichi","text":"It was all just part of the superhero fantasy that you wished for, wasn't it?"},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"To put so many people in danger just for that..."},
-		{"type":"dialogue","character":"Raichi","text":"You're just delusional."},
+		{"type":"dialogue","character":"Raichi","text":"To put so many people in danger..."},
+		{"type":"dialogue","character":"Raichi","text":"It's beyond delusional."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":1},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
@@ -101,7 +101,7 @@
 		{"type":"dialogue","character":"Raichi","text":"Working with me? That would be one way to put it."},
 
 		{"type":"dialogue","text":"Raichi... %Simone... %The [b]Magi-Knights@... %Everything was related.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now... %What was Mana going to do?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now... %What was [b]Mana@ going to do?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
 		{"type":"dialogue","character":"Raichi","text":"So now knowing all this... %Won't you submit quietly?"},
@@ -135,18 +135,20 @@
 		{"type":"dialogue","text":"He must have been a [b]Magi-Knight@ too, to have taken a form like that.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"[b]Raichi@... %I really liked you.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"But after this... %I can't ever forgive you.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"But after hurting me like this... %I can't ever forgive you.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"Raichi remained silent.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"I don't know what you or that council want...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"And I don't know [b3]WHAT@ you think I'm doing...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"But I'm sure as hell that I'm not doing anything wrong...","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"With her sword drawn, she charged directly at him.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"So just go back to where you came from!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...So go back and tell them that, alright?!","xpos":0,"ypos":77},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"playSFX", "sfx":"destroy"},
@@ -160,37 +162,128 @@
 		{"type":"dialogue","character":"Mana","text":"What... Happened?","xpos":30,"ypos":77},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":-300,"xscale":-1},
-		{"type":"dialogue","text":"Raichi stood before her, completely unscratched.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Without the full power of your [b]ultimate transform@, you can't hope to face me."},
-		{"type":"dialogue","character":"Mana","text":"Ultimate... Transform...?","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"Raichi stood before her, completely unscathed.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Without your full strength, you can't hope to face me."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_shock","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"My full strength...?","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"So wasn't at her full strength?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Your [b]ultimate transform@. %You're missing an essential piece."},
 
-		{"type":"dialogue","character":"Mana","text":"[b]Kurumi@...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"You were right all along. %I... should have listened.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"She couldn't use her [b]ultimate transform@?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What was the missing part?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"Why was she thinking of me right now at such a time?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"There was nothing I could do.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I only wished I could stop everything.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Knowing what I knew now... There was so much that I had to ask her.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_sad","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"She closed her eyes and looked wistfully toward the sky.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What she said next took me by complete surprise.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Mana","text":"[b]Kurumi@... I'm sorry.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"She was... Thinking of me?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"You were right all along. %I... should have listened to you.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"So I was right. %She was apologizing to me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But why now, of all times? There was nothing I could do anymore.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"Raichi took another step forward.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Give up. You can't win."},
+
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_angry","xscale":1},
+		{"type":"dialogue","text":"She stood up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I never said I was giving up, was I?","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Raichi","text":"You're truly a fool."},
+		{"type":"dialogue","text":"He sheathed his sword.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Suddenly with a wave of his hand, Mana was sent flying through the air.","xpos":0,"ypos":0},
+		{"type":"playBGM","bgm":"none"},
+		{"type":"dialogue","text":"With a wave of his hand, Mana was sent flying through the air.","xpos":0,"ypos":0},
 
-		{"type":"playSFX", "sfx":"destroy"},
-		{"type":"camerashake", "length":"long"},
+		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_moonhill"},
-		{"type":"dialogue","text":"She landed with a loud thud not far from where I was hiding.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Against my better judgement, I ran to her side.","xpos":0,"ypos":0},
+		{"type":"playBGM","bgm":"worry"},
+		{"type":"dialogue","text":"She was thrown against a tree and fell to the ground.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_shock","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Mana..."},
+
+		{"type":"dialogue","text":"She laid there, completely motionless.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_shock","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Mana!"},
+
+		{"type":"dialogue","text":"She couldn't be...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"I ran to her side and picked her up.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_sad","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Mana... You can't be..."},
+
+		{"type":"dialogue","text":"She was still alive.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_sad","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"[b]Kurumi@... %You're... here?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I... Must be dreaming.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Mana, don't..."},
+
+		{"type":"dialogue","character":"Mana","text":"I had no idea things would be like this.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I'm so sorry.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You... must really hate me after everything that's happened, don't you?","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"I remembered why I was here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I had to talk to her again. I had to know the truth.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Since she was my friend... I had to help her.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"...Of course not."},
+
+		{"type":"dialogue","character":"Mana","text":"I...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"I'm... %Really lucky to have a friend like you.","xpos":30,"ypos":77},
+
+		{"type":"dialogue","text":"Tears streaming down both our cheeks, we couldn't help but smile.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"There's... %One last thing I have to ask of you.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_sad","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Things aren't going so great right. You might even think I'm the bad guy. ","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"But... %I [b3]WILL@ fix this.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I'm asking you to put your faith in me one last time.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Can you do that?","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Kurumi","text":"I..."},
+		{"type":"dialogue","text":"I didn't have to think twice.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I can. I believe in you."},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival","xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Okay. Now close your eyes and promise me you won't ever tell anyone else about this...","xpos":30,"ypos":77},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I closed my eyes not knowing what to expect.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I felt her arms around me as she brought her lips to mine.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I could feel my consciousness leaving my body.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":205,"xscale":1},
+		{"type":"dialogue","text":"Above me, I could see the faint image of Mana. She was okay.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black_dark"},
+		{"type":"dialogue","text":"She was a hero. I believed in her.","xpos":0,"ypos":0},
+			{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+				{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 	],
 	"links":[]
 }

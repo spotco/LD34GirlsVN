@@ -46,7 +46,7 @@
 		{"type":"dialogue","character":"Mana","text":"I thought you were gonna be happy for me...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I was even gonna ask you to come too...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":-1},
-		{"type":"dialogue","text":"She turned her back to me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She turned around, her back facing towards me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"But you know what..?","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","character":"Mana","text":"You can just [b3]STAY@ home!","xpos":30,"ypos":77},
