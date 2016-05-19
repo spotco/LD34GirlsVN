@@ -190,7 +190,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"Tears streamed from my eyes as I fell back to the ground.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Why... %Did it have to end like this?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I laid on the grass, lights flashed above me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I laid in the grass, lights flashed above me.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_moon_hill_end_bad"},
 		{"type":"playSFX", "sfx":"fireworks"},
 		{"type":"dialogue","text":"Summer fireworks. They would normally have filled me with joy and happiness..."},
