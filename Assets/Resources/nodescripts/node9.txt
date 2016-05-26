@@ -5,21 +5,21 @@
 	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I had plenty of time, so I went out to explore a little.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I had plenty of time, so I went out to explore.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_city"},
-		{"type":"dialogue","text":"Just another normal day in the city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However, to me... this was a completely new and exciting experience!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"For most people, it would have been just another normal day in the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But to me... %It was a completely new and exciting experience!","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"This is so great! So many restaurants, shops and people everywhere..."},
-		{"type":"dialogue","character":"Kurumi","text":"It's [b3]soooo@ different from back home. This is where the action's at!"},
+		{"type":"dialogue","character":"Kurumi","text":"This is great! So many restaurants, shops and people everywhere..."},
+		{"type":"dialogue","character":"Kurumi","text":"It's [b3]sooo@ different from back home. This is where the action's at!"},
 
-		{"type":"dialogue","text":"Up ahead in the crowd, I saw a familiar face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Up ahead in the crowd, a familiar face passed by.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal","xpos":300,"xscale":-1},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","text":"The [b]pink-haired girl@! So this is where she went!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was... the [b]pink-haired girl@! So this was where she went!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"Maybe I should go talk to her... But what should I say?"}
+		{"type":"dialogue","character":"Kurumi","text":"I kinda want to go and talk to her... But what could I say?"}
 	],
 	"links":[
 		1,10

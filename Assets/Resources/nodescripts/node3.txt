@@ -5,13 +5,13 @@
 	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I go to the bathroom, half expecting to find that [b]pink-haired girl@ hiding somewhere.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I followed the signs over to the bathroom.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Nobody here...%But what's that?"},
-		{"type":"dialogue","text":"I see a familiar looking phone on the windowsill.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Someone must have left it here."},
+		{"type":"dialogue","character":"Kurumi","text":"There's nobody here. %But... What's that?"},
+		{"type":"dialogue","text":"I saw a phone that had been carelessly left above the sink.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Someone must have forgotten it."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"I should go turn it in!"},
+		{"type":"dialogue","character":"Kurumi","text":"I should turn it in!"},
 		{"type":"additem","item":"phone"}
 	],
 	"links":[

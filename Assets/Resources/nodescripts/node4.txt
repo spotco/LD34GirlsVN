@@ -5,15 +5,15 @@
 	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I somehow find myself up on the roof. Definitely must have taken a wrong turn.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The trip, however, was by no means a waste.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I somehow found myself up on the roof. Definitely must have taken a wrong turn.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was, however, by no means a wasted opportunity.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wow... the view's amazing!%I can see the whole city from here!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"I should bring my lunch next time."},
 
-		{"type":"dialogue","text":"As I sat down, I noticed something odd.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I looked off to the distance, I noticed something odd.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"A plume of smoke was rising from the city.","xpos":0,"ypos":0},
@@ -21,11 +21,11 @@
 		{"type":"dialogue","character":"Kurumi","text":"What's going on over there?"},
 
 		{"type":"dialogue","text":"Strange. Was this an emergency?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"And if so, why hadn't we heard anything about it?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And if so, why hadn't I heard anything about it?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"No alerts, no alarms... nothing like that."},
+		{"type":"dialogue","character":"Kurumi","text":"No alerts, no alarms... %Nothing like that."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"Well, then I guess it's nothing serious!"}
+		{"type":"dialogue","character":"Kurumi","text":"Well, then it must be nothing serious!"}
 	],
 	"links":[
 		2

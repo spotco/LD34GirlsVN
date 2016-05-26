@@ -5,37 +5,39 @@
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I come back to an empty classroom. Everyone's still out for lunch.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I head inside, I notice a familiar figure in the back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I came back to an empty classroom. Everyone was still out for lunch.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I went inside, I noticed a familiar figure in the back.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"It's Raichi. He's alone at his desk reading a book.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Raichi. He was alone at his desk, reading a book.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"He looks up as I walk in.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He looked up as I came in.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","character":"Raichi","text":"Ah, Kurumi. What brings you back so early?","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
-		{"type":"dialogue","text":"I give him my best%#good student# answer.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I gave him my best%#good student# answer.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Just wanted to grab my textbook and do a bit of... review?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I'm impressed! I see you take your classwork quite seriously.","xpos":22,"ypos":53},
 
+		{"type":"dialogue","text":"He might be getting the wrong impression here...","xpos":0,"ypos":0},
+
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"That reminds me...%Have you thought about joining a club yet?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"That reminds me... %Have you thought about joining a club yet?","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I'm sorry...?"},
-		{"type":"dialogue","text":"His eyes light up.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"His eyes lit up.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"An after-school club. They're very popular around here.","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"Yesterday I went to the [b3]soccer club@. They were having their usual practice...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Recently, I went to this [b3]soccer club@. They were having their usual practice...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"...And I must say, it's been quite a while since I've to run so much!","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"And before that, I was at the [b3]tennis club@. I never did get used to swinging a racket...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"And before that, I was at the [b3]tennis club@. I never did get used to swinging that racket...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","text":"Soccer? Tennis? I'm... definitely not a sports kind of person.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Soccer? Tennis? I definitely wasn't that kind of person.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But how could I tell him that... politely?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Umm@..."},
 		{"type":"dialogue","character":"Raichi","text":"I'm sorry, were you saying something?","xpos":22,"ypos":53},
@@ -47,15 +49,15 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"I see.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"He looks somewhat dissapointed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He looked dissapointed.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"I completely understand. Schoolwork is quite important, and you don't want to be distracted.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I completely understand. Schoolwork [b3]IS@ quite important.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I'm really quite impressed! %I should definitely be following your example.","xpos":22,"ypos":53},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"I might be giving him the wrong impression.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He definitely had the wrong impression here.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Anyway, let me know if you need anything.","xpos":22,"ypos":53}
 	],

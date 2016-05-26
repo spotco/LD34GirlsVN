@@ -5,35 +5,36 @@
 	"music":"daily",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I debate whether to check the phone or not.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I debated whether or not to check the phone.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Well, it can't hurt."},
-		{"type":"dialogue","text":"I give in and flip it open.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Well, it couldn't hurt."},
+		{"type":"dialogue","text":"I gave in and flipped it open.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"phone_unlock"},
-		{"type":"dialogue","text":"It unlocks without a password.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It unlocked without a password.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"On the home screen I see a news story.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Explosion off the coast of Tokyo Bay. Several ships already destroyed, military called to the scene.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Several news alerts flashed across the home screen.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Explosion off the coast of the bay. Several ships already destroyed, military called to the scene.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"I wonder if there's anything else interesting on here."},
+		{"type":"dialogue","character":"Kurumi","text":"I wonder if there's anything else more interesting on here."},
 
-		{"type":"dialogue","text":"As I open up the photos, something catches my eye.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I opened the photos, something caught my eye.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
 		{"type":"dialogue","character":"Kurumi","text":"Is that... the [b]pink-haired girl@?"},
-		{"type":"dialogue","text":"It's a whole gallery of photos of her.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She's dressed up in a bunch of different fancy costumes, doing all these elaborate poses.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There were several albums, all of her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In each one she was dressed up in a fancy costume, striking some elaborate poses.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I thought I had seen something like this before...","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"Hehe..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Hehe@..."},
 		{"type":"dialogue","character":"Kurumi","text":"This must be what they call... [b3]cosplay@?"},
 
-		{"type":"dialogue","text":"I would have never guessed she'd be into that kind of thing.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I look over them, I can't help but think...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I would have never guessed that she'd be into this kind of thing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Looking over them, I couldn't help but think...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"She sure seems like an interesting person!"},
+		{"type":"dialogue","character":"Kurumi","text":"It sure seems like she takes this stuff pretty seriously!"},
 
 		{"type":"addaffinity"}
 

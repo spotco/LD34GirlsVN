@@ -13,7 +13,7 @@
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
-		{"type":"dialogue","text":"She's turns around, looking completely startled.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She turned around, looking startled.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"The heck!? Who are you? And how do you know my name..?","xpos":22,"ypos":53},
 
@@ -25,37 +25,65 @@
 		{"type":"dialogue","text":"That was the best I could come up with.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Feeling sick...%When did I ever say I was sick...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"Feeling sick... %What makes you think I'm...","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","text":"She glares at me. I can't help but feel a little self conscious.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"That uniform... You look familiar, but where have I...","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"She glared at me. I couldn't help but feel a little uncomfortable.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I swear I've seen your face before...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"And that uniform looks awfully familiar...","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","text":"After a moment, it looks like she remembers.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"I got it!","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Mana","text":"You're that new girl in class!%[b3]Kuromi-something@...","xpos":22,"ypos":53},
+		{"type":"dialogue","text":"After a brief moment, it came to her.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I've got it.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"You're the new girl. %[b3]Kuromi@ or something like that...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","character":"Kurumi","text":"It's [b]Kurumi@.%Kurumi Motoyama."},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@, huh? Nice to meet you. And I guess you already know my name.","xpos":22,"ypos":53},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","text":"She definitely seems nice enough.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"So... what [b3]ARE@ you doing around here? Don't you have class to be at right now?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Kurumi","text":"It's [b]Kurumi@. %Kurumi Motoyama."},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@, huh? Well, I guess you already know my name.","xpos":22,"ypos":53},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
+		{"type":"dialogue","character":"Mana","text":"So that begs the question... What are you doing out here, exactly?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"Don't tell me they sent you to go and look for me.","xpos":22,"ypos":53},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"That's not it at all..."},
+
+		{"type":"dialogue","character":"Mana","text":"Eh... %So then you must be...","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"...[b]Skipping class@ then, %am I right?","xpos":22,"ypos":53},
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"Knew it! %Couldn't stand that stuffy old classroom either, right?","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"I think we'll get along [b3]just@ fine.","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Well..."},
-		{"type":"dialogue","character":"Kurumi","text":"I could ask the same for you."},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"Awkward. Let's not talk about that.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Sooo@... %You from around here, or what?","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Kurumi","text":"Well actually..."},
-		{"type":"dialogue","character":"Kurumi","text":"I've never been to this city before. Wanted to check it out."},
+
+		{"type":"dialogue","text":"She might have been getting the wrong idea here.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Seeing as we're both [b]playing hooky@ here...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"You wouldn't mind if I tagged along, would you?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"I was [b3]literally@ bored out of my mind until you showed up here.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"She was definitely... [b3]unique@.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... %She seemed nice enough.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Well... Sure! %The more the merrier."},
+
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
+		{"type":"dialogue","character":"Mana","text":"[b3]Nice@~!","xpos":22,"ypos":53},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
+		{"type":"dialogue","character":"Mana","text":"So...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"What's the plan?","xpos":22,"ypos":53},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Well... %Actually..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I'm new to this city. %Got any recommendations?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"First time here, huh..?","xpos":22,"ypos":53},
-		{"type":"dialogue","text":"She frowns, as if deep in thought.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She frowned, as if deep in thought.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"I've got it!","xpos":22,"ypos":53},
 
@@ -63,8 +91,8 @@
 		{"type":"movecharacter","character":"Mana","xto":120},
 		{"type":"movecharacter","character":"Kurumi","xto":-120},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"She then suddenly grabs my hands.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"There's this ramen place that just opened up a few stops away that I just heard about.","xpos":290,"ypos":-93},
+		{"type":"dialogue","text":"She then suddenly grabbed my wrist.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"There's this ramen place that just opened up a few blocks away...","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Mana","text":"You get lunch yet? 'Cuz if not, I think you'll love it. Let's go!","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Kurumi","text":"Wha...?","xpos":-267,"ypos":-148},
 
@@ -74,17 +102,16 @@
 
 		{"type":"dialogue","character":"Mana","text":"You like ramen, right? If not, then I was thinking maybe burgers or...","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Kurumi","text":"I'm fine with ramen, but...","xpos":-267,"ypos":-148},
-		{"type":"dialogue","character":"Mana","text":"But what?","xpos":290,"ypos":-93},
-		{"type":"dialogue","character":"Kurumi","text":"Could you let go of my hands?","xpos":-267,"ypos":-148},
-		{"type":"dialogue","character":"Mana","text":"Oh, haha sorry~! You know, I was also craving some sushi...","xpos":290,"ypos":-93},
+		{"type":"dialogue","character":"Mana","text":"But... what?","xpos":290,"ypos":-93},
+		{"type":"dialogue","character":"Kurumi","text":"You don't have to drag me...","xpos":-267,"ypos":-148},
+		{"type":"dialogue","character":"Mana","text":"Oh, [b3]haha sorry@~! You know, I was also craving some sushi...","xpos":290,"ypos":-93},
 
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"We ended up eating at some place halfway across the city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But then after that, we got tea, did a bit of shopping...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...And I must have lost track of the time.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Mana showed me a bunch of her favorite spots throughout the city, and I loved it!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... I did end up skipping class as well.%Oops...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't originally plan on skipping class.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But after eating at that ramen place (which definitely was more than a few blocks away)...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We stopped by the mall since it was just across the street. And then after that...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well, let's just say... %I ended up skipping the rest of the afternoon. %[b3]Oops@...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city"}
 	],
