@@ -19,7 +19,7 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","text":"It was... the [b]pink-haired girl@! So this was where she went!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"I kinda want to go and talk to her... But what could I say?"}
+		{"type":"dialogue","character":"Kurumi","text":"I should really go and introduce myself to her... But what could I say?"}
 	],
 	"links":[
 		1,10

@@ -5,7 +5,7 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I was walking back home, when all of a sudden...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I walked back home, %all of a sudden...","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"siren"},
 		{"type":"camerashake", "length":"long"},
 		{"type":"dialogue","text":"Sirens suddenly started going off, and the ground started shaking!","xpos":0,"ypos":0},
@@ -14,30 +14,30 @@
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Screaming in panic, everyone around me started to run.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What were they running for?%I had no idea. I looked around as I tried to figure out.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Ahead I saw a large shadow, large enough to cover an entire block.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As it got closer, I could finally see what it was.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Screaming in panic, everyone around started running.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What were they running for? %I looked around as I tried to figure out what was going on.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ahead, I saw a large shadow envelop the entire block.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As it got closer, I finally made out what it was.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
 		{"type":"changebackground","background":"bg_city_monster"},
 
-		{"type":"dialogue","text":"It's... a giant monster, attacking the city?!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A giant monster, attacking the city?!","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was a black, scaled mass of horns, claws and teeth standing several stories tall.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"With a sudden swipe of its claw...","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"destroy"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"...it destroys an entire building!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...It destroyed an entire building!","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Oh my god, [b3]HEEEEEEEELP!!!@","ypos":-130},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue","text":"I turn around and run as fast%as I can, barely avoiding the falling debris.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I turned around and ran as fast as I could, avoiding the falling debris.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"As I run, I see a bright glow in the skies above me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A beam of pink light shoots across my vision, and at the center...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I ran, I saw a bright glow in the sky above.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A beam of pink light shot across my vision. %As I opened my eyes, I saw it.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"Is that... a person?"},
 
@@ -47,34 +47,33 @@
 		{"type":"dialogue","text":"Flying directly towards the monster, it was a figure clad in an outfit of blue.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She had beautiful long purple hair, and a large sword nearly the size of her body.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"A... superhero?"},
+		{"type":"dialogue","character":"Kurumi","text":"A... [b]Superhero@?"},
 
-		{"type":"dialogue","text":"I could only watch, awestruck, as she gracefully dodged the monster's swinging claws.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I could only watch, awestruck, as she gracefully dodged the monster's flailing claw.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"With a mighty swing of her sword, she pierces it directly in the chest!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It cries out in pain, and in desperation it swings its claws wildly...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With a mighty swing of her sword, she pierced it directly in the chest!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It cried out in pain, and in desperation it swung its claw wildly...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"hidecharacter","character":"Pink Hair"},
-		{"type":"dialogue","text":"...and it was at this moment I noticed it coming directly at me!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...And it was at this moment I noticed it coming directly at me!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I briefly see the hero turn around and notice before...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I briefly saw the hero turn and notice before...","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"destroy"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_black_dark"},
-		{"type":"dialogue","text":"...Something hits me so hard that my breath is completely knocked out of my body!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...I felt the wind knocked out of me as something shoved me in the chest.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_monster"},
-		{"type":"dialogue","text":"As I open my eyes, I find myself thrown back several dozen feet from where I was.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Ahead of me, I see the hero lying sprawled out on the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I opened my eyes, I found myself thrown back several dozen feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ahead of me, I saw the hero on the ground.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"She must have saved me by throwing me out of the way!"},
-		{"type":"dialogue","text":"I'm still alive. But the hero... she's just laying there.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She must have taken the full force of the hit saving me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Is she okay? What I should I do!?"}
+		{"type":"dialogue","character":"Kurumi","text":"She must have thrown me out of the way..."},
+		{"type":"dialogue","text":"I was still alive. But the hero... She must have taken a direct hit.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Is she okay? %What I should I do!?"}
 	],
 	"links":[
 		115,116

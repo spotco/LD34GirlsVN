@@ -10,21 +10,21 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 
 		{"type":"dialogue","character":"Kurumi","text":"You know...","xpos":82},
-		{"type":"dialogue","text":"I make up an excuse right on the spot.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I made up an excuse right on the spot.","xpos":82,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"...I was helping Mana get to the hospital. She was sick, you know? Like...%[b3]REALLY@ sick!","xpos":82},
 
-		{"type":"dialogue","text":"She looks surprised, but I keep rolling with it.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"She looked surprised, but I kept rolling with it.","xpos":82,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"This was really serious. We had to wait in line to see the doctor and everything!","xpos":82},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"But then the doctor just gave her these meds and now she's feeling better.%Isn't that right?","xpos":82},
-		{"type":"dialogue","text":"I wink and give her a slight nudge in the elbow.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"I winked and gave her a slight nudge in the elbow.","xpos":82,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":82,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"Raichi adjusts his glasses.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"Raichi adjusted his glasses.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Well... if it was an emergency, I'm sure this can be excused.","xpos":105,"ypos":50},
 
 		{"type":"dialogue","character":"Kurumi","text":"So that's why we were gone this whole afternoon. We really appreciate your help!","xpos":82},
@@ -32,12 +32,13 @@
 		{"type":"dialogue","character":"Kurumi","text":"Isn't that right, Mana?","xpos":82},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":82,"ypos":53},
-		{"type":"dialogue","text":"She almost seems a little... embarassed? I sure hope she doesn't break my cover.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"She seemed almost a little... embarassed? I sure hoped she wasn't about to break my cover.","xpos":82,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"I...","xpos":82,"ypos":53},
 		{"type":"movecharacter","character":"Mana","xto":-800},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","character":"Mana","text":"[b3]I-GOTTA-GO-SOMEWHERE...@ [b3]SEEYA!!!@","xpos":-263,"ypos":-158},
-		{"type":"dialogue","text":"She runs out as fast as she can.","xpos":82,"ypos":0},
+		{"type":"dialogue","text":"She ran out as fast as she could.","xpos":82,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"Well... so much for my perfect excuse.","xpos":82,"ypos":0},
 
@@ -53,7 +54,7 @@
 		{"type":"dialogue","character":"Raichi","text":"By the way...","xpos":90,"ypos":50},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I see you two have become acquainted. I'm glad!","xpos":90,"ypos":50},
-		{"type":"dialogue","character":"Kurumi","text":"...Why is that?","xpos":82},
+		{"type":"dialogue","character":"Kurumi","text":"Glad?","xpos":82},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Well... I've tried talking to her before.","xpos":90,"ypos":50},
 		{"type":"dialogue","character":"Raichi","text":"It didn't go so well, as you can imagine.","xpos":90,"ypos":50},
@@ -65,12 +66,11 @@
 		{"type":"hidecharacter","character":"Raichi"},
 
 		{"type":"dialogue","text":"Trouble? There was that word again.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What exactly does he mean by it? There was definitely something going on here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What exactly did he mean by it?","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I stuck around as Raichi got my bag and gave me today's homework.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A hundred pages of reading? Ugh.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Afterwards, we walk to the school entrance and go our separate directions.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I stuck around as Raichi gave me today's homework.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A hundred pages of reading? [b3]Ugh@.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15

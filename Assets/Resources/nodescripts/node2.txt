@@ -71,7 +71,7 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"We'll just have to keep an eye on her, won't we?","xpos":23,"ypos":45},
 
-		{"type":"dialogue","text":"I wonder what he could have meant by that.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Trouble? I wonder what he could have meant by that.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Raichi","text":"Well, if she does come back... Don't let her bother you too much.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":23,"ypos":45},
