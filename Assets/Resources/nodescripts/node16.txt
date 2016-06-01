@@ -11,42 +11,46 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
 		{"type":"changebackground","background":"bg_road"},
 		{"type":"dialogue","character":"Kurumi","text":"[b2]*Huff*@... [b2]*Pant*@...%Where... am I?"},
-		{"type":"dialogue","text":"I'm now... completely lost.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was now... completely lost.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Oh geez..."},
-		{"type":"dialogue","text":"Ahead in the crowd...%I see someone I recognize.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ahead in the crowd...%I saw someone I recognized.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":-1},
-		{"type":"dialogue","text":"It's Raichi.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Raichi.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi!@ I'm so relieved to see a familiar face here..."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
-		{"type":"dialogue","text":"As he turns around, he sees me and a worried look crosses his face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He looked worried as he saw me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Oh my... What happened? Are you hurt?","xpos":33,"ypos":70},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"Am I hurt...?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","text":"I take a moment to look at myself. I'm a mess!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"My shirt is torn, and I've cuts all over my arms and legs.%I didn't even notice!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I took a moment to look at myself. I was a mess!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My shirt was torn, and I had cuts all over my arms and legs. I didn't even notice!","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"I'm alright! I've just been through a lot."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm... alright. %I've just been through a lot!"},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
 
 		{"type":"dialogue","text":"A whole lot. That monster attack, almost getting killed... and that beautiful hero. Where to begin?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I tell him what happened.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I told him what happened.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Raichi","text":"Another attack... I'm just glad you're safe, Kurumi.","xpos":33,"ypos":70},
-		{"type":"dialogue","character":"Kurumi","text":"Another...? You mean there's been others..."},
-		{"type":"dialogue","character":"Raichi","text":"Yeah, and they're getting more and more frequent.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"Another attack... %I'm just glad you're safe, Kurumi.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Kurumi","text":"Another...? You mean there's been others?"},
+		{"type":"dialogue","character":"Raichi","text":"I'm not surprised you haven't heard about it.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"They've been doing their best to keep it all under wraps.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"However... I don't think they'll be able to cover up this one. They've getting more and more frequent.","xpos":33,"ypos":70},
 
-		{"type":"dialogue","text":"He didn't seem surprised.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He seemed to know a whole lot about this.","xpos":0,"ypos":0},
+
 		{"type":"dialogue","character":"Raichi","text":"I'm interested in this hero you mentioned. What do you remember?","xpos":33,"ypos":70},
+		{"type":"dialogue","text":"The hero... %The one who saved me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What did I remember about her? Well...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -63,37 +67,40 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 		{"type":"changebackground","background":"bg_road"},
 
-		{"type":"dialogue","character":"Kurumi","text":"...she's a real life superhero! She saved my life [b3]AND@ beat up that monster!"},
+		{"type":"dialogue","character":"Kurumi","text":"...She was a real life superhero! She saved my life [b3]AND@ beat up that monster!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"He doesn't look happy. Did I say something wrong?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Kurumi... this isn't a game.","xpos":33,"ypos":70},
+		{"type":"dialogue","text":"He didn't look happy. Did I say something wrong?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"[b]Kurumi@... this isn't a game.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Raichi","text":"These attacks are serious. Many have been killed, and even more injured.","xpos":33,"ypos":70},
 
-		{"type":"dialogue","text":"I... had no idea.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I... should have known. %I had no idea.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"This hero may be able to stop them for now. But what they don't understand...","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"This hero might be able to stop them for now. But what she doesn't understand...","xpos":33,"ypos":70},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
-		{"type":"dialogue","character":"Raichi","text":"...is that it's only going to get worse.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"...Is that they won't stop. It's only going to get worse.","xpos":33,"ypos":70},
 
-		{"type":"dialogue","text":"Going to get worse...?%He goes silent after that.%I can't help but feel uncomfortable.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Going to get worse...? %He went silent after that.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"The military has been setting up around the city. And if comes to that point, they'll start evacuating citizens.","xpos":33,"ypos":70},
-		{"type":"dialogue","character":"Raichi","text":"But... I know it won't need to come to that.","xpos":33,"ypos":70},
+		{"type":"dialogue","text":"He then smiled.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"If I were you, I wouldn't worry too much about it.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Raichi","text":"This kind of thing has happened before in other cities, you know.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"They'll send in the military and start evacuating citizens if need be.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"But... I'm sure it won't come down to that.","xpos":33,"ypos":70},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"That... was a reassuring thought. Or so it should have been.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I can't help but wonder how he seemed to know so much...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...or how he could talk about something like this so calmly.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I guess I really was ignorant. Maybe I should have paid more attention to the news?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I couldn't help but wonder why it seemed like he knew everything...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...Or how he could talk about something like this quite so calmly.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_road"},
 
-		{"type":"dialogue","text":"He helps me find my way back to the school.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"From there, I'm able to uneventfully make my way back home.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"We walked together back to school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"From there, I was able to find my way back home.","xpos":0,"ypos":0}
 	],
 	"links":[
 		17

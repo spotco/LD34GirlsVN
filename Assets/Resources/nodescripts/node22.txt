@@ -5,28 +5,28 @@
 	"music":"happy_end",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I make the safe choice.%I decide to lock my bedroom door and call the police.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Or at least that's what I try to do. As I tiptoe through the dark in my room...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I made the safe choice.%I decided to lock my bedroom door and call the police.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Or at least that's what I tried to do. As I tiptoed in the dark through my room...","xpos":0,"ypos":0},
 
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH! ! !@"},
 
-		{"type":"dialogue","text":"I trip over something and fall. So much for being quiet.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I hear footsteps coming up the stairs. My door suddenly opens, as the light turns on.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I tripped over something and fell. So much for being quiet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I heard footsteps coming up the stairs. My door suddenly opened as the light turned on.","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"phone_unlock"},
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_shock","xpos":300,"xscale":1},
 
-		{"type":"dialogue","text":"It's [b]Mana!@","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]M-Mana?!@ What are you doing here?"},
+		{"type":"dialogue","text":"It was [b]Mana@!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]M-Mana@?! What are you doing here?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi?!@ So this [b3]WAS@ the place!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@?! So this [b3]WAS@ the place!","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"Wait, what are you doing on the floor...?","xpos":0,"ypos":77}
+		{"type":"dialogue","character":"Mana","text":"Wait, what are you doing on the floor..?","xpos":30,"ypos":77}
 	],
 	"links":[
 		24

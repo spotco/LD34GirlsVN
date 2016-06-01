@@ -60,7 +60,7 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
-		{"type":"dialogue","text":"She might have been getting the wrong idea.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was getting the wrong idea here. This wasn't even the first time it happened today...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Seeing as we're both %[b]playing hooky@ here...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Mana","text":"You wouldn't mind if I tagged along, would you?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Mana","text":"I was [b3]literally@ bored out of my mind until you showed up here.","xpos":22,"ypos":53},
@@ -92,7 +92,7 @@
 		{"type":"movecharacter","character":"Mana","xto":120},
 		{"type":"movecharacter","character":"Kurumi","xto":-120},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"She then suddenly grabbed my wrist.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She then suddenly grabbed my hands.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"There's this ramen place that just opened up a few blocks away...","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Mana","text":"You get lunch yet? 'Cuz if not, I think you'll love it. Let's go!","xpos":290,"ypos":-93},
 		{"type":"dialogue","character":"Kurumi","text":"Wha...?","xpos":-267,"ypos":-148},
@@ -111,7 +111,7 @@
 
 		{"type":"dialogue","text":"I didn't originally plan on skipping class.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But, after heading to that ramen place she mentioned...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Which was [b3]definitely@ more than just a few blocks away, I might add...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Which was [b3]definitely@ more than just a few blocks away, %I might add...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"We stopped by a couple of shops and then got some tea...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And, let's just say... %I kinda lost track of time. %[b3]Oops@.","xpos":0,"ypos":0},
 

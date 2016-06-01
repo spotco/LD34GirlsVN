@@ -6,43 +6,44 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Without even a second thought...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...I ran to her side to check if she was okay.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...I ran to her side and checked if she was alright.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Ohmygosh@... Are you alright?!"},
-		{"type":"dialogue","text":"Now that I thought about it...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This probably wasn't the smartest thing ever. What could I possibly do?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]OHMYGOSH@... Are you okay?!"},
+		{"type":"dialogue","text":"Now, thinking about it... %This wasn't very smart.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What could I hope to do?","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Pink Hair","text":"Mmmph... That... kinda hurt...","xpos":25,"ypos":55},
-		{"type":"dialogue","text":"She's alive!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was alive!","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1},
-		{"type":"dialogue","text":"She slowly gets back on her feet.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"Cheap shot... trying to harm an innocent...","xpos":25,"ypos":55},
+		{"type":"dialogue","text":"She slowly got back on her feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Cheap shot... %Trying to harm an innocent...","xpos":25,"ypos":55},
 
 		{"type":"hidecharacter","character":"Pink Hair","imm":true},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":210,"xscale":1,"imm":true},
-		{"type":"dialogue","text":"She pauses as she turns around, seeing my face.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She paused as she turned around and saw my face.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Pink Hair","text":"Is that...","xpos":25,"ypos":55},
 
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
-		{"type":"dialogue","text":"Interrupting the moment, the monster howls in anger.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Interrupting the moment, the monster howled in anger.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Pink Hair","imm":true},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1,"imm":true},
-		{"type":"dialogue","text":"The masked hero turns back around to face the monster.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"Not had enough yet? Then have a taste of this...","xpos":25,"ypos":55},
-		{"type":"dialogue","text":"She turns her head at me and winks.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The masked hero turned back around to face the monster.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Pink Hair","text":"Not had enough? Then get a taste of this...","xpos":25,"ypos":55},
+		{"type":"dialogue","text":"She turned her head at me and winked.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Pink Hair","text":"Special attack...","xpos":25,"ypos":55},
 		{"type":"movecharacter","character":"Pink Hair","xto":900},
 		{"type":"dialogue","character":"Pink Hair","text":"Pretty Pink Magical Sword... [b]BUSTER@!!!","xpos":25,"ypos":55},
 
+		{"type":"dialogue","text":"Her sword shined brightly as she jumped in the air...","xpos":0,"ypos":0},
+
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue","text":"A bright glow emanates from her sword as she she jumps in the air and raises it above her head...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...And I take this as my opportunity to run. I get out of there as fast as I can!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...And I took this as my opportunity to run. I got out of there as fast as I could!","xpos":0,"ypos":0},
 		{"type":"addaffinity"},
 		{"type":"changebackground","background":"bg_city_monster"},
 

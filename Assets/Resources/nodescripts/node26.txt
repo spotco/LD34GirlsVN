@@ -18,19 +18,19 @@
 		{"type":"playSFX", "sfx":"thump"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH!!!@"},
-		{"type":"dialogue","text":"Some things haven't changed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Some things still haven't changed.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Kurumi...! Are you alright?!","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Oww...@ "},
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I've been tagging along on her crazy superhero adventures.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've been tagging along on her superhero adventures.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"You could almost say I've been an assistant of sorts...","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":470,"xscale":-1},
 
-		{"type":"changebackground","background":"bg_city_monster_2"},
+		{"type":"changebackground","background":"bg_city_monster"},
 		{"type":"dialogue","character":"Kurumi","text":"Are you [b3]really@ sure videotaping all this is a good idea?"},
 		{"type":"hidecharacter","character":"Mana","imm":true},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":180,"xscale":1,"imm":true},
@@ -47,12 +47,12 @@
 		{"type":"dialogue","text":"So, it's been a pretty crazy past few weeks... %To put it mildly.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Between sudden monster alerts in the middle of the night...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And having to go halfway across the city to track them all down...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've barely had the chance to get any sleep at all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've barely had the chance to catch any sleep at all.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sleep","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"[b2]Zzz...@"},
-		{"type":"dialogue","text":"I hear someone stop in front of my desk.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I heard someone stop in front of my desk.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"Kurumi.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Mmm... [b2]Zzz...@ Give me another 10 minutes..."},
@@ -62,7 +62,7 @@
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Ehhh....?!@"},
 
-		{"type":"dialogue","text":"It's Raichi.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was Raichi.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Did he come here just%to wake me up?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
@@ -80,27 +80,27 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"I... I can explain..."},
 
-		{"type":"dialogue","character":"Raichi","text":"I think I already know. %It's [b3]Mana@.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"I see you two together all the time.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"No need. %I know it's [b3]Mana@. %I see you two together all the time.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
-		{"type":"dialogue","character":"Raichi","text":"She's dragging you into her trouble, isn't she?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She's a bad influence.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"Listen, Kurumi... %This is important.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"While I'm happy you two have become friends, there are certain things you should not get involved with.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"This may not seem serious to you at all. It might even seem like a game.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"While you may be her friend, there are certain things you shouldn't get involved with.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Raichi","text":"This may not seem serious to you.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
-		{"type":"dialogue","character":"Raichi","text":"But I can assure you...%It's not.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"But I can assure you... %It is.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"So why don't you tell me exactly what's going on?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"I thought about his advice. There was a whole lot that I didn't know.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What should I do next?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I thought about what he had just said.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There was a whole lot that I didn't know.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I..."}
 	],
 	"links":[

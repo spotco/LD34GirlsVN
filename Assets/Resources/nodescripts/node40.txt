@@ -18,7 +18,7 @@
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"I show the photo to Mana.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"I... haven't seen this in a long time.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I... haven't seen this in a long time.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Who are those two people behind you?"},

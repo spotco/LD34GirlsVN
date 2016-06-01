@@ -5,14 +5,15 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"I took this as my opportunity to run. I get out of there as fast as I can!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I took this as my opportunity to run. I got out of there as fast as I could!","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
-		{"type":"dialogue","text":"Behind me, I could see flashes of light and hear the monster's roar.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"That must be the hero, she's still fighting! I'm glad she's alright, at least.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Still... I wish I could have thanked her. However...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I made the smart choice here. If I had stuck around, there's no telling what would have happened.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Behind me, I could saw flashes of light followed by the monster's loud roar.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That must have been the hero, she was still fighting!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was glad she was alright, %at least.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Still... I wished I could have thanked her. However...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I made the smart choice. If I had stuck around, there's no telling what would have happened.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I ran as fast and as far as I could.","xpos":0,"ypos":0}

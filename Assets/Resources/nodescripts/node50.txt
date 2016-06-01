@@ -151,7 +151,7 @@
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"With her sword drawn, she charged directly at him.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"So go back and tell them that!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"So go back and tell them that!","xpos":30,"ypos":77},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"playSFX", "sfx":"destroy"},
@@ -233,7 +233,7 @@
 		{"type":"dialogue","text":"Against all better judgement, I came out of hiding and ran to her side.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"[b]YOU@!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[b]YOU@!","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He saw me immediately.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
 
@@ -244,7 +244,7 @@
 		{"type":"dialogue","text":"She was still alive.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"I told you to stay out of this!","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I told you to stay out of this!","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He wasn't doing anything to stop me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"There must have been something holding him back.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},

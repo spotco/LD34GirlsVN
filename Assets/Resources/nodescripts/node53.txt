@@ -20,7 +20,7 @@
 		{"type":"dialogue","text":"It buzzed. She quickly flipped it open and checked it.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"A message from Raichi. He...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof"},
-		{"type":"dialogue","character":"Mana","text":"...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
 		{"type":"dialogue","character":"Mana","text":"...He wants to meet me at the top of the hill.","xpos":30,"ypos":77},

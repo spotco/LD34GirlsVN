@@ -15,9 +15,9 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"Screaming in panic, everyone around started running.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What were they running for? %I looked around as I tried to figure out what was going on.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What were they running for? %I looked around as I tried to figure out what exactly was going on.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Ahead, I saw a large shadow envelop the entire block.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As it got closer, I finally made out what it was.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As it got closer, I could finally make out what it was.","xpos":0,"ypos":0},
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
 		{"type":"changebackground","background":"bg_city_monster"},
@@ -37,9 +37,9 @@
 		{"type":"dialogue","text":"I turned around and ran as fast as I could, avoiding the falling debris.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"As I ran, I saw a bright glow in the sky above.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A beam of pink light shot across my vision. %As I opened my eyes, I saw it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A beam of pink light shot across my vision. %As I opened my eyes, I saw...","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"Is that... a person?"},
+		{"type":"dialogue","character":"Kurumi","text":"...A person?"},
 
 		{"type":"changebackground","background":"bg_city_monster"},
 		{"type":"playSFX", "sfx":"transform"},
@@ -67,11 +67,11 @@
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_monster"},
-		{"type":"dialogue","text":"As I opened my eyes, I found myself thrown back several dozen feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I opened my eyes, I found myself thrown back several feet.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Ahead of me, I saw the hero on the ground.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"She must have thrown me out of the way..."},
+		{"type":"dialogue","character":"Kurumi","text":"She must have gotten me out of the way..."},
 		{"type":"dialogue","text":"I was still alive. But the hero... She must have taken a direct hit.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Is she okay? %What I should I do!?"}
 	],

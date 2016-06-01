@@ -7,13 +7,13 @@
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
 
-		{"type":"dialogue","text":"It's been a crazy, hectic experience.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"With all this moving and unpacking, I haven't even had a chance to write to my friends back home.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... %It was new home in a new city. %An opportunity fresh start!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With all this moving and unpacking, it's been a crazy, hectic experience.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I haven't even had a chance to write to my friends back home.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I was in a new city... %It's an opportunity for a fresh start!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_road"},
 
-		{"type":"dialogue","text":"It was my first day as transfer to this school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was my first day as transfer to my new school.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As someone who had barely even left my small town before this...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...I was a little nervous, to say the least.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_classroom"},
@@ -106,7 +106,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Oh! I-I'm sorry! I was just...","xpos":-17,"ypos":-100},
 
 		{"type":"dialogue","character":"Teacher","text":"[b3]Ms. Motoyama@. I know it's tough getting up to speed...","xpos":231,"ypos":107},
-		{"type":"dialogue","character":"Teacher","text":"...so if you're lost, please feel free to say so.","xpos":231,"ypos":107},
+		{"type":"dialogue","character":"Teacher","text":"...So if you're lost, please feel free to say so.","xpos":231,"ypos":107},
 
 		{"type":"dialogue","text":"Everyone was staring at me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Oh geez. This was pretty embarassing.","xpos":0,"ypos":0},
@@ -121,7 +121,7 @@
 		{"type":"dialogue","text":"I just hoped it wasn't anything too serious.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Teacher","text":"[b2]*Ahem*@...","xpos":231,"ypos":107},
-		{"type":"dialogue","text":"I realized that I had stalled for too long.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I realized that I had stalled for a little too long.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"I...","xpos":-17,"ypos":-100},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
@@ -134,7 +134,7 @@
 		{"type":"playSFX", "sfx":"school_bell"},
 		{"type":"dialogue","text":"[b2]*Ding Dong!*@","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The bell chime meant that class was over.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The other student started to file out for lunch.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The other students started filing out for lunch.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?","xpos":-17,"ypos":-100}
 	],

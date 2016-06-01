@@ -31,7 +31,7 @@
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"Okay, Okay! I'll help you clean up. Just don't look at me like that...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Okay, Okay! I'll help you clean up. Just don't look at me like that...","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},

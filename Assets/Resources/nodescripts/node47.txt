@@ -101,7 +101,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Don't--@"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Don't... what?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Don't... what?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"She had no idea. %This couldn't end well.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... %Could I bring myself to tell her?","xpos":0,"ypos":0}

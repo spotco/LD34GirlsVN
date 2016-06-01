@@ -14,29 +14,29 @@
 		{"type":"dialogue", "text":"Mana had what must have been one of every pastry on the menu.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"I wonder, how [b3]DOES@ she stay so skinny while eating so much?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Hey Kurumi, take a look at this.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Hey Kurumi, take a look at this.","xpos":30,"ypos":77},
 		{"type":"dialogue", "text":"She shows me her phone.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Monster sighted... Shinagawa district?"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Doesn't look so tough. I'm sure you could take it!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"No, look below. You see this?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"No, look below. You see this?","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Below? Well...%Says it was defeated by a hero clad in pink. And?"},
 
-		{"type":"dialogue","character":"Mana","text":"[b3]And@? Think about it.","xpos":0,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Shinagawa district? I don't remember going there.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]And@? Think about it.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Shinagawa district? I don't remember going there.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"Wait... Then what are you saying?"},
 
-		{"type":"dialogue","character":"Mana","text":"Something suspicious is going on here...","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Something suspicious is going on here...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"Or I might have just forgotten about it.","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Or I might have just forgotten about it.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"Either way sounds like fun! Wanna go check it out?","xpos":0,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Either way sounds like fun! Wanna go check it out?","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."}

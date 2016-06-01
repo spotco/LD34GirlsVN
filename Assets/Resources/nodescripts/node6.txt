@@ -37,8 +37,8 @@
 		{"type":"dialogue","character":"Raichi","text":"...And I must say, it's been quite a while since I've to run so much!","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Raichi","text":"And before that, I was at the [b3]tennis club@. I never did get used to swinging that racket...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","text":"Soccer? Tennis? I definitely wasn't that kind of person.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But how could I tell him that... politely?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Soccer? Tennis? That definitely wasn't my idea of fun.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But how could I tell him that... Politely?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Umm@..."},
 		{"type":"dialogue","character":"Raichi","text":"I'm sorry, were you saying something?","xpos":22,"ypos":53},
 
@@ -49,15 +49,15 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"I see.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"He looked dissapointed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He looked disappointed.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"I completely understand. Schoolwork [b3]IS@ quite important.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"I'm really quite impressed! %I should definitely be following your example.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I'm actually quite impressed! %I should definitely be following your example.","xpos":22,"ypos":53},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"He definitely had the wrong impression here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He definitely had the wrong impression here...","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Anyway, let me know if you need anything.","xpos":22,"ypos":53}
 	],

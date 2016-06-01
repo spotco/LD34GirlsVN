@@ -25,12 +25,12 @@
 		{"type":"dialogue","text":"I followed him out of the classroom.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"As we went down the hallway, we started talking.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"We talked as we went down the hallway.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Raichi","text":"If you don't mind me asking, %I'm rather curious... %Where are you from, exactly?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"If you don't mind me asking, where did you come from?","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
 		{"type":"dialogue","text":"It seemed like a pretty normal question.","xpos":0,"ypos":0},
