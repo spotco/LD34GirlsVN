@@ -7,8 +7,8 @@
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"A new city. %An opportunity for a fresh start.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I wondered what kinds of new experiences and people awaited me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But so far, with all this moving and unpacking... It's been a completely hectic one.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I couldn't help but wonder what kinds of new experiences were out there waiting for me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But so far, with all this moving and unpacking... %It's been a completely hectic.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I haven't even had the chance to write to everyone back home!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_road"},
