@@ -25,10 +25,10 @@
 		{"type":"dialogue","character":"Raichi","text":"Oh my... What happened? Are you hurt?","xpos":33,"ypos":70},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","text":"Am I hurt...?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Was I hurt...?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","text":"I took a moment to look at myself. I was a mess!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"My shirt was torn, and I had cuts all over my arms and legs. I didn't even notice!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My shirt was torn, and I had cuts all over my arms and legs. I hadn't even notice!","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"I'm... alright. %I've just been through a lot!"},
 
@@ -41,7 +41,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Raichi","text":"Another attack... %I'm just glad you're safe, Kurumi.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"Another attack... %I'm just glad you're safe, [b3]Kurumi@.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Kurumi","text":"Another...? You mean there's been others?"},
 		{"type":"dialogue","character":"Raichi","text":"I'm not surprised you haven't heard about it.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Raichi","text":"They've been doing their best to keep it all under wraps.","xpos":33,"ypos":70},
@@ -83,7 +83,7 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","text":"He then smiled.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"If I were you, I wouldn't worry too much about it.","xpos":33,"ypos":70},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Kurumi","text":"How can you say that..?"},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"This kind of thing has happened before in other cities, you know.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Raichi","text":"They'll send in the military and start evacuating citizens if need be.","xpos":33,"ypos":70},

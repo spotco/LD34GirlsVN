@@ -13,10 +13,10 @@
 
 		{"type":"dialogue","character":"Mana","text":"You're a [b]Magi-Knight@ too, aren't you?","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
-		{"type":"dialogue","character":"Mana","text":"Then bug off.%This is [b3]MY@ territory.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Then bug off. %This is [b3]MY@ town.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Simone","text":"[b3]Dohohoho~!@"},
-		{"type":"dialogue","character":"Simone","text":"You ugly girl... a [b]Magi-Knight@ like [b]Simone@?"},
+		{"type":"dialogue","character":"Simone","text":"You, ugly girl... a [b]Magi-Knight@ like [b]Simone@?"},
 		{"type":"dialogue","character":"Simone","text":"[b]Simone@ doesn't believe it! Where's [b3]ugly@ girl's [b3]ugly@ dress, or [b3]ugly@ weapon?"},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
@@ -29,8 +29,8 @@
 		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama so kawaii~!","xpos":0,"ypos":100},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
-		{"type":"dialogue", "text":"She's completely speechless.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"I don't think I've seen Mana quite like this before.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"She was completely speechless.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I didn't think I'd ever seen Mana quite like this before.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Simone","text":"This city belongs to [b]Simone@! Time for [b3]ugly@ girl to go home!"},
 

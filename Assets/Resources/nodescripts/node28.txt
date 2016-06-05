@@ -15,7 +15,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"I... I don't know what you're talking about here."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"Kurumi. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"...I don't understand?"},
 
 		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... She's not someone you should be around.","xpos":30,"ypos":77},
@@ -47,14 +47,14 @@
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
 		{"type":"dialogue","text":"It was [b3]Mana@!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"Kurumi! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"She walked over.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"Raichi suddenly smiled. %What's with this change in attitude?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi suddenly smiled. %What was with this change in attitude?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"We'll continue this another time. I'll see you around.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"dialogue","text":"As he left, he exchanged a friendly greeting with Mana. They seemed to be on good terms.","xpos":0,"ypos":0},
@@ -63,7 +63,7 @@
 
 		{"type":"dialogue","character":"Mana","text":"Hey! So what were you two talking about?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
-		{"type":"dialogue","text":"Everything that Raichi had said about her... %I was still a little upset.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything that Raichi had said about her... %I was still upset.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But I didn't want to ruin her good mood, so I kept quiet.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Wasn't anything too important."},
 
@@ -73,11 +73,11 @@
 		{"type":"dialogue","character":"Mana","text":"He even let me copy his homework this morning! Who would have guessed, right?","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"They were friends now? %I didn't think I was jealous or anything like that, but...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This was odd. Unexpected. %I thought they couldn't stand each other.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This was unexpected. %I thought they couldn't stand each other.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told your cat just died.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Why so glum? You look like someone just told your cat just died or something.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"Just kidding, just kidding! %I don't think you even have a cat. Cheer up a bit!","xpos":30,"ypos":77},
@@ -93,9 +93,9 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"[b3]Raichi@... It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What did he mean when he said that she was dangerous?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Well, whatever it was...%I wasn't going to let it bother me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... He definitely felt suspicious. %He must have known something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What did he mean when he said that Mana was [b]dangerous@?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well, whatever it was... %I wasn't going to let it stop me.","xpos":0,"ypos":0},
 
 		{"type":"addaffinity"}
 	],

@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 29;
+	public static int NODE_START_INDEX = 24;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -46,11 +46,8 @@ public class GameMain : MonoBehaviour {
 	==script edit==
 	
 	confirm all desc past tense
-	
 	change raichi after simone meeting
-	split #50 into 2
 	node positioning
-	
 	credits
 		-simone boo-hoo tell you a secret
 	

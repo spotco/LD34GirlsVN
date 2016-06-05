@@ -60,7 +60,7 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
-		{"type":"dialogue","text":"She was getting the wrong idea here. This wasn't even the first time it happened today...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was getting the wrong idea here. It wasn't even the first time this had happened today...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"Seeing as we're both %[b]playing hooky@ here...","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Mana","text":"You wouldn't mind if I tagged along, would you?","xpos":22,"ypos":53},
 		{"type":"dialogue","character":"Mana","text":"I was [b3]literally@ bored out of my mind until you showed up here.","xpos":22,"ypos":53},

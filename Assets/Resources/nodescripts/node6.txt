@@ -24,7 +24,7 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I'm impressed! I see you take your classwork quite seriously.","xpos":22,"ypos":53},
 
-		{"type":"dialogue","text":"He might be getting the wrong impression here...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He might have been getting the wrong impression here...","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"That reminds me... %Have you thought about joining a club yet?","xpos":22,"ypos":53},
@@ -54,10 +54,10 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"I completely understand. Schoolwork [b3]IS@ quite important.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"I'm actually quite impressed! %I should definitely be following your example.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I'm actually quite impressed! %I should be following your example.","xpos":22,"ypos":53},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"He definitely had the wrong impression here...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He [b3]definitely@ had the wrong impression here...","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Anyway, let me know if you need anything.","xpos":22,"ypos":53}
 	],

@@ -6,14 +6,14 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-
-		{"type":"dialogue","text":"With all this moving and unpacking, it's been a crazy, hectic experience.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I haven't even had a chance to write to my friends back home.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But I was in a new city... %It's an opportunity for a fresh start!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A new city. %An opportunity for a fresh start.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wondered what kinds of new experiences and people awaited me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But so far, with all this moving and unpacking... It's been a completely hectic one.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I haven't even had the chance to write to everyone back home!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_road"},
 
-		{"type":"dialogue","text":"It was my first day as transfer to my new school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Today was my first day as a transfer to my new school.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As someone who had barely even left my small town before this...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...I was a little nervous, to say the least.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_classroom"},
@@ -46,7 +46,7 @@
 		{"type":"dialogue","text":"With introductions finished, the lesson started.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"Alright, class. %So last week I mentioned there would be a quiz...","xpos":0,"ypos":110},
 		{"type":"dialogue","text":"I looked over again at the pink-haired girl and saw that she wasn't paying any attention.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She was just staring out the window into space. I'm guessing that she wasn't a great student.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was just staring out the window into space. I was guessing that she wasn't a great student.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Teacher","text":"...But since [b3]Ms. Motoyama@ transfered today, I think we can put that on hold for the time being...","xpos":0,"ypos":110},
 		{"type":"playSFX", "sfx":"phone_buzz"},
@@ -58,8 +58,8 @@
 		{"type":"dialogue","text":"With a mischevious grin, she got up from her desk.","xpos":0,"ypos":0},
 		{"type":"movecharacter","character":"Pink Hair","xto":0},
 		{"type":"dialogue","character":"Pink Hair","text":"Excuse me! May I please go to the nurse's office?","xpos":287,"ypos":0},
-		{"type":"dialogue","text":"The teacher didn't seem too convinced.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"Right now? %Class just started a few minutes ago.","xpos":287,"ypos":120},
+		{"type":"dialogue","text":"The teacher didn't seem particularly convinced.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"Right now? %Class just started.","xpos":287,"ypos":120},
 		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_sad","xscale":-1},
 		{"type":"dialogue","text":"She closed her eyes and put on a distressed face.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Pink Hair","text":"[b3]Ugh@... %I'm feeling... kinda sick. %Must have been something I ate.","xpos":287,"ypos":0},
@@ -115,7 +115,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"...Should I ask someone for help?"},
 
 		{"type":"dialogue","text":"As I looked around, I noticed the empty desk directly front of me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"That's where that odd [b]pink-haired girl@ sat. Her bag was there, but she was still gone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That's where that odd [b]pink-haired girl@ had sat. Her bag was there, but she was still gone.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"Odd."},
 		{"type":"dialogue","text":"I just hoped it wasn't anything too serious.","xpos":0,"ypos":0},

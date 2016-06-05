@@ -5,9 +5,9 @@
 	"music":"epic",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue", "text":"I try asking someone in the crowd to see if I can figure out what's going on.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I tried asking someone in the crowd to explain what exactly was going on.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Excuse me... Umm... Mister..."},
+		{"type":"dialogue","character":"Kurumi","text":"Excuse me... [b3]Umm@... Mister..."},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
@@ -25,9 +25,9 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue", "text":"I glance around. Everyone in the crowd looks very similar.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"They're all cheering in unison with fervent devotion.%It's almost kind of creepy.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Is this what they call... %[b3]Otaku Culture@?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I glanced around. Everyone in the crowd looked somewhat similar.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"They were all cheering in unison with fervent devotion. %It was almost kind of creepy.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Was this what they called... %[b3]Otaku Culture@?","xpos":0,"ypos":0},
 
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
@@ -40,11 +40,11 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"I'm sure you could fight monsters even better!"},
 
-		{"type":"dialogue","character":"Mana","text":"Team up... With her?%I think I'll pass.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Team up... With her? %I think I'll pass.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I don't think I could handle this noise... Or her constant self-referencing in the third person.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue", "text":"Well... I guess she had a point.","xpos":0,"ypos":0}
+		{"type":"dialogue", "text":"Well... She probably had a point.","xpos":0,"ypos":0}
 	],
 	"links":[
 		30

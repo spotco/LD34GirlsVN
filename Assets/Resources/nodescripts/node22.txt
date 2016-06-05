@@ -10,7 +10,7 @@
 
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH! ! !@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaah@!!!"},
 
 		{"type":"dialogue","text":"I tripped over something and fell. So much for being quiet.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I heard footsteps coming up the stairs. My door suddenly opened as the light turned on.","xpos":0,"ypos":0},

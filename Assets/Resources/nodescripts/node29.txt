@@ -30,14 +30,14 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
 		{"type":"dialogue","text":"It was [b3]Mana@!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Kurumi! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"She walked over.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"Raichi suddenly smiled. %What's with this change in attitude?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi suddenly smiled. %What was with this change in attitude?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Looks like I'll have to tell you another time.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"I'll see you around.","xpos":30,"ypos":77},
@@ -48,7 +48,7 @@
 		{"type":"dialogue","character":"Mana","text":"Hey! So what were you two talking about?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
 		{"type":"dialogue","text":"I couldn't help but wonder what he was about to tell me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Mana... she was my friend. Probably my best friend here at this school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Mana@... she was my friend. Probably my best friend here.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... I realized that I didn't really know that much about her.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
@@ -60,16 +60,16 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"[b3]After@ we get lunch, of course!","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"Well... %I'm sure I'll find out sooner or later.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... %I was sure that I would find out sooner or later.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Alright. Ramen again?"},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"[b3]Raichi@... It definitely felt suspicious. It seemed like he knew a lot.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What was he going to say that he thought was so important?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Well, whatever it was...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Raichi@... He definitely felt suspicious. %He must have known something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What was he going to tell me that he thought was so important?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Well... %Whatever it was...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'm sure it wouldn't have changed anything.","xpos":0,"ypos":0},
 	],
 	"links":[

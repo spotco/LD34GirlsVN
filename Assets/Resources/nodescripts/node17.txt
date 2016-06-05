@@ -6,7 +6,7 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"It's been a crazy day. %Crazier than I could have ever imagined.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's been a hectic day. %Crazier than I could have ever imagined.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The new school...%All the new people I met...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Not to mention that%[b]GIANT MONSTER ATTACK@ that almost had me killed...","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment"},
@@ -35,7 +35,7 @@
 		{"type":"dialogue","character":"TV Anchor","text":"However, the police request that any sightings be immediately reported..."},
 
 		{"type":"playSFX", "sfx":"phone_unlock"},
-		{"type":"dialogue","text":"[b3]*click*@","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b2]*Click!*@","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'd seen enough, and turned off the TV.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},

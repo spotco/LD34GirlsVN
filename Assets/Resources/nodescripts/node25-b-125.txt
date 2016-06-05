@@ -95,8 +95,8 @@
 		{"type":"dialogue","text":"It all seemed even stranger than fiction.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"Tears were welling up in her eyes, as if she was about to cry.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She was still holding my hands waiting for a response.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"When she put it that way, how could I ever possibly say no?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was still holding my hands, as if still waiting for a response.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I guess I really couldn't have said no to something like that, could I?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"I'll... keep your secret."},
 

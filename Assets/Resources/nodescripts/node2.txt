@@ -11,11 +11,11 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaahh!!!@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaah@!!!"},
 		{"type":"dialogue","text":"Being the clumsy klutz I was,%I completely missed those stairs.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Male Student","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Male Student","text":"Hey, are you alright?%Let me help you up.","ypos":45},
+		{"type":"dialogue","character":"Male Student","text":"Oh my, are you alright? %Let me help you up.","ypos":45},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Male Student","text":"Ah! It's... [b3]Kurumi@, is that right?","xpos":23,"ypos":45},
 
@@ -42,7 +42,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"The same! And... %I guess you already know my name.","ypos":-130},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"I'm curious... %What did you think of class, was it similar to what you had back home?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I'm curious... %What did you think of class? %Was it similar to what you had back home?","xpos":23,"ypos":45},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Well...","ypos":-130},
 		{"type":"dialogue","text":"I imagined that saying I slept through most of it probably wouldn't have made the best impression.","xpos":0,"ypos":0},
@@ -61,13 +61,13 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"Tall, pink hair, very hard to miss.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Her name's [b]Manami Ichijou@, %but she usually goes by just '[b]Mana@'.","xpos":23,"ypos":45},
-		{"type":"dialogue","text":"[b]Mana@... that's her name?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@... that was her name?","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Raichi","text":"I don't think I've ever seen anyone quite like her before.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Skipping class and outright ignoring the teachers...%It's rather disrespectful.","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Raichi","text":"Don't you agree?","xpos":23,"ypos":45},
 		{"type":"dialogue","character":"Kurumi","text":"...","ypos":-130},
-		{"type":"dialogue","character":"Raichi","text":"I am rather curious what kind of trouble she's getting herself into.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I'm sure we're both wondering what kind of trouble she's getting into right now.","xpos":23,"ypos":45},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"We'll just have to keep an eye on her, won't we?","xpos":23,"ypos":45},
 

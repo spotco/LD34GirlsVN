@@ -29,7 +29,7 @@
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Hehe@..."},
-		{"type":"dialogue","character":"Kurumi","text":"This must be what they call... [b3]cosplay@?"},
+		{"type":"dialogue","character":"Kurumi","text":"This must be what they call... [b3]Cosplay@?"},
 
 		{"type":"dialogue","text":"I would have never guessed that she'd be into this kind of thing.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Looking over them, I couldn't help but think...","xpos":0,"ypos":0},

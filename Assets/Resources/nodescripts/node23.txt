@@ -28,7 +28,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]WWWWAAAAAAHHHH! ! !@"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaah@!!!"},
 
 		{"type":"dialogue","text":"I felt two arms wrap around my legs, dragging me to the ground as well.","xpos":0,"ypos":0},
 

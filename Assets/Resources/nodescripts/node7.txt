@@ -59,7 +59,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"That's... horrible! %I'm so sorry."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"Don't be. It's not a problem for me in the slightest.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"Don't be. It hasn't been a problem for me in the slightest.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 
 		{"type":"dialogue","character":"Raichi","text":"We're all here for a reason, you know.","xpos":22,"ypos":53},
@@ -72,7 +72,7 @@
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","character":"Raichi","text":"And as for me...","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Raichi","text":"I came here to look for someone.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Raichi","text":"I came here because I wanted to look for someone.","xpos":22,"ypos":53},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
 		{"type":"dialogue","character":"Raichi","text":"Haven't found them quite yet, I'm sad to say.","xpos":22,"ypos":53},
 
