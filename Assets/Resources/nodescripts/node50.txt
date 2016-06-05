@@ -89,7 +89,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":1},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"I knew she wanted to be a hero. But that she would go so far..","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I knew she wanted to be a hero. But that she would go so far...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I didn't want to believe it.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
@@ -418,7 +418,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"I've had to say goodbye to so many friends recently..."},
 		{"type":"dialogue","character":"Kurumi","text":"I'm just happy that you'll still be here."},
 		{"type":"dialogue","character":"Mana","text":"Happy..?","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"Of course! Because we're best friends now, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"Of course! Because we're best friends, right?"},
 		{"type":"dialogue","character":"Mana","text":"Best... friends..?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"Yeah. Best friends.","xpos":30,"ypos":77},
@@ -431,10 +431,10 @@
 		{"type":"dialogue","character":"Mana","text":"By the way, [b3]Kurumi@...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
 		{"type":"dialogue","character":"Mana","text":"Back there, after I asked whether you'd trust me...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"You remember what I did right after?","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Kurumi","text":"Not really..."},
-		{"type":"dialogue","character":"Mana","text":"Well... %[b2]Heehee...@","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"It might be for the best that you didn't.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You remember anything about what happened afterwards?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Not really..?"},
+		{"type":"dialogue","character":"Mana","text":"Well... %[b2]Heehee@...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"It might have been for the best that you didn't.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Whaaaaaa@~?!"},
 		{"type":"titleend"}
 	],

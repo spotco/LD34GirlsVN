@@ -41,7 +41,7 @@
 		{"type":"playSFX", "sfx":"door_slam"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"But I closed the door and went back down the stairs.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'll go eat somewhere else today.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'd prefer to go eat somewhere else today.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
 		{"type":"dialogue","text":"As I went down the hall, I heard someone come up from behind.","xpos":0,"ypos":0},
@@ -53,7 +53,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Raichi..?"},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"Mana mentioned that you had said something to her.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Mana said that you'd told her.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Raichi","text":"There's something I'd like you to know.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"What is it..?"},
@@ -133,12 +133,12 @@
 		{"type":"dialogue","character":"Raichi","text":"I was prepared to use whatever means necessary if she resisted.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"But even I would have never guessed...","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"...That she would come and show herself to me without a fight.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"...That she would come to me without a fight.","xpos":-15,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":-1},
-		{"type":"dialogue","character":"Raichi","text":"She'll be going away with me.","xpos":-15,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"She'll be going away.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"You..."},
 		{"type":"dialogue","character":"Raichi","text":"We'll be gone by tomorrow night.","xpos":-15,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"I'll be taking the necessary precautions to make sure nobody else gets harmed.","xpos":-15,"ypos":77},

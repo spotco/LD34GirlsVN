@@ -42,11 +42,11 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]W-w-wait@... %Mana... %It's the [b3]tru--@"},
 		{"type":"dialogue","character":"Mana","text":"And... and...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
-		{"type":"dialogue","text":"She chokes up as tears start flowing from her eyes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She choked up as tears started flowing from her eyes.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"I thought you were gonna be happy for me...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I was even gonna ask you to come too...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":-1},
-		{"type":"dialogue","text":"She turned around, her back facing towards me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She turned around.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"But you know what..?","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","character":"Mana","text":"You can just [b3]STAY@ home!","xpos":30,"ypos":77},
@@ -59,7 +59,7 @@
 
 		{"type":"dialogue","text":"I warned her.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I told her what I knew.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I thought I was doing the right thing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I did what I was right.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... %Why did it have to turn out %like this..?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I'm... sorry..."}
 	],
