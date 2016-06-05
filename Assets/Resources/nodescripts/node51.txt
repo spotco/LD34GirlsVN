@@ -11,12 +11,12 @@
 		{"type":"dialogue","text":"I... decided against it.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Yes, everything about his behaviour had made me extremely suspicious...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... I just couldn't tell her. Knowing her, and with everything that had just happened...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...she probably wouldn't even listen. It would have only made her angry.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...She probably wouldn't even have listened. It would have only made her mad.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was just who she was. %I couldn't change that.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Don't... Forget to tell me next time!"},
-		{"type":"dialogue","text":"I made my best fake smile.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I put on my best fake smile.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I was wondering what you had been up to."},
 		{"type":"dialogue","character":"Kurumi","text":"If this is what I think it is..."},
@@ -24,7 +24,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"I think you guys look super cute together!"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Oh... [b3]Stop@! %[b3]I bet@... He doesn't even think of it as anything serious!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Oh... [b3]Stop@! %I bet... He doesn't even think of it as anything serious!","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"Was this really the right choice?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Would she have ever forgiven me if I had said otherwise?","xpos":0,"ypos":0},
@@ -57,12 +57,12 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"Around him... I feel as though I could live as a normal person.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Around him... I feel as though I really ought to live as a normal person.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"Was this... %What she really wanted?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"If this was how she wished to live... I should have been happy for her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"If this was how she wanted to be... I should have been happy for her.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But then... Why did I feel so uneasy? Was this jealousy?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Mana@... %I guess I didn't understand her, after all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b3]Mana@... %I guess I really didn't understand her, after all.","xpos":0,"ypos":0},
 
 		{"type":"playBGM","bgm":"happy_day"},
 
@@ -77,11 +77,11 @@
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Whaaaaaaaaaaaaaa@~~~?!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Whaaa@~?!","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Hehe@... had to say it!"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Y-you're@ getting the wrong idea here!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Y-you're getting the wrong idea here!","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},

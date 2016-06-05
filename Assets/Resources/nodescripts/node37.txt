@@ -9,7 +9,7 @@
 		{"type":"dialogue","character":"Mana","text":"I'll... Grab those books.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
 
-		{"type":"dialogue", "text":"She digs through a pile of garbage in the corner.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"She dug through a pile of garbage in the corner.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"I could have sworn I put them here a few days ago...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"Or did I leave them back at school...?","xpos":30,"ypos":77},

@@ -16,7 +16,7 @@
 		{"type":"dialogue","character":"Mana","text":"Well... %About that...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I looked everywhere and I seriously couldn't find them.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"So must have left them back at school or something. [b3]Oops@!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"So must have left them back at school or something...","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"..."}

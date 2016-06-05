@@ -8,7 +8,7 @@
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"As I sort through her bookshelf, I stumble across an old photo.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I sorted through her bookshelf, I stumbled across an old photo.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"A little girl..?"},
 		{"type":"dialogue","text":"There was an adorable little girl holding a toy plastic wand in her hand.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Though it was strange seeing her without the pink hair... %I knew exactly who it was.","xpos":0,"ypos":0},
@@ -17,14 +17,14 @@
 		{"type":"dialogue","character":"Kurumi","text":"You looked so cute back then!"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"I show the photo to Mana.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I showed the photo to Mana.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"I... haven't seen this in a long time.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"Who are those two people behind you?"},
 
-		{"type":"dialogue","text":"There were two people standing behind the little girl.%A man and a woman.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"Those were my parents.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"There were two people standing behind the little girl. %A man and a woman.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"Those... were my parents.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Your parents? %Where are they now?"},
@@ -43,16 +43,16 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I think I got along fine without them, didn't I?","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"Mana takes the photo.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana took the photo.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Hehe...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Even back then all I ever thought about were magical superheroes.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b3]Hehe@...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Even back then... %All I ever cared about were magical heroes.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"She points to the wand in the little girl's hand.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"I carried that wand around with me everywhere I went.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"She pointed to the wand in the little girl's hand.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"I carried that thing around with me everywhere I went.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"She returns the photo back to the bookself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She returned the photo back to the bookself.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Mana","text":"Now... %Didn't we have some more laundry to fold?","xpos":30,"ypos":77},

@@ -10,20 +10,23 @@
 		{"type":"dialogue","character":"Kurumi","text":"Use in a time of need... %Isn't that what this was for?"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue", "text":"Was this the time?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Was this the right time?","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"I was sure of it. %I grabbed it out of my bag.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"wand"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"Mana, you think this would help?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... %You think you could do something with this?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"The magical artifact!","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I don't know what's gonna happen... %But... It couldn't hurt. %Let's give it a shot!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I'm gonna need your help for this.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I'll distract her. Follow my lead, okay?","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Wait, what..?"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
@@ -36,19 +39,19 @@
 		{"type":"dialogue","character":"Mana","text":"You're the one who's going to be saying goodbye.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! Now!%Do it!","xpos":30,"ypos":77},
-		{"type":"dialogue", "text":"She motioned to me to raise both arms above my head.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! Now! %Do it!","xpos":30,"ypos":77},
+		{"type":"dialogue", "text":"She motioned to me to hold up the wand.","xpos":0,"ypos":0},
 
 		{"type":"movecharacter","character":"Mana","xto":200},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":350,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"W-wha...?!","xpos":71,"ypos":-130},
-		{"type":"dialogue", "text":"With two hands, I follow her instructions and raised the wand high above my head.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I followed her instructions and raised the wand high above my head.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"It started to glow. %[b3]Something@ was going on here, at least.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Simone","text":"What kind of silly trick is [b3]ugly@ girl trying now?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"[b]Simone@, the trick is... You're gonna regret messing with us!","xpos":-5,"ypos":37},
-		{"type":"dialogue", "text":"Mana seemed awfully confident. I sure hope she knows what she's doing...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Mana seemed awfully confident. I sure hoped she knew what she was doing here...","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
@@ -59,7 +62,7 @@
 		{"type":"dialogue", "text":"Suddenly, a blinding light filled my vision.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"A powerful gust of wind pushed me back. I did my best to keep standing.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"The wand shook violently as it grew uncomfortably hot. It took all my strength to hold it in place.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"I opened my eyes to see what had happened. %A transformation...?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I opened my eyes and saw what had happened. %A transformation...?","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
 		{"type":"dialogue", "text":"Something was different. With the power of the wand, she was now...","xpos":0,"ypos":0},
@@ -75,17 +78,17 @@
 		{"type":"dialogue", "text":"I didn't exactly know what an ultimate transform was...","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"But something was different. %That, I could tell at least.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"Her long hair shined radiantly as it flowed around her.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Her sword, now the length of her entire body, rested gently on her shoulder.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"If sword size was any indication, she definitely was more powerful now. %But...","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Her sword was larger, now the size of her entire body. She swung it around with ease.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"If that was any indication, I was guessing she was more powerful now. But...","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Simone","text":"[b3]H-h-how@ is this possible? [b]Kashiwagi@-senpai said only [b]Simone@ was the strongest..."},
-		{"type":"dialogue", "text":"Something felt odd.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Something felt odd to me.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"[b3]Strongest?@","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"[b3]Who is the strongest, %I wonder?@","xpos":30,"ypos":77},
-		{"type":"dialogue", "text":"It was as if... %She was not herself.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"It seemed as if, in this new form... %She was not entirely herself.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Simone","text":"[b]Simone@ not wish to fight anymore! M-make peace, yes...?!"},
-		{"type":"dialogue", "text":"Mana raised her sword. She was about to unleash an attack.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Mana raised her sword. What was she about to do?","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"[b]Ultimate@...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"[b]Chaos Sword@...","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Simone"},
@@ -102,9 +105,9 @@
 		{"type":"playBGM","bgm":"none"},
 		{"type":"playSFX", "sfx":"destroy"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue", "text":"A powerful shockwave knocked me back.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"A powerful shockwave pushed me back.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"I suddenly felt... weak. %My body refused to move as I collapsed to the ground.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Everything around me grew dark as I fell unconscious.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Everything around me grew dark. I passed out.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"...","xpos":0,"ypos":0},
 
@@ -117,7 +120,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue", "text":"I slowly managed to get up.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mmmph@... %What happened...?"},
-		{"type":"dialogue","character":"Mana","text":"You missed it!%The best part!","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"You missed it! %The best part!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
 		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[b]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
@@ -132,7 +135,7 @@
 		{"type":"dialogue","character":"Mana","text":"Uh... I...","xpos":30,"ypos":70},
 		{"type":"dialogue", "text":"She glanced away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
-		{"type":"dialogue","character":"Mana","text":"I guess I overdid it a little...%Didn't I?","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"I guess I overdid it a little... %Didn't I?","xpos":30,"ypos":70},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue", "text":"#Overdid it a little#? %That would be one way to put it. ","xpos":0,"ypos":0},
@@ -143,7 +146,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Anyway@... Let's get out of here before the military shows up.","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"[b3]Anyway@... Let's get out of here before the police show up.","xpos":30,"ypos":70},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
@@ -153,9 +156,9 @@
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"dialogue", "text":"By the time I got home, it was everywhere on the news.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"An entire city block destroyed, two mysterious figures seen in the area.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"There was a recorded video of the fight that was being aired almost non-stop. %I couldn't keep watching.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"There was a recorded video of the fight that was being aired almost non-stop. %I couldn't escape it.","xpos":0,"ypos":0},
 
-		{"type":"additem","item":"fight video"}
+		{"type":"additem","item":"video"}
 	],
 	"links":[
 		30

@@ -16,7 +16,7 @@
 		{"type":"dialogue","text":"Ever since our argument, Mana had been completely ignoring me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"I've noticed her coming to class more often, however. So that's one good thing to come out of all this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've noticed her coming to class more often, however. So that was one good thing to come out of all this.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'm guessing it must have been to impress a certain someone.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Kurumi"},

@@ -6,24 +6,24 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","text":"[b3]Raichi@... %I couldn't exactly say how I was so sure about it...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But I knew he was not good.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I knew I couldn't trust him.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"[b3]Somehow@... %I knew he was going to hurt Mana.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I didn't know if I could stop him. But I was going to do whatever I could.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know if I could stop him. But... I was going to do whatever I could.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %I don't know what you are... %Or what you plan to do..."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %I don't know who you are... %Or what you plan to do..."},
 		{"type":"dialogue","character":"Kurumi","text":"But I'm not going to let you %do it."},
-		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you hurt Mana."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you hurt [b3]Mana@."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","text":"He sighs as he takes off and polishes his glasses.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I can understand why you try and defend her like this.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"He sighed.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"I don't understand why you defend her.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","text":"Putting them back on, he smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He smiled.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... You think she's your friend, don't you?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"If only you knew the truth behind these so called #[b]Magi-Knights@#.","xpos":30,"ypos":77},
 
@@ -33,7 +33,7 @@
 		{"type":"dialogue","character":"Raichi","text":"I'll tell you this. %They're not heroes.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
 		{"type":"dialogue","character":"Raichi","text":"It's a twisted and delusional fantasy that they exist in.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"Your presence here has caused her to grow out of control.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Your presence here has only made it worse.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
@@ -41,24 +41,24 @@
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"I've warned you before, but this will be the last time.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"Stay away from her. %If you don't...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"I can't guarantee what will happen.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I can't guarantee for sure what will happen.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"I... didn't know what to say.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","text":"Raichi smiles. He's suddenly back to his usual self.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Raichi smiled again. He was suddenly back to his usual self.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"So I hope you listen this time, okay?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"So, I hope you listen this time, okay?","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Raichi","text":"I've got someone to meet. %I'll see you around.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"I've got somewhere to be. %I'll see you around.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Raichi"},
-		{"type":"dialogue","text":"He leaves.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He left.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","text":"There was so much that I didn't know.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What he was saying... %Was it true?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What did he mean when he said that it was all a delusional fantasy?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What he was saying... %Could it have been true?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What did he mean when he said that everything was... %A [b3]delusional fantasy@?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I didn't know who I could trust anymore.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},

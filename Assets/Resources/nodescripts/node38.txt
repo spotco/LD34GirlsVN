@@ -36,14 +36,14 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
 
-		{"type":"dialogue","text":"Mana gathers up all the garbage, while I wash the dirty dishes.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Afterwards, we start folding up all the laundry scattered about.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mana gathered up all the garbage while I washed the dirty dishes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Afterwards, we gathered up all the laundry that had been scattered about.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hmm...? What's this?"},
-		{"type":"dialogue","text":"I pull out an frilly dress from the bottom of the pile.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I pulled out an frilly dress from the bottom of the pile.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Is this... %Some kind of costume?"},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
@@ -60,10 +60,10 @@
 
 		{"type":"dialogue","character":"Mana","text":"That reminds me... There's something you should have.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
-		{"type":"dialogue","text":"She digs into the pile.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She dug into the pile.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"Here it is.","xpos":30,"ypos":77},
-		{"type":"dialogue","text":"She's holding an ornately decorated wand with a crescent moon at the end.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She was holding an ornately decorated wand.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"What is that?"},
 		{"type":"dialogue","character":"Mana","text":"A magical artifact.","xpos":30,"ypos":77},
@@ -74,7 +74,7 @@
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"There's a lot of danger out there.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"Use it in a time of need. %It'll be a source of power.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"So... we might need it someday. You never know.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
@@ -87,13 +87,13 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"This artifact... in a time of danger, it'll protect me by granting power?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I sure hope I won't be needing it anytime soon.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This artifact... would protect us in a time of danger?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I sure hoped that I won't need to use it any time soon.","xpos":0,"ypos":0},
 
 		{"type":"additem","item":"wand"},
 
-		{"type":"dialogue","text":"I stuff the wand in my bag as I finish folding the rest of the laundry.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It took some time, but her apartment is looking much cleaner now.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I stuffed the wand in my bag after I finished folding the rest of the laundry.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It took a bit of work, but her apartment was looking much cleaner now.","xpos":0,"ypos":0}
 	],
 	"links":[
 		35,40,41

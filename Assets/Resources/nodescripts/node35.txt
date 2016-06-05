@@ -23,9 +23,9 @@
 		{"type":"dialogue","character":"Kurumi","text":"You wouldn't want that, would you?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"I guess you do have a point.%It couldn't hurt.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I guess you do have a point. %It couldn't hurt.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"But you've gotta let me copy your homework. Totally forgot all about it again!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"But you've gotta let me copy your homework for tomorrow. Totally forgot all about it again!","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"You'll never learn anything if you keep doing that."},
@@ -37,14 +37,14 @@
 		{"type":"dialogue","character":"Mana","text":"I left my books back at home, though.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"Well... %Let's go!"},
+		{"type":"dialogue","character":"Kurumi","text":"Well... %Let's go get them!"},
 
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue", "text":"We walked over to Mana's apartment.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"This was my first time ever going there.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"What was it like, I wonder?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"What was it like, I wondered?","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"dialogue","character":"Mana","text":"Okay, it's right around here.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I'm gonna warn you, it's nowhere near as clean as you keep your place.","xpos":30,"ypos":77},
