@@ -13,10 +13,11 @@ public class GameMain : MonoBehaviour {
 	
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
-	public static bool DEBUG_CONTROLS = false;
-	public static bool MUTE = false;
+	public static bool DEBUG_CONTROLS = true;
+	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
+	public static bool SKIP_TITLE = false;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -47,7 +48,8 @@ public class GameMain : MonoBehaviour {
 	credits
 		-simone boo-hoo tell you a secret
 	
-	char transition animations
+	char transition animations (fade for transtion, 3d rotate for turn)
+	disable mask when not in gridmode
 	SPAnalytics
 	title UIs
 	save/load implementation
@@ -80,11 +82,15 @@ public class GameMain : MonoBehaviour {
 			_all_modals[i].i_initialize(this);
 		}
 		
-		/*
-		_active_modal = _title;
-		_title._current_mode = TitleModal.Mode.FadeIn;
-		*/
-		_active_modal = _grid_nav_modal;
+		if (GameMain.SKIP_TITLE == false)
+		{
+			_active_modal = _title;
+			_title._current_mode = TitleModal.Mode.FadeIn;
+		}
+		else
+		{
+			_active_modal = _grid_nav_modal;
+		}
 	}
 	
 	public void Update () {

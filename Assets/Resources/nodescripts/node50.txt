@@ -5,7 +5,6 @@
 	"music":"decisions",
 	"requirementitem":[],
 	"event":[
-
 		{"type":"dialogue","text":"I was at the summer festival. With the lights, the sounds and the people... It was absolutely overwhelming.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_festival_shock","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I've got to stay focused... There's a job to do!"},
@@ -119,7 +118,6 @@
 		{"type":"dialogue","character":"Raichi","text":"Then sadly I've got no other choice."},
 
 
-
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"changebackground","background":"bg_black"},
@@ -130,10 +128,10 @@
 		{"type":"changebackground","background":"bg_moonhill"},
 		{"type":"dialogue","text":"As I opened my eyes, two figures stood before me.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":205,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":320,"xscale":1},
 		{"type":"dialogue","text":"On one side was Mana. She was transformed, and looked ready to fight.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":-300,"xscale":-1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":-300,"ypos":-20,"xscale":-1},
 		{"type":"dialogue","text":"On the other side stood a figure I assumed to be Raichi.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Cloaked in a dark cape and large wings, he drew his sword from the scabbard.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"He must have been a [b]Magi-Knight@ too, to have taken a form like that.","xpos":0,"ypos":0},
@@ -158,8 +156,6 @@
 		{"type":"camerashake", "length":"long"},
 		{"type":"dialogue","text":"Within seconds, it was over.","xpos":0,"ypos":0},
 
-
-
 		{"type":"changebackground","background":"bg_moonhill"},
 		{"type":"playBGM","bgm":"decisions"},
 
@@ -167,7 +163,7 @@
 		{"type":"dialogue","text":"Mana was on the ground, back to her normal form.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"How... Could this happen?","xpos":30,"ypos":77},
 
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":-300,"xscale":-1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":-300,"ypos":-20,"xscale":-1},
 		{"type":"dialogue","text":"Raichi stood before her, completely unscathed.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Without your full strength, you can't hope to face me."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_shock","xscale":1},
@@ -232,7 +228,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"Against all better judgement, I came out of hiding and ran to her side.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"ypos":-20,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"[b]YOU@!","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He saw me immediately.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
@@ -243,7 +239,7 @@
 		{"type":"dialogue","text":"I held her in my arms and checked for her pulse.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She was still alive.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_demon","xpos":300,"ypos":-20,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"I told you to stay out of this!","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He wasn't doing anything to stop me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"There must have been something holding him back.","xpos":0,"ypos":0},
@@ -310,7 +306,7 @@
 		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"dialogue","text":"I almost immediately lost consciousness.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I would have been scared...","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":205,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":320,"ypos":-30,"xscale":1},
 		{"type":"dialogue","text":"But from the distance I could see her.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was Mana. %The hero.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Mana"},

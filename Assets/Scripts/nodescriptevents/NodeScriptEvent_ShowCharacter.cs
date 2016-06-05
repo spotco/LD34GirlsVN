@@ -5,6 +5,7 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 	public string _character;
 	public string _image;
 	public float _xpos;
+	public float _ypos;
 	public float _xscale;
 	public bool _imm;
 	
@@ -16,7 +17,7 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 		if (neu_char != null) {
 			neu_char.transform.localPosition = new Vector3(
 				_xpos,
-				neu_char.transform.localPosition.y
+				neu_char.transform.localPosition.y + _ypos
 			);
 			neu_char._image.SetNativeSize();
 			neu_char.transform.localScale = SPUtil.valv(0.75f);

@@ -26,9 +26,9 @@
 		{"type":"dialogue","text":"Mana stepped back, did a twirl and then a pink light filled the room.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"playSFX", "sfx":"transform"},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":170,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":320,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"[b]Mana Magi-Knight Manaka@... Transform!","xpos":30,"ypos":77},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"That hero... %She seemed so familiar... %It was you!"},
 		{"type":"dialogue","text":"I gazed in wonder.","xpos":0,"ypos":0},
 

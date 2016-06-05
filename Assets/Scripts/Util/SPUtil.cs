@@ -358,6 +358,11 @@ public class SPUtil {
 		rtv.transform.localRotation = proto.transform.localRotation;
 	}
 	
+	public static Quaternion set_rotation_quaternion(Quaternion input, Vector3 rotation) {
+		input.eulerAngles = rotation;
+		return input;
+	}
+	
 	public static bool is_touch() {
 		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_WEBGL
 		if (Input.GetMouseButton(0)) {

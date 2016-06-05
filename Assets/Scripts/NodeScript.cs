@@ -48,6 +48,7 @@ public class NodeScript {
 					_character = itr.GetString ("character"),
 					_image = itr.GetString ("image"),
 					_xpos = (float)itr.GetNumber ("xpos"),
+					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber("ypos")) : 0,
 					_xscale = (float)itr.GetNumber ("xscale"),
 					_imm = itr.ContainsKey("imm")
 				};
@@ -61,8 +62,8 @@ public class NodeScript {
 				itr_neu = new NodeScriptEvent_Dialogue () {
 					_character = itr.ContainsKey ("character") ? itr.GetString ("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,
 					_text = itr.GetString ("text"),
-					_xpos = itr.ContainsKey ("xpos") ? ((float)itr.GetNumber ("xpos")) : 0,
-					_ypos = itr.ContainsKey ("ypos") ? ((float)itr.GetNumber ("ypos")) : -130
+					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber ("xpos")) : 0,
+					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber ("ypos")) : -130
 				};
 			
 			} else if (type == "transitioncharacter") {

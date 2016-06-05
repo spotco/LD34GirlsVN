@@ -66,7 +66,7 @@
 
 		{"type":"changebackground","background":"bg_city_late"},
 		{"type":"dialogue", "text":"Something was different. With the power of the wand, she was now...","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":220,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":320,"ypos":-30,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"[b3]Mana Magi-Goddess Manaka...@ %[b]Ultimate Transform@!","xpos":30,"ypos":77},
 
 		{"type":"camerashake", "length":"long"},

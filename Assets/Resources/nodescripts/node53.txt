@@ -87,7 +87,7 @@
 		{"type":"dialogue","text":"On one side was Mana. She was on one knee, looking like she was in pain.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Mana","text":"...J-just who are you, exactly?","xpos":30,"ypos":77},
 
-		{"type":"showcharacter","character":"Figure","image":"char_raichi_demon","xscale":-1,"xpos":-300},
+		{"type":"showcharacter","character":"Figure","image":"char_raichi_demon","xscale":-1,"xpos":-300,"ypos":-20},
 		{"type":"dialogue","text":"On the other side stood a figure that I had never seen before.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Clad in a dark robe, he floated gently above the ground.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"From his back extended two feathered wings. %He looked... almost familiar.","xpos":0,"ypos":0},
@@ -138,7 +138,7 @@
 
 		{"type":"dialogue","text":"The figure had noticed as well.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Figure","image":"char_raichi_demon","xscale":-1,"xpos":-300},
+		{"type":"showcharacter","character":"Figure","image":"char_raichi_demon","xscale":-1,"xpos":-300,"ypos":-20},
 		{"type":"dialogue","character":"Figure","text":"You! I warned you to stay away from her!","xpos":0,"ypos":35},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_festival_angry","xscale":-1},

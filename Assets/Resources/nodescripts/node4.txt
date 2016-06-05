@@ -8,7 +8,7 @@
 		{"type":"dialogue","text":"I somehow found myself up on the roof. Definitely must have taken a wrong turn.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was, however, by no means a wasted opportunity.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_gasp","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Wow... the view's amazing!%I can see the whole city from here!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"I should bring my lunch next time."},

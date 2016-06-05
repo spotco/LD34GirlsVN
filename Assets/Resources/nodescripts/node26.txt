@@ -28,15 +28,15 @@
 		{"type":"dialogue","text":"You could almost say I've been an assistant of sorts...","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":470,"xscale":-1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":320,"xscale":-1},
 
 		{"type":"changebackground","background":"bg_city_monster"},
 		{"type":"dialogue","character":"Kurumi","text":"Are you [b3]really@ sure videotaping all this is a good idea?"},
 		{"type":"hidecharacter","character":"Mana","imm":true},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":180,"xscale":1,"imm":true},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":320,"xscale":1,"imm":true},
 		{"type":"dialogue","character":"Mana","text":"Of course! I wanna see how I look when doing this.","xpos":30,"ypos":77},
 		{"type":"hidecharacter","character":"Mana","imm":true},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":470,"xscale":-1,"imm":true},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero","xpos":320,"xscale":-1,"imm":true},
 		{"type":"dialogue","character":"Mana","text":"Now, make sure you get a good shot of me here...","xpos":30,"ypos":77},
 		{"type":"movecharacter","character":"Mana","xto":850},
 		{"type":"dialogue","character":"Mana","text":"Magical Pretty Sword... [b]BUSTER@!!!","xpos":285,"ypos":106},

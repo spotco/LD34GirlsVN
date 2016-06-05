@@ -21,7 +21,7 @@
 
 		{"type":"dialogue","text":"As I opened the photos, something caught my eye.","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_gasp"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"Is that... the [b]pink-haired girl@?"},
 		{"type":"dialogue","text":"There were several albums, all of her.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"In each one she was dressed up in a fancy costume, striking some elaborate poses.","xpos":0,"ypos":0},

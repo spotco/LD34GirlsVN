@@ -15,12 +15,12 @@
 		{"type":"dialogue","character":"Pink Hair","text":"Mmmph... That... kinda hurt...","xpos":25,"ypos":55},
 		{"type":"dialogue","text":"She was alive!","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":320,"xscale":-1},
 		{"type":"dialogue","text":"She slowly got back on her feet.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Pink Hair","text":"Cheap shot... %Trying to harm an innocent...","xpos":25,"ypos":55},
 
 		{"type":"hidecharacter","character":"Pink Hair","imm":true},
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":210,"xscale":1,"imm":true},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":320,"xscale":1,"imm":true},
 		{"type":"dialogue","text":"She paused as she turned around and saw my face.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Pink Hair","text":"Is that...","xpos":25,"ypos":55},
@@ -30,7 +30,7 @@
 		{"type":"dialogue","text":"Interrupting the moment, the monster howled in anger.","xpos":0,"ypos":0},
 
 		{"type":"hidecharacter","character":"Pink Hair","imm":true},
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":430,"xscale":-1,"imm":true},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":320,"xscale":-1,"imm":true},
 		{"type":"dialogue","text":"The masked hero turned back around to face the monster.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Pink Hair","text":"Not had enough? Then get a taste of this...","xpos":25,"ypos":55},
 		{"type":"dialogue","text":"She turned her head at me and winked.","xpos":0,"ypos":0},

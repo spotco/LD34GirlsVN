@@ -43,7 +43,7 @@
 
 		{"type":"changebackground","background":"bg_city_monster"},
 		{"type":"playSFX", "sfx":"transform"},
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":170,"xscale":1},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_hero","xpos":320,"xscale":1},
 		{"type":"dialogue","text":"Flying directly towards the monster, it was a figure clad in an outfit of blue.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She had beautiful long purple hair, and a large sword nearly the size of her body.","xpos":0,"ypos":0},
 
