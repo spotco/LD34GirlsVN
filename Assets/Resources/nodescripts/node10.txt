@@ -13,7 +13,7 @@
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
-		{"type":"dialogue","text":"Looking surprised, she turned around.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Looking surprised, she quickly turned around.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"The heck!? Who are you? %And how do you know my name..?","xpos":22,"ypos":53},
 

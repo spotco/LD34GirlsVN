@@ -14,29 +14,29 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaah@!!!"},
 		{"type":"dialogue","text":"Being the clumsy klutz I was,%I completely missed those stairs.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Male Student","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Male Student","text":"Oh my, are you alright? %Let me help you up.","ypos":45},
+		{"type":"showcharacter","character":"Student","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Student","text":"Oh my, are you alright? %Let me help you up.","ypos":45},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Male Student","text":"Ah! It's... [b3]Kurumi@, is that right?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Student","text":"Ah! It's... [b3]Kurumi@, is that right?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"That's right.%But... how did you know my name?","ypos":-130},
-		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Male Student","text":"You introduced yourself in class earlier this morning. #[b3]Suuuper@ excited to meet everyone#, right?","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Student","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Student","text":"You introduced yourself in class earlier this morning. #[b3]Suuuper@ excited to meet everyone#, right?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"Ehh...? Was that really so funny?!","ypos":-130},
 
-		{"type":"dialogue","character":"Male Student","text":"Well... your enthusiasm was definitely refreshing.","xpos":23,"ypos":45},
-		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Male Student","text":"To tell you the truth, I'm a recent transfer as well.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Student","text":"Well... your enthusiasm was definitely refreshing.","xpos":23,"ypos":45},
+		{"type":"transitioncharacter","character":"Student","image":"char_raichi_normal"},
+		{"type":"dialogue","character":"Student","text":"To tell you the truth, I'm a recent transfer as well.","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"A classmate, huh? I remembered seeing his face around...","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Male Student","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Male Student","text":"Let me introduce myself. %I'm [b]Raichi Kashiwagi@. Pleasure to meet you.","xpos":23,"ypos":45},
-		{"type":"rename","namestart":"Male Student","nameend":"Raichi"},
+		{"type":"transitioncharacter","character":"Student","image":"char_raichi_normal_happy"},
+		{"type":"dialogue","character":"Student","text":"Let me introduce myself. %I'm [b]Raichi Kashiwagi@. Pleasure to meet you.","xpos":23,"ypos":45},
+		{"type":"rename","namestart":"Student","nameend":"Raichi"},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"The same! And... %I guess you already know my name.","ypos":-130},

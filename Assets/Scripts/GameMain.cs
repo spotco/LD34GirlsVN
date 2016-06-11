@@ -17,7 +17,7 @@ public class GameMain : MonoBehaviour {
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
-	public static bool SKIP_TITLE = false;
+	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -47,6 +47,9 @@ public class GameMain : MonoBehaviour {
 	node positioning, more links
 	credits
 		-simone boo-hoo tell you a secret
+		
+	simone/mana pre fight more exposition, challenge who she is identity
+	good end expand sacrifice of mana 
 	
 	char transition animations (fade for transtion, 3d rotate for turn)
 	disable mask when not in gridmode

@@ -8,6 +8,7 @@ public class DialogueBubble : SPBaseBehavior {
 	[SerializeField] private CanvasGroup _canvas_group;
 	[SerializeField] private Image _primary_background;
 	[SerializeField] private Image _name_background;
+	[SerializeField] private RectTransform _nametag;
 	[SerializeField] private Image _cursor;
 	[SerializeField] private RawImage _rendered_text;
 	
@@ -37,7 +38,7 @@ public class DialogueBubble : SPBaseBehavior {
 		if (rtv == null) {
 			rtv = SPUtil.proto_clone(proto.gameObject).GetComponent<DialogueBubble>();
 			rtv.depool();
-			rtv._name_initial_pos = rtv._name_background.transform.localPosition;
+			rtv._name_initial_pos = rtv._nametag.transform.localPosition;
 		}
 		SPUtil.proto_copy_transform(rtv.gameObject,proto.gameObject);
 		rtv.i_cons(game,dialogue);
@@ -51,6 +52,7 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
 		this.gameObject.SetActive(true);
+		_rendered_text.gameObject.SetActive(true);
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
@@ -58,9 +60,9 @@ public class DialogueBubble : SPBaseBehavior {
 		_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
-			_name_background.gameObject.SetActive(false);
+			_nametag.gameObject.SetActive(false);
 		} else {
-			_name_background.gameObject.SetActive(true);
+			_nametag.gameObject.SetActive(true);
 			_name_text.text = dialogue._character;
 		}
 		
@@ -80,7 +82,7 @@ public class DialogueBubble : SPBaseBehavior {
 		_cursor.transform.localScale = SPUtil.valv(1);
 		
 		_name_bounce_t = 0;
-		_name_background.transform.localPosition = _name_initial_pos;
+		_nametag.transform.localPosition = _name_initial_pos;
 	}
 	
 	public void i_update(GameMain game, EventModal modal) {
@@ -115,7 +117,7 @@ public class DialogueBubble : SPBaseBehavior {
 			}
 			
 			_name_bounce_t = (_name_bounce_t + 0.15f * SPUtil.dt_scale_get()) % Mathf.PI;
-			_name_background.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 4)));
+			_nametag.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 4)));
 			
 			if (_primary_text.finished()) {
 				_current_mode = Mode.Finished;
@@ -125,7 +127,7 @@ public class DialogueBubble : SPBaseBehavior {
 		} else if (_current_mode == Mode.Finished) {
 			if (_name_bounce_t < Mathf.PI) {
 				_name_bounce_t = Mathf.Clamp(_name_bounce_t + 0.15f * SPUtil.dt_scale_get(),0,Mathf.PI);
-				_name_background.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 6)));
+				_nametag.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 6)));
 			}
 			
 			_anim_t += SPUtil.dt_scale_get();
@@ -160,7 +162,22 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	private static Dictionary<string,Sprite> __name_to_bgsprite = new Dictionary<string, Sprite>();
 	private Sprite cond_get_bgsprite(string name) {
-		name = "img/ui/dialogue_bubble_"+name;
+		name = "img/ui/neu_dialogue_bubble_"+name;
+		
+		
+		if (__name_to_bgsprite.ContainsKey(name)) return __name_to_bgsprite[name];
+		Sprite bg_sprite = Resources.Load<Sprite>(name);
+		if (bg_sprite != null) {
+			__name_to_bgsprite[name] = bg_sprite;
+		} else {
+			Debug.LogError("not found:"+name);
+		}
+		return bg_sprite;
+	}
+	
+	private static Dictionary<string,Sprite> __name_to_nametagsprite = new Dictionary<string, Sprite>();
+	private Sprite cond_get_nametagsprite(string name) {
+		name = "img/ui/neu_dialogue_nametag_"+name;
 		
 		
 		if (__name_to_bgsprite.ContainsKey(name)) return __name_to_bgsprite[name];
@@ -178,25 +195,25 @@ public class DialogueBubble : SPBaseBehavior {
 		if (script_event._character == "Kurumi" || script_event._character == "Me") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;
 			_primary_background.sprite = this.cond_get_bgsprite("kurumi");
-			_name_background.sprite = this.cond_get_bgsprite("kurumi");
-			outline_color = new Color(95/255.0f,115/255.0f,88/255.0f,1);
+			_name_background.sprite = this.cond_get_nametagsprite("kurumi");
+			outline_color = new Color(117/255.0f,106/255.0f,102/255.0f,1);
 		
 		} else if (script_event._character == "Mana" || script_event._character == "Pink Hair" || script_event._character == "Hero") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_MANA;
 			_primary_background.sprite = this.cond_get_bgsprite("mana");
-			_name_background.sprite = this.cond_get_bgsprite("mana");
+			_name_background.sprite = this.cond_get_nametagsprite("mana");
 			outline_color = new Color(108/255.0f,99/255.0f,132/255.0f,1);
 		
-		} else if (script_event._character == "Raichi" || script_event._character == "Male Student") {
+		} else if (script_event._character == "Raichi" || script_event._character == "Student") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
 			_primary_background.sprite = this.cond_get_bgsprite("raichi");
-			_name_background.sprite = this.cond_get_bgsprite("raichi");
+			_name_background.sprite = this.cond_get_nametagsprite("raichi");
 			outline_color = new Color(85/255.0f,99/255.0f,125/255.0f,1);
 		
 		} else if (script_event._character == "Simone") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
 			_primary_background.sprite = this.cond_get_bgsprite("simone");
-			_name_background.sprite = this.cond_get_bgsprite("simone");
+			_name_background.sprite = this.cond_get_nametagsprite("simone");
 			outline_color = new Color(127/255.0f,121/255.0f,85/255.0f,1);
 		
 		} else {
@@ -205,10 +222,10 @@ public class DialogueBubble : SPBaseBehavior {
 				_text_scroll_sound = TEXT_SCROLL_SFX_NARRATOR;
 			} else {
 				_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
+				
 			}
-		
 			_primary_background.sprite = this.cond_get_bgsprite("generic");
-			_name_background.sprite = this.cond_get_bgsprite("generic");
+			_name_background.sprite = this.cond_get_nametagsprite("generic");
 			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
 		}
 		_name_text_outline.effectColor = outline_color;
