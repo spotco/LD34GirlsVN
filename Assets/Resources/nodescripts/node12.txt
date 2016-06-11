@@ -57,7 +57,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","text":"He noticed as I approached and smiled.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@... where have you been? We've been looking all over for you.","xpos":50,"ypos":50},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@... where have you been? We've been looking all over for you.","xpos":50,"ypos":50},
 		{"type":"movecharacter","character":"Kurumi","xto":-217},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":-394,"xscale":-1},
 		{"type":"dialogue","text":"He paused as he saw Mana behind me.","xpos":82,"ypos":0},

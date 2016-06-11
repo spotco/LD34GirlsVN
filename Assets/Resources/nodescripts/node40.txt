@@ -12,7 +12,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"A little girl..?"},
 		{"type":"dialogue","text":"There was an adorable little girl holding a toy plastic wand in her hand.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Though it was strange seeing her without the pink hair... %I knew exactly who it was.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... is this a picture of you?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@... is this a picture of you?"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
 		{"type":"dialogue","character":"Kurumi","text":"You looked so cute back then!"},
 

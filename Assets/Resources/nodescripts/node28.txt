@@ -15,10 +15,10 @@
 		{"type":"dialogue","character":"Kurumi","text":"I... I don't know what you're talking about here."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@. %Listen to me. %You don't understand.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"...I don't understand?"},
 
-		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... She's not someone you should be around.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[b]Mana@... She's not someone you should be around.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"W-what do you mean...?"},
 		{"type":"dialogue","character":"Raichi","text":"Her problems... %You shouldn't be getting involved. It's for your own good.","xpos":30,"ypos":77},
@@ -46,8 +46,8 @@
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
-		{"type":"dialogue","text":"It was [b3]Mana@!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+		{"type":"dialogue","text":"It was [b]Mana@!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"She walked over.","xpos":0,"ypos":0},
@@ -93,7 +93,7 @@
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"[b3]Raichi@... He definitely felt suspicious. %He must have known something.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[br]Raichi@... It definitely felt suspicious. %He must have known something.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What did he mean when he said that Mana was [b]dangerous@?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Well, whatever it was... %I wasn't going to let it stop me.","xpos":0,"ypos":0},
 

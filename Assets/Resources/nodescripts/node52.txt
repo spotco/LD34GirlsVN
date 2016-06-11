@@ -27,7 +27,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"She grabbed me by the shoulder and stopped me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! You haven't forgotten, have you?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! You haven't forgotten, have you?","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Wha@...?!"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
@@ -39,9 +39,9 @@
 		{"type":"dialogue","text":"We went over to the city. %She seemed to be in a good mood.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_city"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! You know what I'm really craving right now...?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! You know what I'm really craving right now...?","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@, we haven't even gotten what we came for yet! You can think about food afterwards."},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@, we haven't even gotten what we came for yet! You can think about food afterwards."},
 		{"type":"dialogue","character":"Kurumi","text":"And besides, are you really sure you know where you're going?"},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Mana"},
@@ -68,7 +68,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 
 		{"type":"dialogue","text":"Mana stopped ahead of me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@... I've gotta leave a little early.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@... I've gotta leave a little early.","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Let me guess... Spending some time with [b3]him@ again?"},
 
@@ -89,7 +89,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Is this... %About your date tomorrow at the festival?"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! I'm trying to be serious here!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! I'm trying to be serious here!","xpos":30,"ypos":77},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
@@ -109,11 +109,11 @@
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
-		{"type":"dialogue","character":"Mana","text":"And if it comes down to it... %I want you to make sure Raichi doesn't find out, okay?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"And if it comes down to it... %I want you to make sure [br]Raichi@ doesn't find out, okay?","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
 		{"type":"dialogue","character":"Mana","text":"If he knew the truth... I don't know what he'd think.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"[b3]Mana@...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Whatever was going to happen...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I would be there to support her. That was the least I could do.","xpos":0,"ypos":0},
 
@@ -132,7 +132,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"playBGM","bgm":"decisions"},
 		{"type":"dialogue","text":"It was the night before the festival. I promised her that I would go.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I didn't know what was going to happen, if [b3]Raichi@ was planning something...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know what was going to happen, if [br]Raichi@ was planning something...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But if we were both there... %I was sure we could handle it.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment_night"},
@@ -145,7 +145,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"The summer festival... %If I was going, then I was gonna be going in style.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Mana@... %We were best friends, after all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@... %We were best friends, after all.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And if my suspicions were true... She would need someone to back her up!","xpos":0,"ypos":0}
 	],
 	"links":[53]

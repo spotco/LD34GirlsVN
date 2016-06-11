@@ -7,10 +7,10 @@
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"It's been a couple weeks now...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"And ever since I've gotten to know [b3]Mana@... %Every day has been some sort of crazy new adventure!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And ever since I've gotten to know [b]Mana@... %Every day has been some sort of crazy new adventure!","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! Let's go! There's been an alert in the [b3]West Shinjuku District@!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! Let's go! There's been an alert in the [b3]West Shinjuku District@!","xpos":30,"ypos":77},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Alright, I brought a snack too just in case you get hungry [b3]agai--@"},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -19,7 +19,7 @@
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Waaah@!!!"},
 		{"type":"dialogue","text":"However... %Some things still haven't changed.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@...! Are you alright?!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@...! Are you alright?!","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Oww...@ "},
 		{"type":"hidecharacter","character":"Mana"},
 
@@ -55,9 +55,9 @@
 		{"type":"dialogue","text":"It was another boring school day.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I was about to doze off until I heard someone approach my desk.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Mmm... [b2]Zzz...@ Give me another 10 minutes..."},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@... It's lunchtime.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@... It's lunchtime.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"camerashake", "length":"short"},
@@ -81,7 +81,7 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
 		{"type":"dialogue","character":"Kurumi","text":"I... I can explain..."},
 
-		{"type":"dialogue","character":"Raichi","text":"No need. %I know it's [b3]Mana@. %I see you two together all the time.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"No need. %I know it's [b]Mana@. %I see you two together all the time.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry"},
 		{"type":"dialogue","character":"Raichi","text":"She's a bad influence.","xpos":30,"ypos":77},
 
@@ -89,7 +89,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"Listen, [b3]Kurumi@... %This is important.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"Listen, [bk]Kurumi@... %This is important.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"While you may be her friend, there are certain things you just shouldn't get involved in.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Raichi","text":"It might not seem serious to you right now.","xpos":30,"ypos":77},

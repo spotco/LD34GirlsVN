@@ -17,7 +17,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... %You think you could do something with this?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@... %You think you could do something with this?"},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"The magical artifact!","xpos":30,"ypos":77},
 
@@ -39,7 +39,7 @@
 		{"type":"dialogue","character":"Mana","text":"You're the one who's going to be saying goodbye.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! Now! %Do it!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! Now! %Do it!","xpos":30,"ypos":77},
 		{"type":"dialogue", "text":"She motioned to me to hold up the wand.","xpos":0,"ypos":0},
 
 		{"type":"movecharacter","character":"Mana","xto":200},
@@ -67,7 +67,7 @@
 		{"type":"changebackground","background":"bg_city_late"},
 		{"type":"dialogue", "text":"Something was different. With the power of the wand, she was now...","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":320,"ypos":-30,"xscale":1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Mana Magi-Goddess Manaka...@ %[b]Ultimate Transform@!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[b]Mana Magi-Goddess Manaka...@ %[b]Ultimate Transform@!","xpos":30,"ypos":77},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
@@ -122,7 +122,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Mmmph@... %What happened...?"},
 		{"type":"dialogue","character":"Mana","text":"You missed it! %The best part!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_happy"},
-		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[b]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
+		{"type":"dialogue","character":"Mana","text":"You shoulda seen #[bs]Simone-sama@# try and run. It was [b3]sooo@ hilarious!","xpos":30,"ypos":70},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I don't think she's gonna try messing with us again any time soon.","xpos":30,"ypos":70},
 		{"type":"dialogue","character":"Kurumi","text":"..."},

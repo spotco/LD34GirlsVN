@@ -34,7 +34,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
-		{"type":"dialogue","character":"Raichi","text":"And regarding [b3]Mana@...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"And regarding [b]Mana@...","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"The conversation suddenly took a serious turn.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","character":"Raichi","text":"I've warned you before, but this will be the last time.","xpos":30,"ypos":77},
@@ -56,7 +56,7 @@
 		{"type":"dialogue","text":"I didn't know who I could trust anymore.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... %What exactly is going on?"}
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@... %What exactly is going on?"}
 	],
 	"links":[47]
 }

@@ -12,7 +12,7 @@ public class GameMain : MonoBehaviour {
 	public SPTextRenderManager _sptext;
 	
 	public static int AFFINITY_REQUIREMENT = 9;
-	public static bool NO_EVENTS = true;
+	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
@@ -45,6 +45,7 @@ public class GameMain : MonoBehaviour {
 	TODO--
 	
 	node positioning, more links
+	highlighted text animated fill
 	credits
 		-simone boo-hoo tell you a secret
 		

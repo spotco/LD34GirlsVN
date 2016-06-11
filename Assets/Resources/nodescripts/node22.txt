@@ -21,10 +21,10 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_shock","xpos":300,"xscale":1},
 
 		{"type":"dialogue","text":"It was [b]Mana@!","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]M-Mana@?! What are you doing here?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b]M-Mana@?! What are you doing here?"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@?! So this [b3]WAS@ the place!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@?! So this [b3]WAS@ the place!","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"Wait, what are you doing on the floor..?","xpos":30,"ypos":77}
 	],

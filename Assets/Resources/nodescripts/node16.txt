@@ -19,7 +19,7 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":-1},
 		{"type":"dialogue","text":"It was Raichi.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi!@ I'm so relieved to see a familiar face here..."},
+		{"type":"dialogue","character":"Kurumi","text":"[br]Raichi!@ I'm so relieved to see a familiar face here..."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious","xscale":1},
 		{"type":"dialogue","text":"He looked worried as he saw me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Oh my... What happened? Are you hurt?","xpos":33,"ypos":70},
@@ -41,7 +41,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
 
-		{"type":"dialogue","character":"Raichi","text":"Another attack... %I'm just glad you're safe, [b3]Kurumi@.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"Another attack... %I'm just glad you're safe, [bk]Kurumi@.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Kurumi","text":"Another...? You mean there's been others?"},
 		{"type":"dialogue","character":"Raichi","text":"I'm not surprised you haven't heard about it.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Raichi","text":"They've been doing their best to keep it all under wraps.","xpos":33,"ypos":70},
@@ -70,7 +70,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"...She was a real life superhero! She saved my life [b3]AND@ beat up that monster!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","text":"He didn't look happy. Did I say something wrong?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"[b]Kurumi@... this isn't a game.","xpos":33,"ypos":70},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@... this isn't a game.","xpos":33,"ypos":70},
 		{"type":"dialogue","character":"Raichi","text":"These attacks are serious. Many have been killed, and even more injured.","xpos":33,"ypos":70},
 
 		{"type":"dialogue","text":"I... should have known. %I had no idea.","xpos":0,"ypos":0},

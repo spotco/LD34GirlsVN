@@ -11,7 +11,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Okay, Mana. It's intervention time. We [b3]NEED@ to fix this place up."},
 		{"type":"dialogue","character":"Mana","text":"Fix it up? Nothing's broken as far as I can remember...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
-		{"type":"dialogue","character":"Kurumi","text":"By fix up I mean [b3]CLEAN@, Mana! You really can't go on living like this!"},
+		{"type":"dialogue","character":"Kurumi","text":"By fix up I mean [b3]CLEAN@, [b]Mana@! You really can't go on living like this!"},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock"},
 		{"type":"dialogue","character":"Mana","text":"Clean? I know it's a bit messy but everything's right where I want it...","xpos":30,"ypos":77},

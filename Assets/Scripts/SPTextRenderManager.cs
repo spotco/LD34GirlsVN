@@ -66,23 +66,48 @@ public class SPTextRenderManager : MonoBehaviour {
 			new Vector4(1,1,1,1), 
 			new Vector4(0,0,0,0), 0, 0));
 	}
-	public void set_bold_color(Color outline_color, Color fill_color) {
+	public void set_bold_color(Color normal_outline_color) {
+		// purple
+		Color bold_fill_color = new Color(235/255.0f,185/255.0f,255/255.0f,1);
+		Color bold_outline_color = new Color(118/255.0f,100/255.0f,127/255.0f,1);
+	
 		_sptext.add_style("b", SPText.SPTextStyle.cons(
-			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a), 
-			new Vector4(fill_color.r, fill_color.g, fill_color.b, fill_color.a), 
+			new Vector4(bold_outline_color.r, bold_outline_color.g, bold_outline_color.b, bold_outline_color.a), 
+			new Vector4(bold_fill_color.r, bold_fill_color.g, bold_fill_color.b, bold_fill_color.a), 
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
 		_sptext.add_style("b2", SPText.SPTextStyle.cons(
-			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(normal_outline_color.r, normal_outline_color.g, normal_outline_color.b, normal_outline_color.a),
 			new Vector4(0.93f, 0.93f, 0.93f, 1),
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
 		_sptext.add_style("b3", SPText.SPTextStyle.cons(
-			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(normal_outline_color.r, normal_outline_color.g, normal_outline_color.b, normal_outline_color.a),
 			new Vector4(1,1,1,1),
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
 		_sptext.add_style("b4", SPText.SPTextStyle.cons(
-			new Vector4(outline_color.r, outline_color.g, outline_color.b, outline_color.a),
+			new Vector4(normal_outline_color.r, normal_outline_color.g, normal_outline_color.b, normal_outline_color.a),
 			new Vector4(0.95f,0.95f,0.95f,1),
 			new Vector4(0,0,0,0), 1.0f, -0.5f));
+			
+		Color k_bold_fill_color = new Color(252/255.0f,185/255.0f,148/255.0f,1);
+		Color k_bold_outline_color = new Color(100/255.0f,95/255.0f,90/255.0f,1);
+		_sptext.add_style("bk", SPText.SPTextStyle.cons(
+			new Vector4(k_bold_outline_color.r, k_bold_outline_color.g, k_bold_outline_color.b, k_bold_outline_color.a),
+			new Vector4(k_bold_fill_color.r, k_bold_fill_color.g, k_bold_fill_color.b, k_bold_fill_color.a),
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
+			
+		Color r_bold_fill_color = new Color(189/255.0f,208/255.0f,255/255.0f,1);
+		Color r_bold_outline_color = new Color(88/255.0f,93/255.0f,106/255.0f,1);
+		_sptext.add_style("br", SPText.SPTextStyle.cons(
+			new Vector4(r_bold_outline_color.r, r_bold_outline_color.g, r_bold_outline_color.b, r_bold_outline_color.a),
+			new Vector4(r_bold_fill_color.r, r_bold_fill_color.g, r_bold_fill_color.b, r_bold_fill_color.a),
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
+			
+		Color s_bold_fill_color = new Color(251/255.0f,244/255.0f,189/255.0f,1);
+		Color s_bold_outline_color = new Color(117/255.0f,115/255.0f,95/255.0f,1);
+		_sptext.add_style("bs", SPText.SPTextStyle.cons(
+			new Vector4(s_bold_outline_color.r, s_bold_outline_color.g, s_bold_outline_color.b, s_bold_outline_color.a),
+			new Vector4(s_bold_fill_color.r, s_bold_fill_color.g, s_bold_fill_color.b, s_bold_fill_color.a),
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
 	}
 	
 	public void clear() {

@@ -27,7 +27,7 @@
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Who... Is that?"},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue", "text":"It couldn't have been [b3]Mana@... %She was standing beside me.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"It couldn't have been [b]Mana@... %She was standing beside me.","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
@@ -56,17 +56,17 @@
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Crowd","text":"We love you, [b]Simone@-sama!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Crowd","text":"We love you, [bs]Simone@-sama!","xpos":0,"ypos":100},
 
 		{"type":"dialogue", "text":"They were all cheering in unison. Were these... [b]Fans@?","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-170,"xscale":1},
 		{"type":"dialogue","character":"Simone","text":"[b3]Dohoho~!@ Piece of cake!"},
-		{"type":"dialogue","character":"Simone","text":"With [b]Simone Saber Knight Sweetheart@ protecting this city, no monster stands a chance!"},
+		{"type":"dialogue","character":"Simone","text":"With [bs]Simone Saber Knight Sweetheart@ protecting this city, no monster stands a chance!"},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama, [b3]Daisuke@!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Fans","text":"[bs]Simone@-sama, [b3]Daisuki@!","xpos":0,"ypos":100},
 		{"type":"hidecharacter","character":"Simone"},
 
 		{"type":"dialogue", "text":"We slipped out to talk about what was going on.","xpos":0,"ypos":0},

@@ -59,14 +59,14 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"Mana... [b3]Hey@! Sure didn't expect to see you here."},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"...Was that [b3]Raichi@ I just saw leaving? What was he doing here?"},
+		{"type":"dialogue","character":"Kurumi","text":"...Was that [br]Raichi@ I just saw leaving? What was he doing here?"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Suspicious. %I couldn't ignore what he had said to me... %I had to warn her.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"[b3]But@... %What came next took me by complete surprise.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi. I've got something that I've gotta tell you.","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Mana","text":"You know all those bad things I told you about [b3]Raichi@ when we first met?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You know all those bad things I told you about [br]Raichi@ when we first met?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"I take them all back. %He's actually a really nice person.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"A... really nice person?","xpos":0,"ypos":0},

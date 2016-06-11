@@ -191,13 +191,16 @@ public class DialogueBubble : SPBaseBehavior {
 	}
 	
 	public void apply_style(SPTextRenderManager text_renderer, NodeScriptEvent_Dialogue script_event) {
+		
 		Color outline_color;
+				
 		if (script_event._character == "Kurumi" || script_event._character == "Me") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_KURUMI;
 			_primary_background.sprite = this.cond_get_bgsprite("kurumi");
 			_name_background.sprite = this.cond_get_nametagsprite("kurumi");
+			
 			outline_color = new Color(117/255.0f,106/255.0f,102/255.0f,1);
-		
+			
 		} else if (script_event._character == "Mana" || script_event._character == "Pink Hair" || script_event._character == "Hero") {
 			_text_scroll_sound = TEXT_SCROLL_SFX_MANA;
 			_primary_background.sprite = this.cond_get_bgsprite("mana");
@@ -230,7 +233,7 @@ public class DialogueBubble : SPBaseBehavior {
 		}
 		_name_text_outline.effectColor = outline_color;
 		text_renderer.set_text_outline_color(outline_color);
-		text_renderer.set_bold_color(outline_color, new Color(1,1,0,1));
+		text_renderer.set_bold_color(outline_color);
 	}
 	
 	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";

@@ -105,7 +105,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"The summer festival... %If I was going, then I was gonna be going in style.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Mana@... %We were friends, after all.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@... %We were friends, after all.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And if she ran into any trouble, she would need someone to back her up!","xpos":0,"ypos":0}
 	],
 	"links":[50]

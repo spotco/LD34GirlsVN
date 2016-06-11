@@ -8,7 +8,7 @@
 		{"type":"changebackground","background":"bg_city"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... You know what we should check out?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@... You know what we should check out?"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Mana","text":"[b3]Mmm@...?","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"She looked up from her phone.","xpos":0,"ypos":0},
@@ -27,9 +27,9 @@
 		{"type":"dialogue","text":"She didn't glance away.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]MANA@! Are you even listening?"},
+		{"type":"dialogue","character":"Kurumi","text":"[b]MANA@! Are you even listening?"},
 		{"type":"dialogue","text":"She looked up.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"...Listen, Kurumi. I'm gonna be a little busy this afternoon, okay?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...Listen, [bk]Kurumi@. I'm gonna be a little busy this afternoon, okay?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"We can do your club stuff %or whatever some other time.","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"Busy? This was unexpected...","xpos":0,"ypos":0},
 
@@ -55,16 +55,16 @@
 		{"type":"dialogue","text":"As I left, I saw a familiar face.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":300,"xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@. I've been looking for you.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@. I've been looking for you.","xpos":30,"ypos":77},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@? Haven't seen you around recently."},
+		{"type":"dialogue","character":"Kurumi","text":"[br]Raichi@? Haven't seen you around recently."},
 
 		{"type":"dialogue","character":"Raichi","text":"There's something I need to know.","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He pulled out his phone and showed me a video.","xpos":0,"ypos":0},
 		{"type":"removeitem","item":"video"},
 
-		{"type":"dialogue","text":"It was... the video of the fight between [b3]Mana@ and [b3]Simone@ that had been on the news!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was... the video of the fight between [b]Mana@ and [bs]Simone@ that had been on the news!","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"You were there, weren't you?","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
@@ -75,7 +75,7 @@
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"If my suspicions are true... it's gotten far worse than I could had thought.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Raichi","text":"What exactly happened back there, [b3]Kurumi@?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"What exactly happened back there, [bk]Kurumi@?","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"He knew. %I wasn't sure how exactly...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But I had to say something.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},

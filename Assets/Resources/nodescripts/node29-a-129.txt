@@ -14,7 +14,7 @@
 		{"type":"dialogue", "text":"Mana, however, had a plate full with what must have been every pastry on the menu.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"I wondered how she stayed so skinny while eating so much all the time.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"Hey [b3]Kurumi@, take a look at this.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Hey [bk]Kurumi@, take a look at this.","xpos":30,"ypos":77},
 		{"type":"dialogue", "text":"She showed me her phone.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Monster sighted... %[b3]Shinagawa District@?"},

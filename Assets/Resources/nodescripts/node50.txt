@@ -43,7 +43,7 @@
 		{"type":"dialogue","text":"Arriving at the peak, she suddenly stopped.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Raichi@~! %I'm [b3]heeere@!","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[br]Raichi@~! %I'm [b3]heeere@!","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"No response.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_aloof","xscale":-1},
 		{"type":"dialogue","character":"Mana","text":"He [b3]DID@ say he wanted to meet me up here... %I wonder what this was all about.","xpos":30,"ypos":77},
@@ -55,7 +55,7 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_serious","xpos":-300,"xscale":-1},
 		{"type":"dialogue","text":"It was Raichi.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Raichi","text":"[b3]Manami Ichijou@. %I'm sorry that it's come to this..."},
+		{"type":"dialogue","character":"Raichi","text":"[b]Manami Ichijou@. %I'm sorry that it's come to this..."},
 		{"type":"dialogue","character":"Raichi","text":"But I'm afraid it has to end here."},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_festival_shock","xscale":1},
@@ -245,7 +245,7 @@
 		{"type":"dialogue","text":"There must have been something holding him back.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
 
-		{"type":"dialogue","character":"Mana","text":"[b]K-Kurumi@...?","xpos":120,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]K-Kurumi@...?","xpos":120,"ypos":77},
 		{"type":"dialogue","text":"I heard a faint whisper. %It was Mana.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_sad","xpos":300,"xscale":1},
@@ -424,7 +424,7 @@
 		{"type":"dialogue","text":"But I knew I was happy. Because Mana was still with me...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And maybe now life would start being a little more normal.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"By the way, [b3]Kurumi@...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"By the way, [bk]Kurumi@...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"What is it?"},
 		{"type":"dialogue","character":"Mana","text":"Back there, after I asked whether you'd trust me...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"You remember anything about what happened afterwards?","xpos":30,"ypos":77},

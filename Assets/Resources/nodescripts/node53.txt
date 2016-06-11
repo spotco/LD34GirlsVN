@@ -54,7 +54,7 @@
 
 		{"type":"dialogue","text":"I reflected back upon everything that happened these past few weeks.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The new school...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Meeting [b3]Mana@...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Meeting [b]Mana@...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"All the adventures we had...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And now, after all this... %Was I going to forget it ever happened?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I remembered what Raichi had said.","xpos":0,"ypos":0},
@@ -132,7 +132,7 @@
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_shock","xpos":-300,"xscale":-1},
 		{"type":"dialogue","text":"She heard me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]K-Kurumi@? What are you doing here?!","xpos":-20,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]K-Kurumi@? What are you doing here?!","xpos":-20,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 
@@ -151,7 +151,7 @@
 		{"type":"dialogue","text":"He raised his sword, pointing it directly at me.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_festival_shock","xpos":-300,"xscale":-1},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! NO!","xpos":-20,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! NO!","xpos":-20,"ypos":77},
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
@@ -167,12 +167,12 @@
 		{"type":"dialogue","character":"Mana","text":"I... I'll go with you.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"But leave her out of it. She has nothing to do with any this.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","text":"[b3]Mana@...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black_dark"},
 		{"type":"playBGM","bgm":"none"},
 		{"type":"dialogue","text":"As my consciousness left me, I heard her whisper one last thing to me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@... %If I had known...","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@... %If I had known...","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Mana","text":"Please forget about me... %I'm so sorry.","xpos":30,"ypos":77},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},

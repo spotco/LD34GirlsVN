@@ -29,7 +29,7 @@
 
 		{"type":"dialogue","character":"Kurumi","text":"So that's why we were gone this whole afternoon. We really appreciate your help!","xpos":82},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"dialogue","character":"Kurumi","text":"Isn't that right, [b3]Mana@?","xpos":82},
+		{"type":"dialogue","character":"Kurumi","text":"Isn't that right, [b]Mana@?","xpos":82},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":82,"ypos":53},
 		{"type":"dialogue","text":"She seemed almost a little... embarassed? I sure hoped she wasn't about to break my cover.","xpos":82,"ypos":0},

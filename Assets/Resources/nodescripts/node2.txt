@@ -17,7 +17,7 @@
 		{"type":"showcharacter","character":"Student","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","character":"Student","text":"Oh my, are you alright? %Let me help you up.","ypos":45},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Student","text":"Ah! It's... [b3]Kurumi@, is that right?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Student","text":"Ah! It's... [bk]Kurumi@, is that right?","xpos":23,"ypos":45},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"That's right.%But... how did you know my name?","ypos":-130},
@@ -35,14 +35,14 @@
 		{"type":"dialogue","text":"A classmate, huh? I remembered seeing his face around...","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Student","image":"char_raichi_normal_happy"},
-		{"type":"dialogue","character":"Student","text":"Let me introduce myself. %I'm [b]Raichi Kashiwagi@. Pleasure to meet you.","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Student","text":"Let me introduce myself. %I'm [br]Raichi Kashiwagi@. Pleasure to meet you.","xpos":23,"ypos":45},
 		{"type":"rename","namestart":"Student","nameend":"Raichi"},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
 		{"type":"dialogue","character":"Kurumi","text":"The same! And... %I guess you already know my name.","ypos":-130},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
-		{"type":"dialogue","character":"Raichi","text":"I'm curious... %What did you think of class? %Was it similar to what you had back home?","xpos":23,"ypos":45},
+		{"type":"dialogue","character":"Raichi","text":"I'm curious, what did you think of our class? %Was it similar to what you had back home?","xpos":23,"ypos":45},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
 		{"type":"dialogue","character":"Kurumi","text":"Well...","ypos":-130},
 		{"type":"dialogue","text":"I imagined that saying I slept through most of it probably wouldn't have made the best impression.","xpos":0,"ypos":0},

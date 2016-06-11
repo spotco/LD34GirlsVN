@@ -14,7 +14,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Everything she's been dragging me into... %It's all been so crazy. %Nothing makes any sense."},
 		{"type":"dialogue","text":"Could I tell him what was going on? Would he really understand?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Kurumi@. There's something you should know.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[bk]Kurumi@. There's something you should know.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"It's about [b]Mana@.","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"I've got reason to believe...","xpos":30,"ypos":77},
 
@@ -30,7 +30,7 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":400,"xscale":1},
 		{"type":"dialogue","text":"It was [b3]Mana@!","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@! I was looking for you! Thought you left already.","xpos":30,"ypos":77},
 
 		{"type":"hidecharacter","character":"Mana"},
 		{"type":"dialogue","text":"She walked over.","xpos":0,"ypos":0},
@@ -48,7 +48,7 @@
 		{"type":"dialogue","character":"Mana","text":"Hey! So what were you two talking about?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
 		{"type":"dialogue","text":"I couldn't help but wonder what he was about to tell me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Mana@... she was my friend. Probably my best friend here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[b]Mana@... she was my friend. Probably my best friend here.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... I realized that I didn't really know that much about her.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},

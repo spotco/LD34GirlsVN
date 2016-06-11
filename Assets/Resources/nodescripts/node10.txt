@@ -35,10 +35,10 @@
 		{"type":"dialogue","text":"After a brief moment it came to her.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal"},
 		{"type":"dialogue","character":"Mana","text":"I've got it.","xpos":22,"ypos":53},
-		{"type":"dialogue","character":"Mana","text":"You're that new girl. %[b3]Kuromi@ or something...","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"You're that new girl. %[bk]Kuromi@ or something...","xpos":22,"ypos":53},
 
-		{"type":"dialogue","character":"Kurumi","text":"It's [b]Kurumi@. %Kurumi Motoyama."},
-		{"type":"dialogue","character":"Mana","text":"[b3]Kurumi@, huh? Well, I guess you already know my name.","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Kurumi","text":"It's [bk]Kurumi@. %Kurumi Motoyama."},
+		{"type":"dialogue","character":"Mana","text":"[bk]Kurumi@, huh? Well, I guess you already know my name.","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_aloof"},
 		{"type":"dialogue","character":"Mana","text":"So that begs the question... What are you doing out here, exactly?","xpos":22,"ypos":53},

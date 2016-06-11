@@ -8,15 +8,15 @@
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal_angry","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 
-		{"type":"dialogue","text":"[b3]Raichi@... %I couldn't exactly say how I was so sure about it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"[br]Raichi@... %I couldn't exactly say how I was so sure about it...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But I knew I couldn't trust him.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"[b3]Somehow@... %I knew he was going to hurt Mana.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I didn't know if I could stop him. But... I was going to do whatever I could.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_angry"},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Raichi@... %I don't know who you are... %Or what you plan to do..."},
+		{"type":"dialogue","character":"Kurumi","text":"[br]Raichi@... %I don't know who you are... %Or what you plan to do..."},
 		{"type":"dialogue","character":"Kurumi","text":"But I'm not going to let you %do it."},
-		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you hurt [b3]Mana@."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm not going to let you hurt [b]Mana@."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_serious"},
 		{"type":"dialogue","text":"He sighed.","xpos":0,"ypos":0},
@@ -24,7 +24,7 @@
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal"},
 		{"type":"dialogue","text":"He smiled.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"[b3]Mana@... You think she's your friend, don't you?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Raichi","text":"[b]Mana@... You think she's your friend, don't you?","xpos":30,"ypos":77},
 		{"type":"dialogue","character":"Raichi","text":"If only you knew the truth behind these so called #[b]Magi-Knights@#.","xpos":30,"ypos":77},
 
 		{"type":"dialogue","text":"The truth?","xpos":0,"ypos":0},
@@ -64,8 +64,8 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad"},
 		{"type":"dialogue","character":"Kurumi","text":"What exactly is going on?"},
 		{"type":"dialogue","text":"Only one thing was certain to me, however.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"[b3]Mana@... %She was my friend. I was going to help her however I could.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]Mana@... %Please be alright..."},
+		{"type":"dialogue","text":"[b]Mana@... %She was my friend. I was going to help her however I could.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"[b]Mana@... %Please be alright..."},
 
 		{"type":"addaffinity"}
 	],
