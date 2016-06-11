@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class GridNavModal : MonoBehaviour, GameMain.Modal {
@@ -8,6 +9,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private Transform _selector;
 	[SerializeField] private CanvasGroup _canvas_group;
 	[SerializeField] private InventoryOverlay _inventory_overlay;
+	
+	[SerializeField] private Image _outline_back;
+	[SerializeField] private Image _outline_front;
+	
+	private float _outline_back_anim_t = 0, _outline_front_anim_t = 0;
 	
 	private float _selector_anim_t;
 	[System.NonSerialized] public Dictionary<int,GridNode> _id_to_gridnode = new Dictionary<int, GridNode>();
@@ -49,9 +55,22 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	public void anim_update(GameMain game) {
 		if (game._active_modal == this) {
 			_canvas_group.alpha = SPUtil.drpt(_canvas_group.alpha,1,1/10.0f);
+			
+			_outline_back_anim_t = SPUtil.drpt(_outline_back_anim_t, 1, 1/10.0f);
+			_outline_front_anim_t = SPUtil.drpt(_outline_front_anim_t, 1, 1/20.0f);
+			
 		} else {
 			_canvas_group.alpha = SPUtil.drpt(_canvas_group.alpha,0,1/10.0f);
+			
+			_outline_back_anim_t = SPUtil.drpt(_outline_back_anim_t, 0, 1/10.0f);
+			_outline_front_anim_t = SPUtil.drpt(_outline_front_anim_t, 0, 1/20.0f);
 		}
+		
+		_outline_back.color = Color.Lerp(new Color(1,1,1,0), new Color(1,1,1,1), _outline_back_anim_t);
+		_outline_back.rectTransform.localScale = Vector3.Lerp(SPUtil.valv(1.25f), SPUtil.valv(1), _outline_back_anim_t);
+		
+		_outline_front.color = Color.Lerp(new Color(1,1,1,0), new Color(1,1,1,1), _outline_front_anim_t);
+		_outline_front.rectTransform.localScale = Vector3.Lerp(SPUtil.valv(1.25f), SPUtil.valv(1), _outline_front_anim_t);
 	}
 	
 	public void i_update(GameMain game) {
