@@ -15,15 +15,16 @@ public class NodeScriptEvent_TransitionCharacter : NodeScriptEvent {
 				modal.advance_script();
 				return;
 			}
-			tar._image.sprite = char_sprite;
-			
-			tar._image.SetNativeSize();
+			tar.set_image(char_sprite,_image);
+			tar.set_facing(_xscale);
+			/*
 			tar.transform.localScale = SPUtil.valv(0.75f);
 			tar._image.transform.localScale = new Vector3(
 				_xscale,
 				tar._image.transform.localScale.y,
 				tar._image.transform.localScale.z
 			);
+			*/
 			
 		}
 		modal.advance_script();

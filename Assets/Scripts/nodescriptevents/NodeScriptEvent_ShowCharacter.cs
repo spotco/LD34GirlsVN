@@ -19,6 +19,9 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 				_xpos,
 				neu_char.transform.localPosition.y + _ypos
 			);
+			
+			neu_char.set_facing(_xscale);
+			/*
 			neu_char._image.SetNativeSize();
 			neu_char.transform.localScale = SPUtil.valv(0.75f);
 			neu_char._image.transform.localScale = new Vector3(
@@ -26,6 +29,7 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 				neu_char._image.transform.localScale.y,
 				neu_char._image.transform.localScale.z
 			);
+			*/
 		}
 		modal.advance_script();
 	}

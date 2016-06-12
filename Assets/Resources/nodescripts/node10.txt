@@ -5,9 +5,10 @@
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
+		{"type":"removeitem","item":"Her Name"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
-		{"type":"removeitem","item":"Her Name"},
+
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
 

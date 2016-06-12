@@ -131,7 +131,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		}
 		EventCharacter neu_char = SPUtil.proto_clone(_proto_character.gameObject).GetComponent<EventCharacter>();
 		neu_char.i_initialize();
-		neu_char._image.sprite = char_sprite;
+		neu_char.set_image(char_sprite,path);
 		
 		_name_to_character[name] = neu_char;
 		return neu_char;
