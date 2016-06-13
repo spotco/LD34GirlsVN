@@ -41,10 +41,14 @@ public class GameMain : MonoBehaviour {
 	
 	public int _affinity;
 	
+	private RectTransform _self_rect;
+	private Canvas _parent_canvas;
+	
 	/*
 	TODO--
 	node positioning, more links
 	hide non-accessible nodes
+	show arrow go locations
 	
 	
 	credits
@@ -59,12 +63,16 @@ public class GameMain : MonoBehaviour {
 	save/load implementation
 	end to title UIs
 	
+	cache characters
 	sfx cache n pool text scroll sounds
 	sfx load all at start
 	
 	*/
 	
 	public void Start () {
+		_self_rect = this.GetComponent<RectTransform>();
+		_parent_canvas = this.GetComponentInParent<Canvas>();
+	
 		_context = this;
 		_objpool = ObjectPool.cons();
 		_tex_resc = TextureResource.cons();
@@ -99,6 +107,12 @@ public class GameMain : MonoBehaviour {
 	
 	public void Update () {
 		if (_event_modal == null) return;
+		
+		if ((_self_rect.rect.height * _parent_canvas.scaleFactor) > Screen.height) {
+			this.transform.localScale = SPUtil.valv((Screen.height) / (_self_rect.rect.height * _parent_canvas.scaleFactor));
+		} else {
+			this.transform.localScale = SPUtil.valv(1);
+		}
 		
 		_controls.i_update();
 		_active_modal.i_update(this);
