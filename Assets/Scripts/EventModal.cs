@@ -108,6 +108,9 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	private void end_script_playback_and_close_modal(GameMain game) {
+		
+		game._grid_nav_modal.update_accessible();
+	
 		foreach (string name in _name_to_character.Keys) {
 			EventCharacter itr_char = _name_to_character[name];
 			itr_char._current_mode = EventCharacter.Mode.DoRemove;

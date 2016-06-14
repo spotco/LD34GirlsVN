@@ -13,6 +13,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private Image _outline_back;
 	[SerializeField] private Image _outline_front;
 	
+	[System.NonSerialized] public HashSet<int> _visited_node_ids = new HashSet<int>();
+	
 	private float _outline_back_anim_t = 0, _outline_front_anim_t = 0;
 	
 	private float _selector_anim_t;
@@ -50,6 +52,38 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		
 		this.set_current_node(_id_to_gridnode[GameMain.NODE_START_INDEX]);
+		this.update_accessible();
+	}
+	
+	private Queue<int> __update_accessible_to_search = new Queue<int>();
+	private HashSet<int> __update_accessible_searched = new HashSet<int>();
+	public void update_accessible() {
+		foreach (int id in _id_to_gridnode.Keys) {
+			GridNode itr_node = _id_to_gridnode[id];
+			if (itr_node._visited) {
+				itr_node._accessible = true;
+			} else {
+				itr_node._accessible = false;
+			}
+		}
+		__update_accessible_to_search.Clear();
+		__update_accessible_searched.Clear();
+		__update_accessible_to_search.Enqueue(_current_node._node_script._id);
+		__update_accessible_searched.Add(_current_node._node_script._id);
+		
+		while (__update_accessible_to_search.Count > 0) {
+			GridNode itr_node = _id_to_gridnode[__update_accessible_to_search.Dequeue()];
+			itr_node._accessible = true;
+			if (itr_node._visited) {
+				for (int i = 0; i < itr_node._node_script._links.Count; i++) {
+					int itr_link_id = itr_node._node_script._links[i];
+					if (!__update_accessible_searched.Contains(itr_link_id)) {
+						__update_accessible_to_search.Enqueue(itr_link_id);
+						__update_accessible_searched.Add(itr_link_id);
+					}
+				}
+			}
+		}
 	}
 	
 	public void anim_update(GameMain game) {

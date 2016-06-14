@@ -30,6 +30,7 @@ public class GridNode : MonoBehaviour {
 	private Sprite img_visited;
 	private Color color_visited  = new Color(113/255.0f,113/255.0f,113/255.0f,1);
 	
+	public bool _accessible;
 	public bool _visited;
 	
 	private static Font __cached_font;
@@ -65,6 +66,7 @@ public class GridNode : MonoBehaviour {
 			}
 		}
 		
+		_accessible = false;
 		_visited = false;
 	}
 	
@@ -151,7 +153,10 @@ public class GridNode : MonoBehaviour {
 			if (grid_nav._selected_node != this) {
 				this.set_line_state(itr_id, LineState.NotSelected);
 			} else {
-				if (grid_nav._selected_node._visited) {
+				if (!_accessible) {
+					this.set_line_state(itr_id, LineState.NotSelected);
+					
+				} else if (grid_nav._selected_node._visited) {
 					if (_unidirectional_reverse_links.Contains(itr_id)) {
 						this.set_line_state(itr_id, LineState.NotSelected);
 					} else {
@@ -174,6 +179,7 @@ public class GridNode : MonoBehaviour {
 		
 		float tar_scale = 1;
 		if (grid_nav._selected_node == this) {
+			this.gameObject.SetActive(true);
 			if (_visited) {
 				_image.sprite = img_visited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
@@ -195,10 +201,14 @@ public class GridNode : MonoBehaviour {
 			
 		
 		} else {
-			if (_visited) {
+			if (!_accessible) {
+				this.gameObject.SetActive(false);
+			} else if (_visited) {
+				this.gameObject.SetActive(true);
 				_image.sprite = img_visited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
 			} else {
+				this.gameObject.SetActive(true);
 				_image.sprite = img_unvisited;
 				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
 			}

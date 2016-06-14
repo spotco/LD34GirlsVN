@@ -46,8 +46,9 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO--
+	
+	node become accessible pop in
 	node positioning, more links
-	hide non-accessible nodes
 	show arrow go locations
 	
 	
