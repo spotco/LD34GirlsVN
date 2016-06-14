@@ -221,9 +221,9 @@ public class SPUtil {
 		return Mathf.Abs(value) < Mathf.Abs(min) ? 0 : value;
 	}
 	
-	public static float running_avg(float avg, float val, float ct) {
-		avg -= (avg / ct) * SPUtil.dt_scale_get();
-		avg += (val / ct) * SPUtil.dt_scale_get();
+	public static float running_avg(float avg, float val, float ct, bool dt_scaled = false) {
+		avg -= (avg / ct) * (!dt_scaled ? 1 : SPUtil.dt_scale_get());
+		avg += (val / ct) * (!dt_scaled ? 1 : SPUtil.dt_scale_get());
 		return avg;
 	}
 	

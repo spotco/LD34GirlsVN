@@ -73,6 +73,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"I..."}
 	],
 	"links":[
-		10,13,14
+		13,14
 	]
 }

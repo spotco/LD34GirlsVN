@@ -28,6 +28,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"Well, then it must be nothing serious!"}
 	],
 	"links":[
-		2
+		2,9,6
 	]
 }

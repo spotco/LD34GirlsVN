@@ -93,6 +93,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"So, what to do next?"}
 	],
 	"links":[
-		6
+		4,6
 	]
 }

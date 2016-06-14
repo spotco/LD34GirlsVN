@@ -81,6 +81,27 @@ public class GridNode : MonoBehaviour {
 		}
 	}
 	
+	public Vector2 _focus_point = new Vector2();
+	public void recalculate_focus_point(GridNavModal grid_nav) {
+		Vector2 tar_pos = Vector2.zero;
+		tar_pos = new Vector3(
+			-this.transform.localPosition.x,
+			-this.transform.localPosition.y
+		);
+		
+		if (_visited) {
+			for (int i = 0; i < this._node_script._links.Count; i++) {
+				GridNode itr_node = grid_nav._id_to_gridnode[this._node_script._links[i]];
+				if (!itr_node._visited) {
+					tar_pos.x = SPUtil.running_avg(tar_pos.x, -itr_node.transform.localPosition.x, i+2);
+					tar_pos.y = SPUtil.running_avg(tar_pos.y, -itr_node.transform.localPosition.y, i+2);
+				}
+			}
+		}
+		
+		_focus_point = tar_pos;
+	}
+	
 	public void create_link_sprites(GridNavModal grid_nav) {
 		List<int> all_links = new List<int>();
 		all_links.AddRange(_node_script._links);
@@ -119,11 +140,18 @@ public class GridNode : MonoBehaviour {
 	private enum LineState {
 		ActiveSelected,
 		ActiveNotSelected,
-		NotSelected
+		NotSelected,
+		NotAccessible
 	}
 	
 	private void set_line_state(int id, LineState state) {
 		Line tar = _id_to_line[id];
+		if (state == LineState.NotAccessible) {
+			tar._image.color = new Color(tar._image.color.r,tar._image.color.g,tar._image.color.b,0);
+			tar._rect_transform.sizeDelta = new Vector2(tar._rect_transform.sizeDelta.x,0);
+			return;
+		}
+		
 		Color tar_color;
 		float tar_height;
 		if (state == LineState.ActiveSelected) {
@@ -153,8 +181,8 @@ public class GridNode : MonoBehaviour {
 			if (grid_nav._selected_node != this) {
 				this.set_line_state(itr_id, LineState.NotSelected);
 			} else {
-				if (!_accessible) {
-					this.set_line_state(itr_id, LineState.NotSelected);
+				if (!_accessible || !grid_nav._id_to_gridnode[itr_id]._accessible) {
+					this.set_line_state(itr_id, LineState.NotAccessible);
 					
 				} else if (grid_nav._selected_node._visited) {
 					if (_unidirectional_reverse_links.Contains(itr_id)) {

@@ -53,6 +53,6 @@
 		{"type":"addaffinity"}
 	],
 	"links":[
-		10
+		10,12
 	]
 }

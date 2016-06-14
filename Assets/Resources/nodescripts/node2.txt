@@ -89,6 +89,6 @@
 		{"type":"additem","item":"Her Name"}
 	],
 	"links":[
-		1,4,6
+		1,4,6,9
 	]
 }

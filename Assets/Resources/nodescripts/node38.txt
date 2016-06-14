@@ -96,6 +96,6 @@
 		{"type":"dialogue","text":"It took a bit of work, but her apartment was looking much cleaner now.","xpos":0,"ypos":0}
 	],
 	"links":[
-		35,40,41
+		35,37,40,41
 	]
 }

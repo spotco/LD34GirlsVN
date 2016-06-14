@@ -39,6 +39,6 @@
 		{"type":"dialogue","character":"Fans","text":"[bs]Simone@-sama! %[bs]Simone@-sama! %[bs]Simone@-sama!","xpos":0,"ypos":100}
 	],
 	"links":[
-		30
+		30,33,34
 	]
 }

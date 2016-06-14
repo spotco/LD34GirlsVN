@@ -60,11 +60,9 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	public void update_accessible() {
 		foreach (int id in _id_to_gridnode.Keys) {
 			GridNode itr_node = _id_to_gridnode[id];
-			if (itr_node._visited) {
-				itr_node._accessible = true;
-			} else {
-				itr_node._accessible = false;
-			}
+			itr_node._accessible = false;
+			
+			itr_node.recalculate_focus_point(this);
 		}
 		__update_accessible_to_search.Clear();
 		__update_accessible_searched.Clear();
@@ -302,10 +300,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	}
 	
 	private void set_focus_node(GridNode tar_node) {
-		_target_grid_map_anchor_position = new Vector3(
-			-tar_node.transform.localPosition.x,
-			-tar_node.transform.localPosition.y
-		);
+		_target_grid_map_anchor_position = tar_node._focus_point;
 	}
 	
 	private void set_current_node(GridNode tar_node) {

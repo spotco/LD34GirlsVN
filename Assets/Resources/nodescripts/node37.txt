@@ -19,6 +19,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."}
 	],
 	"links":[
-		35
+		35,38
 	]
 }

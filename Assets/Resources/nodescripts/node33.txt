@@ -47,6 +47,6 @@
 		{"type":"dialogue", "text":"Well... She probably had a point.","xpos":0,"ypos":0}
 	],
 	"links":[
-		30
+		30,32,34
 	]
 }
