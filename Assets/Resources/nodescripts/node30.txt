@@ -6,7 +6,7 @@
 	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue", "text":"We decided to head over to the [b3]Shinagawa District@ to investigate what was going on. ","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"We decided to head over to the [b]Shinagawa District@ to investigate what exactly was going on. ","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_monster"},
 
@@ -23,42 +23,42 @@
 		{"type":"changebackground","background":"bg_city_monster_fight"},
 
 		{"type":"dialogue", "text":"A bright beam of pink light filled the sky.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"At the center... %I could see a figure.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"At the center... %I saw a figure.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Who... Is that?"},
 		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue", "text":"It couldn't have been [b]Mana@... %She was standing beside me.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"It couldn't have been [b]Mana@... %She was standing right beside me.","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"crowd"},
 		{"type":"camerashake", "length":"long"},
-		{"type":"dialogue", "text":"Whoever it was, the monsters didn't care. %They suddenly attacked!","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Whoever it was, it didn't matter to the monsters. %With a sudden cry, they attacked!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue", "text":"Without hesistation, this figure quickly drew her weapon...","xpos":0,"ypos":0},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue", "text":"And with a single decisive blow, dispatched the entire group!","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"And with a single decisive blow, defeated the entire group!","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_late"},
-		{"type":"dialogue", "text":"With her work finished, she landed gently back on the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"With the monsters dispatched, she returned back to the ground.","xpos":0,"ypos":0},
 		{"type":"dialogue", "text":"Seeing her up close, she looked completely unlike anyone I had ever seen before.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":388,"xscale":1},
 		{"type":"dialogue", "text":"She wore a very revealing pink dress adorned with purple ribbons and laces.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Her hair was coiffed up in two unwieldy drills, and in her hand she carried a large, deadly looking scythe.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"Her hair was coiffed up in two unwieldy drills, and in her hand she carried a large, deadly looking [bs]scythe@.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Another superhero? I'd honestly be embarassed to be seen in public wearing something like that..."},
+		{"type":"dialogue","character":"Kurumi","text":"I'd honestly be embarassed to be seen in public wearing something like that..."},
 		{"type":"hidecharacter","character":"Simone"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue", "text":"It was then that I just noticed... %We weren't alone.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"Dozens of people gathered around us, forming a crowd that surrounded her.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"People gathered around us, forming a crowd that surrounded her.","xpos":0,"ypos":0},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Crowd","text":"We love you, [bs]Simone@-sama!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Crowd","text":"We love you, [bs]Simone@!","xpos":0,"ypos":100},
 
-		{"type":"dialogue", "text":"They were all cheering in unison. Were these... [b]Fans@?","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"They were all cheering for her. Were they... [bs]Fans@?","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-170,"xscale":1},
 		{"type":"dialogue","character":"Simone","text":"[b3]Dohoho~!@ Piece of cake!"},
@@ -66,25 +66,38 @@
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Fans","text":"[bs]Simone@-sama, [b3]Daisuki@!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Fans","text":"[bs]Simone@! [bs]Simone@!","xpos":0,"ypos":100},
 		{"type":"hidecharacter","character":"Simone"},
 
-		{"type":"dialogue", "text":"We slipped out to talk about what was going on.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"We slipped out from the crowd to talk about what we had just seen.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Something about her really gets on my nerves..."},
+		{"type":"dialogue","character":"Kurumi","text":"You know... %Something about her really just got on my nerves."},
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"Bet you could of totally handled those monsters too. What a showoff!"},
-		{"type":"dialogue","character":"Mana","text":"Listen, Kurumi...","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I can sense it. %She's strong.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Kurumi","text":"Bet you could have totally handled those monsters too. What a showoff, am I right?"},
+		{"type":"dialogue","character":"Mana","text":"Listen, [bk]Kurumi@...","xpos":30,"ypos":77},
+		{"type":"dialogue", "text":"She paused for a brief moment.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Mana","text":"That [bs]Simone@... %She's a [bs]Magi-Knight@.","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock"},
+		{"type":"dialogue","character":"Kurumi","text":"Another [bs]Magi-Knight@... %Just like you?"},
+		{"type":"dialogue", "text":"There were others out there?","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_sad"},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
+
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
-		{"type":"dialogue","character":"Mana","text":"[b3]Really@ strong.","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Mana","text":"I don't like this at all.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"...Yeah.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"And... I've got no idea what she's doing here.","xpos":30,"ypos":77},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"..."}
+		{"type":"dialogue","character":"Kurumi","text":"What are you going to do..?"},
+
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
+		{"type":"dialogue", "text":"She didn't respond.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"But I could tell... %She was bothered.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I wished I could have known what she was thinking.","xpos":0,"ypos":0}
 	],
 	"links":[
 		129,32,33

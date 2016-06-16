@@ -14,10 +14,10 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = true;
+	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
-	public static bool SKIP_TITLE = false;
+	public static int NODE_START_INDEX = 30;
+	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -47,8 +47,9 @@ public class GameMain : MonoBehaviour {
 	/*
 	TODO--
 
-	simone/mana pre fight more exposition, challenge who she is identity
-	good end expand sacrifice of mana 
+	simone/mana fight more monsters, get in fight (competition), extra node?
+	
+	good end expand sacrifice of mana, extra node
 
 	credits
 		-simone boo-hoo tell you a secret

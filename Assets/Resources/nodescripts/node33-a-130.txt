@@ -1,0 +1,35 @@
+{
+	"id":130,
+	"title":"Working Together?",
+	"background":"bg_city_late",
+	"music":"epic",
+	"requirementitem":[],
+	"event":[
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+
+		{"type":"dialogue","character":"Kurumi","text":"You know... I was thinking."},
+		{"type":"dialogue","character":"Kurumi","text":"You said she was strong, right?"},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
+		{"type":"dialogue","character":"Kurumi","text":"Well... You're pretty strong too! What if you two could team up?"},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
+		{"type":"dialogue","character":"Kurumi","text":"I'm sure you could beat even more monsters!"},
+
+		{"type":"dialogue","character":"Mana","text":"Team up... With her?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"I think I'll pass.","xpos":30,"ypos":77},
+
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
+		{"type":"dialogue","character":"Mana","text":"I don't think I could bear to listen to her talk any more than I have to.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"And those so called #[bs]fans@# of hers are really getting on my nerves.","xpos":30,"ypos":77},
+
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue", "text":"Now that I thought about it, I really couldn't have imagined it myself either.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"They were just too different. There was no way they would have ever got along.","xpos":0,"ypos":0}
+	],
+	"links":[
+		32,33
+	]
+}

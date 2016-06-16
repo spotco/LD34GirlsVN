@@ -9,36 +9,42 @@
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
 
 		{"type":"dialogue","character":"Mana","text":"[bs]Simone@, was it?","xpos":30,"ypos":77},
-		{"type":"dialogue","character":"Simone","text":"What is it, girl? [bs]Simone@'s not doing autographs right now."},
+		{"type":"dialogue","character":"Simone","text":"What is it, [b3]ugly@ girl?"},
+		{"type":"dialogue","character":"Simone","text":"Why aren't you cheering for heroic [bs]Simone@ beating up those nasty monsters?"},
 
-		{"type":"dialogue","character":"Mana","text":"You're a [b]Magi-Knight@ too, aren't you?","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"You're... %A [bs]Magi-Knight@ too. %Aren't you?","xpos":30,"ypos":77},
+
+		{"type":"dialogue","character":"Simone","text":"Oh..? %[b3]Ugly@ girl knows about [bs]Magi-Knights@?"},
+
+		{"type":"dialogue","character":"Mana","text":"You are... Aren't you?","xpos":30,"ypos":77},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_angry"},
-		{"type":"dialogue","character":"Mana","text":"Then bug off. %This is [b3]MY@ town.","xpos":30,"ypos":77},
+		{"type":"dialogue","character":"Mana","text":"Then bug off. %This is [b3]MY@ home.","xpos":30,"ypos":77},
 
-		{"type":"dialogue","character":"Simone","text":"[bs]Dohohoho~!@"},
-		{"type":"dialogue","character":"Simone","text":"You, ugly girl... a [b]Magi-Knight@ like [b]Simone@?"},
-		{"type":"dialogue","character":"Simone","text":"[b]Simone@ doesn't believe it! Where's [b3]ugly@ girl's [b3]ugly@ dress, or [b3]ugly@ weapon?"},
+		{"type":"dialogue","character":"Simone","text":"[bs]Dohohoho@~!"},
+		{"type":"dialogue","character":"Simone","text":"You, ugly girl... a [bs]hero@ like [bs]Simone@?"},
+		{"type":"dialogue","character":"Simone","text":"[bs]Simone@ doesn't believe it!"},
+		{"type":"dialogue","character":"Simone","text":"[b3]Ugly@ girl couldn't possibly be a hero in an [b3]ugly@ outfit like that!"},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
 
-		{"type":"dialogue","character":"Simone","text":"And where is [b3]ugly@ girl's adoring fanbase?"},
-		{"type":"dialogue","character":"Simone","text":"Fanbase is most important part! Isn't that right, amazing fans?"},
+		{"type":"dialogue","character":"Simone","text":"And where are [b3]ugly@ girl's adoring fans?"},
+		{"type":"dialogue","character":"Simone","text":"Fans are most important part! Isn't that right, [bs]Simone's amazing fans@?"},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Fans","text":"[b]Simone@-sama so kawaii~!","xpos":0,"ypos":100},
+		{"type":"dialogue","character":"Fans","text":"[bs]Simone@ is the hero! %We love [bs]Simone@!","xpos":0,"ypos":100},
 
 		{"type":"dialogue","character":"Mana","text":"...","xpos":30,"ypos":77},
-		{"type":"dialogue", "text":"She was completely speechless.","xpos":0,"ypos":0},
-		{"type":"dialogue", "text":"I didn't think I'd ever seen Mana quite like this before.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"As the crowd cheered, [b]Mana@ was completely speechless.","xpos":0,"ypos":0},
+		{"type":"dialogue", "text":"I didn't think I had ever seen her quite like this before.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Simone","text":"This city belongs to [b]Simone@! Time for [b3]ugly@ girl to go home!"},
+		{"type":"dialogue","character":"Simone","text":"This city belongs to [bs]Simone@! Time for [b3]ugly@ girl to go somewhere else!"},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"playSFX", "sfx":"crowd"},
-		{"type":"dialogue","character":"Fans","text":"[bs]Simone@-sama! %[bs]Simone@-sama! %[bs]Simone@-sama!","xpos":0,"ypos":100}
+		{"type":"dialogue","character":"Fans","text":"[bs]Simone@ is the hero! %[bs]Simone@ is number one!","xpos":0,"ypos":100}
 	],
 	"links":[
-		30,33,34
+		30,33,34,130
 	]
 }
