@@ -10,6 +10,7 @@ public class DialogueBubble : SPBaseBehavior {
 	[SerializeField] private Image _name_background;
 	[SerializeField] private RectTransform _nametag;
 	[SerializeField] private Image _cursor;
+	[SerializeField] private Image _cursor_shadow;
 	[SerializeField] private RawImage _rendered_text;
 	
 	private ScrollText _primary_text = new ScrollText();
@@ -131,6 +132,7 @@ public class DialogueBubble : SPBaseBehavior {
 			}
 			
 			_anim_t += SPUtil.dt_scale_get();
+			/*
 			if (_anim_t > 50) {
 				_cursor.gameObject.SetActive(true);
 				_cursor.color = new Color(1,1,1,0);
@@ -138,6 +140,9 @@ public class DialogueBubble : SPBaseBehavior {
 			} else {
 				_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/25.0f));
 			}
+			*/
+			_cursor.gameObject.SetActive(true);
+			_cursor.color = new Color(1,1,1,1);
 			this.transform.localScale = SPUtil.valv(1);
 			
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
@@ -157,6 +162,8 @@ public class DialogueBubble : SPBaseBehavior {
 				_current_mode = Mode.DoRemove;
 			}	
 		}
+		
+		_cursor_shadow.gameObject.SetActive(_cursor.gameObject.activeSelf);
 		
 	}
 	
