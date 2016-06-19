@@ -16,6 +16,10 @@ public class DialogueBubble : SPBaseBehavior {
 	private ScrollText _primary_text = new ScrollText();
 	[SerializeField] private Outline _name_text_outline;
 	
+	private float _cursor_yvel;
+	private float _cursor_start_ypos;
+	private float _cursor_scale_mult = 0;
+	
 	public enum Mode {
 		FadeIn,
 		TextIn,
@@ -82,6 +86,11 @@ public class DialogueBubble : SPBaseBehavior {
 		_cursor.color = new Color(1,1,1,1);
 		_cursor.transform.localScale = SPUtil.valv(1);
 		
+		_cursor_shadow.transform.position = _cursor.transform.position;
+		
+		_cursor_yvel = 0;
+		_cursor_start_ypos = -60;
+		
 		_name_bounce_t = 0;
 		_nametag.transform.localPosition = _name_initial_pos;
 	}
@@ -123,6 +132,10 @@ public class DialogueBubble : SPBaseBehavior {
 			if (_primary_text.finished()) {
 				_current_mode = Mode.Finished;
 				_anim_t = 51;
+				
+				_cursor.transform.localPosition = new Vector3(_cursor.transform.localPosition.x, _cursor_start_ypos, _cursor.transform.localPosition.z);
+				_cursor.color = new Color(1,1,1,0);
+				_cursor_scale_mult = 0;
 			}
 		
 		} else if (_current_mode == Mode.Finished) {
@@ -131,18 +144,11 @@ public class DialogueBubble : SPBaseBehavior {
 				_nametag.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 6)));
 			}
 			
-			_anim_t += SPUtil.dt_scale_get();
-			/*
-			if (_anim_t > 50) {
-				_cursor.gameObject.SetActive(true);
-				_cursor.color = new Color(1,1,1,0);
-				_anim_t = 0;
-			} else {
-				_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/25.0f));
-			}
-			*/
+			_cursor_scale_mult = SPUtil.drpt(_cursor_scale_mult, 1, 1/8.0f);
+			_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/8.0f));
+			this.cursor_anim_update();
+			
 			_cursor.gameObject.SetActive(true);
-			_cursor.color = new Color(1,1,1,1);
 			this.transform.localScale = SPUtil.valv(1);
 			
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
@@ -152,8 +158,9 @@ public class DialogueBubble : SPBaseBehavior {
 			}
 		
 		} else if (_current_mode == Mode.FadeOut) {
-			_cursor.transform.localScale = SPUtil.valv(SPUtil.drpt(_cursor.transform.localScale.x,0,1/10.0f));
-			_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/25.0f));
+			_cursor_scale_mult = SPUtil.drpt(_cursor_scale_mult, 0, 1/10.0f);
+			_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,0,1/10.0f));
+			this.cursor_anim_update();
 			
 			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get(),0,1);
 			this.transform.localScale = SPUtil.valv(1);
@@ -163,8 +170,27 @@ public class DialogueBubble : SPBaseBehavior {
 			}	
 		}
 		
+		_cursor_shadow.transform.localScale = _cursor.transform.localScale;
 		_cursor_shadow.gameObject.SetActive(_cursor.gameObject.activeSelf);
+		_cursor_shadow.transform.position = _cursor.transform.position;
 		
+	}
+	
+	private void cursor_anim_update() {
+		float cursor_ypos = _cursor.transform.localPosition.y;
+		_cursor_yvel -= 0.15f * SPUtil.dt_scale_get();
+		cursor_ypos += _cursor_yvel * SPUtil.dt_scale_get();
+		
+		_cursor.transform.localScale = new Vector3(
+			SPUtil.drpt(_cursor.transform.localScale.x, SPUtil.y_for_point_of_2pt_line(new Vector2(-3.5f,1.35f),new Vector2(0,1), _cursor_yvel), 1/5.0f) * _cursor_scale_mult,
+			SPUtil.drpt(_cursor.transform.localScale.y, SPUtil.y_for_point_of_2pt_line(new Vector2(-3.5f,1),new Vector2(0,1.1f), _cursor_yvel), 1/5.0f) * _cursor_scale_mult,
+			1
+		);
+		if (_cursor_yvel < 0 && cursor_ypos < -75) {
+			cursor_ypos = -75;
+			_cursor_yvel = 2.63f;
+		}
+		_cursor.transform.localPosition = new Vector3(_cursor.transform.localPosition.x, cursor_ypos, _cursor.transform.localPosition.z);
 	}
 	
 	private static Dictionary<string,Sprite> __name_to_bgsprite = new Dictionary<string, Sprite>();
