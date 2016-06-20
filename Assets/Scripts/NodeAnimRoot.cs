@@ -98,7 +98,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 		switch (_transition_state) {
 		case AnimTransitionState.PopIn: {
-			_anim_t += SPUtil.sec_to_tick(1.5f);
+			_anim_t += SPUtil.sec_to_tick(1.2f);
 			
 			const float MODE_1_T = 0.35f;
 			const float MODE_2_T = 0.7f;

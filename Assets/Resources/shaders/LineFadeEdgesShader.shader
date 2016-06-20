@@ -37,13 +37,14 @@
 			ReadMask [_StencilReadMask]
 			WriteMask [_StencilWriteMask]
 		}
+		ColorMask [_ColorMask]
 
 		Cull Off
 		Lighting Off
 		ZWrite Off
 		ZTest [unity_GUIZTestMode]
 		Blend SrcAlpha OneMinusSrcAlpha
-		ColorMask [_ColorMask]
+		
 
 		Pass
 		{

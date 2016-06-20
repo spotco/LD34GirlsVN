@@ -14,10 +14,10 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = true;
+	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
-	public static bool SKIP_TITLE = true;
+	public static bool SKIP_TITLE = false;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -46,7 +46,12 @@ public class GameMain : MonoBehaviour {
 	
 	/*
 	TODO--
-
+	
+	1. all this moving an packing, havent had a chance...
+	
+	heart particles
+	
+	try tess rotation lead 
 	simone/mana fight more monsters, get in fight (competition), extra node?
 	
 	good end expand sacrifice of mana, extra node

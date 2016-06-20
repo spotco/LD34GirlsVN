@@ -148,9 +148,14 @@ public class GridNode : MonoBehaviour {
 		if (state == LineState.NotAccessible) {
 			tar._image.color = new Color(tar._image.color.r,tar._image.color.g,tar._image.color.b,0);
 			tar._rect_transform.localScale = new Vector3(tar._rect_transform.localScale.x, 0, tar._rect_transform.localScale.z);
+			
+			tar.gameObject.SetActive(false);
+			Debug.Log("help");
+			
 			return;
 		}
 		
+		tar.gameObject.SetActive(true);
 		tar.i_update(state == LineState.ActiveSelected);
 		
 		Color tar_color;
