@@ -14,6 +14,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private Image _outline_front;
 	
 	[SerializeField] private NodeAnimRoot _anim_root_proto;
+	[SerializeField] private LineProtoRoot _line_root_proto;
 	
 	[System.NonSerialized] public HashSet<int> _visited_node_ids = new HashSet<int>();
 	
@@ -30,6 +31,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 	public void i_initialize(GameMain game) {
 		_anim_root_proto.gameObject.SetActive(false);
+		_line_root_proto.gameObject.SetActive(false);
+		
 		this.gameObject.SetActive(true);
 		_canvas_group.alpha = 0;
 		
@@ -39,7 +42,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			GameObject itr = _grid_map_anchor.GetChild(i).gameObject;
 			if (itr.GetComponent<GridNode>() != null) {
 				GridNode itr_gridnode = itr.GetComponent<GridNode>();
-				itr_gridnode.i_initialize(game,this,_anim_root_proto);
+				itr_gridnode.i_initialize(game,this,_anim_root_proto, _line_root_proto);
 				if (!_id_to_gridnode.ContainsKey(itr_gridnode._node_script._id)) {
 					_id_to_gridnode[itr_gridnode._node_script._id] = itr_gridnode;
 				}

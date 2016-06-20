@@ -4,16 +4,11 @@ using System.Collections.Generic;
 
 public class GridNode : MonoBehaviour {
 
-	public class Line {
-		public Image _image;
-		public RectTransform _rect_transform;
-	}
-
 	[SerializeField] private TextAsset _node_script_text;
 	[SerializeField] private Image _image;
 	[SerializeField] private Text _title_ui_text;
 	private float _anim_theta;
-	[SerializeField] private Image _line_proto;
+	
 	public NodeScript _node_script = new NodeScript();
 	
 	private NodeAnimRoot _self_nodeanimroot;
@@ -22,24 +17,28 @@ public class GridNode : MonoBehaviour {
 	[SerializeField] private Image _lock_item_icon;
 	public bool _is_locked;
 	
-	private Dictionary<int,GridNode.Line> _id_to_line = new Dictionary<int, GridNode.Line>();
+	private Dictionary<int,LineProtoRoot> _id_to_line = new Dictionary<int, LineProtoRoot>();
 	
 	public bool _accessible;
 	public bool _visited;
 	
 	private static Font __cached_font;
 	
+	private LineProtoRoot _line_proto;
+	
 	private void hide_legacy_elements() {
 		_title_ui_text.gameObject.SetActive(false);
 		this.GetComponent<Image>().enabled = false;
 	}
 	
-	public void i_initialize(GameMain game, GridNavModal grid_nav, NodeAnimRoot proto_nodeanimroot) {
+	public void i_initialize(GameMain game, GridNavModal grid_nav, NodeAnimRoot proto_nodeanimroot, LineProtoRoot proto_line) {
 		this.hide_legacy_elements();
 		_self_nodeanimroot = SPUtil.proto_clone(proto_nodeanimroot.gameObject).GetComponent<NodeAnimRoot>();
 		_self_nodeanimroot.transform.SetParent(this.gameObject.transform);
 		_self_nodeanimroot.transform.localPosition = SPUtil.valv(0);
 		_self_nodeanimroot.i_initialize();
+		
+		_line_proto = proto_line;
 		
 		_node_script.i_initialize(game,_node_script_text);
 		
@@ -118,23 +117,22 @@ public class GridNode : MonoBehaviour {
 			GridNode other_node = grid_nav._id_to_gridnode[itr_id];
 			Vector3 lpos_delta = SPUtil.vec_sub(other_node.transform.localPosition,this.transform.localPosition);
 			
-			Image neu_line = SPUtil.proto_clone(_line_proto.gameObject).GetComponent<Image>();
-			neu_line.GetComponent<RectTransform>().sizeDelta = new Vector2(lpos_delta.magnitude, neu_line.GetComponent<RectTransform>().sizeDelta.y);
+			LineProtoRoot neu_line = SPUtil.proto_clone(_line_proto.gameObject).GetComponent<LineProtoRoot>();
+			neu_line.i_initialize();
+			neu_line._rect_transform.sizeDelta = new Vector2(lpos_delta.magnitude, neu_line.GetComponent<RectTransform>().sizeDelta.y);
 			
-			neu_line.transform.localEulerAngles = new Vector3(0,0,SPUtil.dir_ang_deg(lpos_delta.x,lpos_delta.y));
-			neu_line.transform.SetParent(grid_nav._line_root);
+			neu_line._rect_transform.localEulerAngles = new Vector3(0,0,SPUtil.dir_ang_deg(lpos_delta.x,lpos_delta.y));
+			neu_line._rect_transform.SetParent(grid_nav._line_root);
+			neu_line._rect_transform.localPosition = this.cached_recttransform_get().localPosition;
 			
-			neu_line.color = new Color(
-				neu_line.color.r,
-				neu_line.color.g,
-				neu_line.color.b,
+			neu_line._image.color = new Color(
+				neu_line._image.color.r,
+				neu_line._image.color.g,
+				neu_line._image.color.b,
 				0
 			);
 			
-			_id_to_line[itr_id] = new GridNode.Line() {
-				_image = neu_line,
-				_rect_transform = neu_line.GetComponent<RectTransform>()
-			};
+			_id_to_line[itr_id] = neu_line;
 		}
 	}
 	
@@ -146,35 +144,40 @@ public class GridNode : MonoBehaviour {
 	}
 	
 	private void set_line_state(int id, LineState state) {
-		Line tar = _id_to_line[id];
+		LineProtoRoot tar = _id_to_line[id];
 		if (state == LineState.NotAccessible) {
 			tar._image.color = new Color(tar._image.color.r,tar._image.color.g,tar._image.color.b,0);
-			tar._rect_transform.sizeDelta = new Vector2(tar._rect_transform.sizeDelta.x,0);
+			tar._rect_transform.localScale = new Vector3(tar._rect_transform.localScale.x, 0, tar._rect_transform.localScale.z);
 			return;
 		}
+		
+		tar.i_update(state == LineState.ActiveSelected);
 		
 		Color tar_color;
 		float tar_height;
 		if (state == LineState.ActiveSelected) {
 			tar_color = new Color(1,1,1,1);
-			tar_height = 10;
+			tar_height = 1.2f;
 		} else if (state == LineState.ActiveNotSelected) {
-			tar_color = new Color(1,1,1,0.3f);
-			tar_height = 5;
+			tar_color = new Color(1,1,1,0.5f);
+			tar_height = 0.85f;
 		} else {
 			tar_color = new Color(1,1,1,0);
-			tar_height = 5;
+			tar_height = 0.85f;
 		}
+		
 		tar._image.color = new Color(
 			SPUtil.drpt(tar._image.color.r,tar_color.r,1/10.0f),
 			SPUtil.drpt(tar._image.color.g,tar_color.g,1/10.0f),
 			SPUtil.drpt(tar._image.color.b,tar_color.b,1/10.0f),
 			SPUtil.drpt(tar._image.color.a,tar_color.a,1/10.0f)
 		);
-		tar._rect_transform.sizeDelta = new Vector2(
-			tar._rect_transform.sizeDelta.x,
-			SPUtil.drpt(tar._rect_transform.sizeDelta.y,tar_height,1/10.0f)
-		); 
+		
+		tar._rect_transform.localScale = new Vector3(
+			tar._rect_transform.localScale.x, 
+			SPUtil.drpt(tar._rect_transform.localScale.y,tar_height,1/10.0f), 
+			tar._rect_transform.localScale.z
+		);
 	}
 	
 	public void i_update(GameMain game, GridNavModal grid_nav) {
@@ -204,8 +207,6 @@ public class GridNode : MonoBehaviour {
 				}
 			}
 		}
-		
-		
 
 		if (grid_nav._selected_node == this) {
 			if (_visited) {

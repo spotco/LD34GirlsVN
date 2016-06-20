@@ -23,7 +23,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 	[SerializeField] private Image _node_visited;
 	
-	public void i_initialize() {		
+	public void i_initialize() {
 		_text_outline = _text.GetComponent<Outline>();
 		_text_shadow = _text.GetComponent<Shadow>();
 		
