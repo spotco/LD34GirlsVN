@@ -13,9 +13,10 @@ public class GridNode : MonoBehaviour {
 	[SerializeField] private Image _image;
 	[SerializeField] private Text _title_ui_text;
 	private float _anim_theta;
-	private Outline _title_ui_outline;
 	[SerializeField] private Image _line_proto;
 	public NodeScript _node_script = new NodeScript();
+	
+	private NodeAnimRoot _self_nodeanimroot;
 	
 	[SerializeField] private Image _lock_icon;
 	[SerializeField] private Image _lock_item_icon;
@@ -23,34 +24,34 @@ public class GridNode : MonoBehaviour {
 	
 	private Dictionary<int,GridNode.Line> _id_to_line = new Dictionary<int, GridNode.Line>();
 	
-	private Sprite img_current;
-	private Color color_current = new Color(191/255.0f,67/255.0f,0/255.0f,1);
-	private Sprite img_unvisited;
-	private Color color_unvisited = new Color(159/255.0f,69/255.0f,255/255.0f,1);
-	private Sprite img_visited;
-	private Color color_visited  = new Color(113/255.0f,113/255.0f,113/255.0f,1);
-	
 	public bool _accessible;
 	public bool _visited;
 	
 	private static Font __cached_font;
 	
-	public void i_initialize(GameMain game, GridNavModal grid_nav) {
+	private void hide_legacy_elements() {
+		_title_ui_text.gameObject.SetActive(false);
+		this.GetComponent<Image>().enabled = false;
+	}
+	
+	public void i_initialize(GameMain game, GridNavModal grid_nav, NodeAnimRoot proto_nodeanimroot) {
+		this.hide_legacy_elements();
+		_self_nodeanimroot = SPUtil.proto_clone(proto_nodeanimroot.gameObject).GetComponent<NodeAnimRoot>();
+		_self_nodeanimroot.transform.SetParent(this.gameObject.transform);
+		_self_nodeanimroot.transform.localPosition = SPUtil.valv(0);
+		_self_nodeanimroot.i_initialize();
+		
 		_node_script.i_initialize(game,_node_script_text);
 		
 		if (__cached_font == null) {
 			__cached_font = Resources.Load<Font>("osaka.unicode");
 		}
-		_title_ui_text.font = __cached_font;
 		
-		_title_ui_outline = _title_ui_text.GetComponent<Outline>();
-		
-		img_current = Resources.Load<Sprite>("img/grid/node_current");
-		img_unvisited = Resources.Load<Sprite>("img/grid/node_visited");
-		img_visited = Resources.Load<Sprite>("img/grid/node_unvisited");
+		_self_nodeanimroot.set_font(__cached_font);
+		_self_nodeanimroot.set_text(_node_script._title);
 		
 		this.gameObject.name = SPUtil.sprintf("Node (%d)",_node_script._id);
-		_title_ui_text.text = _node_script._title;
+		
 		
 		_lock_icon.gameObject.SetActive(false);
 		_lock_item_icon.gameObject.SetActive(false);
@@ -205,72 +206,45 @@ public class GridNode : MonoBehaviour {
 		}
 		
 		
-		float tar_scale = 1;
+
 		if (grid_nav._selected_node == this) {
-			this.gameObject.SetActive(true);
 			if (_visited) {
-				_image.sprite = img_visited;
-				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
-				_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited);
 				
 			} else {
-				_image.sprite = img_unvisited;
-				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
-				_anim_theta += 0.05f;
-				_title_ui_text.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin(_anim_theta)*7.5f);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
 				
 			}
-			if (_visited) {
-				tar_scale = 1.0f;
-			} else {
-				tar_scale = 1.35f;
-			}
-			
-			
 		
 		} else {
 			if (!_accessible) {
-				this.gameObject.SetActive(false);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
+				
 			} else if (_visited) {
-				this.gameObject.SetActive(true);
-				_image.sprite = img_visited;
-				SPUtil.set_outline_effect_color(_title_ui_outline,color_visited);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited);
+				
 			} else {
-				this.gameObject.SetActive(true);
-				_image.sprite = img_unvisited;
-				SPUtil.set_outline_effect_color(_title_ui_outline,color_unvisited);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+				
 			}
-			
-			if (grid_nav.__cached_selection_list.Contains(this) && SPUtil.rect_transform_contains_screen_point(this.cached_recttransform_get(),game._controls.get_touch_pos())) {
-				tar_scale = 1.1f;
-			} else {
-				tar_scale = 0.85f;
-			}
-			
-			_title_ui_text.transform.localEulerAngles = new Vector3(0,0,0);
-			
 		}
-		this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
+		_self_nodeanimroot.i_update();
 		
 		if (!_visited) {
 			if (_node_script._affinity_requirement) {
 				_lock_icon.gameObject.SetActive(true);
 				_lock_item_icon.gameObject.SetActive(false);
-				_title_ui_text.gameObject.SetActive(false);
 			
 			} else if (_is_locked) {
 				_lock_icon.gameObject.SetActive(true);
 				_lock_item_icon.gameObject.SetActive(true);
-				_title_ui_text.gameObject.SetActive(false);
 			} else {
 				_lock_icon.gameObject.SetActive(false);
 				_lock_item_icon.gameObject.SetActive(false);
-				_title_ui_text.gameObject.SetActive(true);
 			}
 		} else {
 			_lock_icon.gameObject.SetActive(false);
 			_lock_item_icon.gameObject.SetActive(false);
-			_title_ui_text.gameObject.SetActive(true);
 		}
 	}
 	

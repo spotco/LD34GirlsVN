@@ -40,14 +40,7 @@ public class CameraRenderHookDispatcher : MonoBehaviour {
 	}
 }
 
-public class SPUtil {
-
-	public static void set_outline_effect_color(UnityEngine.UI.Outline outline, Color color) {
-		if (outline.effectColor != color) {
-			outline.effectColor = color;
-		}
-	}
-		
+public class SPUtil {		
 				
 	public static string sprintf(string format ,params object[] varargs) {
 		return AT.MIN.Tools.sprintf(format,varargs);
