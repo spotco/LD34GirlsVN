@@ -607,22 +607,6 @@ Prefab:
       propertyPath: m_Name
       value: PopupManager
       objectReference: {fileID: 0}
-    - target: {fileID: 120970, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22446164, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22446164, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22446164, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e31393b066754b54ab61a08ace6ad7e, type: 2}
   m_IsPrefabParent: 0
@@ -806,14 +790,6 @@ Prefab:
     - target: {fileID: 22411344, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
       propertyPath: m_Pivot.y
       value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 133670, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 119058, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dd763ef2bf5a47849a4f253b7e33c62, type: 2}
