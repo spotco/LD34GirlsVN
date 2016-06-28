@@ -150,7 +150,6 @@ public class GridNode : MonoBehaviour {
 			tar._rect_transform.localScale = new Vector3(tar._rect_transform.localScale.x, 0, tar._rect_transform.localScale.z);
 			
 			tar.gameObject.SetActive(false);
-			Debug.Log("help");
 			
 			return;
 		}
@@ -172,10 +171,7 @@ public class GridNode : MonoBehaviour {
 		}
 		
 		tar._image.color = new Color(
-			SPUtil.drpt(tar._image.color.r,tar_color.r,1/10.0f),
-			SPUtil.drpt(tar._image.color.g,tar_color.g,1/10.0f),
-			SPUtil.drpt(tar._image.color.b,tar_color.b,1/10.0f),
-			SPUtil.drpt(tar._image.color.a,tar_color.a,1/10.0f)
+			tar_color.r, tar_color.g, tar_color.b, SPUtil.lmovto(tar._image.color.a, tar_color.a, 0.05f * SPUtil.dt_scale_get())
 		);
 		
 		tar._rect_transform.localScale = new Vector3(
@@ -212,28 +208,50 @@ public class GridNode : MonoBehaviour {
 				}
 			}
 		}
-
+		
+		bool is_touching = SPUtil.rect_transform_contains_screen_point(this.cached_recttransform_get(),game._controls.get_touch_pos());
+		bool cur_node_accessible = grid_nav._current_node._node_script._links.Contains(_node_script._id);
+		bool selected_node_accessible = grid_nav._selected_node == null ? false : grid_nav._selected_node._node_script._links.Contains(_node_script._id);
+		bool selected_node_is_current_node = grid_nav._selected_node == grid_nav._current_node;
+		
 		if (grid_nav._selected_node == this) {
 			if (_visited) {
-				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited);
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
 				
 			} else {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
 				
 			}
-		
+			
 		} else {
 			if (!_accessible) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 				
 			} else if (_visited) {
-				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited);
+				if (is_touching && cur_node_accessible) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
+				} else {
+					if (selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible)) {
+						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
+					} else {
+						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_NotCurNodeAccessible);
+					}
+				}
 				
 			} else {
-				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
-				
+				if (is_touching && cur_node_accessible) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
+				} else {
+					if (selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible)) {
+						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+					} else {
+						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_NotCurNodeAccessible);
+
+					}
+				}
 			}
 		}
+		
 		_self_nodeanimroot.i_update();
 		
 		if (!_visited) {

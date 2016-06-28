@@ -93,11 +93,12 @@
 				OUT.worldPosition = IN.vertex;
 				OUT.vertex = mul(UNITY_MATRIX_MVP, OUT.worldPosition);
 				
-				OUT.texcoord = IN.texcoord + half2(_AnimT.x,0);
+				OUT.texcoord = half2(fmod(IN.texcoord.x + _AnimT.x,2), IN.texcoord.y);
+				
 				
 				float4 l_to_r_dir = normalize(_SpriteRight - _SpriteLeft); 
 				
-				OUT.alphaMask = clamp(dot(IN.vertex - _SpriteLeft, l_to_r_dir) / 125,0,1) * clamp(dot(IN.vertex.xyz - _SpriteRight.xyz, -l_to_r_dir) / 125,0,1);
+				OUT.alphaMask = clamp(dot(IN.vertex - _SpriteLeft, l_to_r_dir) / 75,0,1) * clamp(dot(IN.vertex.xyz - _SpriteRight.xyz, -l_to_r_dir) / 75,0,1);
 				
 				#ifdef UNITY_HALF_TEXEL_OFFSET
 				OUT.vertex.xy += (_ScreenParams.zw-1.0)*float2(-1,1);
@@ -112,7 +113,6 @@
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				half2 texcoords = IN.texcoord;
-				texcoords.x = fmod(texcoords.x,1);
 			
 				half4 color = (tex2D(_MainTex, texcoords) + _TextureSampleAdd) * IN.color;
 				

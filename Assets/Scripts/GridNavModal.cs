@@ -27,7 +27,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[System.NonSerialized] public GridNode _selected_node;
 	
 	private Vector3 _target_grid_map_anchor_position;
-	private float _touch_trigger_delay = 0;
+	public float _touch_trigger_delay = 0;
 			
 	public void i_initialize(GameMain game) {
 		_anim_root_proto.gameObject.SetActive(false);

@@ -22,6 +22,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"I should really go and introduce myself to her... But what could I say?"}
 	],
 	"links":[
-		1,2,3,10
+		131,2,3,10
 	]
 }

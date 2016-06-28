@@ -15,6 +15,7 @@ public class LineProtoRoot : MonoBehaviour {
 	
 	public void i_initialize() {
 		_image = this.GetComponent<Image>();
+		_image.mainTexture.wrapMode = TextureWrapMode.Repeat;
 		_line_fade_edges_shader_material = new Material(_image.material);
 		_image.material = _line_fade_edges_shader_material;
 		
@@ -37,12 +38,12 @@ public class LineProtoRoot : MonoBehaviour {
 			anim_speed = 0.005f;
 		}
 		
-		_anim_t = _anim_t - anim_speed * SPUtil.dt_scale_get();
-		if (_anim_t < 0) {
-			_anim_t = 1 + _anim_t;
+		_anim_t = _anim_t + anim_speed * SPUtil.dt_scale_get();
+		if (_anim_t > 1) {
+			_anim_t = (_anim_t % 1.0f);
 		}
 		
-		_material_modif.set_vector("_AnimT", new Vector4(_anim_t,0,0,0));
+		_material_modif.set_vector("_AnimT", new Vector4(1-_anim_t,0,0,0));
 		_material_modif.finish_set();
 	}
 	

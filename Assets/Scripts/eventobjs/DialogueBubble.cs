@@ -144,7 +144,7 @@ public class DialogueBubble : SPBaseBehavior {
 				_nametag.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 6)));
 			}
 			
-			_cursor_scale_mult = SPUtil.drpt(_cursor_scale_mult, 1, 1/8.0f);
+			_cursor_scale_mult = SPUtil.drpt(_cursor_scale_mult, 1, 1/3.0f);
 			_cursor.color = new Color(1,1,1,SPUtil.drpt(_cursor.color.a,1,1/8.0f));
 			this.cursor_anim_update();
 			

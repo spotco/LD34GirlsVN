@@ -13,6 +13,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 	private Outline _text_outline;
 	private Shadow _text_shadow;
+	private CanvasGroup _canvas_group;
 	
 	[SerializeField] private Image _node_unvisited_backspin;
 	[SerializeField] private Image _node_unvisited_topexpandspin;
@@ -26,6 +27,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	public void i_initialize() {
 		_text_outline = _text.GetComponent<Outline>();
 		_text_shadow = _text.GetComponent<Shadow>();
+		_canvas_group = this.GetComponent<CanvasGroup>();
 		
 		this.set_anim_state(AnimState.Hidden);
 		_transition_state = AnimTransitionState.None;
@@ -34,10 +36,14 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 	public enum AnimState {
 		Hidden,
-		Visited,
+		Visited_Selected,
+		Visited_Unselected,
 		
 		Unvisited_Selected,
-		Unvisited_Unselected
+		Unvisited_Unselected,
+		
+		Visited_NotCurNodeAccessible,
+		Unvisited_NotCurNodeAccessible
 	}
 	private AnimState _current_state;
 	
@@ -57,13 +63,17 @@ public class NodeAnimRoot : MonoBehaviour {
 			_text.gameObject.SetActive(false);
 		
 		} break;
-		case AnimState.Visited: {
+		case AnimState.Visited_Selected:
+		case AnimState.Visited_NotCurNodeAccessible:
+		case AnimState.Visited_Unselected: {
 			_unvisited_root.SetActive(false);
 			_visited_root.SetActive(true);
 			_text.gameObject.SetActive(true);
 			this.set_color(TEXT_COLOR_VISITED);
-		
+			
 		} break;
+		
+		case AnimState.Unvisited_NotCurNodeAccessible:
 		case AnimState.Unvisited_Selected : {		
 			_unvisited_root.SetActive(true);
 			_visited_root.SetActive(false);
@@ -95,6 +105,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	public void i_update() {
 	
 		float spin_vt_scale = 1;
+		float tar_alpha = 1;
 	
 		switch (_transition_state) {
 		case AnimTransitionState.PopIn: {
@@ -188,8 +199,15 @@ public class NodeAnimRoot : MonoBehaviour {
 			_node_unvisited_topexpandspin.gameObject.SetActive(false);
 			_node_unvisited_expandback.gameObject.SetActive(true);
 			_node_unvisited_top.gameObject.SetActive(true);
-		
-			if (_current_state == AnimState.Unvisited_Selected) {
+			
+			if (_current_state == AnimState.Unvisited_NotCurNodeAccessible || _current_state == AnimState.Visited_NotCurNodeAccessible) {
+				spin_vt_scale = 0.5f;
+				tar_alpha = 0.5f;
+				_node_unvisited_backspin.transform.localScale = SPUtil.valv(SPUtil.drpt(_node_unvisited_backspin.transform.localScale.x,0.6f,1/5.0f));
+				_node_unvisited_expandback.transform.localScale = _node_unvisited_backspin.transform.localScale;
+				_node_unvisited_top.transform.localScale = _node_unvisited_expandback.transform.localScale;
+			
+			} else if (_current_state == AnimState.Unvisited_Selected || _current_state == AnimState.Visited_Selected) {
 				spin_vt_scale = 10.0f;
 				_node_unvisited_backspin.transform.localScale = SPUtil.valv(SPUtil.drpt(_node_unvisited_backspin.transform.localScale.x,1.5f,1/5.0f));
 				_node_unvisited_expandback.transform.localScale = _node_unvisited_backspin.transform.localScale;
@@ -215,7 +233,10 @@ public class NodeAnimRoot : MonoBehaviour {
 		
 		_node_visited.transform.localRotation = SPUtil.set_rotation_quaternion(_node_visited.transform.localRotation, new Vector3(0,0,-_node_unvisited_backspin_rotation_t));
 		
+		_node_visited.transform.localScale = _node_unvisited_top.transform.localScale;
 		_text.transform.localScale = _node_unvisited_top.transform.localScale;
+		
+		_canvas_group.alpha = SPUtil.lmovto(_canvas_group.alpha, tar_alpha, 0.05f * SPUtil.dt_scale_get());
 	}
 	
 	public void set_text(string text) {
