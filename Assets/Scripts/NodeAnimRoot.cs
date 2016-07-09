@@ -10,6 +10,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	[SerializeField] private GameObject _unvisited_root;
 	[SerializeField] private GameObject _visited_root;
 	[SerializeField] private GameObject _locked_root;
+	[SerializeField] private CanvasGroup _item_splat_root;
 	[SerializeField] private Text _text;
 	
 	private Outline _text_outline;
@@ -30,6 +31,9 @@ public class NodeAnimRoot : MonoBehaviour {
 	[SerializeField] private Image _node_locked_chain_bl;
 	[SerializeField] private Image _node_locked_chain_br;
 	[SerializeField] private Image _node_locked_lock;
+	
+	[SerializeField] public Image _item_icon;
+	private float _item_splat_root_rotation_theta;
 	
 	public void i_initialize() {
 		_text_outline = _text.GetComponent<Outline>();
@@ -129,6 +133,13 @@ public class NodeAnimRoot : MonoBehaviour {
 		} break;
 		default: break;
 		}
+		
+		_item_splat_root.gameObject.SetActive(_locked_root.activeSelf);
+		if (!_item_splat_root.gameObject.activeSelf) {
+			_item_splat_root.transform.localScale = SPUtil.valv(0);
+			_item_splat_root.alpha = 0;
+		}
+		
 		_current_state = target_state;
 	}
 	
@@ -263,6 +274,26 @@ public class NodeAnimRoot : MonoBehaviour {
 			
 		} break;
 		}
+		
+		if (_current_state == AnimState.Locked_Selected) {
+			_item_splat_root.transform.localScale = SPUtil.valv(SPUtil.drpt(_item_splat_root.transform.localScale.x, 1, 1/10.0f));
+			_item_splat_root.alpha = SPUtil.drpt(_item_splat_root.alpha, 1, 1/10.0f);
+			_item_splat_root.transform.localPosition = new Vector3(
+				SPUtil.drpt(_item_splat_root.transform.localPosition.x, 65, 1/12.5f),
+				SPUtil.drpt(_item_splat_root.transform.localPosition.y, 66, 1/13.5f),
+				_item_splat_root.transform.localPosition.z
+			);
+		} else {
+			_item_splat_root.transform.localScale = SPUtil.valv(SPUtil.drpt(_item_splat_root.transform.localScale.x, 0, 1/10.0f));
+			_item_splat_root.alpha = SPUtil.drpt(_item_splat_root.alpha, 0, 1/10.0f);
+			_item_splat_root.transform.localPosition = new Vector3(
+				SPUtil.drpt(_item_splat_root.transform.localPosition.x, 0, 1/13.5f),
+				SPUtil.drpt(_item_splat_root.transform.localPosition.y, 0, 1/12.5f),
+				_item_splat_root.transform.localPosition.z
+			);
+		}
+		_item_splat_root_rotation_theta = (_item_splat_root_rotation_theta + SPUtil.dt_scale_get() * 0.045f) % (Mathf.PI * 2);
+		_item_splat_root.transform.localRotation = SPUtil.set_rotation_quaternion(_item_icon.transform.localRotation, new Vector3(0,0, Mathf.Sin(_item_splat_root_rotation_theta) * 15));
 		
 		_node_unvisited_backspin_rotation_t = (_node_unvisited_backspin_rotation_t + 0.02f * spin_vt_scale * SPUtil.dt_scale_get()) % 360;
 		_node_unvisited_topexpandspin_t = (_node_unvisited_topexpandspin_t + 0.04f * spin_vt_scale * SPUtil.dt_scale_get()) % 360;

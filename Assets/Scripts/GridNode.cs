@@ -52,10 +52,12 @@ public class GridNode : MonoBehaviour {
 		
 		if (_node_script._affinity_requirement) {
 			_is_locked = true;
-			// affinity heart
+			_self_nodeanimroot._item_icon.sprite = game._inventory.icon_for_item("item_heart");
 		} else {
 			_is_locked = _node_script._requirement_items.Count > 0;
-			// _lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
+			if (_is_locked) {
+				_self_nodeanimroot._item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
+			}
 		}
 		
 		_accessible = false;
@@ -219,8 +221,10 @@ public class GridNode : MonoBehaviour {
 		
 		bool use_accessible = selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible);
 		
+		bool is_active_locked = _is_locked && !_visited;
+		
 		if (grid_nav._selected_node == this || (this_is_current_node && is_touching)) {
-			if (_is_locked) {
+			if (is_active_locked) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
 				
 			} else if (_visited) {
@@ -247,14 +251,14 @@ public class GridNode : MonoBehaviour {
 				}
 				
 			} else {
-				if (is_touching && _is_locked && use_accessible) {
+				if (is_touching && is_active_locked && use_accessible) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
 					
 				} else if (is_touching && use_accessible) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
 					
 				} else {
-					if (_is_locked) {
+					if (is_active_locked) {
 						if (use_accessible) {
 							_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
 						} else {
