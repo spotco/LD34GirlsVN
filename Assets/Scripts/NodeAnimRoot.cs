@@ -9,6 +9,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 	[SerializeField] private GameObject _unvisited_root;
 	[SerializeField] private GameObject _visited_root;
+	[SerializeField] private GameObject _locked_root;
 	[SerializeField] private Text _text;
 	
 	private Outline _text_outline;
@@ -23,6 +24,12 @@ public class NodeAnimRoot : MonoBehaviour {
 	private float _node_unvisited_backspin_rotation_t = 0, _node_unvisited_topexpandspin_t = 0, _node_unvisited_expandback_t = 0;
 	
 	[SerializeField] private Image _node_visited;
+	
+	[SerializeField] private Image _node_locked_chain_tl;
+	[SerializeField] private Image _node_locked_chain_tr;
+	[SerializeField] private Image _node_locked_chain_bl;
+	[SerializeField] private Image _node_locked_chain_br;
+	[SerializeField] private Image _node_locked_lock;
 	
 	public void i_initialize() {
 		_text_outline = _text.GetComponent<Outline>();
@@ -43,13 +50,18 @@ public class NodeAnimRoot : MonoBehaviour {
 		Unvisited_Unselected,
 		
 		Visited_NotCurNodeAccessible,
-		Unvisited_NotCurNodeAccessible
+		Unvisited_NotCurNodeAccessible,
+		
+		Locked_Unselected,
+		Locked_Selected,
+		Locked_NotCurNodeAccessible
 	}
 	private AnimState _current_state;
 	
 	private enum AnimTransitionState {
 		None,
-		PopIn
+		PopIn,
+		RemoveLock
 	}
 	private AnimTransitionState _transition_state;
 	private AnimTransitionState _target_transition_state;
@@ -60,6 +72,7 @@ public class NodeAnimRoot : MonoBehaviour {
 		case AnimState.Hidden: {
 			_unvisited_root.SetActive(false);
 			_visited_root.SetActive(false);
+			_locked_root.SetActive(false);
 			_text.gameObject.SetActive(false);
 		
 		} break;
@@ -68,6 +81,8 @@ public class NodeAnimRoot : MonoBehaviour {
 		case AnimState.Visited_Unselected: {
 			_unvisited_root.SetActive(false);
 			_visited_root.SetActive(true);
+			_locked_root.SetActive(false);
+			
 			_text.gameObject.SetActive(true);
 			this.set_color(TEXT_COLOR_VISITED);
 			
@@ -77,6 +92,8 @@ public class NodeAnimRoot : MonoBehaviour {
 		case AnimState.Unvisited_Selected : {		
 			_unvisited_root.SetActive(true);
 			_visited_root.SetActive(false);
+			_locked_root.SetActive(false);
+			
 			_text.gameObject.SetActive(true);
 			this.set_color(TEXT_COLOR_UNVISITED);
 		
@@ -84,6 +101,8 @@ public class NodeAnimRoot : MonoBehaviour {
 		case AnimState.Unvisited_Unselected: {
 			_unvisited_root.SetActive(true);
 			_visited_root.SetActive(false);
+			_locked_root.SetActive(false);
+			
 			_text.gameObject.SetActive(true);
 			this.set_color(TEXT_COLOR_UNVISITED);
 			
@@ -97,6 +116,17 @@ public class NodeAnimRoot : MonoBehaviour {
 			}
 		
 		} break;
+		case AnimState.Locked_Selected:
+		case AnimState.Locked_NotCurNodeAccessible:
+		case AnimState.Locked_Unselected: {
+			_unvisited_root.SetActive(false);
+			_visited_root.SetActive(false);
+			_locked_root.SetActive(true);
+			_text.gameObject.SetActive(false);
+			
+			_transition_state = AnimTransitionState.None;
+			
+		} break;
 		default: break;
 		}
 		_current_state = target_state;
@@ -109,7 +139,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 		switch (_transition_state) {
 		case AnimTransitionState.PopIn: {
-			_anim_t += SPUtil.sec_to_tick(1.2f);
+			_anim_t += SPUtil.sec_to_tick(1.2f) * SPUtil.dt_scale_get();
 			
 			const float MODE_1_T = 0.35f;
 			const float MODE_2_T = 0.7f;
@@ -194,20 +224,32 @@ public class NodeAnimRoot : MonoBehaviour {
 				
 			}
 		} break;
+		
+		case AnimTransitionState.RemoveLock: {
+			if (_current_state != AnimState.Locked_NotCurNodeAccessible && _current_state != AnimState.Locked_Selected && _current_state != AnimState.Locked_Unselected) {
+				_transition_state = AnimTransitionState.None;
+				break;
+			}
+			
+			// ...
+			
+			
+		} break;
+		
 		case AnimTransitionState.None: {
 			_node_unvisited_backspin.gameObject.SetActive(true);
 			_node_unvisited_topexpandspin.gameObject.SetActive(false);
 			_node_unvisited_expandback.gameObject.SetActive(true);
 			_node_unvisited_top.gameObject.SetActive(true);
 			
-			if (_current_state == AnimState.Unvisited_NotCurNodeAccessible || _current_state == AnimState.Visited_NotCurNodeAccessible) {
+			if (_current_state == AnimState.Unvisited_NotCurNodeAccessible || _current_state == AnimState.Visited_NotCurNodeAccessible || _current_state == AnimState.Locked_NotCurNodeAccessible) {
 				spin_vt_scale = 0.5f;
 				tar_alpha = 0.5f;
 				_node_unvisited_backspin.transform.localScale = SPUtil.valv(SPUtil.drpt(_node_unvisited_backspin.transform.localScale.x,0.6f,1/5.0f));
 				_node_unvisited_expandback.transform.localScale = _node_unvisited_backspin.transform.localScale;
 				_node_unvisited_top.transform.localScale = _node_unvisited_expandback.transform.localScale;
 			
-			} else if (_current_state == AnimState.Unvisited_Selected || _current_state == AnimState.Visited_Selected) {
+			} else if (_current_state == AnimState.Unvisited_Selected || _current_state == AnimState.Visited_Selected || _current_state == AnimState.Locked_Selected) {
 				spin_vt_scale = 10.0f;
 				_node_unvisited_backspin.transform.localScale = SPUtil.valv(SPUtil.drpt(_node_unvisited_backspin.transform.localScale.x,1.5f,1/5.0f));
 				_node_unvisited_expandback.transform.localScale = _node_unvisited_backspin.transform.localScale;
@@ -234,6 +276,7 @@ public class NodeAnimRoot : MonoBehaviour {
 		_node_visited.transform.localRotation = SPUtil.set_rotation_quaternion(_node_visited.transform.localRotation, new Vector3(0,0,-_node_unvisited_backspin_rotation_t));
 		
 		_node_visited.transform.localScale = _node_unvisited_top.transform.localScale;
+		_locked_root.transform.localScale = _node_unvisited_top.transform.localScale;
 		_text.transform.localScale = _node_unvisited_top.transform.localScale;
 		
 		_canvas_group.alpha = SPUtil.lmovto(_canvas_group.alpha, tar_alpha, 0.05f * SPUtil.dt_scale_get());

@@ -5,16 +5,12 @@ using System.Collections.Generic;
 public class GridNode : MonoBehaviour {
 
 	[SerializeField] private TextAsset _node_script_text;
-	[SerializeField] private Image _image;
-	[SerializeField] private Text _title_ui_text;
 	private float _anim_theta;
 	
 	public NodeScript _node_script = new NodeScript();
 	
 	private NodeAnimRoot _self_nodeanimroot;
 	
-	[SerializeField] private Image _lock_icon;
-	[SerializeField] private Image _lock_item_icon;
 	public bool _is_locked;
 	
 	private Dictionary<int,LineProtoRoot> _id_to_line = new Dictionary<int, LineProtoRoot>();
@@ -27,8 +23,10 @@ public class GridNode : MonoBehaviour {
 	private LineProtoRoot _line_proto;
 	
 	private void hide_legacy_elements() {
-		_title_ui_text.gameObject.SetActive(false);
-		this.GetComponent<Image>().enabled = false;
+		Destroy(this.GetComponent<Image>());
+		Destroy(this.transform.FindChild("LockImage").gameObject);
+		Destroy(this.transform.FindChild("LockIcon").gameObject);
+		Destroy(this.transform.FindChild("Text").gameObject);
 	}
 	
 	public void i_initialize(GameMain game, GridNavModal grid_nav, NodeAnimRoot proto_nodeanimroot, LineProtoRoot proto_line) {
@@ -52,18 +50,12 @@ public class GridNode : MonoBehaviour {
 		this.gameObject.name = SPUtil.sprintf("Node (%d)",_node_script._id);
 		
 		
-		_lock_icon.gameObject.SetActive(false);
-		_lock_item_icon.gameObject.SetActive(false);
 		if (_node_script._affinity_requirement) {
-			_is_locked = false;
-			_lock_icon.sprite = Resources.Load<Sprite>("img/ui/affinity_heart");
-			_lock_icon.SetNativeSize();
-			
+			_is_locked = true;
+			// affinity heart
 		} else {
 			_is_locked = _node_script._requirement_items.Count > 0;
-			if (_is_locked) {
-				_lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
-			}
+			// _lock_item_icon.sprite = game._inventory.icon_for_item(_node_script._requirement_items[0]);
 		}
 		
 		_accessible = false;
@@ -200,10 +192,18 @@ public class GridNode : MonoBehaviour {
 						}
 					}
 				} else {
-					if (grid_nav._id_to_gridnode[itr_id]._visited) {
-						this.set_line_state(itr_id, LineState.ActiveSelected);
+					if (_visited) {
+						if (grid_nav._id_to_gridnode[itr_id]._visited) {
+							this.set_line_state(itr_id, LineState.ActiveSelected);
+						} else {
+							this.set_line_state(itr_id, LineState.NotSelected);
+						}
 					} else {
-						this.set_line_state(itr_id, LineState.NotSelected);
+						if (grid_nav._id_to_gridnode[itr_id]._node_script._id == grid_nav._current_node._node_script._id) {
+							this.set_line_state(itr_id, LineState.ActiveNotSelected);
+						} else {
+							this.set_line_state(itr_id, LineState.NotAccessible);
+						}
 					}
 				}
 			}
@@ -211,11 +211,19 @@ public class GridNode : MonoBehaviour {
 		
 		bool is_touching = SPUtil.rect_transform_contains_screen_point(this.cached_recttransform_get(),game._controls.get_touch_pos());
 		bool cur_node_accessible = grid_nav._current_node._node_script._links.Contains(_node_script._id);
-		bool selected_node_accessible = grid_nav._selected_node == null ? false : grid_nav._selected_node._node_script._links.Contains(_node_script._id);
 		bool selected_node_is_current_node = grid_nav._selected_node == grid_nav._current_node;
+		bool this_is_current_node = this == grid_nav._current_node;
+		bool selected_node_accessible = grid_nav._selected_node == null ? false : 
+			(((grid_nav._selected_node._node_script._links.Contains(_node_script._id) || grid_nav._selected_node._unidirectional_reverse_links.Contains(_node_script._id)
+			) && grid_nav._selected_node._visited) || this_is_current_node);
 		
-		if (grid_nav._selected_node == this) {
-			if (_visited) {
+		bool use_accessible = selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible);
+		
+		if (grid_nav._selected_node == this || (this_is_current_node && is_touching)) {
+			if (_is_locked) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
+				
+			} else if (_visited) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
 				
 			} else {
@@ -228,10 +236,10 @@ public class GridNode : MonoBehaviour {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 				
 			} else if (_visited) {
-				if (is_touching && cur_node_accessible) {
+				if (is_touching && use_accessible) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
 				} else {
-					if (selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible)) {
+					if (use_accessible) {
 						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
 					} else {
 						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_NotCurNodeAccessible);
@@ -239,10 +247,20 @@ public class GridNode : MonoBehaviour {
 				}
 				
 			} else {
-				if (is_touching && cur_node_accessible) {
+				if (is_touching && _is_locked && use_accessible) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
+					
+				} else if (is_touching && use_accessible) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
+					
 				} else {
-					if (selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible)) {
+					if (_is_locked) {
+						if (use_accessible) {
+							_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
+						} else {
+							_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_NotCurNodeAccessible);
+						}
+					} else if (use_accessible) {
 						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
 					} else {
 						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_NotCurNodeAccessible);
@@ -253,23 +271,6 @@ public class GridNode : MonoBehaviour {
 		}
 		
 		_self_nodeanimroot.i_update();
-		
-		if (!_visited) {
-			if (_node_script._affinity_requirement) {
-				_lock_icon.gameObject.SetActive(true);
-				_lock_item_icon.gameObject.SetActive(false);
-			
-			} else if (_is_locked) {
-				_lock_icon.gameObject.SetActive(true);
-				_lock_item_icon.gameObject.SetActive(true);
-			} else {
-				_lock_icon.gameObject.SetActive(false);
-				_lock_item_icon.gameObject.SetActive(false);
-			}
-		} else {
-			_lock_icon.gameObject.SetActive(false);
-			_lock_item_icon.gameObject.SetActive(false);
-		}
 	}
 	
 	private RectTransform __rect_transform;

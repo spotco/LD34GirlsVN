@@ -111,35 +111,59 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_outline_front.rectTransform.localScale = Vector3.Lerp(SPUtil.valv(1.25f), SPUtil.valv(1), _outline_front_anim_t);
 	}
 	
+	private void control_move_set_selected_node(GridNode tar) {
+		if (tar != null) {
+			_selected_node = tar;
+			if (_selected_node._visited) {
+				_current_node = tar;
+			}
+		}
+	}
+	
 	public void i_update(GameMain game) {
 		if (game._popups.has_active_popup()) return;
+		
+		_grid_map_anchor.transform.localPosition = new Vector3(
+			SPUtil.drpt(_grid_map_anchor.transform.localPosition.x,_target_grid_map_anchor_position.x,1/10.0f),
+			SPUtil.drpt(_grid_map_anchor.transform.localPosition.y,_target_grid_map_anchor_position.y,1/10.0f)
+		);
+		_selector.localPosition = new Vector3(
+			_selected_node.transform.localPosition.x,
+			_selected_node.transform.localPosition.y + 80 + Mathf.Sin(_selector_anim_t) * 10.0f
+		);
+		_selector_anim_t += 0.15f;
+		
 		_inventory_overlay.i_update(game,this);
-	
+		
+		foreach (int id in _id_to_gridnode.Keys) {
+			_id_to_gridnode[id].i_update(game,this);
+		}
+		
 		List<GridNode> selection_list = this.get_selection_list(_selected_node);
 		if (_touch_trigger_delay > 0) {
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveUp)) {
 			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.y > cur.transform.localPosition.y) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(0,1)) : -1;
 			});
-			_selected_node = tar;
+			control_move_set_selected_node(tar);
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveDown)) {
 			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.y < cur.transform.localPosition.y) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(0,-1)) : -1;
 			});
-			_selected_node = tar;
+			control_move_set_selected_node(tar);
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveLeft)) {
 			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.x < cur.transform.localPosition.x) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(-1,0)) : -1;
 			});
-			_selected_node = tar;
+			control_move_set_selected_node(tar);
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.MoveRight)) {
 			GridNode tar = GridNavModal.cond_select_with_filter(_selected_node,selection_list,(GridNode cur, GridNode target) => {
 				return (target.transform.localPosition.x > cur.transform.localPosition.x) ? SPUtil.vec_dist(SPUtil.vec_sub(target.transform.localPosition,cur.transform.localPosition).normalized,new Vector2(1,0)) : -1;
 			});
-			_selected_node = tar;
+			control_move_set_selected_node(tar);
 			
 		} else if (game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 			GridNode touched_node = null;
@@ -164,22 +188,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			this.selected_node_do_action(game);
 		}
 		
-		foreach (int id in _id_to_gridnode.Keys) {
-			_id_to_gridnode[id].i_update(game,this);
-		}
-		
 		this.set_focus_node(_selected_node);
 		game._background.load_background(_selected_node._node_script._background);
-		
-		_grid_map_anchor.transform.localPosition = new Vector3(
-			SPUtil.drpt(_grid_map_anchor.transform.localPosition.x,_target_grid_map_anchor_position.x,1/10.0f),
-			SPUtil.drpt(_grid_map_anchor.transform.localPosition.y,_target_grid_map_anchor_position.y,1/10.0f)
-		);
-		_selector.localPosition = new Vector3(
-			_selected_node.transform.localPosition.x,
-			_selected_node.transform.localPosition.y + 80 + Mathf.Sin(_selector_anim_t) * 10.0f
-		);
-		_selector_anim_t += 0.15f;
 		
 		if (_touch_trigger_delay > 0) {
 			_touch_trigger_delay -= SPUtil.dt_scale_get();
@@ -254,6 +264,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			} else {
 				game._popups.add_popup("Locked!");
 				game._music.play_sfx("map_no");
+				this.set_current_node(_current_node);
 			}
 			
 		} else {
@@ -288,6 +299,10 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	public List<GridNode> __cached_selection_list = new List<GridNode>();
 	public List<GridNode> get_selection_list(GridNode target) {
 		__cached_selection_list.Clear();
+		if (!target._visited) {
+			__cached_selection_list.Add(_current_node);
+			return __cached_selection_list;
+		}
 		for (int i = 0; i < target._node_script._links.Count; i++) {
 			GridNode itr_gridnode = _id_to_gridnode[target._node_script._links[i]];
 			if (target._visited || itr_gridnode._visited) {
