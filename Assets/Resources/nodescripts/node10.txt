@@ -1,7 +1,7 @@
 {
 	"id":10,
 	"title":"Talk with a Troublemaker",
-	"background":"bg_city",
+	"background":"bg_city_afternoon",
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
@@ -11,6 +11,8 @@
 
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
+
+		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},

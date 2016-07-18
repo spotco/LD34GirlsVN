@@ -46,8 +46,16 @@ public class SPUtil {
 		return AT.MIN.Tools.sprintf(format,varargs);
 	}
 	
+	public static void throwf(string format ,params object[] varargs) {
+		throw new System.Exception(SPUtil.sprintf(format,varargs));
+	}
+	
 	public static void logf(string format ,params object[] varargs) {
 		Debug.Log(SPUtil.sprintf(format,varargs));
+	}
+	
+	public static void errf(string format ,params object[] varargs) {
+		Debug.LogError(SPUtil.sprintf(format,varargs));
 	}
 	
 	private static System.Security.Cryptography.MD5 _md5 = System.Security.Cryptography.MD5.Create();
@@ -454,5 +462,48 @@ public class MultiMap<TKey, TValue> {
 	}
 	public List<TKey> keys() {
 		return _key_to_list.key_itr();
+	}
+}
+
+public class ParallaxScrollRegistry {
+
+	public class RegistryEntry {
+		public Vector2 _position;
+		public float _scale_mult = 1;
+	}
+	
+	private Vector2 _scroll_position = new Vector2();
+	public SPDict<Transform, RegistryEntry> _registry = new SPDict<Transform, RegistryEntry>();
+	public static ParallaxScrollRegistry cons() { return new ParallaxScrollRegistry(); }
+	
+	public void add_registry_entry(Transform obj, float scale_mult) {
+		_registry[obj] = new RegistryEntry() {
+			_position = obj.localPosition,
+			_scale_mult = scale_mult
+		};
+	}
+	
+	public void update_registry_entry_position(Transform obj, Vector2 pos) {
+		_registry[obj]._position = pos;
+	}
+	
+	public void set_scroll_position(Vector2 pos) {
+		_scroll_position = pos;
+	}
+	
+	public Vector2 get_scroll_position_for_entry(Transform obj) {
+		RegistryEntry entry = _registry[obj];
+		return new Vector3(
+			(_scroll_position.x * entry._scale_mult) + entry._position.x,
+			(_scroll_position.y * entry._scale_mult) + entry._position.y,
+			obj.transform.localPosition.z
+		);
+	}
+	
+	public void update_all_entries() {
+		List<Transform> registry_itr = _registry.key_itr();
+		for (int i = 0; i < registry_itr.Count; i++) {
+			registry_itr[i].localPosition = this.get_scroll_position_for_entry(registry_itr[i]);
+		}
 	}
 }

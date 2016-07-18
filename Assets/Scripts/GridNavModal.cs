@@ -189,7 +189,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		
 		this.set_focus_node(_selected_node);
-		game._background.load_background(_selected_node._node_script._background);
+		game._background.load_background(_selected_node._node_script._background, _selected_node._node_script._background_key);
 		
 		if (_touch_trigger_delay > 0) {
 			_touch_trigger_delay -= SPUtil.dt_scale_get();

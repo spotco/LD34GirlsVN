@@ -11,6 +11,7 @@ public class NodeScript {
 	public int _id = 0;
 	public string _title = "";
 	public string _background = "";
+	public string _background_key = "";
 	public string _music = "";
 	public string _sfx = "";
 	public List<string> _requirement_items = new List<string>();
@@ -29,7 +30,7 @@ public class NodeScript {
 		_id = (int) root.GetNumber("id");
 		_title = root.GetString("title");
 		_background = root.GetString("background");
-		game._background.cond_load_sprite_of_name(_background);
+		_background_key = root.ContainsKey("backgroundkey") ? root.GetString("backgroundkey") : BGControllerBase.KEY_DEFAULT;
 		_music = root.GetString("music");
 		_affinity_requirement = root.ContainsKey("affinityrequirement");
 
@@ -55,7 +56,8 @@ public class NodeScript {
 				
 			} else if (type == "changebackground") {
 				itr_neu = new NodeScriptEvent_ChangeBackground () {
-					_background = itr.GetString ("background")
+					_background = itr.GetString ("background"),
+					_key = itr.ContainsKey("key") ? itr.GetString("key") : BGControllerBase.KEY_DEFAULT
 				};
 				
 			} else if (type == "dialogue") {

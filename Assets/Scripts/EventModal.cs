@@ -40,7 +40,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		for (int i = 0; i < _current_script._events.Count; i++) {
 			_current_script._events[i].i_initialize(game,this);
 		}
-		game._background.load_background(script._background);
+		game._background.load_background(script._background, script._background_key);
 		game._music.load_music (script._music);
 		this.i_update(game);
 	}
