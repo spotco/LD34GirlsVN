@@ -5,7 +5,6 @@
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
-		{"type":"removeitem","item":"Her Name"},
 		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},

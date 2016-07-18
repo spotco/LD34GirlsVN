@@ -9,6 +9,13 @@ public class BackgroundManager : MonoBehaviour {
 	private Dictionary<string, BGControllerBase> _name_to_bgcontroller = new Dictionary<string, BGControllerBase>();
 	private List<BGControllerBase> _active_bgcontrollers = new List<BGControllerBase>();
 	
+	private struct EnqueuedBG {
+		public string _name;
+		public string _key;
+		public BGControllerBase _controller;
+	}
+	private List<EnqueuedBG> _enqueued_bgcontrollers = new List<EnqueuedBG>();
+	
 	public void i_initialize(GameMain game) {
 		
 		_active_bgcontrollers.Clear();
@@ -29,15 +36,29 @@ public class BackgroundManager : MonoBehaviour {
 			return;
 		}
 		
+		bool target_is_active = false;
+		BGControllerBase target_bgcontroller = _name_to_bgcontroller[name];
+		
 		for (int i = _active_bgcontrollers.Count-1; i >= 0; i--) {
 			BGControllerBase i_controller = _active_bgcontrollers[i];
-			i_controller.set_showing(false);	
+			if (target_bgcontroller == i_controller) {
+				target_is_active = true;
+				target_bgcontroller.show_background(name,key);
+				target_bgcontroller.set_showing(true);
+				
+			} else if (i_controller != target_bgcontroller) {
+				i_controller.set_showing(false);	
+			}
 		}
 		
-		BGControllerBase target_bgcontroller = _name_to_bgcontroller[name];
-		target_bgcontroller.show_background(name, key);
-		target_bgcontroller.set_showing(true);
-		_active_bgcontrollers.Add(target_bgcontroller);
+		if (!target_is_active) {
+			_enqueued_bgcontrollers.Clear();
+			_enqueued_bgcontrollers.Add(new EnqueuedBG() {
+				_name = name,
+				_key = key,
+				_controller = target_bgcontroller
+			});
+		}
 	}
 	
 	public void dispatch_update_message_to_active(string strparam, float numparam1, float numparam2) {
@@ -53,6 +74,14 @@ public class BackgroundManager : MonoBehaviour {
 			i_controller.i_update(game);
 			if (!i_controller.should_remain_active()) {
 				_active_bgcontrollers.RemoveAt(i);
+			}
+		}
+		if (_active_bgcontrollers.Count == 0 && _enqueued_bgcontrollers.Count > 0) {
+			for (int i = 0; i < _enqueued_bgcontrollers.Count; i++) {
+				EnqueuedBG itr = _enqueued_bgcontrollers[i];
+				itr._controller.show_background(itr._name, itr._key);
+				itr._controller.set_showing(true);
+				_active_bgcontrollers.Add(itr._controller);
 			}
 		}
 	}

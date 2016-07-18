@@ -20,9 +20,10 @@ public class BGCityAfternoon : BGControllerBase {
 	private Vector2 _current_scroll_pos, _target_scroll_pos;
 	
 	public override void i_initialize(GameMain game) {
+		this.i_initialize_hidden(_fade_cover);
+	
 		_current_scroll_pos = _scroll_anchor.transform.localPosition;
 		_target_scroll_pos = _current_scroll_pos;
-		_fade_cover.color = new Color(0,0,0,1);
 		
 		_scroll_registry.add_registry_entry(_background.transform, 1);
 		_scroll_registry.add_registry_entry(_back_buildings.transform, 1.5f);
@@ -51,8 +52,6 @@ public class BGCityAfternoon : BGControllerBase {
 		if (_current_showing_mode == ShowingMode.Hidden) {
 			_current_scroll_pos = _target_scroll_pos;
 		}
-		
-		_current_showing_mode = ShowingMode.TransitionShowing;
 	}
 	
 	public override void recieve_update_message(string strparam, float numparam1, float numparam2) {
@@ -80,7 +79,7 @@ public class BGCityAfternoon : BGControllerBase {
 	}
 	
 	public override void i_update(GameMain game) {
-		this.update_showing_mode(_fade_cover);
+		
 		
 		_scroll_registry.set_scroll_position(_scroll_anchor.localPosition);
 		_scroll_registry.update_all_entries();
@@ -90,8 +89,8 @@ public class BGCityAfternoon : BGControllerBase {
 		_current_scroll_pos.x = SPUtil.drpt(_current_scroll_pos.x, _target_scroll_pos.x, 1/30.0f);
 		_current_scroll_pos.y = SPUtil.drpt(_current_scroll_pos.y, _target_scroll_pos.y, 1/30.0f);
 		_scroll_anchor.transform.localPosition = _current_scroll_pos;
+		
+		this.update_showing_mode(_fade_cover);
 	}
-	
-	public override void set_showing(bool val) {}
 	
 }

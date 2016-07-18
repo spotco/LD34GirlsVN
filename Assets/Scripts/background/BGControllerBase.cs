@@ -6,6 +6,11 @@ public class BGControllerBase : MonoBehaviour {
 
 	public static string KEY_DEFAULT = "default";
 	
+	protected void i_initialize_hidden(Image fade_cover) {
+		fade_cover.color = new Color(0,0,0,1);
+		this.gameObject.SetActive(false);
+	}
+	
 	protected enum ShowingMode {
 		Hidden,
 		TransitionShowing,
@@ -15,8 +20,9 @@ public class BGControllerBase : MonoBehaviour {
 	protected ShowingMode _current_showing_mode = ShowingMode.Hidden;
 	protected void update_showing_mode(Image fade_cover) {
 		if (_current_showing_mode == ShowingMode.TransitionShowing) {
+			this.gameObject.SetActive(true);
 			float t = fade_cover.color.a;
-			t -= SPUtil.sec_to_tick(1.5f) * SPUtil.dt_scale_get();
+			t -= SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
 			
 			if (t > 0) {
 				fade_cover.color = new Color(0,0,0,t);
@@ -25,23 +31,32 @@ public class BGControllerBase : MonoBehaviour {
 				_current_showing_mode = ShowingMode.Showing;
 			}
 			
+		} else if (_current_showing_mode == ShowingMode.Showing) {
+			this.gameObject.SetActive(true);
 			
-		
 		} else if (_current_showing_mode == ShowingMode.TransitionHidden) {
+			this.gameObject.SetActive(true);
 			float t = fade_cover.color.a;
-			t += SPUtil.sec_to_tick(1.5f) * SPUtil.dt_scale_get();
+			t += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
 			
-			if (t > 0) {
+			if (t <= 1) {
 				fade_cover.color = new Color(0,0,0,t);
 			} else {
-				fade_cover.color = new Color(0,0,0,0);
+				fade_cover.color = new Color(0,0,0,1);
 				_current_showing_mode = ShowingMode.Hidden;
+				this.gameObject.SetActive(false);
 			}
+			
+		}
+	}
+	public void set_showing(bool val) {
+		if (val) {
+			_current_showing_mode = ShowingMode.TransitionShowing;
+		} else {
+			_current_showing_mode = ShowingMode.TransitionHidden;
 		}
 	}
 	
-	
-
 	public virtual void i_initialize(GameMain game) {}
 	public virtual string get_registered_name() { return ""; }
 	public virtual void show_background(string name, string key) {}
@@ -49,7 +64,6 @@ public class BGControllerBase : MonoBehaviour {
 	public virtual void i_update(GameMain game) {}
 	
 	public virtual bool should_remain_active() { return _current_showing_mode != ShowingMode.Hidden; }
-	public virtual void set_showing(bool val) {}
 }
 
 public class ParallaxScrollRegistry {

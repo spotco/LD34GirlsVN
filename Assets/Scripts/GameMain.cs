@@ -43,34 +43,35 @@ public class GameMain : MonoBehaviour {
 	
 	private RectTransform _self_rect;
 	private Canvas _parent_canvas;
-	
-	/*
-	TODO--
-	
-	chain unlock ui anim
-	item ui anim
-	
-	sequential popin gridnav
-	
-	save/load implementation
-	end to title UIs
-	
-	heart particles
-	
-	simone/mana fight more monsters, get in fight (competition), extra node?
-	good end expand sacrifice of mana, extra node
-	
-	credits
-		-simone boo-hoo tell you a secret
-	
-	SPAnalytics
-	title screen animation ins
-	
-	cache characters
-	sfx cache n pool text scroll sounds
-	sfx load all at start
-	try tess rotation lead 
-	*/
+//	
+//	TODO--
+//  background revert to default for objects
+//	hallway background art integration
+//  character effects system (mana god particle, heart particle)	
+//
+//	chain unlock ui anim
+//	item ui anim
+//	
+//	sequential popin gridnav
+//	
+//	save/load implementation
+//	end to title UIs
+//	
+//	heart particles
+//	
+//	simone/mana fight more monsters, get in fight (competition), extra node?
+//	good end expand sacrifice of mana, extra node
+//	
+//	credits
+//		-simone boo-hoo tell you a secret
+//	
+//	SPAnalytics
+//	title screen animation ins
+//	
+//	cache characters
+//	sfx cache n pool text scroll sounds
+//	sfx load all at start
+//	try tess rotation lead 
 	
 	public void Start () {
 		_self_rect = this.GetComponent<RectTransform>();
