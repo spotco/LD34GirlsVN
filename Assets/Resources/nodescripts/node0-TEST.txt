@@ -1,6 +1,6 @@
 {
-	"id":10,
-	"title":"Talk with a Troublemaker",
+	"id":0,
+	"title":"TEST NODE",
 	"background":"bg_city_afternoon",
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
@@ -14,14 +14,21 @@
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
 
+		{"type":"updatebackground","strparam":"showmonster"},
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
 		{"type":"dialogue","text":"Looking surprised, she quickly turned around.","xpos":0,"ypos":0},
+
+		{"type":"updatebackground","strparam":"movemonster","numparam1":-50,"numparam2":-12},
+		{"type":"camerashake", "length":"short"},
 
 		{"type":"dialogue","character":"Mana","text":"The heck!? Who are you? %And how do you know my name..?","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Well... I..."},
+
+		{"type":"updatebackground","strparam":"hidemonster"},
 
 		{"type":"dialogue","text":"I had her attention. %But now... %What next?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I said the first thing that came to mind.","xpos":0,"ypos":0},
@@ -122,6 +129,6 @@
 		{"type":"changebackground","background":"bg_city"}
 	],
 	"links":[
-		11,12
+		1
 	]
 }

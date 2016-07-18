@@ -60,6 +60,13 @@ public class NodeScript {
 					_key = itr.ContainsKey("key") ? itr.GetString("key") : BGControllerBase.KEY_DEFAULT
 				};
 				
+			} else if (type == "updatebackground") {
+				itr_neu = new NodeScriptEvent_UpdateBackground() {
+					_strparam = itr.GetString("strparam"),
+					_numparam1 = itr.ContainsKey("numparam1") ? ((float)itr.GetNumber("numparam1")) : 0,
+					_numparam2 = itr.ContainsKey("numparam2") ? ((float)itr.GetNumber("numparam2")) : 0
+				};
+				
 			} else if (type == "dialogue") {
 				itr_neu = new NodeScriptEvent_Dialogue () {
 					_character = itr.ContainsKey ("character") ? itr.GetString ("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,

@@ -40,6 +40,13 @@ public class BackgroundManager : MonoBehaviour {
 		_active_bgcontrollers.Add(target_bgcontroller);
 	}
 	
+	public void dispatch_update_message_to_active(string strparam, float numparam1, float numparam2) {
+		for (int i = _active_bgcontrollers.Count-1; i >= 0; i--) {
+			BGControllerBase i_controller = _active_bgcontrollers[i];
+			i_controller.recieve_update_message(strparam, numparam1, numparam2);	
+		}
+	}
+	
 	public void i_update(GameMain game) {
 		for (int i = _active_bgcontrollers.Count-1; i >= 0; i--) {
 			BGControllerBase i_controller = _active_bgcontrollers[i];
