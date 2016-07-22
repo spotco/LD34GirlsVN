@@ -61,6 +61,16 @@ public class BackgroundManager : MonoBehaviour {
 		}
 	}
 	
+	public BGControllerBase get_latest_active_bgcontroller() {
+		for (int i = _enqueued_bgcontrollers.Count-1; i >= 0; i--) {
+			return _enqueued_bgcontrollers[i]._controller;
+		}
+		for (int i = _active_bgcontrollers.Count-1; i >= 0; i--) {
+			return _active_bgcontrollers[i];
+		}
+		return null;
+	}
+	
 	public void dispatch_update_message_to_active(string strparam, float numparam1, float numparam2) {
 		for (int i = _active_bgcontrollers.Count-1; i >= 0; i--) {
 			BGControllerBase i_controller = _active_bgcontrollers[i];

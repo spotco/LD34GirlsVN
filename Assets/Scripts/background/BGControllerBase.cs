@@ -57,6 +57,7 @@ public class BGControllerBase : MonoBehaviour {
 		}
 	}
 	
+	public virtual Transform get_character_root() { return null; }
 	public virtual void i_initialize(GameMain game) {}
 	public virtual string get_registered_name() { return ""; }
 	public virtual void show_background(string name, string key) {}

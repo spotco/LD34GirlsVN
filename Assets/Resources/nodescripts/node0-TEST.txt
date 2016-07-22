@@ -5,7 +5,18 @@
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
+		{"type":"changebackground","background":"bg_school_classroom","key":"default"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_classroom","key":"left"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
 		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
+
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
@@ -14,15 +25,20 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
 
 		{"type":"updatebackground","strparam":"showmonster"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
-		{"type":"dialogue","text":"Looking surprised, she quickly turned around.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_afternoon","key":"sky_center"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"updatebackground","strparam":"movemonster","numparam1":-50,"numparam2":-12},
 		{"type":"camerashake", "length":"short"},
 
-		{"type":"dialogue","character":"Mana","text":"The heck!? Who are you? %And how do you know my name..?","xpos":22,"ypos":53},
+		{"type":"dialogue","character":"Mana","text":"...","xpos":22,"ypos":53},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Well... I..."},

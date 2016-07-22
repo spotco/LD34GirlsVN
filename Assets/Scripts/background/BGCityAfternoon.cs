@@ -27,7 +27,7 @@ public class BGCityAfternoon : BGControllerBase {
 		
 		_scroll_registry.add_registry_entry(_background.transform, 1);
 		_scroll_registry.add_registry_entry(_back_buildings.transform, 1.5f);
-		_scroll_registry.add_registry_entry(_monster.transform, 1.6f);
+		_scroll_registry.add_registry_entry(_monster.transform, 2.0f);
 		_scroll_registry.add_registry_entry(_front_buildings.transform, 2.0f);
 		_scroll_registry.add_registry_entry(_hero_mana.transform, 2.5f);
 		

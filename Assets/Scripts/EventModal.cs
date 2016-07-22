@@ -126,13 +126,19 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	public void advance_script() {
 		_script_index++;
 	}
-	public EventCharacter add_character(string name, string path) {
+	public EventCharacter add_character(GameMain game, string name, string path) {
 		Sprite char_sprite = Resources.Load<Sprite>("img/character/"+path);
 		if (char_sprite == null) {
 			SPUtil.logf("no character found of path(%s)",path);
 			return null;
 		}
 		EventCharacter neu_char = SPUtil.proto_clone(_proto_character.gameObject).GetComponent<EventCharacter>();
+		
+		BGControllerBase active_bg_controller = game._background.get_latest_active_bgcontroller();
+		if (active_bg_controller != null && active_bg_controller.get_character_root() != null) {
+			neu_char.transform.parent = active_bg_controller.get_character_root();
+		}
+		
 		neu_char.i_initialize();
 		neu_char.set_image(char_sprite,path);
 		

@@ -10,7 +10,7 @@ public class NodeScriptEvent_ShowCharacter : NodeScriptEvent {
 	public bool _imm;
 	
 	public override void i_update(GameMain game, EventModal modal) {
-		EventCharacter neu_char = modal.add_character(_character,_image);
+		EventCharacter neu_char = modal.add_character(game,_character,_image);
 		if (_imm) {
 			neu_char.imm_show();
 		}
