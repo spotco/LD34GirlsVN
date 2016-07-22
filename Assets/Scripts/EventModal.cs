@@ -142,6 +142,10 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		neu_char.i_initialize();
 		neu_char.set_image(char_sprite,path);
 		
+		if (_name_to_character.ContainsKey(name)) {
+			_name_to_character[name].imm_hide();
+			this.clear_removed_characters(game);
+		}
 		_name_to_character[name] = neu_char;
 		return neu_char;
 	}

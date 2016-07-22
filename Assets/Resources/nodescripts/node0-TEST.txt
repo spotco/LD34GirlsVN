@@ -5,6 +5,13 @@
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
+		{"type":"changebackground","background":"bg_school_roof","key":"default"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
 		{"type":"changebackground","background":"bg_school_classroom","key":"default"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
