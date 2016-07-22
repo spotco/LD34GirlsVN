@@ -19,7 +19,8 @@ public class BGSchoolClassroom : BGControllerBase {
 	
 	public override void i_initialize(GameMain game) {
 		this.i_initialize_hidden(_fade_cover);
-	
+		
+		_scroll_registry.add_registry_entry(_character_root, -1);
 		_scroll_registry.add_registry_entry(_background.transform, 1);
 		_scroll_registry.add_registry_entry(_foreground.transform, 1.25f);
 		
@@ -50,7 +51,7 @@ public class BGSchoolClassroom : BGControllerBase {
 	
 	public override void i_update(GameMain game) {
 		_scroll_registry.set_scroll_position(_scroll_anchor.localPosition);
-		_scroll_registry.update_all_entries();
+		_scroll_registry.update_all_entries(game);
 		
 		_current_scroll_pos.x = SPUtil.drpt(_current_scroll_pos.x, _target_scroll_pos.x, 1/30.0f);
 		_current_scroll_pos.y = SPUtil.drpt(_current_scroll_pos.y, _target_scroll_pos.y, 1/30.0f);

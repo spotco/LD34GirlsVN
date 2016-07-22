@@ -71,6 +71,12 @@ public class ParallaxScrollRegistry {
 	public class RegistryEntry {
 		public Vector2 _position;
 		public float _scale_mult = 1;
+		public List<RegistryBehaviour> _behaviours = new List<RegistryBehaviour>();
+		public Transform _key;
+	}
+	
+	public class RegistryBehaviour {
+		public virtual void i_update(GameMain game, ParallaxScrollRegistry registry, RegistryEntry entry) {}
 	}
 	
 	private Vector2 _scroll_position = new Vector2();
@@ -80,7 +86,8 @@ public class ParallaxScrollRegistry {
 	public void add_registry_entry(Transform obj, float scale_mult) {
 		_registry[obj] = new RegistryEntry() {
 			_position = obj.localPosition,
-			_scale_mult = scale_mult
+			_scale_mult = scale_mult,
+			_key = obj
 		};
 	}
 	
@@ -92,45 +99,45 @@ public class ParallaxScrollRegistry {
 		_scroll_position = pos;
 	}
 	
+	public Vector2 get_scroll_offset_for_entry(Transform obj) {
+		RegistryEntry entry = _registry[obj];
+		return SPUtil.vec_scale(_scroll_position, entry._scale_mult);
+	}
+	
 	public Vector2 get_scroll_position_for_entry(Transform obj) {
 		RegistryEntry entry = _registry[obj];
-		return new Vector3(
-			(_scroll_position.x * entry._scale_mult) + entry._position.x,
-			(_scroll_position.y * entry._scale_mult) + entry._position.y,
-			obj.transform.localPosition.z
-		);
+		Vector3 scroll_offset = this.get_scroll_offset_for_entry(obj);
+		return SPUtil.vec_add(entry._position, scroll_offset);
 	}
 	
-	public void update_all_entries() {
-		List<Transform> registry_itr = _registry.key_itr();
-		for (int i = 0; i < registry_itr.Count; i++) {
-			registry_itr[i].localPosition = this.get_scroll_position_for_entry(registry_itr[i]);
+	public void update_all_entries(GameMain game) {
+		{
+			List<Transform> registry_itr = _registry.key_itr();
+			for (int i = 0; i < registry_itr.Count; i++) {
+				registry_itr[i].localPosition = this.get_scroll_position_for_entry(registry_itr[i]);
+			}
+		}
+		
+		{
+			List<Transform> registry_itr = _registry.key_itr();
+			for (int i = 0; i < registry_itr.Count; i++) {
+				RegistryEntry entry = _registry[registry_itr[i]];
+				for (int j = 0; j < entry._behaviours.Count; j++) {
+					entry._behaviours[j].i_update(game, this, entry);
+				}
+			}
 		}
 	}
-}
-
-public class BackgroundObjectRegistry {
-	public class RegistryEntry {
-		public GameObject _obj;
-		public List<RegistryBehaviour> _behaviours = new List<RegistryBehaviour>();
-	}
-	public class RegistryBehaviour {
-		public virtual void i_update(GameMain game, RegistryEntry entry) {}
-	}
 	
-	public SPDict<GameObject, RegistryEntry> _registry = new SPDict<GameObject, RegistryEntry>();
-	public static BackgroundObjectRegistry cons() { return new BackgroundObjectRegistry(); }
-	
-	public void add_registry_behaviour(GameObject obj, RegistryBehaviour behaviour) {
+	public void add_registry_behaviour(Transform obj, RegistryBehaviour behaviour) {
 		if (!_registry.ContainsKey(obj)) {
-			_registry[obj] = new RegistryEntry() {
-				_obj = obj
-			};
+			SPUtil.errf("No registry behaviour for %s",obj.name);
+			return;
 		}
 		_registry[obj]._behaviours.Add(behaviour);
 	}
 	
-	public T get_registry_behaviour<T>(GameObject obj) {	
+	public T get_registry_behaviour<T>(Transform obj) {	
 		RegistryEntry entry = _registry[obj];
 		for (int i = 0; i < entry._behaviours.Count; i++) {
 			T rtv;
@@ -140,19 +147,9 @@ public class BackgroundObjectRegistry {
 		}
 		return default(T);
 	}
-	
-	public void update_all_entries(GameMain game) {
-		List<GameObject> registry_itr = _registry.key_itr();
-		for (int i = 0; i < registry_itr.Count; i++) {
-			RegistryEntry entry = _registry[registry_itr[i]];
-			for (int j = 0; j < entry._behaviours.Count; j++) {
-				entry._behaviours[j].i_update(game, entry);
-			}
-		}
-	}
 }
 
-public class HideShowImageRegistryBehaviour : BackgroundObjectRegistry.RegistryBehaviour {
+public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
 	public static HideShowImageRegistryBehaviour cons(Image img) {
 		return (new HideShowImageRegistryBehaviour()).i_cons(img);
 	}
@@ -172,7 +169,7 @@ public class HideShowImageRegistryBehaviour : BackgroundObjectRegistry.RegistryB
 		_target_visible = val;
 	}
 	
-	public override void i_update(GameMain game, BackgroundObjectRegistry.RegistryEntry entry) {
+	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
 		if (_target_visible) {
 			_image.gameObject.SetActive(true);
 			if (_image.color.a < 1) {
@@ -191,7 +188,7 @@ public class HideShowImageRegistryBehaviour : BackgroundObjectRegistry.RegistryB
 	}
 }
 
-public class MoveToRegistryBehaviour : BackgroundObjectRegistry.RegistryBehaviour {
+public class MoveToRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
 	public static MoveToRegistryBehaviour cons(Transform transform, Vector2 tar_lpos) {
 		return (new MoveToRegistryBehaviour()).i_cons(transform, tar_lpos);
 	}
@@ -210,10 +207,11 @@ public class MoveToRegistryBehaviour : BackgroundObjectRegistry.RegistryBehaviou
 		_tar_lpos = lpos;
 	}
 	
-	public override void i_update(GameMain game, BackgroundObjectRegistry.RegistryEntry entry) {
+	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
 		_cur_lpos.x = SPUtil.drpt(_cur_lpos.x, _tar_lpos.x, 1/10.0f);
 		_cur_lpos.y = SPUtil.drpt(_cur_lpos.y, _tar_lpos.y, 1/10.0f);
-		_transform.localPosition = _cur_lpos;
+		
+		_transform.localPosition = _cur_lpos + registry.get_scroll_offset_for_entry(entry._key);
 	}
 }
 
