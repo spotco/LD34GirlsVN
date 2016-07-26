@@ -45,8 +45,6 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
-//  background revert to default for objects
-//	hallway background art integration
 //  character effects system (mana god particle, heart particle)	
 //
 //	chain unlock ui anim

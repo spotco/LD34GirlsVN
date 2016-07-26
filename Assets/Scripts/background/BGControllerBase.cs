@@ -169,6 +169,19 @@ public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBeh
 		_target_visible = val;
 	}
 	
+	public void set_visible_imm(bool val) {
+		_target_visible = val;
+		if (_target_visible == true) {
+			_image.color = new Color(_image.color.r, _image.color.g, _image.color.b, 1);
+			_image.gameObject.SetActive(true);
+			
+		} else {
+			_image.color = new Color(_image.color.r, _image.color.g, _image.color.b, 0);
+			_image.gameObject.SetActive(false);
+			
+		}
+	}
+	
 	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
 		if (_target_visible) {
 			_image.gameObject.SetActive(true);
@@ -188,18 +201,28 @@ public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBeh
 	}
 }
 
-public class MoveToRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
-	public static MoveToRegistryBehaviour cons(Transform transform, Vector2 tar_lpos) {
-		return (new MoveToRegistryBehaviour()).i_cons(transform, tar_lpos);
+public class MovingCharacterRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
+	public static MovingCharacterRegistryBehaviour cons(Transform transform, Vector2 tar_lpos) {
+		return (new MovingCharacterRegistryBehaviour()).i_cons(transform, tar_lpos);
 	}
 	
 	private Transform _transform;
 	private Vector2 _tar_lpos, _cur_lpos;
 	
-	private MoveToRegistryBehaviour i_cons(Transform transform, Vector2 tar_lpos) {
+	public bool _is_bobbing;
+	private float _bob_ct;
+	
+	public float _bob_speed;
+	public float _bob_ampl;
+	
+	private MovingCharacterRegistryBehaviour i_cons(Transform transform, Vector2 tar_lpos) {
 		_transform = transform;
 		_cur_lpos = tar_lpos;
 		_tar_lpos = _cur_lpos;
+		
+		_is_bobbing = false;
+		_bob_speed = 0;
+		_bob_ampl = 0;
 		return this;
 	}
 	
@@ -207,11 +230,40 @@ public class MoveToRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour 
 		_tar_lpos = lpos;
 	}
 	
+	public MovingCharacterRegistryBehaviour set_bob_params(float speed, float ampl) {
+		_bob_speed = speed;
+		_bob_ampl = ampl;
+		return this;
+	}
+	
+	public void do_bob() {
+		if (_is_bobbing == false) {
+			_is_bobbing = true;
+			_bob_ct = 0;
+		}
+	}
+	
 	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
 		_cur_lpos.x = SPUtil.drpt(_cur_lpos.x, _tar_lpos.x, 1/10.0f);
 		_cur_lpos.y = SPUtil.drpt(_cur_lpos.y, _tar_lpos.y, 1/10.0f);
 		
-		_transform.localPosition = _cur_lpos + registry.get_scroll_offset_for_entry(entry._key);
+		float bob_y_delta = 0;
+		if (_is_bobbing) {
+			_bob_ct = _bob_ct + _bob_speed * SPUtil.dt_scale_get();
+			if (_bob_ct >= 1) {
+				_bob_ct = 1;
+				_is_bobbing = false;
+			}
+			float bob_curve = SPUtil.bezier_val_for_t(
+				new Vector2(0,0),
+				new Vector2(0.5f,2),
+				new Vector2(0.5f,0),
+				new Vector2(1,0),
+				_bob_ct
+			).y;
+			bob_y_delta = Mathf.Abs(bob_curve * _bob_ampl);
+		}
+		
+		_transform.localPosition = _cur_lpos + registry.get_scroll_offset_for_entry(entry._key) + (new Vector2(0, bob_y_delta));
 	}
 }
-

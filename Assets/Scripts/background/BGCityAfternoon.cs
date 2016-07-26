@@ -37,9 +37,9 @@ public class BGCityAfternoon : BGControllerBase {
 		_key_to_scrollpoint["sky_center"] = new Vector2(0,-30);
 		
 		_scroll_registry.add_registry_behaviour(_monster.transform, HideShowImageRegistryBehaviour.cons(_monster));
-		_scroll_registry.add_registry_behaviour(_monster.transform, MoveToRegistryBehaviour.cons(_monster.transform, _monster.transform.localPosition));
+		_scroll_registry.add_registry_behaviour(_monster.transform, MovingCharacterRegistryBehaviour.cons(_monster.transform, _monster.transform.localPosition));
 		_scroll_registry.add_registry_behaviour(_hero_mana.transform, HideShowImageRegistryBehaviour.cons(_hero_mana));
-		_scroll_registry.add_registry_behaviour(_hero_mana.transform, MoveToRegistryBehaviour.cons(_hero_mana.transform, _hero_mana.transform.localPosition));
+		_scroll_registry.add_registry_behaviour(_hero_mana.transform, MovingCharacterRegistryBehaviour.cons(_hero_mana.transform, _hero_mana.transform.localPosition));
 	}
 	
 	public override string get_registered_name() { return "bg_city_afternoon"; }
@@ -61,7 +61,7 @@ public class BGCityAfternoon : BGControllerBase {
 			_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(_monster.transform).set_visible(false);
 		
 		} else if (strparam == "movemonster") {
-			_scroll_registry.get_registry_behaviour<MoveToRegistryBehaviour>(_monster.transform).move_to(new Vector2(numparam1,numparam2));
+			_scroll_registry.get_registry_behaviour<MovingCharacterRegistryBehaviour>(_monster.transform).move_to(new Vector2(numparam1,numparam2));
 		
 		} else if (strparam == "showheromana") {
 			_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(_hero_mana.transform).set_visible(true);
@@ -70,7 +70,7 @@ public class BGCityAfternoon : BGControllerBase {
 			_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(_hero_mana.transform).set_visible(false);
 		
 		} else if (strparam == "moveheromana") {
-			_scroll_registry.get_registry_behaviour<MoveToRegistryBehaviour>(_hero_mana.transform).move_to(new Vector2(numparam1,numparam2));
+			_scroll_registry.get_registry_behaviour<MovingCharacterRegistryBehaviour>(_hero_mana.transform).move_to(new Vector2(numparam1,numparam2));
 			
 		} else {
 			SPUtil.errf("BGCityAfternoon unknown update message (%s)",strparam);
