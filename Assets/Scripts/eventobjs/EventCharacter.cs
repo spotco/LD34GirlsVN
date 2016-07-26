@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class EventCharacter : MonoBehaviour {
 
@@ -30,6 +30,8 @@ public class EventCharacter : MonoBehaviour {
 	public float _anim_ct;
 	
 	private static float IMG_LOCAL_POS_Y = -140;
+	
+	private List<EventCharacter.Effect> _effects = new List<Effect>();
 	
 	public void i_initialize() {
 		_subt_const = SPUtil.float_random(0.025f,0.035f);
@@ -103,6 +105,13 @@ public class EventCharacter : MonoBehaviour {
 		));
 		_fade_image.transform.localRotation = _image.transform.localRotation;
 		
+		for (int i = _effects.Count-1; i >= 0; i--) {
+			EventCharacter.Effect itr_effect = _effects[i];
+			itr_effect.i_update(game,modal,this);
+			if (itr_effect.should_remove()) {
+				itr_effect.do_remove(game,modal,this);
+			}
+		}
 	}
 	
 	public void set_image(Sprite image, string image_name) {
@@ -144,6 +153,24 @@ public class EventCharacter : MonoBehaviour {
 	public void imm_hide() {
 		_image.color = new Color(1,1,1,0);
 		_current_mode = Mode.DoRemove;
+	}
+	
+	public abstract class Effect {
+		public virtual void on_added(GameMain game, EventModal modal, EventCharacter character) {}
+		public virtual void i_update(GameMain game, EventModal modal, EventCharacter character) {}
+		public virtual bool should_remove() { return false; }
+		public virtual void do_remove(GameMain game, EventModal modal, EventCharacter character) {}
+	}
+	public void add_effect(GameMain game, EventModal modal, EventCharacter.Effect effect) {
+		_effects.Add(effect);
+		effect.on_added(game,modal,this);
+	}
+	public void remove_all_effects(GameMain game, EventModal modal) {
+		for (int i = _effects.Count-1; i >= 0; i--) {
+			EventCharacter.Effect itr_effect = _effects[i];
+			itr_effect.do_remove(game,modal,this);
+		}
+		_effects.Clear();
 	}
 	
 }

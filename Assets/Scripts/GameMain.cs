@@ -45,8 +45,6 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
-//  character effects system (mana god particle, heart particle)	
-//
 //	chain unlock ui anim
 //	item ui anim
 //	
@@ -57,6 +55,8 @@ public class GameMain : MonoBehaviour {
 //	
 //	heart particles
 //	
+//	title screen animation ins
+//
 //	simone/mana fight more monsters, get in fight (competition), extra node?
 //	good end expand sacrifice of mana, extra node
 //	
@@ -64,7 +64,6 @@ public class GameMain : MonoBehaviour {
 //		-simone boo-hoo tell you a secret
 //	
 //	SPAnalytics
-//	title screen animation ins
 //	
 //	cache characters
 //	sfx cache n pool text scroll sounds

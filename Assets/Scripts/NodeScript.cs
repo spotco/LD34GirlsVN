@@ -104,6 +104,12 @@ public class NodeScript {
 					_imm = itr.ContainsKey("imm")
 				};
 				
+			} else if (type == "charactereffect") {
+				itr_neu = new NodeScriptEvent_CharacterEffect () {
+					_character = itr.GetString("character"),
+					_effect = itr.GetString("effect")
+				};
+				
 			} else if (type == "addaffinity") {
 				itr_neu = new NodeScriptEvent_AddAffinity ();
 				

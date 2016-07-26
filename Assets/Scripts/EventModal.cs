@@ -69,6 +69,8 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			EventCharacter itr_char = _name_to_character[name];
 			itr_char.i_update(game,this);
 			if (itr_char._current_mode == EventCharacter.Mode.DoRemove) {
+				// TODO -- pool
+				itr_char.remove_all_effects(game,this);
 				GameObject.Destroy(itr_char.gameObject);
 				__to_remove_str.Add(name);
 			}
@@ -133,6 +135,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			return null;
 		}
 		EventCharacter neu_char = SPUtil.proto_clone(_proto_character.gameObject).GetComponent<EventCharacter>();
+		// TODO -- pool
 		
 		BGControllerBase active_bg_controller = game._background.get_latest_active_bgcontroller();
 		if (active_bg_controller != null && active_bg_controller.get_character_root() != null) {

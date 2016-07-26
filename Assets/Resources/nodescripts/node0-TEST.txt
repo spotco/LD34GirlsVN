@@ -6,11 +6,17 @@
 	"requirementitem":["Her Name"],
 	"event":[
 
-		{"type":"changebackground","background":"bg_school_hallway","key":"default_showpeople"},
-		{"type":"updatebackground","strparam":"hidepeople"},
-		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"xscale":1},
+		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},
+		{"type":"charactereffect","character":"Mana","effect":"managodparticles"},
 		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
 		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_school_hallway","key":"default_showpeople"},
+		{"type":"updatebackground","strparam":"hidepeople"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
+		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"changebackground","background":"bg_school_classroom","key":"default"},
 
@@ -31,8 +37,9 @@
 		{"type":"hidecharacter","character":"Mana"},
 
 		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
-
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},
+		{"type":"charactereffect","character":"Mana","effect":"managodparticles"},
+		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
