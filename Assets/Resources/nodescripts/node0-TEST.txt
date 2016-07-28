@@ -5,12 +5,17 @@
 	"music":"happy_day",
 	"requirementitem":["Her Name"],
 	"event":[
+		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},
 		{"type":"charactereffect","character":"Mana","effect":"managodparticles"},
 		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
 		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_hallway","key":"default_showpeople"},
 		{"type":"updatebackground","strparam":"hidepeople"},

@@ -83,6 +83,7 @@ public class BackgroundManager : MonoBehaviour {
 			BGControllerBase i_controller = _active_bgcontrollers[i];
 			i_controller.i_update(game);
 			if (!i_controller.should_remain_active()) {
+				i_controller.on_hide(game);
 				_active_bgcontrollers.RemoveAt(i);
 			}
 		}

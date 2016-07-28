@@ -63,6 +63,7 @@ public class BGControllerBase : MonoBehaviour {
 	public virtual void show_background(string name, string key) {}
 	public virtual void recieve_update_message(string strparam, float numparam1, float numparam2) {}
 	public virtual void i_update(GameMain game) {}
+	public virtual void on_hide(GameMain game) {}
 	
 	public virtual bool should_remain_active() { return _current_showing_mode != ShowingMode.Hidden; }
 }

@@ -111,7 +111,7 @@ public class GodPowerCharacterEffect : EventCharacter.Effect {
 	}
 	
 	public override void do_remove(GameMain game, EventModal modal, EventCharacter character) {
-		GameObject.Destroy(_front_root);
-		GameObject.Destroy(_back_root);
+		GameObject.Destroy(_front_root.gameObject);
+		GameObject.Destroy(_back_root.gameObject);
 	}
 }

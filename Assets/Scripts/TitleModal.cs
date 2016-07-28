@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class TitleModal : MonoBehaviour, GameMain.Modal {
+public class TitleModal : MonoBehaviour, GameMain.Modal, FallingPetalParticle.BoundedParent {
 	
 	[SerializeField] private Text _text;
 	[SerializeField] private CanvasGroup _canvas_group;
@@ -20,8 +20,8 @@ public class TitleModal : MonoBehaviour, GameMain.Modal {
 	private float _anim_t;
 	
 	private RectTransform _rect_transform;
-	private List<TitleParticle> _inactive_particles = new List<TitleParticle>();
-	private List<TitleParticle> _active_particles = new List<TitleParticle>();
+	private List<FallingPetalParticle> _inactive_particles = new List<FallingPetalParticle>();
+	private List<FallingPetalParticle> _active_particles = new List<FallingPetalParticle>();
 	private FlashEvery _do_spawn_particle = new FlashEvery() {
 		_max_time = 5
 	};
@@ -34,12 +34,13 @@ public class TitleModal : MonoBehaviour, GameMain.Modal {
 		
 		_proto_logoparticle.SetActive(false);
 		for (int i = 0; i < 25; i++) {
-			_inactive_particles.Add(TitleParticle.cons(
+			_inactive_particles.Add(FallingPetalParticle.cons(
 				SPUtil.proto_clone(_proto_logoparticle).GetComponent<RectTransform>(),
 				this
 			));
 		}
 	}
+	
 	public void i_update(GameMain game) {
 		if (_current_mode == Mode.Hold && !_end_screen) {
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
@@ -51,14 +52,14 @@ public class TitleModal : MonoBehaviour, GameMain.Modal {
 		
 		_do_spawn_particle.i_update();
 		if (_do_spawn_particle.do_flash() && _inactive_particles.Count > 0) {
-			TitleParticle spawn_particle = _inactive_particles[0];
+			FallingPetalParticle spawn_particle = _inactive_particles[0];
 			_inactive_particles.RemoveAt(0);
 			
 			spawn_particle.spawn(this);
 			_active_particles.Add(spawn_particle);
 		}
 		for (int i = _active_particles.Count-1;i >= 0; i--) {
-			TitleParticle itr = _active_particles[i];
+			FallingPetalParticle itr = _active_particles[i];
 			itr.i_update(this);
 			if (itr.should_remove(this)) {
 				itr.do_remove(this);
@@ -109,7 +110,7 @@ public class TitleModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
-	public SPHitRect get_title_screen_bounds() {
+	public SPHitRect get_screen_bounds() {
 		Rect rect = _rect_transform.rect;
 		return new SPHitRect() {
 			_x1 = rect.xMin,

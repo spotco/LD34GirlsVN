@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
@@ -54,7 +54,8 @@ public class GameMain : MonoBehaviour {
 //	end to title UIs
 //	
 //	heart particles
-//	
+//  closer petals blurred and bigger in title
+//  title petals also fade in
 //	title screen animation ins
 //
 //	simone/mana fight more monsters, get in fight (competition), extra node?

@@ -2,17 +2,21 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class TitleParticle {
+public class FallingPetalParticle {
 	
-	public static TitleParticle cons(RectTransform img, TitleModal title_modal) {
-		return (new TitleParticle()).i_cons(img, title_modal);
+	public interface BoundedParent {
+		SPHitRect get_screen_bounds();
+	}
+	
+	public static FallingPetalParticle cons(RectTransform img, BoundedParent title_modal) {
+		return (new FallingPetalParticle()).i_cons(img, title_modal);
 	}
 	
 	private RectTransform _img;
 	private Vector3 _rotation, _vrotation; 
 	private Vector2 _vel;
 	
-	private TitleParticle i_cons(RectTransform img, TitleModal title_modal) {
+	private FallingPetalParticle i_cons(RectTransform img, BoundedParent title_modal) {
 		_img = img;
 		
 		_img.gameObject.SetActive(false);
@@ -20,10 +24,10 @@ public class TitleParticle {
 		return this;
 	}
 	
-	public void spawn(TitleModal title_modal) {
+	public void spawn(BoundedParent title_modal) {
 		_img.gameObject.SetActive(true);
 		
-		SPHitRect title_bounds = title_modal.get_title_screen_bounds();
+		SPHitRect title_bounds = title_modal.get_screen_bounds();
 		
 		if (SPUtil.float_random(0,2) <= 1) {
 			_img.anchoredPosition = new Vector2(
@@ -52,7 +56,7 @@ public class TitleParticle {
 		this.i_update(title_modal);
 	}
 	
-	public void i_update(TitleModal title_modal) {
+	public void i_update(BoundedParent title_modal) {
 		_img.anchoredPosition = SPUtil.vec_add(
 			_img.anchoredPosition,
 			SPUtil.vec_scale(_vel, SPUtil.dt_scale_get())
@@ -64,13 +68,13 @@ public class TitleParticle {
 		_img.localRotation = SPUtil.set_rotation_quaternion(_img.localRotation, _rotation);
 	}
 	
-	public bool should_remove(TitleModal title_modal) {
-		SPHitRect title_bounds = title_modal.get_title_screen_bounds();
+	public bool should_remove(BoundedParent title_modal) {
+		SPHitRect title_bounds = title_modal.get_screen_bounds();
 		Vector2 pos = _img.anchoredPosition;
 		return (pos.x < title_bounds._x1) || (pos.y < title_bounds._y1);
 	}
 	
-	public void do_remove(TitleModal title_modal) {
+	public void do_remove(BoundedParent title_modal) {
 		_img.gameObject.SetActive(false);
 	}
 	
