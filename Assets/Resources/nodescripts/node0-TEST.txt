@@ -3,7 +3,7 @@
 	"title":"TEST NODE",
 	"background":"bg_city_afternoon",
 	"music":"happy_day",
-	"requirementitem":["Her Name"],
+	"requirementitem":[],
 	"event":[
 		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},

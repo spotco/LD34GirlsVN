@@ -45,6 +45,8 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
+//  public void calculate_directional_bindings(GridNavModal grid_nav) -- minimize sum of distances algorithm (reverse if bidirectional, maintain inverseness)
+//  gridnav more animations
 //	chain unlock ui anim
 //	item ui anim
 //	
@@ -69,7 +71,6 @@ public class GameMain : MonoBehaviour {
 //	cache characters
 //	sfx cache n pool text scroll sounds
 //	sfx load all at start
-//	try tess rotation lead 
 	
 	public void Start () {
 		_self_rect = this.GetComponent<RectTransform>();
@@ -139,6 +140,7 @@ public class GameMain : MonoBehaviour {
 	
 	public void finish_event_modal() {
 		_active_modal = _grid_nav_modal;
+		_grid_nav_modal.return_from_event_modal(this);
 	}
 	
 }

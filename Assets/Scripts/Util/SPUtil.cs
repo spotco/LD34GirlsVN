@@ -112,7 +112,7 @@ public class SPUtil {
 		return (1 / 60.0f) / sec;
 	}
 	public static float drpt(float start, float to, float fric) {
-		if (Mathf.Abs(to-start) < 0.01f) {
+		if (Mathf.Abs(to-start) < 0.001f) {
 			return to;
 		}
 	

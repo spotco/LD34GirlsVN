@@ -32,6 +32,10 @@ public class NodeAnimRoot : MonoBehaviour {
 	[SerializeField] private Image _node_locked_chain_br;
 	[SerializeField] private Image _node_locked_lock;
 	
+	[SerializeField] private Image _node_unlock_shine_1;
+	[SerializeField] private Image _node_unlock_shine_2;
+	[SerializeField] private Image _unlock_particle_proto;
+	
 	[SerializeField] public Image _item_icon;
 	private float _item_splat_root_rotation_theta;
 	
