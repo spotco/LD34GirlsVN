@@ -45,7 +45,7 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
-//  public void calculate_directional_bindings(GridNavModal grid_nav) -- minimize sum of distances algorithm (reverse if bidirectional, maintain inverseness)
+// 	diagonal directionals
 //  gridnav more animations
 //	chain unlock ui anim
 //	item ui anim

@@ -131,7 +131,7 @@ public class GridNode : MonoBehaviour {
 		Left,
 		Right
 	}
-	private static Vector2 directional_to_vector(Directional input) {
+	public static Vector2 directional_to_vector(Directional input) {
 		switch (input) {
 		case Directional.Up: return new Vector2(0,1);
 		case Directional.Down: return new Vector2(0,-1);
@@ -140,7 +140,7 @@ public class GridNode : MonoBehaviour {
 		default: return Vector2.zero;
 		}
 	}
-	private static Directional inverse_directional(Directional input) {
+	public static Directional inverse_directional(Directional input) {
 		switch (input) {
 		case Directional.Up: return Directional.Down;
 		case Directional.Down: return Directional.Up;
@@ -148,6 +148,13 @@ public class GridNode : MonoBehaviour {
 		case Directional.Right: return Directional.Left;
 		default: return Directional.Up;
 		}
+	}
+	private static List<Directional> __all_directionals = null;
+	public static List<Directional> all_directionals() {
+		if (__all_directionals == null) {
+			__all_directionals = new List<Directional>() { Directional.Up, Directional.Down, Directional.Left, Directional.Right };
+		}
+		return __all_directionals;
 	}
 	
 	private SPDict<Directional, GridNode> _directional_links = new SPDict<Directional, GridNode>();
@@ -222,10 +229,9 @@ public class GridNode : MonoBehaviour {
 		__remaining_grid_nodes.Clear();
 		__remaining_directionals.Clear();
 		
-		__remaining_directionals.Add(Directional.Up);
-		__remaining_directionals.Add(Directional.Down);
-		__remaining_directionals.Add(Directional.Left);
-		__remaining_directionals.Add(Directional.Right);
+		for (int i = 0; i < GridNode.all_directionals().Count; i++) {
+			__remaining_directionals.Add(GridNode.all_directionals()[i]);
+		}
 		
 		for (int i = 0; i < _node_script._links.Count; i++) {
 			__remaining_grid_nodes.Add(grid_nav._id_to_gridnode[_node_script._links[i]]);
@@ -243,16 +249,6 @@ public class GridNode : MonoBehaviour {
 		for (int i_min = 0; i_min < __min_calculate_directional_bindings.key_itr().Count; i_min++) {
 			Directional i_current_directional = __min_calculate_directional_bindings.key_itr()[i_min];
 			_directional_links[i_current_directional] = __min_calculate_directional_bindings[i_current_directional];
-		}
-		
-		for (int i = 0; i < _directional_links.key_itr().Count; i++) {
-			Directional itr_directional = _directional_links.key_itr()[i];
-			GridNode itr_grid_node = _directional_links[itr_directional];
-			Directional itr_directional_inverse = GridNode.inverse_directional(itr_directional);
-			
-			if (!itr_grid_node._directional_links.ContainsKey(itr_directional_inverse) && itr_grid_node._node_script._links.Contains(_node_script._id)) {
-				itr_grid_node._directional_links[itr_directional_inverse] = this;
-			}
 		}
 	}
 	
@@ -302,125 +298,57 @@ public class GridNode : MonoBehaviour {
 	}
 	
 	public void i_update(GameMain game, GridNavModal grid_nav) {
+			
 		foreach (int itr_id in _id_to_line.Keys) {
-			if (grid_nav._current_node != this) {
-				this.set_line_state(itr_id, LineState.NotSelected);
-			} else {
-				if (this._node_script._links.Contains(itr_id)) {
-					this.set_line_state(itr_id, LineState.ActiveSelected);
+			if (grid_nav._current_node == this) {
+			
+				GridNode itr_target_node = grid_nav._id_to_gridnode[itr_id];
+				
+				if (grid_nav.get_all_can_move_to_nodes().Contains(itr_target_node._node_script._id)) {
+					if (grid_nav.is_selected_node(itr_target_node)) {
+						this.set_line_state(itr_id, LineState.ActiveSelected);
+					} else {
+						this.set_line_state(itr_id, LineState.ActiveNotSelected);
+					}
+					
 				} else {
 					this.set_line_state(itr_id, LineState.NotSelected);
+					
+				}
+				
+			} else {
+				this.set_line_state(itr_id, LineState.NotSelected);
+			}
+		}
+		
+		if (!_accessible) {
+			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
+			
+			
+		} else if (grid_nav._current_node == this) {
+			if (_visited) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
+			} else {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
+			}
+			
+		} else {
+			if (grid_nav.is_selected_node(this)) {
+				if (_visited) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
+				} else {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
+				}
+			} else {
+				if (_visited) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
+				} else {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
 				}
 			}
 		}
 		
-		if (grid_nav._current_node == this) {
-			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
-		} else {
-			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
-		}
-		
 		_self_nodeanimroot.i_update();
-	
-//		foreach (int itr_id in _id_to_line.Keys) {
-//			if (grid_nav._selected_node != this) {
-//				this.set_line_state(itr_id, LineState.NotSelected);
-//			} else {
-//				if (!_accessible || !grid_nav._id_to_gridnode[itr_id]._accessible) {
-//					this.set_line_state(itr_id, LineState.NotAccessible);
-//					
-//				} else if (grid_nav._selected_node._visited) {
-//					if (_unidirectional_reverse_links.Contains(itr_id)) {
-//						this.set_line_state(itr_id, LineState.NotSelected);
-//					} else {
-//						if (SPUtil.rect_transform_contains_screen_point(grid_nav._id_to_gridnode[itr_id].cached_recttransform_get(),game._controls.get_touch_pos())) {
-//							this.set_line_state(itr_id, LineState.ActiveSelected);
-//						} else {
-//							this.set_line_state(itr_id, LineState.ActiveNotSelected);
-//						}
-//					}
-//				} else {
-//					if (_visited) {
-//						if (grid_nav._id_to_gridnode[itr_id]._visited) {
-//							this.set_line_state(itr_id, LineState.ActiveSelected);
-//						} else {
-//							this.set_line_state(itr_id, LineState.NotSelected);
-//						}
-//					} else {
-//						if (grid_nav._id_to_gridnode[itr_id]._node_script._id == grid_nav._current_node._node_script._id) {
-//							this.set_line_state(itr_id, LineState.ActiveNotSelected);
-//						} else {
-//							this.set_line_state(itr_id, LineState.NotAccessible);
-//						}
-//					}
-//				}
-//			}
-//		}
-//		
-//		bool is_touching = SPUtil.rect_transform_contains_screen_point(this.cached_recttransform_get(),game._controls.get_touch_pos());
-//		bool cur_node_accessible = grid_nav._current_node._node_script._links.Contains(_node_script._id);
-//		bool selected_node_is_current_node = grid_nav._selected_node == grid_nav._current_node;
-//		bool this_is_current_node = this == grid_nav._current_node;
-//		bool selected_node_accessible = grid_nav._selected_node == null ? false : 
-//			(((grid_nav._selected_node._node_script._links.Contains(_node_script._id) || grid_nav._selected_node._unidirectional_reverse_links.Contains(_node_script._id)
-//			) && grid_nav._selected_node._visited) || this_is_current_node);
-//		
-//		bool use_accessible = selected_node_is_current_node ? (cur_node_accessible) : (selected_node_accessible);
-//		
-//		bool is_active_locked = _is_locked && !_visited;
-//		
-//		if (grid_nav._selected_node == this || (this_is_current_node && is_touching)) {
-//			if (is_active_locked) {
-//				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
-//				
-//			} else if (_visited) {
-//				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
-//				
-//			} else {
-//				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
-//				
-//			}
-//			
-//		} else {
-//			if (!_accessible) {
-//				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
-//				
-//			} else if (_visited) {
-//				if (is_touching && use_accessible) {
-//					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
-//				} else {
-//					if (use_accessible) {
-//						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
-//					} else {
-//						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_NotCurNodeAccessible);
-//					}
-//				}
-//				
-//			} else {
-//				if (is_touching && is_active_locked && use_accessible) {
-//					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
-//					
-//				} else if (is_touching && use_accessible) {
-//					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
-//					
-//				} else {
-//					if (is_active_locked) {
-//						if (use_accessible) {
-//							_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
-//						} else {
-//							_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_NotCurNodeAccessible);
-//						}
-//					} else if (use_accessible) {
-//						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
-//					} else {
-//						_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_NotCurNodeAccessible);
-//
-//					}
-//				}
-//			}
-//		}
-//		
-//		_self_nodeanimroot.i_update();
 	}
 	
 	private RectTransform __rect_transform;
