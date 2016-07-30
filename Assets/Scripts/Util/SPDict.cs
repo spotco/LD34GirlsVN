@@ -14,7 +14,11 @@ public class SPDict<TKey,TValue> {
 	public TValue this[TKey i]
 	{
 		get { 
-			return _dict[i]; 
+			if (_dict.ContainsKey(i)) {
+				return _dict[i];
+			} else {
+				return default(TValue);
+			}
 		}
 		set { 
 			_dict[i] = (TValue)value;

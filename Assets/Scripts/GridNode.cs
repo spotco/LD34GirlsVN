@@ -159,55 +159,100 @@ public class GridNode : MonoBehaviour {
 		return _directional_links[dir];
 	}
 	
-	public void calculate_directional_bindings(GridNavModal grid_nav) {
-		List<GridNode> remaining_grid_nodes = new List<GridNode>();
-		for (int i = 0; i < _node_script._links.Count; i++) {
-			remaining_grid_nodes.Add(grid_nav._id_to_gridnode[_node_script._links[i]]);
+	private static void r_calculate_directional_bindings(
+		SPDict<Directional,GridNode> current, 
+		SPDict<Directional,GridNode> min_binding, 
+		ref float min_binding_dist, 
+		GridNode self, 
+		List<GridNode> remaining_grid_nodes, 
+		List<Directional> remaining_directionals) {
+
+		if (remaining_grid_nodes.Count == 0 || remaining_directionals.Count == 0) {
+
+			float cmp_sum = 0;
+			for (int i_current = 0; i_current < current.key_itr().Count; i_current++) {
+				Directional i_current_directional = current.key_itr()[i_current];
+				GridNode i_current_gridnode = current[i_current_directional];
+				
+				Vector2 cur_to_itr_dir = SPUtil.vec_sub(i_current_gridnode.get_center_position(),self.get_center_position()).normalized;
+				Vector2 i_current_directional_dir = GridNode.directional_to_vector(i_current_directional);
+					
+				cmp_sum += SPUtil.rad_to_deg(Mathf.Acos(SPUtil.vec_dot(i_current_directional_dir,cur_to_itr_dir)));
+			}
+			
+			if (cmp_sum < min_binding_dist) {
+				min_binding_dist = cmp_sum;
+				min_binding.Clear();
+				for (int i_current = 0; i_current < current.key_itr().Count; i_current++) {
+					Directional i_current_directional = current.key_itr()[i_current];
+					min_binding[i_current_directional] = current[i_current_directional];
+				}
+			}
+			
+			return;
 		}
 		
-		List<Directional> remaining_directionals = new List<Directional>() { Directional.Up, Directional.Down, Directional.Left, Directional.Right };
+		for (int i_gridnode = 0; i_gridnode < remaining_grid_nodes.Count; i_gridnode++) {
+			GridNode itr_gridnode = remaining_grid_nodes[i_gridnode];
+			remaining_grid_nodes.RemoveAt(i_gridnode);
+			
+			for (int i_directional = 0; i_directional < remaining_directionals.Count; i_directional++) {
+				Directional itr_directional = remaining_directionals[i_directional];
+				remaining_directionals.RemoveAt(i_directional);
+				
+				current[itr_directional] = itr_gridnode;
+				GridNode.r_calculate_directional_bindings(current, min_binding, ref min_binding_dist, self, remaining_grid_nodes, remaining_directionals);
+				current.Remove(itr_directional);
+				
+				remaining_directionals.Insert(i_directional, itr_directional);
+			}
+			
+			remaining_grid_nodes.Insert(i_gridnode, itr_gridnode);
+		}
+	}
+	
+	private static SPDict<Directional,GridNode> __current_calculate_directional_bindings = new SPDict<Directional, GridNode>();
+	private static SPDict<Directional,GridNode> __min_calculate_directional_bindings = new SPDict<Directional, GridNode>();
+	private static List<GridNode> __remaining_grid_nodes = new List<GridNode>();
+	private static List<Directional> __remaining_directionals = new List<Directional>();
+	
+	public void calculate_directional_bindings(GridNavModal grid_nav) {
+		__current_calculate_directional_bindings.Clear();
+		__min_calculate_directional_bindings.Clear();
+		__remaining_grid_nodes.Clear();
+		__remaining_directionals.Clear();
+		
+		__remaining_directionals.Add(Directional.Up);
+		__remaining_directionals.Add(Directional.Down);
+		__remaining_directionals.Add(Directional.Left);
+		__remaining_directionals.Add(Directional.Right);
+		
+		for (int i = 0; i < _node_script._links.Count; i++) {
+			__remaining_grid_nodes.Add(grid_nav._id_to_gridnode[_node_script._links[i]]);
+		}
+
+		float min_dist = float.MaxValue;
+		GridNode.r_calculate_directional_bindings(
+			__current_calculate_directional_bindings, 
+			__min_calculate_directional_bindings, 
+			ref min_dist, 
+			this, 
+			__remaining_grid_nodes, 
+			__remaining_directionals);
+			
+		for (int i_min = 0; i_min < __min_calculate_directional_bindings.key_itr().Count; i_min++) {
+			Directional i_current_directional = __min_calculate_directional_bindings.key_itr()[i_min];
+			_directional_links[i_current_directional] = __min_calculate_directional_bindings[i_current_directional];
+		}
 		
 		for (int i = 0; i < _directional_links.key_itr().Count; i++) {
 			Directional itr_directional = _directional_links.key_itr()[i];
 			GridNode itr_grid_node = _directional_links[itr_directional];
-			remaining_directionals.Remove(itr_directional);
-			remaining_grid_nodes.Remove(itr_grid_node);
-		}
-		
-		// need to do minimize-sum-of-min-distances algorithm here
-		float limit_max = 20;
-		while (remaining_grid_nodes.Count > 0 && remaining_directionals.Count > 0) {
-			for (int i_directional = remaining_directionals.Count-1; i_directional >= 0; i_directional--) {
-				Directional itr_directional = remaining_directionals[i_directional];
-				Vector2 itr_directional_dir = GridNode.directional_to_vector(itr_directional);
-				
-				GridNode found_grid_node = null;
-				float min_angle_found = limit_max + 1;
-				
-				for (int i_grid_node = 0; i_grid_node < remaining_grid_nodes.Count; i_grid_node++) {
-					GridNode itr_grid_node = remaining_grid_nodes[i_grid_node];
-					Vector2 cur_to_itr_dir = SPUtil.vec_sub(itr_grid_node.get_center_position(),this.get_center_position()).normalized;
-					float cmp_angle = SPUtil.rad_to_deg(Mathf.Acos(SPUtil.vec_dot(itr_directional_dir,cur_to_itr_dir)));
-					
-					if (cmp_angle < min_angle_found) {
-						found_grid_node = itr_grid_node;
-						min_angle_found = cmp_angle;
-					}
-				}
-				
-				if (found_grid_node != null && min_angle_found < limit_max) {
-					remaining_directionals.Remove(itr_directional);
-					remaining_grid_nodes.Remove(found_grid_node);
-					
-					_directional_links[itr_directional] = found_grid_node;
-					
-					Directional itr_directional_inverse = GridNode.inverse_directional(itr_directional);
-					if (found_grid_node._node_script._links.Contains(_node_script._id) && !found_grid_node._directional_links.ContainsKey(itr_directional_inverse)) {
-						found_grid_node._directional_links[GridNode.inverse_directional(itr_directional)] = this;
-					}
-				}
+			Directional itr_directional_inverse = GridNode.inverse_directional(itr_directional);
+			
+			if (!itr_grid_node._directional_links.ContainsKey(itr_directional_inverse) && itr_grid_node._node_script._links.Contains(_node_script._id)) {
+				itr_grid_node._directional_links[itr_directional_inverse] = this;
 			}
-			limit_max += 10;
 		}
 	}
 	
@@ -261,7 +306,11 @@ public class GridNode : MonoBehaviour {
 			if (grid_nav._current_node != this) {
 				this.set_line_state(itr_id, LineState.NotSelected);
 			} else {
-				this.set_line_state(itr_id, LineState.ActiveSelected);
+				if (this._node_script._links.Contains(itr_id)) {
+					this.set_line_state(itr_id, LineState.ActiveSelected);
+				} else {
+					this.set_line_state(itr_id, LineState.NotSelected);
+				}
 			}
 		}
 		
