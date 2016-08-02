@@ -7264,6 +7264,7 @@ MonoBehaviour:
   _anim_root_proto: {fileID: 423595504}
   _line_root_proto: {fileID: 323968690}
   _nav_arrow_proto: {fileID: 262645773}
+  _current_state: 0
 --- !u!1 &556110115
 GameObject:
   m_ObjectHideFlags: 0

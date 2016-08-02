@@ -16,7 +16,7 @@ public class PopupManager : MonoBehaviour {
 		for (int i = _active_popups.Count-1; i >= 0; i--) {
 			Popup itr = _active_popups[i];
 			itr.i_update();
-			if (itr._current_mode == Popup.Mode.Hold && game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
+			if (itr._current_mode == Popup.Mode.Hold && (game._controls.get_control_just_released(ControlManager.Control.ButtonA) || game._controls.get_control_just_released(ControlManager.Control.TouchClick))) {
 				itr._current_mode = Popup.Mode.FadeOut;
 			}
 			

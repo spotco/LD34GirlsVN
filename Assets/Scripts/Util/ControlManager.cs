@@ -42,7 +42,7 @@ public class ControlManager {
 			return Input.GetKey(KeyCode.X);
 		}
 		case Control.ButtonA: {
-			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space) || SPUtil.is_touch();
+			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space);
 		}
 		case Control.TouchClick: {
 			return SPUtil.is_touch();

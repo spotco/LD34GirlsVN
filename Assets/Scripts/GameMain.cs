@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = false;
-	public static int NODE_START_INDEX = 0;
+	public static int NODE_START_INDEX = 3;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -45,12 +45,14 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
-// 	diagonal directionals
-//  gridnav more animations
+//  visited node wait transition with zoom in
+//  gridnav arrow animations (wait on art?)
+// 	click on directionals to move in direction
+//  gridnav kurumi animations
+//	sequential popin gridnav
 //	chain unlock ui anim
 //	item ui anim
 //	
-//	sequential popin gridnav
 //	
 //	save/load implementation
 //	end to title UIs

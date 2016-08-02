@@ -129,7 +129,8 @@ public class GridNode : MonoBehaviour {
 		Up,
 		Down,
 		Left,
-		Right
+		Right,
+		None
 	}
 	public static Vector2 directional_to_vector(Directional input) {
 		switch (input) {
@@ -137,7 +138,7 @@ public class GridNode : MonoBehaviour {
 		case Directional.Down: return new Vector2(0,-1);
 		case Directional.Left: return new Vector2(-1,0);
 		case Directional.Right: return new Vector2(1,0);
-		default: return Vector2.zero;
+		default: return new Vector2(0,-1);
 		}
 	}
 	public static Directional inverse_directional(Directional input) {
@@ -301,11 +302,10 @@ public class GridNode : MonoBehaviour {
 			
 		foreach (int itr_id in _id_to_line.Keys) {
 			if (grid_nav._current_node == this) {
-			
 				GridNode itr_target_node = grid_nav._id_to_gridnode[itr_id];
 				
-				if (grid_nav.get_all_can_move_to_nodes().Contains(itr_target_node._node_script._id)) {
-					if (grid_nav.is_selected_node(itr_target_node)) {
+				if (grid_nav.get_all_can_move_to_nodes().ContainsKey(itr_target_node._node_script._id)) {
+					if (grid_nav.is_selected_node(game, itr_target_node)) {
 						this.set_line_state(itr_id, LineState.ActiveSelected);
 					} else {
 						this.set_line_state(itr_id, LineState.ActiveNotSelected);
@@ -325,7 +325,7 @@ public class GridNode : MonoBehaviour {
 			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 			
 			
-		} else if (grid_nav._current_node == this) {
+		} else if (grid_nav._current_node == this && grid_nav._current_state == GridNavModal.State.WaitingForInput) {
 			if (_visited) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
 			} else {
@@ -333,17 +333,23 @@ public class GridNode : MonoBehaviour {
 			}
 			
 		} else {
-			if (grid_nav.is_selected_node(this)) {
+			if (grid_nav.is_selected_node(game, this)) {
 				if (_visited) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Selected);
 				} else {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Selected);
 				}
-			} else {
+			} else if (grid_nav.get_all_can_move_to_nodes().ContainsKey(_node_script._id) || grid_nav._current_node == this) {
 				if (_visited) {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
 				} else {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+				}
+			} else {
+				if (_visited) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_NotCurNodeAccessible);
+				} else {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_NotCurNodeAccessible);
 				}
 			}
 		}
@@ -364,7 +370,11 @@ public class GridNode : MonoBehaviour {
 	}
 	
 	public Vector2 get_selector_stand_position() {
-		return SPUtil.vec_add(this.transform.localPosition, new Vector2(0, 40));
+		if (_visited) {
+			return SPUtil.vec_add(this.transform.localPosition, new Vector2(0, 25));
+		} else {
+			return SPUtil.vec_add(this.transform.localPosition, new Vector2(0, 40));
+		}
 	}
 	
 	public Vector2 get_center_position() {

@@ -121,7 +121,7 @@ public class DialogueBubble : SPBaseBehavior {
 			this.transform.localScale = SPUtil.valv(1);
 			
 			_cursor.gameObject.SetActive(false);
-			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
+			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) || game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				_primary_text.finish();
 				game._music.play_sfx("dialogue_button_press");
 			}
@@ -151,7 +151,7 @@ public class DialogueBubble : SPBaseBehavior {
 			_cursor.gameObject.SetActive(true);
 			this.transform.localScale = SPUtil.valv(1);
 			
-			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA)) {
+			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) || game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				game._music.play_sfx("dialogue_button_press");
 				_current_mode = Mode.FadeOut;
 				_anim_t = 0;
