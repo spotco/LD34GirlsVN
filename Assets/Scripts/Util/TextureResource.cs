@@ -4,7 +4,8 @@ using System.Reflection;
 
 public class RTex {
 	public static string BLANK = "blank";
-	public static string OSAKA_FNT = "osaka"; 
+	public static string OSAKA_FNT = "osaka";
+	public static string KURUMI_MAP_CHAR_SS = "img/grid/cursor_char/kurumi_map";
 }
 
 public class TextureResource {

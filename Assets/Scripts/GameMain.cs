@@ -14,10 +14,10 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = true;
+	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = false;
-	public static int NODE_START_INDEX = 3;
-	public static bool SKIP_TITLE = true;
+	public static int NODE_START_INDEX = 0;
+	public static bool SKIP_TITLE = false;
 	
 	public interface Modal {
 		void i_initialize(GameMain game);
@@ -45,15 +45,14 @@ public class GameMain : MonoBehaviour {
 	private Canvas _parent_canvas;
 //	
 //	TODO--
-//  visited node wait transition with zoom in
-//  gridnav arrow animations (wait on art?)
-// 	click on directionals to move in direction
-//  gridnav kurumi animations
 //	sequential popin gridnav
 //	chain unlock ui anim
 //	item ui anim
 //	
-//	
+//  fade top edges of letterbox
+//  kurumi move slow down flickers
+//  gridnav arrow animations (wait on art?)
+// 	click on directionals to move in direction
 //	save/load implementation
 //	end to title UIs
 //	

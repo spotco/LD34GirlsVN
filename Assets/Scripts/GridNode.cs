@@ -325,7 +325,7 @@ public class GridNode : MonoBehaviour {
 			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 			
 			
-		} else if (grid_nav._current_node == this && grid_nav._current_state == GridNavModal.State.WaitingForInput) {
+		} else if (grid_nav._current_node == this && (grid_nav._current_state == GridNavModal.State.WaitingForInput || grid_nav._current_state == GridNavModal.State.NodeOpenWaitAnim)) {
 			if (_visited) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Visited_Unselected);
 			} else {

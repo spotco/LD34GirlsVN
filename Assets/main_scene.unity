@@ -16303,8 +16303,8 @@ GameObject:
   m_Component:
   - 224: {fileID: 1304240163}
   - 222: {fileID: 1304240165}
-  - 114: {fileID: 1304240164}
   - 114: {fileID: 1304240166}
+  - 114: {fileID: 1304240164}
   m_Layer: 5
   m_Name: GridNavCharacterProto
   m_TagString: Untagged
@@ -16333,13 +16333,12 @@ RectTransform:
 --- !u!114 &1304240164
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11449572, guid: 0250d7cf54bc946bd9af6cc705ac456f,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1304240162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -16350,14 +16349,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4d51095c2fc384ca5af4d7b6ca403965, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_Texture: {fileID: 2800000, guid: 4d51095c2fc384ca5af4d7b6ca403965, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!222 &1304240165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16377,6 +16375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1304240164}
+  _anim_mode: 0
 --- !u!1 &1310865134
 GameObject:
   m_ObjectHideFlags: 0

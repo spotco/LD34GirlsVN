@@ -46,7 +46,7 @@ public class FileCache {
 		_texkey_to_rectkey_to_rect[texkey] = new Dictionary<string,Rect>();
 
 		Dictionary<string,object> frames = (Dictionary<string,object>)((Dictionary<string,object>) PlistCS.Plist.readPlistSource(
-			this.load_text_file_from_path(texkey,".plist")))["frames"];
+			this.load_text_file_from_path(texkey,"")))["frames"];
 		foreach (string key in frames.Keys) {
 			Dictionary<string,object> frame = (Dictionary<string,object>)frames[key];
 			string texture_rect_string = (string)frame["textureRect"];

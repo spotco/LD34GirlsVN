@@ -29,7 +29,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		InitialUpdate,
 		WaitingForInput,
 		MovingToNode,
-		TriggerNodeOpenAttempt,
+		NodeOpenWaitAnim,
 		WaitingForLockedMessage,
 		WaitingForUnlockAnimation,
 		WaitingForEventFinish,
@@ -55,6 +55,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		
 		_character_proto.gameObject.SetActive(false);
 		_selector_character = SPUtil.proto_clone(_character_proto.gameObject).GetComponent<GridNavCharacter>();
+		_selector_character.i_initialize(game);
 		
 		this.gameObject.SetActive(true);
 		_canvas_group.alpha = 0;
@@ -97,6 +98,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		this.i_update_selected_node(game);
 		
+		_selector_character.i_update(game);
+		
 		Vector2 selector_position = _selector_character.transform.localPosition;
 		Vector2 grid_map_anchor_position = _grid_map_position_anchor.transform.localPosition;
 		float grid_map_anchor_zoom = _grid_map_scale_anchor.transform.localScale.x;
@@ -105,16 +108,19 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		
 		switch (_current_state) {
 		case State.InitialUpdate: {
-			this.attempt_open_node_and_update_state(game, _current_node);
 			grid_map_anchor_zoom = 3;
 			selector_position = _current_node.get_selector_stand_position();
 			grid_map_anchor_position = GridNavCharacter.convert_character_position_to_position_anchor_focus(selector_position);
+			
+			_current_state = State.WaitingForEventFinish;
+			this.trigger_node_event(game, _current_node);
 			
 			
 		} break;
 		case State.WaitingForEventFinish: {
 			grid_map_anchor_zoom = 3;
 			selector_position = _current_node.get_selector_stand_position();
+			_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Move);
 			grid_map_anchor_position = GridNavCharacter.convert_character_position_to_position_anchor_focus(selector_position);
 			
 		} break;
@@ -139,6 +145,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Move);
 			
 			game._background.load_background(_current_node._node_script._background, _current_node._node_script._background_key);
 			
@@ -206,6 +213,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			Vector2 selector_tar_pos = Vector2.Lerp(_current_node.get_center_position(), _moving_to_node_target.get_center_position(), _state_anim_ct);
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Move);
 			
 			if (_state_anim_ct >= 1) {
 				_state_anim_ct = 0;
@@ -218,14 +226,40 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			}
 			
 		} break;
-		case State.TriggerNodeOpenAttempt: {
+		case State.NodeOpenWaitAnim: {
 		
+			game._background.load_background(_current_node._node_script._background, _current_node._node_script._background_key);
+			
+			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 3, 1/15.0f);
+			
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
+			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			
+			Vector2 grid_map_anchor_current_node_focus_point = GridNavCharacter.convert_character_position_to_position_anchor_focus(selector_position);
+			grid_map_anchor_position.x = SPUtil.drpt(grid_map_anchor_position.x, grid_map_anchor_current_node_focus_point.x, 1/10.0f);
+			grid_map_anchor_position.y = SPUtil.drpt(grid_map_anchor_position.y, grid_map_anchor_current_node_focus_point.y, 1/10.0f);
+			
+			game._background.load_background(_current_node._node_script._background, _current_node._node_script._background_key);
+		
+			_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Yay);
+			
+			_state_anim_ct += SPUtil.sec_to_tick(0.5f) * SPUtil.dt_scale_get();
+			
+			if (_state_anim_ct >= 1) {
+				_state_anim_ct = 0;
+				_current_state = State.WaitingForEventFinish;
+				this.trigger_node_event(game, _current_node);
+			}
+			
 		} break;
 		case State.WaitingForLockedMessage: {
-		
+			_current_state = State.WaitingForInput;
+			
 		} break;
 		case State.WaitingForUnlockAnimation: {
-		
+			_current_state = State.WaitingForInput;
+			
 		} break;
 		}
 		
@@ -409,8 +443,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			return;
 			
 		} else if (GameMain.IGNORE_ITEM_REQ) {
-			this.trigger_node_event(game,node);
-			_current_state = State.WaitingForEventFinish;
+			_state_anim_ct = 0;
+			_current_state = State.NodeOpenWaitAnim;
 			
 		} else if (node._node_script._affinity_requirement) {
 			if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
@@ -441,8 +475,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			}
 			
 		} else {
-			this.trigger_node_event(game,node);
-			_current_state = State.WaitingForEventFinish;
+			_state_anim_ct = 0;
+			_current_state = State.NodeOpenWaitAnim;
 		}
 	}
 	
