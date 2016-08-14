@@ -62,7 +62,11 @@ public class GridNode : MonoBehaviour {
 	public void set_showing(bool val, bool imm) {
 		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
 			if (val) {
-				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+				if (_is_locked) {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
+				} else {
+					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+				}
 				
 				if (imm) {
 					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.None);
@@ -77,8 +81,14 @@ public class GridNode : MonoBehaviour {
 			}
 		}	
 	}
-	public bool is_showing_anim_finished() {
+	public bool is_anim_finished() {
 		return _self_nodeanimroot.get_transition_state() == NodeAnimRoot.AnimTransitionState.None;
+	}
+	
+	public void set_unlocked() {
+		_is_locked = false;
+		_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
+		_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.RemoveLock);
 	}
 	
 	public List<int> _unidirectional_reverse_links = new List<int>();
@@ -324,10 +334,6 @@ public class GridNode : MonoBehaviour {
 		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
 			return;
 		}
-		_self_nodeanimroot.i_update();
-	}
-	
-	public void i_active_update(GameMain game, GridNavModal grid_nav) {
 		for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
 			int itr_id = _id_to_line.key_itr()[i];
 			if (grid_nav._current_node == this) {
@@ -350,10 +356,24 @@ public class GridNode : MonoBehaviour {
 				this.set_line_state(itr_id, LineState.NotSelected);
 			}
 		}
-		
+		_self_nodeanimroot.i_update(game, grid_nav);
+	}
+	
+	public void i_active_update(GameMain game, GridNavModal grid_nav) {		
 		if (!_accessible) {
 			_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 			
+		} else if (_is_locked) {
+			if (grid_nav._current_node == this || grid_nav.is_selected_node(game, this)) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Selected);
+				
+			} else if (grid_nav.get_all_can_move_to_nodes().ContainsKey(_node_script._id)) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
+				
+			} else {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_NotCurNodeAccessible);
+				
+			}
 			
 		} else if (grid_nav._current_node == this && (grid_nav._current_state == GridNavModal.State.WaitingForInput || grid_nav._current_state == GridNavModal.State.NodeOpenWaitAnim)) {
 			if (_visited) {

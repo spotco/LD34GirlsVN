@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 131;
+	public static int NODE_START_INDEX = 9;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -42,16 +42,14 @@ public class GameMain : MonoBehaviour {
 	public int _affinity;
 	
 	private RectTransform _self_rect;
-	private Canvas _parent_canvas;
+	[System.NonSerialized] public Canvas _parent_canvas;
 //	
 //	TODO--
 
-//  fix locked nodes
-//	chain unlock ui anim
 
 // 	gridnav cancel move
 
-//	item ui anim
+
 //  kurumi move improvements, animation fixes (no slide, no stutter)
 //  kurmi chibi blob shadow
 //	
@@ -68,7 +66,7 @@ public class GameMain : MonoBehaviour {
 //
 //	simone/mana fight more monsters, get in fight (competition), extra node?
 //	good end expand sacrifice of mana, extra node
-//	
+//	item ui anim
 //	credits
 //		-simone boo-hoo tell you a secret
 //	

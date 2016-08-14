@@ -6,6 +6,10 @@ public class RTex {
 	public static string BLANK = "blank";
 	public static string OSAKA_FNT = "osaka";
 	public static string KURUMI_MAP_CHAR_SS = "img/grid/cursor_char/kurumi_map";
+	
+	public static string NODE_UNLOCK_PARTICLE = "img/grid/neu/node_unlock_particle";
+	public static string NODE_UNLOCK_SHINE_1 = "img/grid/neu/node_unlock_shine";
+	public static string NODE_UNLOCK_SHINE_2 = "img/grid/neu/node_unlock_shine_2";
 }
 
 public class TextureResource {

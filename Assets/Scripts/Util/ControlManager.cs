@@ -61,6 +61,7 @@ public class ControlManager {
 	private Dictionary<Control,bool> _control_is_down = new Dictionary<Control, bool>();
 	private Dictionary<Control,bool> _control_just_released = new Dictionary<Control, bool>();
 	private Dictionary<Control,bool> _control_just_pressed = new Dictionary<Control, bool>();
+	private bool _press_debug_triggered = false;
 	
 	public ControlManager i_cons() {
 		foreach (Control itr in System.Enum.GetValues(typeof(Control)).Cast<Control>()) {
@@ -69,7 +70,17 @@ public class ControlManager {
 			_control_just_released[itr] = false;
 			_control_just_pressed[itr] = false;
 		}
+		_press_debug_triggered = false;
 		return this;
+	}
+	
+	public bool get_debug_skip() {
+		bool keys_down = this.get_control_down(Control.Debug1) && this.get_control_down(Control.Debug2);
+		if (GameMain.DEBUG_CONTROLS && keys_down && !_press_debug_triggered) {
+			_press_debug_triggered = true;
+			return true;
+		}
+		return false;
 	}
 	
 	public void i_update() {
@@ -83,6 +94,7 @@ public class ControlManager {
 			if (itr_test_pressed) {
 				if (!_control_is_down[itr_test]) {
 					_control_just_pressed[itr_test] = true;
+					_press_debug_triggered = false;
 				}
 				_control_is_down[itr_test] = true;
 			} else {

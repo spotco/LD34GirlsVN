@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class NodeAnimRoot : MonoBehaviour {
 	
@@ -143,20 +143,147 @@ public class NodeAnimRoot : MonoBehaviour {
 	public void set_transition_state(AnimTransitionState state) {
 		switch(state) {
 		case (AnimTransitionState.PopIn):{
-				_transition_state = AnimTransitionState.PopIn;
-				_anim_t = 0;
+			_transition_state = AnimTransitionState.PopIn;
+			_anim_t = 0;
+		} break;
+		case (AnimTransitionState.RemoveLock):{
+			_transition_state = AnimTransitionState.RemoveLock;
+			_anim_t = 0;
 		} break;
 		default: break;
 		}
-		_transition_state = state;
 	}
 	
-	public void i_update() {
+	private List<Image> __all_lock_chains = null;
+	private List<Image> all_lock_chains() {
+		if (__all_lock_chains == null) {
+			__all_lock_chains = new List<Image>() { _node_locked_chain_bl, _node_locked_chain_br, _node_locked_chain_tl, _node_locked_chain_tr };
+		}
+		return __all_lock_chains;
+	}
+	
+	public void i_update(GameMain game, GridNavModal grid_nav) {
 	
 		float spin_vt_scale = 1;
 		float tar_alpha = 1;
+		bool sync_text_to_node_unvisited_top = true;
 	
 		switch (_transition_state) {
+		case AnimTransitionState.RemoveLock: {
+			
+			if (game._controls.get_debug_skip()) {
+				_anim_t = 1;
+			}
+			
+			const float TOTAL_ANIM_TIME = 2.5f;
+			float frame_tick = SPUtil.sec_to_tick(TOTAL_ANIM_TIME) * SPUtil.dt_scale_get();
+			
+			const float MODE_1_T = 0.65f;
+			const float MODE_2_T = 0.95f;
+			
+			if (_anim_t < MODE_1_T) {
+				if (_anim_t <= 0) {
+					Vector2 center_pos = SPUtil.canvas_recttransform_relative_transform_from_to_pctfrom(_node_locked_lock.rectTransform, grid_nav._particles.get_parent(), 0.5f, 0.5f);
+					grid_nav._particles.add_particle(SPConfigAnimParticle.cons()
+						.set_ctmax(SPUtil.sec_to_ct(TOTAL_ANIM_TIME * (MODE_1_T - 0)))
+						.set_texture(game._tex_resc.get_tex(RTex.NODE_UNLOCK_SHINE_1))
+						.set_pos(center_pos.x,center_pos.y)
+						.set_alpha(0.1f, 0.95f)
+						.set_scale(0.25f,0.45f)
+					);
+				}
+			
+				float mode_t = (_anim_t - 0) / (MODE_1_T - 0);
+				float tar_hei_pct = 1 - mode_t;
+				
+				for (int i = 0; i < this.all_lock_chains().Count; i++) {
+					Image itr_chain = this.all_lock_chains()[i];
+					
+					itr_chain.fillAmount = tar_hei_pct;
+					
+					Vector2 itr_pos_tl = SPUtil.canvas_recttransform_relative_transform_from_to_pctfrom(itr_chain.rectTransform, grid_nav._particles.get_parent(), 0, tar_hei_pct);
+					Vector2 itr_pos_tr = SPUtil.canvas_recttransform_relative_transform_from_to_pctfrom(itr_chain.rectTransform, grid_nav._particles.get_parent(), 1, tar_hei_pct);
+					
+					Vector2 spawn_pos = Vector2.Lerp(itr_pos_tl, itr_pos_tr, SPUtil.float_random(0,1));
+					
+					grid_nav._particles.add_particle(SPConfigAnimParticle.cons()
+						.set_ctmax(15)
+						.set_texture(game._tex_resc.get_tex(RTex.NODE_UNLOCK_PARTICLE))
+						.set_pos(spawn_pos.x,spawn_pos.y)
+						.set_vel(SPUtil.float_random(-0.5f,0.5f),SPUtil.float_random(-0.5f,0.5f))
+						.set_alpha(0.95f, 0)
+						.set_vr(SPUtil.float_random(-10,10))
+						.set_rotation(SPUtil.float_random(-180,180))
+						.set_scale(0.25f,0.25f)
+					);
+				}
+				
+				if (_anim_t + frame_tick >= MODE_1_T) {
+					{
+						Vector2 center_pos = SPUtil.canvas_recttransform_relative_transform_from_to_pctfrom(_node_locked_lock.rectTransform, grid_nav._particles.get_parent(), 0.5f, 0.5f);
+						grid_nav._particles.add_particle(SPConfigAnimParticle.cons()
+							.set_ctmax(SPUtil.sec_to_ct(TOTAL_ANIM_TIME * (MODE_2_T - MODE_1_T)) + 10)
+							.set_texture(game._tex_resc.get_tex(RTex.NODE_UNLOCK_SHINE_2))
+							.set_pos(center_pos.x,center_pos.y)
+							.set_alpha(0.95f, 0.25f)
+							.set_scale(0.45f,0.30f)
+						);
+					}
+					
+					for (int i = 0; i < 30; i++) {
+						float rad = SPUtil.float_random(-3.14f, 3.14f);
+						Vector2 dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+						
+						Vector2 spawn_dir = SPUtil.vec_add(dir, new Vector2(0.5f,0.5f));
+						Vector2 spawn_pos = SPUtil.canvas_recttransform_relative_transform_from_to_pctfrom(_node_locked_lock.rectTransform, grid_nav._particles.get_parent(), spawn_dir.x, spawn_dir.y);
+						
+						dir = SPUtil.vec_scale(dir, SPUtil.float_random(0.25f, 1.75f));
+						
+						grid_nav._particles.add_particle(SPConfigAnimParticle.cons()
+							.set_ctmax(35)
+							.set_texture(game._tex_resc.get_tex(RTex.NODE_UNLOCK_PARTICLE))
+							.set_pos(spawn_pos.x,spawn_pos.y)
+							.set_vel(dir.x, dir.y)
+							.set_alpha(0.95f, 0f)
+							.set_vr(SPUtil.float_random(-10,10))
+							.set_rotation(SPUtil.float_random(-180,180))
+							.set_scale(0.5f,0.85f)
+						);
+					}
+					
+					_node_locked_lock.gameObject.SetActive(false);
+					for (int i = 0; i < this.all_lock_chains().Count; i++) {
+						this.all_lock_chains()[i].gameObject.SetActive(false);
+						this.all_lock_chains()[i].fillAmount = 1;
+					}
+					_unvisited_root.SetActive(true);
+					_visited_root.SetActive(false);
+					_locked_root.SetActive(false);
+					_text.gameObject.SetActive(true);
+					
+					sync_text_to_node_unvisited_top = false;
+					_text.transform.localScale = SPUtil.valv(0.5f);
+					
+				}
+			} else if (_anim_t < MODE_2_T) {
+				sync_text_to_node_unvisited_top = false;
+				float mode_t = (_anim_t - MODE_1_T) / (MODE_2_T - MODE_1_T);
+				_text.transform.localScale = SPUtil.valv(SPUtil.bezier_val_for_t(
+					new Vector2(0,0.5f),
+					new Vector2(0,1),
+					new Vector2(0.5f,_node_unvisited_top.transform.localScale.x * 1.25f),
+					new Vector2(1,_node_unvisited_top.transform.localScale.x),
+					mode_t
+				).y);
+				
+			} else if (_anim_t >= 1) {
+				_current_state = AnimState.Unvisited_Selected;
+				_transition_state = AnimTransitionState.None;
+			}
+			
+			_anim_t += frame_tick;
+			
+		} break;
 		case AnimTransitionState.PopIn: {
 			_anim_t += SPUtil.sec_to_tick(0.85f) * SPUtil.dt_scale_get();
 			
@@ -170,7 +297,7 @@ public class NodeAnimRoot : MonoBehaviour {
 				_node_unvisited_expandback.gameObject.SetActive(true);
 				_node_unvisited_top.gameObject.SetActive(true);
 				
-				float mode_t = (_anim_t) / (MODE_1_T - 0);
+				float mode_t = (_anim_t - 0) / (MODE_1_T - 0);
 				
 				_node_unvisited_expandback.transform.localScale = SPUtil.valv(
 					SPUtil.y_for_point_of_2pt_line(new Vector2(0,0), new Vector2(1,1), 
@@ -242,19 +369,7 @@ public class NodeAnimRoot : MonoBehaviour {
 				_node_unvisited_top.transform.localScale = SPUtil.valv(1);
 				
 			}
-		} break;
-		
-		case AnimTransitionState.RemoveLock: {
-			if (_current_state != AnimState.Locked_NotCurNodeAccessible && _current_state != AnimState.Locked_Selected && _current_state != AnimState.Locked_Unselected) {
-				_transition_state = AnimTransitionState.None;
-				break;
-			}
-			
-			// ...
-			
-			
-		} break;
-		
+		} break;		
 		case AnimTransitionState.None: {
 			_node_unvisited_backspin.gameObject.SetActive(true);
 			_node_unvisited_topexpandspin.gameObject.SetActive(false);
@@ -316,8 +431,9 @@ public class NodeAnimRoot : MonoBehaviour {
 		
 		_node_visited.transform.localScale = _node_unvisited_top.transform.localScale;
 		_locked_root.transform.localScale = _node_unvisited_top.transform.localScale;
-		_text.transform.localScale = _node_unvisited_top.transform.localScale;
-		
+		if (sync_text_to_node_unvisited_top) {
+			_text.transform.localScale = _node_unvisited_top.transform.localScale;
+		}
 		_canvas_group.alpha = SPUtil.lmovto(_canvas_group.alpha, tar_alpha, 0.05f * SPUtil.dt_scale_get());
 	}
 	

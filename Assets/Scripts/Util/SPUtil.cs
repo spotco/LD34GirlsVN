@@ -111,6 +111,9 @@ public class SPUtil {
 	public static float sec_to_tick(float sec) {
 		return (1 / 60.0f) / sec;
 	}
+	public static float sec_to_ct(float sec) {
+		return (sec * 60.0f);
+	}
 	public static float drpt(float start, float to, float fric) {
 		if (Mathf.Abs(to-start) < 0.001f) {
 			return to;
@@ -425,6 +428,17 @@ public class SPUtil {
 	public static bool rect_transform_contains_screen_point(RectTransform rect, Vector2 s_pos) {
 		Vector2 local_touch_pos = rect.InverseTransformPoint(s_pos);
 		return (rect.rect.Contains(local_touch_pos));
+	}
+	
+	public static Vector2 canvas_recttransform_relative_transform_from_to_pctfrom(RectTransform from, Transform to, float pctx, float pcty) {
+		// canvas how does it work
+		Rect rect_bounds = from.rect;
+		return to.InverseTransformDirection(
+			from.transform.TransformPoint(
+				new Vector2(
+					SPUtil.lerp(rect_bounds.xMin,rect_bounds.xMax,pctx),
+					SPUtil.lerp(rect_bounds.yMin,rect_bounds.yMax,pcty)
+		)));
 	}
 	
 }

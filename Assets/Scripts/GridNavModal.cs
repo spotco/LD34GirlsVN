@@ -18,13 +18,13 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private NodeAnimRoot _anim_root_proto;
 	[SerializeField] private LineProtoRoot _line_root_proto;
 	[SerializeField] private GridNavArrow _nav_arrow_proto;
+	[SerializeField] private Transform _particle_root;
 	
 	private SPDict<GridNode.Directional, GridNavArrow> _directional_to_arrow = new SPDict<GridNode.Directional, GridNavArrow>();
 	
 	[System.NonSerialized] public SPDict<int,GridNode> _id_to_gridnode = new SPDict<int, GridNode>();
 	
 	public SPDict<int,int> _active_gridnodes = new SPDict<int,int>();
-	private List<int> _active_to_remove_gridnodes = new List<int>();
 	private List<int> _enqueued_to_show_gridnodes = new List<int>();
 	
 	private GridNavCharacter _selector_character;
@@ -42,6 +42,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	private Vector2 _last_touch_pos = Vector2.zero;
 	private GridNode _selected_node = null;
 	private GridNode.Directional _facing_directional = GridNode.Directional.None;
+	
+	private GridNode _wait_for_unlock_target = null;
 
 	public enum State {
 		InitialUpdate,
@@ -56,12 +58,16 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	public State _current_state = State.InitialUpdate;
 	private float _state_anim_ct = 0;
 	private float _state_anim_ct_incr = 0;
+	
+	public SPParticleSystem<SPParticle> _particles;
 			
 	public void i_initialize(GameMain game) {
 		_anim_root_proto.gameObject.SetActive(false);
 		_line_root_proto.gameObject.SetActive(false);
-		
 		_nav_arrow_proto.gameObject.SetActive(false);
+		
+		_particles = SPParticleSystem<SPParticle>.cons(_particle_root);
+		
 		for (int i = 0; i < GridNode.all_directionals().Count; i++) {
 			GridNode.Directional itr_directional = GridNode.all_directionals()[i];
 			GridNavArrow neu_arrow = SPUtil.proto_clone(_nav_arrow_proto.gameObject).GetComponent<GridNavArrow>().i_initialize(itr_directional);
@@ -135,6 +141,13 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1, 1/15.0f);
 			selector_position = _current_node.get_selector_stand_position();
 			
+			if (game._controls.get_debug_skip()) {
+				for (int i = 0; i < _enqueued_to_show_gridnodes.Count; i++) {
+					_active_gridnodes[_enqueued_to_show_gridnodes[i]] = 1;
+				}
+				_enqueued_to_show_gridnodes.Clear();
+			}
+			
 			if (_enqueued_to_show_gridnodes.Count > 0) {
 				int tar_id = _enqueued_to_show_gridnodes[0];
 				GridNode tar_node = _id_to_gridnode[tar_id];
@@ -145,7 +158,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				
 				tar_node.set_showing(true, false);
 				
-				if (tar_node.is_showing_anim_finished()) {
+				if (tar_node.is_anim_finished()) {
 					_enqueued_to_show_gridnodes.RemoveAt(0);
 					_active_gridnodes[tar_id] = 1;	
 				}
@@ -153,12 +166,16 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			} else {
 				_current_state = State.WaitingForInput;
 				_state_anim_ct = 0;
-			}
-			
+			}			
 		} break;
 		
 		
 		case State.WaitingForInput: {
+			
+			for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) { // this is done first since this will change gridnode animroot state
+				_id_to_gridnode[_active_gridnodes.key_itr()[i]].i_active_update(game,this);
+			}
+		
 			should_show_nav_arrow = true;
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1, 1/15.0f);
 			
@@ -214,7 +231,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 					}	
 				}
 			}
-		
 		} break;
 		
 		case State.MovingToNode: {
@@ -278,7 +294,17 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 		} break;
 		case State.WaitingForUnlockAnimation: {
-			_current_state = State.WaitingForInput;
+			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1.75f, 1/15.0f);
+			
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
+			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+		
+			if (_wait_for_unlock_target.is_anim_finished()) {
+				_current_state = State.WaitingForInput;
+				this.attempt_open_node_and_update_state(game, _wait_for_unlock_target);
+				_wait_for_unlock_target = null;
+			}
 			
 		} break;
 		}
@@ -322,9 +348,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_grid_map_scale_anchor.transform.localScale = SPUtil.valv(grid_map_anchor_zoom);
 		
 		_inventory_overlay.i_update(game,this);
-		for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) {
-			_id_to_gridnode[_active_gridnodes.key_itr()[i]].i_active_update(game,this);
-		}
+		_particles.i_update(game, this);
 		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
 			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].i_anim_update(game,this);
 		}
@@ -464,10 +488,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		if (node._visited) {
 			return;
 			
-		} else if (GameMain.IGNORE_ITEM_REQ) {
-			_state_anim_ct = 0;
-			_current_state = State.NodeOpenWaitAnim;
-			
 		} else if (node._node_script._affinity_requirement) {
 			if (game._affinity >= GameMain.AFFINITY_REQUIREMENT) {
 				this.trigger_node_event(game,node);
@@ -481,13 +501,15 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			}
 			
 		} else if (node._is_locked) {
-			if (this.node_can_unlock(game, node)) {
+			if (this.node_can_unlock(game, node) || GameMain.IGNORE_ITEM_REQ) {
 				for (int i = 0; i < node._node_script._requirement_items.Count; i++) {
 					string itr = node._node_script._requirement_items[i];
 					game._inventory.remove_item(itr);
 				}
+				
+				_wait_for_unlock_target = node;
+				_wait_for_unlock_target.set_unlocked();
 				_current_state = State.WaitingForUnlockAnimation;
-				//this.trigger_node_event(node);
 				
 			} else {
 				game._popups.add_popup("Locked!");
@@ -516,13 +538,12 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		this.update_accessible();
 		_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Move);
 		
-		for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) {
-			GridNode itr = _id_to_gridnode[_active_gridnodes.key_itr()[i]];
-			int itr_id = itr._node_script._id;
+		for (int i = _active_gridnodes.key_itr().Count-1; i >= 0; i--) {
+			int itr_id = _active_gridnodes.key_itr()[i];
+			GridNode itr = _id_to_gridnode[itr_id];
 			if (!_accessible_grid_nodes.ContainsKey(itr_id)) {
-				if (!_active_to_remove_gridnodes.Contains(itr_id)) {
-					_active_to_remove_gridnodes.Add(itr_id);
-				}
+				itr.set_showing(false, true);
+				_active_gridnodes.Remove(itr_id);
 			}
 		}
 		
@@ -540,16 +561,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_state_anim_ct = 0;
 		
 		_current_node.set_showing(true, true);
-		
-		// TODO -- animate hide gridnodes
-		for (int i = 0; i < _active_to_remove_gridnodes.Count; i++) {
-			int itr_id = _active_gridnodes[i];
-			GridNode itr = _id_to_gridnode[itr_id];
-			itr.set_showing(false, true);
-			_active_gridnodes.Remove(itr_id);
-		}
-		_active_to_remove_gridnodes.Clear();
-		
 	}
 	
 	private Queue<int> __update_accessible_to_search = new Queue<int>();

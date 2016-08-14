@@ -23,10 +23,61 @@ public class SPSpriteAnimator {
 			
 			_image.uvRect = new Rect(uv_x,uv_y,uv_wid,uv_hei);
 		}
+		
+		private float _rotation = 0;
+		public void set_rotation(float val) {
+			_rotation = val;
+			_image.transform.localRotation = SPUtil.set_rotation_quaternion(_image.transform.localRotation, new Vector3(0,0,_rotation));
+		}
+		public float get_rotation() { 
+			return _rotation;
+		}
+		public void set_scale(float val) {
+			_image.transform.localScale = SPUtil.valv(val);
+		}
+		public float get_scale() { 
+			return _image.transform.localScale.x; 
+		}
+		public void set_opacity(float val) {
+			Color color = _image.color;
+			color.a = val;
+			_image.color = color;
+		}
+		public float get_opacity() { 
+			return _image.color.a; 
+		}
+		public void set_pos(float x, float y) {
+			_image.transform.localPosition = new Vector2(x,y);
+		}
+		public Vector2 get_pos() { 
+			return _image.transform.localPosition; 
+		}
+		public void set_texture(Texture val) {
+			_image.texture = val;
+			_image.SetNativeSize();
+		}
+		public void set_name(string val) {
+			_image.gameObject.name = val;
+		}
+		public void add_to_parent(Transform parent) {
+			_image.transform.SetParent(parent);
+		}
 	}
 	
 	public interface Target {
 		void set_tex_rect(Rect rect);
+		
+		void set_rotation(float val);
+		float get_rotation();
+		void set_scale(float val);
+		float get_scale();
+		void set_opacity(float val);
+		float get_opacity();
+		void set_pos(float x, float y);
+		Vector2 get_pos();
+		void set_texture(Texture val);
+		void set_name(string val);
+		void add_to_parent(Transform parent);
 	}
 	
 	private class SPSpriteAnimator_Animation {

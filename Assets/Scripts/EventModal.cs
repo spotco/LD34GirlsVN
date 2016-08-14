@@ -60,7 +60,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			this.end_script_playback_and_close_modal(game);
 		}
 		
-		if (GameMain.DEBUG_CONTROLS && game._controls.get_control_down(ControlManager.Control.Debug1) && game._controls.get_control_down(ControlManager.Control.Debug2)) {
+		if (game._controls.get_debug_skip()) {
 			this.end_script_playback_and_close_modal(game);
 		}
 		
