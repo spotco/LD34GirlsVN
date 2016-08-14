@@ -65,14 +65,16 @@ public class NodeAnimRoot : MonoBehaviour {
 		Locked_NotCurNodeAccessible
 	}
 	private AnimState _current_state;
+	public AnimState get_anim_state() { return _current_state; }
 	
-	private enum AnimTransitionState {
+	public enum AnimTransitionState {
 		None,
 		PopIn,
 		RemoveLock
 	}
 	private AnimTransitionState _transition_state;
-	private AnimTransitionState _target_transition_state;
+	public AnimTransitionState get_transition_state() { return _transition_state; }
+	
 	private float _anim_t = 0;
 	
 	public void set_anim_state(AnimState target_state) {
@@ -113,15 +115,6 @@ public class NodeAnimRoot : MonoBehaviour {
 			
 			_text.gameObject.SetActive(true);
 			this.set_color(TEXT_COLOR_UNVISITED);
-			
-			if (_current_state == AnimState.Hidden) {
-				_transition_state = AnimTransitionState.PopIn;
-				
-				_anim_t = 0;
-				
-				_node_unvisited_expandback.transform.localScale = SPUtil.valv(0);
-				_node_unvisited_top.transform.localScale = SPUtil.valv(0);
-			}
 		
 		} break;
 		case AnimState.Locked_Selected:
@@ -147,6 +140,17 @@ public class NodeAnimRoot : MonoBehaviour {
 		_current_state = target_state;
 	}
 	
+	public void set_transition_state(AnimTransitionState state) {
+		switch(state) {
+		case (AnimTransitionState.PopIn):{
+				_transition_state = AnimTransitionState.PopIn;
+				_anim_t = 0;
+		} break;
+		default: break;
+		}
+		_transition_state = state;
+	}
+	
 	public void i_update() {
 	
 		float spin_vt_scale = 1;
@@ -154,7 +158,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	
 		switch (_transition_state) {
 		case AnimTransitionState.PopIn: {
-			_anim_t += SPUtil.sec_to_tick(1.2f) * SPUtil.dt_scale_get();
+			_anim_t += SPUtil.sec_to_tick(0.85f) * SPUtil.dt_scale_get();
 			
 			const float MODE_1_T = 0.35f;
 			const float MODE_2_T = 0.7f;

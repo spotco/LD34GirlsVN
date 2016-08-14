@@ -22,8 +22,26 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	private SPDict<GridNode.Directional, GridNavArrow> _directional_to_arrow = new SPDict<GridNode.Directional, GridNavArrow>();
 	
 	[System.NonSerialized] public SPDict<int,GridNode> _id_to_gridnode = new SPDict<int, GridNode>();
+	
+	public SPDict<int,int> _active_gridnodes = new SPDict<int,int>();
+	private List<int> _active_to_remove_gridnodes = new List<int>();
+	private List<int> _enqueued_to_show_gridnodes = new List<int>();
+	
 	private GridNavCharacter _selector_character;
 	[System.NonSerialized] public GridNode _current_node;
+	
+	private GridNode _moving_to_node_target = null;
+	private bool _moving_to_node_trigger_at_end = false;
+	private enum SelectionMode {
+		None,
+		Cursor,
+		Directional
+	}
+	
+	private SelectionMode _selection_mode = SelectionMode.None;
+	private Vector2 _last_touch_pos = Vector2.zero;
+	private GridNode _selected_node = null;
+	private GridNode.Directional _facing_directional = GridNode.Directional.None;
 
 	public enum State {
 		InitialUpdate,
@@ -84,21 +102,10 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_current_state = State.InitialUpdate;
 	}
 	
-	private GridNode _moving_to_node_target = null;
-	private bool _moving_to_node_trigger_at_end = false;
-	
 	public void i_update(GameMain game) {	
 		if (game._popups.has_active_popup()) return;
 		
-		_inventory_overlay.i_update(game,this);
 		this.recalc_all_can_move_to_nodes();
-		
-		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
-			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].i_update(game,this);
-		}
-		this.i_update_selected_node(game);
-		
-		_selector_character.i_update(game);
 		
 		Vector2 selector_position = _selector_character.transform.localPosition;
 		Vector2 grid_map_anchor_position = _grid_map_position_anchor.transform.localPosition;
@@ -128,9 +135,22 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1, 1/15.0f);
 			selector_position = _current_node.get_selector_stand_position();
 			
-			// TODO -- node popin
-			_state_anim_ct += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
-			if (_state_anim_ct >= 1) {
+			if (_enqueued_to_show_gridnodes.Count > 0) {
+				int tar_id = _enqueued_to_show_gridnodes[0];
+				GridNode tar_node = _id_to_gridnode[tar_id];
+				
+				Vector2 grid_map_anchor_current_node_focus_point = GridNavCharacter.convert_character_position_to_position_anchor_focus(tar_node.get_center_position());
+				grid_map_anchor_position.x = SPUtil.drpt(grid_map_anchor_position.x, grid_map_anchor_current_node_focus_point.x, 1/15.0f);
+				grid_map_anchor_position.y = SPUtil.drpt(grid_map_anchor_position.y, grid_map_anchor_current_node_focus_point.y, 1/15.0f);
+				
+				tar_node.set_showing(true, false);
+				
+				if (tar_node.is_showing_anim_finished()) {
+					_enqueued_to_show_gridnodes.RemoveAt(0);
+					_active_gridnodes[tar_id] = 1;	
+				}
+				
+			} else {
 				_current_state = State.WaitingForInput;
 				_state_anim_ct = 0;
 			}
@@ -300,13 +320,19 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_selector_character.transform.localPosition = selector_position;
 		_grid_map_position_anchor.transform.localPosition = grid_map_anchor_position;
 		_grid_map_scale_anchor.transform.localScale = SPUtil.valv(grid_map_anchor_zoom);
+		
+		_inventory_overlay.i_update(game,this);
+		for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) {
+			_id_to_gridnode[_active_gridnodes.key_itr()[i]].i_active_update(game,this);
+		}
+		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
+			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].i_anim_update(game,this);
+		}
+		this.i_update_selected_node(game);
+		
+		_selector_character.i_update(game);
 	}
 	
-	private enum SelectionMode {
-		None,
-		Cursor,
-		Directional
-	}
 	private static ControlManager.Control directional_to_key(GridNode.Directional input) {
 		switch (input) {
 		case GridNode.Directional.Up: return ControlManager.Control.MoveUp;
@@ -316,10 +342,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		default: return ControlManager.Control.None;
 		}
 	}
-	private SelectionMode _selection_mode = SelectionMode.None;
-	private Vector2 _last_touch_pos = Vector2.zero;
-	private GridNode _selected_node = null;
-	private GridNode.Directional _facing_directional = GridNode.Directional.None;
 	
 	public bool is_selected_node(GameMain game, GridNode node) {
 		if (_current_state == State.MovingToNode) {
@@ -492,13 +514,49 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	
 	public void return_from_event_modal(GameMain game) {
 		this.update_accessible();
+		_selector_character.set_anim_mode(GridNavCharacter.AnimMode.Move);
+		
+		for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) {
+			GridNode itr = _id_to_gridnode[_active_gridnodes.key_itr()[i]];
+			int itr_id = itr._node_script._id;
+			if (!_accessible_grid_nodes.ContainsKey(itr_id)) {
+				if (!_active_to_remove_gridnodes.Contains(itr_id)) {
+					_active_to_remove_gridnodes.Add(itr_id);
+				}
+			}
+		}
+		
+		for (int i = 0; i < _accessible_grid_nodes.key_itr().Count; i++) {
+			GridNode itr = _id_to_gridnode[_accessible_grid_nodes.key_itr()[i]];
+			int itr_id = itr._node_script._id;
+			if (!_active_gridnodes.ContainsKey(itr_id)) {
+				if (!_enqueued_to_show_gridnodes.Contains(itr_id)) {
+					_enqueued_to_show_gridnodes.Add(itr_id);
+				}
+			}
+		}
+		
 		_current_state = State.WaitingForShowNewNodes;
 		_state_anim_ct = 0;
+		
+		_current_node.set_showing(true, true);
+		
+		// TODO -- animate hide gridnodes
+		for (int i = 0; i < _active_to_remove_gridnodes.Count; i++) {
+			int itr_id = _active_gridnodes[i];
+			GridNode itr = _id_to_gridnode[itr_id];
+			itr.set_showing(false, true);
+			_active_gridnodes.Remove(itr_id);
+		}
+		_active_to_remove_gridnodes.Clear();
+		
 	}
 	
 	private Queue<int> __update_accessible_to_search = new Queue<int>();
 	private HashSet<int> __update_accessible_searched = new HashSet<int>();
+	private SPDict<int,int> _accessible_grid_nodes = new SPDict<int, int>();
 	public void update_accessible() {
+		_accessible_grid_nodes.Clear();
 		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
 			GridNode itr_node = _id_to_gridnode[_id_to_gridnode.key_itr()[i]];
 			itr_node._accessible = false;
@@ -512,6 +570,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		while (__update_accessible_to_search.Count > 0) {
 			GridNode itr_node = _id_to_gridnode[__update_accessible_to_search.Dequeue()];
 			itr_node._accessible = true;
+			_accessible_grid_nodes[itr_node._node_script._id] = 1;
+			
 			if (itr_node._visited) {
 				for (int i = 0; i < itr_node._node_script._links.Count; i++) {
 					int itr_link_id = itr_node._node_script._links[i];

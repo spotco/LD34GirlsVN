@@ -5,618 +5,684 @@
 	<key>frames</key>
 	<dict>
 		
-		<key>map_kurumi__down_001.png</key>
+		<key>map_kurumi_idle_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{6, 11}, {116, 144}}</string>
+			<string>{{2, 7}, {113, 156}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 648}, {142, 160}}</string>
+			<string>{{417, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_002.png</key>
+		<key>map_kurumi_idle_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 6}, {116, 132}}</string>
+			<string>{{2, 8}, {113, 156}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{432, 0}, {142, 160}}</string>
+			<string>{{0, 504}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_003.png</key>
+		<key>map_kurumi_idle_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{3, 11}, {116, 144}}</string>
+			<string>{{2, 10}, {113, 154}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 810}, {142, 160}}</string>
+			<string>{{417, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_004.png</key>
+		<key>map_kurumi_idle_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 6}, {116, 132}}</string>
+			<string>{{0, 12}, {117, 152}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 648}, {142, 160}}</string>
+			<string>{{417, 504}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_angle_001.png</key>
+		<key>map_kurumi_idle_005.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{5, 6}, {120, 152}}</string>
+			<string>{{1, 10}, {115, 154}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 0}, {142, 160}}</string>
+			<string>{{278, 672}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_angle_002.png</key>
+		<key>map_kurumi_idle_006.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{5, 0}, {120, 138}}</string>
+			<string>{{2, 9}, {113, 154}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 810}, {142, 160}}</string>
+			<string>{{0, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_angle_003.png</key>
+		<key>map_kurumi_walk_down_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{3, 4}, {118, 144}}</string>
+			<string>{{11, 10}, {111, 150}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 486}, {142, 160}}</string>
+			<string>{{139, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__down_angle_004.png</key>
+		<key>map_kurumi_walk_down_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{5, 0}, {120, 134}}</string>
+			<string>{{12, 7}, {109, 134}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 162}, {142, 160}}</string>
+			<string>{{278, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__idle_001.png</key>
+		<key>map_kurumi_walk_down_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 0}, {122, 160}}</string>
+			<string>{{10, 10}, {111, 150}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{720, 162}, {142, 160}}</string>
+			<string>{{695, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__idle_002.png</key>
+		<key>map_kurumi_walk_down_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 3}, {120, 156}}</string>
+			<string>{{12, 7}, {109, 134}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 0}, {142, 160}}</string>
+			<string>{{556, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__idle_003.png</key>
+		<key>map_kurumi_walk_down_angle_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{0, 6}, {124, 152}}</string>
+			<string>{{6, 9}, {115, 154}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 486}, {142, 160}}</string>
+			<string>{{834, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__idle_004.png</key>
+		<key>map_kurumi_walk_down_angle_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 3}, {120, 156}}</string>
+			<string>{{5, 4}, {113, 146}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 0}, {142, 160}}</string>
+			<string>{{417, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__side_001.png</key>
+		<key>map_kurumi_walk_down_angle_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{10, 12}, {122, 140}}</string>
+			<string>{{6, 9}, {111, 146}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{864, 162}, {142, 160}}</string>
+			<string>{{278, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__side_002.png</key>
+		<key>map_kurumi_walk_down_angle_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{13, 6}, {114, 142}}</string>
+			<string>{{5, 4}, {113, 138}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 324}, {142, 160}}</string>
+			<string>{{0, 672}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__side_003.png</key>
+		<key>map_kurumi_walk_side_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{11, 12}, {120, 144}}</string>
+			<string>{{9, 10}, {113, 150}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{576, 0}, {142, 160}}</string>
+			<string>{{0, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__side_004.png</key>
+		<key>map_kurumi_walk_side_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{13, 6}, {114, 142}}</string>
+			<string>{{12, 5}, {107, 156}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 162}, {142, 160}}</string>
+			<string>{{139, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_001.png</key>
+		<key>map_kurumi_walk_side_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{9, 10}, {108, 134}}</string>
+			<string>{{9, 10}, {113, 146}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 810}, {142, 160}}</string>
+			<string>{{278, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_002.png</key>
+		<key>map_kurumi_walk_side_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{10, 4}, {104, 126}}</string>
+			<string>{{0, 0}, {119, 152}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{288, 162}, {142, 160}}</string>
+			<string>{{695, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_003.png</key>
+		<key>map_kurumi_walk_up_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{8, 10}, {108, 134}}</string>
+			<string>{{17, 7}, {105, 144}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{576, 324}, {142, 160}}</string>
+			<string>{{556, 336}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_004.png</key>
+		<key>map_kurumi_walk_up_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{10, 4}, {104, 126}}</string>
+			<string>{{19, 5}, {101, 128}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 324}, {142, 160}}</string>
+			<string>{{834, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_angle_001.png</key>
+		<key>map_kurumi_walk_up_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{12, 13}, {130, 134}}</string>
+			<string>{{17, 7}, {105, 144}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 324}, {142, 160}}</string>
+			<string>{{139, 840}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_angle_002.png</key>
+		<key>map_kurumi_walk_up_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{16, 8}, {108, 124}}</string>
+			<string>{{19, 5}, {101, 128}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{0, 486}, {142, 160}}</string>
+			<string>{{695, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_angle_003.png</key>
+		<key>map_kurumi_walk_up_angle_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{14, 14}, {108, 138}}</string>
+			<string>{{11, 13}, {113, 146}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{432, 324}, {142, 160}}</string>
+			<string>{{139, 0}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__up_angle_004.png</key>
+		<key>map_kurumi_walk_up_angle_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{16, 8}, {108, 132}}</string>
+			<string>{{16, 9}, {107, 132}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{432, 162}, {142, 160}}</string>
+			<string>{{0, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__yay_001.png</key>
+		<key>map_kurumi_walk_up_angle_003.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{4, 0}, {122, 160}}</string>
+			<string>{{14, 12}, {105, 154}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{576, 162}, {142, 160}}</string>
+			<string>{{139, 504}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__yay_002.png</key>
+		<key>map_kurumi_walk_up_angle_004.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{1, 6}, {122, 152}}</string>
+			<string>{{16, 9}, {107, 134}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{144, 648}, {142, 160}}</string>
+			<string>{{278, 840}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__yay_003.png</key>
+		<key>map_kurumi_yay_001.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{5, 0}, {130, 160}}</string>
+			<string>{{3, 8}, {111, 156}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{864, 0}, {142, 160}}</string>
+			<string>{{834, 168}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>map_kurumi__yay_004.png</key>
+		<key>map_kurumi_yay_002.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
 			
 			</array>
 			<key>spriteColorRect</key>
-			<string>{{11, 2}, {124, 158}}</string>
+			<string>{{0, 12}, {119, 152}}</string>
 			<key>spriteOffset</key>
 			<string>{0, 0}</string>
 			<key>spriteSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteSourceSize</key>
-			<string>{142, 160}</string>
+			<string>{137, 166}</string>
 			<key>spriteTrimmed</key>
 			<false/>
 			<key>textureRect</key>
-			<string>{{720, 0}, {142, 160}}</string>
+			<string>{{278, 504}, {137, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>map_kurumi_yay_003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{9, 4}, {119, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 0}</string>
+			<key>spriteSize</key>
+			<string>{137, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{137, 166}</string>
+			<key>spriteTrimmed</key>
+			<false/>
+			<key>textureRect</key>
+			<string>{{0, 840}, {137, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>map_kurumi_yay_004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{8, 7}, {129, 158}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 0}</string>
+			<key>spriteSize</key>
+			<string>{137, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{137, 166}</string>
+			<key>spriteTrimmed</key>
+			<false/>
+			<key>textureRect</key>
+			<string>{{556, 168}, {137, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>map_kurumi_yay_005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{8, 7}, {129, 158}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 0}</string>
+			<key>spriteSize</key>
+			<string>{137, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{137, 166}</string>
+			<key>spriteTrimmed</key>
+			<false/>
+			<key>textureRect</key>
+			<string>{{139, 672}, {137, 166}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
@@ -641,7 +707,7 @@
 			<key>textureFileExtension</key>
 			<string>.png</string>
 			<key>coordinatesFileName</key>
-			<string>kurumi_map</string>
+			<string>kurumi_map.txt</string>
 			<key>coordinatesFileExtension</key>
 			<string>.plist</string>
 			<key>premultipliedAlpha</key>

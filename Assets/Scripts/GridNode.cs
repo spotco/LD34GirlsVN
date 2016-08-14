@@ -11,7 +11,7 @@ public class GridNode : MonoBehaviour {
 	
 	private NodeAnimRoot _self_nodeanimroot;
 	public bool _is_locked;
-	private Dictionary<int,LineProtoRoot> _id_to_line = new Dictionary<int, LineProtoRoot>();
+	private SPDict<int,LineProtoRoot> _id_to_line = new SPDict<int, LineProtoRoot>();
 	public bool _accessible;
 	public bool _visited;
 	private static Font __cached_font;
@@ -57,6 +57,28 @@ public class GridNode : MonoBehaviour {
 		
 		_accessible = false;
 		_visited = false;
+	}
+	
+	public void set_showing(bool val, bool imm) {
+		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
+			if (val) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+				
+				if (imm) {
+					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.None);
+				} else {
+					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.PopIn);
+				}
+			}
+			
+		} else { // showing
+			if (!val) {
+				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
+			}
+		}	
+	}
+	public bool is_showing_anim_finished() {
+		return _self_nodeanimroot.get_transition_state() == NodeAnimRoot.AnimTransitionState.None;
 	}
 	
 	public List<int> _unidirectional_reverse_links = new List<int>();
@@ -298,13 +320,21 @@ public class GridNode : MonoBehaviour {
 		);
 	}
 	
-	public void i_update(GameMain game, GridNavModal grid_nav) {
-			
-		foreach (int itr_id in _id_to_line.Keys) {
+	public void i_anim_update(GameMain game, GridNavModal grid_nav) {
+		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
+			return;
+		}
+		_self_nodeanimroot.i_update();
+	}
+	
+	public void i_active_update(GameMain game, GridNavModal grid_nav) {
+		for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
+			int itr_id = _id_to_line.key_itr()[i];
 			if (grid_nav._current_node == this) {
 				GridNode itr_target_node = grid_nav._id_to_gridnode[itr_id];
+				int itr_key = itr_target_node._node_script._id;
 				
-				if (grid_nav.get_all_can_move_to_nodes().ContainsKey(itr_target_node._node_script._id)) {
+				if (grid_nav.get_all_can_move_to_nodes().ContainsKey(itr_key) && grid_nav._active_gridnodes.ContainsKey(itr_key)) {
 					if (grid_nav.is_selected_node(game, itr_target_node)) {
 						this.set_line_state(itr_id, LineState.ActiveSelected);
 					} else {
@@ -353,8 +383,6 @@ public class GridNode : MonoBehaviour {
 				}
 			}
 		}
-		
-		_self_nodeanimroot.i_update();
 	}
 	
 	private RectTransform __rect_transform;
