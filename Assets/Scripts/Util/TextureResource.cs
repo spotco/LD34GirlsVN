@@ -44,9 +44,9 @@ public class TextureResource {
 	private Texture load_texture_from_streamingassets(string path) {
 		Debug.LogWarning("texture from streaming:"+path);
 		path = System.IO.Path.Combine(Application.streamingAssetsPath, path+".png");
-		Texture2D rtv = new Texture2D(0,0,TextureFormat.ARGB32,false);
+		Texture2D rtv = new Texture2D(0,0,TextureFormat.ARGB32, false);
 		rtv.LoadImage(SPUtil.streaming_asset_load(path));
-		rtv.filterMode = FilterMode.Point;
+		rtv.filterMode = FilterMode.Trilinear;
 		return rtv;
 	}
 
@@ -55,6 +55,7 @@ public class TextureResource {
 		//null;
 		//Resources.Load<Texture2D>(CachedStreamingAssets.texture_key_to_resource_path(texkey));
 		Resources.Load<Texture2D>(texkey);
+		tex.filterMode = FilterMode.Trilinear;
 		if (tex == null) {
 			tex = this.load_texture_from_streamingassets(texkey);
 		}
