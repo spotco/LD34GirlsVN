@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class GridNavCharacter : MonoBehaviour {
+public class GridNavSelectorCharacter : MonoBehaviour {
 	
 	[SerializeField] private RawImage _image;
 	

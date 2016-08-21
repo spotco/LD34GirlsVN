@@ -16336,10 +16336,10 @@ GameObject:
   m_Component:
   - 224: {fileID: 1304240163}
   - 222: {fileID: 1304240165}
-  - 114: {fileID: 1304240166}
   - 114: {fileID: 1304240164}
+  - 114: {fileID: 1304240166}
   m_Layer: 5
-  m_Name: GridNavCharacterProto
+  m_Name: GridNavSelectorCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16404,7 +16404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304240162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3609e125cba048d59267d216f95dba9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef79597e763a470cb91011ce72758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1304240164}

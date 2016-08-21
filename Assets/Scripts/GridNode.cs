@@ -304,7 +304,7 @@ public class GridNode : MonoBehaviour {
 		}
 		
 		tar.gameObject.SetActive(true);
-		tar.i_update(state == LineState.ActiveSelected);
+		tar.set_selected(state == LineState.ActiveSelected);
 		
 		Color tar_color;
 		float tar_height;
@@ -319,42 +319,22 @@ public class GridNode : MonoBehaviour {
 			tar_height = 0.85f;
 		}
 		
-		tar._image.color = new Color(
-			tar_color.r, tar_color.g, tar_color.b, SPUtil.lmovto(tar._image.color.a, tar_color.a, 0.05f * SPUtil.dt_scale_get())
-		);
-		
-		tar._rect_transform.localScale = new Vector3(
-			tar._rect_transform.localScale.x, 
-			SPUtil.drpt(tar._rect_transform.localScale.y,tar_height,1/10.0f), 
-			tar._rect_transform.localScale.z
-		);
+		tar.set_tar_color(tar_color);
+		tar.set_tar_height(tar_height);
 	}
 	
 	public void i_anim_update(GameMain game, GridNavModal grid_nav) {
 		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
+			for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
+				int itr_id = _id_to_line.key_itr()[i];
+				this.set_line_state(itr_id, LineState.NotAccessible);
+			}
 			return;
 		}
+		
 		for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
 			int itr_id = _id_to_line.key_itr()[i];
-			if (grid_nav._current_node == this) {
-				GridNode itr_target_node = grid_nav._id_to_gridnode[itr_id];
-				int itr_key = itr_target_node._node_script._id;
-				
-				if (grid_nav.get_all_can_move_to_nodes().ContainsKey(itr_key) && grid_nav._active_gridnodes.ContainsKey(itr_key)) {
-					if (grid_nav.is_selected_node(game, itr_target_node)) {
-						this.set_line_state(itr_id, LineState.ActiveSelected);
-					} else {
-						this.set_line_state(itr_id, LineState.ActiveNotSelected);
-					}
-					
-				} else {
-					this.set_line_state(itr_id, LineState.NotSelected);
-					
-				}
-				
-			} else {
-				this.set_line_state(itr_id, LineState.NotSelected);
-			}
+			_id_to_line[itr_id].i_update();	
 		}
 		_self_nodeanimroot.i_update(game, grid_nav);
 	}
@@ -401,6 +381,32 @@ public class GridNode : MonoBehaviour {
 				} else {
 					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_NotCurNodeAccessible);
 				}
+			}
+		}
+		this.i_update_linestates(game,grid_nav);	
+	}
+	
+	public void i_update_linestates(GameMain game, GridNavModal grid_nav) {
+		for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
+			int itr_id = _id_to_line.key_itr()[i];
+			if (grid_nav._current_node == this) {
+				GridNode itr_target_node = grid_nav._id_to_gridnode[itr_id];
+				int itr_key = itr_target_node._node_script._id;
+				
+				if (grid_nav.get_all_can_move_to_nodes().ContainsKey(itr_key) && grid_nav._active_gridnodes.ContainsKey(itr_key)) {
+					if (grid_nav.is_selected_node(game, itr_target_node)) {
+						this.set_line_state(itr_id, LineState.ActiveSelected);
+					} else {
+						this.set_line_state(itr_id, LineState.ActiveNotSelected);
+					}
+					
+				} else {
+					this.set_line_state(itr_id, LineState.NotSelected);
+					
+				}
+				
+			} else {
+				this.set_line_state(itr_id, LineState.NotSelected);
 			}
 		}
 	}
