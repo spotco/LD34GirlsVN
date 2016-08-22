@@ -139,7 +139,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		
 		BGControllerBase active_bg_controller = game._background.get_latest_active_bgcontroller();
 		if (active_bg_controller != null && active_bg_controller.get_character_root() != null) {
-			neu_char.transform.parent = active_bg_controller.get_character_root();
+			neu_char.transform.SetParent(active_bg_controller.get_character_root());
 		}
 		
 		neu_char.i_initialize();

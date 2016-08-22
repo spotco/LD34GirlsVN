@@ -44,12 +44,11 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-//  gridnav arrow animations (wait on art?)
-// 	click on directionals to move in direction
 //  other chibis implementation
 //	save/load implementation
 //	end to title UIs
-//	
+//
+//  backup old script	
 //	heart particles
 //  closer petals blurred and bigger in title
 //  title petals also fade in

@@ -12,7 +12,8 @@ public class GridNavArrow : MonoBehaviour {
 		Hidden,
 		HiddenToShowing,
 		Showing,
-		ShowingToHidden
+		ShowingToHidden,
+		SelectedShowingToHidden
 	}
 	enum SelectedMode {
 		Selected,
@@ -21,6 +22,9 @@ public class GridNavArrow : MonoBehaviour {
 	private ShowingMode _showing_mode;
 	private SelectedMode _selected_mode;
 	private float _anim_ct;
+	private RectTransform _rect_transform;
+	
+	private float _cursor_yvel;
 	
 	public GridNavArrow i_initialize(GridNode.Directional directional) {
 		
@@ -30,11 +34,17 @@ public class GridNavArrow : MonoBehaviour {
 		_showing_mode = ShowingMode.Hidden;
 		_selected_mode = SelectedMode.Unselected;
 		_anim_ct = 0;
+		_rect_transform = _arrow_back.GetComponent<RectTransform>();
+		
+		_cursor_yvel = 0;
 		
 		return this;
 	}
 	
 	public void set_is_showing_is_selected(bool showing, bool selected, bool imm = false) {
+		if (_showing_mode == ShowingMode.SelectedShowingToHidden && imm == false) {
+			return;
+		}
 		_selected_mode = selected ? SelectedMode.Selected : SelectedMode.Unselected;
 		
 		if (imm) {
@@ -61,32 +71,111 @@ public class GridNavArrow : MonoBehaviour {
 		if (_showing_mode == ShowingMode.Hidden) {
 			_canvas_group.alpha = 0;
 			this.transform.localScale = SPUtil.valv(1);
+			this.cursor_to_default_anim_update();
 			
 		} else if (_showing_mode == ShowingMode.HiddenToShowing) {
 			_anim_ct += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
 			_canvas_group.alpha = SPUtil.lerp(0,0.75f,_anim_ct);
 			
+			this.cursor_to_default_anim_update();
+			float scx = _arrow_back.transform.localScale.x;
+			float scy = _arrow_back.transform.localScale.y;
+			_arrow_back.transform.localScale = new Vector3(
+				SPUtil.drpt(scx,1,1/5.0f),
+				SPUtil.drpt(scy,1,1/5.0f),
+				1
+			);
 			if (_anim_ct >= 1) {
 				_showing_mode = ShowingMode.Showing;
 			}
+			
 			
 		} else if (_showing_mode == ShowingMode.Showing) {
 			_canvas_group.alpha = 0.75f;
 			float tar_scale = 1;
 			if (_selected_mode == SelectedMode.Selected) {
-				tar_scale = 1.5f;
+				this.cursor_anim_update();
+				tar_scale = 1.15f;
+			} else {
+				this.cursor_to_default_anim_update();
 			}
-			this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/10.0f));
+			this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/5.0f));
 		
 		} else if (_showing_mode == ShowingMode.ShowingToHidden) {
 			_anim_ct += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
 			_canvas_group.alpha = SPUtil.lerp(0.75f,0,_anim_ct);
 			
+			this.cursor_to_default_anim_update();
+			float scx = _arrow_back.transform.localScale.x;
+			float scy = _arrow_back.transform.localScale.y;
+			_arrow_back.transform.localScale = new Vector3(
+				SPUtil.drpt(scx,0,1/5.0f),
+				SPUtil.drpt(scy,0,1/5.0f),
+				1
+			);
+			
 			if (_anim_ct >= 1) {
 				_showing_mode = ShowingMode.Hidden;
 			}
+			
+		} else if (_showing_mode == ShowingMode.SelectedShowingToHidden) {
+			_anim_ct += SPUtil.sec_to_tick(0.45f) * SPUtil.dt_scale_get();
+			_canvas_group.alpha = SPUtil.drpt(_canvas_group.alpha,0,1/10.0f);
+			
+			float scx = _arrow_back.transform.localScale.x;
+			float scy = _arrow_back.transform.localScale.y;
+			_arrow_back.transform.localScale = new Vector3(
+				SPUtil.drpt(scx,1.5f,1/7.0f),
+				SPUtil.drpt(scy,1.5f,1/7.0f),
+				1
+			);
+			if (_anim_ct >= 1) {
+				_showing_mode = ShowingMode.Hidden;
+			}
+		
+		} else if (_showing_mode == ShowingMode.Hidden) {
+			_canvas_group.alpha = 0;
+			this.cursor_to_default_anim_update();
+			_arrow_back.transform.localScale = SPUtil.valv(0);
 		}
 	}
+	
+	public void trigger_selected() {
+		_showing_mode = ShowingMode.SelectedShowingToHidden;
+		_anim_ct = 0;
+	}
+	
+	private void cursor_anim_update() {
+		float cursor_ypos = _arrow_back.transform.localPosition.y;
+		_cursor_yvel -= 0.1f * SPUtil.dt_scale_get();
+		cursor_ypos += _cursor_yvel * SPUtil.dt_scale_get();
+		
+		_arrow_back.transform.localScale = new Vector3(
+			SPUtil.drpt(_arrow_back.transform.localScale.x, SPUtil.y_for_point_of_2pt_line(new Vector2(-3.5f,1.35f),new Vector2(0,1), _cursor_yvel), 1/5.0f),
+			SPUtil.drpt(_arrow_back.transform.localScale.y, SPUtil.y_for_point_of_2pt_line(new Vector2(-3.5f,1),new Vector2(0,1.1f), _cursor_yvel), 1/5.0f),
+			1
+		);
+		if (_cursor_yvel < 0 && cursor_ypos < 0) {
+			cursor_ypos = 0;
+			_cursor_yvel = 1.45f;
+		}
+		_arrow_back.transform.localPosition = new Vector3(_arrow_back.transform.localPosition.x, cursor_ypos, _arrow_back.transform.localPosition.z);
+	}
+	
+	private void cursor_to_default_anim_update() {
+		_arrow_back.transform.localScale = new Vector3(
+			SPUtil.drpt(_arrow_back.transform.localScale.x, 1, 1/5.0f),
+			SPUtil.drpt(_arrow_back.transform.localScale.y, 1, 1/5.0f),
+			1
+		);
+		float cursor_ypos = _arrow_back.transform.localPosition.y;
+		cursor_ypos = SPUtil.drpt(cursor_ypos,0,1/5.0f);
+		
+		_arrow_back.transform.localPosition = new Vector3(_arrow_back.transform.localPosition.x, cursor_ypos, _arrow_back.transform.localPosition.z);
+		_cursor_yvel = 0;
+	}
+	
+	public RectTransform get_recttransform() { return _rect_transform; }
 	
 	public void i_update() {
 		state_update();

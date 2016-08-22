@@ -50,6 +50,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		InitialUpdate,
 		WaitingForInput,
 		MovingToNode,
+		MovingToNodeTriggerAtEndDelay,
 		NodeOpenWaitAnim,
 		WaitingForLockedMessage,
 		WaitingForUnlockAnimation,
@@ -218,6 +219,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 					
 				} else if (_selected_node != null) {
 					if (this.get_all_can_move_to_nodes().ContainsKey(_selected_node._node_script._id)) {
+						this.gridnav_arrow_trigger_for_target_node(game,_selected_node);
 						_current_state = State.MovingToNode;
 						_moving_to_node_target = _selected_node;
 						_moving_to_node_trigger_at_end = true;
@@ -229,6 +231,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			} else if (!any_directional_is_down && any_directional_just_released) {
 				if (_selected_node != null) {
 					if (this.get_all_can_move_to_nodes().ContainsKey(_selected_node._node_script._id)) {
+						this.gridnav_arrow_trigger_for_target_node(game,_selected_node);
 						_current_state = State.MovingToNode;
 						_moving_to_node_target = _selected_node;
 						_moving_to_node_trigger_at_end = false;
@@ -288,13 +291,30 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			if (_state_anim_ct >= 1) {
 				_state_anim_ct = 0;
 				_current_node = _moving_to_node_target;
-				_current_state = State.WaitingForInput;
-				
 				if (_moving_to_node_trigger_at_end) {
-					this.attempt_open_node_and_update_state(game, _current_node);
+					_current_state = State.MovingToNodeTriggerAtEndDelay;
+				} else {
+					_current_state = State.WaitingForInput;
 				}
 			}
 			
+		} break;
+		case State.MovingToNodeTriggerAtEndDelay: {
+		
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
+			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			_selector_character.set_anim_mode(GridNavSelectorCharacter.AnimMode.Move);
+			
+			Vector2 grid_map_anchor_current_node_focus_point = GridNavSelectorCharacter.convert_character_position_to_position_anchor_focus(_selector_character.transform.localPosition);
+			grid_map_anchor_position.x = SPUtil.drpt(grid_map_anchor_position.x, grid_map_anchor_current_node_focus_point.x, 1/15.0f);
+			grid_map_anchor_position.y = SPUtil.drpt(grid_map_anchor_position.y, grid_map_anchor_current_node_focus_point.y, 1/15.0f);
+			
+			if (SPUtil.vec_dist(selector_tar_pos,selector_position) < 5) {
+				_current_state = State.WaitingForInput;
+				this.attempt_open_node_and_update_state(game, _current_node);
+			}
+		
 		} break;
 		case State.NodeOpenWaitAnim: {
 		
@@ -333,6 +353,10 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			
+			Vector2 grid_map_anchor_current_node_focus_point = GridNavSelectorCharacter.convert_character_position_to_position_anchor_focus(_selector_character.transform.localPosition);
+			grid_map_anchor_position.x = SPUtil.drpt(grid_map_anchor_position.x, grid_map_anchor_current_node_focus_point.x, 1/15.0f);
+			grid_map_anchor_position.y = SPUtil.drpt(grid_map_anchor_position.y, grid_map_anchor_current_node_focus_point.y, 1/15.0f);
 		
 			if (_wait_for_unlock_target.is_anim_finished()) {
 				_current_state = State.WaitingForInput;
@@ -342,44 +366,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 		} break;
 		}
-		
-		for (int i = 0; i < _directional_to_arrow.key_itr().Count; i++) {
-			GridNode.Directional itr_directional = _directional_to_arrow.key_itr()[i];
-			GridNavArrow itr_arrow = _directional_to_arrow[itr_directional];
-			
-			
-			GridNode move_to_node = this.get_directional_move_attempt_node(itr_directional);
-			if (should_show_nav_arrow && move_to_node != null) {
-				itr_arrow.set_is_showing_is_selected(true,false);
-				
-				float dist = SPUtil.vec_dist(_current_node.get_center_position(), move_to_node.get_center_position());
-				float offset_dist = 75;
-				
-				
-				
-				if (dist > 200) {
-					offset_dist = dist / 2.0f;
-				} else if (!_current_node._visited) {
-					offset_dist = 100;
-				}
-				itr_arrow.transform.localPosition = SPUtil.vec_add(
-					_current_node.get_center_position(),
-					SPUtil.vec_scale(
-						SPUtil.vec_sub(
-							move_to_node.get_center_position(), 
-							_current_node.get_center_position()
-						).normalized, offset_dist));
-				
-			} else {
-				itr_arrow.set_is_showing_is_selected(false,false);
-			}
-			
-			itr_arrow.i_update();
-		}
-		
 		_selector_character.transform.localPosition = selector_position;
 		_grid_map_position_anchor.transform.localPosition = grid_map_anchor_position;
 		_grid_map_scale_anchor.transform.localScale = SPUtil.valv(grid_map_anchor_zoom);
+		
+		this.i_update_grid_nav_arrows(game, should_show_nav_arrow);
 		
 		_inventory_overlay.i_update(game,this);
 		_particles.i_update(game, this);
@@ -389,6 +380,57 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		this.i_update_selected_node(game);
 		
 		_selector_character.i_update(game);
+	}
+	
+	private void gridnav_arrow_trigger_for_target_node(GameMain game, GridNode node) {
+		for (int i = 0; i < GridNode.all_directionals().Count; i++) {
+			GridNode.Directional itr_directional = GridNode.all_directionals()[i];
+			if (this.get_directional_move_attempt_node(itr_directional) == node) {
+				_directional_to_arrow[itr_directional].trigger_selected();
+				break;
+			}
+		}
+	}
+	
+	private void i_update_grid_nav_arrows(GameMain game, bool should_show_nav_arrow) {
+		for (int i = 0; i < _directional_to_arrow.key_itr().Count; i++) {
+			GridNode.Directional itr_directional = _directional_to_arrow.key_itr()[i];
+			GridNavArrow itr_arrow = _directional_to_arrow[itr_directional];
+			ControlManager.Control itr_control = GridNavModal.directional_to_key(itr_directional);
+			
+			GridNode move_to_node = this.get_directional_move_attempt_node(itr_directional);
+			if (should_show_nav_arrow && move_to_node != null) {
+				if (_selection_mode == SelectionMode.Cursor && this.is_selected_node(game, move_to_node)) {
+					itr_arrow.set_is_showing_is_selected(true,true);
+				} else if (_selection_mode == SelectionMode.Directional && game._controls.get_control_down(itr_control)) {
+					itr_arrow.set_is_showing_is_selected(true,true);
+				} else {
+					itr_arrow.set_is_showing_is_selected(true,false);
+				}
+				
+				
+				float dist = SPUtil.vec_dist(_current_node.get_center_position(), move_to_node.get_center_position());
+				float offset_dist = 75;
+				
+				if (dist > 200) {
+					offset_dist = dist / 2.0f;
+				} else if (!_current_node._visited) {
+					offset_dist = 100;
+				}
+				itr_arrow.transform.localPosition = SPUtil.vec_add(
+					_current_node.get_center_position(),
+					SPUtil.vec_scale(
+					SPUtil.vec_sub(
+						move_to_node.get_center_position(), 
+						_current_node.get_center_position()
+					).normalized, offset_dist));
+				
+			} else {
+				itr_arrow.set_is_showing_is_selected(false,false);
+			}
+			
+			itr_arrow.i_update();
+		}
 	}
 	
 	private static ControlManager.Control directional_to_key(GridNode.Directional input) {
@@ -424,9 +466,15 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		}
 		
 		if (!selection_mode_set_this_frame) {
-			if (game._controls.get_move().magnitude > 0) {
-				_selection_mode = SelectionMode.Directional;
-				selection_mode_set_this_frame = true;
+			for (int i = 0; i < GridNode.all_directionals().Count; i++) {
+				GridNode.Directional itr_dir = GridNode.all_directionals()[i];
+				ControlManager.Control itr_ctrl = GridNavModal.directional_to_key(itr_dir);
+			
+				if (game._controls.get_control_just_pressed(itr_ctrl)) {
+					_selection_mode = SelectionMode.Directional;
+					selection_mode_set_this_frame = true;
+					break;
+				}
 			}
 		}
 		
