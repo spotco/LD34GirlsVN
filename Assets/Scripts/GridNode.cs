@@ -59,23 +59,52 @@ public class GridNode : MonoBehaviour {
 		_visited = false;
 	}
 	
-	public void set_showing(bool val, bool imm) {
-		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
-			if (val) {
-				if (_is_locked) {
-					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Locked_Unselected);
+	public void set_showing(bool val, bool imm, bool selected) {
+		
+		NodeAnimRoot.AnimState tar_animstate = NodeAnimRoot.AnimState.None;
+		if (val) {
+			if (_is_locked) {
+				if (selected) {
+					tar_animstate = NodeAnimRoot.AnimState.Locked_Selected;
 				} else {
-					_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Unvisited_Unselected);
+					tar_animstate = NodeAnimRoot.AnimState.Locked_Unselected;
+				}
+			} else if (_visited) {
+				if (selected) {
+					tar_animstate = NodeAnimRoot.AnimState.Visited_Selected;
+				} else {
+					tar_animstate = NodeAnimRoot.AnimState.Visited_Unselected;
 				}
 				
-				if (imm) {
-					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.None);
+			} else {
+				if (selected) {
+					tar_animstate = NodeAnimRoot.AnimState.Unvisited_Selected;
 				} else {
-					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.PopIn);
+					tar_animstate = NodeAnimRoot.AnimState.Unvisited_Unselected;
 				}
 			}
 			
+
+		}
+	
+		if (_self_nodeanimroot.get_anim_state() == NodeAnimRoot.AnimState.Hidden) {
+			_self_nodeanimroot.set_anim_state(tar_animstate);
+			if (imm) {
+				_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.None);
+				_self_nodeanimroot.i_update(null,null); //lol
+			} else {
+				_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.PopIn);
+			}
+			
 		} else { // showing
+			if (tar_animstate != NodeAnimRoot.AnimState.None && tar_animstate != _self_nodeanimroot.get_anim_state()) {
+				_self_nodeanimroot.set_anim_state(tar_animstate);
+				if (imm) {
+					_self_nodeanimroot.set_transition_state(NodeAnimRoot.AnimTransitionState.None);
+					_self_nodeanimroot.i_update(null,null); //lol
+				}
+			}
+		
 			if (!val) {
 				_self_nodeanimroot.set_anim_state(NodeAnimRoot.AnimState.Hidden);
 			}

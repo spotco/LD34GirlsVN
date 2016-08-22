@@ -50,6 +50,7 @@ public class NodeAnimRoot : MonoBehaviour {
 	}
 	
 	public enum AnimState {
+		None,
 		Hidden,
 		Visited_Selected,
 		Visited_Unselected,

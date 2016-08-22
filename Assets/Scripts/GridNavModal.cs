@@ -162,7 +162,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				grid_map_anchor_position.x = SPUtil.drpt(grid_map_anchor_position.x, grid_map_anchor_current_node_focus_point.x, 1/15.0f);
 				grid_map_anchor_position.y = SPUtil.drpt(grid_map_anchor_position.y, grid_map_anchor_current_node_focus_point.y, 1/15.0f);
 				
-				tar_node.set_showing(true, false);
+				tar_node.set_showing(true, false, false);
 				
 				if (tar_node.is_anim_finished()) {
 					_enqueued_to_show_gridnodes.RemoveAt(0);
@@ -576,7 +576,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			int itr_id = _active_gridnodes.key_itr()[i];
 			GridNode itr = _id_to_gridnode[itr_id];
 			if (!_accessible_grid_nodes.ContainsKey(itr_id)) {
-				itr.set_showing(false, true);
+				itr.set_showing(false, true, false);
 				_active_gridnodes.Remove(itr_id);
 			}
 		}
@@ -594,7 +594,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_current_state = State.WaitingForShowNewNodes;
 		_state_anim_ct = 0;
 		
-		_current_node.set_showing(true, true);
+		_current_node.set_showing(true, true, false);
 	}
 	
 	private Queue<int> __update_accessible_to_search = new Queue<int>();

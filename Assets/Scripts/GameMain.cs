@@ -43,18 +43,10 @@ public class GameMain : MonoBehaviour {
 	
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
-//	
-//	TODO--
 
-//  kurumi move improvements, animation fixes (no slide, no stutter)
-//  kurmi chibi blob shadow
-//	
-//  fade top edges of letterbox
 //  gridnav arrow animations (wait on art?)
 // 	click on directionals to move in direction
 //  other chibis implementation
-
-
 //	save/load implementation
 //	end to title UIs
 //	
