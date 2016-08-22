@@ -5,7 +5,8 @@
 	"music":"happy_day",
 	"requirementitem":[],
 	"previewchar":[
-		"mana"
+		"mana",
+		"raichi"
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},

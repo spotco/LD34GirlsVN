@@ -7583,6 +7583,7 @@ MonoBehaviour:
   _nav_arrow_proto: {fileID: 262645773}
   _particle_root: {fileID: 966729577}
   _character_manager: {fileID: 929219915}
+  _moving_to_node_target: {fileID: 0}
   _current_state: 0
 --- !u!1 &556110115
 GameObject:
@@ -12131,6 +12132,7 @@ GameObject:
   - 224: {fileID: 965824291}
   - 222: {fileID: 965824293}
   - 114: {fileID: 965824292}
+  - 225: {fileID: 965824294}
   m_Layer: 5
   m_Name: GridNavMana
   m_TagString: Untagged
@@ -12170,6 +12172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1737486229}
+  _shadow: {fileID: 1424931248}
+  _canvasgroup: {fileID: 965824294}
 --- !u!222 &965824293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12177,6 +12181,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 965824290}
+--- !u!225 &965824294
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 965824290}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &966729576
 GameObject:
   m_ObjectHideFlags: 0
@@ -13806,6 +13821,7 @@ GameObject:
   - 224: {fileID: 1071737517}
   - 222: {fileID: 1071737519}
   - 114: {fileID: 1071737518}
+  - 225: {fileID: 1071737520}
   m_Layer: 5
   m_Name: GridNavSimoneHero
   m_TagString: Untagged
@@ -13845,6 +13861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 111241055}
+  _shadow: {fileID: 1201086458}
+  _canvasgroup: {fileID: 1071737520}
 --- !u!222 &1071737519
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13852,6 +13870,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071737516}
+--- !u!225 &1071737520
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071737516}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1072155353
 GameObject:
   m_ObjectHideFlags: 0
@@ -22165,6 +22194,7 @@ GameObject:
   - 224: {fileID: 1716186505}
   - 222: {fileID: 1716186507}
   - 114: {fileID: 1716186506}
+  - 225: {fileID: 1716186508}
   m_Layer: 5
   m_Name: GridNavRaichi
   m_TagString: Untagged
@@ -22204,6 +22234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1847556714}
+  _shadow: {fileID: 1809505579}
+  _canvasgroup: {fileID: 1716186508}
 --- !u!222 &1716186507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22211,6 +22243,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1716186504}
+--- !u!225 &1716186508
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716186504}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1720818157
 GameObject:
   m_ObjectHideFlags: 0
@@ -27307,6 +27350,7 @@ GameObject:
   - 224: {fileID: 2122523820}
   - 222: {fileID: 2122523822}
   - 114: {fileID: 2122523821}
+  - 225: {fileID: 2122523823}
   m_Layer: 5
   m_Name: GridNavManaHero
   m_TagString: Untagged
@@ -27346,6 +27390,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1695847582}
+  _shadow: {fileID: 1397299367}
+  _canvasgroup: {fileID: 2122523823}
 --- !u!222 &2122523822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27353,6 +27399,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122523819}
+--- !u!225 &2122523823
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122523819}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2124636556
 GameObject:
   m_ObjectHideFlags: 0

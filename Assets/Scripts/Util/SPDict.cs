@@ -10,8 +10,7 @@ public class SPDict<TKey,TValue> {
 		_list = new List<TKey>();
 	}
 
-	public TValue this[TKey i]
-	{
+	public TValue this[TKey i] {
 		get { 
 			if (_dict.ContainsKey(i)) {
 				return _dict[i];

@@ -26,13 +26,13 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	
 	[System.NonSerialized] public SPDict<int,GridNode> _id_to_gridnode = new SPDict<int, GridNode>();
 	
-	public SPDict<int,int> _active_gridnodes = new SPDict<int,int>();
+	public SPSet<int> _active_gridnodes = new SPSet<int>();
 	private List<int> _enqueued_to_show_gridnodes = new List<int>();
 	
-	private GridNavSelectorCharacter _selector_character;
+	[System.NonSerialized] public GridNavSelectorCharacter _selector_character;
 	[System.NonSerialized] public GridNode _current_node;
 	
-	private GridNode _moving_to_node_target = null;
+	public GridNode _moving_to_node_target = null;
 	private bool _moving_to_node_trigger_at_end = false;
 	private enum SelectionMode {
 		None,
@@ -128,7 +128,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		switch (_current_state) {
 		case State.InitialUpdate: {
 			grid_map_anchor_zoom = 3;
-			selector_position = _current_node.get_selector_stand_position();
+			selector_position = _current_node.get_selector_stand_position(game,this);
 			grid_map_anchor_position = GridNavSelectorCharacter.convert_character_position_to_position_anchor_focus(selector_position);
 			
 			_current_state = State.WaitingForEventFinish;
@@ -138,7 +138,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		} break;
 		case State.WaitingForEventFinish: {
 			grid_map_anchor_zoom = 3;
-			selector_position = _current_node.get_selector_stand_position();
+			selector_position = _current_node.get_selector_stand_position(game,this);
 			_selector_character.set_anim_mode(GridNavSelectorCharacter.AnimMode.Move);
 			grid_map_anchor_position = GridNavSelectorCharacter.convert_character_position_to_position_anchor_focus(selector_position);
 			
@@ -150,11 +150,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			}
 		
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1, 1/15.0f);
-			selector_position = _current_node.get_selector_stand_position();
+			selector_position = _current_node.get_selector_stand_position(game,this);
 			
 			if (game._controls.get_debug_skip()) {
 				for (int i = 0; i < _enqueued_to_show_gridnodes.Count; i++) {
-					_active_gridnodes[_enqueued_to_show_gridnodes[i]] = 1;
+					_active_gridnodes.Add(_enqueued_to_show_gridnodes[i]);
 				}
 				_enqueued_to_show_gridnodes.Clear();
 			}
@@ -171,7 +171,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				
 				if (tar_node.is_anim_finished()) {
 					_enqueued_to_show_gridnodes.RemoveAt(0);
-					_active_gridnodes[tar_id] = 1;	
+					_active_gridnodes.Add(tar_id);	
 				}
 				
 			} else {
@@ -190,7 +190,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			should_show_nav_arrow = true;
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1, 1/15.0f);
 			
-			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position(game,this);
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
 			_selector_character.set_anim_mode(GridNavSelectorCharacter.AnimMode.Move);
@@ -305,7 +305,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		} break;
 		case State.MovingToNodeTriggerAtEndDelay: {
 		
-			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position(game,this);
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
 			_selector_character.set_anim_mode(GridNavSelectorCharacter.AnimMode.Move);
@@ -326,7 +326,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 3, 1/15.0f);
 			
-			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position(game,this);
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
 			
@@ -354,7 +354,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		case State.WaitingForUnlockAnimation: {
 			grid_map_anchor_zoom = SPUtil.drpt(grid_map_anchor_zoom, 1.75f, 1/15.0f);
 			
-			Vector2 selector_tar_pos = _current_node.get_selector_stand_position();
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position(game,this);
 			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
 			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
 			

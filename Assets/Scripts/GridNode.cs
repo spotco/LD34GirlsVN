@@ -461,7 +461,7 @@ public class GridNode : MonoBehaviour {
 		TripleRight
 	}
 	
-	public Vector2 get_selector_stand_position_for_anchor(StandAnchor anchor) {
+	public Vector2 get_stand_position_for_anchor(StandAnchor anchor) {
 		float scale_mult;
 		if (_visited) {
 			scale_mult = _self_nodeanimroot._node_visited.transform.localScale.x;
@@ -476,11 +476,11 @@ public class GridNode : MonoBehaviour {
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.DoubleLeft): {
-			unscaled_anchor.x = -25;
+			unscaled_anchor.x = -17;
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.DoubleRight): {
-			unscaled_anchor.x = 25;
+			unscaled_anchor.x = 17;
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.TripleLeft): {
@@ -489,7 +489,7 @@ public class GridNode : MonoBehaviour {
 		} break;
 		case (StandAnchor.TripleCenter): {
 			unscaled_anchor.x = 0;
-			unscaled_anchor.y = 25;
+			unscaled_anchor.y = 17;
 		} break; 
 		case (StandAnchor.TripleRight): {
 			unscaled_anchor.x = 25;
@@ -504,8 +504,28 @@ public class GridNode : MonoBehaviour {
 		);
 	}
 	
-	public Vector2 get_selector_stand_position() {
-		return this.get_selector_stand_position_for_anchor(StandAnchor.Solo);
+	public bool get_show_preview_chars_case(GameMain game, GridNavModal gridnav) {
+		return !this._visited && (gridnav._current_node == this || gridnav.is_selected_node(game,this));
+	}
+	
+	public bool stand_shift_case(GameMain game, GridNavModal gridnav) {
+		bool moving_to_node_conditional_test = gridnav._current_state == GridNavModal.State.MovingToNode && gridnav._moving_to_node_target == this;
+		bool current_node_conditional_test = gridnav._current_state != GridNavModal.State.MovingToNode && gridnav._current_node == this;
+		return ((moving_to_node_conditional_test || current_node_conditional_test) && SPUtil.vec_dist(this.get_center_position(),gridnav._selector_character.transform.localPosition) < 75);
+	}
+	
+	public Vector2 get_selector_stand_position(GameMain game, GridNavModal gridnav) {
+		if (this.get_show_preview_chars_case(game,gridnav)) {
+			if (_node_script._previewchars.Count > 1) {
+				return this.get_stand_position_for_anchor(StandAnchor.TripleCenter);
+			} else if (_node_script._previewchars.Count == 1) {
+				return this.get_stand_position_for_anchor(StandAnchor.DoubleLeft);
+			} else {
+				return this.get_stand_position_for_anchor(StandAnchor.Solo);
+			}
+		} else {
+			return this.get_stand_position_for_anchor(StandAnchor.Solo);
+		}
 	}
 	
 	public Vector2 get_center_position() {
