@@ -17,6 +17,7 @@ public class NodeScript {
 	public List<string> _requirement_items = new List<string>();
 	public List<NodeScriptEvent> _events = new List<NodeScriptEvent>();
 	public List<int> _links = new List<int>();
+	public List<string> _previewchars = new List<string>();
 	public bool _affinity_requirement;
 	
 	public NodeScript i_initialize(GameMain game, TextAsset text) {
@@ -33,6 +34,13 @@ public class NodeScript {
 		_background_key = root.ContainsKey("backgroundkey") ? root.GetString("backgroundkey") : BGControllerBase.KEY_DEFAULT;
 		_music = root.GetString("music");
 		_affinity_requirement = root.ContainsKey("affinityrequirement");
+		
+		if (root.ContainsKey("previewchar")) {
+			JSONArray previewchars = root.GetArray("previewchar");
+			for (int i = 0; i < previewchars.Length; i++) {
+				_previewchars.Add(previewchars[i].Str);
+			}
+		}
 
 		JSONArray requirement_item_json = root.GetArray("requirementitem");
 		for (int i = 0; i < requirement_item_json.Length; i++) {

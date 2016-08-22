@@ -80,6 +80,6 @@
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0}
 	],
 	"links":[
-		1
+		1,-1
 	]
 }

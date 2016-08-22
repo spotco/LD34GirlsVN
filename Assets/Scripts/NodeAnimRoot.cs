@@ -20,11 +20,11 @@ public class NodeAnimRoot : MonoBehaviour {
 	[SerializeField] private Image _node_unvisited_backspin;
 	[SerializeField] private Image _node_unvisited_topexpandspin;
 	[SerializeField] private Image _node_unvisited_expandback;
-	[SerializeField] private Image _node_unvisited_top;
+	[SerializeField] public Image _node_unvisited_top;
 	
 	private float _node_unvisited_backspin_rotation_t = 0, _node_unvisited_topexpandspin_t = 0, _node_unvisited_expandback_t = 0;
 	
-	[SerializeField] private Image _node_visited;
+	[SerializeField] public Image _node_visited;
 	
 	[SerializeField] private Image _node_locked_chain_tl;
 	[SerializeField] private Image _node_locked_chain_tr;

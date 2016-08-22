@@ -26,8 +26,8 @@ public class ObjectPool : SPBaseBehavior {
 		return this;
 	}
 
-	public T spbasebehavior_depool<T>(bool create = true) where T : SPBaseBehavior {
-		string key = typeof(T).ToString();
+	public T spbasebehavior_depool<T>(bool create = true, string key_suffix = "") where T : SPBaseBehavior {
+		string key = typeof(T).ToString() + key_suffix;
 		List<SPBaseBehavior> tar_list = _spbasebehavior_typekey_to_objlist.list(key);
 		if (tar_list.Count == 0) {
 			if (create) {
@@ -49,8 +49,8 @@ public class ObjectPool : SPBaseBehavior {
 		}
 	}
 
-	public void spbasebehavior_repool<T>(T obj) where T : SPBaseBehavior {
-		string key = typeof(T).ToString();
+	public void spbasebehavior_repool<T>(T obj, string key_suffix = "") where T : SPBaseBehavior {
+		string key = typeof(T).ToString() + key_suffix;
 		obj.repool();
 		obj.gameObject.SetActive(false);
 		obj.gameObject.transform.SetParent(this.transform);
@@ -59,8 +59,8 @@ public class ObjectPool : SPBaseBehavior {
 
 
 	private MultiMap<string,GenericPooledObject> _generic_typekey_to_objlist = new MultiMap<string,GenericPooledObject>();
-	public T generic_depool<T>() where T : GenericPooledObject {
-		string key = typeof(T).ToString();
+	public T generic_depool<T>(string key_suffix = "") where T : GenericPooledObject {
+		string key = typeof(T).ToString() + key_suffix;
 		List<GenericPooledObject> tar_list = _generic_typekey_to_objlist.list(key);
 		if (tar_list.Count == 0) {
 			T rtv = System.Activator.CreateInstance<T>();
@@ -74,11 +74,11 @@ public class ObjectPool : SPBaseBehavior {
 		}
 	}
 
-	public void generic_repool<T>(T obj) where T : GenericPooledObject {
-		this.type_repool(obj,typeof(T));
+	public void generic_repool<T>(T obj, string key_suffix = "") where T : GenericPooledObject {
+		this.type_repool(obj,typeof(T),key_suffix);
 	}
-	public void type_repool(GenericPooledObject obj, System.Type type) {
-		string key = type.ToString();
+	public void type_repool(GenericPooledObject obj, System.Type type, string key_suffix = "") {
+		string key = type.ToString() + key_suffix;
 		obj.repool();
 		_generic_typekey_to_objlist.list(key).Add(obj);
 	}

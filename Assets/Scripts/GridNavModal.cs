@@ -20,6 +20,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private GridNavArrow _nav_arrow_proto;
 	[SerializeField] private Transform _particle_root;
 	
+	[SerializeField] private GridCharacterManager _character_manager;
+	
 	private SPDict<GridNode.Directional, GridNavArrow> _directional_to_arrow = new SPDict<GridNode.Directional, GridNavArrow>();
 	
 	[System.NonSerialized] public SPDict<int,GridNode> _id_to_gridnode = new SPDict<int, GridNode>();
@@ -67,6 +69,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_anim_root_proto.gameObject.SetActive(false);
 		_line_root_proto.gameObject.SetActive(false);
 		_nav_arrow_proto.gameObject.SetActive(false);
+		
+		_character_manager.i_initialize(game,this);
 		
 		_particles = SPParticleSystem<SPParticle>.cons(_particle_root);
 		
@@ -371,6 +375,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 		_grid_map_scale_anchor.transform.localScale = SPUtil.valv(grid_map_anchor_zoom);
 		
 		this.i_update_grid_nav_arrows(game, should_show_nav_arrow);
+		_character_manager.i_update(game,this);
 		
 		_inventory_overlay.i_update(game,this);
 		_particles.i_update(game, this);

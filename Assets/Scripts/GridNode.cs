@@ -452,12 +452,60 @@ public class GridNode : MonoBehaviour {
 		return _node_script._id != 10 && _node_script._id != GameMain.NODE_START_INDEX;
 	}
 	
-	public Vector2 get_selector_stand_position() {
+	public enum StandAnchor {
+		Solo,
+		DoubleLeft,
+		DoubleRight,
+		TripleLeft,
+		TripleCenter,
+		TripleRight
+	}
+	
+	public Vector2 get_selector_stand_position_for_anchor(StandAnchor anchor) {
+		float scale_mult;
 		if (_visited) {
-			return SPUtil.vec_add(this.transform.localPosition, new Vector2(0, 25));
+			scale_mult = _self_nodeanimroot._node_visited.transform.localScale.x;
 		} else {
-			return SPUtil.vec_add(this.transform.localPosition, new Vector2(0, 40));
+			scale_mult = _self_nodeanimroot._node_unvisited_top.transform.localScale.x;
 		}
+		
+		Vector2 unscaled_anchor = new Vector2(0,0);
+		
+		switch (anchor) {
+		case (StandAnchor.Solo): {
+			unscaled_anchor.y = 25;
+		} break;
+		case (StandAnchor.DoubleLeft): {
+			unscaled_anchor.x = -25;
+			unscaled_anchor.y = 25;
+		} break;
+		case (StandAnchor.DoubleRight): {
+			unscaled_anchor.x = 25;
+			unscaled_anchor.y = 25;
+		} break;
+		case (StandAnchor.TripleLeft): {
+			unscaled_anchor.x = -25;
+			unscaled_anchor.y = 25;
+		} break;
+		case (StandAnchor.TripleCenter): {
+			unscaled_anchor.x = 0;
+			unscaled_anchor.y = 25;
+		} break; 
+		case (StandAnchor.TripleRight): {
+			unscaled_anchor.x = 25;
+			unscaled_anchor.y = 25;
+		} break;
+		default: break;
+		}
+		
+		return SPUtil.vec_add(
+			this.transform.localPosition,
+			SPUtil.vec_scale(unscaled_anchor, scale_mult)
+		);
+	}
+	
+	public Vector2 get_selector_stand_position() {
+		return this.get_selector_stand_position_for_anchor(StandAnchor.Solo);
 	}
 	
 	public Vector2 get_center_position() {

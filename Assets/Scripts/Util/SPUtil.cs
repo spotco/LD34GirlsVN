@@ -482,3 +482,8 @@ public class MultiMap<TKey, TValue> {
 		return _key_to_list.key_itr();
 	}
 }
+
+public struct SPPair<T1,T2> {
+	public T1 _first;
+	public T2 _second;
+}

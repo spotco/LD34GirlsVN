@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 public class SPDict<TKey,TValue> {
-
 	private Dictionary<TKey,TValue> _dict;
 	private List<TKey> _list;
 
@@ -45,5 +44,33 @@ public class SPDict<TKey,TValue> {
 	public bool ContainsKey(TKey i) {
 		return _dict.ContainsKey(i);
 	}
+}
 
+public class SPSet<TKey> {
+	private SPDict<TKey,int> _dict;
+	
+	public SPSet() {
+		_dict = new SPDict<TKey, int>();
+	}
+	
+	public void Add(TKey i) {
+		_dict[i] = 1;
+	}
+	
+	public void Remove(TKey i) {
+		_dict.Remove(i);
+	}
+	
+	public void Clear() {
+		_dict.Clear();
+	}
+	
+	public List<TKey> key_itr() {
+		return _dict.key_itr();
+	}
+	
+	public bool ContainsKey(TKey i) {
+		return _dict.ContainsKey(i);
+	}
+	
 }
