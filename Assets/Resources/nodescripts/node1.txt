@@ -4,9 +4,6 @@
 	"background":"bg_school_classroom",
 	"music":"happy_day",
 	"requirementitem":[],
-	"previewchar":[
-		"mana_hero"
-	],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"A new city. %An opportunity for a fresh start.","xpos":0,"ypos":0},

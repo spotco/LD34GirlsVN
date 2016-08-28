@@ -33,9 +33,19 @@ public class GridCharacterManager : MonoBehaviour {
 		
 		for (int i = 0; i < gridnav._active_gridnodes.key_itr().Count; i++) {
 			GridNode itr_node = gridnav._id_to_gridnode[gridnav._active_gridnodes.key_itr()[i]];
-			if (itr_node.get_show_preview_chars_case(game,gridnav)) {
-				for (int j = 0; j < itr_node._node_script._previewchars.Count; j++) {
-					string char_name = itr_node._node_script._previewchars[j];
+			
+			List<string> preview_chars = null;
+			if (itr_node._event_preview_chars.Count > 0) {
+				preview_chars = itr_node._event_preview_chars;
+				
+			} else if (itr_node.get_show_preview_chars_case(game,gridnav)) {
+				preview_chars = itr_node._node_script._previewchars;
+			
+			}
+			
+			if (preview_chars != null) {
+				for (int j = 0; j < preview_chars.Count; j++) {
+					string char_name = preview_chars[j];
 					string key = GridCharacterManager.make_preview_char_key(itr_node._node_script._id, char_name);
 					__active_previewcharacter_keys[key] = new SPPair<int, string>() {
 						_first = itr_node._node_script._id,
@@ -52,7 +62,11 @@ public class GridCharacterManager : MonoBehaviour {
 				string name = nodeid_and_name._second;
 				PreviewCharacter add_char = game._objpool.generic_depool<PreviewCharacter>();
 				GridCharacterAsset add_asset = game._objpool.spbasebehavior_depool<GridCharacterAsset>(false, name);
-				if (add_asset == null) {					
+				if (add_asset == null) {
+					if (!_name_to_asset_proto.ContainsKey(name)) {
+						SPUtil.errf("Cannot find GridCharacterAsset(%s)",name);
+						continue;
+					}			
 					game._objpool.spbasebehavior_repool<GridCharacterAsset>(SPUtil.proto_clone(_name_to_asset_proto[name].gameObject).GetComponent<GridCharacterAsset>(), name);
 					add_asset = game._objpool.spbasebehavior_depool<GridCharacterAsset>(false, name);
 					if (add_asset == null) {
@@ -119,19 +133,21 @@ public class PreviewCharacter : GenericPooledObject {
 		_mode_ct = 0;
 		
 		_asset.transform.localPosition = this.unshifted_position_get(game,gridnav);
-		
-		GridNode tar_node = gridnav._id_to_gridnode[_nodeid_and_charname._first];
-		if (tar_node._node_script._previewchars.Count > 0 && tar_node._node_script._previewchars[0] == _nodeid_and_charname._second) {
-			_asset.gameObject.transform.localScale = new Vector3(-1,1,1);
-		} else {
-			_asset.gameObject.transform.localScale = new Vector3(1,1,1);
-		}
+		_asset.gameObject.transform.localScale = new Vector3(-1,1,1);
 	}
 	
 	private Vector2 unshifted_position_get(GameMain game, GridNavModal gridnav) {
 		GridNode tar_node = gridnav._id_to_gridnode[_nodeid_and_charname._first];
-		if (tar_node._node_script._previewchars.Count > 1) {
-			if (tar_node._node_script._previewchars[0] == _nodeid_and_charname._second) {
+		
+		List<string> previewchars = null;
+		if (tar_node._event_preview_chars.Count > 0) {
+			previewchars = tar_node._event_preview_chars;
+		} else {
+			previewchars = tar_node._node_script._previewchars;
+		}
+		
+		if (previewchars.Count > 1) {
+			if (previewchars[0] == _nodeid_and_charname._second) {
 				return tar_node.get_stand_position_for_anchor(GridNode.StandAnchor.DoubleRight);
 			} else {
 				return tar_node.get_stand_position_for_anchor(GridNode.StandAnchor.DoubleLeft);
@@ -144,10 +160,25 @@ public class PreviewCharacter : GenericPooledObject {
 	public void i_update(GameMain game, GridNavModal gridnav, GridCharacterManager manager) {
 		GridNode tar_node = gridnav._id_to_gridnode[_nodeid_and_charname._first];
 		
+		List<string> previewchars = null;
+		if (tar_node._event_preview_chars.Count > 0) {
+			previewchars = tar_node._event_preview_chars;
+		} else {
+			previewchars = tar_node._node_script._previewchars;
+		}
+		
+		if (_current_mode != Mode.ShowingToHidden) {
+			if (previewchars.Count > 1 && previewchars[1] == _nodeid_and_charname._second) {
+				_asset.gameObject.transform.localScale = new Vector3(1,1,1);
+			} else {
+				_asset.gameObject.transform.localScale = new Vector3(-1,1,1);
+			}
+		}
+		
 		Vector2 tar_pos = tar_node.get_center_position();
-		if (tar_node.stand_shift_case(game,gridnav)) {
-			if (tar_node._node_script._previewchars.Count > 1) {
-				if (tar_node._node_script._previewchars[0] == _nodeid_and_charname._second) {
+		if (tar_node.stand_shift_case(game,gridnav)) {			
+			if (previewchars.Count > 1) {
+				if (previewchars[0] == _nodeid_and_charname._second) {
 					tar_pos = tar_node.get_stand_position_for_anchor(GridNode.StandAnchor.TripleRight);
 				} else {
 					tar_pos = tar_node.get_stand_position_for_anchor(GridNode.StandAnchor.TripleLeft);
@@ -155,7 +186,7 @@ public class PreviewCharacter : GenericPooledObject {
 				
 			} else {
 				tar_pos = tar_node.get_stand_position_for_anchor(GridNode.StandAnchor.DoubleRight);
-			}	
+			}
 			
 		} else {
 			tar_pos = this.unshifted_position_get(game,gridnav);

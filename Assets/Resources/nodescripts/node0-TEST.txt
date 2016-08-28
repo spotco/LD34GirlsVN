@@ -4,6 +4,35 @@
 	"background":"bg_city_afternoon",
 	"music":"happy_day",
 	"requirementitem":[],
+	"previewchar":[
+		"mana_hero"
+	],
+	"idleevents":[
+		{"type":"gridnavfocusat","zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I sure hope this test goes okay!"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"gridnavfocusat","nodeid":-1,"zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"gridnavshowchar","nodeid":-1,"name":"mana"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Pick this choice please!"},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"gridnavfocusat","nodeid":1,"zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"gridnavshowchar","nodeid":1,"name":"raichi"},
+		{"type":"gridnavshowchar","nodeid":1,"name":"simone_hero"},
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-200,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"Well, what is it?"},
+		{"type":"dialogue","character":"Raichi","text":"Well, what is it?"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":-170}
+	],
+	"postshowevents":[
+	],
 	"event":[
 		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
 		{"type":"dialogue","text":"...","xpos":0,"ypos":0},

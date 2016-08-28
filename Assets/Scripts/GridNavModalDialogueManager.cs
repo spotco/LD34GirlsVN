@@ -67,5 +67,11 @@ public class GridNavModalDialogueManager {
 	public void finish_dialogue(GameMain game) {
 		_dialogue_active = false;
 	}
+	
+	public void exit_gridnav_state_dialogue_mode(GameMain game, GridNavModal gridnav) {
+		for (int i = 0; i < gridnav._id_to_gridnode.key_itr().Count; i++) {
+			gridnav._id_to_gridnode[gridnav._id_to_gridnode.key_itr()[i]]._event_preview_chars.Clear();
+		}
+	}
 
 }

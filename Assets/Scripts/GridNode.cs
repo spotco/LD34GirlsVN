@@ -476,15 +476,15 @@ public class GridNode : MonoBehaviour {
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.DoubleLeft): {
-			unscaled_anchor.x = -17;
+			unscaled_anchor.x = -23;
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.DoubleRight): {
-			unscaled_anchor.x = 17;
+			unscaled_anchor.x = 23;
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.TripleLeft): {
-			unscaled_anchor.x = -25;
+			unscaled_anchor.x = -33;
 			unscaled_anchor.y = 25;
 		} break;
 		case (StandAnchor.TripleCenter): {
@@ -492,7 +492,7 @@ public class GridNode : MonoBehaviour {
 			unscaled_anchor.y = 17;
 		} break; 
 		case (StandAnchor.TripleRight): {
-			unscaled_anchor.x = 25;
+			unscaled_anchor.x = 33;
 			unscaled_anchor.y = 25;
 		} break;
 		default: break;
@@ -503,6 +503,8 @@ public class GridNode : MonoBehaviour {
 			SPUtil.vec_scale(unscaled_anchor, scale_mult)
 		);
 	}
+	
+	public List<string> _event_preview_chars = new List<string>();
 	
 	public bool get_show_preview_chars_case(GameMain game, GridNavModal gridnav) {
 		return !this._visited && (gridnav._current_node == this || gridnav.is_selected_node(game,this));
@@ -515,7 +517,15 @@ public class GridNode : MonoBehaviour {
 	}
 	
 	public Vector2 get_selector_stand_position(GameMain game, GridNavModal gridnav) {
-		if (this.get_show_preview_chars_case(game,gridnav)) {
+		if (_event_preview_chars.Count > 0) {
+			if (_event_preview_chars.Count > 1) {
+				return this.get_stand_position_for_anchor(StandAnchor.TripleCenter);
+			} else if (_event_preview_chars.Count == 1) {
+				return this.get_stand_position_for_anchor(StandAnchor.DoubleLeft);
+			} else {
+				return this.get_stand_position_for_anchor(StandAnchor.Solo);
+			}
+		} else if (this.get_show_preview_chars_case(game,gridnav)) {
 			if (_node_script._previewchars.Count > 1) {
 				return this.get_stand_position_for_anchor(StandAnchor.TripleCenter);
 			} else if (_node_script._previewchars.Count == 1) {

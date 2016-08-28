@@ -19,7 +19,8 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 	
 	public enum AnimMode {
 		Move,
-		Yay
+		Yay,
+		Slide
 	}
 	public AnimMode _anim_mode;
 	private bool _selected;

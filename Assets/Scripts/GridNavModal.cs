@@ -20,7 +20,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 	[SerializeField] private GridNavArrow _nav_arrow_proto;
 	[SerializeField] private Transform _particle_root;
 	
-	[SerializeField] private GridCharacterManager _character_manager;
+	[SerializeField] public GridCharacterManager _character_manager;
 	public GridNavModalDialogueManager _dialogue_manager = new GridNavModalDialogueManager();
 	
 	private SPDict<GridNode.Directional, GridNavArrow> _directional_to_arrow = new SPDict<GridNode.Directional, GridNavArrow>();
@@ -259,37 +259,25 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				_current_state = State.PanningMode;
 				
 			} else if (touched_selector_character || game._controls.get_control_just_released(ControlManager.Control.ButtonC)) {
-				_current_state = State.DialogueMode;
-				
-				List<NodeScriptEvent> tmp_events = new List<NodeScriptEvent>();
-				tmp_events.Add(new NodeScriptEvent_GridNavFocusAt() {
-					_focus_on_node_id = NodeScriptEvent_GridNavFocusAt.FOCUS_ON_CURRENT_ID,
-					_focus_offset = new Vector2(0,0),
-					_focus_zoom = 2.0f
-				});
-				tmp_events.Add(new NodeScriptEvent_ShowCharacter() {
-					_character = "Kurumi",
-					_image = "char_kurumi_normal_sleep",
-					_xpos = -300,
-					_xscale = 1,
-					_ypos = 0
-				});
-				tmp_events.Add(new NodeScriptEvent_Dialogue() {
-					_character = NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,
-					_text = "Test 1 2 3...",
-					_xpos = 0,
-					_ypos = -130
-				});
-				_dialogue_manager.load_dialogue(game,this,tmp_events);
+				if (_current_node._node_script._idle_events.Count > 0) {
+					_current_state = State.DialogueMode;
+					_dialogue_manager.load_dialogue(game,this,_current_node._node_script._idle_events);
+				}
 			}
 			
 		} break;
 		case State.DialogueMode: {
 			_dialogue_manager.i_update(game,this);
 			
+			Vector2 selector_tar_pos = _current_node.get_selector_stand_position(game,this);
+			selector_position.x = SPUtil.drpt(selector_position.x, selector_tar_pos.x, 1/10.0f);
+			selector_position.y = SPUtil.drpt(selector_position.y, selector_tar_pos.y, 1/10.0f);
+			_selector_character.set_anim_mode(GridNavSelectorCharacter.AnimMode.Slide);
+			
 			_dialogue_manager.get_anchor_position_and_zoom(game,this,ref grid_map_anchor_position,ref grid_map_anchor_zoom);
 			
 			if (_dialogue_manager.is_finished(game)) {
+				_dialogue_manager.exit_gridnav_state_dialogue_mode(game,this);
 				_current_state = State.WaitingForInput;
 			}
 			

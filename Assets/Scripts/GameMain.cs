@@ -45,7 +45,6 @@ public class GameMain : MonoBehaviour {
 	[System.NonSerialized] public Canvas _parent_canvas;
 
 // grid nav dialogue show chibi event
-// grid nav click to show, selector character animate
 
 // save old nodes
 			

@@ -15,7 +15,12 @@ public class NodeScript {
 	public string _music = "";
 	public string _sfx = "";
 	public List<string> _requirement_items = new List<string>();
+	
 	public List<NodeScriptEvent> _events = new List<NodeScriptEvent>();
+	
+	public List<NodeScriptEvent> _idle_events = new List<NodeScriptEvent>();
+	public List<NodeScriptEvent> _post_show_events = new List<NodeScriptEvent>();
+	
 	public List<int> _links = new List<int>();
 	public List<string> _previewchars = new List<string>();
 	public bool _affinity_requirement;
@@ -41,6 +46,14 @@ public class NodeScript {
 				_previewchars.Add(previewchars[i].Str);
 			}
 		}
+		
+		if (root.ContainsKey("idleevents")) {
+			NodeScript.load_nodescriptevents_from_json(game, root.GetArray("idleevents"),_idle_events);
+		}
+		
+		if (root.ContainsKey("postshowevents")) {
+			NodeScript.load_nodescriptevents_from_json(game, root.GetArray("postshowevents"),_post_show_events);
+		}
 
 		JSONArray requirement_item_json = root.GetArray("requirementitem");
 		for (int i = 0; i < requirement_item_json.Length; i++) {
@@ -48,6 +61,17 @@ public class NodeScript {
 		}
 		
 		JSONArray event_json = root.GetArray("event");
+		NodeScript.load_nodescriptevents_from_json(game,event_json,_events);
+		
+		JSONArray links_json = root.GetArray("links");
+		for (int i = 0; i < links_json.Length; i++) {
+			_links.Add((int)links_json[i].Number);
+		}
+		
+		return this;
+	}
+	
+	public static void load_nodescriptevents_from_json(GameMain game, JSONArray event_json, List<NodeScriptEvent> nodescript_events) {
 		for (int i = 0; i < event_json.Length; i++) {
 			JSONObject itr = event_json[i].Obj;
 			string type = itr.GetString("type");
@@ -82,30 +106,30 @@ public class NodeScript {
 					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber ("xpos")) : 0,
 					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber ("ypos")) : -130
 				};
-			
+				
 			} else if (type == "transitioncharacter") {
 				itr_neu = new NodeScriptEvent_TransitionCharacter () {
 					_character = itr.GetString ("character"),
 					_image = itr.GetString ("image"),
 					_xscale =  itr.ContainsKey("xscale") ? (float)itr.GetNumber ("xscale") : 1
 				};
-			
+				
 			} else if (type == "movecharacter") {
 				itr_neu = new NodeScriptEvent_MoveCharacter () {
 					_character = itr.GetString ("character"),
 					_xto = (float)itr.GetNumber ("xto")
 				};
-			
+				
 			} else if (type == "additem") {
 				itr_neu = new NodeScriptEvent_AddItem () {
 					_item = itr.GetString ("item")
 				};
-			
+				
 			} else if (type == "removeitem") {
 				itr_neu = new NodeScriptEvent_RemoveItem () {
 					_item = itr.GetString ("item")
 				};
-			
+				
 			} else if (type == "hidecharacter") {
 				itr_neu = new NodeScriptEvent_HideCharacter () {
 					_character = itr.GetString ("character"),
@@ -149,22 +173,42 @@ public class NodeScript {
 					_long = itr.GetString("length") == "long"
 				};
 				
+			} else if (type == "gridnavfocusat") {
+				itr_neu = new NodeScriptEvent_GridNavFocusAt() {
+					_focus_on_node_id = itr.ContainsKey("nodeid") ? ((int)itr.GetNumber("nodeid")) : NodeScriptEvent_GridNavFocusAt.FOCUS_ON_CURRENT_ID,
+					_focus_zoom = itr.ContainsKey("zoom") ? ((float)itr.GetNumber("zoom")) : 1.0f,
+					_focus_offset = new Vector2(
+						itr.ContainsKey("offsetx") ? ((float)itr.GetNumber("offsetx")) : 0,
+						itr.ContainsKey("offsety") ? ((float)itr.GetNumber("offsety")) : 0
+					)
+				};
+				
+			} else if (type == "gridnavhidechars") {
+				itr_neu = new NodeScriptEvent_GridNavHideCharacters() {
+					_node_id = itr.ContainsKey("nodeid") ? ((int)itr.GetNumber("nodeid")) : NodeScriptEvent_GridNavHideCharacters.HIDE_CURRENT_ID
+				};
+				
+			} else if (type == "gridnavshowchar") {
+				itr_neu = new NodeScriptEvent_GridNavShowCharacter() {
+					_name = itr.GetString("name"),
+					_node_id = itr.ContainsKey("nodeid") ? ((int)itr.GetNumber("nodeid")) : NodeScriptEvent_GridNavShowCharacter.SHOW_CURRENT_ID
+				};
+				
+			} else if (type == "wait") {
+				itr_neu = new NodeScriptEvent_Wait() {
+					_wait_time = ((float)itr.GetNumber("waittime"))
+				};
+				
 			} else {
 				SPUtil.logf("unknown type %s",type);
 			} 
 			
 			if (itr_neu != null) {
-				_events.Add(itr_neu);
+				nodescript_events.Add(itr_neu);
 			}
 		}
-		
-		JSONArray links_json = root.GetArray("links");
-		for (int i = 0; i < links_json.Length; i++) {
-			_links.Add((int)links_json[i].Number);
-		}
-		
-		return this;
 	}
+	
 }
 
 public class NodeScriptEvent_TitleEnd : NodeScriptEvent {
