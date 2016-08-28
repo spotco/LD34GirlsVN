@@ -10,7 +10,7 @@ public class NodeScriptEvent_CharacterEffect : NodeScriptEvent {
 		EventCharacter tar = modal.cond_get_character_of_name(_character);
 		if (tar != null) {
 			if (_effect == "managodparticles") {
-				tar.add_effect(game,modal,GodPowerCharacterEffect.cons());
+				tar.add_effect(game,GodPowerCharacterEffect.cons());
 			} else if (_effect == "heartburst") {
 			
 			} else {

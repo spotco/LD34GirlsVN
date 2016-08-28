@@ -11,6 +11,7 @@ public class ControlManager {
 		MoveDown,
 		ButtonA,
 		ButtonB,
+		ButtonC,
 		Debug1,
 		Debug2,
 		
@@ -43,6 +44,9 @@ public class ControlManager {
 		}
 		case Control.ButtonA: {
 			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space);
+		}
+		case Control.ButtonC: {
+			return Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.Tab);
 		}
 		case Control.TouchClick: {
 			return SPUtil.is_touch();

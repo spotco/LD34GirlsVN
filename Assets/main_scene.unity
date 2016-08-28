@@ -19441,6 +19441,7 @@ MonoBehaviour:
   _canvas_group: {fileID: 1493274392}
   _proto_character: {fileID: 1692533019}
   _proto_dialogue_bubble: {fileID: 285883851}
+  _gridnav_dialogue_mode: 0
 --- !u!1 &1505765277
 GameObject:
   m_ObjectHideFlags: 0

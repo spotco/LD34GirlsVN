@@ -51,7 +51,7 @@ public class EventCharacter : MonoBehaviour {
 		_talking_ct = 3;
 	}
 	
-	public void i_update(GameMain game, EventModal modal) {	
+	public void i_update(GameMain game) {	
 		if (_current_mode == Mode.FadeIn) {
 			_image.color = new Color(1,1,1,_image.color.a+0.1f*SPUtil.dt_scale_get());
 			if (_image.color.a >= 1.0f) {
@@ -107,9 +107,9 @@ public class EventCharacter : MonoBehaviour {
 		
 		for (int i = _effects.Count-1; i >= 0; i--) {
 			EventCharacter.Effect itr_effect = _effects[i];
-			itr_effect.i_update(game,modal,this);
+			itr_effect.i_update(game,this);
 			if (itr_effect.should_remove()) {
-				itr_effect.do_remove(game,modal,this);
+				itr_effect.do_remove(game,this);
 			}
 		}
 	}
@@ -156,19 +156,19 @@ public class EventCharacter : MonoBehaviour {
 	}
 	
 	public abstract class Effect {
-		public virtual void on_added(GameMain game, EventModal modal, EventCharacter character) {}
-		public virtual void i_update(GameMain game, EventModal modal, EventCharacter character) {}
+		public virtual void on_added(GameMain game, EventCharacter character) {}
+		public virtual void i_update(GameMain game, EventCharacter character) {}
 		public virtual bool should_remove() { return false; }
-		public virtual void do_remove(GameMain game, EventModal modal, EventCharacter character) {}
+		public virtual void do_remove(GameMain game, EventCharacter character) {}
 	}
-	public void add_effect(GameMain game, EventModal modal, EventCharacter.Effect effect) {
+	public void add_effect(GameMain game, EventCharacter.Effect effect) {
 		_effects.Add(effect);
-		effect.on_added(game,modal,this);
+		effect.on_added(game,this);
 	}
-	public void remove_all_effects(GameMain game, EventModal modal) {
+	public void remove_all_effects(GameMain game) {
 		for (int i = _effects.Count-1; i >= 0; i--) {
 			EventCharacter.Effect itr_effect = _effects[i];
-			itr_effect.do_remove(game,modal,this);
+			itr_effect.do_remove(game,this);
 		}
 		_effects.Clear();
 	}

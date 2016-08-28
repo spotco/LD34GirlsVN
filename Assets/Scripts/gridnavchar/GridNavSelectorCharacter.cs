@@ -10,6 +10,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 	private SPSpriteAnimator _image_animator;
 	
 	private RectTransform _rect_transform;
+	public RectTransform get_recttransform() { return _rect_transform; }
 	
 	private Vector2 _last_position;
 	private float _last_scale_x;
@@ -21,6 +22,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 		Yay
 	}
 	public AnimMode _anim_mode;
+	private bool _selected;
 	
 	private Vector2 _smoothed_facing = new Vector2(0,-1);
 	
@@ -49,6 +51,8 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 		_last_scale_x = 1;
 		_last_anim = "idle";
 		_time_since_last_anim_update = 1000;
+		
+		_selected = false;
 	}
 	
 	public void set_anim_mode(AnimMode mode) {
@@ -63,6 +67,10 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 			}
 		}
 
+	}
+	
+	public void set_selected(bool selected) {
+		_selected = selected;
 	}
 	
 	public void i_update(GameMain game) {
@@ -110,8 +118,13 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 			}
 		}
 		_time_since_last_anim_update += SPUtil.dt_scale_get();
-		
 		_image_animator.i_update();
+		
+		if (_selected) {
+			_rect_transform.localScale = SPUtil.valv(SPUtil.drpt(_rect_transform.localScale.x,1.35f,1/10.0f));
+		} else {
+			_rect_transform.localScale = SPUtil.valv(SPUtil.drpt(_rect_transform.localScale.x,1,1/10.0f));
+		}
 		
 	}
 	

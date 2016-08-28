@@ -48,7 +48,7 @@ public class GodPowerCharacterEffect : EventCharacter.Effect {
 	
 	List<GodPowerParticle> _active_particles = new List<GodPowerParticle>();
 	
-	public override void on_added(GameMain game, EventModal modal, EventCharacter character) {
+	public override void on_added(GameMain game, EventCharacter character) {
 		{
 			GameObject front_obj = new GameObject();
 			front_obj.transform.parent = character.transform;
@@ -89,7 +89,7 @@ public class GodPowerCharacterEffect : EventCharacter.Effect {
 		
 	}
 	
-	public override void i_update(GameMain game, EventModal modal, EventCharacter character) {
+	public override void i_update(GameMain game, EventCharacter character) {
 		float y_min = character._image.rectTransform.rect.yMin;
 		float y_max = character._image.rectTransform.rect.yMax;
 		y_min -= (y_max - y_min) * 0.2f;
@@ -110,7 +110,7 @@ public class GodPowerCharacterEffect : EventCharacter.Effect {
 		}
 	}
 	
-	public override void do_remove(GameMain game, EventModal modal, EventCharacter character) {
+	public override void do_remove(GameMain game, EventCharacter character) {
 		GameObject.Destroy(_front_root.gameObject);
 		GameObject.Destroy(_back_root.gameObject);
 	}

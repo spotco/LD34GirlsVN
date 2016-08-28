@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 131;
+	public static int NODE_START_INDEX = 0;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -44,7 +44,9 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// hold button 2 pan mode
+// grid nav dialogue show chibi event
+// grid nav click to show, selector character animate
+
 // save old nodes
 			
 //	save/load implementation

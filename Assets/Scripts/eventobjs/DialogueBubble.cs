@@ -95,7 +95,7 @@ public class DialogueBubble : SPBaseBehavior {
 		_nametag.transform.localPosition = _name_initial_pos;
 	}
 	
-	public void i_update(GameMain game, EventModal modal) {
+	public void i_update(GameMain game) {
 		
 		if (_current_mode == Mode.FadeIn) {
 			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get(),0,1);
@@ -121,7 +121,9 @@ public class DialogueBubble : SPBaseBehavior {
 			this.transform.localScale = SPUtil.valv(1);
 			
 			_cursor.gameObject.SetActive(false);
-			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) || game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
+			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) ||
+			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
+				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				_primary_text.finish();
 				game._music.play_sfx("dialogue_button_press");
 			}
@@ -151,7 +153,9 @@ public class DialogueBubble : SPBaseBehavior {
 			_cursor.gameObject.SetActive(true);
 			this.transform.localScale = SPUtil.valv(1);
 			
-			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) || game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
+			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) ||
+			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
+				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				game._music.play_sfx("dialogue_button_press");
 				_current_mode = Mode.FadeOut;
 				_anim_t = 0;
