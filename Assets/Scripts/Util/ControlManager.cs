@@ -39,7 +39,7 @@ public class ControlManager {
 			return Input.GetKey(KeyCode.Alpha1);
 		}
 		case Control.ButtonB: {
-			return Input.GetKey(KeyCode.X);
+			return Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.LeftShift);
 		}
 		case Control.ButtonA: {
 			return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Space);

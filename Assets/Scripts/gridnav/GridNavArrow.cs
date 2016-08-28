@@ -75,14 +75,14 @@ public class GridNavArrow : MonoBehaviour {
 			
 		} else if (_showing_mode == ShowingMode.HiddenToShowing) {
 			_anim_ct += SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get();
-			_canvas_group.alpha = SPUtil.lerp(0,0.75f,_anim_ct);
+			_canvas_group.alpha = SPUtil.lerp(0,0.5f,_anim_ct);
 			
 			this.cursor_to_default_anim_update();
 			float scx = _arrow_back.transform.localScale.x;
 			float scy = _arrow_back.transform.localScale.y;
 			_arrow_back.transform.localScale = new Vector3(
-				SPUtil.drpt(scx,1,1/5.0f),
-				SPUtil.drpt(scy,1,1/5.0f),
+				SPUtil.drpt(scx,0.85f,1/5.0f),
+				SPUtil.drpt(scy,0.85f,1/5.0f),
 				1
 			);
 			if (_anim_ct >= 1) {
@@ -91,13 +91,15 @@ public class GridNavArrow : MonoBehaviour {
 			
 			
 		} else if (_showing_mode == ShowingMode.Showing) {
-			_canvas_group.alpha = 0.75f;
-			float tar_scale = 1;
+			
+			float tar_scale = 0.85f;
 			if (_selected_mode == SelectedMode.Selected) {
 				this.cursor_anim_update();
 				tar_scale = 1.15f;
+				_canvas_group.alpha = 0.75f;
 			} else {
 				this.cursor_to_default_anim_update();
+				_canvas_group.alpha = 0.5f;
 			}
 			this.transform.localScale = SPUtil.valv(SPUtil.drpt(this.transform.localScale.x,tar_scale,1/5.0f));
 		

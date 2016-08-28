@@ -32,13 +32,13 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 		};
 		
 		_image_animator = SPSpriteAnimator.cons(_image_target)
-			.add_anim("idle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_idle_00%d.png", 1, 6), 15)
-			.add_anim("down", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_down_00%d.png", 1, 4), 15)
-			.add_anim("down_angle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_down_angle_00%d.png", 1, 4), 15)
-			.add_anim("side", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_side_00%d.png", 1, 4), 15)
-			.add_anim("up", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_up_00%d.png", 1, 4), 15)
-			.add_anim("up_angle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_up_angle_00%d.png", 1, 4), 15)
-			.add_anim("yay", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_yay_00%d.png", 1, 5), 10, false)
+			.add_anim("idle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_idle_00%d.png", 1, 6), 8)
+			.add_anim("down", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_down_00%d.png", 1, 4), 8)
+			.add_anim("down_angle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_down_angle_00%d.png", 1, 4), 8)
+			.add_anim("side", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_side_00%d.png", 1, 4), 8)
+			.add_anim("up", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_up_00%d.png", 1, 4), 8)
+			.add_anim("up_angle", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_walk_up_angle_00%d.png", 1, 4), 8)
+			.add_anim("yay", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_yay_00%d.png", 1, 5), 8, false)
 			.play_anim("idle");	
 		_rect_transform.sizeDelta = new Vector2(_rect_transform.sizeDelta.x, _rect_transform.sizeDelta.x * (_image_target.get_tex_rect().height / _image_target.get_tex_rect().width));
 		
@@ -123,7 +123,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 		
 		_last_scale_x = scale_x;
 		_smoothed_facing = SPUtil.ang_deg_dir(cmp_a);
-		_image_animator.set_anim_duration(anim, SPUtil.y_for_point_of_2pt_line(new Vector2(0,15), new Vector2(10,2), Mathf.Clamp(pos_delta.magnitude,3,15)));
+		_image_animator.set_anim_duration(anim, SPUtil.y_for_point_of_2pt_line(new Vector2(0,10), new Vector2(10,2), Mathf.Clamp(pos_delta.magnitude,2,10)));
 		
 		if (_time_since_last_anim_update >= 5) {
 			_image_animator.play_anim(anim);
