@@ -1,0 +1,114 @@
+{
+	"id":-1,
+	"title":"TEST NODE",
+	"background":"bg_city_afternoon",
+	"music":"happy_day",
+	"requirementitem":[],
+	"previewchar":[
+		"mana_hero"
+	],
+	"idleevents":[
+		{"type":"gridnavfocusat","zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I sure hope this test goes okay!"},
+
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"gridnavfocusat","nodeid":-2,"zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"gridnavshowchar","nodeid":-2,"name":"mana"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Mana","text":"Pick this choice please!"},
+
+		{"type":"hidecharacter","character":"Mana"},
+		{"type":"gridnavfocusat","nodeid":-3,"zoom":1.5},
+		{"type":"wait","waittime":15},
+		{"type":"gridnavshowchar","nodeid":-3,"name":"raichi"},
+		{"type":"gridnavshowchar","nodeid":-3,"name":"simone_hero"},
+		{"type":"showcharacter","character":"Simone","image":"char_simone_hero","xpos":-200,"xscale":1},
+		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","character":"Simone","text":"Well, what is it?"},
+		{"type":"dialogue","character":"Raichi","text":"Well, what is it?"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":-170}
+	],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},
+		{"type":"charactereffect","character":"Mana","effect":"managodparticles"},
+		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_hallway","key":"default_showpeople"},
+		{"type":"updatebackground","strparam":"hidepeople"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"changebackground","background":"bg_school_classroom","key":"default"},
+
+		{"type":"changebackground","background":"bg_school_roof","key":"default"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_school_classroom","key":"default"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_classroom","key":"left"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},
+		{"type":"charactereffect","character":"Mana","effect":"managodparticles"},
+		{"type":"dialogue","text":"...","xpos":272,"ypos":168},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Mana","image":"char_mana_normal","xpos":300,"xscale":-1},
+
+		{"type":"camerashake", "length":"short"},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]Heyyyy@! [b]Mana@!"},
+
+		{"type":"updatebackground","strparam":"showmonster"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"transitioncharacter","character":"Mana","image":"char_mana_normal_shock","xscale":1},
+
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"hidecharacter","character":"Mana"},
+
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_city_afternoon","key":"sky_center"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+
+		{"type":"updatebackground","strparam":"movemonster","numparam1":-50,"numparam2":-12},
+		{"type":"camerashake", "length":"short"},
+
+		{"type":"dialogue","character":"Mana","text":"...","xpos":22,"ypos":53},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+
+		{"type":"updatebackground","strparam":"hidemonster"},
+
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0}
+	],
+	"links":[
+		-3,-2
+	]
+}

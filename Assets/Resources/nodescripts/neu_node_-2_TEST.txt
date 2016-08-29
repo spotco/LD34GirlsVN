@@ -1,0 +1,18 @@
+{
+	"id":-2,
+	"title":"ChibisTest",
+	"background":"bg_city_afternoon",
+	"music":"happy_day",
+	"requirementitem":[],
+	"previewchar":[
+		"mana",
+		"raichi"
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+	],
+	"links":[
+		-1
+	]
+}

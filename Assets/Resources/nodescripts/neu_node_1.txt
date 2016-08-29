@@ -1,0 +1,25 @@
+{
+	"id":1,
+	"title":"Prelude",
+	"background":"bg_black",
+	"music":"happy_day",
+	"requirementitem":[],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","character":"Me","text":"No...","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"**pause with more fighting noises and whatnot**","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Me","text":"No... no... How did this happen?","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"This isn't what I wanted.","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"**more battle noises**","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Me","text":"I just wanted us all to be happy together.","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"I wanted us to be friends.","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"But now...","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"**more sfx noises or images**","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Me","text":"NO!","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"**My breath catches as a bolt of light flies across the clearing and breaks through armor.**","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Me","text":"Is there something I could have done differently?","xpos":0,"ypos":-100}
+	],
+	"links":[
+		2
+	]
+}

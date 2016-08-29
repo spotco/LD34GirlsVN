@@ -1,0 +1,14 @@
+{
+	"id":-3,
+	"title":"TestNode3",
+	"background":"bg_school_classroom",
+	"music":"happy_day",
+	"requirementitem":[],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Test-1","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Test-2","xpos":0,"ypos":0}
+	],
+	"links":[
+	]
+}
