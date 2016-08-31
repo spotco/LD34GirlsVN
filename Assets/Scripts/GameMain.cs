@@ -14,7 +14,7 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = true;
+	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
@@ -44,13 +44,12 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// grid nav dialogue show chibi event
-
-// save old nodes
+// node8 will not load bug when go bottom route
+// debug skip gridnav dialogue bug
 			
 //	save/load implementation
 //	end to title UIs
-// smart travel for clicks
+//  smart travel for clicks
 //
 //	heart particles
 //  closer petals blurred and bigger in title

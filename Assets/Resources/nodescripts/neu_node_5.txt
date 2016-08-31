@@ -1,100 +1,40 @@
 {
-	"id":1,
-	"title":"A New Beginning",
+	"id":5,
+	"title":"Lesson",
 	"background":"bg_school_classroom",
-	"music":"happy_day",
+	"music":"daily",
 	"requirementitem":[],
+	"postshowevents":[
+		{"type":"gridnavfocusat","zoom":1.5},
+		{"type":"wait","waittime":25},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"TEST - a choice? what to do?"}
+	],
 	"event":[
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"A new city. %An opportunity for a fresh start.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I couldn't help but wonder what kinds of new experiences were out there waiting for me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"So far, all this moving and unpacking had been keeping me busy.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I haven't even had the chance to write to everyone back home yet!","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"If you would open your Geography books, we're starting off from yesterday's lesson..."},
+		{"type":"dialogue","text":"We're already starting the lesson?!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The students around me follow suit, pulling out books from their desks.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I skitter to my seat and open my bag, looking for my textbook...","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"It's... not here."},
+		{"type":"dialogue","text":"Lunch, pencil case, cellphone... But no textbook.","xpos":0,"ypos":0},
 
-		{"type":"changebackground","background":"bg_road"},
+		{"type":"dialogue","character":"Kurumi","text":"My first day, and I already forgot something?"},
+		{"type":"dialogue","text":"I swallow, trying to quell my panic.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This really isn't how I thought things were going to go today...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A girl with heavy glasses and a shy smile nudges her book toward me.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"It was my first day as a transfer to this new school.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As someone who had barely even left my small town before this...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...I was a little nervous, to say the least.","xpos":0,"ypos":0},
-		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"dialogue","character":"Kurumi","text":"Really? Can I use it?"},
+		{"type":"dialogue","text":"She nods.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Shy Girl","text":"I studied this yesterday..."},
 
-		{"type":"dialogue","character":"Teacher","text":"[bk]Ms. Motoyama@, can you please say your name and a little about yourself?","xpos":250,"ypos":100},
-		{"type":"showcharacter","character":"Me","image":"char_kurumi_normal","xpos":-100,"xscale":1},
-		{"type":"dialogue","character":"Me","text":"Ummm.....","xpos":250,"ypos":-100},
-		{"type":"dialogue","character":"Me","text":"Hello everyone! My name is [bk]Kurumi Motoyama@...","xpos":250,"ypos":-100},
-		{"type":"rename","namestart":"Me","nameend":"Kurumi"},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy"},
-		{"type":"dialogue","character":"Kurumi","text":"...and I'm [b3]suuuuuper@ excited to meet you all!","xpos":250,"ypos":-100},
-
-		{"type":"dialogue","text":"...","xpos":-291,"ypos":-155},
-		{"type":"dialogue","text":"Did I... %Overdo it a little?","xpos":-291,"ypos":-155},
-
-		{"type":"dialogue","character":"Teacher","text":"Thank you, [bk]Ms. Motoyama@. Your seat is over there.","xpos":250,"ypos":100},
-		{"type":"dialogue","text":"He pointed to a seat in the back.","xpos":255,"ypos":131},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal"},
-		{"type":"movecharacter","character":"Kurumi","xto":-325},
-		{"type":"dialogue","text":"I made my way over.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I passed by her, I couldn't help but notice the girl who would be sitting in front of me.","xpos":0,"ypos":0},
-
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":330,"xscale":-1},
-		{"type":"dialogue","character":"Pink Hair","text":"...","xpos":126,"ypos":-142},
-
-		{"type":"dialogue","text":"She was tall and skinny, with sharp eyes and a distinctive face.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However... %The most noticeable thing about her was the %[b]pink dyed hair@.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled"},
-		{"type":"dialogue","character":"Kurumi","text":"...Is that a popular thing to do around these parts?"},
-		{"type":"dialogue","text":"With introductions finished, the lesson finally started.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"Alright, everyone. %I mentioned last week that we'd have a quiz...","xpos":0,"ypos":110},
-		{"type":"dialogue","text":"I looked over again at the [b]pink-haired girl@ and saw her staring blankly out the window.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...I was guessing that she wasn't a great student.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Teacher","text":"But since [bk]Ms. Motoyama@ just transfered today, we'll put that on hold for now...","xpos":0,"ypos":110},
-		{"type":"playSFX", "sfx":"phone_buzz"},
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal","xscale":-1},
-		{"type":"dialogue","text":"Her eyes suddenly lit up as I heard a phone buzz.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She quickly grabbed it out of her bag and flipped it open.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"An... [b]alert@?","xpos":126,"ypos":-142},
-
-		{"type":"dialogue","text":"With a mischevious grin, she got up from her desk.","xpos":0,"ypos":0},
-		{"type":"movecharacter","character":"Pink Hair","xto":0},
-		{"type":"dialogue","character":"Pink Hair","text":"Excuse me! May I please go to the nurse's office?","xpos":287,"ypos":0},
-		{"type":"dialogue","text":"The teacher didn't seem too convinced.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"Right now? %Class just started.","xpos":287,"ypos":120},
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_sad","xscale":-1},
-		{"type":"dialogue","text":"She closed her eyes and put on a distressed face.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Pink Hair","text":"[b3]Ugh@... %I'm feeling... kinda sick. %Must have been something I ate.","xpos":287,"ypos":0},
-		{"type":"movecharacter","character":"Pink Hair","xto":420},
-
-		{"type":"dialogue","text":"Not even waiting for the response, she made her way to the exit.","xpos":0,"ypos":0},
-
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Pink Hair","text":"I might... [b3]Umm@... %Want to get this checked out or something.","xpos":140,"ypos":0},
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal","xscale":1},
-		{"type":"dialogue","character":"Pink Hair","text":"This could take a while. %[b3]Sorry@!","xpos":140,"ypos":0},
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal","xscale":-1},
-		{"type":"movecharacter","character":"Pink Hair","xto":700},
-		{"type":"playSFX", "sfx":"door_slam"},
-		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"She raced out, slamming the door shut behind her.","xpos":0,"ypos":0},
-
-		{"type":"hidecharacter","character":"Pink Hair"},
-
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"The entire class was silent.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Nobody seemed too surprised, however. Was this a regular occurrence?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"[b2]*Ahem*@...","xpos":231,"ypos":110},
-		{"type":"dialogue","text":"Clearing his throat, the teacher continued from where he left off.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Teacher","text":"Well then... %Please open your textbooks to chapter eight...","xpos":231,"ypos":107},
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"changebackground","background":"bg_black_dark"},
-		{"type":"dialogue","character":"Teacher","text":"...and we'll recap. Before he was a writer, [b3]Hemingway@ was a correspondant during the [b3]Spanish Civil War@...","xpos":231,"ypos":107},
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Foreign literature. Definitely not my best subject.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Her voice is soft and hesitant. For an instant she reminds me of a baby bird.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel myself relax, suddenly, knowing someone like this is in the school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She seems so nice... I really lucked out to be sitting next to someone so friendly.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But as I reach for the book, a thought strikes me: Would someone really read that far ahead?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What if she was just being nice to me? I wouldn't want her to get in trouble for me.","xpos":0,"ypos":0}
 	],
 	"links":[
-		131
+		6,7
 	]
 }

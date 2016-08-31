@@ -181,8 +181,12 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				}
 				
 			} else {
-				_current_state = State.WaitingForInput;
 				_state_anim_ct = 0;
+				if (_current_node._node_script._post_show_events.Count > 0) {
+					_current_state = State.DialogueMode;
+					_dialogue_manager.load_dialogue(game,this,_current_node._node_script._post_show_events);
+				}
+			
 			}			
 		} break;
 		case State.WaitingForInput: {

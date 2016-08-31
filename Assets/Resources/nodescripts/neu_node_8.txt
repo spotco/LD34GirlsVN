@@ -1,13 +1,12 @@
 {
-	"id":6,
-	"title":"Take the book",
+	"id":8,
+	"title":"Rebel girl",
 	"background":"bg_school_classroom",
 	"music":"happy_day",
 	"requirementitem":[],
 	"event":[
-		{"type":"dialogue","text":"Test - Take the book.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Test - Rebel girl.","xpos":0,"ypos":0}
 	],
 	"links":[
-		8
 	]
 }
