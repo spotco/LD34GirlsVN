@@ -2,7 +2,7 @@
 	"id":4,
 	"title":"A Chance Encounter",
 	"background":"bg_school_classroom",
-	"music":"happy_day",
+	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
 		{"type":"gridnavfocusat","zoom":1.5},

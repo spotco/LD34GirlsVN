@@ -46,7 +46,8 @@ public class GameMain : MonoBehaviour {
 
 // node8 will not load bug when go bottom route
 // debug skip gridnav dialogue bug
-			
+// text quality not dependant on window size bugfix
+						
 //	save/load implementation
 //	end to title UIs
 //  smart travel for clicks

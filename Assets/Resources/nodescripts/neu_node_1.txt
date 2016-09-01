@@ -16,7 +16,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue","text":"This is my story."},
-		{"type":"dialogue","text":"The world you see here is my view into it."},
+		{"type":"dialogue","text":"The map you see is your view into it."},
 		{"type":"dialogue","text":"The choices and decisions I take will appear here, along with the people I encounter."},
 		{"type":"gridnavfocusat","nodeid":2,"zoom":1.5},
 		{"type":"dialogue","text":"But for now, I've only got one choice... To move forward.","ypos":-167},
@@ -29,55 +29,58 @@
 
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Two figures stand alone in the clearing, warily eyeing each other.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I make my way to the clearing, I recognize them both.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I make my way to the clearing, I recognize two figures.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A boy and a girl. They stand motionless across from each other.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"No...","xpos":0,"ypos":-100},
-		
-		{"type":"dialogue","text":"One draws his sword, the sleek metal glistening in the light of the setting sun.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The other readies hers in response.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've come too late.'","xpos":0,"ypos":0},
-		
-		{"type":"dialogue","character":"Me","text":"Stop...","xpos":0,"ypos":-100},
-		
-		{"type":"dialogue","text":"Within an instant they're at each other, their swords clashing in a whirlwind of light.","xpos":0,"ypos":0},
-		
-		{"type":"dialogue","text":"The girl takes a sharp lunge, aimed directly at the other's chest.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He parries her blow, and then leaps into the air.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"The boy draws his sword, the sleek metal glistening in the light of the setting sun.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The girl readies hers in response.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Me","text":"Stop!","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"It's too late. %Within an instant their blades cross in a whirlwind of light.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"The girl takes a sharp lunge, aimed directly at the boy's chest.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He blocks her blow and then leaps into the air.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Undaunted, she bounds after him.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Me","text":"No... %Please... %If only you understood...","xpos":0,"ypos":-100},
-		{"type":"dialogue","text":"The clang of metal resonates through the air, their blades moving faster than I can see.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Tears start streaming from my eyes.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Me","text":"It... %Didn't have to be this way...","xpos":0,"ypos":-100},
-		
+		{"type":"dialogue","character":"Me","text":"No, please..!","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"They don't hear me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The clang of metal resonates through the air, their blades moving faster than I can follow.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Tears start streaming from my eyes. I can't watch.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Me","text":"There's something you have to know...","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"I just wanted us to live as we always had been.","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"I... just wanted us all to be happy.","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"My words fall on deaf ears.","xpos":0,"ypos":0},
+
 		{"type":"dialogue","text":"Caught off guard, a bolt of light suddenly pierces the girl's chest.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She screams, plummeting back down towards the ground.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Me","text":"I... just wanted us all to be happy.","xpos":0,"ypos":-100},
-		{"type":"dialogue","character":"Me","text":"I just wanted us to live as we always had been...","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"If I had known...","xpos":0,"ypos":-100},
 
 		{"type":"dialogue","text":"With a hard crash she lands back on the ground.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Me","text":"But, if I had known...","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"I'm so sorry...","xpos":0,"ypos":-100},
 
-		{"type":"dialogue","text":"The guy calmly lands back to the ground.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"From the corner of my eye, I notice movement.","xpos":0,"ypos":0},
-		
+		{"type":"dialogue","text":"The boy calmly lands back to the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"From the corner of my eye, I notice a sudden movement.","xpos":0,"ypos":0},
+
 		{"type":"dialogue","text":"My breath stops for a moment as another bolt of light flies across the clearing.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As if in slow motion, it pierces him through the chest as well.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As if in slow motion, it pierces him through the chest.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"NO!","xpos":0,"ypos":-100},
 		{"type":"dialogue","text":"He crumples to the ground, dropping his sword.","xpos":0,"ypos":0},
-		
+
 		{"type":"dialogue","character":"Me","text":"No...","xpos":0,"ypos":-100},
-		{"type":"dialogue","text":"And with that, it was over. I was all alone.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Me","text":"...","xpos":0,"ypos":-100},
+		{"type":"dialogue","text":"And with that, it was over.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was all alone.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I knew this was going to happen.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... %I was powerless to stop it.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"There... %Must have been something...","xpos":0,"ypos":-100},
-		
+
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I close my eyes.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I was powerless. What could I have done?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What could I have done?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was powerless.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The world swirls around me as everything turns dark.","xpos":0,"ypos":0}
 	],
 	"links":[
