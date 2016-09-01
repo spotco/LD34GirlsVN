@@ -28,16 +28,23 @@
 
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"He draws his sword, the sleek metal glistening in the light of the setting sun.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She readies her greatsword. It seems like there's nothing I can do to stop this.","xpos":0,"ypos":0},
-
+		{"type":"dialogue","text":"Two figures stand atop a hill, warily eyeing each other.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I make my way to the clearing, I recognize them both.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"No...","xpos":0,"ypos":-100},
-
+		
+		{"type":"dialogue","text":"One draws his sword, the sleek metal glistening in the light of the setting sun.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The other readies hers in response.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've come too late.'","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","character":"Me","text":"Stop...","xpos":0,"ypos":-100},
+		
+		{"type":"dialogue","text":"They rush at each other. She tries to swing at him, but he's faster.","xpos":0,"ypos":0},
+		
 		{"type":"dialogue","text":"They rush at each other. She tries to swing at him, but he's faster.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"He parries her blow and rises into the sky, wings beating rapidly.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"She follows suit, and suddenly they're rushing at each other, almost faster than I can see.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Me","text":"No... no... How did this happen?","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Me","text":"No... How did this happen?","xpos":0,"ypos":-100},
 		{"type":"dialogue","character":"Me","text":"This isn't what I wanted.","xpos":0,"ypos":-100},
 
 		{"type":"dialogue","text":"The clang of metal shrieks through the air. She almost gets him, missing only by inches.","xpos":0,"ypos":0},
