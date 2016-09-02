@@ -8,14 +8,14 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Being asked to read... [b3]Now@? Of all the possible times..."},
+		{"type":"dialogue","character":"Kurumi","text":"Being asked to read... [b3]Now@? Of all the possible times...","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":6,"zoom":1.5},
-		{"type":"dialogue","character":"Kurumi","text":"Should I just go and grab her book..? She did say I could share..."},
+		{"type":"dialogue","character":"Kurumi","text":"Should I just go and grab her book..? She did say I could share...","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":7,"zoom":1.5},
-		{"type":"dialogue","character":"Kurumi","text":"Or should I just fess up and say I forgot it?"},
+		{"type":"dialogue","character":"Kurumi","text":"Or should I just fess up and say I forgot it?","ypos":-167},
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I better do something, and fast!"}
+		{"type":"dialogue","character":"Kurumi","text":"I better do something, and fast!","ypos":-167}
 	],
 	"event":[
 		{"type":"dialogue","character":"Teacher","text":"If you would open your books, we're starting off from yesterday's lesson..."},
@@ -28,12 +28,12 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
 		{"type":"dialogue","text":"It's not here.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"This really isn't how I imagined things were going to go today.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This really isn't how I imagined things going today.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Of all things to forget..."},
 
 		{"type":"dialogue","text":"I take a deep breath, trying not to show any signs of panic.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I do, I feel a light tap on my shoulder. I look over.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I do, I feel a light tap on my shoulder, and look over.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A girl with heavy glasses and a shy smile nudges her book toward me.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},

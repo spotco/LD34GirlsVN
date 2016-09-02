@@ -67,7 +67,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"U-um..."},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"A boy sitting in the front row looks up at.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A boy sitting in the front row looks up.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"He's tall, with a sharp gaze and and glasses that give him a serious demeanor.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},

@@ -36,7 +36,7 @@
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xpos":-300,"xscale":1},
 		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"As I look up, a blast of pink fills my vision. This girl's pink hair glimmers in the light.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I look up, a blast of color fills my vision. It's this girl's pink hair.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Pink Hair","text":"Try not to be such a klutz.","xpos":126,"ypos":-142},
 		{"type":"dialogue","text":"I'd never seen anything quite like it before. %I was speechless.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I... %I mean, your..."},
