@@ -11,28 +11,34 @@
 		{"type":"dialogue","character":"Kurumi","text":"TEST - a choice? what to do?"}
 	],
 	"event":[
-		{"type":"dialogue","character":"Teacher","text":"If you would open your Geography books, we're starting off from yesterday's lesson..."},
-		{"type":"dialogue","text":"We're already starting the lesson?!","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The students around me follow suit, pulling out books from their desks.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I skitter to my seat and open my bag, looking for my textbook...","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"If you would open your books, we're starting off from yesterday's lesson..."},
+		{"type":"dialogue","text":"We're already starting?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The students around me pull their books out from their desks.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Following suit, I open my bag. %I reach in, expecting to find my own.","xpos":0,"ypos":0},
+		
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"It's... not here."},
-		{"type":"dialogue","text":"Lunch, pencil case, cellphone... But no textbook.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Kurumi","text":"My first day, and I already forgot something?"},
-		{"type":"dialogue","text":"I swallow, trying to quell my panic.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This really isn't how I thought things were going to go today...","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Lunchbox, pencil case, cellphone..."},
+		{"type":"dialogue","text":"It's not here.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"This really isn't how I imagined things were going to go today.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Of all things to forget..."},
+		
+		{"type":"dialogue","text":"I take a deep breath, trying not to show any signs of panic.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I do, I feel a tap on my shoulder. I look over.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A girl with heavy glasses and a shy smile nudges her book toward me.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"Really? Can I use it?"},
+		{"type":"dialogue","character":"Kurumi","text":"Really? Can I?"},
 		{"type":"dialogue","text":"She nods.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Shy Girl","text":"I studied this yesterday..."},
+		{"type":"dialogue","character":"Shy Girl","text":"We can share..."},
 
-		{"type":"dialogue","text":"Her voice is soft and hesitant. For an instant she reminds me of a baby bird.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I feel myself relax, suddenly, knowing someone like this is in the school.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She seems so nice... I really lucked out to be sitting next to someone so friendly.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But as I reach for the book, a thought strikes me: Would someone really read that far ahead?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What if she was just being nice to me? I wouldn't want her to get in trouble for me.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Her voice is soft and friendly. She seems nice.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm glad there's at least someone here who understands my struggle.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"As I reach for her book, I suddenly hear my name get called.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@, since you just joined us today..."},
+		{"type":"dialogue","character":"Teacher","text":"Why don't you read? Starting from the first section."},
+		
+		{"type":"dialogue","character":"Kurumi","text":"I..."}
 	],
 	"links":[
 		6,7

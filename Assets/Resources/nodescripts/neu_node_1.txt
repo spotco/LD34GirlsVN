@@ -16,10 +16,10 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue","text":"This is my story."},
-		{"type":"dialogue","text":"The map you see is your view into it."},
+		{"type":"dialogue","text":"The map you see is your view into the events that will unfold."},
 		{"type":"dialogue","text":"The choices and decisions I take will appear here, along with the people I encounter."},
 		{"type":"gridnavfocusat","nodeid":2,"zoom":1.5},
-		{"type":"dialogue","text":"But for now, I've only got one choice... To move forward.","ypos":-167},
+		{"type":"dialogue","text":"For now, I've only got one choice... To move forward.","ypos":-167},
 		{"type":"dialogue","text":"Click or use the arrow keys to move around. Press the space key to confirm.","ypos":-167},
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
@@ -34,7 +34,7 @@
 		{"type":"dialogue","character":"Me","text":"No...","xpos":0,"ypos":-100},
 
 		{"type":"dialogue","text":"The boy draws his sword, the sleek metal glistening in the light of the setting sun.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The girl readies hers in response.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The girl readies her own blade in response.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Me","text":"Stop!","xpos":0,"ypos":-100},
 		{"type":"dialogue","text":"It's too late. %Within an instant their blades cross in a whirlwind of light.","xpos":0,"ypos":0},
