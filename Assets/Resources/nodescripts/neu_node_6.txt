@@ -1,8 +1,8 @@
 {
 	"id":6,
-	"title":"Take the book",
+	"title":"Grab the Book",
 	"background":"bg_school_classroom",
-	"music":"happy_day",
+	"music":"daily",
 	"requirementitem":[],
 	"event":[
 		{"type":"dialogue","text":"Test - Take the book.","xpos":0,"ypos":0}

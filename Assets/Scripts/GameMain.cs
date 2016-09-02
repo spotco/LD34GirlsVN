@@ -14,7 +14,7 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = false;
+	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
@@ -43,6 +43,11 @@ public class GameMain : MonoBehaviour {
 	
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
+
+// WRITING:
+// choice in responding to parents message. do, happy. don't mad.
+// take the book (rudely takes the book, apologize to naoko)
+// admit guilt (admit doesnt have, raichi has book) 
 
 // node8 will not load bug when go bottom route
 // debug skip gridnav dialogue bug

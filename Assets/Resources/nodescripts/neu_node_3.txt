@@ -8,11 +8,7 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Tough crowd. Definitely [b3]NOT@ how I pictured this going."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"That [br]Raichi@ guy seems pretty nice, though."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Why can't everyone else be a little more like that?"}
+		{"type":"dialogue","character":"Kurumi","text":"Definitely [b3]NOT@ how I pictured this going."}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road"},
@@ -34,11 +30,11 @@
 		{"type":"dialogue","text":"I had seen photos of it before, but it's even bigger in person.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Students casually make their way to the entrace, their blue uniforms distinguishing them.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Is that what I think it is...?!"},
+		{"type":"dialogue","character":"Kurumi","text":"Is that what I think it is...?"},
 		{"type":"dialogue","text":"I could barely keep myself from giggling.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A few students passing by give me odd looks.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I struggle to compose myself. I can't be making a bad impression already.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","text":"I struggle to compose myself. I can't be making a bad impression already.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Okay. New school, %here I come..!"},
 		{"type":"hidecharacter","character":"Kurumi"},
 
@@ -47,12 +43,12 @@
 		{"type":"dialogue","text":"The muffled voice of the teacher slips out through the crack in the classroom door.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"We have a new student who just transferred in..."},
 		{"type":"dialogue","text":"A rush of whispers rolls through the classroom. That's [bk]ME@ she's talking about here.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"Kurumi? Would you please come in?"},
+		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@? Would you please come in?"},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"I take a deep breath and step through the door.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"This is [b3]Kurumi Motoyama@. Would you like to introduce yourself?"},
+		{"type":"dialogue","character":"Teacher","text":"This is [bk]Kurumi Motoyama@. Would you like to introduce yourself?"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","text":"I look out over the sea of faces staring right at me, and notice something odd.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Nobody looks excited. %What's going on?","xpos":0,"ypos":0},
@@ -61,7 +57,7 @@
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
 		{"type":"dialogue","text":"After a moment's hesitation, I bow.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Hello! My name is Kurumi. I'm so excited to be living here!"},
+		{"type":"dialogue","character":"Kurumi","text":"Hello! My name is [bk]Kurumi@. I'm so excited to be living here!"},
 		{"type":"dialogue","character":"Kurumi","text":"I know there's a lot of new things to learn, but I can't wait to be friends with you all!"},
 		{"type":"dialogue","text":"I flash my best smile and wait for a response.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
@@ -71,19 +67,20 @@
 		{"type":"dialogue","character":"Kurumi","text":"U-um..."},
 
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"A boy sitting in the front row looks up at me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A boy sitting in the front row looks up at.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"He's tall, with a sharp gaze and and glasses that give him a serious demeanor.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 
-		{"type":"dialogue","character":"Teacher","text":"You should know, this is [br]Raichi Kashiwagi@. He's the class representative."},
+		{"type":"dialogue","character":"Teacher","text":"By the way, this is [br]Raichi Kashiwagi@. He's the class representative."},
+		{"type":"dialogue","character":"Teacher","text":"You should go to him with any questions you have."},
 		{"type":"dialogue","text":"I bow slightly in his direction.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"N-nice to meet you."},
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
 		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I know it can be a intimidating to come to a new school."},
+		{"type":"dialogue","character":"Raichi","text":"I'm sure it's intimidating to coming to a new school."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"So if you need anything at all, please let me know."},
 
@@ -95,7 +92,7 @@
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"hidecharacter","character":"Raichi"},
 
-		{"type":"dialogue","text":"I look over everyone else.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I look over to everyone else.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The people here... I think they're a bit more reserved than what I'm used to.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...It must be a city thing.","xpos":0,"ypos":0}
 	],

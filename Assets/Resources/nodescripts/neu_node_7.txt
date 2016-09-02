@@ -1,6 +1,6 @@
 {
 	"id":7,
-	"title":"Not take the book",
+	"title":"Tell the Truth",
 	"background":"bg_school_classroom",
 	"music":"happy_day",
 	"requirementitem":[],
