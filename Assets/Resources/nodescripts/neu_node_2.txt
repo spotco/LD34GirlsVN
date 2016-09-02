@@ -52,6 +52,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b4]#Stay safe. Don't wander alone at night. Dad.#@"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
+		
 		{"type":"dialogue","text":"I type up a quick response and send it back.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
