@@ -1,0 +1,29 @@
+{
+	"id":10,
+	"title":"Rebel Girl",
+	"background":"bg_school_classroom",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Something doesn't feel right.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Maybe it's just my nerves... But something feels unsettling.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I notice people taking sudden glances out the window.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What could they possibly be looking for?","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"I notice the [b]pink-haired@ girl from earlier. She's been staring outside this whole time.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I inch closer, I notice cables coming from her hair.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Earbuds..?"},
+		{"type":"dialogue","text":"They're well hidden from the front, but I can make out the distinct outline going to her ear.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"She probably isn't paying attention at all..!"}
+	],
+	"links":[
+	]
+}

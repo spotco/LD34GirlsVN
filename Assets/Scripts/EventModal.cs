@@ -126,6 +126,8 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 	
 	private void end_script_playback_and_close_modal(GameMain game) {
 		game._grid_nav_modal.update_accessible();
+		
+		_current_script = null;
 		foreach (string name in _name_to_character.Keys) {
 			EventCharacter itr_char = _name_to_character[name];
 			itr_char._current_mode = EventCharacter.Mode.DoRemove;
@@ -135,14 +137,22 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			itr.cleanup(game);	
 		}
 		_dialogue_bubbles.Clear();
+		
 		game.finish_event_modal();
 	}
 	
 	private void end_gridnav_dialogue_and_close(GameMain game) {
+		_current_script = null;
 		foreach (string name in _name_to_character.Keys) {
 			EventCharacter itr_char = _name_to_character[name];
 			itr_char._current_mode = EventCharacter.Mode.FadeOut;
 		}
+		for (int i = _dialogue_bubbles.Count-1; i >= 0; i--) {
+			DialogueBubble itr = _dialogue_bubbles[i];
+			itr.cleanup(game);	
+		}
+		_dialogue_bubbles.Clear();
+		
 		_gridnav_dialogue_mode = false;
 		game._grid_nav_modal._dialogue_manager.finish_dialogue(game);
 	}

@@ -18,10 +18,12 @@ public class GridNode : MonoBehaviour {
 	private LineProtoRoot _line_proto;
 	
 	private void hide_legacy_elements() {
-		Destroy(this.GetComponent<Image>());
-		Destroy(this.transform.FindChild("LockImage").gameObject);
-		Destroy(this.transform.FindChild("LockIcon").gameObject);
-		Destroy(this.transform.FindChild("Text").gameObject);
+		try {
+			Destroy(this.GetComponent<Image>());
+			Destroy(this.transform.FindChild("LockImage").gameObject);
+			Destroy(this.transform.FindChild("LockIcon").gameObject);
+			Destroy(this.transform.FindChild("Text").gameObject);
+		} catch {}
 	}
 	
 	public void i_initialize(GameMain game, GridNavModal grid_nav, NodeAnimRoot proto_nodeanimroot, LineProtoRoot proto_line) {

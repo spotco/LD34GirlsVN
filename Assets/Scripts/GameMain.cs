@@ -16,7 +16,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = false;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 5;
+	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -44,70 +44,9 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// WRITING:
-/*
-{"type":"dialogue","character":"Kurumi","text":"[b4]#Stay safe. Don't wander alone at night. Dad.#@"},
-{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-{"type":"dialogue","character":"Kurumi","text":"..."},
-
-I take a moment and think of how best to respond.
-
----
-
-This is a turning point, my first choice.
-Whatever's decided here could affect many things further on.
-Here, I've got two options.
-
-Should I respond immediately..?
-Or... Maybe I should wait for tomorrow.
-
----
-
-I'll admit that this move has been tough.
-Everything happened so suddenly, and I'd be lying if I said I wasn't upset.
-I still think it's odd that my parents had to stay behind.
-But... Whatever it is they're doing, I'm sure they're thinking of me.
-It's a reassuring thought.
-I type up a quick response and send it back.
-I then turn off my phone and put it in my bag as I head to my room.
-
-A bright, beaming smile bursts across my face.
-I'm... excited!
-
----
-
-I'd be lying if I said I wasn't upset.
-I'm hundreds of miles away from home, all alone in an unfamiliar city. It all happened so suddenly.
-I hardly even had time to say goodbye to all my friends.
-So, I should probably wait until I calm down a bit before responding.
-If I sounded too emotional, that'd probably just make my parents concerned.
-I then turn off my phone and put it in my bag as I head to my room.
-
-I felt a bit nervous. How is it all going to go tomorrow?
-I took a deep breath. That calmed me down a bit.
-Well, no help in worrying about it all night!
-
----
-
-{"type":"dialogue","text":"I type up a quick response and send it back.","xpos":0,"ypos":0},
-{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
-{"type":"hidecharacter","character":"Kurumi"},
-
-{"type":"changebackground","background":"bg_black"},
-{"type":"dialogue","text":"Ever since I was little, I wondered what it would be like to move to a big city.","xpos":0,"ypos":0},
-{"type":"dialogue","text":"In our small town, nothing ever changed. I was with the same people, seeing the same places every day.","xpos":0,"ypos":0},
-{"type":"dialogue","text":"But now... %This is a new opportunity.","xpos":0,"ypos":0},
-{"type":"dialogue","text":"In this city... Everything is different.","xpos":0,"ypos":0},
-{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
-
-{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0}
-*/
-
 // procedurally generate node positions
 // selecting node, fade out node text. bottom right show subtitle of scene
-// node8 will not load bug when go bottom route
-// debug skip gridnav dialogue bug
-// text quality not dependant on window size bugfix (move SPText to RawImage with adapter
+// text quality not dependant on window size bugfix (move SPText to RawImage with adapter)
 						
 //	save/load implementation
 //	end to title UIs
@@ -133,6 +72,8 @@ Well, no help in worrying about it all night!
 	public void Start () {
 		_self_rect = this.GetComponent<RectTransform>();
 		_parent_canvas = this.GetComponentInParent<Canvas>();
+		
+		this.GetComponent<Mask>().enabled = true;
 	
 		_context = this;
 		_objpool = ObjectPool.cons();

@@ -1,102 +1,36 @@
 {
 	"id":3,
-	"title":"The First Day",
-	"background":"bg_road",
+	"title":"Reply Right Away",
+	"background":"bg_apartment",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
-		{"type":"gridnavfocusat","zoom":1.5},
-		{"type":"wait","waittime":25},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Definitely [b3]NOT@ how I pictured this going."}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school..."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Who knows what kinds of new people I'll meet!"}
 	],
 	"event":[
-		{"type":"changebackground","background":"bg_road"},
-		{"type":"dialogue","text":"The walk to school this morning has been especially daunting.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I cautiously make my way down the unfamiliar city streets, streams of people pass by me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems like they're all in a rush.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's completely different from where I came from.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_apartment"},
+		{"type":"dialogue","text":"I'll admit that this move has been tough.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It all happened so suddenly.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I still think it's odd that my parents had to stay behind.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... Whatever it is they're doing, I'm sure they're thinking of me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a reassuring thought.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I type up a quick response and send it back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"As I wait at the edge of a crosswalk, I look around.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm all alone in this crowd of unfamiliar people.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Is this how it always is in the city?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I had been worried that it would all be a little too overwhelming.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... %I think I'm handling it well.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The light turns and I cross. It shouldn't be too far now.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since I was little, I wondered what it would be like to move to a big city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In our small town, nothing ever changed. I was with the same people, seeing the same places every day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now... %This is a new opportunity.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In this city... Everything is different.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
 
-		{"type":"changebackground","background":"bg_road"},
-		{"type":"dialogue","text":"Up ahead, I see a familiar-looking building.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I had seen photos of it before, but it's even bigger in person.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Students casually make their way to the entrace, their blue uniforms distinguishing them.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Is that what I think it is...?"},
-		{"type":"dialogue","text":"I could barely keep myself from giggling.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A few students passing by give me odd looks.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","text":"I struggle to compose myself. I can't be making a bad impression already.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Okay. New school, %here I come..!"},
-		{"type":"hidecharacter","character":"Kurumi"},
-
-		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"I wait outside in an empty hallway, the other students are already seated.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The muffled voice of the teacher slips out through the crack in the classroom door.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"We have a new student who just transferred in..."},
-		{"type":"dialogue","text":"A rush of whispers rolls through the classroom. That's [bk]ME@ she's talking about here.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@? Would you please come in?"},
-
-		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"I take a deep breath and step through the door.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"This is [bk]Kurumi Motoyama@. Would you like to introduce yourself?"},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","text":"I look out over the sea of faces staring right at me, and notice something odd.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Nobody looks excited. %What's going on?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Hushed whispers fill the room.","xpos":0,"ypos":0},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","text":"After a moment's hesitation, I bow.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Hello! My name is [bk]Kurumi@. I'm so excited to be living here!"},
-		{"type":"dialogue","character":"Kurumi","text":"I know there's a lot of new things to learn, but I can't wait to be friends with you all!"},
-		{"type":"dialogue","text":"I flash my best smile and wait for a response.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"Nothing happens. %I straighten myself, feeling confused.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"They're all just staring at me. Did I do something wrong?","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"U-um..."},
-
-		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"A boy sitting in the front row looks up.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He's tall, with a sharp gaze and and glasses that give him a serious demeanor.","xpos":0,"ypos":0},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-
-		{"type":"dialogue","character":"Teacher","text":"By the way, this is [br]Raichi Kashiwagi@. He's the class representative."},
-		{"type":"dialogue","character":"Teacher","text":"You should go to him with any questions you have."},
-		{"type":"dialogue","text":"I bow slightly in his direction.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"N-nice to meet you."},
-
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
-		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"I'm sure it's intimidating to coming to a new school."},
-		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
-		{"type":"dialogue","character":"Raichi","text":"So if you need anything at all, please let me know."},
-
-		{"type":"dialogue","character":"Kurumi","text":"I..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","text":"I do my best to smile back.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"I will!"},
-
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"hidecharacter","character":"Raichi"},
-
-		{"type":"dialogue","text":"I look over to everyone else.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The people here... I think they're a bit more reserved than what I'm used to.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...It must be a city thing.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0}
 	],
 	"links":[
-		4
+		5
 	]
 }

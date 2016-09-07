@@ -185,9 +185,11 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				if (_current_node._node_script._post_show_events.Count > 0) {
 					_current_state = State.DialogueMode;
 					_dialogue_manager.load_dialogue(game,this,_current_node._node_script._post_show_events);
+				} else {
+					_current_state = State.WaitingForInput;
 				}
+			}
 			
-			}			
 		} break;
 		case State.WaitingForInput: {
 			for (int i = 0; i < _active_gridnodes.key_itr().Count; i++) { // this is done first since this will change gridnode animroot state

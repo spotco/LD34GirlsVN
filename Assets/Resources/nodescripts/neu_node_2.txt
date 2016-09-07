@@ -7,10 +7,25 @@
 	"postshowevents":[
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Who knows what kinds of new people I'll meet!"}
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"So, I've got two options here."},
+
+		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
+		{"type":"dialogue","character":"Kurumi","text":"I could respond immediately."},
+		{"type":"dialogue","character":"Kurumi","text":"I'd probably say that everything's going well."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Wouldn't want them to worry, right?"},
+
+		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Or... Maybe I should wait until tomorrow."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I'd be lying if I said I wasn't feeling a little homesick."},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"dialogue","text":"This is a decision. The first turning point in my story.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Choices made here will affect future events.","xpos":0,"ypos":0}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road"},
@@ -52,21 +67,9 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b4]#Stay safe. Don't wander alone at night. Dad.#@"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		
-		{"type":"dialogue","text":"I type up a quick response and send it back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Kurumi"},
-
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Ever since I was little, I wondered what it would be like to move to a big city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In our small town, nothing ever changed. I was with the same people, seeing the same places every day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now... %This is a new opportunity.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In this city... Everything is different.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I take a moment and think of how best to respond.","xpos":0,"ypos":0}
 	],
 	"links":[
-			3
+			3,4
 	]
 }
