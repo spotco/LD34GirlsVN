@@ -61,16 +61,19 @@ public class SPTextRenderManager : MonoBehaviour {
 	}
 	
 	public void set_text_outline_color(Color color) {
+	
+		float test_val = 0.95f;
+	
 		_sptext.set_default_style(SPText.SPTextStyle.cons(
 			new Vector4(color.r, color.g, color.b, color.a), 
-			new Vector4(1,1,1,1), 
+			new Vector4(test_val,test_val,test_val,1), 
 			new Vector4(0,0,0,0), 0, 0));
 	}
 	public void set_bold_color(Color normal_outline_color) {
 		// purple
 		Color bold_fill_color = new Color(235/255.0f,185/255.0f,255/255.0f,1);
 		Color bold_outline_color = new Color(118/255.0f,100/255.0f,127/255.0f,1);
-	
+		
 		_sptext.add_style("b", SPText.SPTextStyle.cons(
 			new Vector4(bold_outline_color.r, bold_outline_color.g, bold_outline_color.b, bold_outline_color.a), 
 			new Vector4(bold_fill_color.r, bold_fill_color.g, bold_fill_color.b, bold_fill_color.a), 

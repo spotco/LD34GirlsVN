@@ -14,7 +14,7 @@ public class GameMain : MonoBehaviour {
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
 	public static bool DEBUG_CONTROLS = true;
-	public static bool MUTE = false;
+	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
 	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
@@ -44,6 +44,7 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
+// dialogue box does not fade out if next message same char
 // procedurally generate node positions
 // selecting node, fade out node text. bottom right show subtitle of scene
 // text quality not dependant on window size bugfix (move SPText to RawImage with adapter)

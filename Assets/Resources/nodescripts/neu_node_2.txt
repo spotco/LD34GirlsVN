@@ -28,7 +28,7 @@
 		{"type":"dialogue","text":"Choices made here will affect future events.","xpos":0,"ypos":0}
 	],
 	"event":[
-		{"type":"changebackground","background":"bg_road"},
+		{"type":"changebackground","background":"bg_road_night"},
 		{"type":"dialogue","text":"It's my first night here in this unfamiliar city.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The night before my first day at this new school.","xpos":0,"ypos":0},
 

@@ -1,7 +1,7 @@
 {
 	"id":6,
 	"title":"A Chance Encounter",
-	"background":"bg_school_classroom",
+	"background":"bg_school_classroom_front",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
@@ -16,6 +16,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Y-yes..!"},
 		{"type":"dialogue","text":"She points to a seat in the back of the room.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"dialogue","text":"As I make my way over, the class begins to buzz with chatter.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Student","text":"With everything that's been going on..?","xpos":-163,"ypos":118},
 		{"type":"dialogue","character":"Student","text":"What if she didn't have a choice?","xpos":150,"ypos":81},
