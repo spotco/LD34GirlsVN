@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class GridNavArrow : MonoBehaviour {
 
-	[SerializeField] private Image _arrow_back;
+	[SerializeField] private Transform _arrow_back;
 	[SerializeField] private Image _arrow;
 	[SerializeField] private CanvasGroup _canvas_group;
 	
