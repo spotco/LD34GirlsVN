@@ -11,7 +11,7 @@ public class DialogueBubble : SPBaseBehavior {
 	[SerializeField] private RectTransform _nametag;
 	[SerializeField] private Image _cursor;
 	[SerializeField] private Image _cursor_shadow;
-	[SerializeField] private RawImage _rendered_text;
+	[SerializeField] private SPText _rendered_text;
 	
 	private ScrollText _primary_text = new ScrollText();
 	[SerializeField] private Outline _name_text_outline;
@@ -57,12 +57,17 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
 		this.gameObject.SetActive(true);
-		_rendered_text.gameObject.SetActive(true);
+		//_rendered_text.gameObject.SetActive(true);
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
-		game._sptext.clear();
-		_rendered_text.texture = game._sptext.get_tex();
+		//game._sptext.get_text().transform.SetParent(_rendered_text.transform);
+		
+		_rendered_text.i_cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
+		_rendered_text.clear();
+		
+		//game._sptext.clear();
+		//_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_nametag.gameObject.SetActive(false);
@@ -74,7 +79,8 @@ public class DialogueBubble : SPBaseBehavior {
 		this.apply_style(game._sptext, dialogue);
 		
 		_primary_text.reset();
-		_primary_text._text = game._sptext;
+		_primary_text._text = _rendered_text;
+		_primary_text._text_manager = game._sptext;
 		_primary_text.load(dialogue._text);
 		_current_mode = Mode.FadeIn;
 		
@@ -96,6 +102,8 @@ public class DialogueBubble : SPBaseBehavior {
 	}
 	
 	public void i_update(GameMain game) {
+		
+		//_rendered_text.i_update();
 		
 		if (_current_mode == Mode.FadeIn) {
 			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get(),0,1);
@@ -269,8 +277,8 @@ public class DialogueBubble : SPBaseBehavior {
 			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
 		}
 		_name_text_outline.effectColor = outline_color;
-		text_renderer.set_text_outline_color(outline_color);
-		text_renderer.set_bold_color(outline_color);
+		text_renderer.set_text_outline_color(_rendered_text, outline_color);
+		text_renderer.set_bold_color(_rendered_text, outline_color);
 	}
 	
 	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";

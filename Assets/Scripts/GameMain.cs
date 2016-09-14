@@ -50,8 +50,6 @@ public class GameMain : MonoBehaviour {
 // text quality not dependant on window size bugfix (move SPText to RawImage with adapter)
 						
 //	save/load implementation
-//	end to title UIs
-//  smart travel for clicks
 //
 //	heart particles
 //  closer petals blurred and bigger in title
@@ -69,6 +67,8 @@ public class GameMain : MonoBehaviour {
 //	cache characters
 //	sfx cache n pool text scroll sounds
 //	sfx load all at start
+//	end to title UIs
+//  smart travel for clicks
 	
 	public void Start () {
 		_self_rect = this.GetComponent<RectTransform>();

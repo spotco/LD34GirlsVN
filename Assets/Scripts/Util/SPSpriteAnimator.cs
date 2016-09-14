@@ -62,6 +62,9 @@ public class SPSpriteAnimator {
 		public void add_to_parent(Transform parent) {
 			_image.transform.SetParent(parent);
 		}
+		public RectTransform get_recttransform() {
+			return _image.rectTransform;
+		}
 	}
 	
 	public interface Target {
@@ -78,6 +81,8 @@ public class SPSpriteAnimator {
 		void set_texture(Texture val);
 		void set_name(string val);
 		void add_to_parent(Transform parent);
+		
+		RectTransform get_recttransform();
 	}
 	
 	private class SPSpriteAnimator_Animation {
