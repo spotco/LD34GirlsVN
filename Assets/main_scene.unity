@@ -6948,6 +6948,33 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234880851}
+--- !u!1 &1257677755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1257677756}
+  m_Layer: 5
+  m_Name: TextPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257677756
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1257677755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1703775323}
+  m_RootOrder: 0
 --- !u!1 &1259072779
 GameObject:
   m_ObjectHideFlags: 0
@@ -9400,7 +9427,7 @@ GameObject:
   - 222: {fileID: 1703775326}
   - 114: {fileID: 1703775324}
   m_Layer: 5
-  m_Name: RenderedText
+  m_Name: SPText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9416,13 +9443,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1257677756}
   m_Father: {fileID: 285883850}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 380, y: 153}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1703775324
 MonoBehaviour:
@@ -9435,6 +9463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924f34a3a6c3348609f35a7982757391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pivot_node: {fileID: 1257677756}
 --- !u!222 &1703775326
 CanvasRenderer:
   m_ObjectHideFlags: 0

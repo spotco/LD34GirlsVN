@@ -51,6 +51,7 @@ public class DialogueBubble : SPBaseBehavior {
 	}
 	
 	public void cleanup(GameMain game) {
+		_rendered_text.clear();
 		_current_mode = Mode.FadeIn;
 		game._objpool.spbasebehavior_repool<DialogueBubble>(this);
 	}
@@ -78,10 +79,12 @@ public class DialogueBubble : SPBaseBehavior {
 		
 		this.apply_style(game._sptext, dialogue);
 		
+		
 		_primary_text.reset();
 		_primary_text._text = _rendered_text;
 		_primary_text._text_manager = game._sptext;
 		_primary_text.load(dialogue._text);
+		
 		_current_mode = Mode.FadeIn;
 		
 		_anim_t = 0;

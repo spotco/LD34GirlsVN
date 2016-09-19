@@ -67,6 +67,71 @@ public class SPSpriteAnimator {
 		}
 	}
 	
+	public class SpriteImageTargetAdapter : Target {
+		public Texture _texture;
+		public Image _image;
+		private Rect _rect;
+		public Rect get_tex_rect() {
+			return _rect;
+		}
+		
+		public void set_tex_rect(Rect rect) {
+			_rect = rect;
+			float tex_wid = _texture.width;
+			float tex_hei = _texture.height;
+			
+			float uv_x = rect.x / tex_wid;
+			float uv_y = 1.0f - ((rect.y + rect.height) / tex_hei);
+			float uv_wid = rect.width / tex_wid;
+			float uv_hei = rect.height / tex_hei;
+			
+			Rect uvRect = new Rect(uv_x,uv_y,uv_wid,uv_hei);
+			Sprite tar_sprite = TextureResource.inst().get_sprite(TextureResource.inst().tex_to_key(_texture),uvRect);
+			_image.sprite = tar_sprite;
+		}
+		
+		private float _rotation = 0;
+		public void set_rotation(float val) {
+			_rotation = val;
+			_image.transform.localRotation = SPUtil.set_rotation_quaternion(_image.transform.localRotation, new Vector3(0,0,_rotation));
+		}
+		public float get_rotation() { 
+			return _rotation;
+		}
+		public void set_scale(float val) {
+			_image.transform.localScale = SPUtil.valv(val);
+		}
+		public float get_scale() { 
+			return _image.transform.localScale.x; 
+		}
+		public void set_opacity(float val) {
+			Color color = _image.color;
+			color.a = val;
+			_image.color = color;
+		}
+		public float get_opacity() { 
+			return _image.color.a; 
+		}
+		public void set_pos(float x, float y) {
+			_image.transform.localPosition = new Vector2(x,y);
+		}
+		public Vector2 get_pos() { 
+			return _image.transform.localPosition; 
+		}
+		public void set_texture(Texture val) {
+			_texture = val;
+		}
+		public void set_name(string val) {
+			_image.gameObject.name = val;
+		}
+		public void add_to_parent(Transform parent) {
+			_image.transform.SetParent(parent);
+		}
+		public RectTransform get_recttransform() {
+			return _image.rectTransform;
+		}
+	}
+	
 	public interface Target {
 		void set_tex_rect(Rect rect);
 		

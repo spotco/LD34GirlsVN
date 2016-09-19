@@ -1,4 +1,4 @@
-Shader "Custom/SPTextCharacter"
+Shader "Custom/testchar"
 {
 	Properties
 	{
@@ -70,7 +70,7 @@ Shader "Custom/SPTextCharacter"
 				half2 texcoord  : TEXCOORD0;
 				float4 worldPosition : TEXCOORD1;
 			};
-
+			
 			fixed4 _fill_color;
 			fixed4 _stroke_color;
 			fixed4 _shadow_color;

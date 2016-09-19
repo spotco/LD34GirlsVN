@@ -17,7 +17,10 @@ public class SPText : MonoBehaviour {
 		
 		private float _animate_in_t;
 		
-		public void add_to_parent(Transform parent) { _img.add_to_parent(parent); }
+		public void add_to_parent(Transform parent) { 
+			_img.add_to_parent(parent); 
+			_img.set_scale(1);
+		}
 		public void depool() {
 			_pooled_img_target = ObjectPool.inst().spbasebehavior_depool<PooledRawImageTarget>();
 			_img = _pooled_img_target.get_target();
@@ -26,6 +29,10 @@ public class SPText : MonoBehaviour {
 		}
 		public void repool() {
 			ObjectPool.inst().spbasebehavior_repool<PooledRawImageTarget>(_pooled_img_target);
+			
+			_pooled_img_target = null;
+			_img = null;
+			
 			//_mesh_renderer = null;
 			//_img.repool();
 			//_img = null;
@@ -149,8 +156,9 @@ public class SPText : MonoBehaviour {
 //		SPNode.generic_repool<SPText>(this);
 	}
 	
-	private Transform _pivot_node;
+	[SerializeField] private Transform _pivot_node;
 	private Vector2 _text_anchor;
+	private float _text_scale;
 	
 	private string _texkey;
 	private FntFile _bmfont_cfg;
@@ -173,7 +181,6 @@ public class SPText : MonoBehaviour {
 		//_pivot_node = SPNode.cons_node();
 		//_pivot_node.set_name("_pivot_node");
 		//this.add_child(_pivot_node);
-		_pivot_node = this.transform;
 		
 		_texkey = texkey;
 		_bmfont_cfg = FileCache.inst().get_fntfile(fntkey);
@@ -186,7 +193,10 @@ public class SPText : MonoBehaviour {
 		this.set_opacity(1);
 		
 		_default_style = default_style;
-		_text_anchor = Vector2.zero;
+		_text_anchor = new Vector2(0,1);
+		_text_scale = 0.45f;
+		_pivot_node.transform.localScale = SPUtil.valv(_text_scale);
+		this.update_pivot_text_anchor();
 		return this;
 	}
 	
@@ -199,6 +209,9 @@ public class SPText : MonoBehaviour {
 	}
 	
 	public void i_update() {
+	
+		return;
+	
 		float itr_anim_time = _time;
 		for (int i = 0; i < _characters.Count; i++) {
 			SPTextCharacter itr = _characters[i];
@@ -330,8 +343,6 @@ public class SPText : MonoBehaviour {
 			if (!match_prev_display_str) {
 				neu_char = SPTextCharacter.cons_texkey_rect(_texkey, rect, itr_style);
 				neu_char.set_char_name(c);
-				//neu_char.set_manual_sort_z_order(_zord);
-				//neu_char._img.set_layer(_layer);
 				neu_char.set_opacity(_opacity);
 				neu_char.add_to_parent(_pivot_node);
 				neu_char.set_alpha_mult(_alpha_mult);
@@ -340,6 +351,7 @@ public class SPText : MonoBehaviour {
 				neu_char = _characters[i_character];
 			}
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
+			SPUtil.logf("char(%s) upos(%.2f,%.2f)",c,fontPos.x,fontPos.y);
 			
 			float adv = SPText.adv_for_char(c);
 			nextFontPositionX += fontDef.xadvance + adv;
@@ -386,7 +398,13 @@ public class SPText : MonoBehaviour {
 	
 	private void update_pivot_text_anchor() {
 		//_pivot_node.set_u_pos(-_text_anchor.x * _rendered_size.x, -_text_anchor.y * _rendered_size.y);
-		_pivot_node.transform.localPosition = new Vector2(-_text_anchor.x * _rendered_size.x, -_text_anchor.y * _rendered_size.y);
+		
+		
+		SPUtil.logf("update_pivot_text_anchor text_anchor(%.2f,%.2f) rendered_size(%.2f,%.2f)",_text_anchor.x,_text_anchor.y,_rendered_size.x,_rendered_size.y);
+		_pivot_node.transform.localPosition = new Vector2(
+			(-_text_anchor.x * _rendered_size.x) * _text_scale, 
+			(-_text_anchor.y * _rendered_size.y) * _text_scale
+		);
 	}
 	
 	private int _zord = GameAnchorZ.HUD_BASE;

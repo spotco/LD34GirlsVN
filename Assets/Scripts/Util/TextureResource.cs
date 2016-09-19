@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -19,9 +20,11 @@ public class TextureResource {
 	public class TextureResourceValue {
 		public Texture _tex;
 		public Dictionary<string,Material> _shaderkey_to_material = new Dictionary<string, Material>();
+		public Dictionary<string,Sprite> _spritekey_to_material = new Dictionary<string, Sprite>();  
 	}
 
 	public Dictionary<string,TextureResourceValue> _key_to_resourcevalue;
+	public Dictionary<Texture,string> _tex_to_key;
 
 	public static TextureResource cons() {
 		return (new TextureResource()).i_cons();
@@ -29,12 +32,14 @@ public class TextureResource {
 
 	private TextureResource i_cons() {
 		_key_to_resourcevalue = new Dictionary<string, TextureResourceValue>();
+		_tex_to_key = new Dictionary<Texture, string>();
 
 		FieldInfo[] fields = typeof(RTex).GetFields(BindingFlags.Public | BindingFlags.Static);
 		foreach (FieldInfo itr in fields) {
 			if (itr.FieldType == typeof(string)) {	
 				string value = (string)itr.GetValue(null);
 				_key_to_resourcevalue[value] = cons_texture_resource_value(value);
+				_tex_to_key[_key_to_resourcevalue[value]._tex] = value;
 			}
 		}
 
@@ -80,7 +85,26 @@ public class TextureResource {
 			tar._shaderkey_to_material[shaderkey].SetTexture("_MainTex",this.get_tex(texkey));
 		}
 		return tar._shaderkey_to_material[shaderkey];
-
+	}
+	
+	public Sprite get_sprite(string texkey, Rect sprite) {
+		TextureResourceValue tar = _key_to_resourcevalue[texkey];
+		int sprite_x = (int)sprite.x;
+		int sprite_y = (int)sprite.y;
+		int sprite_wid = (int)sprite.width;
+		int sprite_hei = (int)sprite.height;
+		
+		string sprite_key = string.Format("{0}_{1}_{2}_{3}",sprite_x,sprite_y,sprite_wid,sprite_hei);
+		
+		if (!tar._spritekey_to_material.ContainsKey(sprite_key)) {
+			Sprite neu = Sprite.Create((Texture2D)this.get_tex(texkey), sprite, new Vector2(0,0));
+			tar._spritekey_to_material[sprite_key] = neu;
+		}
+		return tar._spritekey_to_material[sprite_key];
+	}
+	
+	public string tex_to_key(Texture tex) {
+		return _tex_to_key[tex];
 	}
 
 }
