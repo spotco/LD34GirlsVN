@@ -75,15 +75,17 @@ public class SPSpriteAnimator {
 			return _rect;
 		}
 		
-		public void set_tex_rect(Rect rect) {
+		public void set_tex_rect(Rect rect) {		
 			_rect = rect;
 			float tex_wid = _texture.width;
 			float tex_hei = _texture.height;
 			
-			float uv_x = rect.x / tex_wid;
-			float uv_y = 1.0f - ((rect.y + rect.height) / tex_hei);
-			float uv_wid = rect.width / tex_wid;
-			float uv_hei = rect.height / tex_hei;
+			float scf = 1f;
+			
+			float uv_x = rect.x * scf;
+			float uv_y = tex_hei - rect.y * scf - rect.height * scf;
+			float uv_wid = rect.width * scf;
+			float uv_hei = rect.height * scf;
 			
 			Rect uvRect = new Rect(uv_x,uv_y,uv_wid,uv_hei);
 			Sprite tar_sprite = TextureResource.inst().get_sprite(TextureResource.inst().tex_to_key(_texture),uvRect);
@@ -125,7 +127,9 @@ public class SPSpriteAnimator {
 			_image.gameObject.name = val;
 		}
 		public void add_to_parent(Transform parent) {
+			Vector3 scale = _image.transform.localScale;
 			_image.transform.SetParent(parent);
+			_image.transform.localScale = scale;
 		}
 		public RectTransform get_recttransform() {
 			return _image.rectTransform;

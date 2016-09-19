@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,39 +9,42 @@ public class SPText : MonoBehaviour {
 		public static SPTextCharacter cons_texkey_rect(string texkey, Rect rect, SPText.SPTextStyle style) {
 			return ObjectPool.inst().generic_depool<SPTextCharacter>().i_cons_texkey_rect(texkey,rect, style);
 		}
-		private PooledRawImageTarget _pooled_img_target;
+		private PooledSpriteImageTarget _pooled_img_target;
 		private SPSpriteAnimator.Target _img;
-		//private MeshRenderer _mesh_renderer;
+		private string _texkey;
 		private float _opacity;
 		private SPText.SPTextStyle _style;
 		private Vector2 _start_pos;
 		
 		private float _animate_in_t;
 		
-		public void add_to_parent(Transform parent) { 
+		public void add_to_parent(Transform parent) {
 			_img.add_to_parent(parent); 
-			_img.set_scale(1);
 		}
+		
+		private static string SPTEXTCHARACTER_SPRITEKEY = "SPTextCharacter";
+		
 		public void depool() {
-			_pooled_img_target = ObjectPool.inst().spbasebehavior_depool<PooledRawImageTarget>();
-			_img = _pooled_img_target.get_target();
-			//_img = SPSprite.cons_sprite_texkey_texrect(RTex.BLANK,new Rect(0,0,0,0));
-			//_mesh_renderer = _img.gameObject.GetComponent<MeshRenderer>();
+			_pooled_img_target = ObjectPool.inst().spbasebehavior_depool<PooledSpriteImageTarget>(true,SPTEXTCHARACTER_SPRITEKEY);
+			if (_pooled_img_target.gameObject.GetComponent<Shadow>() == null) {
+				Shadow shadow = _pooled_img_target.gameObject.AddComponent<Shadow>();
+				shadow.effectDistance = new Vector2(2,-2);
+			}
 		}
 		public void repool() {
-			ObjectPool.inst().spbasebehavior_repool<PooledRawImageTarget>(_pooled_img_target);
+			_pooled_img_target.get_image().material = null;
+			ObjectPool.inst().spbasebehavior_repool<PooledSpriteImageTarget>(_pooled_img_target,SPTEXTCHARACTER_SPRITEKEY);
 			
 			_pooled_img_target = null;
 			_img = null;
-			
-			//_mesh_renderer = null;
-			//_img.repool();
-			//_img = null;
 		}
+		public void cleanup() {
+			ObjectPool.inst().generic_repool<SPTextCharacter>(this);
+		}
+		
 		private SPTextCharacter i_cons_texkey_rect(string texkey, Rect rect, SPText.SPTextStyle style) {
-			//_img.set_texkey(texkey);
-			//_img.set_tex_rect(rect);
-			//_img.set_shader(RShader.SPTEXTCHARACTER);
+			_texkey = texkey;
+			_img = _pooled_img_target.get_target(GameMain._context._tex_resc.get_tex(texkey));
 			
 			_img.set_texture(GameMain._context._tex_resc.get_tex(texkey));
 			_img.set_tex_rect(rect);
@@ -52,12 +56,14 @@ public class SPText : MonoBehaviour {
 			_start_pos = Vector2.zero;
 			this.set_style(style);
 			_animate_in_t = 0;
+			this.i_update_animate_text_in(_animate_in_t);
+			
 			return this;
 		}
 		public void i_update(float time) {
 			if (_animate_in_t < 1) {
 				this.i_update_animate_text_in(_animate_in_t);
-				_animate_in_t = Mathf.Clamp(_animate_in_t + SPUtil.sec_to_tick(0.1f) * SPUtil.dt_scale_get(), 0, 1);
+				_animate_in_t = Mathf.Clamp(_animate_in_t + SPUtil.sec_to_tick(0.15f) * SPUtil.dt_scale_get(), 0, 1);
 				
 			} else {
 				this.set_opacity(1);
@@ -68,13 +74,21 @@ public class SPText : MonoBehaviour {
 				);
 			}
 		}
-		private void i_update_animate_text_in(float anim_t) {
-			this.set_opacity(SPUtil.y_for_point_of_2pt_line(new Vector2(0,0), new Vector2(1,1), 
-				SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0,1), new Vector2(0,1), new Vector2(1,1), anim_t).y));
+		
+		private void i_update_animate_text_in(float anim_t) {		
+			this.set_opacity(SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0.5f,1), new Vector2(0.5f,1), new Vector2(1,1),anim_t).y);
+			
+			float y_offset = 0;
+			if (anim_t < 0.5f) {
+				y_offset = SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0.5f,0), new Vector2(0.5f,1), new Vector2(0.65f,0), anim_t / 0.5f).y;
+			} else {
+				y_offset = SPUtil.bezier_val_for_t(new Vector2(0.65f,0), new Vector2(0.8f,-0.75f), new Vector2(0.8f,0), new Vector2(1,0), (anim_t - 0.5f)/0.5f).y;
+			}
+			y_offset *= 25f;
+			
 			_img.set_pos(
 				_start_pos.x,
-				_start_pos.y + SPUtil.bezier_val_for_t(new Vector2(0,25), new Vector2(0.8f,50), new Vector2(0.8f,-50), new Vector2(1,0), 
-					SPUtil.bezier_val_for_t(new Vector2(0,0), new Vector2(0,1), new Vector2(0,1), new Vector2(1,1), anim_t).y).y
+				_start_pos.y + y_offset
 			);
 			_img.set_scale(SPUtil.y_for_point_of_2pt_line(new Vector2(0,0.5f),new Vector2(1,1.0f),anim_t));
 		}
@@ -82,16 +96,21 @@ public class SPText : MonoBehaviour {
 		private MaterialPropertyBlock _material_block;
 		public void set_style(SPText.SPTextStyle style) {
 			_style = style;
-//			if (_material_block == null) {
-//				_material_block = new MaterialPropertyBlock();
-//				_mesh_renderer.GetPropertyBlock(_material_block);
-//			}
-//			_material_block.Clear();
-//			_material_block.AddColor("_fill_color",style._fill);
-//			_material_block.AddColor("_stroke_color",style._stroke);
-//			_material_block.AddColor("_shadow_color",style._shadow);
-//			_material_block.AddFloat("_opacity",_opacity * _alpha_mult);
-//			_mesh_renderer.SetPropertyBlock(_material_block);
+			float alpha = _opacity * _alpha_mult;
+			int alpha_key = ((int) (alpha * 10));
+			string key = style.get_key(alpha_key);
+			
+			Material mat = TextureResource.inst().get_material(_texkey,RShader.SPTEXTCHARACTER,key);
+			if (mat == null) {
+				float alpha_rounded = alpha_key / 10.0f;
+			
+				mat = TextureResource.inst().create_material(_texkey,RShader.SPTEXTCHARACTER,key);
+				mat.SetVector("_fill_color",_style._fill);
+				mat.SetVector("_stroke_color",_style._stroke);
+				mat.SetVector("_shadow_color",style._shadow);
+				mat.SetFloat("_opacity", alpha_rounded);
+			}
+			_pooled_img_target.get_image().material = mat;
 		}
 		
 		public void set_opacity(float val) {
@@ -109,10 +128,6 @@ public class SPText : MonoBehaviour {
 			_img.set_pos(_start_pos.x,_start_pos.y); 
 		}
 		public void set_char_name(char c) { _img.set_name(SPUtil.sprintf("SPTextCharacter(%c)",c)); }
-		//public void set_manual_sort_z_order(int zord) { _img.set_manual_sort_z_order(zord); }
-		public void cleanup() {
-			ObjectPool.inst().generic_repool<SPTextCharacter>(this);
-		}
 		
 		private float _alpha_mult;
 		public void set_alpha_mult(float alpha_mult) {
@@ -136,6 +151,30 @@ public class SPText : MonoBehaviour {
 			rtv._time_incr = time_incr;
 			return rtv;
 		}
+		
+		public string get_key(int alpha) {
+			int stroke_r = ((int) _stroke[0] * 255);
+			int stroke_g = ((int) _stroke[1] * 255);
+			int stroke_b = ((int) _stroke[2] * 255);
+			int stroke_a = ((int) _stroke[3] * 255);
+			
+			int fill_r = ((int) _fill[0] * 255);
+			int fill_g = ((int) _fill[1] * 255);
+			int fill_b = ((int) _fill[2] * 255);
+			int fill_a = ((int) _fill[3] * 255);
+			
+			int shadow_r = ((int) _shadow[0] * 255);
+			int shadow_g = ((int) _shadow[1] * 255);
+			int shadow_b = ((int) _shadow[2] * 255);
+			int shadow_a = ((int) _shadow[3] * 255);
+		
+			return string.Format("stroke({0},{1},{2},{3})_fill({4},{5},{6},{7})_shadow({8},{9},{10},{11}))_alpha({12})",
+				stroke_r,stroke_g,stroke_b,stroke_a,
+				fill_r,fill_g,fill_b,fill_a,
+				shadow_r,shadow_g,shadow_b,shadow_a,
+				alpha
+			);
+		}
 	}
 
 	public static SPText cons_text(string texkey, string fntkey, SPTextStyle default_style) {
@@ -145,20 +184,17 @@ public class SPText : MonoBehaviour {
 		SPText rtv = obj.AddComponent<SPText>();
 		rtv.i_cons_text(texkey,fntkey,default_style);
 		return rtv;
-		//return SPNode.generic_cons<SPText>().i_cons_text(texkey,fntkey, default_style);
 	}
 	public new static SPNode cons_node() { throw new System.Exception("SPText::cons_node"); }
 	
 	public void repool() {
 		this.cleanup_existing_characters();
-//		_pivot_node.repool();
-//		_pivot_node = null;
-//		SPNode.generic_repool<SPText>(this);
 	}
 	
 	[SerializeField] private Transform _pivot_node;
 	private Vector2 _text_anchor;
 	private float _text_scale;
+	private RectTransform _rect_transform;
 	
 	private string _texkey;
 	private FntFile _bmfont_cfg;
@@ -172,16 +208,8 @@ public class SPText : MonoBehaviour {
 	
 	private float _time;
 	
-	public SPText i_cons_text(string texkey, string fntkey, SPTextStyle default_style) {
-		//this.set_u_pos(0,0);
-		//this.set_u_z(0);
-		//this.set_rotation(0);
-		//this.set_scale(1);
-	
-		//_pivot_node = SPNode.cons_node();
-		//_pivot_node.set_name("_pivot_node");
-		//this.add_child(_pivot_node);
-		
+	public SPText i_cons_text(string texkey, string fntkey, SPTextStyle default_style) {		
+		_rect_transform = this.GetComponent<RectTransform>();
 		_texkey = texkey;
 		_bmfont_cfg = FileCache.inst().get_fntfile(fntkey);
 		_characters = new List<SPTextCharacter>();
@@ -194,7 +222,7 @@ public class SPText : MonoBehaviour {
 		
 		_default_style = default_style;
 		_text_anchor = new Vector2(0,1);
-		_text_scale = 0.45f;
+		_text_scale = 0.35f;
 		_pivot_node.transform.localScale = SPUtil.valv(_text_scale);
 		this.update_pivot_text_anchor();
 		return this;
@@ -208,10 +236,15 @@ public class SPText : MonoBehaviour {
 		_default_style = style;
 	}
 	
+	public Vector2 get_size() {
+		return _rect_transform.rect.size;
+	}
+	
+	public float get_text_scale() {
+		return _text_scale;
+	}
+	
 	public void i_update() {
-	
-		return;
-	
 		float itr_anim_time = _time;
 		for (int i = 0; i < _characters.Count; i++) {
 			SPTextCharacter itr = _characters[i];
@@ -342,8 +375,7 @@ public class SPText : MonoBehaviour {
 			SPTextCharacter neu_char;
 			if (!match_prev_display_str) {
 				neu_char = SPTextCharacter.cons_texkey_rect(_texkey, rect, itr_style);
-				neu_char.set_char_name(c);
-				neu_char.set_opacity(_opacity);
+				neu_char.set_char_name(c);				
 				neu_char.add_to_parent(_pivot_node);
 				neu_char.set_alpha_mult(_alpha_mult);
 				_characters.Add(neu_char);
@@ -351,7 +383,6 @@ public class SPText : MonoBehaviour {
 				neu_char = _characters[i_character];
 			}
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
-			SPUtil.logf("char(%s) upos(%.2f,%.2f)",c,fontPos.x,fontPos.y);
 			
 			float adv = SPText.adv_for_char(c);
 			nextFontPositionX += fontDef.xadvance + adv;
@@ -397,30 +428,10 @@ public class SPText : MonoBehaviour {
 	}
 	
 	private void update_pivot_text_anchor() {
-		//_pivot_node.set_u_pos(-_text_anchor.x * _rendered_size.x, -_text_anchor.y * _rendered_size.y);
-		
-		
-		SPUtil.logf("update_pivot_text_anchor text_anchor(%.2f,%.2f) rendered_size(%.2f,%.2f)",_text_anchor.x,_text_anchor.y,_rendered_size.x,_rendered_size.y);
 		_pivot_node.transform.localPosition = new Vector2(
 			(-_text_anchor.x * _rendered_size.x) * _text_scale, 
 			(-_text_anchor.y * _rendered_size.y) * _text_scale
 		);
-	}
-	
-	private int _zord = GameAnchorZ.HUD_BASE;
-	public new void set_manual_sort_z_order(int zord) {
-//		_zord = zord;
-//		for (int i = 0; i < this._characters.Count; i++) {
-//			this._characters[i]._img.set_manual_sort_z_order(_zord);
-//		}
-	}
-	
-	private string _layer = RLayer.DEFAULT;
-	public void set_layer(string layer) {
-//		_layer = layer;
-//		for (int i = 0; i < this._characters.Count; i++) {
-//			this._characters[i]._img.set_layer(_layer);
-//		}
 	}
 	
 	private float _alpha_mult;

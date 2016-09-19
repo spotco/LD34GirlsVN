@@ -35,7 +35,10 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_black","key":"showlogo_test"},
+		{"type":"dialogue","character":"Me","text":"I just wanted us to live as we always had been.","xpos":0,"ypos":-100},
+		{"type":"dialogue","character":"Kurumi","text":"Test1 [b]test2 test3@ test4 test5 test6 test7 test8 test9 test10 test11 test12 test13 test14 test15 test16 test17.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Test1 test2 test3 test4 test5 test6 test7 test8 test9 test10 test11 test12 test13 test14 test15 test16 test17.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_city_afternoon","key":"default_right"},
 		{"type":"showcharacter","character":"Mana","image":"char_mana_hero_v2","xpos":-300,"ypos":-60,"xscale":-1},

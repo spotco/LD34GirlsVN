@@ -9,7 +9,6 @@ public class GameMain : MonoBehaviour {
 	public ObjectPool _objpool;
 	public TextureResource _tex_resc;
 	public FileCache _file_cache;
-	public SPTextRenderManager _sptext;
 	
 	public static int AFFINITY_REQUIREMENT = 9;
 	public static bool NO_EVENTS = false;
@@ -45,12 +44,14 @@ public class GameMain : MonoBehaviour {
 	[System.NonSerialized] public Canvas _parent_canvas;
 
 // dialogue box does not fade out if next message same char
-// procedurally generate node positions
+// procedurally shift node positions
 // selecting node, fade out node text. bottom right show subtitle of scene
-// text quality not dependant on window size bugfix (move SPText to RawImage with adapter)
-						
-//	save/load implementation
-//
+// char name text and node name replace with SPText
+
+//  remove RawImages from particles	
+//  try higher res text spritesheet	
+//	save/load implementation	
+
 //	heart particles
 //  closer petals blurred and bigger in title
 //  title petals also fade in
@@ -80,7 +81,6 @@ public class GameMain : MonoBehaviour {
 		_objpool = ObjectPool.cons();
 		_tex_resc = TextureResource.cons();
 		_file_cache = FileCache.cons();
-		_sptext = SPTextRenderManager.cons();
 		_camera_controller = GameCameraController.cons();
 		
 		if (_event_modal == null) return;
@@ -128,7 +128,6 @@ public class GameMain : MonoBehaviour {
 		
 		_background.i_update(this);
 		_music.i_update ();
-		_sptext.i_update(this);
 		
 		_camera_controller.i_update(this);
 	}

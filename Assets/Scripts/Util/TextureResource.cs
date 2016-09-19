@@ -56,10 +56,7 @@ public class TextureResource {
 	}
 
 	private TextureResourceValue cons_texture_resource_value(string texkey) {
-		Texture tex = 
-		//null;
-		//Resources.Load<Texture2D>(CachedStreamingAssets.texture_key_to_resource_path(texkey));
-		Resources.Load<Texture2D>(texkey);
+		Texture tex = Resources.Load<Texture2D>(texkey);
 		tex.filterMode = FilterMode.Trilinear;
 		if (tex == null) {
 			tex = this.load_texture_from_streamingassets(texkey);
@@ -78,13 +75,20 @@ public class TextureResource {
 		return get_material(texkey,RShader.DEFAULT);
 	}
 
-	public Material get_material(string texkey, string shaderkey) {
+	public Material get_material(string texkey, string shaderkey, string extrakey = "") {
 		TextureResourceValue tar = _key_to_resourcevalue[texkey];
-		if (!tar._shaderkey_to_material.ContainsKey(shaderkey)) {
-			tar._shaderkey_to_material[shaderkey] = new Material(ShaderResource.get_shader(shaderkey));
-			tar._shaderkey_to_material[shaderkey].SetTexture("_MainTex",this.get_tex(texkey));
+		string key = shaderkey + extrakey;
+		if (!tar._shaderkey_to_material.ContainsKey(key)) {
+			return null;
 		}
-		return tar._shaderkey_to_material[shaderkey];
+		return tar._shaderkey_to_material[key];
+	}
+	
+	public Material create_material(string texkey, string shaderkey, string extrakey = "") {
+		TextureResourceValue tar = _key_to_resourcevalue[texkey];
+		string key = shaderkey + extrakey;
+		tar._shaderkey_to_material[key] = new Material(ShaderResource.get_shader(shaderkey));
+		return tar._shaderkey_to_material[key];
 	}
 	
 	public Sprite get_sprite(string texkey, Rect sprite) {

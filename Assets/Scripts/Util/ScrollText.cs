@@ -6,7 +6,6 @@ using System.Text;
 public class ScrollText {
 	
 	public SPText _text;
-	public SPTextRenderManager _text_manager;
 	
 	string _words = "";
 	StringBuilder _buf = new StringBuilder(100);
@@ -25,7 +24,7 @@ public class ScrollText {
 		_ct = 0;
 		_spd = speed;
 		_words = words;
-		_text_manager.set_string(_text,_buf.ToString(), _words);
+		SPTextRenderUtil.set_string(_text,_buf.ToString(), _words);
 	}
 	
 	public void i_update() {
@@ -36,7 +35,7 @@ public class ScrollText {
 				_buf.Append (_words[_buf.Length]);
 				_ct -= _spd;
 			}
-			_text_manager.set_string(_text,_buf.ToString(), _words);
+			SPTextRenderUtil.set_string(_text,_buf.ToString(), _words);
 		}
 	}
 	
@@ -44,7 +43,7 @@ public class ScrollText {
 	public void finish() { 
 		_buf.Length = 0;
 		_buf.Append(_words);
-		_text_manager.set_string(_text,_buf.ToString(), _words);
+		SPTextRenderUtil.set_string(_text,_buf.ToString(), _words);
 	}
 	public void clear() {
 		_buf.Length = 0;

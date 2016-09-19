@@ -13,7 +13,7 @@ public class DialogueBubble : SPBaseBehavior {
 	[SerializeField] private Image _cursor_shadow;
 	[SerializeField] private SPText _rendered_text;
 	
-	private ScrollText _primary_text = new ScrollText();
+	private ScrollText _scroll_text = new ScrollText();
 	[SerializeField] private Outline _name_text_outline;
 	
 	private float _cursor_yvel;
@@ -58,17 +58,11 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
 		this.gameObject.SetActive(true);
-		//_rendered_text.gameObject.SetActive(true);
 		_script = dialogue;
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
-		//game._sptext.get_text().transform.SetParent(_rendered_text.transform);
-		
 		_rendered_text.i_cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
 		_rendered_text.clear();
-		
-		//game._sptext.clear();
-		//_rendered_text.texture = game._sptext.get_tex();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_nametag.gameObject.SetActive(false);
@@ -77,13 +71,12 @@ public class DialogueBubble : SPBaseBehavior {
 			_name_text.text = dialogue._character;
 		}
 		
-		this.apply_style(game._sptext, dialogue);
+		this.apply_style(dialogue);
 		
 		
-		_primary_text.reset();
-		_primary_text._text = _rendered_text;
-		_primary_text._text_manager = game._sptext;
-		_primary_text.load(dialogue._text);
+		_scroll_text.reset();
+		_scroll_text._text = _rendered_text;
+		_scroll_text.load(dialogue._text);
 		
 		_current_mode = Mode.FadeIn;
 		
@@ -105,9 +98,6 @@ public class DialogueBubble : SPBaseBehavior {
 	}
 	
 	public void i_update(GameMain game) {
-		
-		//_rendered_text.i_update();
-		
 		if (_current_mode == Mode.FadeIn) {
 			_anim_t = Mathf.Clamp(_anim_t + SPUtil.sec_to_tick(0.25f) * SPUtil.dt_scale_get(),0,1);
 			_cursor.gameObject.SetActive(false);
@@ -122,7 +112,7 @@ public class DialogueBubble : SPBaseBehavior {
 			}
 		
 		} else if (_current_mode == Mode.TextIn) {
-			_primary_text.i_update();
+			_scroll_text.i_update();
 			
 			_dialogue_scroll_sound_flash.i_update();
 			if (_dialogue_scroll_sound_flash.do_flash()) {
@@ -135,14 +125,14 @@ public class DialogueBubble : SPBaseBehavior {
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) ||
 			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
 				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
-				_primary_text.finish();
+				_scroll_text.finish();
 				game._music.play_sfx("dialogue_button_press");
 			}
 			
 			_name_bounce_t = (_name_bounce_t + 0.15f * SPUtil.dt_scale_get()) % Mathf.PI;
 			_nametag.transform.localPosition = SPUtil.vec_add(_name_initial_pos, new Vector2(0, Mathf.Abs(Mathf.Sin(_name_bounce_t) * 4)));
 			
-			if (_primary_text.finished()) {
+			if (_scroll_text.finished()) {
 				_current_mode = Mode.Finished;
 				_anim_t = 51;
 				
@@ -185,10 +175,11 @@ public class DialogueBubble : SPBaseBehavior {
 			}	
 		}
 		
+		_rendered_text.i_update(); // update last for textin anim
+		
 		_cursor_shadow.transform.localScale = _cursor.transform.localScale;
 		_cursor_shadow.gameObject.SetActive(_cursor.gameObject.activeSelf);
 		_cursor_shadow.transform.position = _cursor.transform.position;
-		
 	}
 	
 	private void cursor_anim_update() {
@@ -201,8 +192,8 @@ public class DialogueBubble : SPBaseBehavior {
 			SPUtil.drpt(_cursor.transform.localScale.y, SPUtil.y_for_point_of_2pt_line(new Vector2(-3.5f,1),new Vector2(0,1.1f), _cursor_yvel), 1/5.0f) * _cursor_scale_mult,
 			1
 		);
-		if (_cursor_yvel < 0 && cursor_ypos < -75) {
-			cursor_ypos = -75;
+		if (_cursor_yvel < 0 && cursor_ypos < -100) {
+			cursor_ypos = -100;
 			_cursor_yvel = 2.63f;
 		}
 		_cursor.transform.localPosition = new Vector3(_cursor.transform.localPosition.x, cursor_ypos, _cursor.transform.localPosition.z);
@@ -238,7 +229,7 @@ public class DialogueBubble : SPBaseBehavior {
 		return bg_sprite;
 	}
 	
-	public void apply_style(SPTextRenderManager text_renderer, NodeScriptEvent_Dialogue script_event) {
+	public void apply_style(NodeScriptEvent_Dialogue script_event) {
 		
 		Color outline_color;
 				
@@ -280,8 +271,8 @@ public class DialogueBubble : SPBaseBehavior {
 			outline_color = new Color(94/255.0f,94/255.0f,94/255.0f,1);
 		}
 		_name_text_outline.effectColor = outline_color;
-		text_renderer.set_text_outline_color(_rendered_text, outline_color);
-		text_renderer.set_bold_color(_rendered_text, outline_color);
+		SPTextRenderUtil.set_text_outline_color(_rendered_text, outline_color);
+		SPTextRenderUtil.set_bold_color(_rendered_text, outline_color);
 	}
 	
 	private static string TEXT_SCROLL_SFX_NARRATOR = "text_scroll_2";
