@@ -43,7 +43,6 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// procedurally shift node positions
 // selecting node, fade out node text. bottom right show subtitle of scene
 // char name text and node name replace with SPText
 

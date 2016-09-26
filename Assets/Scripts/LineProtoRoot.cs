@@ -49,8 +49,15 @@ public class LineProtoRoot : SPBaseBehavior {
 	}
 	
 	public void i_update() {
+		this._image.color = new Color(
+			_tar_color.r, _tar_color.g, _tar_color.b, SPUtil.lmovto(this._image.color.a, _tar_color.a, 0.05f * SPUtil.dt_scale_get())
+		);
+		
 		if (this._image.color.a == 0 && _tar_color.a == 0) {
+			this.gameObject.SetActive(false);
 			return;
+		} else {
+			this.gameObject.SetActive(true);
 		}
 		
 		Vector2 rect_top_left = _parent_canvas.transform.InverseTransformPoint(_rect_transform.TransformPoint(new Vector2(_rect_transform.rect.xMin, _rect_transform.rect.yMax)));
@@ -71,10 +78,6 @@ public class LineProtoRoot : SPBaseBehavior {
 		
 		_material_modif.set_vector("_AnimT", new Vector4(1-_anim_t,0,0,0));
 		_material_modif.finish_set();
-		
-		this._image.color = new Color(
-			_tar_color.r, _tar_color.g, _tar_color.b, SPUtil.lmovto(this._image.color.a, _tar_color.a, 0.05f * SPUtil.dt_scale_get())
-		);
 		
 		this._rect_transform.localScale = new Vector3(
 			this._rect_transform.localScale.x, 
