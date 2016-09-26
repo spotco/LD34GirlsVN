@@ -66,7 +66,7 @@ public class SPTextRenderUtil {
 	}
 	
 	private static StringBuilder __input_str_insert_linebreaks = new StringBuilder("");
-	private static string input_str_insert_linebreaks(SPText sptext, string input, string full_string) {
+	public static string input_str_insert_linebreaks(SPText sptext, string input, string full_string) {
 		StringBuilder rtv = __input_str_insert_linebreaks;
 		rtv.Remove(0,rtv.Length);
 		input = input.Replace('#','"');

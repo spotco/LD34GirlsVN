@@ -14,7 +14,6 @@ public class GridNode : MonoBehaviour {
 	private SPDict<int,LineProtoRoot> _id_to_line = new SPDict<int, LineProtoRoot>();
 	public bool _accessible;
 	public bool _visited;
-	private static Font __cached_font;
 	private LineProtoRoot _line_proto;
 	
 	private void hide_legacy_elements() {
@@ -37,11 +36,6 @@ public class GridNode : MonoBehaviour {
 		
 		_node_script.i_initialize(game,_node_script_text);
 		
-		if (__cached_font == null) {
-			__cached_font = Resources.Load<Font>("osaka.unicode");
-		}
-		
-		_self_nodeanimroot.set_font(__cached_font);
 		_self_nodeanimroot.set_text(_node_script._title);
 		
 		this.gameObject.name = SPUtil.sprintf("Node (%d)",_node_script._id);

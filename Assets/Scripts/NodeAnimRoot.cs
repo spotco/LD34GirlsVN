@@ -11,10 +11,8 @@ public class NodeAnimRoot : MonoBehaviour {
 	[SerializeField] private GameObject _visited_root;
 	[SerializeField] private GameObject _locked_root;
 	[SerializeField] private CanvasGroup _item_splat_root;
-	[SerializeField] private Text _text;
+	[SerializeField] private SPText _sptext;
 	
-	private Outline _text_outline;
-	private Shadow _text_shadow;
 	private CanvasGroup _canvas_group;
 	
 	[SerializeField] private Image _node_unvisited_backspin;
@@ -40,13 +38,26 @@ public class NodeAnimRoot : MonoBehaviour {
 	private float _item_splat_root_rotation_theta;
 	
 	public void i_initialize() {
-		_text_outline = _text.GetComponent<Outline>();
-		_text_shadow = _text.GetComponent<Shadow>();
 		_canvas_group = this.GetComponent<CanvasGroup>();
 		
-		this.set_anim_state(AnimState.Hidden);
 		_transition_state = AnimTransitionState.None;
 		_anim_t = 0;
+		
+		_sptext.i_cons_text(
+			RTex.OSAKA_FNT, 
+			RFnt.OSAKA, 
+			SPText.SPTextStyle.cons(
+				SPUtil.color_from_bytes(160,53,148,255),
+				SPUtil.color_from_bytes(255,255,255,255), 
+				SPUtil.color_from_bytes(160,53,148,255), 
+				0, 
+				0
+			)
+		);
+		_sptext.set_text_anchor(0.5f, 0.5f);
+		_sptext.set_horiz_center_text(true);
+		
+		this.set_anim_state(AnimState.Hidden);
 	}
 	
 	public enum AnimState {
@@ -84,7 +95,7 @@ public class NodeAnimRoot : MonoBehaviour {
 			_unvisited_root.SetActive(false);
 			_visited_root.SetActive(false);
 			_locked_root.SetActive(false);
-			_text.gameObject.SetActive(false);
+			this.set_text_visible(false);
 		
 		} break;
 		case AnimState.Visited_Selected:
@@ -94,7 +105,7 @@ public class NodeAnimRoot : MonoBehaviour {
 			_visited_root.SetActive(true);
 			_locked_root.SetActive(false);
 			
-			_text.gameObject.SetActive(true);
+			this.set_text_visible(true);
 			this.set_color(TEXT_COLOR_VISITED);
 			
 		} break;
@@ -105,7 +116,7 @@ public class NodeAnimRoot : MonoBehaviour {
 			_visited_root.SetActive(false);
 			_locked_root.SetActive(false);
 			
-			_text.gameObject.SetActive(true);
+			this.set_text_visible(true);
 			this.set_color(TEXT_COLOR_UNVISITED);
 		
 		} break;
@@ -114,7 +125,7 @@ public class NodeAnimRoot : MonoBehaviour {
 			_visited_root.SetActive(false);
 			_locked_root.SetActive(false);
 			
-			_text.gameObject.SetActive(true);
+			this.set_text_visible(true);
 			this.set_color(TEXT_COLOR_UNVISITED);
 		
 		} break;
@@ -124,7 +135,8 @@ public class NodeAnimRoot : MonoBehaviour {
 			_unvisited_root.SetActive(false);
 			_visited_root.SetActive(false);
 			_locked_root.SetActive(true);
-			_text.gameObject.SetActive(false);
+			
+			this.set_text_visible(false);
 			
 			_transition_state = AnimTransitionState.None;
 			
@@ -164,7 +176,8 @@ public class NodeAnimRoot : MonoBehaviour {
 	}
 	
 	public void i_update(GameMain game, GridNavModal grid_nav) {
-	
+		_sptext.i_update();
+		
 		float spin_vt_scale = 1;
 		float tar_alpha = 1;
 		bool sync_text_to_node_unvisited_top = true;
@@ -260,22 +273,23 @@ public class NodeAnimRoot : MonoBehaviour {
 					_unvisited_root.SetActive(true);
 					_visited_root.SetActive(false);
 					_locked_root.SetActive(false);
-					_text.gameObject.SetActive(true);
+					
+					this.set_text_visible(true);
 					
 					sync_text_to_node_unvisited_top = false;
-					_text.transform.localScale = SPUtil.valv(0.5f);
+					this.set_text_scale(SPUtil.valv(0.5f));
 					
 				}
 			} else if (_anim_t < MODE_2_T) {
 				sync_text_to_node_unvisited_top = false;
 				float mode_t = (_anim_t - MODE_1_T) / (MODE_2_T - MODE_1_T);
-				_text.transform.localScale = SPUtil.valv(SPUtil.bezier_val_for_t(
+				this.set_text_scale(SPUtil.valv(SPUtil.bezier_val_for_t(
 					new Vector2(0,0.5f),
 					new Vector2(0,1),
 					new Vector2(0.5f,_node_unvisited_top.transform.localScale.x * 1.25f),
 					new Vector2(1,_node_unvisited_top.transform.localScale.x),
 					mode_t
-				).y);
+				).y));
 				
 			} else if (_anim_t >= 1) {
 				_current_state = AnimState.Unvisited_Selected;
@@ -433,21 +447,40 @@ public class NodeAnimRoot : MonoBehaviour {
 		_node_visited.transform.localScale = _node_unvisited_top.transform.localScale;
 		_locked_root.transform.localScale = _node_unvisited_top.transform.localScale;
 		if (sync_text_to_node_unvisited_top) {
-			_text.transform.localScale = _node_unvisited_top.transform.localScale;
+			this.set_text_scale(_node_unvisited_top.transform.localScale);
 		}
 		_canvas_group.alpha = SPUtil.lmovto(_canvas_group.alpha, tar_alpha, 0.05f * SPUtil.dt_scale_get());
 	}
 	
+	private string _cached_text_str = "";
 	public void set_text(string text) {
-		_text.text = text;
-	}
-	public void set_font(Font font) {
-		_text.font = font;
+	
+		text = SPTextRenderUtil.input_str_insert_linebreaks(_sptext, text, text);
+	
+		_cached_text_str = text;
+		if (_sptext.gameObject.activeSelf) {
+			_sptext.set_markup_text(_cached_text_str);
+		}
 	}
 	private void set_color(Color color) {
-		if (_text_shadow.effectColor != color) {
-			_text_shadow.effectColor = color;
-			_text_outline.effectColor = color;
-		}	
-	}	
+		if (_sptext.get_default_style()._stroke != ((Vector4)color)) {
+			_sptext.set_default_colors(color, SPUtil.color_from_bytes(255,255,255,255), color);
+		}
+	}
+	private void set_text_scale(Vector3 scale) {
+		_sptext.transform.localScale = scale;
+	}
+	private void set_text_visible(bool val) {
+		if (val) {
+			if (!_sptext.gameObject.activeSelf) {
+				_sptext.set_markup_text(_cached_text_str);
+			}
+			_sptext.gameObject.SetActive(true);	
+		} else {
+			if (_sptext.gameObject.activeSelf) {
+				_sptext.clear();
+			}
+			_sptext.gameObject.SetActive(false);
+		}
+	}
 }

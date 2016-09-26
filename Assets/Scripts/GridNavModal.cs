@@ -111,9 +111,6 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].calculate_directional_bindings(this);
 			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].set_unidirectional_reverse_links(this);
 		}
-//		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
-//			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].create_link_sprites(this);
-//		}
 		
 		_current_node = _id_to_gridnode[GameMain.NODE_START_INDEX];
 		_current_state = State.InitialUpdate;

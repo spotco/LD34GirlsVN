@@ -18,6 +18,8 @@ public class SPText : MonoBehaviour {
 		
 		private float _animate_in_t;
 		
+		public int _line_index = 0;
+		
 		public void add_to_parent(Transform parent) {
 			_img.add_to_parent(parent); 
 		}
@@ -93,7 +95,6 @@ public class SPText : MonoBehaviour {
 			_img.set_scale(SPUtil.y_for_point_of_2pt_line(new Vector2(0,0.5f),new Vector2(1,1.0f),anim_t));
 		}
 		
-		private MaterialPropertyBlock _material_block;
 		public void set_style(SPText.SPTextStyle style) {
 			_style = style;
 			float alpha = _opacity * _alpha_mult;
@@ -127,6 +128,7 @@ public class SPText : MonoBehaviour {
 			_start_pos = new Vector2(x,y);
 			_img.set_pos(_start_pos.x,_start_pos.y); 
 		}
+		public Vector2 get_u_pos() { return _start_pos; }
 		public void set_char_name(char c) { _img.set_name(SPUtil.sprintf("SPTextCharacter(%c)",c)); }
 		
 		private float _alpha_mult;
@@ -153,20 +155,20 @@ public class SPText : MonoBehaviour {
 		}
 		
 		public string get_key(int alpha) {
-			int stroke_r = ((int) _stroke[0] * 255);
-			int stroke_g = ((int) _stroke[1] * 255);
-			int stroke_b = ((int) _stroke[2] * 255);
-			int stroke_a = ((int) _stroke[3] * 255);
+			int stroke_r = (int)( _stroke[0] * 255);
+			int stroke_g = (int)( _stroke[1] * 255);
+			int stroke_b = (int)( _stroke[2] * 255);
+			int stroke_a = (int)( _stroke[3] * 255);
 			
-			int fill_r = ((int) _fill[0] * 255);
-			int fill_g = ((int) _fill[1] * 255);
-			int fill_b = ((int) _fill[2] * 255);
-			int fill_a = ((int) _fill[3] * 255);
+			int fill_r = (int)( _fill[0] * 255);
+			int fill_g = (int)( _fill[1] * 255);
+			int fill_b = (int)( _fill[2] * 255);
+			int fill_a = (int)( _fill[3] * 255);
 			
-			int shadow_r = ((int) _shadow[0] * 255);
-			int shadow_g = ((int) _shadow[1] * 255);
-			int shadow_b = ((int) _shadow[2] * 255);
-			int shadow_a = ((int) _shadow[3] * 255);
+			int shadow_r = (int)( _shadow[0] * 255);
+			int shadow_g = (int)( _shadow[1] * 255);
+			int shadow_b = (int)( _shadow[2] * 255);
+			int shadow_a = (int)( _shadow[3] * 255);
 		
 			return string.Format("stroke({0},{1},{2},{3})_fill({4},{5},{6},{7})_shadow({8},{9},{10},{11}))_alpha({12})",
 				stroke_r,stroke_g,stroke_b,stroke_a,
@@ -190,7 +192,7 @@ public class SPText : MonoBehaviour {
 		this.cleanup_existing_characters();
 	}
 	
-	[SerializeField] private Transform _pivot_node;
+	private Transform _pivot_node;
 	private Vector2 _text_anchor;
 	private float _text_scale;
 	private RectTransform _rect_transform;
@@ -209,6 +211,7 @@ public class SPText : MonoBehaviour {
 	
 	public SPText i_cons_text(string texkey, string fntkey, SPTextStyle default_style) {		
 		_rect_transform = this.GetComponent<RectTransform>();
+		this.set_horiz_center_text(false);
 		_texkey = texkey;
 		_bmfont_cfg = FileCache.inst().get_fntfile(fntkey);
 		_characters = new List<SPTextCharacter>();
@@ -222,6 +225,13 @@ public class SPText : MonoBehaviour {
 		_default_style = default_style;
 		_text_anchor = new Vector2(0,1);
 		_text_scale = 0.35f;
+		
+		GameObject pivot_node_obj = new GameObject("_pivot_node");
+		pivot_node_obj.AddComponent<RectTransform>();
+		_pivot_node = pivot_node_obj.transform;
+		_pivot_node.SetParent(this.transform);
+		_pivot_node.localPosition = SPUtil.valv(0);
+		
 		_pivot_node.transform.localScale = SPUtil.valv(_text_scale);
 		this.update_pivot_text_anchor();
 		return this;
@@ -234,6 +244,7 @@ public class SPText : MonoBehaviour {
 	public void set_default_style(SPTextStyle style) {
 		_default_style = style;
 	}
+	public SPTextStyle get_default_style() { return _default_style; }
 	
 	public Vector2 get_size() {
 		return _rect_transform.rect.size;
@@ -308,19 +319,20 @@ public class SPText : MonoBehaviour {
 	}
 	
 	private string _prev_display_str = "";
+	private Dictionary<int,SPTextStyle> _style_map;
 	public SPText set_markup_text(string markup_string) {
 		if (_cached_string == markup_string) return this;
 		_cached_string = markup_string;
 		
 		string display_string;
-		Dictionary<int,SPTextStyle> style_map;
+		
 		if (markup_string.Contains("[")) {
-			this.markup_string_out_display_string_and_map(markup_string, out display_string, out style_map);
+			this.markup_string_out_display_string_and_map(markup_string, out display_string, out _style_map);
 		} else {
 			display_string = markup_string;
-			style_map = new Dictionary<int, SPTextStyle>();
+			_style_map = new Dictionary<int, SPTextStyle>();
 			for (int i = 0; i < display_string.Length; i++) {
-				style_map[i] = _default_style;
+				_style_map[i] = _default_style;
 			}
 		}
 		
@@ -340,10 +352,13 @@ public class SPText : MonoBehaviour {
 		bool match_prev_display_str = true;
 		
 		int i_character = 0;
+		int line_index = 0;
+		
 		for (int i = 0; i < display_string.Length; i++) {
 			char c = display_string[i];
 			
 			if (c == '\n') {
+				line_index++;
 				nextFontPositionX = 0;
 				nextFontPositionY -= _bmfont_cfg.common.lineHeight;
 				continue;
@@ -370,7 +385,7 @@ public class SPText : MonoBehaviour {
 				nextFontPositionY + yoffset - rect.size.y*0.5f
 			);
 			
-			SPTextStyle itr_style = style_map[i];
+			SPTextStyle itr_style = _style_map[i];
 			SPTextCharacter neu_char;
 			if (!match_prev_display_str) {
 				neu_char = SPTextCharacter.cons_texkey_rect(_texkey, rect, itr_style);
@@ -381,6 +396,7 @@ public class SPText : MonoBehaviour {
 			} else {
 				neu_char = _characters[i_character];
 			}
+			neu_char._line_index = line_index;
 			neu_char.set_u_pos(fontPos.x,fontPos.y);
 			
 			float adv = SPText.adv_for_char(c);
@@ -399,8 +415,44 @@ public class SPText : MonoBehaviour {
 		_rendered_size = tmpSize;
 		this.update_pivot_text_anchor();
 		_prev_display_str = display_string;
+		
+		if (_do_horiz_center_text) {
+			int itr_line_index = 0;	
+			while (itr_line_index <= line_index) {
+				List<SPTextCharacter> center_line = __center_line;
+				center_line.Clear();
+				
+				float x_min = Mathf.Infinity;
+				float x_max = Mathf.NegativeInfinity;
+				
+				for (int i = 0; i < _characters.Count; i++) {
+					SPTextCharacter itr_char = _characters[i];
+					if (itr_char._line_index == itr_line_index) {
+						center_line.Add(itr_char);
+						x_min = Mathf.Min(x_min, itr_char.get_u_pos().x);
+						x_max = Mathf.Max(x_max, itr_char.get_u_pos().x);
+					}
+				}
+				
+				float mid = SPUtil.lerp(x_min,x_max,0.5f);
+				float delta = _rendered_size.x / 2.0f - mid;
+				
+				for (int i = 0; i < center_line.Count; i++) {
+					SPTextCharacter itr_char = center_line[i];
+					itr_char.set_u_pos(
+						itr_char.get_u_pos().x + delta,
+						itr_char.get_u_pos().y
+					);
+				}		
+				itr_line_index++;
+			}
+			__center_line.Clear();
+		}
+		
+		
 		return this;
 	}
+	private static List<SPTextCharacter> __center_line = new List<SPTextCharacter>();
 	
 	private static float adv_for_char(char c) {
 		switch (c) {
@@ -419,6 +471,23 @@ public class SPText : MonoBehaviour {
 		for (int i = 0; i < _characters.Count; i++) {
 			_characters[i].set_opacity(val);
 		}	
+	}
+	
+	private bool _do_horiz_center_text;
+	public void set_horiz_center_text(bool val) {
+		_do_horiz_center_text = val;
+	}
+	
+	public void set_default_colors(Vector4 stroke, Vector4 fill, Vector4 shadow) {
+		_default_style._stroke = stroke;
+		_default_style._fill = fill;
+		_default_style._shadow = shadow;
+		
+		for (int i = 0; i < _characters.Count; i++) {
+			if (_style_map[i] == _default_style) {
+				_characters[i].set_style(_default_style);
+			}
+		}
 	}
 	
 	public void set_text_anchor(float x, float y) {
