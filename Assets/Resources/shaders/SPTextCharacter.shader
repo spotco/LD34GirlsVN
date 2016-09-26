@@ -104,7 +104,7 @@ Shader "Custom/SPTextCharacter"
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				half4 color = tex2D(_MainTex, IN.texcoord);
-				color = ((_stroke_color * color.r) + (_shadow_color * color.g) + (_fill_color * color.b)) * float4(1.0,1.0,1.0, _opacity * color.a);
+				color = ((_stroke_color * color.r) + (_shadow_color * color.g) + (_fill_color * color.b)) * float4(1.0,1.0,1.0, _opacity * color.a * _Color.a * IN.color.a);
 
 				if (_UseClipRect)
 					color *= UnityGet2DClipping(IN.worldPosition.xy, _ClipRect);

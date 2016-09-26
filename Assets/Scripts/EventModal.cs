@@ -109,6 +109,22 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		}
 	}
 	
+	public bool should_is_next_dialogue_keep_same_bubble() {	
+		NodeScriptEvent cur_evt = _current_script._events[_script_index];
+		if (_current_script._events.Count <= _script_index + 1) {
+			return false;
+		}
+		NodeScriptEvent next_evt = _current_script._events[_script_index + 1];
+		
+		NodeScriptEvent_Dialogue cur_dialogue;
+		NodeScriptEvent_Dialogue next_dialogue;
+		if (!SPUtil.can_cast<NodeScriptEvent_Dialogue>(cur_evt, out cur_dialogue) || !SPUtil.can_cast<NodeScriptEvent_Dialogue>(next_evt, out next_dialogue)) {
+			return false;
+		}
+		
+		return cur_dialogue._character == next_dialogue._character && cur_dialogue._xpos == next_dialogue._xpos && cur_dialogue._ypos == next_dialogue._ypos;
+	}
+	
 	public void clear_removed_characters(GameMain game) {
 		__to_remove_str.Clear();
 		foreach (string name in _name_to_character.Keys) {
@@ -187,9 +203,22 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 		return neu_char;
 	}
 	public DialogueBubble add_dialogue(GameMain game, NodeScriptEvent_Dialogue script_event) {
-		DialogueBubble neu_bubble = DialogueBubble.cons(game, script_event, _proto_dialogue_bubble);
-		_dialogue_bubbles.Add(neu_bubble);
-		return neu_bubble;
+		DialogueBubble reuse_last = null;
+		for (int i = 0; i < _dialogue_bubbles.Count; i++) {
+			if (_dialogue_bubbles[i]._current_mode == DialogueBubble.Mode.WaitForSameBubbleDialogue) {
+				reuse_last = _dialogue_bubbles[i];
+				break;
+			}
+		}
+		
+		if (reuse_last != null) {
+			reuse_last.load_dialogue(script_event);
+			return reuse_last;
+		} else {
+			DialogueBubble neu_bubble = DialogueBubble.cons(game, script_event, _proto_dialogue_bubble);
+			_dialogue_bubbles.Add(neu_bubble);
+			return neu_bubble;
+		}
 	}
 	public EventCharacter cond_get_character_of_name(string name) {
 		EventCharacter rtv = null;

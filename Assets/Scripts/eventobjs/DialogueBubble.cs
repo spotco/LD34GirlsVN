@@ -25,7 +25,8 @@ public class DialogueBubble : SPBaseBehavior {
 		TextIn,
 		Finished,
 		FadeOut,
-		DoRemove
+		DoRemove,
+		WaitForSameBubbleDialogue
 	}
 	
 	public Mode _current_mode;
@@ -56,13 +57,8 @@ public class DialogueBubble : SPBaseBehavior {
 		game._objpool.spbasebehavior_repool<DialogueBubble>(this);
 	}
 	
-	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
-		this.gameObject.SetActive(true);
+	public void load_dialogue(NodeScriptEvent_Dialogue dialogue) {
 		_script = dialogue;
-		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
-		
-		_rendered_text.i_cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
-		_rendered_text.clear();
 		
 		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
 			_nametag.gameObject.SetActive(false);
@@ -73,10 +69,42 @@ public class DialogueBubble : SPBaseBehavior {
 		
 		this.apply_style(dialogue);
 		
-		
 		_scroll_text.reset();
 		_scroll_text._text = _rendered_text;
 		_scroll_text.load(dialogue._text);
+		
+		_current_mode = Mode.TextIn;
+	}
+	
+	public bool should_script_continue() {
+		return this.is_active() == false || _current_mode == Mode.WaitForSameBubbleDialogue;
+	}
+	
+	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
+		this.gameObject.SetActive(true);
+		//_script = dialogue;
+
+		
+		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
+		
+		_rendered_text.i_cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
+		_rendered_text.clear();
+		
+//		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
+//			_nametag.gameObject.SetActive(false);
+//		} else {
+//			_nametag.gameObject.SetActive(true);
+//			_name_text.text = dialogue._character;
+//		}
+		
+//		this.apply_style(dialogue);
+//		
+//		
+//		_scroll_text.reset();
+//		_scroll_text._text = _rendered_text;
+//		_scroll_text.load(dialogue._text);
+
+		this.load_dialogue(dialogue);
 		
 		_current_mode = Mode.FadeIn;
 		
@@ -158,8 +186,15 @@ public class DialogueBubble : SPBaseBehavior {
 			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
 				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				game._music.play_sfx("dialogue_button_press");
-				_current_mode = Mode.FadeOut;
-				_anim_t = 0;
+				
+				if (game._event_modal.should_is_next_dialogue_keep_same_bubble()) {
+					_current_mode = Mode.WaitForSameBubbleDialogue;
+					_rendered_text.clear();
+					
+				} else {
+					_current_mode = Mode.FadeOut;
+					_anim_t = 0;
+				}
 			}
 		
 		} else if (_current_mode == Mode.FadeOut) {
@@ -173,6 +208,9 @@ public class DialogueBubble : SPBaseBehavior {
 			if (_anim_t >= 1) {
 				_current_mode = Mode.DoRemove;
 			}	
+		
+		} else if (_current_mode == Mode.WaitForSameBubbleDialogue) {
+		
 		}
 		
 		_rendered_text.i_update(); // update last for textin anim
