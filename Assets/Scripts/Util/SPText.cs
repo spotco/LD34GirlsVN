@@ -185,7 +185,6 @@ public class SPText : MonoBehaviour {
 		rtv.i_cons_text(texkey,fntkey,default_style);
 		return rtv;
 	}
-	public new static SPNode cons_node() { throw new System.Exception("SPText::cons_node"); }
 	
 	public void repool() {
 		this.cleanup_existing_characters();
@@ -415,7 +414,7 @@ public class SPText : MonoBehaviour {
 	}
 	
 	private float _opacity;
-	public new void set_opacity(float val) {
+	public void set_opacity(float val) {
 		_opacity = val;
 		for (int i = 0; i < _characters.Count; i++) {
 			_characters[i].set_opacity(val);

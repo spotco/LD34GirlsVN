@@ -82,27 +82,11 @@ public class DialogueBubble : SPBaseBehavior {
 	
 	private void i_cons(GameMain game, NodeScriptEvent_Dialogue dialogue) {
 		this.gameObject.SetActive(true);
-		//_script = dialogue;
-
 		
 		_dialogue_scroll_sound_flash = FlashEvery.cons(5);
 		
 		_rendered_text.i_cons_text(RTex.OSAKA_FNT, RFnt.OSAKA, SPText.SPTextStyle.cons(Vector4.zero, Vector4.zero, Vector4.zero, 0, 0));
 		_rendered_text.clear();
-		
-//		if (dialogue._character == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
-//			_nametag.gameObject.SetActive(false);
-//		} else {
-//			_nametag.gameObject.SetActive(true);
-//			_name_text.text = dialogue._character;
-//		}
-		
-//		this.apply_style(dialogue);
-//		
-//		
-//		_scroll_text.reset();
-//		_scroll_text._text = _rendered_text;
-//		_scroll_text.load(dialogue._text);
 
 		this.load_dialogue(dialogue);
 		
@@ -240,7 +224,6 @@ public class DialogueBubble : SPBaseBehavior {
 	private static Dictionary<string,Sprite> __name_to_bgsprite = new Dictionary<string, Sprite>();
 	private Sprite cond_get_bgsprite(string name) {
 		name = "img/ui/neu_dialogue_bubble_"+name;
-		
 		
 		if (__name_to_bgsprite.ContainsKey(name)) return __name_to_bgsprite[name];
 		Sprite bg_sprite = Resources.Load<Sprite>(name);

@@ -154,7 +154,24 @@ public class GridNode : MonoBehaviour {
 		_focus_point = tar_pos;
 	}
 	
-	public void create_link_sprites(GridNavModal grid_nav) {
+	public void on_added_to_active(GameMain game, GridNavModal grid_nav) {
+		this.create_link_sprites(game, grid_nav);
+	}
+	
+	public void on_removed_from_active(GameMain game, GridNavModal grid_nav) {
+		this.destroy_link_sprites(game, grid_nav);
+	}
+	
+	private void destroy_link_sprites(GameMain game, GridNavModal grid_nav) {
+		for (int i = 0; i < _id_to_line.key_itr().Count; i++) {
+			int itr_key = _id_to_line.key_itr()[i];
+			LineProtoRoot itr_val = _id_to_line[itr_key];
+			game._objpool.spbasebehavior_repool<LineProtoRoot>(itr_val);
+		}
+		_id_to_line.Clear();
+	}
+	
+	private void create_link_sprites(GameMain game, GridNavModal grid_nav) {
 		List<int> all_links = new List<int>();
 		all_links.AddRange(_node_script._links);
 		all_links.AddRange(_unidirectional_reverse_links);
@@ -169,7 +186,13 @@ public class GridNode : MonoBehaviour {
 			GridNode other_node = grid_nav._id_to_gridnode[itr_id];
 			Vector3 lpos_delta = SPUtil.vec_sub(other_node.transform.localPosition,this.transform.localPosition);
 			
-			LineProtoRoot neu_line = SPUtil.proto_clone(_line_proto.gameObject).GetComponent<LineProtoRoot>();
+			LineProtoRoot neu_line = game._objpool.spbasebehavior_depool<LineProtoRoot>(false);
+			if (neu_line != null) {
+				SPUtil.proto_copy_transform(neu_line.gameObject,_line_proto.gameObject);
+			} else {
+				neu_line = SPUtil.proto_clone(_line_proto.gameObject).GetComponent<LineProtoRoot>();
+			}
+			
 			neu_line.i_initialize();
 			neu_line._rect_transform.sizeDelta = new Vector2(lpos_delta.magnitude, neu_line.GetComponent<RectTransform>().sizeDelta.y);
 			

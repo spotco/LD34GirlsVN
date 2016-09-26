@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class LineProtoRoot : MonoBehaviour {
+public class LineProtoRoot : SPBaseBehavior {
 	
 	private Material _line_fade_edges_shader_material;
 	public RectTransform _rect_transform;

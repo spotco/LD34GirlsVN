@@ -111,9 +111,9 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].calculate_directional_bindings(this);
 			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].set_unidirectional_reverse_links(this);
 		}
-		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
-			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].create_link_sprites(this);
-		}
+//		for (int i = 0; i < _id_to_gridnode.key_itr().Count; i++) {
+//			_id_to_gridnode[_id_to_gridnode.key_itr()[i]].create_link_sprites(this);
+//		}
 		
 		_current_node = _id_to_gridnode[GameMain.NODE_START_INDEX];
 		_current_state = State.InitialUpdate;
@@ -161,6 +161,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			if (game._controls.get_debug_skip()) {
 				for (int i = 0; i < _enqueued_to_show_gridnodes.Count; i++) {
 					_active_gridnodes.Add(_enqueued_to_show_gridnodes[i]);
+					_id_to_gridnode[_enqueued_to_show_gridnodes[i]].on_added_to_active(game, this);
 				}
 				_enqueued_to_show_gridnodes.Clear();
 			}
@@ -177,7 +178,8 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 				
 				if (tar_node.is_anim_finished()) {
 					_enqueued_to_show_gridnodes.RemoveAt(0);
-					_active_gridnodes.Add(tar_id);	
+					_active_gridnodes.Add(tar_id);
+					_id_to_gridnode[tar_id].on_added_to_active(game, this);
 				}
 				
 			} else {
@@ -708,6 +710,7 @@ public class GridNavModal : MonoBehaviour, GameMain.Modal {
 			if (!_accessible_grid_nodes.ContainsKey(itr_id)) {
 				itr.set_showing(false, true, false);
 				_active_gridnodes.Remove(itr_id);
+				itr.on_removed_from_active(game, this);
 			}
 		}
 		
