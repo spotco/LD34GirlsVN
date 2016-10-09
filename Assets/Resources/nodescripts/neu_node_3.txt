@@ -6,26 +6,26 @@
 	"requirementitem":[],
 	"postshowevents":[
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school..."},
+		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %It's so much to take in."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Who knows what kinds of new people I'll meet!"}
+		{"type":"dialogue","character":"Kurumi","text":"I'm sure I'll meet all kinds of interesting people!"}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"dialogue","text":"I'll admit that this move has been tough.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It all happened so suddenly.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I still think it's odd that my parents had to stay behind.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... Whatever it is they're doing, I'm sure they're thinking of me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's a reassuring thought.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'll admit that it's been tough.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The past few days have been a blur of new experiences. Everything passed by so fast.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Whatever could possibly be going on with my parents... It's all a mystery.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... I know they are thinking of me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That's a reassuring thought, at the very least.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I type up a quick response and send it back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I type up an enthusiastic response and send it back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Then I set my phone on my nightstand, feeling satisfied.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Ever since I was little, I wondered what it would be like to move to a big city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In our small town, nothing ever changed. I was with the same people, seeing the same places every day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now... %This is a new opportunity.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In this city... Everything is different.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving to the big city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now? %This is an opportunity.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything will be different here. The city is a place of self-discovery.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0}

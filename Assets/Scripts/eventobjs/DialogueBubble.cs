@@ -103,7 +103,7 @@ public class DialogueBubble : SPBaseBehavior {
 		_cursor_shadow.transform.position = _cursor.transform.position;
 		
 		_cursor_yvel = 0;
-		_cursor_start_ypos = -60;
+		_cursor_start_ypos = -100;
 		
 		_name_bounce_t = 0;
 		_nametag.transform.localPosition = _name_initial_pos;
@@ -135,7 +135,7 @@ public class DialogueBubble : SPBaseBehavior {
 			
 			_cursor.gameObject.SetActive(false);
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) ||
-			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
+			    game._controls.get_control_just_pressed(ControlManager.Control.ButtonB) ||
 				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				_scroll_text.finish();
 				game._music.play_sfx("dialogue_button_press");
@@ -167,7 +167,7 @@ public class DialogueBubble : SPBaseBehavior {
 			this.transform.localScale = SPUtil.valv(1);
 			
 			if (game._controls.get_control_just_released(ControlManager.Control.ButtonA) ||
-			    game._controls.get_control_down(ControlManager.Control.ButtonB) ||
+			    game._controls.get_control_just_pressed(ControlManager.Control.ButtonB) ||
 				game._controls.get_control_just_released(ControlManager.Control.TouchClick)) {
 				game._music.play_sfx("dialogue_button_press");
 				

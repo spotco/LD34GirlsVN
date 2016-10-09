@@ -128,6 +128,12 @@ public class SPUtil {
 		float delta = (to - start) * y;
 		return start + delta;
 	}
+	public static float drpt_val_sec(float threshold, float start, float seconds) {
+		return 1 - Mathf.Pow(threshold / start, 1 / 60.0f * seconds);
+	}
+	public static float ndefault_drpt_val_sec(float seconds) {
+		return SPUtil.drpt_val_sec(0.01f, 1, seconds);
+	}
 	public static float drpty(float fric) {
 		// y = e ^ (-a * timescale)
 		fric = 1 - fric;

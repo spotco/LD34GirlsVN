@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 4;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -43,8 +43,13 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// selecting node, fade out node text. bottom right show subtitle of scene
-// char name text and node name replace with SPText
+// PROLOGUE SCENE ANIM MOCKS
+
+// selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)
+// char name text replace with SPText
+// YUUTO KATSURAGI
+// SIMONE DE LA VILLENEUVE
+// Simone & Yuuto (half) cousins
 
 //  remove RawImages from particles	
 //  try higher res text spritesheet	

@@ -13,19 +13,21 @@
 
 		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"I could respond immediately."},
-		{"type":"dialogue","character":"Kurumi","text":"I'd probably say that everything's going well."},
+		{"type":"dialogue","character":"Kurumi","text":"Tell them that I'm alright and the move went well."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"But... %To be honest... %I'm feeling a little homesick."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Wouldn't want them to worry, right?"},
+		{"type":"dialogue","character":"Kurumi","text":"And, I wouldn't want them to worry about me."},
 
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Or... Maybe I should wait until tomorrow."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I'd be lying if I said I wasn't feeling a little homesick."},
+		{"type":"dialogue","character":"Kurumi","text":"Alternatively... I guess I could wait and respond tomorrow morning."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"A late response might be more believable than a lie."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"This is a decision. The first turning point in my story.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Choices made here will affect future events.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"This is it. The first fork in the path. It's up to me, and me alone, to make this decision.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Choices I make will directly determine the future to come.","xpos":0,"ypos":0}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road_night"},
@@ -33,8 +35,9 @@
 		{"type":"dialogue","text":"The night before my first day at this new school.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"dialogue","text":"I'm feeling little anxious, to say the least.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It doesn't help that my parents are hundreds of miles away at the moment.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My heart dropped into my stomach the moment I stepped foot in the empty apartment.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I felt so alone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It didn't help that my family was thousands of miles away.","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"phone_buzz"},
 		{"type":"dialogue","text":"My phone buzzes. %I eagerly pick it up.","xpos":0,"ypos":0},
@@ -42,32 +45,34 @@
 		{"type":"dialogue","character":"Me","text":"Could it be..?"},
 		{"type":"hidecharacter","character":"Me"},
 
-		{"type":"dialogue","text":"It's Mom. %I open the message.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Me","text":"[b4]#[bk]Kurumi@ - I'm so happy to hear you made it okay!#@"},
+		{"type":"dialogue","text":"It's [bk]Mom@. %I open the message.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"#[bk]Kurumi@ - I'm so happy to hear you made it okay!#"},
 		{"type":"rename","namestart":"Me","nameend":"Kurumi"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#You know how hard it's all been, for your father and I.#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#We've never really sat down and explained why we all had to move so suddenly, %have we?#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#The answer is... %Complicated.#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#Once we're all together again... I think you deserve to know.#@"},
+		{"type":"dialogue","text":"#You know how hard things have been for your father and I.#"},
+		{"type":"dialogue","text":"#We never really told you why we had to go away so suddenly, did we?#"},
+		{"type":"dialogue","text":"#The answer is... %[b3]Complicated@. %I'm sorry, sweetheart.#"},
+		{"type":"dialogue","text":"#I think it'd be better if we waited until we came back for you to know.#"},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"Everything had been so hectic, I hadn't even had time to think about it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'd been so busy and overwhelmed by the move that the thought hadn't even crossed my mind.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I keep reading.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#I'm sorry that everything was so sudden, and that you had to leave your friends...#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#But I hope you can get used to your new school.#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#Thank you for being so brave about it.#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#Anyway, try to behave yourself and stay out of trouble!#@"},
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#I know you always do!%     -Love, Mom#@"},
+		{"type":"dialogue","text":"#I know it was hard. We both do. You had to leave your home, your friends...#"},
+		{"type":"dialogue","text":"#But I believe in you. You'll fit into your new school in no time, I'm sure.#"},
+		{"type":"dialogue","text":"#Be brave, [bk]Kurumi@. We're both so very proud of you.#"},
+		{"type":"dialogue","text":"#Anyway, behave yourself and try to stay out of trouble!%     -Love, [bk]Mom@#"},
 
-		{"type":"dialogue","text":"As I finish reading the message, my phone suddenly buzzes again.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Another message.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","character":"Kurumi","text":"[b4]#Stay safe. Don't wander alone at night. Dad.#@"},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"I take a moment and think of how best to respond.","xpos":0,"ypos":0}
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"My phone buzzes again just as I'm about to put it down.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Another message?","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"#Stay safe. Don't wander alone at night. [bk]Dad@.#"},
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"My thumb hovers over the keyboard. Should I respond...?","xpos":0,"ypos":0}
 	],
 	"links":[
 			3,4

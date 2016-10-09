@@ -5,30 +5,31 @@
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I hope it all goes well..."}
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %The world that I know is about to change."},
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"I can't help but wonder... %Is it really going to be okay?"}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"dialogue","text":"I'd be lying if I said I wasn't upset.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm hundreds of miles away from home, all alone in an unfamiliar city. It all happened so suddenly.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I hardly even had time to say goodbye to all my friends.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"So, I should probably wait until I calm down a bit before responding.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"If I sounded too emotional, that'd probably just make my parents concerned.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I then turn off my phone and put it in my bag as I head to my room.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'd be lying if I said I wasn't scared.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm thousands of miles away from home, alone in an unfamiliar city filled with strangers.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I then turn off my phone and put it on my nightstand.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It all happened so quickly. I hardly had time to say goodbye to anyone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I take a deep breath. I should probably calm down a bit before I respond.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"If they realized I was upset, they'd only feel worse than they already do.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I don’t want to make them feel guilty. They deserve better than that.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Letting out a sigh, I turn off my phone and set it on my nightstand.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Ever since I was little, I wondered what it would be like to move to a big city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In our small town, nothing ever changed. I was with the same people, seeing the same places every day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now... %This is a new opportunity.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In this city... Everything is different.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I felt a bit nervous. How is it all going to go tomorrow?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I took a deep breath. That calmed me down a bit.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Well, no help in worrying about it all night!","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving to the big city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now? %This is an opportunity.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything will be different here. The city is a place of self-discovery.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What will people think of me? I can’t help but feel anxious about it...","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I take another deep breath.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There's no point in worrying myself even more. I should get some sleep.","xpos":0,"ypos":0}
 	],
 	"links":[
 		5
