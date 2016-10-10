@@ -12,21 +12,21 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road"},
-		{"type":"dialogue","text":"The walk to school this morning has been especially daunting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The walk to school this morning is especially daunting.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I stumble my way through the unfamiliar city streets, throngs of people pushing and pulling me in their midst.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they’re all in a crazy rush.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Life here moves at a much quicker pace than what I’m used to.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they're all in a crazy rush.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Life here moves at a much quicker pace than what I'm used to.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I stop at the edge of a crosswalk. Slowly, other people cluster around me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Suddenly, I’m drowning in an ocean of strangers all waiting to cross the road.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's a little overwhelming. Is this how life in the city always goes?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The light turns and I cross. I can handle this.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Shouldn't be far from school now.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel as if I'm suddenly drowning in an ocean of strangers.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a little overwhelming.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The light turns and I cross.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It shouldn't be far from school now.","xpos":0,"ypos":0},
 
-		{"type":"changebackground","background":"bg_road"},
+		{"type":"changebackground","background":"bg_school_outside"},
 		{"type":"dialogue","text":"I see a familiar-looking building up ahead.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've seen the school before, but just in pictures. In person, it’s so much more... Impressive.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've seen the school before, but just in pictures. In person, it's so much more... [b3]Impressive@.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Students flow into the main entrance in a thick stream, blue uniforms bright against the walkway.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Made it... And in one piece!"},
@@ -78,7 +78,7 @@
 
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal_happy","xscale":1},
 		{"type":"dialogue","text":"He smiles, and it's as refreshing as rain on a summer day.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Don’t worry about being nervous, alright? I know how you feel."},
+		{"type":"dialogue","character":"Raichi","text":"Don't worry about being nervous, alright? I know how you feel."},
 		{"type":"transitioncharacter","character":"Raichi","image":"char_raichi_normal","xscale":1},
 		{"type":"dialogue","character":"Raichi","text":"So if you need anything at all, please let me know."},
 
@@ -91,7 +91,7 @@
 		{"type":"hidecharacter","character":"Raichi"},
 
 		{"type":"dialogue","text":"I look over the rest of the class.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"They’re all like statues, their unmoving gazes cutting deep into me. Hardly anyone else smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"They're all like statues, their unmoving gazes cutting deep into me. Hardly anyone else smiles.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The people here... I think they're a bit more reserved than what I'm used to.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"...It must be a city thing.","xpos":0,"ypos":0}
 	],

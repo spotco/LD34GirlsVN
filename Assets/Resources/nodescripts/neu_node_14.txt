@@ -1,7 +1,7 @@
 {
 	"id":14,
 	"title":"Head Back to Early",
-	"background":"bg_school_classroom",
+	"background":"bg_school_hallway",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[

@@ -8,11 +8,11 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Being asked to read [b3]on my very first day in the class@? Of all the things that could’ve happened...","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"Being asked to read right now? Of all the things to happen...","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":8,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"Would it be alright for me to just up and take her book?","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":9,"zoom":1.5},
-		{"type":"dialogue","character":"Kurumi","text":"Or should I suck it up and admit I left my books back home?","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"Or should I suck it up and admit I left it back home?","ypos":-167},
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I better do something, and fast!","ypos":-167}
@@ -22,10 +22,10 @@
 		{"type":"dialogue","character":"Teacher","text":"If you would open your books, we're starting off from yesterday's lesson..."},
 		{"type":"dialogue","text":"We're already starting?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The students around me pull their books out from their desks.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Following suit, I open my bag. %I reach in, expecting to find my own.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Following suit, I open my bag. I reach in, expecting to find my own.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Lunchbox, pencil case, cellphone..."},
+		{"type":"dialogue","character":"Kurumi","text":"Hmm..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_shock","xscale":1},
 		{"type":"dialogue","text":"It's not here.","xpos":0,"ypos":0},
 
@@ -34,16 +34,18 @@
 		{"type":"dialogue","character":"Kurumi","text":"Of all things to forget..."},
 
 		{"type":"dialogue","text":"I take a deep breath, trying not to show any signs of panic.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I do, I feel a slight tap on my shoulder.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A girl with heavy glasses and a sly, mischievious smile nudges her book toward me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I do, I feel a gentle tap on my shoulder.","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Really? May I?"},
+		{"type":"showcharacter","character":"Glasses Girl","image":"char_naoko_normal","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"A girl with heavy glasses and a sly, mischievious smile holds up her book towards me.","xpos":0,"ypos":0},
+
+		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Can I..."},
 		{"type":"dialogue","text":"She nods.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Glasses Girl","text":"Don't worry, new girl! I've got your back."},
+		{"type":"dialogue","character":"Glasses Girl","text":"[b3]Psst@... %Page one twenty seven!"},
 
 		{"type":"dialogue","text":"Her voice is friendly and enthusiastic.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I reach for her book, I suddenly hear my name being called.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I glance over, I suddenly hear my name called.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@, since you just joined us today..."},
 		{"type":"dialogue","character":"Teacher","text":"Why don't you read? Starting from the first section."},

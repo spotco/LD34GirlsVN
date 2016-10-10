@@ -278,6 +278,12 @@ public class DialogueBubble : SPBaseBehavior {
 			_primary_background.sprite = this.cond_get_bgsprite("simone");
 			_name_background.sprite = this.cond_get_nametagsprite("simone");
 			outline_color = new Color(127/255.0f,121/255.0f,85/255.0f,1);
+			
+		} else if (script_event._character == "Glasses Girl" || script_event._character == "Naoko") {
+			_text_scroll_sound = TEXT_SCROLL_SFX_RAICHI;
+			_primary_background.sprite = this.cond_get_bgsprite("naoko");
+			_name_background.sprite = this.cond_get_nametagsprite("naoko");
+			outline_color = SPUtil.color_from_bytes(79, 93, 77, 255);
 		
 		} else {
 			

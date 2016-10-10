@@ -25,7 +25,7 @@
 		{"type":"dialogue","text":"I can't help but feel a little embarassed.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"I'm distracted enough that as I'm about to reach my desk...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's distracting enough that just as I reach my desk...","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},

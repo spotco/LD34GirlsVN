@@ -18,7 +18,7 @@
 		{"type":"dialogue","text":"It all happened so quickly. I hardly had time to say goodbye to anyone.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I take a deep breath. I should probably calm down a bit before I respond.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"If they realized I was upset, they'd only feel worse than they already do.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I don’t want to make them feel guilty. They deserve better than that.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I don't want to make them feel guilty. They deserve better than that.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Letting out a sigh, I turn off my phone and set it on my nightstand.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
@@ -26,7 +26,7 @@
 		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But now? %This is an opportunity.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Everything will be different here. The city is a place of self-discovery.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What will people think of me? I can’t help but feel anxious about it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What will people think of me? I can't help but feel anxious about it...","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"I take another deep breath.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"There's no point in worrying myself even more. I should get some sleep.","xpos":0,"ypos":0}

@@ -59,6 +59,14 @@ public class SPTextRenderUtil {
 			new Vector4(s_bold_outline_color.r, s_bold_outline_color.g, s_bold_outline_color.b, s_bold_outline_color.a),
 			new Vector4(s_bold_fill_color.r, s_bold_fill_color.g, s_bold_fill_color.b, s_bold_fill_color.a),
 			new Vector4(0,0,0,0), 3.5f, -0.75f));
+			
+		Color n_bold_fill_color = SPUtil.color_from_bytes(207, 255, 206, 255);
+		Color n_bold_outline_color = SPUtil.color_from_bytes(75, 102, 70, 255);
+		sptext.add_style("bn", SPText.SPTextStyle.cons(
+			new Vector4(n_bold_outline_color.r, n_bold_outline_color.g, n_bold_outline_color.b, n_bold_outline_color.a),
+			new Vector4(n_bold_fill_color.r, n_bold_fill_color.g, n_bold_fill_color.b, n_bold_fill_color.a),
+			new Vector4(0,0,0,0), 3.5f, -0.75f));
+	
 	}
 	
 	public static void clear(SPText sptext) {

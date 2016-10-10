@@ -9,7 +9,6 @@
 	"event":[
 		{"type":"dialogue","text":"I decide to stand and tell the truth. Time to face the music.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"I stand.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"I'm sorry. I think I forgot to bring my books today."},
 		{"type":"dialogue","text":"The teacher frowns at me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"Evidently, we do things a little differently here than where you're from."},
@@ -21,8 +20,8 @@
 		{"type":"dialogue","text":"She looks out over the class.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"A boy in the front stands up. It's [br]Raichi@.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He pulls out a textbook and passes it back.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Raichi","text":"Don't worry about it, [bk]Kurumi@. It happens."},
+		{"type":"dialogue","text":"He pulls out a textbook from his bag and passes it back.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Raichi","text":"Don't worry about it, [bk]Kurumi@. It happens to the best of us."},
 		{"type":"dialogue","text":"He flashes a quick smile before returning to his seat.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
 		{"type":"dialogue","text":"The book feels new. The pages feel crisp in my hand.","xpos":0,"ypos":0},
@@ -36,7 +35,7 @@
 
 		{"type":"dialogue","text":"The energetic girl with glasses turns back to her desk and begins intently taking notes.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Whatever she's writing down, she sure is passionate about it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I spot a name written in faded cursive on the top corner of the page. [bk]Naoko@...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I spot a name written in faded cursive on the top corner of the page. %[bk]Naoko@...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[bk]Naoko@, is it?"},
 		{"type":"dialogue","character":"Kurumi","text":"I should probably thank her later..."}
 	],

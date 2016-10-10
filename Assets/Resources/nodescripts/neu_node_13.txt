@@ -1,7 +1,7 @@
 {
 	"id":13,
 	"title":"Finish Lunch",
-	"background":"bg_school_classroom",
+	"background":"bg_school_courtyard",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
