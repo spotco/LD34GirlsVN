@@ -7,13 +7,13 @@
 	"postshowevents":[
 	],
 	"event":[
-		{"type":"dialogue","text":"I decide to tell the truth.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I decide to stand and tell the truth. Time to face the music.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"I stand.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"I'm... sorry. I think I forgot my textbook."},
-		{"type":"dialogue","text":"The teacher looks over at me dissapointedly.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@... You know we do things a little differently here."},
-		{"type":"dialogue","character":"Teacher","text":"You're expected to always come to class prepared."},
+		{"type":"dialogue","character":"Kurumi","text":"I'm sorry. I think I forgot to bring my books today."},
+		{"type":"dialogue","text":"The teacher frowns at me.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"Evidently, we do things a little differently here than where you're from."},
+		{"type":"dialogue","character":"Teacher","text":"Here, you're expected to come to class prepared."},
 		{"type":"dialogue","text":"She sighs.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Teacher","text":"Well, that being said... %Does anyone have an extra they can lend?"},
@@ -21,25 +21,24 @@
 		{"type":"dialogue","text":"She looks out over the class.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Raichi","image":"char_raichi_normal","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"A boy in the front stands up. It's [br]Raichi@.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In his hand he holds a textbook. He passes it back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He pulls out a textbook and passes it back.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Don't worry about it, [bk]Kurumi@. It happens."},
-		{"type":"dialogue","text":"He flashes a quick smile before sitting back down.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He flashes a quick smile before returning to his seat.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Raichi"},
-		{"type":"dialogue","text":"Receiving the book, I quickly find the right page and open it up.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Clearing her throat, the teacher continues from where she left off.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The book feels new. The pages feel crisp in my hand.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I flip to the right section and smile at the teacher.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She clears her throat and continues from where she left off.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"As I was saying..."},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"Geography. Nothing too difficult.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Class passes by without too much trouble.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I remember my neighbor who hed offered her textbook earlier.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She's intently looking over her notes.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"On the cover I see a name written in elegant cursive. [bk]Naoko@...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The energetic girl with glasses turns back to her desk and begins intently taking notes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Whatever she's writing down, she sure is passionate about it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I spot a name written in faded cursive on the top corner of the page. [bk]Naoko@...","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"[bk]Naoko@, is it?"},
-		{"type":"dialogue","character":"Kurumi","text":"I should probably thank her later..."},
-
-		{"type":"additem","item":"textbook"}
+		{"type":"dialogue","character":"Kurumi","text":"I should probably thank her later..."}
 	],
 	"links":[
 		10

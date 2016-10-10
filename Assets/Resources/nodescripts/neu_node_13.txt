@@ -1,0 +1,44 @@
+{
+	"id":13,
+	"title":"Finish Lunch",
+	"background":"bg_school_classroom",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"dialogue","text":"I find myself sitting alone in the school courtyard, my half-finished lunch sitting idly on my lap.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I see groups of students hanging about nearby, talking and laughing amongst themselves.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Part of me wants to approach one of them.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I really ought to be meeting new people and making friends.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But at the same time, I find it hard to put myself out there like that.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My indecisiveness gets the better of me, and I finish my lunch alone.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"When it comes to making friends, I've got a long way to go.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"dialogue","text":"As I prepare to head back, I notice the clear blue sky above.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"No matter where I go, it always looks the same.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My thoughts drift over to my parents. I can't help it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wonder where it is they've gone.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I know that my father's work is very secretive.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've never learned how, exactly, he earns his living.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"When I was younger, I thought it was cool, having my parents be surrounded by such strange circumstances.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"If my beloved mother and father were holding a secret, then it must have been something important.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The most important secret the world had ever seen.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"But... as I got older, I saw the toll it took on my mother.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I can barely remember the last time we were all together.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"I sigh and pack up the remaining bits of my lunch.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Well... I'm here now."},
+		{"type":"dialogue","text":"I pull out my phone and check my messages. %Nothing new. %They must be busy.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With another sigh, I gather my belongings and head silently back to class.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"It's too late to go back. %I need to keep moving forward. Always.","xpos":0,"ypos":0}
+	],
+	"links":[
+	]
+}

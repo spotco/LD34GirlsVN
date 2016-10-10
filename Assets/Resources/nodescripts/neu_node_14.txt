@@ -1,0 +1,43 @@
+{
+	"id":14,
+	"title":"Head Back to Early",
+	"background":"bg_school_classroom",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"dialogue","text":"I decide to head back to class a bit early.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A familiar face passes by as I walk through the corridor.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's [bn]Naoko@. Leaning against the wall, her eyes are glued to her phone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't really get a chance to talk with her earlier.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"How's it going, [bn]Naoko@?"},
+		{"type":"dialogue","character":"Naoko","text":"Ah..!"},
+		{"type":"dialogue","text":"She jumps, and with a loud crack her phone drops to the floor.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Oh no..."},
+		{"type":"dialogue","text":"I reach down and pick it up for her. %It's worse than expected.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A long, thin crack runs across the top right corner of the screen.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"Gosh, [bn]Naoko@... %I'm sorry..."},
+		{"type":"dialogue","text":"As I take a closer look, I notice what she had been looking at on her phone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a chat room of some sort. There's a title at the top of the page.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"#[BIZARRE/WEIRD] SUPERNATURAL Events in the City...#","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...I realize I probably shouldn't be snooping about on something personal like this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I hand the phone back over, feeling quite guilty.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Your screen..."},
+		{"type":"dialogue","text":"She doesn't seem too upset. %If anything it's like she's barely registered what's going on.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"Oh... What? %No biggie, I drop it all the time..."},
+		{"type":"dialogue","text":"She looks back down, her eyes once again fixating to the screen.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"I'll... see you back in class..."},
+		{"type":"dialogue","text":"As if in some sort of trance, she doesn't sound too interested in continuing this conversation.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She wanders off.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Whatever's going on in that chat room must be really important.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"Is she... alright?"},
+		{"type":"dialogue","text":"Not knowing quite what to make of the situation, I head back to the classroom.","xpos":0,"ypos":0}
+	],
+	"links":[
+	]
+}

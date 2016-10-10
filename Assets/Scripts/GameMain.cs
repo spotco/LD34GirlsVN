@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 4;
+	public static int NODE_START_INDEX = 5;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -44,6 +44,17 @@ public class GameMain : MonoBehaviour {
 	[System.NonSerialized] public Canvas _parent_canvas;
 
 // PROLOGUE SCENE ANIM MOCKS
+
+/*
+finish mana and raichi hero form
+raichi new look expressions
+naoko update look with expressions
+naoko chibi
+prologue background color and character silouhettes
+timed node nodes
+apartment night
+kurumi, mana, raichi normal outfits
+*/
 
 // selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)
 // char name text replace with SPText
