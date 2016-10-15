@@ -15,7 +15,7 @@ public class GridCharacterManager : MonoBehaviour {
 	public void i_initialize(GameMain game, GridNavModal gridnav) {
 		this.register_asset(game,gridnav,"mana",_mana_normal);
 		this.register_asset(game,gridnav,"mana_hero",_mana_hero);
-		this.register_asset(game,gridnav,"raichi",_raichi_normal);
+		this.register_asset(game,gridnav,"yuuto",_raichi_normal);
 		this.register_asset(game,gridnav,"simone_hero",_simone_hero);
 		this.register_asset(game,gridnav,"naoko",_naoko_normal);
 	}

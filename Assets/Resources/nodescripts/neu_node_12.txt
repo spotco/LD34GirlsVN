@@ -7,7 +7,7 @@
 	"postshowevents":[
 	],
 	"previewchar":[
-		"Yuuto"
+		"yuuto"
 	],
 	"event":[
 
@@ -146,9 +146,9 @@
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Well... %Let me ask you this."},
-		{"type":"dialogue","character":"Kurumi","text":"Do you ever feel... Homesick?"},
+		{"type":"dialogue","character":"Kurumi","text":"Do you ever feel... [b3]Homesick@?"},
 		{"type":"transitioncharacter","character":"Yuuto","image":"yuuto/neutral","xscale":1},
-		{"type":"dialogue","character":"Yuuto","text":"Homesick?","xpos":25,"ypos":20},
+		{"type":"dialogue","character":"Yuuto","text":"[b3]Homesick@?","xpos":25,"ypos":20},
 		{"type":"dialogue","character":"Kurumi","text":"Yeah. Like missing your home, or your friends..."},
 		{"type":"transitioncharacter","character":"Yuuto","image":"yuuto/serious","xscale":1},
 		{"type":"dialogue","text":"A strange look crosses his face for a brief moment.","xpos":0,"ypos":0},
@@ -166,12 +166,12 @@
 		{"type":"playSFX", "sfx":"phone_buzz"},
 		{"type":"dialogue","text":"A brief moment of silence is suddenly interrupted by the abrupt buzzing of a cell phone.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Yuuto","image":"yuuto/serious","xscale":1},
-		{"type":"dialogue","text":"It's [br]Yuuto's@. He pulls it out of his pocket, checks it, and frowns slightly.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's [br]Yuuto's@ phone. He pulls it out of his pocket, checks it, and frowns slightly.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Yuuto","text":"We'll... have to do this again.","xpos":25,"ypos":20},
 		{"type":"dialogue","text":"This sounded serious.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In a blink of an eye, his attitude changed completely.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In a blink of an eye, his attitude changes completely.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Something was odd.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Yuuto","text":"I'm going to have to leave early.","xpos":25,"ypos":20},
@@ -191,6 +191,7 @@
 		{"type":"dialogue","text":"I couldn't help but feel that something about him was... %Distant. %Unreachable.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As if a part of him was hidden away, in a world apart from our own.","xpos":0,"ypos":0},
 
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Kurumi","text":"I guess everyone's got their own secrets."},
 		{"type":"dialogue","character":"Kurumi","text":"I shouldn't try to get in over my head here."}

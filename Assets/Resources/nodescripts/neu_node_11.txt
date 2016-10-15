@@ -14,7 +14,7 @@
 		{"type":"dialogue","text":"I hear the familiar chime of a school bell. It must be noon.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Students spring from their seats the second class ends. Looks like everyone's in a hurry to get lunch.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Naoko","image":"naoko/neutral","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"Before I even have the chance to say anything, I see [bn]Naoko@ grab her belongings and head out the door.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Before I even have the chance to say anything, [bn]Naoko@ grabs her belongings and heads out the door.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Naoko"},
 		{"type":"dialogue","text":"I wonder what the rush is.","xpos":0,"ypos":0},
 
@@ -75,7 +75,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Really?"},
 		{"type":"dialogue","character":"Naoko","text":"Mhm. Did you make it yourself?"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/happy","xscale":-1},
-		{"type":"dialogue","character":"Kurumi","text":"Yeah, just real quick this morning. You think it looks good?"},
+		{"type":"dialogue","character":"Kurumi","text":"Yeah, just real quick this morning. You think so?"},
 		{"type":"dialogue","text":"She nods.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"They were just some sandwiches I threw together before I had to leave.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I didn't think they were anything special, but I certainly appreciated the compliment.","xpos":0,"ypos":0},
