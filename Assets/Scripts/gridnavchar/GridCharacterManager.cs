@@ -8,6 +8,7 @@ public class GridCharacterManager : MonoBehaviour {
 	[SerializeField] private GridCharacterAsset _mana_hero;
 	[SerializeField] private GridCharacterAsset _raichi_normal;
 	[SerializeField] private GridCharacterAsset _simone_hero;
+	[SerializeField] private GridCharacterAsset _naoko_normal;
 	
 	private Dictionary<string,GridCharacterAsset> _name_to_asset_proto = new Dictionary<string, GridCharacterAsset>();
 	
@@ -16,6 +17,7 @@ public class GridCharacterManager : MonoBehaviour {
 		this.register_asset(game,gridnav,"mana_hero",_mana_hero);
 		this.register_asset(game,gridnav,"raichi",_raichi_normal);
 		this.register_asset(game,gridnav,"simone_hero",_simone_hero);
+		this.register_asset(game,gridnav,"naoko",_naoko_normal);
 	}
 	
 	private void register_asset(GameMain game, GridNavModal gridnav, string name, GridCharacterAsset asset) {

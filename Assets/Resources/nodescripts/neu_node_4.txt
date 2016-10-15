@@ -6,9 +6,9 @@
 	"requirementitem":[],
 	"postshowevents":[
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %The world that I know is about to change."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I can't help but wonder... %Is it really going to be okay?"}
 	],
 	"event":[

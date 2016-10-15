@@ -8,56 +8,59 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"The hours in class pass by without any further notable incident.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An hour passes by without any more trouble.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"dialogue","text":"As nervous as I was to start my life at this new school...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It doesn't take long for a sense of normalcy to start setting in.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The lessons themselves aren't too different. The curriculum's just little ahead of ours back home.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I don't think I'll have too much trouble catching up.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Pink Hair","image":"mana/aloof","xpos":-300,"xscale":1},
 
 		{"type":"dialogue","text":"For a brief moment, my gaze drifts over to the [b]Pink-Haired Girl@ only a couple seats away.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Idly gazing out the window like that, it almost looks as if she's in a trance.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I watch as she twirls a lock of vibrant hair with her fingers, a white cable extending out from beneath them.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The cord winds all the way down into her backpack.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Those must be... [b3]Earbuds@?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Those must be... [b3]Earbuds@? %She must not be paying any attention.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"She must be listening to something. %I wonder what.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Now that I think about it... She must not be paying any attention at all.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What's the deal with her? Is she some sort of delinquent?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What's the deal with her? %This must be some sort of delinquent behaviour.","xpos":0,"ypos":0},
 
-		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xscale":-1},
-
+		{"type":"transitioncharacter","character":"Pink Hair","image":"mana/aloof","xscale":-1},
 		{"type":"dialogue","text":"She reaches down into her bag and nonchalantly pulls out her phone.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Looking down, she types up a quick text and sends it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Doesn't she care about getting caught?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"On second thought... %I doubt it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Looking down, she types up a quick message and sends it.","xpos":0,"ypos":0},
 
-		{"type":"movecharacter","character":"Pink Hair","xto":300},
+		{"type":"movecharacter","character":"Pink Hair","xto":-200},
 		{"type":"dialogue","text":"Then, all of a sudden... %She gets up.","xpos":0,"ypos":0},
+		{"type":"movecharacter","character":"Pink Hair","xto":300},
 		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xscale":1},
 
 		{"type":"dialogue","character":"Teacher","text":"Miss. Excuse me, but where do you think...","xpos":-150,"ypos":105},
 		{"type":"dialogue","character":"Pink Hair","text":"I don't feel so hot. I'm gonna go see the nurse."},
 		{"type":"dialogue","character":"Teacher","text":"You should ask permission before leaving the classroom. We're in the middle of a lesson.","xpos":-150,"ypos":105},
+		{"type":"transitioncharacter","character":"Pink Hair","image":"mana/aloof","xscale":1},
 		{"type":"dialogue","text":"The girl pauses and turns to face the teacher, looking mildly annoyed.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Pink Hair","text":"May I... please be excused?"},
 		{"type":"dialogue","character":"Teacher","text":"What exactly is the problem?","xpos":-150,"ypos":105},
+		{"type":"transitioncharacter","character":"Pink Hair","image":"mana/angry","xscale":1},
 		{"type":"dialogue","character":"Pink Hair","text":"You really want me to tell everyone?"},
 
 		{"type":"dialogue","text":"The teacher bites her lip, clearly struggling to contain her temper.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"After a brief silence, she sighs.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"Go. And I expect to see you back this time, if I may add.","xpos":-150,"ypos":105},
 
+		{"type":"movecharacter","character":"Pink Hair","xto":700},
+		{"type":"dialogue","text":"Without another word, the girl leaves the room.","xpos":0,"ypos":0},
+
 		{"type":"hidecharacter","character":"Pink Hair"},
 		{"type":"playSFX", "sfx":"door_slam"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"Without another word, the girl leaves the room. The door slams shut behind her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The door slams shut behind her.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"The people around me seem unperturbed. This must happen often.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Naoko","image":"naoko/grin","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"I look over at [bn]Naoko@. She's completely engrossed in whatever she's writing.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I doubt she even noticed.","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Naoko"},
 		{"type":"dialogue","text":"I guess this is just another day for them, after all.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"And I suppose it'll become normal to me too, soon enough.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The teacher continues the lesson. This time, it continues without interruption.","xpos":0,"ypos":0}

@@ -7,7 +7,7 @@
 	"postshowevents":[
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/sad","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"There has to be a way."},
 		{"type":"dialogue","character":"Kurumi","text":"If I could go back..."},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -16,7 +16,7 @@
 		{"type":"dialogue","text":"This map is the sum of all my memories."},
 		{"type":"dialogue","text":"I need to look back... %At the decisions made... %And the people met..."},
 		{"type":"gridnavfocusat","nodeid":2,"zoom":1.5},
-		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/sad","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"If I could see everything from the beginning again...","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":1,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"...I could retrace my steps.","ypos":-167},
