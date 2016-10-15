@@ -1,17 +1,17 @@
 {
 	"id":4,
 	"title":"Wait Until Tomorrow",
-	"background":"bg_apartment",
+	"background":"bg_apartment_night",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
+		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %The world that I know is about to change."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I can't help but wonder... %Is it really going to be okay?"}
 	],
 	"event":[
-		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"dialogue","text":"I'd be lying if I said I wasn't scared.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'm thousands of miles away from home, alone in an unfamiliar city filled with strangers.","xpos":0,"ypos":0},
 

@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 10;
+	public static int NODE_START_INDEX = 5;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -43,8 +43,6 @@ public class GameMain : MonoBehaviour {
 	private RectTransform _self_rect;
 	[System.NonSerialized] public Canvas _parent_canvas;
 
-// PROLOGUE SCENE ANIM MOCKS
-
 /*
 finish mana and raichi hero form
 raichi new look expressions
@@ -60,7 +58,7 @@ kurumi, mana, raichi normal outfits
 // char name text replace with SPText
 // YUUTO KATSURAGI
 // SIMONE DE LA VILLENEUVE
-// Simone & Yuuto (half) cousins
+// Simone & Yuuto related
 
 //  remove RawImages from particles	
 //  try higher res text spritesheet	

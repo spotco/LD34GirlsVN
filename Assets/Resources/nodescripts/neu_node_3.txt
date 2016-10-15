@@ -1,17 +1,17 @@
 {
 	"id":3,
 	"title":"Reply Right Away",
-	"background":"bg_apartment",
+	"background":"bg_apartment_night",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
+		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
 		{"type":"showcharacter","character":"Kurumi","image":"char_kurumi_normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %It's so much to take in."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I'm sure I'll meet all kinds of interesting people!"}
 	],
 	"event":[
-		{"type":"changebackground","background":"bg_apartment"},
 		{"type":"dialogue","text":"I'll admit that it's been tough.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The past few days have been a blur of new experiences. Everything passed by so fast.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Whatever could possibly be going on with my parents... It's all a mystery.","xpos":0,"ypos":0},

@@ -43,7 +43,7 @@
 		{"type":"dialogue","text":"I smile back.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"...I don't see why not."},
 
-		{"type":"dialogue","text":"He gently pushes in his chair and swings his bookbag over his shoulder.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He gently pushes in his chair and swings his book bag over his shoulder.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Raichi","text":"Would you care to join me for lunch?"},
 		{"type":"dialogue","character":"Raichi","text":"I'd be more than happy to show you around the school."},
 		{"type":"dialogue","character":"Raichi","text":"Or at least, the parts of it I've seen."},

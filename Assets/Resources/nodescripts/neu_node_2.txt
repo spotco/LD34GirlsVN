@@ -26,7 +26,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"A late response might be more believable than a lie."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"This is it. The first fork in the path. It's up to me, and me alone, to make this decision.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This is it. The first fork in the road. It's up to me, and me alone, to make this decision.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Choices I make will directly determine the future to come.","xpos":0,"ypos":0}
 	],
 	"event":[
@@ -34,9 +34,9 @@
 		{"type":"dialogue","text":"It's my first night here in this unfamiliar city.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The night before my first day at this new school.","xpos":0,"ypos":0},
 
-		{"type":"changebackground","background":"bg_apartment"},
-		{"type":"dialogue","text":"My heart dropped into my stomach the moment I stepped foot in the empty apartment.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I felt so alone.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_apartment_night"},
+		{"type":"dialogue","text":"My heart drops into my stomach the moment I set foot into my empty apartment.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel so alone.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It didn't help that my family was thousands of miles away.","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"phone_buzz"},

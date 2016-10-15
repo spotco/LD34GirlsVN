@@ -15,7 +15,7 @@
 		{"type":"dialogue","text":"If I had to guess, it'd be to beat the lines at the cafeteria.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I got a taste of the crowds during my morning commute, and I wasn't a fan.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"Following everyone else, I grabbed my hastily packed lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Following everyone else, I grab my hastily packed lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
 		{"type":"dialogue","text":"The hallway is alive with students. People are everywhere, it's a little disorienting.","xpos":0,"ypos":0},

@@ -14,13 +14,12 @@
 		{"type":"changebackground","background":"bg_road"},
 		{"type":"dialogue","text":"The walk to school this morning is especially daunting.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I stumble my way through the unfamiliar city streets, throngs of people pushing and pulling me in their midst.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they're all in a crazy rush.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they're all in a mad rush.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Life here moves at a much quicker pace than what I'm used to.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I stop at the edge of a crosswalk. Slowly, other people cluster around me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I feel as if I'm suddenly drowning in an ocean of strangers.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's a little overwhelming.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I stop at the edge of a crosswalk, other people slowly cluster around me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel as if I'm suddenly drowning in an ocean of strangers. It's a little overwhelming.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The light turns and I cross.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It shouldn't be far from school now.","xpos":0,"ypos":0},
 
@@ -32,7 +31,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Made it... And in one piece!"},
 		{"type":"dialogue","text":"A few passing students shoot me odd looks. Did I just say that out loud?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_puzzled","xscale":1},
-		{"type":"dialogue","text":"I struggle to compose myself. It's important to leave a good impression, especially on your first day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I try and compose myself. It's important to leave a good impression, especially on your first day.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"Well... here goes."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
