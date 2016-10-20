@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 10;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {

@@ -46,5 +46,6 @@
 		{"type":"dialogue","text":"I should keep moving forward.","xpos":0,"ypos":0}
 	],
 	"links":[
+		15
 	]
 }
