@@ -1,0 +1,15 @@
+{
+	"id":17,
+	"title":"Leaving School",
+	"background":"bg_school_courtyard",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"dialogue","text":"Students swarm the grounds just outside the school. The sidewalks are a sea of blue-clad youths talking, laughing, bickering amongst themselves.","xpos":0,"ypos":0},
+
+	],
+	"links":[
+	]
+}

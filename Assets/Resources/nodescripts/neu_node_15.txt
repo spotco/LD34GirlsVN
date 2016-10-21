@@ -1,12 +1,13 @@
 {
 	"id":15,
 	"title":"Back to Class",
-	"background":"bg_school_hallway",
+	"background":"bg_school_classroom",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
 	],
 	"event":[
+		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"Chatter echoes through the halls as I make my way back to class.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"In a way, it feels like the continuous hum of background machinery.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Peace and quiet are hard to come by in this place.","xpos":0,"ypos":0},
@@ -21,9 +22,9 @@
 		{"type":"playSFX", "sfx":"school_bell"},
 		{"type":"changebackground","background":"bg_school_classroom_front"},
 		{"type":"dialogue","text":"The bell suddenly sounds as I return to my senses.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm back in my homeroom class early in the afternoon.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm back in my homeroom class, early in the afternoon.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Students slowly trickle back in from lunch. Class should be starting soon.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I notice a lone empty desk up front, [br]Yuuto's@. Didn't see him anywhere.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I notice a lone empty desk up front, [br]Yuuto@'s. Didn't see him anywhere.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"dialogue","text":"As I take my seat, I can't shake the feeling that something unexpected is about to happen.","xpos":0,"ypos":0},
@@ -56,18 +57,18 @@
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hey, [bn]Naoko@..."},
-		{"type":"dialogue","character":"Naoko","text":"What's up?"},
+		{"type":"dialogue","character":"Naoko","text":"What's up?","xpos":46,"ypos":-117},
 		{"type":"dialogue","character":"Kurumi","text":"You... know what this is all about?"},
 		{"type":"dialogue","text":"She shrugs.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Naoko","text":"Hmm... It certainly is quite the mystery..."},
-		{"type":"dialogue","character":"Naoko","text":"Quite the mystery indeed..."},
+		{"type":"dialogue","character":"Naoko","text":"Hmm... It certainly is quite the mystery...","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"Quite the mystery indeed...","xpos":46,"ypos":-117},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Naoko","text":"But..."},
-		{"type":"dialogue","character":"Naoko","text":"I [b3]DO@ know what I could be doing with all this free time..."},
+		{"type":"dialogue","character":"Naoko","text":"But...","xpos":46,"ypos":-117},
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":1},
 		{"type":"dialogue","text":"A large, silly looking smile crosses her face.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Naoko","text":"...This could be some [b3]VERY@ important work."},
+		{"type":"dialogue","character":"Naoko","text":"I [b3]DO@ know what I could be doing with all this free time...","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"...This could be some [b3]VERY@ important work.","xpos":46,"ypos":-117},
 		{"type":"hidecharacter","character":"Naoko"},
 		{"type":"dialogue","text":"Not saying much else, she turns and walks out the room.","xpos":0,"ypos":0},
 
@@ -82,5 +83,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"Well... I hope she gets the message."}
 	],
 	"links":[
+		16
 	]
 }
