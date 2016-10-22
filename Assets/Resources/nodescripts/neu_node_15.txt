@@ -53,7 +53,7 @@
 
 		{"type":"showcharacter","character":"Naoko","image":"naoko/neutral","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"I see [bn]Naoko@ nonchalantly pack her belongings.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I wonder if she had any clue.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wonder if she had any ideas.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hey, [bn]Naoko@..."},
@@ -73,7 +73,7 @@
 		{"type":"dialogue","text":"Not saying much else, she turns and walks out the room.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"That was a bit too much for me to process.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That was a bit too much for me to process all at once.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"changebackground","background":"bg_black"},
@@ -83,6 +83,6 @@
 		{"type":"dialogue","character":"Kurumi","text":"Well... I hope she gets the message."}
 	],
 	"links":[
-		16
+		16,17
 	]
 }

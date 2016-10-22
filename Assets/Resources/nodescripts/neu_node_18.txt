@@ -1,0 +1,32 @@
+{
+	"id":18,
+	"title":"Encounter",
+	"background":"bg_school_outside",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_city_afternoon"},
+		{"type":"dialogue","text":"It feels as if the entire world around with me spins as I rush back through the crowded sidewalk.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I can only make out the blurred faces of bystanders as I frantically make my way through.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_outside"},
+		{"type":"dialogue","text":"Up ahead, I see the gated entrance to the school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Standing before the group of uniformed men is a familiar figure in a school uniform.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's [br]Yuuto@. What is he doing here?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"For a brief moment, I stop and watch.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With his finger, he appears to trace the outline of a large circle.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The men around him step back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"His traced outline glows blindingly bright as a flash of light fills the area.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I open my eyes, I find myself standing where I was before - facing the school gate.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I notice dark clouds covering the skies overhead.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I'M ALSO ALL ALONE <temp>...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Continue #20 from here...","xpos":0,"ypos":0},
+	],
+	"links":[
+	]
+}

@@ -44,14 +44,17 @@ public class GameMain : MonoBehaviour {
 	[System.NonSerialized] public Canvas _parent_canvas;
 
 /*
-finish mana and raichi hero form
-raichi new look expressions
-naoko update look with expressions
-naoko chibi
+neu node 5, subway to school
+
+
 prologue background color and character silouhettes
 timed node nodes
 apartment night
 kurumi, mana, raichi normal outfits
+
+subway
+class dark
+city neuf work
 */
 
 // selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)

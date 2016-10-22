@@ -6,6 +6,9 @@
 	"requirementitem":[],
 	"postshowevents":[
 	],
+	"previewchar":[
+		"naoko"
+	],
 	"event":[
 		{"type":"dialogue","text":"As I make my way down the crowded hallway, I finally catch up with [bn]Naoko@.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Naoko","image":"naoko/smile","xpos":300,"xscale":1},
@@ -27,7 +30,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"Listen, [bn]Naoko@... Please don't tell me you're about to do something too crazy."},
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/neutral","xscale":1},
 		{"type":"dialogue","character":"Naoko","text":"Like... what?","xpos":46,"ypos":-117},
-		{"type":"dialogue","text":"Genuinely curious, he tilts her head to the side.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Genuinely curious, she tilts her head to the side.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Well..."},
 		{"type":"dialogue","text":"I didn't want to give her any ideas.","xpos":0,"ypos":0},
@@ -67,5 +70,6 @@
 
 	],
 	"links":[
+		17
 	]
 }
