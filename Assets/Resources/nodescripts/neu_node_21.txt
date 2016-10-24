@@ -1,0 +1,71 @@
+{
+	"id":21,
+	"title":"Rooftop",
+	"background":"bg_school_hallway",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"I head back out to the hallway and continue my search.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm getting a little doubtful now.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"As I pass by the stairwell, I hear the sound of whistling wind.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Where could that be coming from?"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I walk into the stairwell, and look around.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The door to the roof is ajar, swinging lazily back and forth with the force of the winds.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"How did I not notice this as I passed through?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I warily make my way up the stairs and onto the roof.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"As I step outside, I notice that the clouds now look even darker.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A gust of biting wind rises to meet me as I emerge from the door.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I instinctively cover my face with my arms.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My vision is blurred by the whipping wind, but soon clears up just enough.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"I reopen my eyes. %Ahead of me, I see something unexpected.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An slender figure is standing on the far side of the roof, staring over the ledge at the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I squint, trying to figure out if this is another illusion.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The figure's long hair flows in the wind. I notice its vibrant pink hue.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"Hey..! %Excuse me..!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My voice is drowned out by the howl of the wind. There's no way she heard me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stumble forward and try again.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Hey..! %What are you doing here..?","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"For a split second, I see her head turn. She must have noticed me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With a sudden and unexpected motion, she steps onto the ledge...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And leaps off. %She disappears in an instant.","xpos":0,"ypos":0},
+
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"Wait..!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I rush over to the ledge and look over, not knowing what to expect.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I see... nothing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A dark haze covers the ground below.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I can make out the vague outline of the ground below.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, I see nothing that would indicate that the figure was anything more than another illusion.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"Another illusion. Just like the ones I've been seeing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"For the brief moment that I saw it... It seemed real.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Another strong gust of wind blows by, and odd tingle runs down my spine.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I feel very unsafe.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I should give up on finding that phone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Right now... %I just need to get out of here.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I rush back inside, being sure to close the door behind me.","xpos":0,"ypos":0}
+	],
+	"links":[
+		22
+	]
+}

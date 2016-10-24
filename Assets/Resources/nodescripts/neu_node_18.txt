@@ -1,32 +1,40 @@
 {
 	"id":18,
-	"title":"Encounter",
-	"background":"bg_school_outside",
+	"title":"An Empty School",
+	"background":"bg_city_afternoon",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_city_afternoon"},
-		{"type":"dialogue","text":"It feels as if the entire world around with me spins as I rush back through the crowded sidewalk.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I can only make out the blurred faces of bystanders as I frantically make my way through.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It feels as if the entire world around with me spins as I rush back through the sidewalk.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I barely notice the blurred faces of bystanders as I frantically make my way through.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The crowd thins out the further I go.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_outside"},
 		{"type":"dialogue","text":"Up ahead, I see the gated entrance to the school.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Standing before the group of uniformed men is a familiar figure in a school uniform.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's [br]Yuuto@. What is he doing here?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"For a brief moment, I stop and watch.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"With his finger, he appears to trace the outline of a large circle.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The men around him step back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"His traced outline glows blindingly bright as a flash of light fills the area.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I approach, I notice something odd.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There's not a single person in sight.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I look around in confusion. The uniformed men guarding the gate... where could they have gone?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With some hesitation, I push open the unlocked gates and walk into the courtyard.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I open my eyes, I find myself standing where I was before - facing the school gate.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I notice dark clouds covering the skies overhead.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_courtyard"},
+		{"type":"dialogue","text":"Dark clouds gather above, casting everything in an eerie gloom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Shadows dance and stretch across the empty square.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It was a sunny afternoon as I left. This place was completely packed with people.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now it's completely deserted.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Something doesn't sit right right with me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a stark contrast. %Almost as if... %It was another world entirely.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I'M ALSO ALL ALONE <temp>...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Continue #20 from here...","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","text":"A chilly gust blows by me, and I shiver.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I'm here to find that phone."},
+		{"type":"dialogue","character":"Kurumi","text":"Shouldn't need to stay here long, I hope."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I head inside, starting my search. Where to?","xpos":0,"ypos":0},
 	],
 	"links":[
+		19
 	]
 }

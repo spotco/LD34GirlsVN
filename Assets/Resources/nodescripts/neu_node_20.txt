@@ -1,0 +1,41 @@
+{
+	"id":20,
+	"title":"Classroom",
+	"background":"bg_school_classroom",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I find my way to the classroom and slowly open the door.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's completely empty, as I had expected.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom_front"},
+		{"type":"dialogue","text":"I feel an odd sense of deja vu.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An empty classroom...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ominous looking dark skies outside...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I saw all of this earlier... %Didn't I?","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"dialogue","text":"I rush over to my desk and check inside.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/sad","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Nothing..."},
+		{"type":"dialogue","text":"The phone wasn't here.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There goes my best guess.","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"For a brief moment, I notice more fleeting movement from the corner of my eyes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I blink again, and it's gone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This odd atmosphere must be wearing on me.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"Several few desks ahead, I notice something that must have been carelessly left behind.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A pair of white earbuds rest in a tangled pile.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Those look... familiar."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"Thinking nothing of it, I continue my search.","xpos":0,"ypos":0}
+	],
+	"links":[
+		21
+	]
+}

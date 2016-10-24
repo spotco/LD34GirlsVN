@@ -1,6 +1,6 @@
 {
 	"id":17,
-	"title":"Leaving School",
+	"title":"Leaving",
 	"background":"bg_school_courtyard",
 	"music":"daily",
 	"requirementitem":[],
@@ -58,5 +58,6 @@
 		{"type":"dialogue","text":"If I hurry... it should be fine.","xpos":0,"ypos":0}
 	],
 	"links":[
+		18
 	]
 }

@@ -1,0 +1,53 @@
+{
+	"id":23,
+	"title":"Courtyard",
+	"background":"bg_school_courtyard",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I stumble into the courtyard, losing my footing as the ground quakes beneath me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Quickly grabbing a nearby wall for support, I regain my balance.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_courtyard"},
+		{"type":"dialogue","text":"Up ahead, I see the glowing circle within the center of the field.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The etched lines pulse rhythmically, marking the ground with their glow.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I know I should be running. Out the gates and away from this place, and never looking back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"However, mesmerized by the intricate detail of the lights, I find myself drawn to the circle.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I inch closer to the circle, I feel the intense heat that is being given off the light.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's like I'm approaching a wall of white hot fire.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"The currents of light pulse and dance along the ground, like the heartbeat of some living creature.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Suddenly, a powerful pulse of energy shoots out, knocking me off my feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I hear the rattle of shaking windows and shriek of folding metal foundations being torn from their roots.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Debris falls from the damaged school building, narrowly missing my head.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I get up, I see a hole emerging from the center of the circle.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a foggy and ill-defined void of insubstantial matter.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Wisps of smoke lick the edges, drawing in the hot air around it.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"A long, thick black line rises out of it, somehow more solid than the rest.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Then, a second materializes. As does another, and another after that.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Six of them, huge, each line longer and thicker than my whole body, groping hungrily at the ground surrounding the circle.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"A wave of terror fills my entire body.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Those aren't lines. %They're [b3]limbs@.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The shadows congeal together like bilious, dark blood. A deep shriek rings out, a noise not of this world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Slowly, a creature of nightmare fully emerges from the haze.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's got a head like a dog's, with sharp spines like knives trailing its back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It curves its abnormally long tail behind itself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"On its face, I see no eyes. Only sockets of white emptyness where I'd normally expect them to be.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"I stare in absolute shock.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"No. This isn't happening.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"This has to be a dream. %A nightmare."},
+		{"type":"dialogue","text":"Things like this don't exist in the real world.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"The infernal monster surveys its surroundings, raising its narrow muzzle into the air.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"This is a dream. %I'm going to wake up from this..."},
+		{"type":"dialogue","text":"Its gaze fixes directly at me. It begins to move.","xpos":0,"ypos":0},
+	],
+	"links":[
+	]
+}

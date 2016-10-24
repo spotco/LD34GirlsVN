@@ -16,7 +16,7 @@
 		{"type":"dialogue","text":"As I open the door...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I come across an unexpected sight.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"An empty classroom...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Ominous looking dark skies...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ominous looking dark skies outside...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What exactly is going on?","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"school_bell"},

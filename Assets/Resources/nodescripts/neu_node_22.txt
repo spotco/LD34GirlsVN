@@ -1,0 +1,49 @@
+{
+	"id":22,
+	"title":"Encounter",
+	"background":"bg_school_hallway",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"I stumble clumsily through the dark halls, an impending feeling of dread creeping upon me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Doubts race through my head. I've got the sense that I should leave as quickly as possible.","xpos":0,"ypos":0},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue","text":"A sudden shudder courses through the ground. My legs lock in place, frozen in fear.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]W-what@ was that?!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"camerashake", "length":"long"},
+		{"type":"dialogue","text":"The shudder comes again. The entire building is quaking.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The ground, the walls, the lockers... %Everything is trembling.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A hissing fills the air, loud and sinister like the rumbling of a giant machine.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I struggle over to the nearest window and look out.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"A dark haze has completely enveloped the courtyard outside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the center, I can make out faint glowing outlines on the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With an unnatural motion, thin lines are being scratched out by some unknown force.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Strange symbols detail the outer edges of this circle.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The glowing lines slowly converge to form a brilliant circle several dozen feet across in size.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"Suddenly, the entire field erupts into a burst of white light.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I look away.","xpos":0,"ypos":0},
+
+		{"type":"camerashake", "length":"long"},
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"The ground quakes once more, rocking the heavy lockers beside me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The scream of bending metal and collapsing masonry resound through the hallway.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"I... need to get out of here!"},
+		{"type":"hidecharacter","character":"Kurumi"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I run as quick as I can down the stairs and out of the building.","xpos":0,"ypos":0}
+	],
+	"links":[
+		23
+	]
+}

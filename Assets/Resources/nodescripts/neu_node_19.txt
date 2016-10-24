@@ -1,0 +1,35 @@
+{
+	"id":19,
+	"title":"An Empty School",
+	"background":"bg_school_hallway",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"I do my best to remember all the places I had been during the day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Keeping my eyes peeled as I walk down the hallway, I notice a sudden movement in my periphery.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]W-what@ was that?"},
+		{"type":"dialogue","text":"I turn and look.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"Nothing.","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"I continue walking down the hall.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Again, I notice a sudden shimmering movement in the corner of my eye.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]W-wha@..."},
+		{"type":"dialogue","text":"I turn to get a better look, and it dissapears.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A nauseating chill runs down my spine.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I don't know if it's just my eyes playing tricks...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But I must be seeing things. Subtle, almost unnoticeable movements.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's very creepy feeling.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"[b3]I-I should keep looking...@"}
+	],
+	"links":[
+		20
+	]
+}
