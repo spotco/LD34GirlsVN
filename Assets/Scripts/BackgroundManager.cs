@@ -12,6 +12,7 @@ public class BackgroundManager : MonoBehaviour {
 	private struct EnqueuedBG {
 		public string _name;
 		public string _key;
+		public bool _imm;
 		public BGControllerBase _controller;
 	}
 	private List<EnqueuedBG> _enqueued_bgcontrollers = new List<EnqueuedBG>();
@@ -30,7 +31,7 @@ public class BackgroundManager : MonoBehaviour {
 		}
 	}
 	
-	public void load_background(string name, string key) {
+	public void load_background(string name, string key, bool imm) {
 		if (!_name_to_bgcontroller.ContainsKey(name)) {
 			SPUtil.errf("No registered background of name(%s)",name);
 			return;
@@ -44,6 +45,9 @@ public class BackgroundManager : MonoBehaviour {
 			if (target_bgcontroller == i_controller) {
 				target_is_active = true;
 				target_bgcontroller.show_background(name,key);
+				if (imm) {
+					target_bgcontroller.imm_show_bgkey();
+				}
 				target_bgcontroller.set_showing(true);
 				
 			} else if (i_controller != target_bgcontroller) {
@@ -56,6 +60,7 @@ public class BackgroundManager : MonoBehaviour {
 			_enqueued_bgcontrollers.Add(new EnqueuedBG() {
 				_name = name,
 				_key = key,
+				_imm = imm,
 				_controller = target_bgcontroller
 			});
 		}
@@ -91,6 +96,9 @@ public class BackgroundManager : MonoBehaviour {
 			for (int i = 0; i < _enqueued_bgcontrollers.Count; i++) {
 				EnqueuedBG itr = _enqueued_bgcontrollers[i];
 				itr._controller.show_background(itr._name, itr._key);
+				if (itr._imm) {
+					itr._controller.imm_show_bgkey();
+				}
 				itr._controller.set_showing(true);
 				_active_bgcontrollers.Add(itr._controller);
 			}

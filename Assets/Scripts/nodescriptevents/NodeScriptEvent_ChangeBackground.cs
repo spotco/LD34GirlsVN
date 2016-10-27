@@ -6,7 +6,7 @@ public class NodeScriptEvent_ChangeBackground : NodeScriptEvent {
 	public string _key;
 	
 	public override void i_update(GameMain game, EventModal modal) {
-		game._background.load_background(_background, _key);
+		game._background.load_background(_background, _key, false);
 		modal.advance_script();
 	}
 

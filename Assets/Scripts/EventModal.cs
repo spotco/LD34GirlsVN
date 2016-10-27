@@ -45,7 +45,7 @@ public class EventModal : MonoBehaviour, GameMain.Modal {
 			_current_script._events[i].i_initialize(game,this);
 		}
 		if (_gridnav_dialogue_mode == false) {
-			game._background.load_background(script._background, script._background_key);
+			game._background.load_background(script._background, script._background_key, true);
 			game._music.load_music(script._music);
 		}
 		this.i_update(game);

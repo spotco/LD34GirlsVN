@@ -56,6 +56,8 @@ public class BGControllerBase : MonoBehaviour {
 			_current_showing_mode = ShowingMode.TransitionHidden;
 		}
 	}
+	public virtual void imm_show_bgkey() {
+	}
 	
 	public virtual Transform get_character_root() { return null; }
 	public virtual void i_initialize(GameMain game) {}
