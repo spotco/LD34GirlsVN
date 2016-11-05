@@ -8,21 +8,21 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"So, I've got two options here."},
 
 		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"I could respond immediately."},
 		{"type":"dialogue","character":"Kurumi","text":"Tell them that I'm alright and the move went well."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/sad","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"But... %To be honest... %I'm feeling a little homesick."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"And, I wouldn't want them to worry about me."},
 
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Alternatively... I guess I could wait and respond tomorrow morning."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A late response might be more believable than a lie."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
@@ -41,8 +41,8 @@
 
 		{"type":"playSFX", "sfx":"phone_buzz"},
 		{"type":"dialogue","text":"My phone buzzes. %I eagerly pick it up.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Me","image":"kurumi/normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Me","text":"Could it be..?"},
+		{"type":"showcharacter","character":"Me","image":"kurumi_casual/normal","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Me","text":"Could it be..?","xpos":30,"ypos":-130},
 		{"type":"hidecharacter","character":"Me"},
 
 		{"type":"dialogue","text":"It's [bk]Mom@. %I open the message.","xpos":0,"ypos":0},
@@ -53,7 +53,7 @@
 		{"type":"dialogue","text":"#The answer is... %[b3]Complicated@. %I'm sorry, sweetheart.#"},
 		{"type":"dialogue","text":"#I think it'd be better if we waited until we came back for you to know.#"},
 
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"I'd been so busy and overwhelmed by the move that the thought hadn't even crossed my mind.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I keep reading.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
@@ -63,15 +63,15 @@
 		{"type":"dialogue","text":"#Be brave, [bk]Kurumi@. We're both so very proud of you.#"},
 		{"type":"dialogue","text":"#Anyway, behave yourself and try to stay out of trouble!%     -Love, [bk]Mom@#"},
 
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"...","xpos":30,"ypos":-130},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"dialogue","text":"My phone buzzes again just as I'm about to put it down.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Another message?","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"#Stay safe. Don't wander alone at night. [bk]Dad@.#"},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"...","xpos":30,"ypos":-130},
 		{"type":"dialogue","text":"My thumb hovers over the keyboard. Should I respond...?","xpos":0,"ypos":0}
 	],
 	"links":[

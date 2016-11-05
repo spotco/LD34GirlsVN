@@ -14,6 +14,7 @@ public class BGHillShrine : BGControllerBase {
 	[SerializeField] private Image _frame1_mana;
 	[SerializeField] private Image _frame1_yuuto;
 	[SerializeField] private Image _frame2_mana;
+	[SerializeField] private Image _frame2_mana_alt;
 	[SerializeField] private Image _frame3_yuuto;
 	
 	[SerializeField] private Image _frame4_mana;
@@ -51,6 +52,7 @@ public class BGHillShrine : BGControllerBase {
 		this.add_frameimg_registry_entry(_frame1_mana.transform, fg_scroll_scale);
 		this.add_frameimg_registry_entry(_frame1_yuuto.transform, fg_scroll_scale);
 		this.add_frameimg_registry_entry(_frame2_mana.transform, fg_scroll_scale);
+		this.add_frameimg_registry_entry(_frame2_mana_alt.transform, fg_scroll_scale);
 		this.add_frameimg_registry_entry(_frame3_yuuto.transform, fg_scroll_scale);
 		
 		this.add_frameimg_registry_entry(_frame4_mana.transform, fg_scroll_scale);
@@ -136,21 +138,14 @@ public class BGHillShrine : BGControllerBase {
 		} else if (key == "frame4_shot0") {
 			_target_scroll_pos = new Vector2(-85,79);
 			_target_scale = 1.2f;
-			__shot_visible_characters.Add(_frame1_mana.transform);
-			__shot_visible_characters.Add(_frame3_yuuto.transform);	
-			__shot_visible_characters.Add(_frame4_circle.transform);
-			
-		} else if (key == "frame4_shot0") {
-			_target_scroll_pos = new Vector2(-115,106);
-			_target_scale = 1.6f;
-			__shot_visible_characters.Add(_frame1_mana.transform);
+			__shot_visible_characters.Add(_frame2_mana_alt.transform);
 			__shot_visible_characters.Add(_frame3_yuuto.transform);	
 			__shot_visible_characters.Add(_frame4_circle.transform);
 			
 		} else if (key == "frame4_shot1") {
 			_target_scroll_pos = new Vector2(-105,106);
 			_target_scale = 1.6f;
-			__shot_visible_characters.Add(_frame2_mana.transform);
+			__shot_visible_characters.Add(_frame2_mana_alt.transform);
 			__shot_visible_characters.Add(_frame3_yuuto.transform);	
 			__shot_visible_characters.Add(_frame4_circle.transform);
 			

@@ -7,7 +7,6 @@
 	"postshowevents":[
 	],
 	"previewchar":[
-		"naoko"
 	],
 	"event":[
 		{"type":"dialogue","text":"I find myself sitting alone in the school courtyard, my half-finished lunch sitting idly on my lap.","xpos":0,"ypos":0},

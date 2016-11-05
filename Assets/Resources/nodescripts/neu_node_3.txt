@@ -6,9 +6,9 @@
 	"requirementitem":[],
 	"postshowevents":[
 		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/normal","xpos":-300,"xscale":1},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/normal","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %It's so much to take in."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/happy","xscale":1},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/happy","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I'm sure I'll meet all kinds of interesting people!"}
 	],
 	"event":[

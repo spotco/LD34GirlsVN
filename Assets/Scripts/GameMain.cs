@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 21;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -44,47 +44,35 @@ public class GameMain : MonoBehaviour {
 	[System.NonSerialized] public Canvas _parent_canvas;
 
 /*
-neu node 5, subway to school
+DOC:
+https://docs.google.com/document/d/1D3zT3HPpfU57bqfPFjvHfG2FL9Txj9Ot2xqI0Ibu9oQ/edit
 
+IDEAS:
+ch1/node1 - improve ending, falling into shadows
+ch1/node2 - subway to school
+ch1 - make a government officer character during evacuation
+ch1 - improve return to school
 
-prologue background color and character silouhettes
-timed node nodes
-apartment night
-kurumi, mana, raichi normal outfits
+ASSETS:
+taxi on ride to new apartment
+school outside, courtyard, hallway, classroom, roof dark
+subway ride
+city day
+timed node nodes (mechanic)
 
-subway
-class dark
-city neuf work
+BUG:
+node 16 to 17 (leaving), can go back to node 15
+
+TECH:
+selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)
+char name text replace with SPText
+cache characters
+sfx cache n pool text scroll sounds
+
+CONCEPT:
+YUUTO KATSURAGI
+SIMONE DE LA VILLENEUVE
 */
-
-// selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)
-// char name text replace with SPText
-// YUUTO KATSURAGI
-// SIMONE DE LA VILLENEUVE
-// Simone & Yuuto related
-
-//  remove RawImages from particles	
-//  try higher res text spritesheet	
-//	save/load implementation	
-
-//	heart particles
-//  closer petals blurred and bigger in title
-//  title petals also fade in
-//	title screen animation ins
-//
-//	simone/mana fight more monsters, get in fight (competition), extra node?
-//	good end expand sacrifice of mana, extra node
-//	item ui anim
-//	credits
-//		-simone boo-hoo tell you a secret
-//	
-//	SPAnalytics
-//	
-//	cache characters
-//	sfx cache n pool text scroll sounds
-//	sfx load all at start
-//	end to title UIs
-//  smart travel for clicks
 	
 	public void Start () {
 		_self_rect = this.GetComponent<RectTransform>();

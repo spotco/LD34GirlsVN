@@ -1,10 +1,13 @@
 {
 	"id":14,
-	"title":"Head Back to Early",
+	"title":"Head Back Early",
 	"background":"bg_school_hallway",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
+	],
+	"previewchar":[
+		"naoko"
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
