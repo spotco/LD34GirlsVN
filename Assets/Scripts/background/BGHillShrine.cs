@@ -136,14 +136,14 @@ public class BGHillShrine : BGControllerBase {
 			__shot_visible_characters.Add(_frame4_circle.transform);
 			
 		} else if (key == "frame4_shot0") {
-			_target_scroll_pos = new Vector2(-85,79);
+			_target_scroll_pos = new Vector2(-85,65);
 			_target_scale = 1.2f;
 			__shot_visible_characters.Add(_frame2_mana_alt.transform);
 			__shot_visible_characters.Add(_frame3_yuuto.transform);	
 			__shot_visible_characters.Add(_frame4_circle.transform);
 			
 		} else if (key == "frame4_shot1") {
-			_target_scroll_pos = new Vector2(-105,106);
+			_target_scroll_pos = new Vector2(-105,86);
 			_target_scale = 1.6f;
 			__shot_visible_characters.Add(_frame2_mana_alt.transform);
 			__shot_visible_characters.Add(_frame3_yuuto.transform);	
