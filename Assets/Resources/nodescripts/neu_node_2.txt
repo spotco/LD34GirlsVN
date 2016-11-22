@@ -13,26 +13,26 @@
 
 		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"I could respond immediately."},
-		{"type":"dialogue","character":"Kurumi","text":"Tell them that I'm alright and the move went well."},
+		{"type":"dialogue","character":"Kurumi","text":"Tell them that I'm alright, and that the move went well."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"But... %To be honest... %I'm feeling a little homesick."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"And, I wouldn't want them to worry about me."},
+		{"type":"dialogue","character":"Kurumi","text":"Not to mention, I wouldn't want them to worry about me."},
 
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Alternatively... I guess I could wait and respond tomorrow morning."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A late response might be more believable than a lie."},
+		{"type":"dialogue","character":"Kurumi","text":"I suppose being late is worse than lying."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue","text":"This is it. The first fork in the road. It's up to me, and me alone, to make this decision.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Choices I make will directly determine the future to come.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Choices I make will determine the future to come.","xpos":0,"ypos":0}
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road_night"},
 		{"type":"dialogue","text":"It's my first night here in this unfamiliar city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The night before my first day at this new school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The night before my first day at a new school.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_apartment_night"},
 		{"type":"dialogue","text":"My heart drops into my stomach the moment I set foot into my empty apartment.","xpos":0,"ypos":0},
@@ -71,7 +71,7 @@
 
 		{"type":"dialogue","text":"#Stay safe. Don't wander alone at night. [bk]Dad@.#"},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"...","xpos":30,"ypos":-130},
+		{"type":"dialogue","character":"Kurumi","text":"Thanks, Dad...","xpos":30,"ypos":-130},
 		{"type":"dialogue","text":"My thumb hovers over the keyboard. Should I respond...?","xpos":0,"ypos":0}
 	],
 	"links":[

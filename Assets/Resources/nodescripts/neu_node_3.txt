@@ -12,10 +12,10 @@
 		{"type":"dialogue","character":"Kurumi","text":"I'm sure I'll meet all kinds of interesting people!"}
 	],
 	"event":[
-		{"type":"dialogue","text":"I'll admit that it's been tough.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The past few days have been a blur of new experiences. Everything passed by so fast.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Whatever could possibly be going on with my parents... It's all a mystery.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... I know they are thinking of me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"To be honest, though, I'm a little overwhelmed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The past few days have been a blur of new experiences. Everything has passed by so fast.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Whatever could possibly be going on with my parents... I haven't the slightest idea.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... I know they're thinking of me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"That's a reassuring thought, at the very least.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"I type up an enthusiastic response and send it back.","xpos":0,"ypos":0},
@@ -24,7 +24,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving to the big city.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now? %This is an opportunity.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now? %Now, I've been given an opportunity.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Everything will be different here. The city is a place of self-discovery.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
 

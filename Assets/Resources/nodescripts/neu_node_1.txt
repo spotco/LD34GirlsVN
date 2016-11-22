@@ -10,45 +10,54 @@
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/smile","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"A new chapter of my life is about to begin."},
-		{"type":"dialogue","character":"Kurumi","text":"I guess there's no turning back now."},
+		{"type":"dialogue","character":"Kurumi","text":"There's no turning back now."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"dialogue","text":"The choices I make and paths to take will appear in this map."},
+
+		{"type":"dialogue","text":"Every decision I get the choice to make will appear on this map."},
 		{"type":"gridnavfocusat","nodeid":2,"zoom":1.5},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/smile","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"At this point in time, I've got no choice but to move forward.","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"For now, I've got no choice but to move forward.","ypos":-167},
 		{"type":"hidecharacter","character":"Kurumi"},
+
 
 		{"type":"gridnavfocusat","nodeid":1,"zoom":1.5},
 		{"type":"dialogue","text":"Use the mouse or arrow keys to navigate the map.","ypos":0},
 		{"type":"dialogue","text":"Press space or click to enter the next scene.","ypos":0}
 	],
 
+
 	"event":[
-		{"type":"dialogue","text":"Two figures stand before me in a clearing atop a barren hill overlooking the desolate city.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"Two figures stand before me in a clearing atop a barren hill, overlooking the desolate city.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame1_shot1"},
+
 
 		{"type":"dialogue","text":"On one side, a masked girl dressed in black raises her arm.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame2_shot1"},
 		{"type":"dialogue","text":"An unsettling plume of darkness engulfs her. She smirks deviously.","xpos":275,"ypos":181},
 
+
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame3_shot0"},
 		{"type":"dialogue","text":"On the other side, a boy in flowing robes stands regal and proud.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"Sparks of blue energy fly from his clenched fists.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"I can't make out a single word he is saying.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"His lips are moving, but I can't make out a single word he says.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame1_shot1"},
-		{"type":"dialogue","text":"These two people somehow seem familiar. It's a striking feeling of deja vu.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"These two people seem so very familiar. I get a striking feeling of deja vu.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I have the sudden sense that something unexpected is about to happen.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I have the sudden sense that something horrible is about to happen.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame3_shot1"},
 		{"type":"dialogue","text":"The robed boy slowly raises his hand.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"He quickly traces an outline of a circle in the still air, his fingertips surging with light.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"He quickly traces a a circle in the still air, his fingertips surging with light.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame3_shot2"},
-		{"type":"dialogue","text":"The ground around him begins to glow, as if it were pulsing with an electric current.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"I feel the burning heat of magical energy emanating from it.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"The ground around him begins to glow, as if it were pulsing with electric current.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"I feel the burning heat of magical energy even from where I'm standing.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame4_shot0"},
 		{"type":"dialogue","text":"Suddenly, the girl in black lets out a blood-curdling scream.","xpos":275,"ypos":181},
@@ -57,43 +66,51 @@
 		{"type":"dialogue","text":"A swirling vortex of shadow erupts from her clothing and envelops her arm in its shroud.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"Merging into her body, it coalesces to form a sharp, ink-black spear extending from where her hand had been.","xpos":275,"ypos":181},
 
+
 		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame5_shot0"},
 		{"type":"dialogue","text":"In an instant, several pillars of blue light shoot out from the ground and pierce her body.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"The boy is using some sort of magic to keep her in place.","xpos":275,"ypos":181},
 
+
 		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame6_shot0"},
 		{"type":"dialogue","text":"His efforts prove futile.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"After a brief struggle, she breaks free.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"After a brief struggle, she breaks free, shattering the light into pieces.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"The tendrils of magical energy dissipate into thin air.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame7_shot0"},
 		{"type":"dialogue","text":"Desperately, she lunges at the boy's chest with her shadowy spear.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame7_shot1"},
-		{"type":"dialogue","text":"He quickly twists to the side, narrowly avoiding the blow.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"He twists to the side, narrowly avoiding the blow.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame8_shot0"},
 		{"type":"dialogue","text":"Leaping into the pale sky, he frantically draws another symbol in the air with his fingertips.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame8_shot1"},
 		{"type":"camerashake", "length":"short"},
-		{"type":"dialogue","text":"The girl leaps after him in pursuit, her face twisted with anger.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"The girl leaps after him in pursuit, her face warped with anger.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I'm struggling to follow what exactly is going on.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm struggling to follow what exactly is going on. They're both moving so fast.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame8_shot1"},
 		{"type":"dialogue","text":"The girl hesitates for a single moment.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"This proves to be a mistake.","xpos":275,"ypos":181},
-		{"type":"dialogue","text":"The boy seizes this opportunity to strike.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"This proves to be a fatal mistake.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"The boy seizes his opportunity to strike.","xpos":275,"ypos":181},
 		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame9_shot0"},
-		{"type":"dialogue","text":"A shard of light skewers her through the chest. She plummets limply to the ground.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"A shard of light skewers the girl through the chest. She plummets to the ground.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame10_shot0"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"dialogue","text":"The force of her impact shatters the earth beneath her.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"Is it... over?","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame10_shot1"},
 		{"type":"dialogue","text":"The boy calmly lands on his feet and walks leisurely over to his opponent's motionless body.","xpos":275,"ypos":181},
@@ -101,21 +118,25 @@
 		{"type":"dialogue","text":"I catch a brief glimpse of his face.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"Behind his emotionless actions, I notice a tinge of sadness. I can't help but wonder why.","xpos":275,"ypos":181},
 
+
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame10_shot3"},
 		{"type":"dialogue","text":"Then, I notice movement from the girl's crumpled body.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"She slowly raises her hand, touching the boy's chest as he kneels over her. He is too shocked to respond.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"A twisted smile suddenly creeps across the girl's mouth. A curtain of shadow washes over her.","xpos":275,"ypos":181},
 
+
 		{"type":"dialogue","text":"In a sudden, horrible, sickening moment...","xpos":275,"ypos":181},
 		{"type":"camerashake", "length":"short"},
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame11_shot0"},
-		{"type":"dialogue","text":"The shadows converge into a serrated spear jutting forth from her hand. She stabs the boy clean through the chest.","xpos":275,"ypos":181},
+		{"type":"dialogue","text":"The shadows converge into a serrated spear. She stabs the boy clean through the chest.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"He slumps down to the ground, a look of shock frozen on his face.","xpos":275,"ypos":181},
 		{"type":"dialogue","text":"Blood trickles down from his mouth as he tries and fails to speak.","xpos":275,"ypos":181},
+
 
 		{"type":"changebackground","background":"bg_hill_shrine","key":"frame11_shot1"},
 		{"type":"dialogue","text":"I look away. I can't watch anymore.","xpos":275,"ypos":181},
 		{"type":"changebackground","background":"bg_black"},
+
 
 		{"type":"dialogue","text":"As I close my eyes, I feel the ground give way underneath me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Falling. %I'm suddenly falling.","xpos":0,"ypos":0},
@@ -123,8 +144,9 @@
 		{"type":"dialogue","text":"In the pitch black darkness, I'm helplessly falling down an endless pit.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What is going on? %Is this even real?","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A sense of regret washes over me. There's something I can't understand.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Somehow, I have the sense that it could have been different.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Somehow, I have the sense that things could have been different.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But... %What could I have possibly done?","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"I feel my head being abruptly jerked back, and open my eyes.","xpos":0,"ypos":0},
@@ -133,34 +155,38 @@
 		{"type":"dialogue","text":"Sitting in the back seat of a car, unfamiliar lights pass by in the window beside me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Did I fall asleep?","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"Slowly, I blink and then look out. I remember where I am.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"We're in the city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I let out a brief yawn as look outside.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","text":"Slowly, I blink and look outside. I remember where I am.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm in the city.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I let out a brief yawn and examine my surroundings.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Blinking colors line the streets, illuminated signs reflecting off the polished exteriors of passing cars.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"In the distance, enormous towers rise into the night sky.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's like a world made of lights, and much more beautiful than I had ever expected.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's like a world made of lights, and much more beautiful than I had always dreamed.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"For a moment, I'm reminded of the desolate city of my dream.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was all so vivid, I was almost sure that it could have been real.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"However, the two figures... %I had never seen them before in my life.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"And with the mysterious powers that they had been using...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Nothing like that could possibly exist in the real world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And with the mysterious powers that they were using...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Nothing like that could possibly exist in the real world. It was almost like... %Magic.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"My thoughts are quickly interrupted by the polite voice of the man in the driver's seat.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My thoughts are quickly interrupted by the polite voice of the driver.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Taxi Driver","text":"Ma'am, we've almost reached our destination. It's just around the corner.","xpos":240,"ypos":105},
 		{"type":"dialogue","text":"Somewhat taken by surprise, I manage to eke out a response.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"[b3]Y-yep@! Sure looks like it."},
 		{"type":"dialogue","character":"Taxi Driver","text":"You have people waiting for you here?","xpos":240,"ypos":105},
 		{"type":"dialogue","character":"Me","text":"I..."},
-		{"type":"dialogue","text":"I remember why I had come.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I remember why I was coming to the city in the first place.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Me","text":"...I'm going to be living here."},
 		{"type":"dialogue","character":"Me","text":"But I'll be on my own for now."},
 		{"type":"dialogue","text":"With a puzzled tone, he continues.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Taxi Driver","text":"You didn't have very much luggage at the airport.","xpos":240,"ypos":105},
 		{"type":"dialogue","character":"Me","text":"Most of my stuff should have arrived beforehand."},
-		{"type":"dialogue","text":"The taxi driver nods, and continues to drive silently on through the night.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The taxi driver nods and continues to drive silently on through the night.","xpos":0,"ypos":0},
+
 
 		{"type":"changebackground","background":"bg_road_night"},
 		{"type":"dialogue","text":"After one last turn, we finally reach the address that I had given.","xpos":0,"ypos":0},

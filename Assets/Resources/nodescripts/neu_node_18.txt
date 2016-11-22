@@ -10,7 +10,7 @@
 		{"type":"changebackground","background":"bg_city_afternoon"},
 		{"type":"dialogue","text":"It feels as if the entire world around with me spins as I rush back through the sidewalk.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I barely notice the blurred faces of bystanders as I frantically make my way through.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The crowd thins out the further I go.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The further I go, the thinner the crowd gets.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_outside"},
 		{"type":"dialogue","text":"Up ahead, I see the gated entrance to the school.","xpos":0,"ypos":0},
@@ -23,7 +23,7 @@
 		{"type":"dialogue","text":"Dark clouds gather above, casting everything in an eerie gloom.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Shadows dance and stretch across the empty square.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It was a sunny afternoon as I left. This place was completely packed with people.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now it's completely deserted.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now, it's a ghost town.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Something doesn't sit right right with me.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It's a stark contrast. %Almost as if... %It was another world entirely.","xpos":0,"ypos":0},
 

@@ -19,7 +19,7 @@
 		{"type":"dialogue","text":"As I inch closer to the circle, I feel the intense heat that is being given off the light.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It's like I'm approaching a wall of white hot fire.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"The currents of light pulse and dance along the ground, like the heartbeat of some living creature.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The currents of light pulse and dance along the ground, like the heartbeat of some magical creature.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Suddenly, a powerful pulse of energy shoots out, knocking me off my feet.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I hear the rattle of shaking windows and shriek of folding metal foundations being torn from their roots.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Debris falls from the damaged school building, narrowly missing my head.","xpos":0,"ypos":0},
@@ -33,7 +33,7 @@
 
 		{"type":"dialogue","text":"A wave of terror fills my entire body.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Those aren't lines. %They're [b3]limbs@.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The shadows congeal together like bilious, dark blood. A deep shriek rings out, a noise not of this world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The shadows congeal together like cold, dark blood. A deep shriek rings out, a noise not of this world.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Slowly, a creature of nightmare fully emerges from the haze.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It's got a head like a dog's, with sharp spines like knives trailing its back.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It curves its abnormally long tail behind itself.","xpos":0,"ypos":0},
@@ -45,8 +45,8 @@
 		{"type":"dialogue","text":"Things like this don't exist in the real world.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","text":"The infernal monster surveys its surroundings, raising its narrow muzzle into the air.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"This is a dream. %I'm going to wake up from this..."},
-		{"type":"dialogue","text":"Its gaze fixes directly at me. It begins to move.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"This is a dream. %I'm going to wake up from this... Any second now..."},
+		{"type":"dialogue","text":"Its gaze fixes directly at me. It begins to move.","xpos":0,"ypos":0}
 	],
 	"links":[
 	]

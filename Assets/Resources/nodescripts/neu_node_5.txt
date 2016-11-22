@@ -8,9 +8,9 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_road"},
-		{"type":"dialogue","text":"The walk to school this morning is especially daunting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The walk to school in the morning is especially daunting.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I stumble my way through the unfamiliar city streets, throngs of people pushing and pulling me in their midst.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they're all in a mad rush.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everyone has somewhere they need to be, and it seems they're all in a mad rush to get there.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Life here moves at a much quicker pace than what I'm used to.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
@@ -27,15 +27,15 @@
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Phew@... Made it in one piece!"},
 		{"type":"dialogue","text":"A few passing students shoot me odd looks. Did I just say that out loud?","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
-		{"type":"dialogue","text":"I try and compose myself. I can't be leaving a bad impression already.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I try and compose myself. I have to make a good impression on my first day!","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Well... here goes."},
+		{"type":"dialogue","character":"Kurumi","text":"Well... here goes nothing."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"I wait outside in an empty hallway. The rest of the class is already seated.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The teacher's muffled voice slips through the crack in the classroom door.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Teacher","text":"We've got another new student who'll be joining us today...","xpos":240,"ypos":105},
+		{"type":"dialogue","character":"Teacher","text":"We have another new student who'll be joining us today...","xpos":240,"ypos":105},
 		{"type":"dialogue","text":"That's [bk]ME@ she's talking about.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"[bk]Kurumi@, would you please come in?","xpos":240,"ypos":105},
 
@@ -51,7 +51,7 @@
 		{"type":"dialogue","text":"After a moment's hesitation, I bow.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/happy","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hello! My name is [bk]Kurumi@. I'm really excited to meet you all."},
-		{"type":"dialogue","character":"Kurumi","text":"I know there's a lot of new things to learn, but I can't wait to be friends with everyone!"},
+		{"type":"dialogue","character":"Kurumi","text":"I know there's a lot of new things I need to learn, but I can't wait to be friends with everyone!"},
 		{"type":"dialogue","text":"I flash my best smile and wait for any sort of reaction.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","text":"Nothing happens.","xpos":0,"ypos":0},
@@ -70,13 +70,13 @@
 		{"type":"dialogue","character":"Teacher","text":"You should meet [br]Yuuto@. He's also new.","xpos":0,"ypos":105},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
 		{"type":"dialogue","text":"I bow slightly in his direction.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]N-nice@ to meet you."},
+		{"type":"dialogue","character":"Kurumi","text":"[b3]N-nice@ to meet you!"},
 
 		{"type":"transitioncharacter","character":"Yuuto","image":"yuuto/smile","xscale":1},
 		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Yuuto","text":"Another transfer... huh?","xpos":25,"ypos":20},
 		{"type":"transitioncharacter","character":"Yuuto","image":"yuuto/grin","xscale":1},
-		{"type":"dialogue","character":"Yuuto","text":"Well, let me know if you need anything!","xpos":25,"ypos":20},
+		{"type":"dialogue","character":"Yuuto","text":"Well, let me know if you need anything, alright?","xpos":25,"ypos":20},
 
 		{"type":"dialogue","character":"Kurumi","text":"I..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"char_kurumi_normal_happy","xscale":1},
@@ -87,9 +87,9 @@
 		{"type":"hidecharacter","character":"Yuuto"},
 
 		{"type":"dialogue","text":"I look over the rest of the class.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Their unmoving gazes cut deep into me, like statues.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Their unmoving gazes cut deep into me, like eyes in a painting.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The people here... It seems like they're pretty reserved.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"...It's probably something you just get used to.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"...It's probably something you have to get used to over time.","xpos":0,"ypos":0}
 	],
 	"links":[
 		6

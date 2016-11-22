@@ -16,28 +16,28 @@
 		{"type":"showcharacter","character":"Naoko","image":"naoko/neutral","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"Before I even have the chance to say anything, [bn]Naoko@ grabs her belongings and heads out the door.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Naoko"},
-		{"type":"dialogue","text":"I wonder what the rush is.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I wonder what the big hurry is.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"If I had to guess, it'd be to beat the lines at the cafeteria.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I grab my hastily packed lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I grab my modest lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"The hallway is alive with students. People are everywhere, and to me it's very disorienting.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Not knowing exactly where exactly I should be going, I follow the flow of the crowd.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The hallway is teeming with students. People are everywhere and it's very disorienting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Not knowing exactly where I should be going, I follow the flow of the crowd.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"The path diverges as I reach the stairwell at the end of the corridor.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The majority of the students head down, toward the ground floor.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The majority of the students head down toward the ground floor.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I look over, and see a flight of stairs going up. Those must lead to the roof.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"My curiosity getting the better of me, I climb up to see it for myself.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_roof"},
 		{"type":"dialogue","text":"A crisp gust of wind rises to meet me the moment I open the door and emerge onto the roof.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"After having been cooped up in that classroom for so long, the fresh air and the clear sky feel amazing.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"After having been cooped up in that classroom for so long, the fresh air and the clear sky are wonderful.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Naoko","image":"naoko/neutral","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"On the far side, I see a familiar figure sitting alone.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"On the far side of the roof, I see a familiar figure sitting alone.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":300,"xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"[bn]Naoko@..?"},
 		{"type":"dialogue","text":"I walk over.","xpos":0,"ypos":0},
@@ -83,7 +83,7 @@
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/sad","xscale":-1},
 		{"type":"dialogue","character":"Naoko","text":"..."},
 		{"type":"dialogue","text":"I see her stare longingly at one of the sandwiches in my lunch box.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've never seen someone look at something so hungrily before.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I've never seen someone look at something so hungrily before. She looked like she was about to start drooling.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"You... want one?"},
@@ -114,12 +114,12 @@
 
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/neutral","xscale":-1},
 		{"type":"dialogue","character":"Naoko","text":"Well... There are these rumors that have been going around online..."},
-		{"type":"dialogue","character":"Naoko","text":"...And I have taken up the personal crusade of tracking them. %Every single one!"},
+		{"type":"dialogue","character":"Naoko","text":"...And I have taken up the personal crusade of tracking them. %Every. Single. One!"},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":-1},
 		{"type":"dialogue","character":"Kurumi","text":"Rumors? What kind of rumors?"},
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":-1},
 		{"type":"dialogue","text":"She grins.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Naoko","text":"Rumors about what's been going on all around the city!"},
+		{"type":"dialogue","character":"Naoko","text":"Rumors about what's been going on all around the city! Haven't you heard?"},
 
 		{"type":"dialogue","text":"This is the first I've heard of any rumor.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"What do you mean..?"},
@@ -136,7 +136,8 @@
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/smile","xscale":-1},
 		{"type":"dialogue","character":"Naoko","text":"These places... The day after, it's as if nothing ever happened."},
 		{"type":"dialogue","character":"Naoko","text":"The damage just... [b3]Reverses@. Like time's been reset."},
-		{"type":"dialogue","character":"Naoko","text":"Something... suspicious is going on. I know it."},
+		{"type":"dialogue","character":"Naoko","text":"I'd like to think of myself as an expert on this kind of thing."},
+		{"type":"dialogue","character":"Naoko","text":"Something suspicious is going on. I know it. The signs are all there."},
 		{"type":"dialogue","text":"I'm unsure whether to believe her or not.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Kurumi","text":"What do you think it is?"},
 
@@ -156,7 +157,7 @@
 		{"type":"dialogue","text":"Seeing this, she solemnly turns back to her phone, looking deflated.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"Oops... %Sorry, [bn]Naoko@. Maybe I'll have to listen to more of your story later.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I eat the rest of my lunch in silence, heading back down not long after.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I eat the rest of my lunch in silence, heading back downstairs after I finish.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15

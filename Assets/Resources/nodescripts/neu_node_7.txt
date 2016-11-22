@@ -8,11 +8,11 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Being asked to read right now? Of all the things to happen...","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"Me, being asked to read aloud on my very first day? Of all the things to happen...","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":8,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"Should I grab her book?","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":9,"zoom":1.5},
-		{"type":"dialogue","character":"Kurumi","text":"Or should I just admit I left it back home?","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"Or should I just admit I left mine back home?","ypos":-167},
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/shock","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"I better do something, and fast!","ypos":-167}
@@ -37,7 +37,7 @@
 		{"type":"dialogue","text":"As I do, I feel a tap on my shoulder.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Glasses Girl","image":"naoko/grin","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"A girl with heavy glasses and a sly, mischievious smile holds up her book towards me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A girl with heavy glasses and a sly, mischievious smile holds up her book toward me.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Can I..."},

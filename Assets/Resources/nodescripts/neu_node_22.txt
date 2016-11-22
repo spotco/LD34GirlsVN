@@ -8,8 +8,8 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"I stumble clumsily through the dark halls, an impending feeling of dread creeping upon me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Doubts race through my head. I've got the sense that I should leave as quickly as possible.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stumble clumsily through the dark halls, feeling like the walls are closing in around me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Unsettled doubts race through my head. I get the sense that I should leave as quickly as possible.","xpos":0,"ypos":0},
 
 		{"type":"camerashake", "length":"long"},
 		{"type":"dialogue","text":"A sudden shudder courses through the ground. My legs lock in place, frozen in fear.","xpos":0,"ypos":0},

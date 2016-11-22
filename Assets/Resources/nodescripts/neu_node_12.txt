@@ -171,7 +171,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"..."},
 		{"type":"dialogue","character":"Yuuto","text":"We'll... have to do this again.","xpos":25,"ypos":20},
 		{"type":"dialogue","text":"This sounded serious.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In a blink of an eye, his attitude changes completely.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"His attitude has changed in the blink of an eye.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Something was odd.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Yuuto","text":"I'm going to have to leave early.","xpos":25,"ypos":20},
@@ -189,12 +189,12 @@
 
 		{"type":"dialogue","text":"[br]Yuuto@... He seemed like an interesting person.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I couldn't help but feel that something about him was... %Distant. %Unreachable.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As if a part of him was hidden away, in a world apart from our own.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As if a part of him was hidden away, locked in a world apart from our own.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Kurumi","text":"I guess everyone's got their own secrets."},
-		{"type":"dialogue","character":"Kurumi","text":"I shouldn't try to get in over my head here."}
+		{"type":"dialogue","character":"Kurumi","text":"I guess everyone's got their secrets."},
+		{"type":"dialogue","character":"Kurumi","text":"I shouldn't try to pry into his."}
 	],
 	"links":[
 		13,14

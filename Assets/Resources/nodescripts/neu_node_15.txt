@@ -9,14 +9,14 @@
 	"event":[
 		{"type":"changebackground","background":"bg_school_hallway"},
 		{"type":"dialogue","text":"Chatter echoes through the halls as I make my way back to class.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In a way, it feels like the continuous hum of background machinery.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In a way, it feels like the continuous hum of a machine at work.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Peace and quiet are hard to come by in this place.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"As I open the door...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I come across an unexpected sight.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"An empty classroom...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Ominous looking dark skies outside...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A dark sky, looming ominously outside...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"What exactly is going on?","xpos":0,"ypos":0},
 
 		{"type":"playSFX", "sfx":"school_bell"},
@@ -24,7 +24,7 @@
 		{"type":"dialogue","text":"The bell suddenly sounds as I return to my senses.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'm back in my homeroom class, early in the afternoon.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Students slowly trickle back in from lunch. Class should be starting soon.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I notice a lone empty desk up front, [br]Yuuto@'s. Didn't see him anywhere.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I notice a lone empty desk up front, [br]Yuuto@'s. He's nowhere around it.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom"},
 		{"type":"dialogue","text":"As I take my seat, I can't shake the feeling that something unexpected is about to happen.","xpos":0,"ypos":0},
@@ -32,7 +32,7 @@
 
 		{"type":"changebackground","background":"bg_school_classroom_front"},
 		{"type":"dialogue","text":"My suspicions are only confirmed as I see a unfamiliar figure walk into the room.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Another teacher? %He doesn't look like one.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"He doesn't look like a teacher. He's in an expensive suit, his silver hair slicked cleanly back. He almost looks like some sort of government agent.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The class goes quiet.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Man","text":"Everyone, please listen.","ypos":110},
@@ -40,7 +40,7 @@
 
 		{"type":"dialogue","text":"Hushed whispers fill the room.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Man","text":"This may come as a surprise, but we'll need everyone to leave the building.","ypos":110},
+		{"type":"dialogue","character":"Man","text":"This may come as a surprise, but we are requesting everyone to leave the building.","ypos":110},
 		{"type":"dialogue","character":"Man","text":"After-school activities have also been canceled for the day.","ypos":110},
 		{"type":"dialogue","character":"Man","text":"Please gather your possessions and exit in an orderly fashion.","ypos":110},
 
