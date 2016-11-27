@@ -5,30 +5,29 @@
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
-		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/normal","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %It's so much to take in."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/happy","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I'm sure I'll meet all kinds of interesting people!"}
 	],
 	"event":[
-		{"type":"dialogue","text":"To be honest, though, I'm a little overwhelmed.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The past few days have been a blur of new experiences. Everything has passed by so fast.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Whatever could possibly be going on with my parents... I haven't the slightest idea.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But... I know they're thinking of me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"That's a reassuring thought, at the very least.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I type up an enthusiastic response and send it back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Then I set my phone on my nightstand, feeling satisfied.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was only even told that I'd be moving earlier this week.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the brief span of a few short days, I had to say goodbye to the world I knew.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Even my parents wouldn't be here for some time.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"It was odd. It wasn't anything I could have even imagined happening.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But, here I was.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And at the same time...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Wasn't it what I always wanted?","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving to the big city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now? %Now, I've been given an opportunity.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everything will be different here. The city is a place of self-discovery.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving somewhere else.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In my hometown, it seemed as if nothing ever changed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It felt like I lived the same dull life every day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now? %Expected or not, this was an opportunity.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Things should be different here.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"A bright, beaming smile bursts across my face.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I'm... excited!","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"I type up an enthusiastic reply and send it back.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Then, feeling satisfied, I tuck away my phone and head for bed.","xpos":0,"ypos":0}
 	],
 	"links":[
 		5

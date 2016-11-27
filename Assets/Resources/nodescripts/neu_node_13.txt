@@ -16,33 +16,7 @@
 		{"type":"dialogue","text":"But at the same time, I find it hard to put myself out there like that.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"My indecisiveness gets the better of me, and I finish my lunch alone.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"When it comes to making friends, I've got a long way to go.","xpos":0,"ypos":0},
-
-		{"type":"changebackground","background":"bg_school_courtyard"},
-		{"type":"dialogue","text":"As I prepare to head back, I notice the clear, blue sky above.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"No matter where I go, it always looks the same. I can always count on it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"My thoughts drift over to my parents. I can't help it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I wonder where it is they've gone.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I know that my mother's work is very secretive.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I never did learn what exactly she did for a living.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"When I was younger, I thought it was cool to be surrounded by such strange circumstances.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"If my beloved mother and father had a secret, then it must have been something important.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The most important secret the world had ever known.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"But... as I got older, I saw the toll it took on all of us.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I can barely remember the last time we were all together as a family.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"I sigh and pack up the remaining bits of my lunch.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Well... I'm here now."},
-		{"type":"dialogue","text":"I pull out my phone and check my messages. %Nothing new. %They must be busy.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"With another sigh, I gather my belongings and head silently back to class.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Kurumi"},
-
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"It's too late now to want to go back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I just have to keep moving forward.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"When it comes to this kind of stuff, I guess I've still got a long way to go.","xpos":0,"ypos":0},
 	],
 	"links":[
 		15

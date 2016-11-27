@@ -8,7 +8,7 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Me, being asked to read aloud on my very first day? Of all the things to happen...","ypos":-167},
+		{"type":"dialogue","character":"Kurumi","text":"I didn't expect to be called so soon!","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":8,"zoom":1.5},
 		{"type":"dialogue","character":"Kurumi","text":"Should I grab her book?","ypos":-167},
 		{"type":"gridnavfocusat","nodeid":9,"zoom":1.5},
@@ -19,17 +19,15 @@
 	],
 
 	"event":[
-		{"type":"dialogue","character":"Teacher","text":"If you would open your books, we're starting off from yesterday's lesson...","ypos":110},
-		{"type":"dialogue","text":"We're already starting?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Teacher","text":"If you would open your books, we're starting off from where we were yesterday...","ypos":110},
 		{"type":"dialogue","text":"The students around me pull their books out from their desks.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Following suit, I open my bag. I reach in, expecting to find my own.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Hmm..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/shock","xscale":1},
-		{"type":"dialogue","text":"It's not here.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I can't believe it...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's not here. %I can't believe it.","xpos":0,"ypos":0},
+		
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Of all things to forget..."},
 

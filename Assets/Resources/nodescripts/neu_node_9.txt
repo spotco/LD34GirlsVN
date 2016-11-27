@@ -15,7 +15,7 @@
 		{"type":"dialogue","character":"Kurumi","text":"I'm sorry. I think I forgot to bring my books today."},
 		{"type":"dialogue","text":"The teacher frowns at me.","xpos":0,"ypos":0},
 		{"type":"dialogue","character":"Teacher","text":"I don't know how they do things where you're from...","ypos":130},
-		{"type":"dialogue","character":"Teacher","text":"But you're always expected to come to class prepared here.","ypos":130},
+		{"type":"dialogue","character":"Teacher","text":"But here, you're always expected to come to class prepared.","ypos":130},
 		{"type":"dialogue","text":"She sighs.","xpos":0,"ypos":0},
 
 		{"type":"dialogue","character":"Teacher","text":"Well, that being said... %Does anyone have an extra they can lend?","ypos":130},

@@ -20,10 +20,10 @@
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"If I had to guess, it'd be to beat the lines at the cafeteria.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I grab my modest lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I grab my packed lunch from my bag and leave the classroom.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_hallway"},
 
-		{"type":"dialogue","text":"The hallway is teeming with students. People are everywhere and it's very disorienting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The hallway is teeming with students. People are everywhere and it's rather disorienting.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Not knowing exactly where I should be going, I follow the flow of the crowd.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
@@ -89,10 +89,9 @@
 		{"type":"dialogue","character":"Kurumi","text":"You... want one?"},
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/shy","xscale":-1},
 		{"type":"dialogue","character":"Naoko","text":"..."},
-		{"type":"dialogue","character":"Naoko","text":"No."},
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":-1},
 		{"type":"dialogue","character":"Naoko","text":"..."},
-		{"type":"dialogue","character":"Naoko","text":"Yes."},
+		{"type":"dialogue","character":"Naoko","text":"...Yes."},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":-1},
 		{"type":"dialogue","text":"I open up the lid and hand one of the little sandwiches over.","xpos":0,"ypos":0},
@@ -109,7 +108,7 @@
 		{"type":"dialogue","character":"Naoko","text":"Oh... I don't think you'd be interested. It's kinda..."},
 		{"type":"dialogue","text":"Laughing sheepishly, she doesn't finish her sentence.","xpos":0,"ypos":0},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":-1},
-		{"type":"dialogue","character":"Kurumi","text":"Go on! I promise I won't laugh or anything like that."},
+		{"type":"dialogue","character":"Kurumi","text":"Go on! I won't judge, I swear."},
 		{"type":"dialogue","text":"She surveys me for a moment, as if deciding whether to tell me or not.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Naoko","image":"naoko/neutral","xscale":-1},
@@ -156,7 +155,7 @@
 		{"type":"hidecharacter","character":"Naoko"},
 		{"type":"dialogue","text":"Seeing this, she solemnly turns back to her phone, looking deflated.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Oops... %Sorry, [bn]Naoko@. Maybe I'll have to listen to more of your story later.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Oops... %Sorry, [bn]Naoko@. Maybe I'll listen to more of your story later.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I eat the rest of my lunch in silence, heading back downstairs after I finish.","xpos":0,"ypos":0}
 	],
 	"links":[

@@ -1,35 +1,34 @@
 {
 	"id":4,
-	"title":"Wait Until Tomorrow",
+	"title":"Wait Another Time",
 	"background":"bg_apartment_night",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
-		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"A new city... %A new school... %The world as I know it is about to change."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/sad","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I can't help but wonder... %Am I really going to be okay?"}
 	],
 	"event":[
-		{"type":"dialogue","text":"I'd be lying if I said I wasn't scared.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm thousands of miles away from home, alone in an unfamiliar city filled with strangers.","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"The move happened so quickly. I hardly had time to say goodbye to anyone.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I take a deep breath. I should probably calm down a bit before I respond.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"If my parents realized how upset I was, they'd only feel worse than they must already do.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I don't want to make them feel guilty. They deserve better than that.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Letting out a sigh, I turn off my phone and set it on my nightstand.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"I was only even told that I'd be moving earlier this week.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the brief span of a few short days, I had to say goodbye to the world I knew.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Even my parents wouldn't be here for some time.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"Something was odd. %It all felt suspicious.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I never did get any sort of explanation on why it all happened so suddenly.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I know I should trust them, and that there has to be a good reason behind everything.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But having that doubt in the back of my mind made me anxious.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"Dozens unanswered questions float around in my head.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'll have to ask them another time.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Letting out a sigh, I turn off my phone and put it on the counter.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving to the big city.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In my hometown, nothing ever changed. I lived the same boring life every single day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But now? %Now, I have been given an opportunity.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Everything will be different from this point on. The city is a place of self-discovery.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What will people think of me? I can't help but feel anxious about it...","xpos":0,"ypos":0},
-
-		{"type":"dialogue","text":"I take another deep breath.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"There's no point in worrying myself even more. I should really get some sleep.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"Ever since I was little, I'd dreamed of moving somewhere else.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In my hometown, it seemed like nothing ever changed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It felt as if I lived the same %dull life every day.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But now? %Like it or not, I was here.","xpos":0,"ypos":0},
+		
+		{"type":"dialogue","text":"I take deep breath. %Guess there's no point in worrying about it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I turn off the light and head to bed.","xpos":0,"ypos":0},
 	],
 	"links":[
 		5

@@ -10,7 +10,7 @@
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"An hour passes by without any more trouble.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"dialogue","text":"As nervous as I was to start my life at this new school...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As apprehensive as I was to start my life at this new school...","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It doesn't take long for a sense of normalcy to start setting in.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The lessons themselves aren't too different. The curriculum's just little ahead of ours back home.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I don't think I'll have too much trouble catching up.","xpos":0,"ypos":0},
@@ -21,9 +21,9 @@
 		{"type":"dialogue","text":"Idly gazing out the window like that, it almost looks as if she's in a trance.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I watch as she twirls a lock of vibrant hair with her fingers, a white cable extending out from beneath them.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The cord winds all the way down into her backpack.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Those must be... [b3]Earbuds@? %She must not be paying any attention to class!","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Those must be... [b3]Earbuds@? %She must not be paying any attention to class.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"What's the deal with her? %This is delinquent behaviour.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What's the deal with her?","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Pink Hair","image":"mana/aloof","xscale":-1},
 		{"type":"dialogue","text":"She reaches down into her bag and nonchalantly pulls out her phone.","xpos":0,"ypos":0},
@@ -58,11 +58,10 @@
 
 		{"type":"dialogue","text":"The people around me seem unperturbed. This must happen often.","xpos":0,"ypos":0},
 		{"type":"showcharacter","character":"Naoko","image":"naoko/grin","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"I look over at [bn]Naoko@. She's completely engrossed in whatever she's writing.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I doubt she even noticed what just happened.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I look over at [bn]Naoko@. She's completely engrossed in the notes she's taking.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I doubt she even noticed.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Naoko"},
 		{"type":"dialogue","text":"I guess this is just another day for them, after all.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"And I suppose it'll become normal to me too, soon enough.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"The teacher resumes the lesson. This time, it continues without interruption.","xpos":0,"ypos":0}
 	],
 	"links":[

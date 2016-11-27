@@ -12,8 +12,8 @@
 		{"type":"dialogue","character":"Kurumi","text":"What should I do?"},
 
 		{"type":"gridnavfocusat","nodeid":3,"zoom":1.5},
-		{"type":"dialogue","character":"Kurumi","text":"I could respond right now."},
-		{"type":"dialogue","character":"Kurumi","text":"I could tell them both that I was alright, and that everything was going well."},
+		{"type":"dialogue","character":"Kurumi","text":"I could respond right away."},
+		{"type":"dialogue","character":"Kurumi","text":"I could tell them that I was alright, and that everything was going well."},
 
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/sad","xscale":1},
@@ -31,7 +31,7 @@
 		{"type":"dialogue","text":"Dragging my bags alongside me, I make my way to the apartment entrance.","xpos":0,"ypos":0},
 		
 		{"type":"changebackground","background":"bg_apartment_night"},
-		{"type":"dialogue","text":"As I step into the empty apartment, an unfamiliar feeling sinks in.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I step into the empty room, an unfamiliar feeling sinks in.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"For the first time, as far as I could remember... %I felt alone.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"My parents were thousands of miles away.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"All my friends back home... %Who knew if I would ever see them again?","xpos":0,"ypos":0},
@@ -49,7 +49,7 @@
 		{"type":"dialogue","text":"#But I know you'll get used to your new school in no time.#"},
 		
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"My new school. %I had almost forgotten. %It starts tomorrow, and I'd better get ready.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My new school. %I had almost forgotten. %It starts tomorrow.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I keep reading.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		
@@ -67,7 +67,7 @@
 		{"type":"dialogue","text":"#Stay safe. Don't wander alone at night. [bk]Dad@.#"},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"...","xpos":30,"ypos":-130},
-		{"type":"dialogue","text":"My thumb hovers over the keyboard. Should I respond...?","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"My thumb hovers over the keyboard. What should I say...?","xpos":0,"ypos":0}
 	],
 	"links":[
 			3,4
