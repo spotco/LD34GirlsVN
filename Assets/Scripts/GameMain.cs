@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 1;
+	public static int NODE_START_INDEX = 2;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -48,7 +48,6 @@ DOC:
 https://docs.google.com/document/d/1D3zT3HPpfU57bqfPFjvHfG2FL9Txj9Ot2xqI0Ibu9oQ/edit
 
 IDEAS:
-ch1/node1 - improve ending, falling into shadows
 ch1/node2 - subway to school
 ch1 - make a government officer character during evacuation
 ch1 - improve return to school
@@ -61,6 +60,7 @@ city day
 timed node nodes (mechanic)
 
 BUG:
+node 1 - map mode, take key for preview bg
 node 16 to 17 (leaving), can go back to node 15
 
 TECH:
