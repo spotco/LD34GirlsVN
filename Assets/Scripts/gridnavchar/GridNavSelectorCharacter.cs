@@ -44,7 +44,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 			.add_anim("yay", game._file_cache.get_rects_list(RTex.KURUMI_MAP_CHAR_SS, "map_kurumi_yay_00%d.png", 1, 5), 8, false)
 			.play_anim("idle");	
 		_rect_transform.sizeDelta = new Vector2(_rect_transform.sizeDelta.x, _rect_transform.sizeDelta.x * (_image_target.get_tex_rect().height / _image_target.get_tex_rect().width));
-		
+
 		_last_position = this.transform.localPosition;
 		_anim_mode = AnimMode.Move;
 		
@@ -75,7 +75,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 	}
 	
 	public void i_update(GameMain game) {
-	
+
 		if (_anim_mode == AnimMode.Yay) {
 			
 		} else if (_anim_mode == AnimMode.Move) {
@@ -141,7 +141,7 @@ public class GridNavSelectorCharacter : MonoBehaviour {
 		
 		if (_time_since_last_anim_update >= 5) {
 			_image_animator.play_anim(anim);
-			_image.transform.localScale = new Vector2(scale_x, 1);
+			_image.transform.localScale = new Vector3(scale_x, 1, 1);
 			
 			_time_since_last_anim_update = 0;
 		}
