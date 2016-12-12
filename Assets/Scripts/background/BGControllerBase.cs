@@ -152,6 +152,84 @@ public class ParallaxScrollRegistry {
 	}
 }
 
+public class HideShowObjectRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
+
+	public interface ImageTarget {
+		void set_opacity(float val);
+		float get_opacity();
+
+		void set_visible(bool val);
+		bool get_visible();
+	}
+
+	public class Image_ImageTargetAdapter : ImageTarget {
+		public Image _img;
+		public void set_opacity(float val) { _img.color = new Color(_img.color.r,_img.color.g,_img.color.b,val); }
+		public float get_opacity() { return _img.color.a; }
+		public void set_visible(bool val) { _img.gameObject.SetActive(val); }
+		public bool get_visible() { return _img.gameObject.activeSelf; }
+	}
+	public class CanvasGroup_ImageTargetAdapter : ImageTarget {
+		public CanvasGroup _cgroup;
+		public void set_opacity(float val) { _cgroup.alpha = val; }
+		public float get_opacity() { return _cgroup.alpha; }
+		public void set_visible(bool val) { _cgroup.gameObject.SetActive(val); }
+		public bool get_visible() { return _cgroup.gameObject.activeSelf; }
+	}
+	
+	public static HideShowObjectRegistryBehaviour cons(ImageTarget img) {
+		return (new HideShowObjectRegistryBehaviour()).i_cons(img);
+	}
+	
+	private ImageTarget _image;
+	private bool _target_visible;
+	
+	private HideShowObjectRegistryBehaviour i_cons(ImageTarget img) {
+		_image = img;
+		_target_visible = false;
+
+		_image.set_visible(false);
+		_image.set_opacity(0);
+		return this;
+	}
+	
+	public void set_visible(bool val) {
+		_target_visible = val;
+	}
+	
+	public void set_visible_imm(bool val) {
+		_target_visible = val;
+		if (_target_visible == true) {
+			_image.set_opacity(1);
+			_image.set_visible(true);
+
+		} else {
+			_image.set_opacity(0);
+			_image.set_visible(false);
+			
+		}
+	}
+	
+	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
+		if (_target_visible) {
+			_image.set_visible(true);
+			if (_image.get_opacity() < 1) {
+				_image.set_opacity(_image.get_opacity() + (SPUtil.sec_to_tick(0.5f) * SPUtil.dt_scale_get()));
+			}
+			
+		} else {
+			if (_image.get_opacity() > 0) {
+				_image.set_opacity(_image.get_opacity() - (SPUtil.sec_to_tick(0.5f) * SPUtil.dt_scale_get()));
+				
+			} else {
+				_image.set_visible(false);
+			}
+			
+		}
+	}
+}
+
+//DEPRECATED DO NT USE
 public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
 	public static HideShowImageRegistryBehaviour cons(Image img) {
 		return (new HideShowImageRegistryBehaviour()).i_cons(img);
@@ -203,6 +281,7 @@ public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBeh
 		}
 	}
 }
+//DEPRECATED TO NOT USE
 
 public class MovingCharacterRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
 	public static MovingCharacterRegistryBehaviour cons(Transform transform, Vector2 tar_lpos) {

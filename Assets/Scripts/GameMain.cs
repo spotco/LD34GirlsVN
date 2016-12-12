@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 10;
+	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -30,6 +30,7 @@ public class GameMain : MonoBehaviour {
 	[SerializeField] public TitleModal _title;
 	[SerializeField] public MusicManager _music;
 	[SerializeField] public PopupManager _popups;
+	public AnimationPrefabRenderSystem _anim_prefab_render_system;
 	
 	public ControlManager _controls;
 	public Modal _active_modal;
@@ -89,6 +90,8 @@ SIMONE DE LA VILLENEUVE
 		_tex_resc = TextureResource.cons();
 		_file_cache = FileCache.cons();
 		_camera_controller = GameCameraController.cons();
+
+		_anim_prefab_render_system = AnimationPrefabRenderSystem.cons(this);
 		
 		if (_event_modal == null) return;
 	
@@ -98,6 +101,8 @@ SIMONE DE LA VILLENEUVE
 		_inventory = new Inventory();
 		_popups.i_initialize(this);
 		_background.i_initialize(this);
+
+
 		
 		_affinity = 0;
 		

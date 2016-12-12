@@ -11,7 +11,7 @@ public class BGHillShrine : BGControllerBase {
 	[SerializeField] private Image _citybackground;
 	[SerializeField] private Image _foreground;
 	
-	[SerializeField] private Image _frame1_mana;
+	[SerializeField] private CanvasGroup _frame1_mana;
 	[SerializeField] private Image _frame1_yuuto;
 	[SerializeField] private Image _frame2_mana;
 	[SerializeField] private Image _frame2_mana_alt;
@@ -50,6 +50,12 @@ public class BGHillShrine : BGControllerBase {
 		
 		float fg_scroll_scale = 1.95f;
 		this.add_frameimg_registry_entry(_frame1_mana.transform, fg_scroll_scale);
+
+		_frame1_mana.transform.Find("body_image").gameObject.SetActive(false);
+		_frame1_mana.transform.Find("body_rawimage").gameObject.SetActive(true);
+		_frame1_mana.transform.Find("body_rawimage").GetComponent<RawImage>().texture = game._anim_prefab_render_system.get_texture_for_animprefab("");
+
+
 		this.add_frameimg_registry_entry(_frame1_yuuto.transform, fg_scroll_scale);
 		this.add_frameimg_registry_entry(_frame2_mana.transform, fg_scroll_scale);
 		this.add_frameimg_registry_entry(_frame2_mana_alt.transform, fg_scroll_scale);
@@ -76,7 +82,25 @@ public class BGHillShrine : BGControllerBase {
 	
 	private void add_frameimg_registry_entry(Transform tar, float scroll_scale) {
 		_scroll_registry.add_registry_entry(tar, scroll_scale);
-		_scroll_registry.add_registry_behaviour(tar, HideShowImageRegistryBehaviour.cons(tar.GetComponent<Image>()));
+
+		HideShowObjectRegistryBehaviour.ImageTarget tar_adapter = null;
+		if (tar.GetComponent<CanvasGroup>()) {
+			tar_adapter = new HideShowObjectRegistryBehaviour.CanvasGroup_ImageTargetAdapter() {
+				_cgroup = tar.GetComponent<CanvasGroup>()
+			};
+
+		} else if (tar.GetComponent<Image>()) {
+			tar_adapter = new HideShowObjectRegistryBehaviour.Image_ImageTargetAdapter() {
+				_img = tar.GetComponent<Image>()
+			};
+		} else {
+			SPUtil.errf("add_frameimg_registry_entry no CanvasGroup or Image(%s)",tar.name);
+			return;
+		}
+
+		_scroll_registry.add_registry_behaviour(tar, HideShowObjectRegistryBehaviour.cons(
+			tar_adapter
+		));
 		_all_frameimages.Add(tar);
 	}
 	
@@ -225,9 +249,9 @@ public class BGHillShrine : BGControllerBase {
 		for (int i = 0; i < _all_frameimages.Count; i++) {
 			Transform itr = _all_frameimages[i];
 			if (__shot_visible_characters.Contains(itr)) {
-				_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(itr).set_visible(true);
+				_scroll_registry.get_registry_behaviour<HideShowObjectRegistryBehaviour>(itr).set_visible(true);
 			} else {
-				_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(itr).set_visible(false);
+				_scroll_registry.get_registry_behaviour<HideShowObjectRegistryBehaviour>(itr).set_visible(false);
 			}
 		}
 	}
@@ -236,16 +260,16 @@ public class BGHillShrine : BGControllerBase {
 	}
 	
 	public override void i_update(GameMain game) {
-		
-		_scroll_registry.set_scroll_position(_scroll_anchor.localPosition);
-		_scroll_registry.update_all_entries(game);
-		
+
 		_current_scroll_pos.x = SPUtil.drpt(_current_scroll_pos.x, _target_scroll_pos.x, 1/30.0f);
 		_current_scroll_pos.y = SPUtil.drpt(_current_scroll_pos.y, _target_scroll_pos.y, 1/30.0f);
 		_scroll_anchor.transform.localPosition = _current_scroll_pos;
 		
 		_current_scale = SPUtil.drpt(_current_scale, _target_scale, 1/30.0f);
 		_scroll_anchor.transform.localScale = SPUtil.valv(_current_scale);
+
+		_scroll_registry.set_scroll_position(_scroll_anchor.localPosition);
+		_scroll_registry.update_all_entries(game);
 		
 		this.update_showing_mode(_fade_cover);
 	}
