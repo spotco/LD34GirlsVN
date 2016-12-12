@@ -18,7 +18,7 @@
 		{"type":"gridnavfocusat","nodeid":4,"zoom":1.5},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi_casual/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"But... %Is that the truth? %I shouldn't have to pretend."},
-		{"type":"dialogue","character":"Kurumi","text":"It may be for the best to wait until everything's settled down."},
+		{"type":"dialogue","character":"Kurumi","text":"It may be for the best to wait for another time."},
 		{"type":"hidecharacter","character":"Kurumi"},
 
 		{"type":"dialogue","text":"This is it. %The first fork in the road. %It's time for a decision.","xpos":0,"ypos":0},
@@ -29,7 +29,7 @@
 		{"type":"dialogue","text":"I'm finally here. %By myself, in this unfamiliar city.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It's late. %If I wanted to take a look around, it'd have to be another day.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Dragging my bags alongside me, I make my way to the apartment entrance.","xpos":0,"ypos":0},
-		
+
 		{"type":"changebackground","background":"bg_apartment_night"},
 		{"type":"dialogue","text":"As I step into the empty room, an unfamiliar feeling sinks in.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"For the first time, as far as I could remember... %I felt alone.","xpos":0,"ypos":0},
@@ -47,12 +47,12 @@
 		{"type":"rename","namestart":"Me","nameend":"Kurumi"},
 		{"type":"dialogue","text":"#I know how hard things have been for you, leaving on such short notice.#"},
 		{"type":"dialogue","text":"#But I know you'll get used to your new school in no time.#"},
-		
+
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi_casual/puzzled","xpos":-300,"xscale":1},
 		{"type":"dialogue","text":"My new school. %I had almost forgotten. %It starts tomorrow.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I keep reading.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
-		
+
 		{"type":"dialogue","text":"#I'm sure you're anxious, and I wish I could be there with you.#"},
 		{"type":"dialogue","text":"#But since I can't, [bk]Kurumi@, just know this.#"},
 		{"type":"dialogue","text":"#I'll always looking out for you.#"},

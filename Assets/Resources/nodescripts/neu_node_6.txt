@@ -24,12 +24,12 @@
 		{"type":"dialogue","text":"I do my best to tune it out.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","text":"As I'm about to reach my desk, I bump my leg into an unexpected object and suddenly I lose my balance.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I'm about to reach my desk, I bump my leg into an unexpected object and suddenly lose my balance.","xpos":0,"ypos":0},
 		{"type":"hidecharacter","character":"Kurumi"},
 		{"type":"camerashake", "length":"short"},
 		{"type":"playSFX", "sfx":"thump"},
 		{"type":"dialogue","character":"Kurumi","text":"[b3]Aaah@!"},
-		
+
 		{"type":"dialogue","text":"I feel a hand reach for mine, keeping me upright.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},

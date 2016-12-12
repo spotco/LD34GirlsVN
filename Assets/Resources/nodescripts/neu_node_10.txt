@@ -28,8 +28,7 @@
 		{"type":"transitioncharacter","character":"Pink Hair","image":"mana/aloof","xscale":-1},
 		{"type":"dialogue","text":"She reaches down into her bag and nonchalantly pulls out her phone.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Looking down, she types up a quick message and sends it.","xpos":0,"ypos":0},
-
-		{"type":"movecharacter","character":"Pink Hair","xto":-200},
+		
 		{"type":"dialogue","text":"Then, all of a sudden... %She gets up.","xpos":0,"ypos":0},
 		{"type":"movecharacter","character":"Pink Hair","xto":300},
 		{"type":"transitioncharacter","character":"Pink Hair","image":"char_mana_normal_aloof","xscale":1},

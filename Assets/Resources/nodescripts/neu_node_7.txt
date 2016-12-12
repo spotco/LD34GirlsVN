@@ -27,20 +27,20 @@
 		{"type":"dialogue","character":"Kurumi","text":"Hmm..."},
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/shock","xscale":1},
 		{"type":"dialogue","text":"It's not here. %I can't believe it.","xpos":0,"ypos":0},
-		
+
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/sad","xscale":1},
 		{"type":"dialogue","character":"Kurumi","text":"Of all things to forget..."},
 
 		{"type":"dialogue","text":"I take a deep breath, trying not to show any signs of panic.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I do, I feel a tap on my shoulder.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I do, I feel a light tap on my shoulder.","xpos":0,"ypos":0},
 
 		{"type":"showcharacter","character":"Glasses Girl","image":"naoko/grin","xpos":300,"xscale":1},
 		{"type":"dialogue","text":"A girl with heavy glasses and a sly, mischievious smile holds up her book toward me.","xpos":0,"ypos":0},
 
 		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Can I..."},
+		{"type":"dialogue","character":"Kurumi","text":"Umm..."},
 		{"type":"dialogue","text":"She nods.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Glasses Girl","text":"Page one twenty seven!","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Glasses Girl","text":"You forget something..?","xpos":46,"ypos":-117},
 
 		{"type":"dialogue","text":"Her voice is friendly and enthusiastic.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"As I glance over, I suddenly hear my name called.","xpos":0,"ypos":0},

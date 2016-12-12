@@ -47,6 +47,9 @@ public class GameMain : MonoBehaviour {
 DOC:
 https://docs.google.com/document/d/1D3zT3HPpfU57bqfPFjvHfG2FL9Txj9Ot2xqI0Ibu9oQ/edit
 
+adjust mana school ch1 leave class dialogue
+adjust naoko school ch1 roof dialgue
+
 IDEAS:
 ch1 - fix node11 going to roof reasoning
 ch1 - make a government officer character during evacuation
