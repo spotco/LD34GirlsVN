@@ -8,7 +8,7 @@
 		{"type":"gridnavfocusat","zoom":1.5},
 		{"type":"wait","waittime":25},
 		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Who does this [b]Pink-Haired@ girl think she is, anyway?"},
+		{"type":"dialogue","character":"Kurumi","text":"Who does this [b]Pink-Haired@ girl think she is, anyway?"}
 	],
 	"event":[
 		{"type":"dialogue","character":"Teacher","text":"Would you please take a seat, [bk]Kurumi@?","xpos":240,"ypos":105},

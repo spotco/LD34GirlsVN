@@ -45,7 +45,7 @@
 
 		{"type":"changebackground","background":"bg_black"},
 		{"type":"dialogue","text":"Who were they, and what were they looking for?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I felt as if I would find the answer soon.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I felt as if I would find the answer soon.","xpos":0,"ypos":0}
 	],
 	"links":[
 		19

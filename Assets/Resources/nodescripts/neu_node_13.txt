@@ -16,7 +16,7 @@
 		{"type":"dialogue","text":"But at the same time, I find it hard to put myself out there like that.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"My indecisiveness gets the better of me, and I finish my lunch alone.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"When it comes to this kind of stuff, I guess I've still got a long way to go.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"When it comes to this kind of stuff, I guess I've still got a long way to go.","xpos":0,"ypos":0}
 	],
 	"links":[
 		15

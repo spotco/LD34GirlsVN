@@ -7,16 +7,16 @@
 	"postshowevents":[
 	],
 	"event":[
-		
+
 		{"type":"dialogue","text":"I was only even told that I'd be moving earlier this week.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"In the brief span of a few short days, I had to say goodbye to the world I knew.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Even my parents wouldn't be here for some time.","xpos":0,"ypos":0},
-		
+
 		{"type":"dialogue","text":"Something was odd. %It all felt suspicious.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I never did get any sort of explanation on why it all happened so suddenly.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I know I should trust them, and that there has to be a good reason behind everything.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But having that doubt in the back of my mind made me anxious.","xpos":0,"ypos":0},
-		
+
 		{"type":"dialogue","text":"Dozens unanswered questions float around in my head.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"I'll have to ask them another time.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"Letting out a sigh, I turn off my phone and put it on the counter.","xpos":0,"ypos":0},
@@ -26,9 +26,9 @@
 		{"type":"dialogue","text":"In my hometown, it seemed like nothing ever changed.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"It felt as if I lived the same %dull life every day.","xpos":0,"ypos":0},
 		{"type":"dialogue","text":"But now? %Like it or not, I was here.","xpos":0,"ypos":0},
-		
+
 		{"type":"dialogue","text":"I take deep breath. %Guess there's no point in worrying about it.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I turn off the light and head to bed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I turn off the light and head to bed.","xpos":0,"ypos":0}
 	],
 	"links":[
 		5
