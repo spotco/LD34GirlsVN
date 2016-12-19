@@ -121,7 +121,15 @@ public class BGHillShrine : BGControllerBase {
 		if (key == BGControllerBase.KEY_DEFAULT) {
 			_target_scroll_pos = new Vector2(0,0);
 			_target_scale = 1;
-			
+
+		} else if (key == "dreampreview") {
+			_target_scroll_pos = new Vector2(0,-50);
+			_target_scale = 1;
+
+		} else if (key == "dreampreview_lfocus") {
+			_target_scroll_pos = new Vector2(-80,50);
+			_target_scale = 1.25f;
+
 		} else if (key == "frame1_shot0") {
 			_target_scroll_pos = new Vector2(0,-120);
 			_target_scale = 1.3f;

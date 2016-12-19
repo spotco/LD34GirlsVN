@@ -32,7 +32,7 @@
 		{"type":"dialogue","text":"After what happened, she must think I'm some sort of weirdo.","xpos":-18,"ypos":-89},
 		{"type":"dialogue","text":"...I'll have to talk with her about that.","xpos":-18,"ypos":-89},
 
-		{"type":"changebackground","background":"bg_school_classroom", "key":"during_up"},
+		{"type":"changebackground","background":"bg_school_classroom", "key":"during_up_pulse1"},
 		{"type":"hidecharacter","character":"Pink Hair"},
 
 		{"type":"dialogue","text":"As I look forward, I feel dizzy as my head begins to spin.","xpos":-265,"ypos":-182},

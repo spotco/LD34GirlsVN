@@ -1,35 +1,101 @@
 {
 	"id":19,
-	"title":"An Empty School",
+	"title":"Rooftop",
 	"background":"bg_school_hallway",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
 	],
 	"event":[
-		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"I do my best to remember all the places I had visited throughout the day.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Keeping my eyes peeled as I walk down the hallway, I notice a sudden movement in my periphery.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]W-what@ was that?"},
-		{"type":"dialogue","text":"I turn and look.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"Nothing.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue","text":"I continue walking down the hall.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Again, I notice a sudden shimmer in the corner of my eye.","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/shock","xpos":300,"xscale":-1},
-		{"type":"dialogue","character":"Kurumi","text":"[b3]W-wha@..."},
-		{"type":"dialogue","text":"I turn to get a better look, and it disappears.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"This is more than a little scary.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I don't know if it's just my eyes playing tricks on me...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"But I must be seeing things. Subtle, almost unnoticeable little movements.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's very creepy feeling.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I pass the stairwell, I feel a gentle breeze blow by.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Where could that be coming from?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I walk over and take a look.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"[b3]I-I should keep looking...@"}
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"A few flights above, I see an open door.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The exit to the roof.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Someone must be up there.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I take a deep breath and climb up.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"As I step outside, a chilling sight surrounds me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The world around me seems to twist and distort in front of my very eyes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Buildings far off in the horizon look almost completely unrecognizable.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Dark clouds swirl overhead and as gusts whip past me.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Though this entire dream had been filled with strange, bizarre and inexplicable sights...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A sudden, unexpected sense ran through my mind. Fear.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I was scared.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I didn't know how this dream was going to end.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This dream wasn't entirely my own.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"On the far side, I notice a slender figure curled up, balanced precariously on the ledge.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Sitting completely still, there was air of tranquility surrounding her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'd almost hate to disturb it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Regardless, I knew that I had to reach her. I had to talk with her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She would know what was going on.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"As I take a step forward, she looks up.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The world around us seems to pause.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As our eyes meet, we recognize each other.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A gust blows by, and her unmistakeable pink hair gently blows in the wind.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's that girl that had [b]disappeared from class@.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"A confused look passes through her eyes as I breathe a sigh of relief.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There was so much I had to ask. %I call out to her.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Hey..! What are you doing here?"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"As I finish my sentence, I hear a rush of footsteps from the stairwell behind me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There are other people here.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"The pink haired girl quickly gets up, perched high above a precarious drop to the ground far below.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What is she going to do?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Reaching my hand out, I run after her.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"No, wait..!"},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"In a single effortless motion...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She leaps off.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She's out of sight in an instant.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This can't be right.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"I rush over to the ledge to see for myself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I peer out, I can't see anything.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A sea of mist sweeps around the building, obscuring the ground below.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I take a step back.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"Two voices speak out from behind me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I stand completely still, unsure if I've been seen.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Agent 1","text":"It's... gone, isn't it?"},
+		{"type":"dialogue","character":"Agent 2","text":"Indeed. We've come too late."},
+		{"type":"dialogue","character":"Agent 1","text":"Let's get out of this place. It's been giving me the creeps."},
+		{"type":"dialogue","character":"Agent 2","text":"Yes. And be sure to notify the boy that our investigation is done."},
+
+
+		{"type":"dialogue","text":"After that, they go silent.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_roof"},
+		{"type":"dialogue","text":"I quickly turn around and look.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An empty roof. I'm the only one here.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Dozens of questions frantically race through my mind.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What did they mean by it being 'too late'?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A sense of panic sets in as the world around me begins to swirl and distort more violently than ever.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"This isn't my own dream, is it?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The [b]pink-haired girl@. I have to find her.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"She would have the answers.","xpos":0,"ypos":0}
 	],
 	"links":[
-		20
+		23
 	]
 }

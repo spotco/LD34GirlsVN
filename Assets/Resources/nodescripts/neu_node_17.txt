@@ -1,63 +1,34 @@
 {
 	"id":17,
-	"title":"Leaving",
-	"background":"bg_school_courtyard",
+	"title":"Search for Her",
+	"background":"bg_school_hallway",
 	"music":"daily",
 	"requirementitem":[],
 	"postshowevents":[
 	],
+	"defaultpos":{
+		"narrator":{"xpos":-242,"ypos":-176}
+	},
 	"event":[
-		{"type":"changebackground","background":"bg_school_courtyard"},
-		{"type":"dialogue","text":"The courtyard is a sea of blue-clad students, swarming the school grounds.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The general atmosphere feels nonchalant. People around me casually discuss the current state of events.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Judging from their attitudes, it's like nothing is even out of the ordinary.","xpos":0,"ypos":0},
-
-		{"type":"changebackground","background":"bg_school_outside"},
-		{"type":"dialogue","text":"Men in distinct uniforms line the exit. Judging from their appearance, they must be... police?","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A couple black cars with tinted windows line the curb.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I make my way past the stern-faced police officers.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"They're keeping their distance.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's almost as if they're waiting for something.","xpos":0,"ypos":0},
-
-		{"type":"changebackground","background":"bg_city_afternoon"},
-		{"type":"dialogue","text":"As I leave the school and make my way through the city...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I feel vaguely apprehensive.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've mentally gone over all the events that have happened today...","xpos":0,"ypos":0},
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"...And something just doesn't quite add up."},
-		{"type":"dialogue","text":"This kind of thing doesn't just [b3]happen@.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
-		{"type":"dialogue","text":"I take a deep breath. %No use overthinking it.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"I should tell my parents about what happened."},
-		{"type":"dialogue","character":"Kurumi","text":"I wonder what they'd both think."},
-		{"type":"dialogue","text":"Instinctively, I reach into my bag for my phone.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Nothing.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/shock","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Huh..?"},
-		{"type":"dialogue","text":"I check again.","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/sad","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"It's gone.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Of all the things that could have gone missing... Ugh. What a day."},
-		{"type":"dialogue","text":"Biting my lip, I mentally comb over the day's tumultuous events.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Is there anywhere obvious that I could have left it?","xpos":0,"ypos":0},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"I had it at lunch, didn't I..?"},
-		{"type":"dialogue","text":"At the very least, I know this. %That phone is my lifeline. My connection to those I love.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I've got to find it. %I honestly don't think I could get by without it.","xpos":0,"ypos":0},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":-1},
-		{"type":"dialogue","text":"I quickly turn around, narrowly avoiding running into the people walking beside me.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Maybe they haven't closed the school yet.."},
-		{"type":"dialogue","character":"Kurumi","text":"I bet they'd let me go back in and look for it if I asked nicely..."},
-		{"type":"hidecharacter","character":"Kurumi"},
-		{"type":"dialogue","text":"I run back up the direction that I came from.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"If I wanted to be alone, where would I be?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An idea thought pops up into my head.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It wouldn't hurt to check.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"If I hurry... it should be fine.","xpos":0,"ypos":0}
+		{"type":"dialogue","text":"I make my way over to the bathroom.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's rather difficult to see in this dim light.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In the corner of my eye, I notice a sudden movement.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Startled, I turn around.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black","key":"dark"},
+		{"type":"dialogue","text":"A mirror. Nothing unusual about it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Checking my reflection, I straighten my hair and adjust my skirt.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything seems to be in order.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"With more pressing tasks at hand, I continue my search.","xpos":0,"ypos":0}
 	],
 	"links":[
-		18
+		15,16,18
 	]
 }

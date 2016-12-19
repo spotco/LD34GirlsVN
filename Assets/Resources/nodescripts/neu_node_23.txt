@@ -8,46 +8,61 @@
 	],
 	"event":[
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"I stumble into the courtyard, losing my footing as the ground quakes beneath me.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Quickly grabbing a nearby wall for support, I regain my balance.","xpos":0,"ypos":0},
-
+		{"type":"dialogue","text":"I race down the stairs and through the halls, barely maintaining my footing as the floor continues to shake beneath my feet.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway"},
+		{"type":"dialogue","text":"As I reach the entrance, an eerie sight appears before me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"From outside the building, a pulsing light glows from the direction of the courtyard.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Is... something out there?"},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"After what I had just seen, I could only expect the worst.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Taking a deep breath, I slide open the door and head outside.","xpos":0,"ypos":0},
 		{"type":"changebackground","background":"bg_school_courtyard"},
-		{"type":"dialogue","text":"Up ahead, I see the glowing circle within the center of the field.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The etched lines pulse rhythmically, marking the ground with their glow.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I know I should be running. Out the gates and away from this place, and never looking back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"However, mesmerized by the intricate detail of the lights, I find myself drawn to the circle.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I inch closer to the circle, I feel the intense heat that is being given off the light.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's like I'm approaching a wall of white hot fire.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I step through the courtyard, it’s finally clear to me what it is.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"Up ahead on the path I see a circular pattern of etched lines on the ground pulse rhythmically.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It’s much like what I had seen earlier, only much larger in size.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Mesmerized by their intricate detail, I slowly step closer.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"The currents of light pulse and dance along the ground, like the heartbeat of some magical creature.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Suddenly, a powerful pulse of energy shoots out, knocking me off my feet.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I hear the rattle of shaking windows and shriek of folding metal foundations being torn from their roots.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Debris falls from the damaged school building, narrowly missing my head.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"As I get up, I see a hole emerging from the center of the circle.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's a foggy and ill-defined void of insubstantial matter.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Wisps of smoke lick the edges, drawing in the hot air around it.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"A long, thick black line rises out of it, somehow more solid than the rest.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Then, a second materializes. As does another, and another after that.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Six of them, huge, each line longer and thicker than my whole body, groping hungrily at the ground surrounding the circle.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I can’t tell whether this is real, or just a vivid hallucination.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My rational side is telling me to get away.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"But... can feel that this was something beyond logical explanation in the rational world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I feel myself drawn to its mysterious beauty.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"A wave of terror fills my entire body.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Those aren't lines. %They're [b3]limbs@.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The shadows congeal together like cold, dark blood. A deep shriek rings out, a noise not of this world.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Slowly, a creature of nightmare fully emerges from the haze.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It's got a head like a dog's, with sharp spines like knives trailing its back.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"It curves its abnormally long tail behind itself.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"On its face, I see no eyes. Only sockets of white emptyness where I'd normally expect them to be.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"I stare in absolute shock.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"No. This isn't happening.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"This has to be a dream. %A nightmare."},
-		{"type":"dialogue","text":"Things like this don't exist in the real world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I get closer, I notice that it begins to behave differently than before.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Sparks of light pulse and pulse and dance along lines in a heartbeat-like rhythm.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It almost seems... alive.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","text":"The infernal monster surveys its surroundings, raising its narrow muzzle into the air.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"This is a dream. %I'm going to wake up from this... Any second now..."},
-		{"type":"dialogue","text":"Its gaze fixes directly at me. It begins to move.","xpos":0,"ypos":0}
+
+		{"type":"dialogue","text":"Suddenly, the ground begins to shake as I stumble to my feet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Streams of smoke rise out as I see a shadowy mass emerge from the ground.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The glowing lines shift around as it begins to take a definite solid form.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I see distinct six distinct limbs emerge, one after another.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"They’re each long and thin, not much larger than the size of my leg.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As the smoke clears, the rest of its form becomes visible.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It has a head like a large dog’s, with sharp spines trailing along its back and tail.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With two large, empty blank eyes it stares directly at me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A chill goes down my spine as it raises its head and emits an otherworldly howl.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This kind of thing doesn’t exist in the real world.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Was this still all just a dream?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I have precious few seconds to think before it leaps directly at me.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"I instinctively jump out of the way, falling to the ground as I narrowly avoid getting caught.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This seems too real to be a dream.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Crawling back to my feet, I turn around to find it a mere few feet away.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It angrily snaps at my face with its sharp teeth as I stumble back.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"Suddenly, a familiar voice calls out and pierces through the silence.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"[bk]Kurumi@! Get back!"},
+		{"type":"dialogue","text":"A flash of blinding light fills my vision as I attempt to brace myself.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A surge of blistering heat barrages me as the force of a powerful shockwave knocks me off my feet.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black","key":"dark"},
+		{"type":"dialogue","text":"And then, in an instant… It all goes dark.","xpos":0,"ypos":0}
 	],
 	"links":[
+		24
 	]
 }

@@ -11,6 +11,8 @@ public class BGSchoolClassroom : BGControllerBase {
 
 	[SerializeField] private Transform _during_class_root;
 	[SerializeField] private Transform _pre_class_root;
+
+	[SerializeField] private Image _pulse_overlay;
 	
 	[SerializeField] private Transform _scroll_anchor;
 	[SerializeField] private Transform _character_root;
@@ -21,12 +23,18 @@ public class BGSchoolClassroom : BGControllerBase {
 	
 	public override void i_initialize(GameMain game) {
 		this.i_initialize_hidden(_fade_cover);
-		
+
+		_scroll_registry.add_registry_entry(_pulse_overlay.transform, 0);
 		_scroll_registry.add_registry_entry(_character_root, -1);
 		_scroll_registry.add_registry_entry(_background.transform, 1);
 		_scroll_registry.add_registry_entry(_foreground.transform, 1.25f);
 		_scroll_registry.add_registry_entry(_during_class_root,1);
 		_scroll_registry.add_registry_entry(_pre_class_root,1);
+
+		_scroll_registry.add_registry_behaviour(_pulse_overlay.transform, PulseBGRegistryBehaviour.cons(
+			new HideShowObjectRegistryBehaviour.Image_ImageTargetAdapter() {
+				_img = _pulse_overlay
+			}));
 	
 		_current_scroll_pos = _scroll_anchor.transform.localPosition;
 		_target_scroll_pos = _current_scroll_pos;
@@ -40,6 +48,19 @@ public class BGSchoolClassroom : BGControllerBase {
 	public override string get_registered_name() { return "bg_school_classroom"; }
 	
 	public override void show_background(string name, string key) {
+
+		if (key.Contains("pulse1")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,false);
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_count(1);
+		} else if (key.Contains("pulse2")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,false);
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_count(2);
+		} else if (key.Contains("pulser")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,true);
+		} else {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(false,false);
+		}
+
 		if (key == BGControllerBase.KEY_DEFAULT) {
 			_during_class_root.gameObject.SetActive(false);
 			_pre_class_root.gameObject.SetActive(false);
@@ -53,7 +74,7 @@ public class BGSchoolClassroom : BGControllerBase {
 
 			} else if (key.Contains("pre")) {
 				_during_class_root.gameObject.SetActive(false);
-				_pre_class_root.gameObject.SetActive(false);
+				_pre_class_root.gameObject.SetActive(true);
 
 			} else {
 				_during_class_root.gameObject.SetActive(false);

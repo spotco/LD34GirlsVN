@@ -20,10 +20,13 @@ public class BGBlack : BGControllerBase, FallingPetalParticle.BoundedParent {
 	private Vector2 _current_scroll_pos, _target_scroll_pos;
 	
 	private RectTransform _rect_transform;
+
+	private float _background_target_alpha;
 	
 	public override void i_initialize(GameMain game) {
 		this.i_initialize_hidden(_fade_cover);
-		
+
+		_background_target_alpha = 1;
 		_rect_transform = this.GetComponent<RectTransform>();
 	
 		_current_scroll_pos = _scroll_anchor.transform.localPosition;
@@ -51,6 +54,12 @@ public class BGBlack : BGControllerBase, FallingPetalParticle.BoundedParent {
 	
 	public override void show_background(string name, string key) {
 		_logo.gameObject.SetActive(key.Contains("showlogo"));
+
+		if (key.Contains("dark")) {
+			_background_target_alpha = 0;
+		} else {
+			_background_target_alpha = 1;
+		}
 	}
 	
 	public override void recieve_update_message(string strparam, float numparam1, float numparam2) {
@@ -80,6 +89,8 @@ public class BGBlack : BGControllerBase, FallingPetalParticle.BoundedParent {
 				_inactive_particles.Add(itr);
 			}
 		}
+
+		_scrolling_background.color = new Color(1,1,1,SPUtil.drpt(_scrolling_background.color.a,_background_target_alpha,1/10.0f));
 		
 		this.update_showing_mode(_fade_cover);
 	}

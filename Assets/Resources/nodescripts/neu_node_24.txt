@@ -1,0 +1,164 @@
+{
+	"id":24,
+	"title":"Awake",
+	"background":"bg_school_hallway",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"event":[
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I'm alive.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Opening my eyes, I glance around.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_classroom"},
+		{"type":"dialogue","text":"A bed. I see multiple others beside mine, all empty.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This must be the nurse's office.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"The setting sun shines through the curtain covering the window beside me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Sliding them aside, I see the courtyard where I had just been.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's the late afternoon. I see a few students outside scattered about outside.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"It’s as if I had just woken up from a dream. One that had suddenly turned into a nightmare.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The image of that otherworldly beast still burned sharply into my mind.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I could almost still feel its breath on my face. That was too real to be just a dream.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"Mmph..."},
+		{"type":"dialogue","text":"Propping myself up, I glance around. Nobody in sight.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Getting up, I straighten out my uniform and hear footsteps outside the door to the hall.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Someone's there.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Yuuto","text":"Finally awake?"},
+		{"type":"dialogue","text":"As the door opens, I notice who it is.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Yuuto..?"},
+		{"type":"dialogue","character":"Yuuto","text":"You're not hurt, are you?"},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"I don't even know what to say. Where to begin..?","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"None of this makes any sense at all."},
+		{"type":"dialogue","character":"Kurumi","text":"What exactly just happened? What was that thing I just saw..?"},
+		{"type":"dialogue","text":"He hesitates for a moment.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"So you remember all of it, don't you?"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Yuuto","text":"I guess I've got some explaining to do."},
+		{"type":"dialogue","text":"He hesitates for a moment, as if carefully choosing his next words.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Yuuto","text":"There’s a lot in this world that you might not have known about."},
+		{"type":"dialogue","character":"Yuuto","text":"But, as for what you've just seen..."},
+		{"type":"dialogue","text":"He pauses.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"...That was an 'anomalous magical event'."},
+		{"type":"dialogue","character":"Yuuto","text":"Or just 'AME', for short. That's what we've started calling them."},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"Anomalous... Magical..?"},
+		{"type":"dialogue","text":"It was a whole lot to take in all at once.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"That's right. Magic."},
+		{"type":"dialogue","character":"Yuuto","text":"You saw it for yourself."},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"Magic? Could that really be the explanation behind all that just happened?","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"Gaging my reaction, he continues.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"You see, it just happens that you've come at a most interesting time."},
+		{"type":"dialogue","character":"Kurumi","text":"...What do you mean by that?"},
+		{"type":"dialogue","character":"Yuuto","text":"Well..."},
+		{"type":"dialogue","character":"Yuuto","text":"Those events. The 'AMEs'. Lately, in this specific area..."},
+		{"type":"dialogue","character":"Yuuto","text":"They've been happening quite frequently. And we don't know the exact cause."},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Yuuto","text":"If something were to ever escape, like that creature you just saw..."},
+		{"type":"dialogue","character":"Yuuto","text":"It wouldn't be good. I'm sure you can imagine."},
+		{"type":"dialogue","text":"Chills went down my spine just thinking about it.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"If this was really so dangerous, how isn't this in the news?"},
+		{"type":"dialogue","character":"Kurumi","text":"Why don’t we call the police... or..."},
+
+
+		{"type":"dialogue","text":"He shakes his head.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"This kind of thing isn’t normally supposed to affect the normal world."},
+		{"type":"dialogue","character":"Yuuto","text":"So, we’ve been doing our best to keep it all under control."},
+
+
+		{"type":"dialogue","text":"I thought about it.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Something didn’t add up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"Then... Why are you telling me?"},
+
+
+		{"type":"dialogue","text":"He pauses again.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"Whether or not you're aware, you have an ability."},
+		{"type":"dialogue","character":"Yuuto","text":"Most people aren’t able to see these magical distortions."},
+		{"type":"dialogue","character":"Yuuto","text":"But... You are."},
+		{"type":"dialogue","character":"Kurumi","text":"What does that mean..?"},
+		{"type":"dialogue","character":"Yuuto","text":"Well..."},
+		{"type":"dialogue","character":"Yuuto","text":"It means that you’ve got some innate magical potential."},
+		{"type":"dialogue","character":"Kurumi","text":"I... do?"},
+		{"type":"dialogue","character":"Yuuto","text":"That’s right."},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"I didn't know what to believe anymore.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"*Knock Knock*","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I hear a sudden rap on the door.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An unfamiliar looking man in a sharp black suit walks inside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With a stern grimace on his face, he speaks.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Manami","text":"Yuuto. We've been looking for you. Where have you been?"},
+		{"type":"dialogue","text":"Yuuto frowns as he turns around to face the suited man.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"If you're still searching for the target..."},
+		{"type":"dialogue","character":"Yuuto","text":"...Then you're wasting your time. It's already gone."},
+		{"type":"dialogue","character":"Manami","text":"..."},
+		{"type":"dialogue","text":"The suited man closes his eyes, as if in frustration.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Manami","text":"Very well. We'll call off the search."},
+		{"type":"dialogue","text":"Narrowing his eyes, he stares directly at me.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Manami","text":"Who's this?"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","character":"Yuuto","text":"She's my friend."},
+		{"type":"dialogue","character":"Yuuto","text":"...And she's got nothing to do with any of this."},
+		{"type":"dialogue","character":"Manami","text":"I see."},
+		{"type":"dialogue","text":"Without another word, he leaves.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Yuuto","text":"..."},
+		{"type":"dialogue","text":"For a brief moment, we both sit in silence.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","character":"Kurumi","text":"What... was that about?"},
+		{"type":"dialogue","character":"Yuuto","text":"..."},
+		{"type":"dialogue","text":"With a serious look on his face, he turns to face me.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"Listen. There's one last thing I haven't told you."},
+		{"type":"dialogue","character":"Kurumi","text":"What is that?"},
+		{"type":"dialogue","character":"Yuuto","text":"Because of your abilities... You may be in danger."},
+		{"type":"dialogue","character":"Kurumi","text":"D-danger..?!"},
+		{"type":"dialogue","character":"Yuuto","text":"I'll do my best to make sure that isn't the case."},
+		{"type":"dialogue","character":"Yuuto","text":"But... I might need your help."},
+		{"type":"dialogue","character":"Kurumi","text":"What do you mean..?"},
+		{"type":"dialogue","text":"He smiles.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"Don't worry too much about it, okay?"},
+		{"type":"dialogue","character":"Yuuto","text":"It won't be anything too big."},
+		{"type":"dialogue","text":"He gets up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"I'll see you tomorrow, alright?"},
+		{"type":"dialogue","text":"He walks over to the door as if he was about to leave.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Stopping, he mentions one last thing.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Yuuto","text":"I brought your stuff. It's over here in the corner."},
+		{"type":"dialogue","character":"Yuuto","text":"Don't forget!"},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"As he leaves, I fall back into my bed.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's a lot to think about.","xpos":0,"ypos":0}
+
+	],
+	"links":[
+	]
+}

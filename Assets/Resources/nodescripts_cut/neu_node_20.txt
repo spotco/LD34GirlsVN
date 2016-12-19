@@ -1,0 +1,76 @@
+{
+	"id":20,
+	"title":"Naoko's Theory",
+	"background":"bg_school_hallway",
+	"music":"daily",
+	"requirementitem":[],
+	"postshowevents":[
+	],
+	"previewchar":[
+		"naoko"
+	],
+	"event":[
+		{"type":"dialogue","text":"After threading my way through the hallway, I finally catch up with [bn]Naoko@.","xpos":0,"ypos":0},
+		{"type":"showcharacter","character":"Naoko","image":"naoko/smile","xpos":300,"xscale":1},
+		{"type":"dialogue","text":"I notice a sparkle in her eyes as she turns to face me. Oh, what is she up to now?","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Naoko","text":"These most recent of events seem [b3]EXTREMELY@ suspicious to me.","xpos":46,"ypos":-117},
+		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"What do you mean..?"},
+		{"type":"dialogue","character":"Naoko","text":"This has [b3]GOT@ to be linked to everything that's been going on, don't you think?","xpos":46,"ypos":-117},
+		{"type":"dialogue","text":"Is she talking about those supernatural rumors?","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":1},
+		{"type":"dialogue","character":"Naoko","text":"Trust me... %I've got a sixth sense for this kind of thing.","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"They don't call me an expert for no reason, after all!","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Kurumi","text":"Err... Okay. %If you say so..."},
+		{"type":"dialogue","character":"Naoko","text":"But if there really [b3]IS@ something going on, I want to get to the bottom of it!","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Kurumi","text":"..."},
+		{"type":"dialogue","text":"That... wasn't a very reassuring statement.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I should probably stop her before she gets herself into any real trouble.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/shock","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Listen, [bn]Naoko@... Please don't tell me you're about to do something too crazy."},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/neutral","xscale":1},
+		{"type":"dialogue","character":"Naoko","text":"Like... what?","xpos":46,"ypos":-117},
+		{"type":"dialogue","text":"Genuinely curious, she tilts her head to the side.","xpos":0,"ypos":0},
+		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
+		{"type":"dialogue","character":"Kurumi","text":"Well..."},
+		{"type":"dialogue","text":"I didn't want to give her any ideas.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"You know what I mean. %Something dangerous."},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/smile","xscale":1},
+		{"type":"dialogue","text":"She smiles again.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"Of course!","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"I'm not chancing that kind of stuff alone.","xpos":46,"ypos":-117},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":1},
+		{"type":"dialogue","character":"Naoko","text":"There could be ghosts. %Or aliens. %Or even mutants...","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"Who knows what kinds of conspiracies [b3]THEY@ could be hiding from us...","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Kurumi","text":"I think you lost me there."},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/smile","xscale":1},
+		{"type":"dialogue","character":"Naoko","text":"Anyway... there's gotta be something going on with the school itself.","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"Can't you feel it? That tension in the air?","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"Almost as if... you're being watched?","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Kurumi","text":"That's pretty creepy."},
+		{"type":"dialogue","character":"Naoko","text":"Yeah. But exciting too.","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Kurumi","text":"...You sure?"},
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":1},
+		{"type":"dialogue","character":"Naoko","text":"Yep! An unresolved mystery. Doesn't it just give you a tingly feeling?","xpos":46,"ypos":-117},
+		{"type":"dialogue","character":"Naoko","text":"Oh man... I [b3]HAVE@ to tell everyone about this!","xpos":46,"ypos":-117},
+
+		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":-1},
+		{"type":"dialogue","text":"In a flash, she whips out her phone and starts frantically typing away.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"In this context, I wonder who she exactly means by #everyone#...","xpos":0,"ypos":0},
+		{"type":"hidecharacter","character":"Naoko"},
+		{"type":"dialogue","text":"She slowly walks away, her eyes still glued to her phone.","xpos":0,"ypos":0},
+
+		{"type":"dialogue","character":"Kurumi","text":"Well... just don't get yourself hurt."},
+		{"type":"hidecharacter","character":"Kurumi"},
+		{"type":"dialogue","text":"Shaking my head, I follow the flow of people towards the exit.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"This has got to be odd, especially for a large school like this.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"You don't just cancel class in the middle of the day for no reason, do you?","xpos":0,"ypos":0},
+
+	],
+	"links":[
+		17
+	]
+}

@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour {
 	public static bool DEBUG_CONTROLS = true;
 	public static bool MUTE = true;
 	public static bool IGNORE_ITEM_REQ = true;
-	public static int NODE_START_INDEX = 15;
+	public static int NODE_START_INDEX = 1;
 	public static bool SKIP_TITLE = true;
 	
 	public interface Modal {
@@ -48,27 +48,37 @@ public class GameMain : MonoBehaviour {
 DOC:
 https://docs.google.com/document/d/1D3zT3HPpfU57bqfPFjvHfG2FL9Txj9Ot2xqI0Ibu9oQ/edit
 
-adjust mana school ch1 leave class dialogue
-adjust naoko school ch1 roof dialgue
+Writing:
+Node 24, modify to have the two agents.
+finalize specifics for ch2
 
-IDEAS:
-ch1 - fix node11 going to roof reasoning
-ch1 - make a government officer character during evacuation
-ch1 - improve return to school, involve MANA
-
+TODO:
+city art integration
+taylor animation prologue integrations
 
 ASSETS:
-taxi on ride to new apartment
-school outside, courtyard, hallway, classroom, roof dark
-subway ride
-city day
-timed node nodes (mechanic)
+subway ride (day/night)
+school outside (day)
+hallway (creepy)
+	2 agents props
+roof (creepy)
+	2 agents props (reuse)
+school courtyard (redesign day,creepy)
+	fog+clouds prop
+	glowing circle prop
+	monster prop
+monster fight scene (2 frames, discuss)
+school nurse's office bed (afternoon)
+	2 agents props (reuse)
 
 BUG:
 node 1 - map mode, take key for preview bg
 node 16 to 17 (leaving), can go back to node 15
 
 TECH:
+changing backgrounds, always imm mode
+post visit preview backgrounds
+node map background have key value
 selecting node, fade out node text. bottom right show subtitle of scene (subtitle with black faded box top left)
 char name text replace with SPText
 cache characters
