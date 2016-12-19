@@ -14,6 +14,8 @@ public class BGSchoolHallway : BGControllerBase {
 	[SerializeField] private Image _lockercrouchperson;
 	[SerializeField] private Image _backperson_left;
 	[SerializeField] private Image _backperson_right;
+
+	[SerializeField] private Image _pulse_overlay;
 	
 	[SerializeField] private Transform _scroll_anchor;
 	private ParallaxScrollRegistry _scroll_registry = new ParallaxScrollRegistry();
@@ -26,7 +28,8 @@ public class BGSchoolHallway : BGControllerBase {
 	
 		_current_scroll_pos = _scroll_anchor.transform.localPosition;
 		_target_scroll_pos = _current_scroll_pos;
-		
+
+		_scroll_registry.add_registry_entry(_pulse_overlay.transform, 0);
 		_scroll_registry.add_registry_entry(_background.transform, 1);
 		_scroll_registry.add_registry_entry(_backperson_left.transform, 1.05f);
 		_scroll_registry.add_registry_entry(_backperson_right.transform, 1.05f);
@@ -43,7 +46,11 @@ public class BGSchoolHallway : BGControllerBase {
 		this.register_person_behaviours(_frontperson_left, SPUtil.sec_to_tick(0.25f), 4);
 		this.register_person_behaviours(_frontperson_right, SPUtil.sec_to_tick(0.25f), 4);
 		this.register_person_behaviours(_lockercrouchperson, SPUtil.sec_to_tick(0.25f), 1);
-	
+
+		_scroll_registry.add_registry_behaviour(_pulse_overlay.transform, PulseBGRegistryBehaviour.cons(
+			new HideShowObjectRegistryBehaviour.Image_ImageTargetAdapter() {
+				_img = _pulse_overlay
+			}));
 	}
 	
 	private void register_person_behaviours(Image person, float bobtime, float bobampl) {
@@ -58,6 +65,18 @@ public class BGSchoolHallway : BGControllerBase {
 		bool show_people = key.Contains("showpeople");
 		for (int i = 0; i < _peoples.Count; i++) {
 			_scroll_registry.get_registry_behaviour<HideShowImageRegistryBehaviour>(_peoples[i]).set_visible_imm(show_people);
+		}
+
+		if (key.Contains("pulse1")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,false);
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_count(1);
+		} else if (key.Contains("pulse2")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,false);
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_count(2);
+		} else if (key.Contains("pulser")) {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(true,true);
+		} else {
+			_scroll_registry.get_registry_behaviour<PulseBGRegistryBehaviour>(_pulse_overlay.transform).set_running(false,false);
 		}
 	
 	}

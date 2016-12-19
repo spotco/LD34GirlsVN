@@ -283,6 +283,68 @@ public class HideShowImageRegistryBehaviour : ParallaxScrollRegistry.RegistryBeh
 }
 //DEPRECATED TO NOT USE
 
+public class PulseBGRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
+
+	HideShowObjectRegistryBehaviour.ImageTarget _target;
+	bool _loop = false;
+	bool _running = false;
+	float _default_opacity;
+	float _anim_t;
+	int _count;
+
+	public static PulseBGRegistryBehaviour cons(HideShowObjectRegistryBehaviour.ImageTarget target) {
+		return (new PulseBGRegistryBehaviour()).i_cons(target);
+	}
+	private PulseBGRegistryBehaviour i_cons(HideShowObjectRegistryBehaviour.ImageTarget target) {
+		_target = target;
+		_running = false;
+		_loop = false;
+		_default_opacity = target.get_opacity();
+		_anim_t = 0;
+		_count = 0;
+		return this;
+	}
+
+	public void set_running(bool running, bool looped) {
+		_running = running;
+		_loop = looped;
+		_anim_t = 0;
+	}
+
+	public void set_count(int count) {
+		_count = count;
+	}
+
+	public override void i_update(GameMain game, ParallaxScrollRegistry registry, ParallaxScrollRegistry.RegistryEntry entry) {
+		if (_running == false) {
+			_target.set_opacity(_default_opacity);
+			return;
+		}
+
+		_target.set_opacity(SPUtil.bezier_val_for_t(
+			new Vector2(0,0),
+			new Vector2(0.5f,1),
+			new Vector2(0.5f,0),
+			new Vector2(1,0),
+			_anim_t
+		).y);
+
+		_anim_t += SPUtil.sec_to_tick(1f) * SPUtil.dt_scale_get();
+		if (_anim_t < 1) {
+			return;
+		}
+
+		_anim_t = 0;
+		if (_loop == false) {
+			if (_count > 1) {
+				_count--;
+			} else {
+				_running = false;
+			}
+		}
+	}
+}
+
 public class MovingCharacterRegistryBehaviour : ParallaxScrollRegistry.RegistryBehaviour {
 	public static MovingCharacterRegistryBehaviour cons(Transform transform, Vector2 tar_lpos) {
 		return (new MovingCharacterRegistryBehaviour()).i_cons(transform, tar_lpos);

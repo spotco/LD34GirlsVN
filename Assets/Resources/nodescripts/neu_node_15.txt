@@ -1,4 +1,4 @@
-{
+	{
 	"id":15,
 	"title":"Back to Class",
 	"background":"bg_school_classroom",
@@ -6,81 +6,116 @@
 	"requirementitem":[],
 	"postshowevents":[
 	],
+	"defaultpos":{
+		"narrator":{"xpos":0,"ypos":0},
+		"Naoko":{"xpos":46,"ypos":-117}
+	},
 	"event":[
-		{"type":"changebackground","background":"bg_school_hallway"},
-		{"type":"dialogue","text":"Chatter echoes through the halls as I make my way back to class.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"In a way, it feels like the continuous hum of a machine at work.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Peace and quiet are hard to come by in this place.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway","key":"showpeople_normal"},
+		{"type":"dialogue","text":"Gossip and chatter echo through the halls as I make my way back to class.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The noise around me begins to blend together to a continuous background hum.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I think I'm feeling under the weather.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway","key":"showpeople_normal_pulse1"},
+		{"type":"dialogue","text":"As I take another step, my vision begins to blur.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_school_hallway","key":"showpeople_normal_pulse2"},
+		{"type":"dialogue","text":"The world around me shifts as I regain my balance. The thoughts in my head are spinning.","xpos":0,"ypos":0},
+		{"type":"changebackground","background":"bg_black"},
+		{"type":"dialogue","text":"I... should really sit down somewhere.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Making my way down the hall, I reach my home classroom and open the door.","xpos":0,"ypos":0},
+
+		{"type":"changebackground","background":"bg_school_classroom_front_creepy"},
+		{"type":"dialogue","text":"A sharp pain runs through my head as the colors around me distort.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The clear skies outside have suddenly turned into dark, ominous clouds.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"An ambient red glow filters in from outside, casting menacing shadows on the walls and floor.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There's nobody here.","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"As I open the door...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I come across an unexpected sight.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"An empty classroom...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"A dark sky, looming ominously outside...","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What exactly is going on?","xpos":0,"ypos":0},
-
-		{"type":"playSFX", "sfx":"school_bell"},
-		{"type":"changebackground","background":"bg_school_classroom_front"},
-		{"type":"dialogue","text":"The bell suddenly sounds as I return to my senses.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I'm back in my homeroom class, early in the afternoon.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"Students slowly trickle back in from lunch. Class should be starting soon.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I notice a lone empty desk up front, [br]Yuuto@'s. He's nowhere around it.","xpos":0,"ypos":0},
-
-		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"dialogue","text":"As I take my seat, I can't shake the feeling that something unexpected is about to happen.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"What exactly was it that I saw as I walked in?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I close my eyes. I can't be seeing this right.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"What is going on?","xpos":0,"ypos":0},
 
 		{"type":"changebackground","background":"bg_school_classroom_front"},
-		{"type":"dialogue","text":"My suspicions are only confirmed as I see a unfamiliar figure walk into the room.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"He doesn't look like a teacher. He's in an expensive suit, his silver hair slicked cleanly back. He almost looks like some sort of government agent.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The class goes quiet.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A bell rings and snaps me out of my trance.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm suddenly back in the world I expect.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Reaching my hand to my face, I touch my forehead.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Everything about me seems fine. At this moment, I feel completely normal.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Still, I couldn't shake what had just happened.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The vision seemed too real to be just a simple daydream.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There was no logical explanation for any of it.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Man","text":"Everyone, please listen.","ypos":110},
-		{"type":"dialogue","character":"Man","text":"School has been canceled for the rest of the day.","ypos":110},
 
-		{"type":"dialogue","text":"Hushed whispers fill the room.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I stand in the doorway, students slowly work their way around me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Class must be starting soon.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I guess I've got more important things to worry about.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I just hope it doesn't happen again.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Man","text":"This may come as a surprise, but we are requesting everyone to leave the building.","ypos":110},
-		{"type":"dialogue","character":"Man","text":"After-school activities have also been canceled for the day.","ypos":110},
-		{"type":"dialogue","character":"Man","text":"Please gather your possessions and exit in an orderly fashion.","ypos":110},
 
-		{"type":"changebackground","background":"bg_school_classroom"},
-		{"type":"dialogue","text":"With that, he turns and exits out the door.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"The class instantly erupts in excited whispers.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Making my way back to my seat, I notice an empty desk up in the front.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Yuuto's. I wonder where he went.","xpos":0,"ypos":0},
 
-		{"type":"showcharacter","character":"Kurumi","image":"kurumi/puzzled","xpos":-300,"xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"What could possibly be going on..?"},
 
-		{"type":"showcharacter","character":"Naoko","image":"naoko/neutral","xpos":300,"xscale":1},
-		{"type":"dialogue","text":"I see [bn]Naoko@ nonchalantly pack her belongings.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"I wonder if she had any ideas.","xpos":0,"ypos":0},
-
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/normal","xscale":1},
-		{"type":"dialogue","character":"Kurumi","text":"Hey, [bn]Naoko@..."},
-		{"type":"dialogue","character":"Naoko","text":"What's up?","xpos":46,"ypos":-117},
-		{"type":"dialogue","character":"Kurumi","text":"You... know what this is all about?"},
-		{"type":"dialogue","text":"She shrugs.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Naoko","text":"Hmm... It certainly is quite the mystery...","xpos":46,"ypos":-117},
-		{"type":"dialogue","character":"Naoko","text":"Quite the mystery indeed...","xpos":46,"ypos":-117},
-		{"type":"transitioncharacter","character":"Kurumi","image":"kurumi/puzzled","xscale":1},
+		{"type":"dialogue","text":"As I reach my desk, Naoko looks up.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"Hey there-"},
+		{"type":"dialogue","text":"She pauses, with a concerned look on her face.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"Woah. You alright?"},
+		{"type":"dialogue","character":"Kurumi","text":"Wha..?"},
+		{"type":"dialogue","character":"Naoko","text":"You look... Really out of it right now."},
+		{"type":"dialogue","text":"I stop for a moment.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I..."},
+		{"type":"dialogue","character":"Naoko","text":"You look like you've just seen a ghost!"},
+		{"type":"dialogue","character":"Naoko","text":"Of course, everyone knows ghosts don't show up during the day... Or do they?"},
 		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","character":"Naoko","text":"But...","xpos":46,"ypos":-117},
-		{"type":"transitioncharacter","character":"Naoko","image":"naoko/grin","xscale":1},
-		{"type":"dialogue","text":"A large, silly looking smile crosses her face.","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Naoko","text":"I [b3]DO@ know what I could be doing with all this free time...","xpos":46,"ypos":-117},
-		{"type":"dialogue","character":"Naoko","text":"...This could be some [b3]VERY@ important work.","xpos":46,"ypos":-117},
-		{"type":"hidecharacter","character":"Naoko"},
-		{"type":"dialogue","text":"Not saying much else, she turns and walks out the room.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Kurumi","text":"I... don't know what you're talking about."},
+		{"type":"dialogue","text":"She frowns, disappointedly.","xpos":0,"ypos":0},
+		{"type":"dialogue","character":"Naoko","text":"Well... If you're really feeling that bad, you should go see a nurse. Or something like that."},
+		{"type":"dialogue","character":"Kurumi","text":"Yeah. I'm fine."},
+		{"type":"dialogue","text":"I take my seat. Not long after, the teacher walks in and we continue from where we had left off.","xpos":0,"ypos":0},
 
-		{"type":"dialogue","character":"Kurumi","text":"..."},
-		{"type":"dialogue","text":"That was a bit too much for me to process all at once.","xpos":0,"ypos":0},
-		{"type":"hidecharacter","character":"Kurumi"},
 
-		{"type":"changebackground","background":"bg_black"},
-		{"type":"dialogue","text":"As I head out the room, I notice another missing student.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"That [b]Pink-Haired Girl@. Her desk is empty.","xpos":0,"ypos":0},
-		{"type":"dialogue","text":"She never did get back, did she?","xpos":0,"ypos":0},
-		{"type":"dialogue","character":"Kurumi","text":"Well... I hope she gets the message."}
+		{"type":"dialogue","text":"The rest of the afternoon goes by as expected.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As the hours drag on, I begin to space out.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"My thoughts begin to drift to unrelated places.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Should I start unpacking when I get home?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"And what should I get for dinner?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There was a corner store I noticed on my way to school.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Right around the corner from the train station.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I could almost see it.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"I've always had an unusually active imagination.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I remember that when I was younger, I was able to vividly recall most of my dreams.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"That's not the case anymore, though it still happens from time to time.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"...","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I'm dreaming right now, aren't I?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Vague shapes and colors appear around me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"With some effort, I try and focus on the detail my mind conjures forth.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"I'm on a hill. The sun is setting.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This place looks familiar. Another dream, perhaps?","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Ahead, I see a girl sitting below a tree.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Her head is clutched in her lap and her hair drapes over her entire body, forming a curtain of sorts.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"A shimmer of light reflects off her pink hair.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"As I try and move closer, a sharp pain emerges in my head.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Though my vision grows blurrier, I notice that she stands up.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The throbbing feeling grows stronger as everything goes dark.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"I open my eyes.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The desks around me are completely empty.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"The dark skies and ominous clouds overhead have returned.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"There's a slight thickness to the air as a thick mist has seeps in from the outside.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"This is the world from my vision earlier.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"An odd feeling creeps through my stomach.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Though I'm alone and see nobody else, I feel a foreign presence surrounding me.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"It's as if an extra pair of eyes were watching my every move.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I have to find out who that girl was.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"Something about her seemed familiar.","xpos":0,"ypos":0},
+		{"type":"dialogue","text":"I felt as if she would have the answers.","xpos":0,"ypos":0},
+
+
+		{"type":"dialogue","text":"Getting up from my desk, I leave the classroom.","xpos":0,"ypos":0}
 	],
 	"links":[
 		16,17
