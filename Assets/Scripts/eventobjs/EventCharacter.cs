@@ -45,6 +45,12 @@ public class EventCharacter : MonoBehaviour {
 		_current_image_name = null;
 		_is_transitioning_fade_image = false;
 		_has_set_facing = false;
+
+		this.transform.localPosition = new Vector3(
+			this.transform.localPosition.x,
+			-259,
+			0
+		);
 	}
 	
 	public void notify_talking() {

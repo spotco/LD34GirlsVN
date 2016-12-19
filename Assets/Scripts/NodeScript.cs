@@ -24,6 +24,8 @@ public class NodeScript {
 	public List<int> _links = new List<int>();
 	public List<string> _previewchars = new List<string>();
 	public bool _affinity_requirement;
+
+	public Dictionary<string,Vector2> _default_dialogue_positions = new Dictionary<string, Vector2>();
 	
 	public NodeScript i_initialize(GameMain game, TextAsset text) {
 		JSONObject root;
@@ -46,13 +48,23 @@ public class NodeScript {
 				_previewchars.Add(previewchars[i].Str);
 			}
 		}
+
+		if (root.ContainsKey("defaultpos")) {
+			JSONObject default_positions = root.GetObject("defaultpos");
+			foreach (KeyValuePair<string,JSONValue> kvp in default_positions) {
+				_default_dialogue_positions.Add(kvp.Key,new Vector2(
+					(float) kvp.Value.Obj.GetNumber("xpos"),
+					(float) kvp.Value.Obj.GetNumber("ypos")
+				));
+			}
+		}
 		
 		if (root.ContainsKey("idleevents")) {
-			NodeScript.load_nodescriptevents_from_json(game, root.GetArray("idleevents"),_idle_events);
+			NodeScript.load_nodescriptevents_from_json(game, this, root.GetArray("idleevents"),_idle_events);
 		}
 		
 		if (root.ContainsKey("postshowevents")) {
-			NodeScript.load_nodescriptevents_from_json(game, root.GetArray("postshowevents"),_post_show_events);
+			NodeScript.load_nodescriptevents_from_json(game, this, root.GetArray("postshowevents"),_post_show_events);
 		}
 
 		JSONArray requirement_item_json = root.GetArray("requirementitem");
@@ -61,7 +73,7 @@ public class NodeScript {
 		}
 		
 		JSONArray event_json = root.GetArray("event");
-		NodeScript.load_nodescriptevents_from_json(game,event_json,_events);
+		NodeScript.load_nodescriptevents_from_json(game,this,event_json,_events);
 		
 		JSONArray links_json = root.GetArray("links");
 		for (int i = 0; i < links_json.Length; i++) {
@@ -70,8 +82,24 @@ public class NodeScript {
 		
 		return this;
 	}
+
+	public Vector2 get_default_position_for_name(string key) {
+		if (_default_dialogue_positions.ContainsKey(key)) {
+			return _default_dialogue_positions[key];
+
+		} else if (key == NodeScriptEvent_Dialogue.CHARACTER_NARRATOR) {
+			if (_default_dialogue_positions.ContainsKey("narrator")) {
+				return _default_dialogue_positions["narrator"];
+			}
+			return new Vector2(0,0);
+
+		} else {
+			return new Vector2(0,-130);
+
+		}
+	}
 	
-	public static void load_nodescriptevents_from_json(GameMain game, JSONArray event_json, List<NodeScriptEvent> nodescript_events) {
+	public static void load_nodescriptevents_from_json(GameMain game, NodeScript node_script, JSONArray event_json, List<NodeScriptEvent> nodescript_events) {
 		for (int i = 0; i < event_json.Length; i++) {
 			JSONObject itr = event_json[i].Obj;
 			string type = itr.GetString("type");
@@ -100,11 +128,20 @@ public class NodeScript {
 				};
 				
 			} else if (type == "dialogue") {
+				string character_name = itr.ContainsKey ("character") ? itr.GetString ("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR;
+				Vector2 position = node_script.get_default_position_for_name(character_name);
+				if (itr.ContainsKey("xpos")) {
+					position.x = (float)itr.GetNumber("xpos");
+				}
+				if (itr.ContainsKey("ypos")) {
+					position.y = (float)itr.GetNumber("ypos");
+				}
+
 				itr_neu = new NodeScriptEvent_Dialogue () {
-					_character = itr.ContainsKey ("character") ? itr.GetString ("character") : NodeScriptEvent_Dialogue.CHARACTER_NARRATOR,
+					_character = character_name,
 					_text = itr.GetString ("text"),
-					_xpos = itr.ContainsKey("xpos") ? ((float)itr.GetNumber ("xpos")) : 0,
-					_ypos = itr.ContainsKey("ypos") ? ((float)itr.GetNumber ("ypos")) : -130
+					_xpos = position.x,
+					_ypos = position.y
 				};
 				
 			} else if (type == "transitioncharacter") {
