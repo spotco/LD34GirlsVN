@@ -1,0 +1,177 @@
+TODO:
+Modify 27 with updated agent dialogue.
+Mofidy 28 with accurate reflection on ch1 happenings.
+
+100 - Collapse once entering home.
+
+101 - Morning, at school. See Manami, she walks away.
+  Naoko shows up. N: Are you alright? - Related to what happened day before.
+
+102 - Ignore/wave away Naoko, chase after Manami.
+  Eye contact. She walks faster.
+  Intentionally avoids contact.
+
+103 - Talk with Naoko.
+  She tells you what happened to you from her perspective.
+  Asks you what happened. Odd dream?
+
+104 - Try and explain to Naoko what happened.
+  The dream. Men in suits. The monster.
+  She's somewhat skeptical.
+
+105 - Head to the courtyard.
+  Flashback to the monster scene.
+  Check around, everything seems to be normal.
+
+110 - To classroom. Everything seems normal.
+
+111 - Forgot textbook again.
+  Get help from Naoko.
+  (Varies based on choice from ch1)
+
+112 - Remembered textbook.
+  (Varies based on choice from ch1)
+
+113 - Pass by Yuuto.
+  Unassuming smile.
+
+114 - Pass by Manami in classroom.
+  Suspicious glare.
+
+115 - Class ends, lunch break. What to do?
+
+116 - Follow after Manami.
+  Confrontation.
+  M: You're trying to follow me. Why?
+  K: Dream yesterday, on the roof. Was that you?
+  Confusion.
+  M: After class, come to the park - alone.
+    Make sure nobody follows you.
+  M skips the rest of class.
+
+117 - Yuuto finds you.
+  Gives you lunch.
+  Y: Isn't that what friends are supposed to do?
+  Wants a favor.
+  The first job.
+  Follow him to the park, afternoon.
+
+118 - Naoko talking about what you told her earlier.
+  N: Giving it a lot of thought.
+  Yuuto appears.
+  N tells him what she knows.
+  N: Isn't it suspicious?
+  Y: Here to ask to come to park afternoon.
+  N: Must be related, she'll come.
+  Yuuto unexpected reaction (somewhat annoyed?)
+
+120 - Class over, afternoon.
+  Head to park alone.
+  At park. Surprised a place like this exists in the city.
+
+121 - Class over, afternoon.
+  Head to park with Naoko.
+
+122 - Kurumi, Yuuto, Naoko at park.
+  N: Nothing here.
+  Y: Don't notice anything. False alarm.
+  Both eventually leave. K stays.
+
+123 - Meet Yuuto at park.
+  Meet the two agents.
+  A bit of exposition on the agents.
+  Y: Don't notice anything. False alarm.
+  Y + Agents leave. K stays.
+
+125 - Park.
+  Warm sun.
+  Sit, find Manami next to you.
+  Shows magical world.
+  Beautiful reality.
+  Exposition on her life.
+  Notice movement in the water.
+  Back to the real world.
+
+126 - Encounter Yuuto while walking back in Park, real world.
+  Awkward introductions.
+  M leaves.
+  Y: Something odd here. Did you see anything?
+
+127 - K responds Yes.
+  Reveal part of what M showed.
+
+128 - K responds No.
+  Keep what M showed secret.
+
+129 - Walking in the park.
+  See Manami, alone on the bench. Familiar scene.
+  Transported to magical realm.
+  She notices you.
+  Exchange few brief words.
+  K: That was you yesterday.
+  M: This is my dream world.
+  M: There's someone following me. Who is it?
+
+130 - Tell Manami about Yuuto, and what he's told you.
+  She doesn't know who he is.
+  He could have the answers for what's going on.
+  Back to the real world.
+
+131 - Don't say.
+  Back to the real world.
+
+135 - On the way to home.
+  Magic world.
+  Manami, Yuuto. How is it all related?
+  Back home, unpacked boxes.
+  No message from parents. Odd.
+
+136 - Next day, at school.
+  No Manami, gone from class today.
+  Dream - Familiar place, the bench at the park facing the lake.
+  Manami in danger.
+  Wake up. Class over. Lunch break.
+
+137 - Go to park alone and check.
+  Concerned.
+
+138 - Yuuto finds you.
+  Emergency.
+  Wrong yesterday, problem at park.
+  Go to park.
+
+139 - Go to park with Yuuto.
+  See nothing.
+  Y: Close eyes, some sort of touch.
+
+140 - Go to park alone.
+  Look around, see nothing.
+  Headache. Close eyes.
+
+141 - Park magical world.
+  All alone in magical world.
+  Admire beauty of the world.
+  Up ahead, bench and lake.
+  Sitting on bench, Manami. Odd expression.
+  M: You shouldn't be here.
+  Living tentacles of beast come out of water.
+  Destroy the bench, knock her into water.
+  K slowly backing away, fear.
+
+142 - Yuuto appear, fighting the monster.
+  Y: Check on her! (K check on M)
+  K goes to M's side. She's alive.
+  Y gets caught by the monster.
+  Tentacle goes after K & M.
+  Suddenly, saved by M's power.
+  Y finishes off monster.
+    Jumps directly into the mouth.
+  Goes to black. Back to real world.
+
+143 - Awake, real world.
+  Both Y and M waiting.
+  What was that? (Another anomaly, like two days ago at school)
+    Bench area destroyed (not sure about this idea yet)
+      Magical world affected real world.
+    Agents are here.
+    Y to M: Assistant?
